@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#FF0E1116</color>
+    <color name="icon_bg">#FF7C5CFF</color>
+    <!-- 적응형 런처 아이콘 배경 (appIcon 모서리 네이비) -->
+    <color name="ic_launcher_background">#FF000331</color>
+</resources>

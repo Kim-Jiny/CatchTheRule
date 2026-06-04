@@ -1,0 +1,195 @@
+package com.jiny.catchtherule.ui.play
+
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Close
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Lightbulb
+import androidx.compose.material.icons.outlined.Lightbulb
+import androidx.compose.material.icons.filled.Verified
+import androidx.compose.material3.Icon
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import com.jiny.catchtherule.core.PuzzleStore
+import com.jiny.catchtherule.core.model.InputType
+import com.jiny.catchtherule.core.model.Puzzle
+import com.jiny.catchtherule.data.LocalProgress
+import com.jiny.catchtherule.ui.PrimaryButton
+import com.jiny.catchtherule.ui.theme.AppColors
+import com.jiny.catchtherule.ui.theme.ScreenBackground
+import com.jiny.catchtherule.ui.theme.card
+import kotlinx.coroutines.delay
+
+@Composable
+fun CampaignSessionScreen(onClose: () -> Unit) {
+    val progress = LocalProgress.current
+    val store = PuzzleStore.get(LocalContext.current)
+    val puzzles = store.puzzles
+
+    var index by remember { mutableIntStateOf(progress.currentIndex) }
+    var typed by remember { mutableStateOf("") }
+    var hintsShown by remember { mutableIntStateOf(0) }
+    var feedback by remember { mutableStateOf<AnswerFeedback?>(null) }
+    var reveal by remember { mutableStateOf(false) }
+    var solved by remember { mutableStateOf(false) }
+
+    val puzzle: Puzzle? = puzzles.getOrNull(index)
+
+    // 정답 후 자동 진행
+    LaunchedEffect(solved) {
+        if (solved) {
+            delay(900)
+            index += 1
+            typed = ""; hintsShown = 0; feedback = null; reveal = false; solved = false
+        }
+    }
+
+    ScreenBackground {
+        if (puzzle == null) {
+            CampaignComplete(onClose)
+            return@ScreenBackground
+        }
+
+        val position = store.position(index)
+
+        Column(Modifier.fillMaxSize().padding(top = 8.dp)) {
+            // 헤더
+            Row(
+                Modifier.fillMaxWidth().padding(horizontal = 20.dp),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Box(
+                    Modifier.size(38.dp).card(12.dp).clickable { onClose() },
+                    contentAlignment = Alignment.Center,
+                ) { Icon(Icons.Filled.Close, null, tint = AppColors.TextSecondary, modifier = Modifier.size(16.dp)) }
+                Box(Modifier.weight(1f))
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    Text("Chapter ${position?.first ?: puzzle.chapter}", color = AppColors.TextTertiary, fontSize = 12.sp, fontWeight = FontWeight.SemiBold)
+                    Text("Stage ${position?.second ?: puzzle.order}", color = AppColors.TextPrimary, fontSize = 15.sp, fontWeight = FontWeight.Bold)
+                }
+                Box(Modifier.weight(1f))
+                HintButton(
+                    remaining = progress.hintsRemaining,
+                    enabled = hintsShown < puzzle.hints.size && progress.hintsRemaining > 0 && !solved,
+                ) {
+                    if (hintsShown < puzzle.hints.size && progress.spendHint()) hintsShown += 1
+                }
+            }
+
+            Box(Modifier.weight(1f)) {
+                Column(
+                    Modifier.fillMaxWidth().align(Alignment.Center).padding(horizontal = 20.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.spacedBy(28.dp),
+                ) {
+                    Text("규칙을 찾아 빈칸을 채워보세요", color = AppColors.TextSecondary, fontSize = 15.sp)
+                    SequenceDisplay(puzzle = puzzle, typed = typed, reveal = reveal, feedback = feedback)
+                    if (hintsShown > 0) {
+                        Column(
+                            Modifier.fillMaxWidth().card().padding(16.dp),
+                            verticalArrangement = Arrangement.spacedBy(8.dp),
+                        ) {
+                            puzzle.hints.take(hintsShown).forEach { hint ->
+                                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                                    Icon(Icons.Filled.Lightbulb, null, tint = AppColors.Star, modifier = Modifier.size(14.dp).padding(top = 2.dp))
+                                    Text(hint, color = AppColors.TextSecondary, fontSize = 14.sp)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // 입력 영역
+            Box(Modifier.padding(horizontal = 20.dp, vertical = 12.dp)) {
+                when (InputType.from(puzzle.inputType)) {
+                    InputType.Keypad -> Keypad(
+                        canSubmit = typed.isNotEmpty() && !solved,
+                        onDigit = { if (!solved && typed.length < 4) typed += it.toString() },
+                        onDelete = { if (!solved && typed.isNotEmpty()) typed = typed.dropLast(1) },
+                        onSubmit = { submitCampaign(puzzle, index, typed, progress, hintsShown,
+                            onCorrect = { feedback = AnswerFeedback.Correct; reveal = true; solved = true },
+                            onWrong = { feedback = AnswerFeedback.Wrong; typed = "" }) },
+                    )
+                    InputType.Choices -> ChoicesGrid(puzzle.choices ?: emptyList(), enabled = !solved) { picked ->
+                        submitCampaign(puzzle, index, picked, progress, hintsShown,
+                            onCorrect = { feedback = AnswerFeedback.Correct; reveal = true; solved = true },
+                            onWrong = { feedback = AnswerFeedback.Wrong })
+                    }
+                }
+            }
+        }
+    }
+}
+
+private fun submitCampaign(
+    puzzle: Puzzle,
+    index: Int,
+    value: String,
+    progress: com.jiny.catchtherule.data.ProgressStore,
+    hintsShown: Int,
+    onCorrect: () -> Unit,
+    onWrong: () -> Unit,
+) {
+    if (value.isEmpty()) return
+    if (puzzle.isCorrect(value)) {
+        val earned = maxOf(1, 3 - hintsShown)
+        progress.recordCampaignClear(puzzle, index, earned)
+        onCorrect()
+    } else {
+        onWrong()
+    }
+}
+
+@Composable
+private fun HintButton(remaining: Int, enabled: Boolean, onClick: () -> Unit) {
+    Row(
+        Modifier.height(38.dp).card(12.dp).clickable(enabled = enabled) { onClick() }.padding(horizontal = 12.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(4.dp),
+    ) {
+        Icon(Icons.Outlined.Lightbulb, null, tint = if (enabled) AppColors.Star else AppColors.TextTertiary, modifier = Modifier.size(16.dp))
+        Text("$remaining", color = if (enabled) AppColors.Star else AppColors.TextTertiary, fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
+    }
+}
+
+@Composable
+private fun CampaignComplete(onClose: () -> Unit) {
+    val progress = LocalProgress.current
+    Column(
+        Modifier.fillMaxSize().padding(32.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center,
+    ) {
+        Icon(Icons.Filled.Verified, null, tint = AppColors.Accent, modifier = Modifier.size(64.dp))
+        Spacer(Modifier.height(20.dp))
+        Text("모든 단계를 클리어했어요!", color = AppColors.TextPrimary, fontSize = 22.sp, fontWeight = FontWeight.Bold)
+        Spacer(Modifier.height(8.dp))
+        Text("별 ${progress.totalStars} / ${progress.maxStars} 획득", color = AppColors.TextSecondary, fontSize = 15.sp)
+        Spacer(Modifier.height(24.dp))
+        PrimaryButton("홈으로", icon = Icons.Filled.Home, modifier = Modifier.padding(horizontal = 40.dp)) { onClose() }
+    }
+}

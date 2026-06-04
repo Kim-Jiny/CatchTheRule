@@ -1,0 +1,25 @@
+# ── macOS ──
+.DS_Store
+
+# ── Claude (로컬 에이전트 설정) ──
+.claude/
+
+# ── Xcode (iOS) ──
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+DerivedData/
+*.swiftpm/
+
+# ── Android / Gradle ──
+.gradle/
+build/
+Android/local.properties
+Android/.idea/
+Android/captures/
+Android/.kotlin/
+*.iml
+.cxx/
+
+# ── 기타 ──
+*.log
