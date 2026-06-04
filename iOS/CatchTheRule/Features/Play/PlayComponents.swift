@@ -18,15 +18,44 @@ struct SequenceDisplay: View {
     var feedback: AnswerFeedback? = nil
 
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 12) {
-                ForEach(Array(puzzle.tokens.enumerated()), id: \.offset) { _, value in
-                    cell(value: value, isBlank: value == nil)
+        if let grid = puzzle.grid, !grid.isEmpty {
+            gridBody(grid)
+        } else {
+            rowBody(puzzle.tokens ?? [])
+        }
+    }
+
+    /// 단일 행 표시 (칸 수에 따라 폰트/간격 축소 → 스크롤 없이 화면 폭에 맞춤).
+    private func rowBody(_ tokens: [String?]) -> some View {
+        let count = max(1, tokens.count)
+        let spacing: CGFloat = count >= 7 ? 6 : (count >= 6 ? 8 : (count >= 5 ? 10 : 12))
+        let fontSize: CGFloat = count >= 7 ? 20 : (count >= 6 ? 23 : (count >= 5 ? 26 : 30))
+        let height: CGFloat = count >= 6 ? 66 : 76
+        return HStack(spacing: spacing) {
+            ForEach(Array(tokens.enumerated()), id: \.offset) { _, value in
+                cell(value: value, isBlank: value == nil, fontSize: fontSize, height: height)
+            }
+        }
+        .frame(maxWidth: .infinity)
+    }
+
+    /// 격자형(두 줄/매트릭스/수식형) 표시.
+    private func gridBody(_ grid: [[String?]]) -> some View {
+        let cols = max(1, grid.map(\.count).max() ?? 1)
+        let spacing: CGFloat = cols >= 5 ? 8 : 10
+        let fontSize: CGFloat = cols >= 5 ? 22 : (cols >= 4 ? 25 : 28)
+        let rows = grid.count
+        let height: CGFloat = rows >= 3 ? 52 : 60
+        return VStack(spacing: spacing) {
+            ForEach(Array(grid.enumerated()), id: \.offset) { _, row in
+                HStack(spacing: spacing) {
+                    ForEach(Array(row.enumerated()), id: \.offset) { _, value in
+                        cell(value: value, isBlank: value == nil, fontSize: fontSize, height: height)
+                    }
                 }
             }
-            .padding(.horizontal, 4)
-            .frame(maxWidth: .infinity)
         }
+        .frame(maxWidth: .infinity)
     }
 
     private func blankText() -> String {
@@ -43,19 +72,21 @@ struct SequenceDisplay: View {
     }
 
     @ViewBuilder
-    private func cell(value: String?, isBlank: Bool) -> some View {
+    private func cell(value: String?, isBlank: Bool, fontSize: CGFloat, height: CGFloat) -> some View {
         Text(isBlank ? blankText() : (value ?? ""))
-            .font(.system(size: 30, weight: .bold, design: .rounded))
+            .font(.system(size: fontSize, weight: .bold, design: .rounded))
+            .lineLimit(1)
+            .minimumScaleFactor(0.4)            // 긴 토큰(예: 1211)도 칸 안에 맞춤
             .foregroundStyle(isBlank ? Theme.textPrimary : Theme.textSecondary)
-            .frame(minWidth: 64)
-            .frame(height: 76)
-            .padding(.horizontal, 6)
+            .frame(maxWidth: .infinity)         // 칸들이 화면 폭을 균등 분할
+            .frame(height: height)
+            .padding(.horizontal, 2)
             .background(
-                RoundedRectangle(cornerRadius: 18, style: .continuous)
+                RoundedRectangle(cornerRadius: 16, style: .continuous)
                     .fill(isBlank ? Color.white.opacity(0.03) : Theme.card)
             )
             .overlay(
-                RoundedRectangle(cornerRadius: 18, style: .continuous)
+                RoundedRectangle(cornerRadius: 16, style: .continuous)
                     .stroke(isBlank ? blankStroke : AnyShapeStyle(Theme.stroke),
                             lineWidth: isBlank ? 2 : 1)
             )

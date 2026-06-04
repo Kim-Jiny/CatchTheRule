@@ -14,15 +14,16 @@ struct Puzzle: Codable, Identifiable, Equatable {
     let type: String
     let chapter: Int
     let order: Int
-    let tokens: [String?]     // nil 인 항이 맞혀야 할 빈칸
+    let tokens: [String?]?    // 단일 행. nil 인 항이 빈칸. (grid 사용 시 생략)
+    let grid: [[String?]]?    // 다중 행/매트릭스/수식형. 한 칸이 nil(빈칸).
     let answer: String
     let inputType: InputType
     let choices: [String]?
     let hints: [String]
     let explanation: String
 
-    /// 빈칸의 인덱스(없으면 마지막).
-    var blankIndex: Int { tokens.firstIndex(where: { $0 == nil }) ?? tokens.count }
+    /// 격자형 퍼즐 여부.
+    var isGrid: Bool { (grid?.isEmpty == false) }
 
     func isCorrect(_ value: String) -> Bool {
         value.trimmingCharacters(in: .whitespaces) == answer

@@ -7,6 +7,7 @@ import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -28,6 +29,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.jiny.catchtherule.core.model.Puzzle
@@ -36,7 +38,7 @@ import com.jiny.catchtherule.ui.theme.card
 
 enum class AnswerFeedback { Correct, Wrong }
 
-/** 수열을 카드 셀로 표시. 빈칸은 그라데이션 테두리로 강조. */
+/** 수열/격자를 카드 셀로 표시. 빈칸은 그라데이션 테두리로 강조. */
 @Composable
 fun SequenceDisplay(
     puzzle: Puzzle,
@@ -45,45 +47,80 @@ fun SequenceDisplay(
     feedback: AnswerFeedback? = null,
     modifier: Modifier = Modifier,
 ) {
-    Row(
-        modifier
-            .fillMaxWidth()
-            .horizontalScroll(rememberScrollState()),
-        horizontalArrangement = Arrangement.spacedBy(12.dp, Alignment.CenterHorizontally),
-        verticalAlignment = Alignment.CenterVertically,
-    ) {
-        puzzle.tokens.forEachIndexed { _, value ->
-            val isBlank = value == null
-            val blankText = when {
-                reveal -> puzzle.answer
-                typed.isEmpty() -> "?"
-                else -> typed
-            }
-            val strokeBrush: Brush = when {
-                !isBlank -> SolidColor(AppColors.Stroke)
-                feedback == AnswerFeedback.Correct -> SolidColor(AppColors.Success)
-                feedback == AnswerFeedback.Wrong -> SolidColor(AppColors.Danger)
-                else -> AppColors.AccentGradient
-            }
-            Box(
-                Modifier
-                    .defaultMinSize(minWidth = 64.dp)
-                    .height(76.dp)
-                    .clip(RoundedCornerShape(18.dp))
-                    .background(if (isBlank) Color.White.copy(alpha = 0.03f) else AppColors.Card)
-                    .border(if (isBlank) 2.dp else 1.dp, strokeBrush, RoundedCornerShape(18.dp))
-                    .padding(horizontal = 10.dp),
-                contentAlignment = Alignment.Center,
-            ) {
-                Text(
-                    text = if (isBlank) blankText else (value ?: ""),
-                    color = if (isBlank) AppColors.TextPrimary else AppColors.TextSecondary,
-                    fontSize = 30.sp,
-                    fontWeight = FontWeight.Bold,
-                    fontFamily = FontFamily.SansSerif,
-                )
+    val blankText = when {
+        reveal -> puzzle.answer
+        typed.isEmpty() -> "?"
+        else -> typed
+    }
+    val grid = puzzle.grid
+    if (!grid.isNullOrEmpty()) {
+        // 격자형(두 줄/매트릭스/수식형)
+        val cols = (grid.maxOfOrNull { it.size } ?: 1).coerceAtLeast(1)
+        val spacing = if (cols >= 5) 8.dp else 10.dp
+        val fontSize = when { cols >= 5 -> 22.sp; cols >= 4 -> 25.sp; else -> 28.sp }
+        val cellHeight = if (grid.size >= 3) 52.dp else 60.dp
+        androidx.compose.foundation.layout.Column(
+            modifier.fillMaxWidth(),
+            verticalArrangement = Arrangement.spacedBy(spacing),
+        ) {
+            grid.forEach { row ->
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(spacing)) {
+                    row.forEach { value -> SeqCell(value, blankText, fontSize, cellHeight, feedback) }
+                }
             }
         }
+    } else {
+        // 단일 행 (칸 수에 따라 폰트/간격/높이 축소 → 스크롤 없이 화면 폭에 맞춤)
+        val tokens = puzzle.tokens ?: emptyList()
+        val count = tokens.size.coerceAtLeast(1)
+        val spacing = when { count >= 7 -> 6.dp; count >= 6 -> 8.dp; count >= 5 -> 10.dp; else -> 12.dp }
+        val fontSize = when { count >= 7 -> 20.sp; count >= 6 -> 23.sp; count >= 5 -> 26.sp; else -> 30.sp }
+        val cellHeight = if (count >= 6) 66.dp else 76.dp
+        Row(
+            modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(spacing),
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
+            tokens.forEach { value -> SeqCell(value, blankText, fontSize, cellHeight, feedback) }
+        }
+    }
+}
+
+@Composable
+private fun RowScope.SeqCell(
+    value: String?,
+    blankText: String,
+    fontSize: androidx.compose.ui.unit.TextUnit,
+    height: androidx.compose.ui.unit.Dp,
+    feedback: AnswerFeedback?,
+) {
+    val isBlank = value == null
+    val strokeBrush: Brush = when {
+        !isBlank -> SolidColor(AppColors.Stroke)
+        feedback == AnswerFeedback.Correct -> SolidColor(AppColors.Success)
+        feedback == AnswerFeedback.Wrong -> SolidColor(AppColors.Danger)
+        else -> AppColors.AccentGradient
+    }
+    Box(
+        Modifier
+            .weight(1f)
+            .height(height)
+            .clip(RoundedCornerShape(16.dp))
+            .background(if (isBlank) Color.White.copy(alpha = 0.03f) else AppColors.Card)
+            .border(if (isBlank) 2.dp else 1.dp, strokeBrush, RoundedCornerShape(16.dp))
+            .padding(horizontal = 2.dp),
+        contentAlignment = Alignment.Center,
+    ) {
+        Text(
+            text = if (isBlank) blankText else (value ?: ""),
+            color = if (isBlank) AppColors.TextPrimary else AppColors.TextSecondary,
+            fontSize = fontSize,
+            fontWeight = FontWeight.Bold,
+            fontFamily = FontFamily.SansSerif,
+            maxLines = 1,
+            softWrap = false,
+            textAlign = TextAlign.Center,
+        )
     }
 }
 

@@ -148,6 +148,8 @@ struct HomeView: View {
         case 5: return "모양 찾기"
         case 6: return "고급"
         case 7: return "마스터"
+        case 8: return "멘사"
+        case 9: return "천재"
         default: return "Chapter \(chapter)"
         }
     }

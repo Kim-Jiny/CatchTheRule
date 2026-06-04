@@ -162,5 +162,7 @@ private fun chapterTitle(chapter: Int): String = when (chapter) {
     5 -> "모양 찾기"
     6 -> "고급"
     7 -> "마스터"
+    8 -> "멘사"
+    9 -> "천재"
     else -> "Chapter $chapter"
 }

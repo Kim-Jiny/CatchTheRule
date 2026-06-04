@@ -15,15 +15,15 @@ data class Puzzle(
     val type: String,
     val chapter: Int,
     val order: Int,
-    val tokens: List<String?>,  // null 인 항이 맞혀야 할 빈칸
+    val tokens: List<String?>? = null,        // 단일 행. null 인 항이 빈칸. (grid 사용 시 생략)
+    val grid: List<List<String?>>? = null,    // 다중 행/매트릭스/수식형. 한 칸이 null(빈칸).
     val answer: String,
     val inputType: String,      // "keypad" | "choices"
     val choices: List<String>? = null,
     val hints: List<String>,
     val explanation: String,
 ) {
-    val blankIndex: Int
-        get() = tokens.indexOfFirst { it == null }.let { if (it < 0) tokens.size else it }
+    val isGrid: Boolean get() = grid?.isNotEmpty() == true
 
     fun isCorrect(value: String): Boolean = value.trim() == answer
 }
