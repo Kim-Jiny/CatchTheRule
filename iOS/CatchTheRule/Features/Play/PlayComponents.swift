@@ -17,11 +17,26 @@ struct SequenceDisplay: View {
     var reveal: Bool = false
     var feedback: AnswerFeedback? = nil
 
+    @State private var popScale: CGFloat = 1   // 정답 칸 팝 애니메이션
+
     var body: some View {
-        if let grid = puzzle.grid, !grid.isEmpty {
-            gridBody(grid)
-        } else {
-            rowBody(puzzle.tokens ?? [])
+        Group {
+            if let grid = puzzle.grid, !grid.isEmpty {
+                gridBody(grid)
+            } else {
+                rowBody(puzzle.tokens ?? [])
+            }
+        }
+        .onChange(of: feedback) { _, newValue in
+            if newValue == .correct { triggerPop() }
+        }
+    }
+
+    private func triggerPop() {
+        popScale = 1
+        withAnimation(.spring(response: 0.22, dampingFraction: 0.42)) { popScale = 1.22 }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.26) {
+            withAnimation(.spring(response: 0.32, dampingFraction: 0.6)) { popScale = 1 }
         }
     }
 
@@ -90,6 +105,28 @@ struct SequenceDisplay: View {
                     .stroke(isBlank ? blankStroke : AnyShapeStyle(Theme.stroke),
                             lineWidth: isBlank ? 2 : 1)
             )
+            .shadow(color: Theme.success.opacity(isBlank && feedback == .correct ? 0.75 : 0),
+                    radius: 14)
+            .scaleEffect(isBlank ? popScale : 1)
+            .zIndex(isBlank ? 1 : 0)
+    }
+}
+
+// MARK: - Correct badge
+
+/// 정답 시 잠깐 나타나는 "정답!" 배지.
+struct CorrectBadge: View {
+    var body: some View {
+        HStack(spacing: 8) {
+            Image(systemName: "checkmark.circle.fill")
+            Text("정답!").fontWeight(.heavy)
+        }
+        .font(.system(size: 20, weight: .bold, design: .rounded))
+        .foregroundStyle(.white)
+        .padding(.horizontal, 22)
+        .padding(.vertical, 12)
+        .background(Theme.success, in: Capsule())
+        .shadow(color: Theme.success.opacity(0.5), radius: 18, y: 6)
     }
 }
 

@@ -32,6 +32,14 @@ struct CampaignSessionView: View {
                 CampaignCompleteView { dismiss() }
             }
         }
+        .overlay {
+            if feedback == .correct {
+                CorrectBadge()
+                    .offset(y: -150)
+                    .transition(.scale(scale: 0.5).combined(with: .opacity))
+            }
+        }
+        .animation(.spring(response: 0.35, dampingFraction: 0.55), value: feedback)
         .toolbar(.hidden, for: .navigationBar)
     }
 

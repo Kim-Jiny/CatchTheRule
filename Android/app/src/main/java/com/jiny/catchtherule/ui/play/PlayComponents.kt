@@ -1,5 +1,8 @@
 package com.jiny.catchtherule.ui.play
 
+import androidx.compose.animation.core.Animatable
+import androidx.compose.animation.core.Spring
+import androidx.compose.animation.core.spring
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -18,13 +21,19 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.Backspace
 import androidx.compose.material.icons.filled.Check
+import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.text.font.FontFamily
@@ -52,6 +61,16 @@ fun SequenceDisplay(
         typed.isEmpty() -> "?"
         else -> typed
     }
+    // 정답 시 정답 칸 팝(scale 오버슈트) 애니메이션.
+    val pop = remember { Animatable(1f) }
+    LaunchedEffect(feedback) {
+        if (feedback == AnswerFeedback.Correct) {
+            pop.snapTo(1f)
+            pop.animateTo(1.22f, spring(dampingRatio = 0.42f, stiffness = Spring.StiffnessMediumLow))
+            pop.animateTo(1f, spring(dampingRatio = 0.6f))
+        }
+    }
+    val popScale = pop.value
     val grid = puzzle.grid
     if (!grid.isNullOrEmpty()) {
         // 격자형(두 줄/매트릭스/수식형)
@@ -65,7 +84,7 @@ fun SequenceDisplay(
         ) {
             grid.forEach { row ->
                 Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(spacing)) {
-                    row.forEach { value -> SeqCell(value, blankText, fontSize, cellHeight, feedback) }
+                    row.forEach { value -> SeqCell(value, blankText, fontSize, cellHeight, feedback, popScale) }
                 }
             }
         }
@@ -81,7 +100,7 @@ fun SequenceDisplay(
             horizontalArrangement = Arrangement.spacedBy(spacing),
             verticalAlignment = Alignment.CenterVertically,
         ) {
-            tokens.forEach { value -> SeqCell(value, blankText, fontSize, cellHeight, feedback) }
+            tokens.forEach { value -> SeqCell(value, blankText, fontSize, cellHeight, feedback, popScale) }
         }
     }
 }
@@ -93,8 +112,10 @@ private fun RowScope.SeqCell(
     fontSize: androidx.compose.ui.unit.TextUnit,
     height: androidx.compose.ui.unit.Dp,
     feedback: AnswerFeedback?,
+    popScale: Float = 1f,
 ) {
     val isBlank = value == null
+    val correct = isBlank && feedback == AnswerFeedback.Correct
     val strokeBrush: Brush = when {
         !isBlank -> SolidColor(AppColors.Stroke)
         feedback == AnswerFeedback.Correct -> SolidColor(AppColors.Success)
@@ -104,7 +125,15 @@ private fun RowScope.SeqCell(
     Box(
         Modifier
             .weight(1f)
+            .graphicsLayer {
+                if (isBlank) { scaleX = popScale; scaleY = popScale }
+            }
             .height(height)
+            .then(
+                if (correct) Modifier.shadow(16.dp, RoundedCornerShape(16.dp),
+                    spotColor = AppColors.Success, ambientColor = AppColors.Success)
+                else Modifier
+            )
             .clip(RoundedCornerShape(16.dp))
             .background(if (isBlank) Color.White.copy(alpha = 0.03f) else AppColors.Card)
             .border(if (isBlank) 2.dp else 1.dp, strokeBrush, RoundedCornerShape(16.dp))
@@ -121,6 +150,22 @@ private fun RowScope.SeqCell(
             softWrap = false,
             textAlign = TextAlign.Center,
         )
+    }
+}
+
+/** 정답 시 잠깐 나타나는 "정답!" 배지. */
+@Composable
+fun CorrectBadge() {
+    Row(
+        Modifier
+            .clip(androidx.compose.foundation.shape.CircleShape)
+            .background(AppColors.Success)
+            .padding(horizontal = 22.dp, vertical = 12.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+    ) {
+        Icon(Icons.Filled.CheckCircle, null, tint = Color.White, modifier = Modifier.size(22.dp))
+        Text("정답!", color = Color.White, fontSize = 20.sp, fontWeight = FontWeight.ExtraBold)
     }
 }
 

@@ -1,9 +1,15 @@
 package com.jiny.catchtherule.ui.play
 
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.scaleIn
+import androidx.compose.animation.scaleOut
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -75,6 +81,7 @@ fun CampaignSessionScreen(onClose: () -> Unit) {
 
         val position = store.position(index)
 
+        Box(Modifier.fillMaxSize()) {
         Column(Modifier.fillMaxSize().padding(top = 8.dp)) {
             // 헤더
             Row(
@@ -141,6 +148,14 @@ fun CampaignSessionScreen(onClose: () -> Unit) {
                     }
                 }
             }
+        }
+
+            AnimatedVisibility(
+                visible = feedback == AnswerFeedback.Correct,
+                modifier = Modifier.align(Alignment.Center).offset(y = (-150).dp),
+                enter = scaleIn(initialScale = 0.5f) + fadeIn(),
+                exit = scaleOut(targetScale = 0.5f) + fadeOut(),
+            ) { CorrectBadge() }
         }
     }
 }
