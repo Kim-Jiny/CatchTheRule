@@ -52,7 +52,7 @@ import com.jiny.catchtherule.ui.theme.ScreenBackground
 import com.jiny.catchtherule.ui.theme.card
 
 private const val CONTACT_EMAIL = "kjinyz@naver.com"
-private const val APP_VERSION = "1.0"
+private const val APP_VERSION = "1.0.0"
 private const val TERMS_URL = "https://duo.jiny.shop/ctr/terms"
 private const val PRIVACY_URL = "https://duo.jiny.shop/ctr/privacy"
 private const val SUPPORT_URL = "https://duo.jiny.shop/ctr/support"
