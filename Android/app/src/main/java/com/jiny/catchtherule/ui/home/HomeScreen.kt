@@ -168,5 +168,6 @@ private fun chapterTitle(chapter: Int): String = when (chapter) {
     8 -> stringResource(R.string.chapter_8)
     9 -> stringResource(R.string.chapter_9)
         10 -> stringResource(R.string.chapter_10)
+        11 -> stringResource(R.string.chapter_11)
     else -> stringResource(R.string.chapter_label, chapter)
 }

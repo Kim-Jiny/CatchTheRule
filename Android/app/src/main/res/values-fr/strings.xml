@@ -25,6 +25,7 @@
     <string name="chapter_8">Mensa</string>
     <string name="chapter_9">Génie</string>
     <string name="chapter_10">Légende</string>
+    <string name="chapter_11">Défi Mensa</string>
     <string name="challenge_title">Contre-la-montre</string>
     <string name="challenge_subtitle">Résolvez-en un max en 60 s et grimpez au classement</string>
     <string name="challenge_best">Mon meilleur score</string>

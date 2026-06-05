@@ -44,6 +44,7 @@ T = {
  "chapter_8": ["Mensa","멘사","メンサ","门萨","Mensa","Mensa","Mensa"],
  "chapter_9": ["Genius","천재","天才","天才","Genio","Génie","Genie"],
  "chapter_10": ["Legend","레전드","レジェンド","传奇","Leyenda","Légende","Legende"],
+ "chapter_11": ["Mensa Challenge","멘사 챌린지","メンサチャレンジ","门萨挑战","Reto Mensa","Défi Mensa","Mensa-Challenge"],
  "challenge_title": ["Time Attack","타임어택","タイムアタック","限时挑战","Contrarreloj","Contre-la-montre","Zeitangriff"],
  "challenge_subtitle": ["Solve as many as you can in 60s and climb the ranking","60초 동안 최대한 많이 풀고 랭킹에 도전하세요","60秒でできるだけ多く解いてランキングに挑戦","60秒内尽量多答，冲击排行榜","Resuelve todo lo posible en 60 s y sube en el ranking","Résolvez-en un max en 60 s et grimpez au classement","Löse in 60 s so viele wie möglich und steige im Ranking"],
  "challenge_best": ["My Best Score","내 최고 점수","自己ベスト","我的最高分","Mi mejor puntuación","Mon meilleur score","Meine Bestpunktzahl"],

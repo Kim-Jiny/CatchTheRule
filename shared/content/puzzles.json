@@ -4336,5 +4336,924 @@
       "fr": "n² − 1 : 7² − 1 = 48",
       "de": "n² − 1: 7² − 1 = 48"
     }
+  },
+  {
+    "id": "ch11_s01",
+    "type": "sequence",
+    "chapter": 11,
+    "order": 1,
+    "tokens": [
+      "1",
+      "3",
+      "7",
+      "17",
+      "41",
+      null
+    ],
+    "answer": "99",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "앞의 두 수를 함께 사용해요.",
+        "(바로 앞 수)×2 + (그 앞 수).",
+        "41 × 2 + 17 = ?"
+      ],
+      "en": [
+        "Use the two preceding numbers together.",
+        "(immediately preceding number)×2 + (the one before that).",
+        "41 × 2 + 17 = ?"
+      ],
+      "ja": [
+        "直前の2つの数を一緒に使います。",
+        "(直前の数)×2 + (その前の数)。",
+        "41 × 2 + 17 = ?"
+      ],
+      "zh": [
+        "同时使用前面的两个数。",
+        "(前一个数)×2 + (再前一个数)。",
+        "41 × 2 + 17 = ?"
+      ],
+      "es": [
+        "Usa juntos los dos números anteriores.",
+        "(número inmediatamente anterior)×2 + (el anterior a ese).",
+        "41 × 2 + 17 = ?"
+      ],
+      "fr": [
+        "Utilise ensemble les deux nombres précédents.",
+        "(nombre juste avant)×2 + (celui d'avant).",
+        "41 × 2 + 17 = ?"
+      ],
+      "de": [
+        "Verwende die beiden vorherigen Zahlen zusammen.",
+        "(unmittelbar vorherige Zahl)×2 + (die davor).",
+        "41 × 2 + 17 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "각 수 = 앞 수 × 2 + 그 앞 수: 41 × 2 + 17 = 99",
+      "en": "Each number = previous × 2 + the one before it: 41 × 2 + 17 = 99",
+      "ja": "各数 = 前の数 × 2 + その前の数: 41 × 2 + 17 = 99",
+      "zh": "每个数 = 前一个数 × 2 + 再前一个数: 41 × 2 + 17 = 99",
+      "es": "Cada número = anterior × 2 + el de antes: 41 × 2 + 17 = 99",
+      "fr": "Chaque nombre = précédent × 2 + celui d'avant : 41 × 2 + 17 = 99",
+      "de": "Jede Zahl = vorherige × 2 + die davor: 41 × 2 + 17 = 99"
+    }
+  },
+  {
+    "id": "ch11_s02",
+    "type": "sequence",
+    "chapter": 11,
+    "order": 2,
+    "tokens": [
+      "2",
+      "3",
+      "7",
+      "16",
+      "32",
+      null
+    ],
+    "answer": "57",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "더해지는 값이 점점 커져요.",
+        "더하는 값이 1, 4, 9, 16 …(제곱수)!",
+        "32 + 25 = ?"
+      ],
+      "en": [
+        "The value being added keeps growing.",
+        "The added values are 1, 4, 9, 16 … (perfect squares)!",
+        "32 + 25 = ?"
+      ],
+      "ja": [
+        "足される値がだんだん大きくなります。",
+        "足す値が1, 4, 9, 16 …(平方数)!",
+        "32 + 25 = ?"
+      ],
+      "zh": [
+        "相加的值越来越大。",
+        "相加的值是 1, 4, 9, 16 …(平方数)!",
+        "32 + 25 = ?"
+      ],
+      "es": [
+        "El valor que se suma va creciendo.",
+        "Los valores sumados son 1, 4, 9, 16 … (cuadrados perfectos).",
+        "32 + 25 = ?"
+      ],
+      "fr": [
+        "La valeur ajoutée augmente de plus en plus.",
+        "Les valeurs ajoutées sont 1, 4, 9, 16 … (carrés parfaits) !",
+        "32 + 25 = ?"
+      ],
+      "de": [
+        "Der hinzugefügte Wert wird immer größer.",
+        "Die addierten Werte sind 1, 4, 9, 16 … (Quadratzahlen)!",
+        "32 + 25 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "더하는 값이 제곱수(1,4,9,16,25): 32 + 25 = 57",
+      "en": "The added values are perfect squares (1, 4, 9, 16, 25): 32 + 25 = 57",
+      "ja": "足す値が平方数(1, 4, 9, 16, 25): 32 + 25 = 57",
+      "zh": "相加的值是平方数(1, 4, 9, 16, 25): 32 + 25 = 57",
+      "es": "Los valores sumados son cuadrados perfectos (1, 4, 9, 16, 25): 32 + 25 = 57",
+      "fr": "Les valeurs ajoutées sont des carrés parfaits (1, 4, 9, 16, 25) : 32 + 25 = 57",
+      "de": "Die addierten Werte sind Quadratzahlen (1, 4, 9, 16, 25): 32 + 25 = 57"
+    }
+  },
+  {
+    "id": "ch11_s03",
+    "type": "power",
+    "chapter": 11,
+    "order": 3,
+    "tokens": [
+      "4",
+      "9",
+      "25",
+      "49",
+      "121",
+      null
+    ],
+    "answer": "169",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "각 수는 어떤 수의 제곱이에요.",
+        "제곱의 밑이 소수예요: 2, 3, 5, 7, 11 …",
+        "13² = ?"
+      ],
+      "en": [
+        "Each number is the square of some number.",
+        "The bases of the squares are prime numbers: 2, 3, 5, 7, 11 …",
+        "13² = ?"
+      ],
+      "ja": [
+        "各数はある数の平方です。",
+        "平方の底が素数です: 2, 3, 5, 7, 11 …",
+        "13² = ?"
+      ],
+      "zh": [
+        "每个数都是某个数的平方。",
+        "平方的底是素数: 2, 3, 5, 7, 11 …",
+        "13² = ?"
+      ],
+      "es": [
+        "Cada número es el cuadrado de algún número.",
+        "Las bases de los cuadrados son números primos: 2, 3, 5, 7, 11 …",
+        "13² = ?"
+      ],
+      "fr": [
+        "Chaque nombre est le carré d'un nombre.",
+        "Les bases des carrés sont des nombres premiers : 2, 3, 5, 7, 11 …",
+        "13² = ?"
+      ],
+      "de": [
+        "Jede Zahl ist das Quadrat einer Zahl.",
+        "Die Basen der Quadrate sind Primzahlen: 2, 3, 5, 7, 11 …",
+        "13² = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "소수의 제곱: 2², 3², 5², 7², 11², 13² → 169",
+      "en": "Squares of primes: 2², 3², 5², 7², 11², 13² → 169",
+      "ja": "素数の平方: 2², 3², 5², 7², 11², 13² → 169",
+      "zh": "素数的平方: 2², 3², 5², 7², 11², 13² → 169",
+      "es": "Cuadrados de primos: 2², 3², 5², 7², 11², 13² → 169",
+      "fr": "Carrés de nombres premiers : 2², 3², 5², 7², 11², 13² → 169",
+      "de": "Quadrate von Primzahlen: 2², 3², 5², 7², 11², 13² → 169"
+    }
+  },
+  {
+    "id": "ch11_s04",
+    "type": "sequence",
+    "chapter": 11,
+    "order": 4,
+    "tokens": [
+      "1",
+      "2",
+      "5",
+      "14",
+      "42",
+      null
+    ],
+    "answer": "132",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "증가 폭이 점점 빨라져요.",
+        "유명한 '카탈란 수' 수열이에요.",
+        "1, 2, 5, 14, 42 다음은?"
+      ],
+      "en": [
+        "The increase gets faster and faster.",
+        "This is the famous 'Catalan numbers' sequence.",
+        "What comes after 1, 2, 5, 14, 42?"
+      ],
+      "ja": [
+        "増加の幅がどんどん速くなります。",
+        "有名な「カタラン数」の数列です。",
+        "1, 2, 5, 14, 42 の次は?"
+      ],
+      "zh": [
+        "增长越来越快。",
+        "这是著名的「卡塔兰数」数列。",
+        "1, 2, 5, 14, 42 之后是?"
+      ],
+      "es": [
+        "El aumento es cada vez más rápido.",
+        "Es la famosa sucesión de los 'números de Catalan'.",
+        "¿Qué sigue después de 1, 2, 5, 14, 42?"
+      ],
+      "fr": [
+        "L'augmentation devient de plus en plus rapide.",
+        "C'est la célèbre suite des « nombres de Catalan ».",
+        "Que vient après 1, 2, 5, 14, 42 ?"
+      ],
+      "de": [
+        "Der Zuwachs wird immer schneller.",
+        "Das ist die berühmte Folge der 'Catalan-Zahlen'.",
+        "Was kommt nach 1, 2, 5, 14, 42?"
+      ]
+    },
+    "explanation": {
+      "ko": "카탈란 수: 1, 2, 5, 14, 42, 132",
+      "en": "Catalan numbers: 1, 2, 5, 14, 42, 132",
+      "ja": "カタラン数: 1, 2, 5, 14, 42, 132",
+      "zh": "卡塔兰数: 1, 2, 5, 14, 42, 132",
+      "es": "Números de Catalan: 1, 2, 5, 14, 42, 132",
+      "fr": "Nombres de Catalan : 1, 2, 5, 14, 42, 132",
+      "de": "Catalan-Zahlen: 1, 2, 5, 14, 42, 132"
+    }
+  },
+  {
+    "id": "ch11_s05",
+    "type": "matrix",
+    "chapter": 11,
+    "order": 5,
+    "grid": [
+      [
+        "6",
+        "2",
+        "3"
+      ],
+      [
+        "8",
+        "2",
+        "4"
+      ],
+      [
+        "15",
+        "3",
+        null
+      ]
+    ],
+    "answer": "5",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "한 줄의 세 수의 관계를 보세요.",
+        "첫 칸 = 둘째 칸 × 셋째 칸.",
+        "15 = 3 × ? → ?"
+      ],
+      "en": [
+        "Look at the relationship among the three numbers in a row.",
+        "First cell = second cell × third cell.",
+        "15 = 3 × ? → ?"
+      ],
+      "ja": [
+        "1行の3つの数の関係を見てください。",
+        "1番目のマス = 2番目のマス × 3番目のマス。",
+        "15 = 3 × ? → ?"
+      ],
+      "zh": [
+        "看一行中三个数的关系。",
+        "第一格 = 第二格 × 第三格。",
+        "15 = 3 × ? → ?"
+      ],
+      "es": [
+        "Observa la relación entre los tres números de una fila.",
+        "Primera casilla = segunda casilla × tercera casilla.",
+        "15 = 3 × ? → ?"
+      ],
+      "fr": [
+        "Regarde la relation entre les trois nombres d'une ligne.",
+        "Première case = deuxième case × troisième case.",
+        "15 = 3 × ? → ?"
+      ],
+      "de": [
+        "Betrachte die Beziehung zwischen den drei Zahlen einer Zeile.",
+        "Erstes Feld = zweites Feld × drittes Feld.",
+        "15 = 3 × ? → ?"
+      ]
+    },
+    "explanation": {
+      "ko": "1열 = 2열 × 3열: 15 = 3 × 5",
+      "en": "Column 1 = column 2 × column 3: 15 = 3 × 5",
+      "ja": "1列目 = 2列目 × 3列目: 15 = 3 × 5",
+      "zh": "第1列 = 第2列 × 第3列: 15 = 3 × 5",
+      "es": "Columna 1 = columna 2 × columna 3: 15 = 3 × 5",
+      "fr": "Colonne 1 = colonne 2 × colonne 3 : 15 = 3 × 5",
+      "de": "Spalte 1 = Spalte 2 × Spalte 3: 15 = 3 × 5"
+    }
+  },
+  {
+    "id": "ch11_s06",
+    "type": "matrix",
+    "chapter": 11,
+    "order": 6,
+    "grid": [
+      [
+        "2",
+        "3",
+        "4"
+      ],
+      [
+        "8",
+        "27",
+        null
+      ]
+    ],
+    "answer": "64",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "위·아래 두 줄의 관계를 보세요.",
+        "아랫줄은 윗줄의 세제곱이에요.",
+        "4³ = ?"
+      ],
+      "en": [
+        "Look at the relationship between the top and bottom rows.",
+        "The bottom row is the cube of the top row.",
+        "4³ = ?"
+      ],
+      "ja": [
+        "上下2行の関係を見てください。",
+        "下の行は上の行の3乗です。",
+        "4³ = ?"
+      ],
+      "zh": [
+        "看上下两行的关系。",
+        "下面一行是上面一行的立方。",
+        "4³ = ?"
+      ],
+      "es": [
+        "Observa la relación entre la fila de arriba y la de abajo.",
+        "La fila de abajo es el cubo de la fila de arriba.",
+        "4³ = ?"
+      ],
+      "fr": [
+        "Regarde la relation entre la ligne du haut et celle du bas.",
+        "La ligne du bas est le cube de la ligne du haut.",
+        "4³ = ?"
+      ],
+      "de": [
+        "Betrachte die Beziehung zwischen oberer und unterer Zeile.",
+        "Die untere Zeile ist die dritte Potenz der oberen Zeile.",
+        "4³ = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "아랫줄 = 윗줄의 세제곱(n³): 4³ = 64",
+      "en": "Bottom row = cube of the top row (n³): 4³ = 64",
+      "ja": "下の行 = 上の行の3乗(n³): 4³ = 64",
+      "zh": "下行 = 上行的立方(n³): 4³ = 64",
+      "es": "Fila de abajo = cubo de la fila de arriba (n³): 4³ = 64",
+      "fr": "Ligne du bas = cube de la ligne du haut (n³) : 4³ = 64",
+      "de": "Untere Zeile = dritte Potenz der oberen Zeile (n³): 4³ = 64"
+    }
+  },
+  {
+    "id": "ch11_s07",
+    "type": "matrix",
+    "chapter": 11,
+    "order": 7,
+    "grid": [
+      [
+        "12",
+        "33"
+      ],
+      [
+        "13",
+        "44"
+      ],
+      [
+        "14",
+        null
+      ]
+    ],
+    "answer": "55",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "왼쪽 수와 그 수를 거꾸로 한 수를 떠올려요.",
+        "왼쪽 수 + 자릿수를 뒤집은 수.",
+        "14 + 41 = ?"
+      ],
+      "en": [
+        "Think of the left number and that number reversed.",
+        "Left number + the number with its digits reversed.",
+        "14 + 41 = ?"
+      ],
+      "ja": [
+        "左の数と、その数を逆さまにした数を思い浮かべます。",
+        "左の数 + 桁を逆にした数。",
+        "14 + 41 = ?"
+      ],
+      "zh": [
+        "想想左边的数和把它倒过来的数。",
+        "左边的数 + 数字位倒转后的数。",
+        "14 + 41 = ?"
+      ],
+      "es": [
+        "Piensa en el número de la izquierda y ese número al revés.",
+        "Número de la izquierda + el número con sus cifras invertidas.",
+        "14 + 41 = ?"
+      ],
+      "fr": [
+        "Pense au nombre de gauche et à ce nombre inversé.",
+        "Nombre de gauche + le nombre avec ses chiffres inversés.",
+        "14 + 41 = ?"
+      ],
+      "de": [
+        "Denke an die linke Zahl und diese Zahl umgekehrt.",
+        "Linke Zahl + die Zahl mit umgekehrter Ziffernfolge.",
+        "14 + 41 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "왼쪽 수 + 뒤집은 수: 14 + 41 = 55",
+      "en": "Left number + reversed number: 14 + 41 = 55",
+      "ja": "左の数 + 逆にした数: 14 + 41 = 55",
+      "zh": "左边的数 + 倒转后的数: 14 + 41 = 55",
+      "es": "Número de la izquierda + número invertido: 14 + 41 = 55",
+      "fr": "Nombre de gauche + nombre inversé : 14 + 41 = 55",
+      "de": "Linke Zahl + umgekehrte Zahl: 14 + 41 = 55"
+    }
+  },
+  {
+    "id": "ch11_s08",
+    "type": "sequence",
+    "chapter": 11,
+    "order": 8,
+    "tokens": [
+      "2",
+      "5",
+      "13",
+      "34",
+      "89",
+      null
+    ],
+    "answer": "233",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "앞의 두 수를 함께 사용해요.",
+        "(바로 앞 수)×3 − (그 앞 수).",
+        "89 × 3 − 34 = ?"
+      ],
+      "en": [
+        "Use the two preceding numbers together.",
+        "(previous number)×3 − (the one before that).",
+        "89 × 3 − 34 = ?"
+      ],
+      "ja": [
+        "直前の2つの数を一緒に使います。",
+        "(直前の数)×3 − (その前の数)。",
+        "89 × 3 − 34 = ?"
+      ],
+      "zh": [
+        "同时使用前面的两个数。",
+        "(前一个数)×3 −(再前一个数)。",
+        "89 × 3 − 34 = ?"
+      ],
+      "es": [
+        "Usa juntos los dos números anteriores.",
+        "(número anterior)×3 − (el de antes).",
+        "89 × 3 − 34 = ?"
+      ],
+      "fr": [
+        "Utilise ensemble les deux nombres précédents.",
+        "(nombre précédent)×3 − (celui d'avant).",
+        "89 × 3 − 34 = ?"
+      ],
+      "de": [
+        "Verwende die beiden vorherigen Zahlen zusammen.",
+        "(vorherige Zahl)×3 − (die davor).",
+        "89 × 3 − 34 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "각 수 = 앞 수 × 3 − 그 앞 수: 89 × 3 − 34 = 233",
+      "en": "Each number = previous × 3 − the one before it: 89 × 3 − 34 = 233",
+      "ja": "各数 = 直前の数 × 3 − その前の数: 89 × 3 − 34 = 233",
+      "zh": "每个数 = 前一个数 × 3 − 再前一个数：89 × 3 − 34 = 233",
+      "es": "Cada número = anterior × 3 − el de antes: 89 × 3 − 34 = 233",
+      "fr": "Chaque nombre = précédent × 3 − celui d'avant : 89 × 3 − 34 = 233",
+      "de": "Jede Zahl = vorherige × 3 − die davor: 89 × 3 − 34 = 233"
+    }
+  },
+  {
+    "id": "ch11_s09",
+    "type": "sequence",
+    "chapter": 11,
+    "order": 9,
+    "tokens": [
+      "1",
+      "2",
+      "6",
+      "30",
+      "210",
+      null
+    ],
+    "answer": "2310",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "앞 수에 무언가를 곱해요.",
+        "곱하는 수가 소수예요: ×2, ×3, ×5, ×7 …",
+        "210 × 11 = ?"
+      ],
+      "en": [
+        "Multiply the previous number by something.",
+        "The multiplier is a prime: ×2, ×3, ×5, ×7 …",
+        "210 × 11 = ?"
+      ],
+      "ja": [
+        "直前の数に何かを掛けます。",
+        "掛ける数は素数です: ×2, ×3, ×5, ×7 …",
+        "210 × 11 = ?"
+      ],
+      "zh": [
+        "把前一个数乘以某个数。",
+        "乘数是质数：×2, ×3, ×5, ×7 …",
+        "210 × 11 = ?"
+      ],
+      "es": [
+        "Multiplica el número anterior por algo.",
+        "El multiplicador es un primo: ×2, ×3, ×5, ×7 …",
+        "210 × 11 = ?"
+      ],
+      "fr": [
+        "Multiplie le nombre précédent par quelque chose.",
+        "Le multiplicateur est un nombre premier : ×2, ×3, ×5, ×7 …",
+        "210 × 11 = ?"
+      ],
+      "de": [
+        "Multipliziere die vorherige Zahl mit etwas.",
+        "Der Faktor ist eine Primzahl: ×2, ×3, ×5, ×7 …",
+        "210 × 11 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "소수를 차례로 곱함(×2,3,5,7,11): 210 × 11 = 2310",
+      "en": "Multiply by successive primes (×2,3,5,7,11): 210 × 11 = 2310",
+      "ja": "素数を順に掛ける(×2,3,5,7,11): 210 × 11 = 2310",
+      "zh": "依次乘以质数（×2,3,5,7,11）：210 × 11 = 2310",
+      "es": "Multiplica por primos sucesivos (×2,3,5,7,11): 210 × 11 = 2310",
+      "fr": "Multiplie par les nombres premiers successifs (×2,3,5,7,11) : 210 × 11 = 2310",
+      "de": "Multipliziere nacheinander mit Primzahlen (×2,3,5,7,11): 210 × 11 = 2310"
+    }
+  },
+  {
+    "id": "ch11_s10",
+    "type": "sequence",
+    "chapter": 11,
+    "order": 10,
+    "tokens": [
+      "3",
+      "5",
+      "9",
+      "17",
+      "33",
+      null
+    ],
+    "answer": "65",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "×2 와 −1 이 함께 쓰여요.",
+        "×2 한 뒤 1을 빼요.",
+        "33 × 2 − 1 = ?"
+      ],
+      "en": [
+        "×2 and −1 are used together.",
+        "Multiply by 2, then subtract 1.",
+        "33 × 2 − 1 = ?"
+      ],
+      "ja": [
+        "×2 と −1 が一緒に使われます。",
+        "×2 してから 1 を引きます。",
+        "33 × 2 − 1 = ?"
+      ],
+      "zh": [
+        "×2 和 −1 一起使用。",
+        "先乘以 2，再减去 1。",
+        "33 × 2 − 1 = ?"
+      ],
+      "es": [
+        "×2 y −1 se usan juntos.",
+        "Multiplica por 2 y luego resta 1.",
+        "33 × 2 − 1 = ?"
+      ],
+      "fr": [
+        "×2 et −1 sont utilisés ensemble.",
+        "Multiplie par 2, puis soustrais 1.",
+        "33 × 2 − 1 = ?"
+      ],
+      "de": [
+        "×2 und −1 werden zusammen verwendet.",
+        "Mit 2 multiplizieren, dann 1 subtrahieren.",
+        "33 × 2 − 1 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "×2 − 1: 33 × 2 − 1 = 65",
+      "en": "×2 − 1: 33 × 2 − 1 = 65",
+      "ja": "×2 − 1: 33 × 2 − 1 = 65",
+      "zh": "×2 − 1：33 × 2 − 1 = 65",
+      "es": "×2 − 1: 33 × 2 − 1 = 65",
+      "fr": "×2 − 1 : 33 × 2 − 1 = 65",
+      "de": "×2 − 1: 33 × 2 − 1 = 65"
+    }
+  },
+  {
+    "id": "ch11_s11",
+    "type": "roman",
+    "chapter": 11,
+    "order": 11,
+    "tokens": [
+      "IV",
+      "IX",
+      "XVI",
+      "XXV",
+      null
+    ],
+    "answer": "XXXVI",
+    "inputType": "choices",
+    "choices": [
+      "XXXVI",
+      "XXXII",
+      "XLIX",
+      "XXX"
+    ],
+    "hints": {
+      "ko": [
+        "로마 숫자를 값으로 바꿔 보세요.",
+        "4, 9, 16, 25 … 제곱수예요!",
+        "6² = 36 → 로마 숫자로?"
+      ],
+      "en": [
+        "Convert the Roman numerals to values.",
+        "4, 9, 16, 25 … they are squares!",
+        "6² = 36 → as a Roman numeral?"
+      ],
+      "ja": [
+        "ローマ数字を値に変換してみましょう。",
+        "4, 9, 16, 25 … 平方数です！",
+        "6² = 36 → ローマ数字では?"
+      ],
+      "zh": [
+        "把罗马数字转换成数值。",
+        "4, 9, 16, 25 … 都是平方数！",
+        "6² = 36 → 用罗马数字写?"
+      ],
+      "es": [
+        "Convierte los números romanos a valores.",
+        "4, 9, 16, 25 … ¡son cuadrados!",
+        "6² = 36 → ¿en número romano?"
+      ],
+      "fr": [
+        "Convertis les chiffres romains en valeurs.",
+        "4, 9, 16, 25 … ce sont des carrés !",
+        "6² = 36 → en chiffre romain ?"
+      ],
+      "de": [
+        "Wandle die römischen Zahlen in Werte um.",
+        "4, 9, 16, 25 … das sind Quadratzahlen!",
+        "6² = 36 → als römische Zahl?"
+      ]
+    },
+    "explanation": {
+      "ko": "로마 숫자로 쓴 제곱수: 4, 9, 16, 25, 36 → XXXVI",
+      "en": "Squares written as Roman numerals: 4, 9, 16, 25, 36 → XXXVI",
+      "ja": "ローマ数字で書いた平方数: 4, 9, 16, 25, 36 → XXXVI",
+      "zh": "用罗马数字写的平方数：4, 9, 16, 25, 36 → XXXVI",
+      "es": "Cuadrados escritos en números romanos: 4, 9, 16, 25, 36 → XXXVI",
+      "fr": "Carrés écrits en chiffres romains : 4, 9, 16, 25, 36 → XXXVI",
+      "de": "Quadratzahlen als römische Zahlen geschrieben: 4, 9, 16, 25, 36 → XXXVI"
+    }
+  },
+  {
+    "id": "ch11_s12",
+    "type": "sequence",
+    "chapter": 11,
+    "order": 12,
+    "tokens": [
+      "1",
+      "1",
+      "4",
+      "8",
+      "9",
+      "27",
+      null
+    ],
+    "answer": "16",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "두 종류의 수가 번갈아 나와요.",
+        "홀수 자리는 제곱(1,4,9 …), 짝수 자리는 세제곱(1,8,27 …).",
+        "다음은 4² = ?"
+      ],
+      "en": [
+        "Two kinds of numbers alternate.",
+        "Odd positions are squares (1,4,9 …), even positions are cubes (1,8,27 …).",
+        "Next is 4² = ?"
+      ],
+      "ja": [
+        "2種類の数が交互に現れます。",
+        "奇数番目は平方(1,4,9 …)、偶数番目は立方(1,8,27 …)。",
+        "次は 4² = ?"
+      ],
+      "zh": [
+        "两种数交替出现。",
+        "奇数位是平方（1,4,9 …），偶数位是立方（1,8,27 …）。",
+        "下一个是 4² = ?"
+      ],
+      "es": [
+        "Se alternan dos tipos de números.",
+        "Las posiciones impares son cuadrados (1,4,9 …), las pares son cubos (1,8,27 …).",
+        "El siguiente es 4² = ?"
+      ],
+      "fr": [
+        "Deux types de nombres alternent.",
+        "Les positions impaires sont des carrés (1,4,9 …), les paires des cubes (1,8,27 …).",
+        "Le suivant est 4² = ?"
+      ],
+      "de": [
+        "Zwei Arten von Zahlen wechseln sich ab.",
+        "Ungerade Positionen sind Quadrate (1,4,9 …), gerade Positionen Kuben (1,8,27 …).",
+        "Als Nächstes 4² = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "제곱과 세제곱이 교대: …3²=9, 3³=27, 4²=16",
+      "en": "Squares and cubes alternate: …3²=9, 3³=27, 4²=16",
+      "ja": "平方と立方が交互: …3²=9, 3³=27, 4²=16",
+      "zh": "平方与立方交替：…3²=9, 3³=27, 4²=16",
+      "es": "Se alternan cuadrados y cubos: …3²=9, 3³=27, 4²=16",
+      "fr": "Carrés et cubes alternent : …3²=9, 3³=27, 4²=16",
+      "de": "Quadrate und Kuben wechseln sich ab: …3²=9, 3³=27, 4²=16"
+    }
+  },
+  {
+    "id": "ch11_s13",
+    "type": "matrix",
+    "chapter": 11,
+    "order": 13,
+    "grid": [
+      [
+        "2",
+        "3",
+        "13"
+      ],
+      [
+        "3",
+        "4",
+        "25"
+      ],
+      [
+        "4",
+        "5",
+        null
+      ]
+    ],
+    "answer": "41",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "세 번째 수는 앞의 두 수에서 나와요.",
+        "두 수를 각각 제곱해서 더해요.",
+        "4² + 5² = ?"
+      ],
+      "en": [
+        "The third number comes from the first two.",
+        "Square each number and add them.",
+        "4² + 5² = ?"
+      ],
+      "ja": [
+        "3番目の数は前の2つから決まります。",
+        "それぞれの数を2乗して足します。",
+        "4² + 5² = ?"
+      ],
+      "zh": [
+        "第三个数由前两个数得出。",
+        "把两个数各自平方再相加。",
+        "4² + 5² = ?"
+      ],
+      "es": [
+        "El tercer número sale de los dos primeros.",
+        "Eleva cada número al cuadrado y súmalos.",
+        "4² + 5² = ?"
+      ],
+      "fr": [
+        "Le troisième nombre provient des deux premiers.",
+        "Élève chaque nombre au carré puis additionne.",
+        "4² + 5² = ?"
+      ],
+      "de": [
+        "Die dritte Zahl ergibt sich aus den ersten beiden.",
+        "Quadriere jede Zahl und addiere sie.",
+        "4² + 5² = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "3열 = 1열² + 2열²: 4² + 5² = 41",
+      "en": "Column 3 = column 1² + column 2²: 4² + 5² = 41",
+      "ja": "3列目 = 1列目² + 2列目²: 4² + 5² = 41",
+      "zh": "第3列 = 第1列² + 第2列²：4² + 5² = 41",
+      "es": "Columna 3 = columna 1² + columna 2²: 4² + 5² = 41",
+      "fr": "Colonne 3 = colonne 1² + colonne 2² : 4² + 5² = 41",
+      "de": "Spalte 3 = Spalte 1² + Spalte 2²: 4² + 5² = 41"
+    }
+  },
+  {
+    "id": "ch11_s14",
+    "type": "letter",
+    "chapter": 11,
+    "order": 14,
+    "tokens": [
+      "A",
+      "B",
+      "D",
+      "H",
+      null
+    ],
+    "answer": "P",
+    "inputType": "choices",
+    "choices": [
+      "P",
+      "N",
+      "O",
+      "Q"
+    ],
+    "hints": {
+      "ko": [
+        "알파벳 위치(A=1)를 숫자로 보세요.",
+        "위치가 1, 2, 4, 8 …로 두 배씩 늘어요!",
+        "16번째 글자는?"
+      ],
+      "en": [
+        "Read the alphabet positions (A=1) as numbers.",
+        "The positions double: 1, 2, 4, 8 …",
+        "What is the 16th letter?"
+      ],
+      "ja": [
+        "アルファベットの位置(A=1)を数として見ます。",
+        "位置が 1, 2, 4, 8 … と2倍ずつ増えます！",
+        "16番目の文字は?"
+      ],
+      "zh": [
+        "把字母位置（A=1）当作数字看。",
+        "位置每次翻倍：1, 2, 4, 8 …",
+        "第 16 个字母是?"
+      ],
+      "es": [
+        "Lee las posiciones del alfabeto (A=1) como números.",
+        "Las posiciones se duplican: 1, 2, 4, 8 …",
+        "¿Cuál es la 16ª letra?"
+      ],
+      "fr": [
+        "Lis les positions de l'alphabet (A=1) comme des nombres.",
+        "Les positions doublent : 1, 2, 4, 8 …",
+        "Quelle est la 16e lettre ?"
+      ],
+      "de": [
+        "Lies die Alphabet-Positionen (A=1) als Zahlen.",
+        "Die Positionen verdoppeln sich: 1, 2, 4, 8 …",
+        "Was ist der 16. Buchstabe?"
+      ]
+    },
+    "explanation": {
+      "ko": "알파벳 위치가 ×2(1,2,4,8,16): 16번째 글자 → P",
+      "en": "Alphabet positions ×2 (1,2,4,8,16): 16th letter → P",
+      "ja": "アルファベットの位置が ×2 (1,2,4,8,16): 16番目の文字 → P",
+      "zh": "字母位置 ×2（1,2,4,8,16）：第 16 个字母 → P",
+      "es": "Posiciones del alfabeto ×2 (1,2,4,8,16): 16ª letra → P",
+      "fr": "Positions de l'alphabet ×2 (1,2,4,8,16) : 16e lettre → P",
+      "de": "Alphabet-Positionen ×2 (1,2,4,8,16): 16. Buchstabe → P"
+    }
   }
 ]
