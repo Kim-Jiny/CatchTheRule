@@ -150,6 +150,7 @@ struct HomeView: View {
         case 7: return String.loc("chapter_7")
         case 8: return String.loc("chapter_8")
         case 9: return String.loc("chapter_9")
+        case 10: return String.loc("chapter_10")
         default: return String.loc("chapter_label", chapter)
         }
     }

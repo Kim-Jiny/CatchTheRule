@@ -3821,5 +3821,520 @@
       "fr": "Chaque ligne : (a+b)×2. (4+6)×2 = 20 ((3+2)×2=10, (5+1)×2=12)",
       "de": "Jede Zeile: (a+b)×2. (4+6)×2 = 20 ((3+2)×2=10, (5+1)×2=12)"
     }
+  },
+  {
+    "id": "ch10_s01",
+    "type": "sequence",
+    "chapter": 10,
+    "order": 1,
+    "tokens": [
+      "3",
+      "7",
+      "16",
+      "35",
+      "74",
+      null
+    ],
+    "answer": "153",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "앞 수에 무언가를 곱한 뒤 더해요.",
+        "×2 한 다음 1, 2, 3, 4 … 를 차례로 더해요.",
+        "74 × 2 + 5 = ?"
+      ],
+      "en": [
+        "Multiply the previous number by something, then add.",
+        "Multiply by 2, then add 1, 2, 3, 4 … in turn.",
+        "74 × 2 + 5 = ?"
+      ],
+      "ja": [
+        "前の数に何かを掛けてから足します。",
+        "×2 した後、1, 2, 3, 4 … を順に足します。",
+        "74 × 2 + 5 = ?"
+      ],
+      "zh": [
+        "把前一个数乘以某个值后再相加。",
+        "先 ×2，然后依次加 1, 2, 3, 4 …",
+        "74 × 2 + 5 = ?"
+      ],
+      "es": [
+        "Multiplica el número anterior por algo y luego suma.",
+        "×2 y luego suma 1, 2, 3, 4 … por turnos.",
+        "74 × 2 + 5 = ?"
+      ],
+      "fr": [
+        "Multiplie le nombre précédent par quelque chose, puis ajoute.",
+        "×2, puis ajoute 1, 2, 3, 4 … tour à tour.",
+        "74 × 2 + 5 = ?"
+      ],
+      "de": [
+        "Multipliziere die vorherige Zahl mit etwas und addiere dann.",
+        "×2, dann der Reihe nach 1, 2, 3, 4 … addieren.",
+        "74 × 2 + 5 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "×2 후 1씩 커지는 수를 더함: 74 × 2 + 5 = 153",
+      "en": "×2, then add a number that grows by 1 each step: 74 × 2 + 5 = 153",
+      "ja": "×2 の後、1ずつ大きくなる数を足す: 74 × 2 + 5 = 153",
+      "zh": "×2 后再加上每次增大 1 的数：74 × 2 + 5 = 153",
+      "es": "×2 y luego sumar un número que crece de 1 en 1: 74 × 2 + 5 = 153",
+      "fr": "×2, puis ajouter un nombre qui augmente de 1 à chaque fois : 74 × 2 + 5 = 153",
+      "de": "×2, dann eine Zahl addieren, die jeweils um 1 wächst: 74 × 2 + 5 = 153"
+    }
+  },
+  {
+    "id": "ch10_s02",
+    "type": "factorial",
+    "chapter": 10,
+    "order": 2,
+    "tokens": [
+      "1",
+      "2",
+      "6",
+      "24",
+      "120",
+      null
+    ],
+    "answer": "720",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "앞 수에 점점 커지는 수를 곱해요.",
+        "×2, ×3, ×4, ×5 …",
+        "120 × 6 = ?"
+      ],
+      "en": [
+        "Multiply the previous number by an increasing value.",
+        "×2, ×3, ×4, ×5 …",
+        "120 × 6 = ?"
+      ],
+      "ja": [
+        "前の数に、だんだん大きくなる数を掛けます。",
+        "×2, ×3, ×4, ×5 …",
+        "120 × 6 = ?"
+      ],
+      "zh": [
+        "把前一个数乘以越来越大的数。",
+        "×2, ×3, ×4, ×5 …",
+        "120 × 6 = ?"
+      ],
+      "es": [
+        "Multiplica el número anterior por un valor cada vez mayor.",
+        "×2, ×3, ×4, ×5 …",
+        "120 × 6 = ?"
+      ],
+      "fr": [
+        "Multiplie le nombre précédent par une valeur de plus en plus grande.",
+        "×2, ×3, ×4, ×5 …",
+        "120 × 6 = ?"
+      ],
+      "de": [
+        "Multipliziere die vorherige Zahl mit einem immer größeren Wert.",
+        "×2, ×3, ×4, ×5 …",
+        "120 × 6 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "팩토리얼(1×2×3×…): 120 × 6 = 720",
+      "en": "Factorial (1×2×3×…): 120 × 6 = 720",
+      "ja": "階乗（1×2×3×…）: 120 × 6 = 720",
+      "zh": "阶乘（1×2×3×…）：120 × 6 = 720",
+      "es": "Factorial (1×2×3×…): 120 × 6 = 720",
+      "fr": "Factorielle (1×2×3×…) : 120 × 6 = 720",
+      "de": "Fakultät (1×2×3×…): 120 × 6 = 720"
+    }
+  },
+  {
+    "id": "ch10_s03",
+    "type": "power",
+    "chapter": 10,
+    "order": 3,
+    "tokens": [
+      "1",
+      "4",
+      "27",
+      "256",
+      null
+    ],
+    "answer": "3125",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "각 수는 자기 자신을 거듭제곱한 값이에요.",
+        "1¹, 2², 3³, 4⁴ …",
+        "5⁵ = ?"
+      ],
+      "en": [
+        "Each number is itself raised to its own power.",
+        "1¹, 2², 3³, 4⁴ …",
+        "5⁵ = ?"
+      ],
+      "ja": [
+        "各数は、自分自身を自分の回数だけ累乗した値です。",
+        "1¹, 2², 3³, 4⁴ …",
+        "5⁵ = ?"
+      ],
+      "zh": [
+        "每个数都是它自身的自身次方。",
+        "1¹, 2², 3³, 4⁴ …",
+        "5⁵ = ?"
+      ],
+      "es": [
+        "Cada número es él mismo elevado a su propia potencia.",
+        "1¹, 2², 3³, 4⁴ …",
+        "5⁵ = ?"
+      ],
+      "fr": [
+        "Chaque nombre est lui-même élevé à sa propre puissance.",
+        "1¹, 2², 3³, 4⁴ …",
+        "5⁵ = ?"
+      ],
+      "de": [
+        "Jede Zahl ist sich selbst mit der eigenen Anzahl potenziert.",
+        "1¹, 2², 3³, 4⁴ …",
+        "5⁵ = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "n의 n제곱(nⁿ): 5⁵ = 3125",
+      "en": "n to the power of n (nⁿ): 5⁵ = 3125",
+      "ja": "n の n 乗（nⁿ）: 5⁵ = 3125",
+      "zh": "n 的 n 次方（nⁿ）：5⁵ = 3125",
+      "es": "n elevado a n (nⁿ): 5⁵ = 3125",
+      "fr": "n à la puissance n (nⁿ) : 5⁵ = 3125",
+      "de": "n hoch n (nⁿ): 5⁵ = 3125"
+    }
+  },
+  {
+    "id": "ch10_s04",
+    "type": "sequence",
+    "chapter": 10,
+    "order": 4,
+    "tokens": [
+      "1",
+      "1",
+      "2",
+      "4",
+      "7",
+      "13",
+      null
+    ],
+    "answer": "24",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "바로 앞의 여러 항을 더해요.",
+        "앞의 세 수를 더한 값이에요.",
+        "4 + 7 + 13 = ?"
+      ],
+      "en": [
+        "Add several of the immediately preceding terms.",
+        "It's the sum of the previous three numbers.",
+        "4 + 7 + 13 = ?"
+      ],
+      "ja": [
+        "直前のいくつかの項を足します。",
+        "前の3つの数を足した値です。",
+        "4 + 7 + 13 = ?"
+      ],
+      "zh": [
+        "把紧挨着前面的几项相加。",
+        "它是前三个数之和。",
+        "4 + 7 + 13 = ?"
+      ],
+      "es": [
+        "Suma varios de los términos inmediatamente anteriores.",
+        "Es la suma de los tres números anteriores.",
+        "4 + 7 + 13 = ?"
+      ],
+      "fr": [
+        "Additionne plusieurs des termes qui précèdent directement.",
+        "C'est la somme des trois nombres précédents.",
+        "4 + 7 + 13 = ?"
+      ],
+      "de": [
+        "Addiere mehrere der unmittelbar vorhergehenden Glieder.",
+        "Es ist die Summe der vorherigen drei Zahlen.",
+        "4 + 7 + 13 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "앞 세 수의 합(트리보나치): 4 + 7 + 13 = 24",
+      "en": "Sum of the previous three numbers (Tribonacci): 4 + 7 + 13 = 24",
+      "ja": "前の3つの数の合計（トリボナッチ）: 4 + 7 + 13 = 24",
+      "zh": "前三个数之和（三阶斐波那契）：4 + 7 + 13 = 24",
+      "es": "Suma de los tres números anteriores (Tribonacci): 4 + 7 + 13 = 24",
+      "fr": "Somme des trois nombres précédents (Tribonacci) : 4 + 7 + 13 = 24",
+      "de": "Summe der vorherigen drei Zahlen (Tribonacci): 4 + 7 + 13 = 24"
+    }
+  },
+  {
+    "id": "ch10_s05",
+    "type": "formula",
+    "chapter": 10,
+    "order": 5,
+    "tokens": [
+      "2",
+      "12",
+      "36",
+      "80",
+      "150",
+      null
+    ],
+    "answer": "252",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "순서 번호 n과 관련이 있어요.",
+        "n × n × (n+1) 규칙이에요.",
+        "6 × 6 × 7 = ?"
+      ],
+      "en": [
+        "It's related to the position number n.",
+        "The rule is n × n × (n+1).",
+        "6 × 6 × 7 = ?"
+      ],
+      "ja": [
+        "順番の番号 n と関係があります。",
+        "n × n × (n+1) という規則です。",
+        "6 × 6 × 7 = ?"
+      ],
+      "zh": [
+        "它和序号 n 有关。",
+        "规则是 n × n × (n+1)。",
+        "6 × 6 × 7 = ?"
+      ],
+      "es": [
+        "Está relacionado con el número de posición n.",
+        "La regla es n × n × (n+1).",
+        "6 × 6 × 7 = ?"
+      ],
+      "fr": [
+        "C'est lié au numéro de position n.",
+        "La règle est n × n × (n+1).",
+        "6 × 6 × 7 = ?"
+      ],
+      "de": [
+        "Es hängt mit der Positionsnummer n zusammen.",
+        "Die Regel lautet n × n × (n+1).",
+        "6 × 6 × 7 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "n²(n+1): 6² × 7 = 252",
+      "en": "n²(n+1): 6² × 7 = 252",
+      "ja": "n²(n+1): 6² × 7 = 252",
+      "zh": "n²(n+1)：6² × 7 = 252",
+      "es": "n²(n+1): 6² × 7 = 252",
+      "fr": "n²(n+1) : 6² × 7 = 252",
+      "de": "n²(n+1): 6² × 7 = 252"
+    }
+  },
+  {
+    "id": "ch10_s06",
+    "type": "matrix",
+    "chapter": 10,
+    "order": 6,
+    "grid": [
+      [
+        "3",
+        "5",
+        "7"
+      ],
+      [
+        "9",
+        "25",
+        null
+      ]
+    ],
+    "answer": "49",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "위아래 두 줄의 관계를 보세요.",
+        "아랫줄은 윗줄을 제곱한 값이에요.",
+        "7² = ?"
+      ],
+      "en": [
+        "Look at the relationship between the top and bottom rows.",
+        "The bottom row is the top row squared.",
+        "7² = ?"
+      ],
+      "ja": [
+        "上下2つの行の関係を見てください。",
+        "下の行は上の行を2乗した値です。",
+        "7² = ?"
+      ],
+      "zh": [
+        "看看上下两行之间的关系。",
+        "下面一行是上面一行的平方。",
+        "7² = ?"
+      ],
+      "es": [
+        "Observa la relación entre la fila de arriba y la de abajo.",
+        "La fila de abajo es la fila de arriba al cuadrado.",
+        "7² = ?"
+      ],
+      "fr": [
+        "Observe la relation entre la ligne du haut et celle du bas.",
+        "La ligne du bas est la ligne du haut au carré.",
+        "7² = ?"
+      ],
+      "de": [
+        "Betrachte die Beziehung zwischen oberer und unterer Zeile.",
+        "Die untere Zeile ist die obere Zeile zum Quadrat.",
+        "7² = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "아랫줄 = 윗줄의 제곱: 7² = 49",
+      "en": "Bottom row = top row squared: 7² = 49",
+      "ja": "下の行 = 上の行の2乗: 7² = 49",
+      "zh": "下行 = 上行的平方：7² = 49",
+      "es": "Fila de abajo = fila de arriba al cuadrado: 7² = 49",
+      "fr": "Ligne du bas = ligne du haut au carré : 7² = 49",
+      "de": "Untere Zeile = obere Zeile zum Quadrat: 7² = 49"
+    }
+  },
+  {
+    "id": "ch10_s07",
+    "type": "letter",
+    "chapter": 10,
+    "order": 7,
+    "tokens": [
+      "O",
+      "T",
+      "T",
+      "F",
+      "F",
+      "S",
+      "S",
+      null
+    ],
+    "answer": "E",
+    "inputType": "choices",
+    "choices": [
+      "E",
+      "N",
+      "T",
+      "O"
+    ],
+    "hints": {
+      "ko": [
+        "글자는 어떤 단어들의 첫 글자예요.",
+        "One, Two, Three, Four … 의 첫 글자!",
+        "Seven 다음은 Eight."
+      ],
+      "en": [
+        "The letters are the first letters of certain words.",
+        "The first letters of One, Two, Three, Four …!",
+        "After Seven comes Eight."
+      ],
+      "ja": [
+        "文字は、ある単語の頭文字です。",
+        "One, Two, Three, Four … の頭文字！",
+        "Seven の次は Eight。"
+      ],
+      "zh": [
+        "这些字母是某些单词的首字母。",
+        "One, Two, Three, Four … 的首字母！",
+        "Seven 之后是 Eight。"
+      ],
+      "es": [
+        "Las letras son las iniciales de ciertas palabras.",
+        "¡Las iniciales de One, Two, Three, Four …!",
+        "Después de Seven viene Eight."
+      ],
+      "fr": [
+        "Les lettres sont les initiales de certains mots.",
+        "Les initiales de One, Two, Three, Four … !",
+        "Après Seven vient Eight."
+      ],
+      "de": [
+        "Die Buchstaben sind die Anfangsbuchstaben bestimmter Wörter.",
+        "Die Anfangsbuchstaben von One, Two, Three, Four …!",
+        "Nach Seven kommt Eight."
+      ]
+    },
+    "explanation": {
+      "ko": "1~8 영어 단어의 첫 글자: One Two Three Four Five Six Seven Eight → E",
+      "en": "First letters of the English words 1–8: One Two Three Four Five Six Seven Eight → E",
+      "ja": "1～8の英単語の頭文字: One Two Three Four Five Six Seven Eight → E",
+      "zh": "1～8 英文单词的首字母：One Two Three Four Five Six Seven Eight → E",
+      "es": "Iniciales de las palabras inglesas del 1 al 8: One Two Three Four Five Six Seven Eight → E",
+      "fr": "Initiales des mots anglais de 1 à 8 : One Two Three Four Five Six Seven Eight → E",
+      "de": "Anfangsbuchstaben der englischen Wörter 1–8: One Two Three Four Five Six Seven Eight → E"
+    }
+  },
+  {
+    "id": "ch10_s08",
+    "type": "sequence",
+    "chapter": 10,
+    "order": 8,
+    "tokens": [
+      "3",
+      "8",
+      "15",
+      "24",
+      "35",
+      null
+    ],
+    "answer": "48",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "제곱수 바로 아래 수예요.",
+        "n² − 1 규칙: 2²−1, 3²−1 …",
+        "7² − 1 = ?"
+      ],
+      "en": [
+        "Each is the number just below a perfect square.",
+        "Rule n² − 1: 2²−1, 3²−1 …",
+        "7² − 1 = ?"
+      ],
+      "ja": [
+        "平方数のすぐ下の数です。",
+        "n² − 1 の規則: 2²−1, 3²−1 …",
+        "7² − 1 = ?"
+      ],
+      "zh": [
+        "每个数都是平方数下面紧挨着的数。",
+        "规则 n² − 1：2²−1, 3²−1 …",
+        "7² − 1 = ?"
+      ],
+      "es": [
+        "Cada uno es el número justo debajo de un cuadrado perfecto.",
+        "Regla n² − 1: 2²−1, 3²−1 …",
+        "7² − 1 = ?"
+      ],
+      "fr": [
+        "Chacun est le nombre juste en dessous d'un carré parfait.",
+        "Règle n² − 1 : 2²−1, 3²−1 …",
+        "7² − 1 = ?"
+      ],
+      "de": [
+        "Jede ist die Zahl direkt unter einer Quadratzahl.",
+        "Regel n² − 1: 2²−1, 3²−1 …",
+        "7² − 1 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "n² − 1: 7² − 1 = 48",
+      "en": "n² − 1: 7² − 1 = 48",
+      "ja": "n² − 1: 7² − 1 = 48",
+      "zh": "n² − 1：7² − 1 = 48",
+      "es": "n² − 1: 7² − 1 = 48",
+      "fr": "n² − 1 : 7² − 1 = 48",
+      "de": "n² − 1: 7² − 1 = 48"
+    }
   }
 ]
