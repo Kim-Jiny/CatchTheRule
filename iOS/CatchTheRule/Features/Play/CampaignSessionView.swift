@@ -3,6 +3,7 @@ import SwiftUI
 /// 캠페인 플레이: 시작 인덱스부터 순차로 퍼즐을 풀어나간다.
 struct CampaignSessionView: View {
     @Environment(ProgressStore.self) private var progress
+    @Environment(StoreManager.self) private var store
     @Environment(\.dismiss) private var dismiss
 
     private let puzzles = PuzzleStore.shared.puzzles
@@ -14,6 +15,7 @@ struct CampaignSessionView: View {
     @State private var reveal = false
     @State private var shake: CGFloat = 0
     @State private var solved = false       // 현재 퍼즐 정답 처리 완료
+    @State private var showHintShop = false // 힌트 0개일 때 광고/구매 팝업
 
     init(startIndex: Int) {
         _index = State(initialValue: max(0, startIndex))
@@ -41,6 +43,10 @@ struct CampaignSessionView: View {
         }
         .animation(.spring(response: 0.35, dampingFraction: 0.55), value: feedback)
         .toolbar(.hidden, for: .navigationBar)
+        .sheet(isPresented: $showHintShop) {
+            HintShopSheet()
+                .preferredColorScheme(.dark)
+        }
     }
 
     // MARK: - Content
@@ -132,22 +138,27 @@ struct CampaignSessionView: View {
     }
 
     private func hintButton(for puzzle: Puzzle) -> some View {
-        let canHint = hintsShown < puzzle.localizedHints.count && progress.hintsRemaining > 0 && !solved
+        // 이 퍼즐에 더 보여줄 힌트가 있고 아직 못 풀었으면 활성. 잔여 0이면 탭 시 구매 팝업.
+        let hasMore = hintsShown < puzzle.localizedHints.count && !solved
         return Button {
-            useHint(for: puzzle)
+            if progress.hintsRemaining > 0 {
+                useHint(for: puzzle)
+            } else {
+                showHintShop = true
+            }
         } label: {
             HStack(spacing: 4) {
                 Image(systemName: "lightbulb")
                 Text("\(progress.hintsRemaining)")
             }
             .font(.system(size: 13, weight: .semibold))
-            .foregroundStyle(canHint ? Theme.star : Theme.textTertiary)
+            .foregroundStyle(hasMore ? Theme.star : Theme.textTertiary)
             .frame(height: 38)
             .padding(.horizontal, 12)
             .card(cornerRadius: 12)
         }
         .buttonStyle(.plain)
-        .disabled(!canHint)
+        .disabled(!hasMore)
     }
 
     private func useHint(for puzzle: Puzzle) {
@@ -219,6 +230,87 @@ struct CampaignSessionView: View {
             reveal = false
             solved = false
         }
+    }
+}
+
+// MARK: - 힌트 상점(부족 시)
+
+/// 힌트가 0개일 때 뜨는 "광고 볼래? / 구매할래?" 팝업.
+/// 광고는 아직 미연동이라 "준비중"(비활성), 구매는 즉시 동작.
+struct HintShopSheet: View {
+    @Environment(StoreManager.self) private var store
+    @Environment(ProgressStore.self) private var progress
+    @Environment(\.dismiss) private var dismiss
+
+    var body: some View {
+        ZStack {
+            ScreenBackground()
+            ScrollView {
+                VStack(spacing: 14) {
+                    Image(systemName: "lightbulb.slash.fill")
+                        .font(.system(size: 44))
+                        .foregroundStyle(Theme.star)
+                        .padding(.top, 12)
+                    Text(String.loc("iap_need_hints_title"))
+                        .font(.system(size: 20, weight: .bold))
+                        .foregroundStyle(Theme.textPrimary)
+                    Text(String.loc("iap_need_hints_msg"))
+                        .font(.system(size: 14))
+                        .foregroundStyle(Theme.textSecondary)
+                        .multilineTextAlignment(.center)
+                        .padding(.bottom, 4)
+
+                    // 광고 보고 받기 (준비중)
+                    HStack(spacing: 10) {
+                        Image(systemName: "play.rectangle.fill")
+                        Text(String.loc("iap_watch_ad"))
+                        Spacer()
+                        Text(String.loc("iap_coming_soon"))
+                            .font(.system(size: 12))
+                            .foregroundStyle(Theme.textTertiary)
+                    }
+                    .font(.system(size: 16, weight: .semibold))
+                    .foregroundStyle(Theme.textSecondary)
+                    .padding(16)
+                    .frame(maxWidth: .infinity)
+                    .card()
+                    .opacity(0.55)
+
+                    // 힌트 구매 (4 티어)
+                    ForEach(StoreManager.hintTiers, id: \.self) { n in
+                        Button {
+                            Task {
+                                let granted = await store.purchaseHints(n)
+                                if granted > 0 {
+                                    progress.hintsRemaining += granted
+                                    dismiss()
+                                }
+                            }
+                        } label: {
+                            HStack(spacing: 10) {
+                                Image(systemName: "lightbulb.fill").foregroundStyle(Theme.star)
+                                Text(String.loc("iap_hints_n", n)).foregroundStyle(Theme.textPrimary)
+                                Spacer()
+                                Text(store.hintsPrice(n).isEmpty ? String.loc("iap_loading") : store.hintsPrice(n))
+                                    .foregroundStyle(Theme.accent2)
+                            }
+                            .font(.system(size: 16, weight: .semibold))
+                            .padding(16)
+                            .frame(maxWidth: .infinity)
+                            .card()
+                        }
+                        .buttonStyle(.plain)
+                    }
+
+                    Button(String.loc("close")) { dismiss() }
+                        .font(.system(size: 15))
+                        .foregroundStyle(Theme.textSecondary)
+                        .padding(.top, 6)
+                }
+                .padding(24)
+            }
+        }
+        .presentationDetents([.medium, .large])
     }
 }
 

@@ -102,6 +102,10 @@ T = {
  "iap_loading": ["Loading…","불러오는 중…","読み込み中…","加载中…","Cargando…","Chargement…","Wird geladen…"],
  "iap_buy_hints": ["Buy Hints","힌트 구매","ヒントを購入","购买提示","Comprar pistas","Acheter des indices","Tipps kaufen"],
  "iap_hints_n": ["%d Hints","힌트 %d개","ヒント%d個","%d个提示","%d pistas","%d indices","%d Tipps"],
+ "iap_need_hints_title": ["Out of hints","힌트가 떨어졌어요","ヒントがありません","提示用完了","Sin pistas","Plus d'indices","Keine Tipps mehr"],
+ "iap_need_hints_msg": ["Watch an ad or buy hints to keep going.","광고를 보거나 힌트를 구매해 이어가세요.","広告を見るかヒントを購入して続けよう。","看广告或购买提示来继续。","Mira un anuncio o compra pistas para continuar.","Regardez une pub ou achetez des indices pour continuer.","Sieh dir Werbung an oder kaufe Tipps, um weiterzuspielen."],
+ "iap_watch_ad": ["Watch an ad","광고 보고 받기","広告を見て獲得","看广告获取","Ver un anuncio","Regarder une pub","Werbung ansehen"],
+ "iap_coming_soon": ["Coming soon","준비중","準備中","即将推出","Próximamente","Bientôt","Demnächst"],
  "iap_hints_desc": ["Get a pack of hints","힌트 묶음 받기","ヒントパックを入手","获取提示包","Consigue un paquete de pistas","Obtenez un pack d'indices","Ein Tipp-Paket erhalten"],
  "iap_hints_added": ["Hints added!","힌트가 추가됐어요!","ヒントを追加しました！","已添加提示！","¡Pistas añadidas!","Indices ajoutés !","Tipps hinzugefügt!"],
 }

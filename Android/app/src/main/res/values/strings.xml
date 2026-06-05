@@ -83,6 +83,10 @@
     <string name="iap_loading">Loading…</string>
     <string name="iap_buy_hints">Buy Hints</string>
     <string name="iap_hints_n">%d Hints</string>
+    <string name="iap_need_hints_title">Out of hints</string>
+    <string name="iap_need_hints_msg">Watch an ad or buy hints to keep going.</string>
+    <string name="iap_watch_ad">Watch an ad</string>
+    <string name="iap_coming_soon">Coming soon</string>
     <string name="iap_hints_desc">Get a pack of hints</string>
     <string name="iap_hints_added">Hints added!</string>
 </resources>

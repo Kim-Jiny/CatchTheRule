@@ -33,13 +33,18 @@ import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import android.app.Activity
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.window.Dialog
+import com.jiny.catchtherule.data.BillingManager
+import com.jiny.catchtherule.data.LocalBilling
 import com.jiny.catchtherule.R
 import com.jiny.catchtherule.core.PuzzleStore
 import com.jiny.catchtherule.core.model.InputType
@@ -54,6 +59,7 @@ import kotlinx.coroutines.delay
 @Composable
 fun CampaignSessionScreen(onClose: () -> Unit) {
     val progress = LocalProgress.current
+    val billing = LocalBilling.current
     val store = PuzzleStore.get(LocalContext.current)
     val puzzles = store.puzzles
 
@@ -63,6 +69,7 @@ fun CampaignSessionScreen(onClose: () -> Unit) {
     var feedback by remember { mutableStateOf<AnswerFeedback?>(null) }
     var reveal by remember { mutableStateOf(false) }
     var solved by remember { mutableStateOf(false) }
+    var showHintShop by remember { mutableStateOf(false) }
 
     val puzzle: Puzzle? = puzzles.getOrNull(index)
 
@@ -102,9 +109,13 @@ fun CampaignSessionScreen(onClose: () -> Unit) {
                 Box(Modifier.weight(1f))
                 HintButton(
                     remaining = progress.hintsRemaining,
-                    enabled = hintsShown < puzzle.localizedHints.size && progress.hintsRemaining > 0 && !solved,
+                    enabled = hintsShown < puzzle.localizedHints.size && !solved,
                 ) {
-                    if (hintsShown < puzzle.localizedHints.size && progress.spendHint()) hintsShown += 1
+                    if (progress.hintsRemaining > 0) {
+                        if (progress.spendHint()) hintsShown += 1
+                    } else {
+                        showHintShop = true
+                    }
                 }
             }
 
@@ -158,6 +169,62 @@ fun CampaignSessionScreen(onClose: () -> Unit) {
                 enter = scaleIn(initialScale = 0.5f) + fadeIn(),
                 exit = scaleOut(targetScale = 0.5f) + fadeOut(),
             ) { CorrectBadge() }
+        }
+
+        if (showHintShop) {
+            HintShopDialog(billing = billing) { showHintShop = false }
+        }
+    }
+}
+
+/** 힌트 0개일 때 뜨는 "광고 볼래?/구매할래?" 팝업. 광고는 준비중(비활성), 구매는 즉시 동작. */
+@Composable
+private fun HintShopDialog(billing: BillingManager, onDismiss: () -> Unit) {
+    val activity = LocalContext.current as? Activity
+    Dialog(onDismissRequest = onDismiss) {
+        Column(
+            Modifier.fillMaxWidth().card(20.dp).padding(20.dp),
+            verticalArrangement = Arrangement.spacedBy(12.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+        ) {
+            Icon(Icons.Filled.Lightbulb, null, tint = AppColors.Star, modifier = Modifier.size(40.dp))
+            Text(stringResource(R.string.iap_need_hints_title), color = AppColors.TextPrimary, fontSize = 19.sp, fontWeight = FontWeight.Bold)
+            Text(stringResource(R.string.iap_need_hints_msg), color = AppColors.TextSecondary, fontSize = 13.sp, textAlign = TextAlign.Center)
+
+            // 광고 보고 받기 (준비중)
+            Row(
+                Modifier.fillMaxWidth().card().padding(14.dp),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Text(stringResource(R.string.iap_watch_ad), color = AppColors.TextTertiary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold)
+                Box(Modifier.weight(1f))
+                Text(stringResource(R.string.iap_coming_soon), color = AppColors.TextTertiary, fontSize = 12.sp)
+            }
+
+            // 힌트 구매 (4 티어)
+            BillingManager.HINT_TIERS.forEach { n ->
+                Row(
+                    Modifier.fillMaxWidth().card().clickable {
+                        activity?.let { billing.purchase(it, BillingManager.hintsId(n)); onDismiss() }
+                    }.padding(14.dp),
+                    verticalAlignment = Alignment.CenterVertically,
+                ) {
+                    Icon(Icons.Filled.Lightbulb, null, tint = AppColors.Star, modifier = Modifier.size(18.dp))
+                    Box(Modifier.size(8.dp))
+                    Text(stringResource(R.string.iap_hints_n, n), color = AppColors.TextPrimary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold)
+                    Box(Modifier.weight(1f))
+                    Text(
+                        billing.hintsPrices[n].orEmpty().ifEmpty { stringResource(R.string.iap_loading) },
+                        color = AppColors.Accent2, fontSize = 14.sp, fontWeight = FontWeight.SemiBold,
+                    )
+                }
+            }
+
+            Text(
+                stringResource(R.string.close),
+                color = AppColors.TextSecondary, fontSize = 14.sp,
+                modifier = Modifier.clickable { onDismiss() }.padding(8.dp),
+            )
         }
     }
 }
