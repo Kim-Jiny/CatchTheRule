@@ -25,7 +25,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "找规律"
+            "value": "发现规律"
           }
         },
         "es": {
@@ -37,7 +37,7 @@
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Trouve la Règle"
+            "value": "Trouve le Motif"
           }
         },
         "de": {
@@ -3287,6 +3287,53 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ausstehend"
+          }
+        }
+      }
+    },
+    "support": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Support"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "고객지원"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サポート"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "客户支持"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soporte"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Assistance"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Support"
           }
         }
       }

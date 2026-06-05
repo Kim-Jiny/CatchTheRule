@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">找规律</string>
+    <string name="app_name">发现规律</string>
     <string name="tab_home">主页</string>
     <string name="tab_challenge">挑战</string>
     <string name="tab_settings">设置</string>
@@ -70,4 +70,5 @@
     <string name="admin_reply">官方回复</string>
     <string name="status_replied">已回复</string>
     <string name="status_pending">待回复</string>
+    <string name="support">客户支持</string>
 </resources>

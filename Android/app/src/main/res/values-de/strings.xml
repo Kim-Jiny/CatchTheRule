@@ -70,4 +70,5 @@
     <string name="admin_reply">Antwort vom Team</string>
     <string name="status_replied">Beantwortet</string>
     <string name="status_pending">Ausstehend</string>
+    <string name="support">Support</string>
 </resources>

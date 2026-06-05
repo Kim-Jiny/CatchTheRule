@@ -70,4 +70,5 @@
     <string name="admin_reply">Reply from us</string>
     <string name="status_replied">Replied</string>
     <string name="status_pending">Pending</string>
+    <string name="support">Support</string>
 </resources>

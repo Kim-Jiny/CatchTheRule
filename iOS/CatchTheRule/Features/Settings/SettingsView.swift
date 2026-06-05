@@ -10,6 +10,8 @@ struct SettingsView: View {
     private let contactEmail = "kjinyz@naver.com"
     private let termsURL = "https://duo.jiny.shop/ctr/terms"
     private let privacyURL = "https://duo.jiny.shop/ctr/privacy"
+    private let supportURL = "https://duo.jiny.shop/ctr/support"
+    private var langCode: String { Locale.current.language.languageCode?.identifier ?? "en" }
     private var appVersion: String {
         Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
     }
@@ -91,12 +93,16 @@ struct SettingsView: View {
                 showInquiry = true
             }
             Divider().overlay(Theme.stroke)
+            SettingsRow(icon: "questionmark.circle.fill", title: String.loc("support"), value: nil) {
+                openURL("\(supportURL)?lang=\(langCode)")
+            }
+            Divider().overlay(Theme.stroke)
             SettingsRow(icon: "doc.text.fill", title: String.loc("terms"), value: nil) {
-                openURL(termsURL)
+                openURL("\(termsURL)?lang=\(langCode)")
             }
             Divider().overlay(Theme.stroke)
             SettingsRow(icon: "hand.raised.fill", title: String.loc("privacy"), value: nil) {
-                openURL(privacyURL)
+                openURL("\(privacyURL)?lang=\(langCode)")
             }
         }
         .card()

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Trouve la Règle</string>
+    <string name="app_name">Trouve le Motif</string>
     <string name="tab_home">Accueil</string>
     <string name="tab_challenge">Défi</string>
     <string name="tab_settings">Réglages</string>
@@ -70,4 +70,5 @@
     <string name="admin_reply">Réponse de l\'équipe</string>
     <string name="status_replied">Répondu</string>
     <string name="status_pending">En attente</string>
+    <string name="support">Assistance</string>
 </resources>

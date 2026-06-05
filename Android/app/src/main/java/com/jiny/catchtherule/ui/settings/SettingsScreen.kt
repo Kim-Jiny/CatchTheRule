@@ -18,6 +18,7 @@ import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Description
 import androidx.compose.material.icons.filled.Email
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Lightbulb
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.PrivacyTip
@@ -54,11 +55,13 @@ private const val CONTACT_EMAIL = "kjinyz@naver.com"
 private const val APP_VERSION = "1.0"
 private const val TERMS_URL = "https://duo.jiny.shop/ctr/terms"
 private const val PRIVACY_URL = "https://duo.jiny.shop/ctr/privacy"
+private const val SUPPORT_URL = "https://duo.jiny.shop/ctr/support"
 
 @Composable
 fun SettingsScreen(modifier: Modifier = Modifier) {
     val progress = LocalProgress.current
     val context = LocalContext.current
+    val langCode = java.util.Locale.getDefault().language
     var showReset by remember { mutableStateOf(false) }
     var showNickname by remember { mutableStateOf(false) }
     var draftNick by remember { mutableStateOf("") }
@@ -98,12 +101,16 @@ fun SettingsScreen(modifier: Modifier = Modifier) {
                     showInquiry = true
                 }
                 RowDivider()
+                SettingsRow(Icons.Filled.Info, stringResource(R.string.support), null) {
+                    runCatching { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("$SUPPORT_URL?lang=$langCode"))) }
+                }
+                RowDivider()
                 SettingsRow(Icons.Filled.Description, stringResource(R.string.terms), null) {
-                    runCatching { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(TERMS_URL))) }
+                    runCatching { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("$TERMS_URL?lang=$langCode"))) }
                 }
                 RowDivider()
                 SettingsRow(Icons.Filled.PrivacyTip, stringResource(R.string.privacy), null) {
-                    runCatching { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(PRIVACY_URL))) }
+                    runCatching { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("$PRIVACY_URL?lang=$langCode"))) }
                 }
             }
 
