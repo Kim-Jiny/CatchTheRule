@@ -7,7 +7,6 @@ struct SettingsView: View {
     @State private var draftNickname = ""
     @State private var showInquiry = false
 
-    private let contactEmail = "kjinyz@naver.com"
     private let termsURL = "https://duo.jiny.shop/ctr/terms"
     private let privacyURL = "https://duo.jiny.shop/ctr/privacy"
     private let supportURL = "https://duo.jiny.shop/ctr/support"
@@ -138,21 +137,6 @@ struct SettingsView: View {
     }
     private var bindingHaptics: Binding<Bool> {
         Binding(get: { progress.hapticsOn }, set: { progress.hapticsOn = $0 })
-    }
-
-    private func openMail() {
-        let subject = "CatchTheRule 문의"
-        let body = "\n\n----\n앱 버전: \(appVersion)"
-        var comps = URLComponents()
-        comps.scheme = "mailto"
-        comps.path = contactEmail
-        comps.queryItems = [
-            URLQueryItem(name: "subject", value: subject),
-            URLQueryItem(name: "body", value: body),
-        ]
-        if let url = comps.url {
-            UIApplication.shared.open(url)
-        }
     }
 
     private func openURL(_ string: String) {
