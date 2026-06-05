@@ -25,7 +25,7 @@ class ProgressStore(context: Context) {
 
     var currentIndex by mutableIntStateOf(prefs.getInt(K_INDEX, 0))
         private set
-    var hintsRemaining by mutableIntStateOf(prefs.getInt(K_HINTS, DAILY_HINTS))
+    var hintsRemaining by mutableIntStateOf(prefs.getInt(K_HINTS, INITIAL_HINTS))
         private set
     var bestTimeAttack by mutableIntStateOf(prefs.getInt(K_BEST, 0))
         private set
@@ -98,12 +98,12 @@ class ProgressStore(context: Context) {
     fun resetProgress() {
         currentIndex = 0
         stars = emptyMap()
-        hintsRemaining = DAILY_HINTS
+        hintsRemaining = INITIAL_HINTS
         bestTimeAttack = 0
         prefs.edit()
             .putInt(K_INDEX, 0)
             .remove(K_STARS)
-            .putInt(K_HINTS, DAILY_HINTS)
+            .putInt(K_HINTS, INITIAL_HINTS)
             .putInt(K_BEST, 0)
             .apply()
     }
@@ -114,7 +114,7 @@ class ProgressStore(context: Context) {
     }
 
     companion object {
-        const val DAILY_HINTS = 5
+        const val INITIAL_HINTS = 3
         private const val K_INDEX = "currentIndex"
         private const val K_STARS = "stars"
         private const val K_HINTS = "hintsRemaining"

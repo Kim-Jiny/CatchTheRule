@@ -21,7 +21,7 @@ final class ProgressStore {
         self.defaults = defaults
         currentIndex = defaults.integer(forKey: Keys.currentIndex)
         stars = (defaults.dictionary(forKey: Keys.stars) as? [String: Int]) ?? [:]
-        hintsRemaining = defaults.object(forKey: Keys.hints) as? Int ?? Self.dailyHintGrant
+        hintsRemaining = defaults.object(forKey: Keys.hints) as? Int ?? Self.initialHintGrant
         nickname = defaults.string(forKey: Keys.nickname) ?? ""
         soundOn = defaults.object(forKey: Keys.sound) as? Bool ?? true
         hapticsOn = defaults.object(forKey: Keys.haptics) as? Bool ?? true
@@ -63,11 +63,11 @@ final class ProgressStore {
     func resetProgress() {
         currentIndex = 0
         stars = [:]
-        hintsRemaining = Self.dailyHintGrant
+        hintsRemaining = Self.initialHintGrant
         bestTimeAttack = 0
     }
 
-    static let dailyHintGrant = 5
+    static let initialHintGrant = 3
 
     private enum Keys {
         static let currentIndex = "currentIndex"
