@@ -31,10 +31,10 @@ struct HomeView: View {
 
     private var title: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text("규칙찾기")
+            Text(String.loc("app_name"))
                 .font(.system(size: 30, weight: .bold, design: .rounded))
                 .foregroundStyle(Theme.textPrimary)
-            Text("패턴을 발견하고 다음을 맞혀보세요")
+            Text(String.loc("home_subtitle"))
                 .font(.system(size: 15))
                 .foregroundStyle(Theme.textSecondary)
         }
@@ -46,15 +46,15 @@ struct HomeView: View {
         VStack(alignment: .leading, spacing: 18) {
             HStack {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text(progress.isCampaignFinished ? "전체 클리어" : "현재 도전")
+                    Text(String.loc(progress.isCampaignFinished ? "home_all_clear" : "home_current"))
                         .font(.system(size: 13, weight: .semibold))
                         .foregroundStyle(Theme.textSecondary)
                     if let p = position, !progress.isCampaignFinished {
-                        Text("Chapter \(p.chapter) · Stage \(p.stage)")
+                        Text(String.loc("chapter_label", p.chapter) + " · " + String.loc("stage_label", p.stage))
                             .font(.system(size: 22, weight: .bold, design: .rounded))
                             .foregroundStyle(Theme.textPrimary)
                     } else {
-                        Text("축하해요! 🎉")
+                        Text(String.loc("home_congrats"))
                             .font(.system(size: 22, weight: .bold, design: .rounded))
                             .foregroundStyle(Theme.textPrimary)
                     }
@@ -80,12 +80,12 @@ struct HomeView: View {
                 Text("\(progress.totalStars)")
                     .fontWeight(.semibold)
                     .foregroundStyle(Theme.textPrimary)
-                Text("/ \(progress.maxStars) 별")
+                Text(String.loc("stars_of_max", progress.maxStars))
                     .foregroundStyle(Theme.textTertiary)
             }
             .font(.system(size: 14))
 
-            PrimaryButton(progress.isCampaignFinished ? "다시 도전" : "이어하기",
+            PrimaryButton(String.loc(progress.isCampaignFinished ? "home_retry" : "home_continue"),
                           systemImage: "play.fill") {
                 playing = true
             }
@@ -96,7 +96,7 @@ struct HomeView: View {
 
     private var chapterList: some View {
         VStack(alignment: .leading, spacing: 12) {
-            SectionHeader(title: "챕터")
+            SectionHeader(title: String.loc("chapters"))
             ForEach(PuzzleStore.shared.chapters, id: \.self) { chapter in
                 chapterRow(chapter)
             }
@@ -123,7 +123,7 @@ struct HomeView: View {
                 Text(chapterTitle(chapter))
                     .font(.system(size: 16, weight: .semibold))
                     .foregroundStyle(Theme.textPrimary)
-                Text("\(items.count)단계")
+                Text(String.loc("chapter_stages", items.count))
                     .font(.system(size: 13))
                     .foregroundStyle(Theme.textTertiary)
             }
@@ -141,16 +141,16 @@ struct HomeView: View {
 
     private func chapterTitle(_ chapter: Int) -> String {
         switch chapter {
-        case 1: return "기초 패턴"
-        case 2: return "곱셈과 제곱"
-        case 3: return "수학 수열"
-        case 4: return "문자 패턴"
-        case 5: return "모양 찾기"
-        case 6: return "고급"
-        case 7: return "마스터"
-        case 8: return "멘사"
-        case 9: return "천재"
-        default: return "Chapter \(chapter)"
+        case 1: return String.loc("chapter_1")
+        case 2: return String.loc("chapter_2")
+        case 3: return String.loc("chapter_3")
+        case 4: return String.loc("chapter_4")
+        case 5: return String.loc("chapter_5")
+        case 6: return String.loc("chapter_6")
+        case 7: return String.loc("chapter_7")
+        case 8: return String.loc("chapter_8")
+        case 9: return String.loc("chapter_9")
+        default: return String.loc("chapter_label", chapter)
         }
     }
 }

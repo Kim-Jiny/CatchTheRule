@@ -52,7 +52,7 @@ struct CampaignSessionView: View {
             Spacer(minLength: 12)
 
             VStack(spacing: 28) {
-                Text("규칙을 찾아 빈칸을 채워보세요")
+                Text(String.loc("play_prompt"))
                     .font(.system(size: 15))
                     .foregroundStyle(Theme.textSecondary)
 
@@ -89,10 +89,10 @@ struct CampaignSessionView: View {
             Spacer()
 
             VStack(spacing: 2) {
-                Text("Chapter \(pos?.chapter ?? puzzle.chapter)")
+                Text(String.loc("chapter_label", pos?.chapter ?? puzzle.chapter))
                     .font(.system(size: 12, weight: .semibold))
                     .foregroundStyle(Theme.textTertiary)
-                Text("Stage \(pos?.stage ?? puzzle.order)")
+                Text(String.loc("stage_label", pos?.stage ?? puzzle.order))
                     .font(.system(size: 15, weight: .bold))
                     .foregroundStyle(Theme.textPrimary)
             }
@@ -233,13 +233,13 @@ struct CampaignCompleteView: View {
             Image(systemName: "checkmark.seal.fill")
                 .font(.system(size: 64))
                 .foregroundStyle(Theme.accentGradient)
-            Text("모든 단계를 클리어했어요!")
+            Text(String.loc("campaign_complete"))
                 .font(.system(size: 22, weight: .bold))
                 .foregroundStyle(Theme.textPrimary)
-            Text("별 \(progress.totalStars) / \(progress.maxStars) 획득")
+            Text(String.loc("stars_earned", progress.totalStars, progress.maxStars))
                 .font(.system(size: 15))
                 .foregroundStyle(Theme.textSecondary)
-            PrimaryButton("홈으로", systemImage: "house.fill", action: onClose)
+            PrimaryButton(String.loc("go_home"), systemImage: "house.fill", action: onClose)
                 .padding(.horizontal, 40)
                 .padding(.top, 12)
         }

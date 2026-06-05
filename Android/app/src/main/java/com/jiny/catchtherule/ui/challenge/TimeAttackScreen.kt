@@ -36,11 +36,13 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.jiny.catchtherule.R
 import com.jiny.catchtherule.core.PuzzleStore
 import com.jiny.catchtherule.core.model.GameMode
 import com.jiny.catchtherule.core.model.InputType
@@ -149,7 +151,7 @@ fun TimeAttackScreen(onClose: () -> Unit) {
                         verticalArrangement = Arrangement.spacedBy(28.dp),
                     ) {
                         if (puzzle != null) {
-                            Text("규칙을 찾아 빈칸을 채우세요", color = AppColors.TextSecondary, fontSize = 14.sp)
+                            Text(stringResource(R.string.play_prompt), color = AppColors.TextSecondary, fontSize = 14.sp)
                             SequenceDisplay(puzzle = puzzle, typed = typed, feedback = feedback)
                         }
                     }
@@ -188,13 +190,13 @@ private fun TimeAttackResult(score: Int, onClose: () -> Unit) {
     ) {
         Icon(Icons.Filled.Flag, null, tint = AppColors.Accent, modifier = Modifier.size(52.dp))
         Spacer(Modifier.height(16.dp))
-        Text("타임어택 종료", color = AppColors.TextSecondary, fontSize = 16.sp, fontWeight = FontWeight.SemiBold)
-        Text("${score}문제", color = AppColors.TextPrimary, fontSize = 44.sp, fontWeight = FontWeight.Bold)
+        Text(stringResource(R.string.ta_end), color = AppColors.TextSecondary, fontSize = 16.sp, fontWeight = FontWeight.SemiBold)
+        Text(stringResource(R.string.ta_score, score), color = AppColors.TextPrimary, fontSize = 44.sp, fontWeight = FontWeight.Bold)
         Spacer(Modifier.height(22.dp))
 
         val rank = myRank
         if (rank != null) {
-            Text("현재 ${rank}위에 등록됐어요!", color = AppColors.Accent2, fontSize = 15.sp, fontWeight = FontWeight.SemiBold)
+            Text(stringResource(R.string.ta_rank_registered, rank), color = AppColors.Accent2, fontSize = 15.sp, fontWeight = FontWeight.SemiBold)
         } else {
             Box(
                 Modifier.fillMaxWidth().height(50.dp).card(14.dp).padding(horizontal = 16.dp),
@@ -209,7 +211,7 @@ private fun TimeAttackResult(score: Int, onClose: () -> Unit) {
                     modifier = Modifier.fillMaxWidth(),
                     decorationBox = { inner ->
                         if (nickname.isEmpty()) {
-                            Text("닉네임 입력", color = AppColors.TextTertiary, fontSize = 17.sp, modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.Center)
+                            Text(stringResource(R.string.nickname_placeholder), color = AppColors.TextTertiary, fontSize = 17.sp, modifier = Modifier.fillMaxWidth(), textAlign = TextAlign.Center)
                         }
                         inner()
                     },
@@ -217,7 +219,7 @@ private fun TimeAttackResult(score: Int, onClose: () -> Unit) {
             }
             Spacer(Modifier.height(12.dp))
             PrimaryButton(
-                text = if (submitting) "등록 중..." else "랭킹 등록",
+                text = stringResource(if (submitting) R.string.registering else R.string.register_ranking),
                 icon = Icons.Filled.EmojiEvents,
                 enabled = nickname.trim().isNotEmpty() && !submitting,
             ) {
@@ -232,6 +234,6 @@ private fun TimeAttackResult(score: Int, onClose: () -> Unit) {
         }
 
         Spacer(Modifier.height(28.dp))
-        SecondaryButton("닫기") { onClose() }
+        SecondaryButton(stringResource(R.string.close)) { onClose() }
     }
 }

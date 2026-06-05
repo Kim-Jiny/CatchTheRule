@@ -38,9 +38,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.jiny.catchtherule.R
 import com.jiny.catchtherule.core.model.Puzzle
 import com.jiny.catchtherule.ui.theme.AppColors
 import com.jiny.catchtherule.ui.theme.card
@@ -165,7 +167,7 @@ fun CorrectBadge() {
         horizontalArrangement = Arrangement.spacedBy(8.dp),
     ) {
         Icon(Icons.Filled.CheckCircle, null, tint = Color.White, modifier = Modifier.size(22.dp))
-        Text("정답!", color = Color.White, fontSize = 20.sp, fontWeight = FontWeight.ExtraBold)
+        Text(stringResource(R.string.correct), color = Color.White, fontSize = 20.sp, fontWeight = FontWeight.ExtraBold)
     }
 }
 

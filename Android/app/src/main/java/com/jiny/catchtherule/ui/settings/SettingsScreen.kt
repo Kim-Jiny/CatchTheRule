@@ -40,9 +40,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.jiny.catchtherule.R
 import com.jiny.catchtherule.data.LocalProgress
 import com.jiny.catchtherule.ui.theme.AppColors
 import com.jiny.catchtherule.ui.theme.ScreenBackground
@@ -72,35 +74,35 @@ fun SettingsScreen(modifier: Modifier = Modifier) {
             modifier.verticalScroll(rememberScrollState()).padding(20.dp),
             verticalArrangement = Arrangement.spacedBy(20.dp),
         ) {
-            Text("설정", color = AppColors.TextPrimary, fontSize = 28.sp, fontWeight = FontWeight.Bold, modifier = Modifier.padding(top = 8.dp))
+            Text(stringResource(R.string.settings), color = AppColors.TextPrimary, fontSize = 28.sp, fontWeight = FontWeight.Bold, modifier = Modifier.padding(top = 8.dp))
 
             // 프로필
             Column(Modifier.fillMaxWidth().card()) {
-                SettingsRow(Icons.Filled.Person, "닉네임", progress.nickname.ifEmpty { "미설정" }) {
+                SettingsRow(Icons.Filled.Person, stringResource(R.string.nickname), progress.nickname.ifEmpty { stringResource(R.string.not_set) }) {
                     draftNick = progress.nickname; showNickname = true
                 }
                 RowDivider()
-                SettingsRow(Icons.Filled.Lightbulb, "남은 힌트", "${progress.hintsRemaining}개", chevron = false, onClick = null)
+                SettingsRow(Icons.Filled.Lightbulb, stringResource(R.string.hints_left), stringResource(R.string.hints_value, progress.hintsRemaining), chevron = false, onClick = null)
             }
 
             // 환경설정
             Column(Modifier.fillMaxWidth().card()) {
-                ToggleRow(Icons.Filled.VolumeUp, "효과음", progress.soundOn) { progress.setSound(it) }
+                ToggleRow(Icons.Filled.VolumeUp, stringResource(R.string.sound), progress.soundOn) { progress.setSound(it) }
                 RowDivider()
-                ToggleRow(Icons.Filled.Vibration, "햅틱", progress.hapticsOn) { progress.setHaptics(it) }
+                ToggleRow(Icons.Filled.Vibration, stringResource(R.string.haptics), progress.hapticsOn) { progress.setHaptics(it) }
             }
 
             // 지원
             Column(Modifier.fillMaxWidth().card()) {
-                SettingsRow(Icons.Filled.Email, "문의하기", null) {
+                SettingsRow(Icons.Filled.Email, stringResource(R.string.contact), null) {
                     showInquiry = true
                 }
                 RowDivider()
-                SettingsRow(Icons.Filled.Description, "이용약관", null) {
+                SettingsRow(Icons.Filled.Description, stringResource(R.string.terms), null) {
                     runCatching { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(TERMS_URL))) }
                 }
                 RowDivider()
-                SettingsRow(Icons.Filled.PrivacyTip, "개인정보처리방침", null) {
+                SettingsRow(Icons.Filled.PrivacyTip, stringResource(R.string.privacy), null) {
                     runCatching { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(PRIVACY_URL))) }
                 }
             }
@@ -112,7 +114,7 @@ fun SettingsScreen(modifier: Modifier = Modifier) {
                 horizontalArrangement = Arrangement.spacedBy(14.dp),
             ) {
                 Icon(Icons.Filled.Delete, null, tint = AppColors.Danger, modifier = Modifier.size(20.dp))
-                Text("진행도 초기화", color = AppColors.Danger, fontSize = 16.sp, fontWeight = FontWeight.Medium)
+                Text(stringResource(R.string.reset_progress), color = AppColors.Danger, fontSize = 16.sp, fontWeight = FontWeight.Medium)
             }
 
             Text("CatchTheRule v$APP_VERSION", color = AppColors.TextTertiary, fontSize = 13.sp, modifier = Modifier.padding(top = 8.dp))
@@ -122,10 +124,10 @@ fun SettingsScreen(modifier: Modifier = Modifier) {
     if (showReset) {
         AlertDialog(
             onDismissRequest = { showReset = false },
-            title = { Text("진행도를 초기화할까요?") },
-            text = { Text("모든 단계 진행과 별, 기록이 삭제됩니다. 되돌릴 수 없어요.") },
-            confirmButton = { TextButton(onClick = { progress.resetProgress(); showReset = false }) { Text("초기화", color = AppColors.Danger) } },
-            dismissButton = { TextButton(onClick = { showReset = false }) { Text("취소") } },
+            title = { Text(stringResource(R.string.reset_confirm_title)) },
+            text = { Text(stringResource(R.string.reset_confirm_msg)) },
+            confirmButton = { TextButton(onClick = { progress.resetProgress(); showReset = false }) { Text(stringResource(R.string.reset), color = AppColors.Danger) } },
+            dismissButton = { TextButton(onClick = { showReset = false }) { Text(stringResource(R.string.cancel)) } },
             containerColor = AppColors.Card,
         )
     }
@@ -133,16 +135,16 @@ fun SettingsScreen(modifier: Modifier = Modifier) {
     if (showNickname) {
         AlertDialog(
             onDismissRequest = { showNickname = false },
-            title = { Text("닉네임 변경") },
+            title = { Text(stringResource(R.string.change_nickname)) },
             text = { OutlinedTextField(value = draftNick, onValueChange = { draftNick = it }, singleLine = true) },
             confirmButton = {
                 TextButton(onClick = {
                     val t = draftNick.trim()
                     if (t.isNotEmpty()) progress.updateNickname(t)
                     showNickname = false
-                }) { Text("저장") }
+                }) { Text(stringResource(R.string.save)) }
             },
-            dismissButton = { TextButton(onClick = { showNickname = false }) { Text("취소") } },
+            dismissButton = { TextButton(onClick = { showNickname = false }) { Text(stringResource(R.string.cancel)) } },
             containerColor = AppColors.Card,
         )
     }

@@ -36,9 +36,11 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.jiny.catchtherule.R
 import com.jiny.catchtherule.core.PuzzleStore
 import com.jiny.catchtherule.core.model.InputType
 import com.jiny.catchtherule.core.model.Puzzle
@@ -94,8 +96,8 @@ fun CampaignSessionScreen(onClose: () -> Unit) {
                 ) { Icon(Icons.Filled.Close, null, tint = AppColors.TextSecondary, modifier = Modifier.size(16.dp)) }
                 Box(Modifier.weight(1f))
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                    Text("Chapter ${position?.first ?: puzzle.chapter}", color = AppColors.TextTertiary, fontSize = 12.sp, fontWeight = FontWeight.SemiBold)
-                    Text("Stage ${position?.second ?: puzzle.order}", color = AppColors.TextPrimary, fontSize = 15.sp, fontWeight = FontWeight.Bold)
+                    Text(stringResource(R.string.chapter_label, position?.first ?: puzzle.chapter), color = AppColors.TextTertiary, fontSize = 12.sp, fontWeight = FontWeight.SemiBold)
+                    Text(stringResource(R.string.stage_label, position?.second ?: puzzle.order), color = AppColors.TextPrimary, fontSize = 15.sp, fontWeight = FontWeight.Bold)
                 }
                 Box(Modifier.weight(1f))
                 HintButton(
@@ -112,7 +114,7 @@ fun CampaignSessionScreen(onClose: () -> Unit) {
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.spacedBy(28.dp),
                 ) {
-                    Text("규칙을 찾아 빈칸을 채워보세요", color = AppColors.TextSecondary, fontSize = 15.sp)
+                    Text(stringResource(R.string.play_prompt), color = AppColors.TextSecondary, fontSize = 15.sp)
                     SequenceDisplay(puzzle = puzzle, typed = typed, reveal = reveal, feedback = feedback)
                     if (hintsShown > 0) {
                         Column(
@@ -201,10 +203,10 @@ private fun CampaignComplete(onClose: () -> Unit) {
     ) {
         Icon(Icons.Filled.Verified, null, tint = AppColors.Accent, modifier = Modifier.size(64.dp))
         Spacer(Modifier.height(20.dp))
-        Text("모든 단계를 클리어했어요!", color = AppColors.TextPrimary, fontSize = 22.sp, fontWeight = FontWeight.Bold)
+        Text(stringResource(R.string.campaign_complete), color = AppColors.TextPrimary, fontSize = 22.sp, fontWeight = FontWeight.Bold)
         Spacer(Modifier.height(8.dp))
-        Text("별 ${progress.totalStars} / ${progress.maxStars} 획득", color = AppColors.TextSecondary, fontSize = 15.sp)
+        Text(stringResource(R.string.stars_earned, progress.totalStars, progress.maxStars), color = AppColors.TextSecondary, fontSize = 15.sp)
         Spacer(Modifier.height(24.dp))
-        PrimaryButton("홈으로", icon = Icons.Filled.Home, modifier = Modifier.padding(horizontal = 40.dp)) { onClose() }
+        PrimaryButton(stringResource(R.string.go_home), icon = Icons.Filled.Home, modifier = Modifier.padding(horizontal = 40.dp)) { onClose() }
     }
 }

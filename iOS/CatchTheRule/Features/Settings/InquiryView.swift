@@ -17,12 +17,12 @@ struct InquiryView: View {
                 VStack(alignment: .leading, spacing: 20) {
                     composer
                     if !inquiries.isEmpty {
-                        SectionHeader(title: "내 문의")
+                        SectionHeader(title: String.loc("my_inquiries"))
                         ForEach(inquiries) { inquiry in
                             inquiryCard(inquiry)
                         }
                     } else if !loading {
-                        Text("보낸 문의가 여기에 표시됩니다.")
+                        Text(String.loc("inquiry_empty"))
                             .font(.system(size: 14))
                             .foregroundStyle(Theme.textTertiary)
                     }
@@ -30,11 +30,11 @@ struct InquiryView: View {
                 .padding(20)
             }
         }
-        .navigationTitle("문의하기")
+        .navigationTitle(String.loc("contact"))
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
-                Button("닫기") { dismiss() }.tint(Theme.accent)
+                Button(String.loc("close")) { dismiss() }.tint(Theme.accent)
             }
         }
         .task { await reload() }
@@ -42,10 +42,10 @@ struct InquiryView: View {
 
     private var composer: some View {
         VStack(alignment: .leading, spacing: 12) {
-            SectionHeader(title: "새 문의")
+            SectionHeader(title: String.loc("inquiry_new"))
             ZStack(alignment: .topLeading) {
                 if content.isEmpty {
-                    Text("궁금한 점이나 의견을 남겨주세요")
+                    Text(String.loc("inquiry_placeholder"))
                         .font(.system(size: 15))
                         .foregroundStyle(Theme.textTertiary)
                         .padding(.horizontal, 14)
@@ -63,7 +63,7 @@ struct InquiryView: View {
                 Text(errorText).font(.system(size: 13)).foregroundStyle(Theme.danger)
             }
 
-            PrimaryButton(sending ? "보내는 중..." : "문의 보내기",
+            PrimaryButton(String.loc(sending ? "sending" : "inquiry_send"),
                           systemImage: "paperplane.fill",
                           enabled: canSend) {
                 send()
@@ -74,7 +74,7 @@ struct InquiryView: View {
     private func inquiryCard(_ inquiry: Inquiry) -> some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack {
-                Text(inquiry.isReplied ? "답변완료" : "대기중")
+                Text(String.loc(inquiry.isReplied ? "status_replied" : "status_pending"))
                     .font(.system(size: 11, weight: .bold))
                     .foregroundStyle(inquiry.isReplied ? Theme.success : Theme.star)
                     .padding(.horizontal, 8).padding(.vertical, 3)
@@ -94,7 +94,7 @@ struct InquiryView: View {
                     HStack(spacing: 6) {
                         Image(systemName: "arrowshape.turn.up.left.fill")
                             .font(.system(size: 11))
-                        Text("운영자 답변").font(.system(size: 12, weight: .semibold))
+                        Text(String.loc("admin_reply")).font(.system(size: 12, weight: .semibold))
                     }
                     .foregroundStyle(Theme.accent2)
                     Text(reply)
@@ -129,7 +129,7 @@ struct InquiryView: View {
                 content = ""
                 await reload()
             } catch {
-                errorText = "전송에 실패했어요. 잠시 후 다시 시도해주세요."
+                errorText = String.loc("inquiry_send_failed")
             }
             sending = false
         }

@@ -25,9 +25,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.jiny.catchtherule.R
 import com.jiny.catchtherule.core.PuzzleStore
 import com.jiny.catchtherule.data.LocalProgress
 import com.jiny.catchtherule.ui.PrimaryButton
@@ -52,8 +54,8 @@ fun HomeScreen(modifier: Modifier = Modifier, onContinue: () -> Unit) {
             verticalArrangement = Arrangement.spacedBy(20.dp),
         ) {
             Column(Modifier.padding(top = 8.dp)) {
-                Text("규칙찾기", color = AppColors.TextPrimary, fontSize = 30.sp, fontWeight = FontWeight.Bold)
-                Text("패턴을 발견하고 다음을 맞혀보세요", color = AppColors.TextSecondary, fontSize = 15.sp)
+                Text(stringResource(R.string.app_name), color = AppColors.TextPrimary, fontSize = 30.sp, fontWeight = FontWeight.Bold)
+                Text(stringResource(R.string.home_subtitle), color = AppColors.TextSecondary, fontSize = 15.sp)
             }
 
             // 이어하기 카드
@@ -64,12 +66,12 @@ fun HomeScreen(modifier: Modifier = Modifier, onContinue: () -> Unit) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Column(Modifier.weight(1f)) {
                         Text(
-                            if (progress.isCampaignFinished) "전체 클리어" else "현재 도전",
+                            stringResource(if (progress.isCampaignFinished) R.string.home_all_clear else R.string.home_current),
                             color = AppColors.TextSecondary, fontSize = 13.sp, fontWeight = FontWeight.SemiBold,
                         )
                         Text(
-                            if (progress.isCampaignFinished || position == null) "축하해요! 🎉"
-                            else "Chapter ${position.first} · Stage ${position.second}",
+                            if (progress.isCampaignFinished || position == null) stringResource(R.string.home_congrats)
+                            else stringResource(R.string.chapter_label, position.first) + " · " + stringResource(R.string.stage_label, position.second),
                             color = AppColors.TextPrimary, fontSize = 22.sp, fontWeight = FontWeight.Bold,
                         )
                     }
@@ -79,18 +81,18 @@ fun HomeScreen(modifier: Modifier = Modifier, onContinue: () -> Unit) {
                 Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                     Icon(Icons.Filled.Star, null, tint = AppColors.Star, modifier = Modifier.size(16.dp))
                     Text("${progress.totalStars}", color = AppColors.TextPrimary, fontSize = 14.sp, fontWeight = FontWeight.SemiBold)
-                    Text("/ ${progress.maxStars} 별", color = AppColors.TextTertiary, fontSize = 14.sp)
+                    Text(stringResource(R.string.stars_of_max, progress.maxStars), color = AppColors.TextTertiary, fontSize = 14.sp)
                 }
 
                 PrimaryButton(
-                    text = if (progress.isCampaignFinished) "다시 도전" else "이어하기",
+                    text = stringResource(if (progress.isCampaignFinished) R.string.home_retry else R.string.home_continue),
                     icon = Icons.Filled.PlayArrow,
                     onClick = onContinue,
                 )
             }
 
             // 챕터 목록
-            SectionHeader("챕터")
+            SectionHeader(stringResource(R.string.chapters))
             store.chapters.forEach { chapter ->
                 ChapterRow(chapter)
             }
@@ -145,7 +147,7 @@ private fun ChapterRow(chapter: Int) {
         }
         Column(Modifier.weight(1f)) {
             Text(chapterTitle(chapter), color = AppColors.TextPrimary, fontSize = 16.sp, fontWeight = FontWeight.SemiBold)
-            Text("${items.size}단계", color = AppColors.TextTertiary, fontSize = 13.sp)
+            Text(stringResource(R.string.chapter_stages, items.size), color = AppColors.TextTertiary, fontSize = 13.sp)
         }
         Column(horizontalAlignment = Alignment.End, verticalArrangement = Arrangement.spacedBy(4.dp)) {
             StarRow(starLevel)
@@ -154,15 +156,16 @@ private fun ChapterRow(chapter: Int) {
     }
 }
 
+@Composable
 private fun chapterTitle(chapter: Int): String = when (chapter) {
-    1 -> "기초 패턴"
-    2 -> "곱셈과 제곱"
-    3 -> "수학 수열"
-    4 -> "문자 패턴"
-    5 -> "모양 찾기"
-    6 -> "고급"
-    7 -> "마스터"
-    8 -> "멘사"
-    9 -> "천재"
-    else -> "Chapter $chapter"
+    1 -> stringResource(R.string.chapter_1)
+    2 -> stringResource(R.string.chapter_2)
+    3 -> stringResource(R.string.chapter_3)
+    4 -> stringResource(R.string.chapter_4)
+    5 -> stringResource(R.string.chapter_5)
+    6 -> stringResource(R.string.chapter_6)
+    7 -> stringResource(R.string.chapter_7)
+    8 -> stringResource(R.string.chapter_8)
+    9 -> stringResource(R.string.chapter_9)
+    else -> stringResource(R.string.chapter_label, chapter)
 }

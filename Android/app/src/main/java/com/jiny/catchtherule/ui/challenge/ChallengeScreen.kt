@@ -28,9 +28,11 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.jiny.catchtherule.R
 import com.jiny.catchtherule.core.model.GameMode
 import com.jiny.catchtherule.core.model.RankEntry
 import com.jiny.catchtherule.data.LocalProgress
@@ -61,8 +63,8 @@ fun ChallengeScreen(modifier: Modifier = Modifier, onStart: () -> Unit) {
             verticalArrangement = Arrangement.spacedBy(20.dp),
         ) {
             Column(Modifier.padding(top = 8.dp)) {
-                Text("타임어택", color = AppColors.TextPrimary, fontSize = 28.sp, fontWeight = FontWeight.Bold)
-                Text("60초 동안 최대한 많이 풀고 랭킹에 도전하세요", color = AppColors.TextSecondary, fontSize = 14.sp)
+                Text(stringResource(R.string.challenge_title), color = AppColors.TextPrimary, fontSize = 28.sp, fontWeight = FontWeight.Bold)
+                Text(stringResource(R.string.challenge_subtitle), color = AppColors.TextSecondary, fontSize = 14.sp)
             }
 
             Column(
@@ -71,20 +73,20 @@ fun ChallengeScreen(modifier: Modifier = Modifier, onStart: () -> Unit) {
             ) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Column(Modifier.weight(1f)) {
-                        Text("내 최고 점수", color = AppColors.TextSecondary, fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
+                        Text(stringResource(R.string.challenge_best), color = AppColors.TextSecondary, fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
                         Text("${progress.bestTimeAttack}", color = AppColors.TextPrimary, fontSize = 34.sp, fontWeight = FontWeight.Bold)
                     }
                     Icon(Icons.Filled.Bolt, null, tint = AppColors.Accent, modifier = Modifier.size(34.dp))
                 }
-                PrimaryButton("타임어택 시작", icon = Icons.Filled.PlayArrow, onClick = onStart)
+                PrimaryButton(stringResource(R.string.challenge_start), icon = Icons.Filled.PlayArrow, onClick = onStart)
             }
 
             Row(verticalAlignment = Alignment.CenterVertically) {
-                SectionHeader("랭킹", Modifier.weight(1f))
+                SectionHeader(stringResource(R.string.ranking), Modifier.weight(1f))
                 if (loading) CircularProgressIndicator(strokeWidth = 2.dp, modifier = Modifier.size(18.dp), color = AppColors.TextSecondary)
             }
             if (entries.isEmpty() && !loading) {
-                Text("아직 기록이 없어요. 첫 주자가 되어보세요!", color = AppColors.TextTertiary, fontSize = 14.sp)
+                Text(stringResource(R.string.ranking_empty), color = AppColors.TextTertiary, fontSize = 14.sp)
             }
             entries.forEach { LeaderboardRow(it) }
         }
@@ -123,7 +125,7 @@ private fun LeaderboardRow(entry: RankEntry) {
         if (entry.isMe) {
             Box(
                 Modifier.clip(CircleShape).background(AppColors.Accent).padding(horizontal = 6.dp, vertical = 2.dp),
-            ) { Text("나", color = androidx.compose.ui.graphics.Color.White, fontSize = 11.sp, fontWeight = FontWeight.Bold) }
+            ) { Text(stringResource(R.string.me), color = androidx.compose.ui.graphics.Color.White, fontSize = 11.sp, fontWeight = FontWeight.Bold) }
         }
         Box(Modifier.weight(1f))
         Text("${entry.score}", color = AppColors.TextPrimary, fontSize = 16.sp, fontWeight = FontWeight.Bold)

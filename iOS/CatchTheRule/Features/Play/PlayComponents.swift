@@ -119,7 +119,7 @@ struct CorrectBadge: View {
     var body: some View {
         HStack(spacing: 8) {
             Image(systemName: "checkmark.circle.fill")
-            Text("정답!").fontWeight(.heavy)
+            Text(String.loc("correct")).fontWeight(.heavy)
         }
         .font(.system(size: 20, weight: .bold, design: .rounded))
         .foregroundStyle(.white)

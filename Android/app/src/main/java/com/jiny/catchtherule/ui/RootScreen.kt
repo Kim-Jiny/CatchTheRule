@@ -21,6 +21,8 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.stringResource
+import com.jiny.catchtherule.R
 import com.jiny.catchtherule.ui.challenge.ChallengeScreen
 import com.jiny.catchtherule.ui.challenge.TimeAttackScreen
 import com.jiny.catchtherule.ui.home.HomeScreen
@@ -53,9 +55,9 @@ fun RootScreen() {
     }
 
     val tabs = listOf(
-        Tab("홈", Icons.Filled.Home),
-        Tab("도전", Icons.Filled.EmojiEvents),
-        Tab("설정", Icons.Filled.Settings),
+        Tab(stringResource(R.string.tab_home), Icons.Filled.Home),
+        Tab(stringResource(R.string.tab_challenge), Icons.Filled.EmojiEvents),
+        Tab(stringResource(R.string.tab_settings), Icons.Filled.Settings),
     )
 
     Scaffold(

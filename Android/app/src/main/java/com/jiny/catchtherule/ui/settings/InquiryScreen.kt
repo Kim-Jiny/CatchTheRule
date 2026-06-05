@@ -31,11 +31,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.foundation.clickable
+import com.jiny.catchtherule.R
 import com.jiny.catchtherule.data.Inquiry
 import com.jiny.catchtherule.data.InquiryService
 import com.jiny.catchtherule.data.LocalProgress
@@ -58,6 +60,7 @@ fun InquiryScreen(modifier: Modifier = Modifier, onClose: () -> Unit) {
     var inquiries by remember { mutableStateOf<List<Inquiry>>(emptyList()) }
     var sending by remember { mutableStateOf(false) }
     var error by remember { mutableStateOf<String?>(null) }
+    val sendFailedMsg = stringResource(R.string.inquiry_send_failed)
 
     suspend fun reload() {
         inquiries = runCatching { service.myInquiries() }.getOrDefault(inquiries)
@@ -74,18 +77,18 @@ fun InquiryScreen(modifier: Modifier = Modifier, onClose: () -> Unit) {
                     contentAlignment = Alignment.Center,
                 ) { Icon(Icons.AutoMirrored.Filled.ArrowBack, null, tint = AppColors.TextSecondary, modifier = Modifier.size(18.dp)) }
                 Spacer(Modifier.size(12.dp))
-                Text("문의하기", color = AppColors.TextPrimary, fontSize = 22.sp, fontWeight = FontWeight.Bold)
+                Text(stringResource(R.string.contact), color = AppColors.TextPrimary, fontSize = 22.sp, fontWeight = FontWeight.Bold)
             }
             Spacer(Modifier.size(20.dp))
 
             // 새 문의 작성
-            SectionHeader("새 문의")
+            SectionHeader(stringResource(R.string.inquiry_new))
             Spacer(Modifier.size(8.dp))
             Box(
                 Modifier.fillMaxWidth().heightIn(min = 120.dp).card(14.dp).padding(14.dp),
             ) {
                 if (content.isEmpty()) {
-                    Text("궁금한 점이나 의견을 남겨주세요", color = AppColors.TextTertiary, fontSize = 15.sp)
+                    Text(stringResource(R.string.inquiry_placeholder), color = AppColors.TextTertiary, fontSize = 15.sp)
                 }
                 BasicTextField(
                     value = content,
@@ -101,7 +104,7 @@ fun InquiryScreen(modifier: Modifier = Modifier, onClose: () -> Unit) {
             }
             Spacer(Modifier.size(12.dp))
             PrimaryButton(
-                text = if (sending) "보내는 중..." else "문의 보내기",
+                text = stringResource(if (sending) R.string.sending else R.string.inquiry_send),
                 icon = Icons.Filled.Send,
                 enabled = content.trim().isNotEmpty() && !sending,
             ) {
@@ -113,14 +116,14 @@ fun InquiryScreen(modifier: Modifier = Modifier, onClose: () -> Unit) {
                         service.submit(text, progress.nickname.ifBlank { null })
                     }.isSuccess
                     if (ok) { content = ""; reload() }
-                    else error = "전송에 실패했어요. 잠시 후 다시 시도해주세요."
+                    else error = sendFailedMsg
                     sending = false
                 }
             }
 
             if (inquiries.isNotEmpty()) {
                 Spacer(Modifier.size(24.dp))
-                SectionHeader("내 문의")
+                SectionHeader(stringResource(R.string.my_inquiries))
                 Spacer(Modifier.size(8.dp))
                 inquiries.forEach { inq ->
                     InquiryCard(inq)
@@ -139,7 +142,7 @@ private fun InquiryCard(inquiry: Inquiry) {
             Box(
                 Modifier.clip(CircleShape).background(color.copy(alpha = 0.15f)).padding(horizontal = 8.dp, vertical = 3.dp),
             ) {
-                Text(if (inquiry.isReplied) "답변완료" else "대기중", color = color, fontSize = 11.sp, fontWeight = FontWeight.Bold)
+                Text(stringResource(if (inquiry.isReplied) R.string.status_replied else R.string.status_pending), color = color, fontSize = 11.sp, fontWeight = FontWeight.Bold)
             }
             Box(Modifier.weight(1f))
             Text(day(inquiry.createdAt), color = AppColors.TextTertiary, fontSize = 12.sp)
@@ -153,7 +156,7 @@ private fun InquiryCard(inquiry: Inquiry) {
             ) {
                 Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                     Icon(Icons.AutoMirrored.Filled.Reply, null, tint = AppColors.Accent2, modifier = Modifier.size(14.dp))
-                    Text("운영자 답변", color = AppColors.Accent2, fontSize = 12.sp, fontWeight = FontWeight.SemiBold)
+                    Text(stringResource(R.string.admin_reply), color = AppColors.Accent2, fontSize = 12.sp, fontWeight = FontWeight.SemiBold)
                 }
                 Text(reply, color = AppColors.TextSecondary, fontSize = 14.sp)
             }

@@ -29,10 +29,10 @@ struct ChallengeView: View {
 
     private var header: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text("타임어택")
+            Text(String.loc("challenge_title"))
                 .font(.system(size: 28, weight: .bold, design: .rounded))
                 .foregroundStyle(Theme.textPrimary)
-            Text("60초 동안 최대한 많이 풀고 랭킹에 도전하세요")
+            Text(String.loc("challenge_subtitle"))
                 .font(.system(size: 14))
                 .foregroundStyle(Theme.textSecondary)
         }
@@ -44,7 +44,7 @@ struct ChallengeView: View {
         VStack(spacing: 16) {
             HStack {
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("내 최고 점수")
+                    Text(String.loc("challenge_best"))
                         .font(.system(size: 13, weight: .semibold))
                         .foregroundStyle(Theme.textSecondary)
                     Text("\(progress.bestTimeAttack)")
@@ -56,7 +56,7 @@ struct ChallengeView: View {
                     .font(.system(size: 30))
                     .foregroundStyle(Theme.accentGradient)
             }
-            PrimaryButton("타임어택 시작", systemImage: "play.fill") { playing = true }
+            PrimaryButton(String.loc("challenge_start"), systemImage: "play.fill") { playing = true }
         }
         .padding(20)
         .card()
@@ -65,12 +65,12 @@ struct ChallengeView: View {
     private var leaderboard: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
-                SectionHeader(title: "랭킹")
+                SectionHeader(title: String.loc("ranking"))
                 Spacer()
                 if loading { ProgressView().tint(Theme.textSecondary) }
             }
             if entries.isEmpty && !loading {
-                Text("아직 기록이 없어요. 첫 주자가 되어보세요!")
+                Text(String.loc("ranking_empty"))
                     .font(.system(size: 14))
                     .foregroundStyle(Theme.textTertiary)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -129,7 +129,7 @@ struct LeaderboardRow: View {
                 .font(.system(size: 16, weight: entry.isMe ? .bold : .medium))
                 .foregroundStyle(entry.isMe ? Theme.accent2 : Theme.textPrimary)
             if entry.isMe {
-                Text("나")
+                Text(String.loc("me"))
                     .font(.system(size: 11, weight: .bold))
                     .foregroundStyle(.white)
                     .padding(.horizontal, 6).padding(.vertical, 2)

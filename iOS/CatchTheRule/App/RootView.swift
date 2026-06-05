@@ -14,13 +14,13 @@ struct RootView: View {
     var body: some View {
         TabView {
             HomeView()
-                .tabItem { Label("홈", systemImage: "house.fill") }
+                .tabItem { Label(String.loc("tab_home"), systemImage: "house.fill") }
 
             ChallengeView()
-                .tabItem { Label("도전", systemImage: "trophy.fill") }
+                .tabItem { Label(String.loc("tab_challenge"), systemImage: "trophy.fill") }
 
             SettingsView()
-                .tabItem { Label("설정", systemImage: "gearshape.fill") }
+                .tabItem { Label(String.loc("tab_settings"), systemImage: "gearshape.fill") }
         }
         .tint(Theme.accent)
         .task { AnalyticsService.ping() }

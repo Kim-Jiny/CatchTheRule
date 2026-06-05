@@ -42,7 +42,7 @@ struct TimeAttackView: View {
             Spacer(minLength: 12)
             VStack(spacing: 28) {
                 if let puzzle {
-                    Text("규칙을 찾아 빈칸을 채우세요")
+                    Text(String.loc("play_prompt"))
                         .font(.system(size: 14))
                         .foregroundStyle(Theme.textSecondary)
                     SequenceDisplay(puzzle: puzzle, typed: typed, feedback: feedback)
@@ -190,21 +190,21 @@ struct TimeAttackResultView: View {
                 .font(.system(size: 52))
                 .foregroundStyle(Theme.accentGradient)
             VStack(spacing: 6) {
-                Text("타임어택 종료")
+                Text(String.loc("ta_end"))
                     .font(.system(size: 16, weight: .semibold))
                     .foregroundStyle(Theme.textSecondary)
-                Text("\(score)문제")
+                Text(String.loc("ta_score", score))
                     .font(.system(size: 44, weight: .bold, design: .rounded))
                     .foregroundStyle(Theme.textPrimary)
             }
 
             if let myRank {
-                Text("현재 \(myRank)위에 등록됐어요!")
+                Text(String.loc("ta_rank_registered", myRank))
                     .font(.system(size: 15, weight: .semibold))
                     .foregroundStyle(Theme.accent2)
             } else {
                 VStack(spacing: 12) {
-                    TextField("닉네임 입력", text: $nickname)
+                    TextField(String.loc("nickname_placeholder"), text: $nickname)
                         .textInputAutocapitalization(.never)
                         .disableAutocorrection(true)
                         .multilineTextAlignment(.center)
@@ -213,7 +213,7 @@ struct TimeAttackResultView: View {
                         .padding(.vertical, 14)
                         .frame(maxWidth: .infinity)
                         .card(cornerRadius: 14)
-                    PrimaryButton(submitting ? "등록 중..." : "랭킹 등록",
+                    PrimaryButton(String.loc(submitting ? "registering" : "register_ranking"),
                                   systemImage: "trophy.fill",
                                   enabled: canSubmit) {
                         submit()
@@ -223,7 +223,7 @@ struct TimeAttackResultView: View {
             }
 
             Spacer()
-            SecondaryButton(title: "닫기") { onClose() }
+            SecondaryButton(title: String.loc("close")) { onClose() }
                 .padding(.horizontal, 32)
                 .padding(.bottom, 20)
         }

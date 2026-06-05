@@ -36,16 +36,16 @@ struct SettingsView: View {
             NavigationStack { InquiryView() }
                 .preferredColorScheme(.dark)
         }
-        .alert("진행도를 초기화할까요?", isPresented: $showResetConfirm) {
-            Button("취소", role: .cancel) {}
-            Button("초기화", role: .destructive) { progress.resetProgress() }
+        .alert(String.loc("reset_confirm_title"), isPresented: $showResetConfirm) {
+            Button(String.loc("cancel"), role: .cancel) {}
+            Button(String.loc("reset"), role: .destructive) { progress.resetProgress() }
         } message: {
-            Text("모든 단계 진행과 별, 기록이 삭제됩니다. 되돌릴 수 없어요.")
+            Text(String.loc("reset_confirm_msg"))
         }
-        .alert("닉네임 변경", isPresented: $editingNickname) {
-            TextField("닉네임", text: $draftNickname)
-            Button("취소", role: .cancel) {}
-            Button("저장") {
+        .alert(String.loc("change_nickname"), isPresented: $editingNickname) {
+            TextField(String.loc("nickname"), text: $draftNickname)
+            Button(String.loc("cancel"), role: .cancel) {}
+            Button(String.loc("save")) {
                 let t = draftNickname.trimmingCharacters(in: .whitespaces)
                 if !t.isEmpty { progress.nickname = t }
             }
@@ -53,7 +53,7 @@ struct SettingsView: View {
     }
 
     private var header: some View {
-        Text("설정")
+        Text(String.loc("settings"))
             .font(.system(size: 28, weight: .bold, design: .rounded))
             .foregroundStyle(Theme.textPrimary)
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -62,24 +62,24 @@ struct SettingsView: View {
 
     private var profileSection: some View {
         VStack(spacing: 0) {
-            SettingsRow(icon: "person.fill", title: "닉네임",
-                        value: progress.nickname.isEmpty ? "미설정" : progress.nickname) {
+            SettingsRow(icon: "person.fill", title: String.loc("nickname"),
+                        value: progress.nickname.isEmpty ? String.loc("not_set") : progress.nickname) {
                 draftNickname = progress.nickname
                 editingNickname = true
             }
             Divider().overlay(Theme.stroke)
-            SettingsRow(icon: "lightbulb.fill", title: "남은 힌트",
-                        value: "\(progress.hintsRemaining)개", showChevron: false)
+            SettingsRow(icon: "lightbulb.fill", title: String.loc("hints_left"),
+                        value: String.loc("hints_value", progress.hintsRemaining), showChevron: false)
         }
         .card()
     }
 
     private var preferencesSection: some View {
         VStack(spacing: 0) {
-            SettingsToggleRow(icon: "speaker.wave.2.fill", title: "효과음",
+            SettingsToggleRow(icon: "speaker.wave.2.fill", title: String.loc("sound"),
                               isOn: bindingSound)
             Divider().overlay(Theme.stroke)
-            SettingsToggleRow(icon: "iphone.radiowaves.left.and.right", title: "햅틱",
+            SettingsToggleRow(icon: "iphone.radiowaves.left.and.right", title: String.loc("haptics"),
                               isOn: bindingHaptics)
         }
         .card()
@@ -87,15 +87,15 @@ struct SettingsView: View {
 
     private var supportSection: some View {
         VStack(spacing: 0) {
-            SettingsRow(icon: "envelope.fill", title: "문의하기", value: nil) {
+            SettingsRow(icon: "envelope.fill", title: String.loc("contact"), value: nil) {
                 showInquiry = true
             }
             Divider().overlay(Theme.stroke)
-            SettingsRow(icon: "doc.text.fill", title: "이용약관", value: nil) {
+            SettingsRow(icon: "doc.text.fill", title: String.loc("terms"), value: nil) {
                 openURL(termsURL)
             }
             Divider().overlay(Theme.stroke)
-            SettingsRow(icon: "hand.raised.fill", title: "개인정보처리방침", value: nil) {
+            SettingsRow(icon: "hand.raised.fill", title: String.loc("privacy"), value: nil) {
                 openURL(privacyURL)
             }
         }
@@ -106,7 +106,7 @@ struct SettingsView: View {
         Button { showResetConfirm = true } label: {
             HStack {
                 Image(systemName: "trash.fill")
-                Text("진행도 초기화").fontWeight(.medium)
+                Text(String.loc("reset_progress")).fontWeight(.medium)
                 Spacer()
             }
             .font(.system(size: 16))
