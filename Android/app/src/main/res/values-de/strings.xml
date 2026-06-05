@@ -73,4 +73,12 @@
     <string name="status_replied">Beantwortet</string>
     <string name="status_pending">Ausstehend</string>
     <string name="support">Support</string>
+    <string name="iap_remove_ads">Werbung entfernen</string>
+    <string name="iap_remove_ads_desc">Für immer werbefrei spielen</string>
+    <string name="iap_purchased">Gekauft</string>
+    <string name="iap_restore">Käufe wiederherstellen</string>
+    <string name="iap_restore_done">Käufe wiederhergestellt</string>
+    <string name="iap_restore_none">Keine Käufe zum Wiederherstellen</string>
+    <string name="iap_failed">Kauf fehlgeschlagen. Bitte erneut versuchen.</string>
+    <string name="iap_loading">Wird geladen…</string>
 </resources>

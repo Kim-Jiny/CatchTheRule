@@ -73,4 +73,12 @@
     <string name="status_replied">已回复</string>
     <string name="status_pending">待回复</string>
     <string name="support">客户支持</string>
+    <string name="iap_remove_ads">移除广告</string>
+    <string name="iap_remove_ads_desc">永久无广告畅玩</string>
+    <string name="iap_purchased">已购买</string>
+    <string name="iap_restore">恢复购买</string>
+    <string name="iap_restore_done">已恢复购买</string>
+    <string name="iap_restore_none">没有可恢复的购买</string>
+    <string name="iap_failed">购买失败，请重试。</string>
+    <string name="iap_loading">加载中…</string>
 </resources>

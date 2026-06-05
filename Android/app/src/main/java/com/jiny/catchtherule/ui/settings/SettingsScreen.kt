@@ -15,6 +15,8 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
+import androidx.compose.material.icons.filled.Block
+import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Description
 import androidx.compose.material.icons.filled.Email
@@ -22,6 +24,7 @@ import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Lightbulb
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.PrivacyTip
+import androidx.compose.material.icons.filled.Restore
 import androidx.compose.material.icons.filled.VolumeUp
 import androidx.compose.material.icons.filled.Vibration
 import androidx.compose.material3.AlertDialog
@@ -40,12 +43,14 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
+import android.app.Activity
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.jiny.catchtherule.R
+import com.jiny.catchtherule.data.LocalBilling
 import com.jiny.catchtherule.data.LocalProgress
 import com.jiny.catchtherule.ui.theme.AppColors
 import com.jiny.catchtherule.ui.theme.ScreenBackground
@@ -60,12 +65,17 @@ private const val SUPPORT_URL = "https://duo.jiny.shop/ctr/support"
 @Composable
 fun SettingsScreen(modifier: Modifier = Modifier) {
     val progress = LocalProgress.current
+    val billing = LocalBilling.current
     val context = LocalContext.current
+    val activity = context as? Activity
     val langCode = java.util.Locale.getDefault().language
+    val restoreDoneMsg = stringResource(R.string.iap_restore_done)
+    val restoreNoneMsg = stringResource(R.string.iap_restore_none)
     var showReset by remember { mutableStateOf(false) }
     var showNickname by remember { mutableStateOf(false) }
     var draftNick by remember { mutableStateOf("") }
     var showInquiry by remember { mutableStateOf(false) }
+    var iapMsg by remember { mutableStateOf<String?>(null) }
 
     if (showInquiry) {
         InquiryScreen(modifier = modifier, onClose = { showInquiry = false })
@@ -86,6 +96,23 @@ fun SettingsScreen(modifier: Modifier = Modifier) {
                 }
                 RowDivider()
                 SettingsRow(Icons.Filled.Lightbulb, stringResource(R.string.hints_left), stringResource(R.string.hints_value, progress.hintsRemaining), chevron = false, onClick = null)
+            }
+
+            // 인앱결제 (광고 제거)
+            Column(Modifier.fillMaxWidth().card()) {
+                if (billing.removeAdsPurchased) {
+                    SettingsRow(Icons.Filled.CheckCircle, stringResource(R.string.iap_remove_ads), stringResource(R.string.iap_purchased), chevron = false, onClick = null)
+                } else {
+                    SettingsRow(
+                        Icons.Filled.Block,
+                        stringResource(R.string.iap_remove_ads),
+                        billing.removeAdsPrice.ifEmpty { stringResource(R.string.iap_loading) },
+                    ) { activity?.let { billing.purchase(it) } }
+                    RowDivider()
+                    SettingsRow(Icons.Filled.Restore, stringResource(R.string.iap_restore), null) {
+                        billing.queryPurchases { restored -> iapMsg = if (restored) restoreDoneMsg else restoreNoneMsg }
+                    }
+                }
             }
 
             // 환경설정
@@ -126,6 +153,15 @@ fun SettingsScreen(modifier: Modifier = Modifier) {
 
             Text("CatchTheRule v$APP_VERSION", color = AppColors.TextTertiary, fontSize = 13.sp, modifier = Modifier.padding(top = 8.dp))
         }
+    }
+
+    iapMsg?.let { msg ->
+        AlertDialog(
+            onDismissRequest = { iapMsg = null },
+            text = { Text(msg) },
+            confirmButton = { TextButton(onClick = { iapMsg = null }) { Text(stringResource(R.string.close)) } },
+            containerColor = AppColors.Card,
+        )
     }
 
     if (showReset) {

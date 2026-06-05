@@ -2,10 +2,12 @@ import SwiftUI
 
 struct SettingsView: View {
     @Environment(ProgressStore.self) private var progress
+    @Environment(StoreManager.self) private var store
     @State private var showResetConfirm = false
     @State private var editingNickname = false
     @State private var draftNickname = ""
     @State private var showInquiry = false
+    @State private var iapMessage: String?
 
     private let termsURL = "https://duo.jiny.shop/ctr/terms"
     private let privacyURL = "https://duo.jiny.shop/ctr/privacy"
@@ -23,6 +25,7 @@ struct SettingsView: View {
                     VStack(spacing: 20) {
                         header
                         profileSection
+                        storeSection
                         preferencesSection
                         supportSection
                         dangerSection
@@ -51,6 +54,12 @@ struct SettingsView: View {
                 if !t.isEmpty { progress.nickname = t }
             }
         }
+        .alert(iapMessage ?? "", isPresented: Binding(
+            get: { iapMessage != nil },
+            set: { if !$0 { iapMessage = nil } }
+        )) {
+            Button(String.loc("close"), role: .cancel) {}
+        }
     }
 
     private var header: some View {
@@ -71,6 +80,28 @@ struct SettingsView: View {
             Divider().overlay(Theme.stroke)
             SettingsRow(icon: "lightbulb.fill", title: String.loc("hints_left"),
                         value: String.loc("hints_value", progress.hintsRemaining), showChevron: false)
+        }
+        .card()
+    }
+
+    private var storeSection: some View {
+        VStack(spacing: 0) {
+            if store.removeAdsPurchased {
+                SettingsRow(icon: "checkmark.seal.fill", title: String.loc("iap_remove_ads"),
+                            value: String.loc("iap_purchased"), showChevron: false)
+            } else {
+                SettingsRow(icon: "nosign", title: String.loc("iap_remove_ads"),
+                            value: store.priceText.isEmpty ? String.loc("iap_loading") : store.priceText) {
+                    Task { await store.purchase() }
+                }
+                Divider().overlay(Theme.stroke)
+                SettingsRow(icon: "arrow.clockwise", title: String.loc("iap_restore"), value: nil) {
+                    Task {
+                        let restored = await store.restore()
+                        iapMessage = String.loc(restored ? "iap_restore_done" : "iap_restore_none")
+                    }
+                }
+            }
         }
         .card()
     }

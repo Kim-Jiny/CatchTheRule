@@ -92,6 +92,14 @@ T = {
  "status_replied": ["Replied","답변완료","返信済み","已回复","Respondido","Répondu","Beantwortet"],
  "status_pending": ["Pending","대기중","対応中","待回复","Pendiente","En attente","Ausstehend"],
  "support": ["Support","고객지원","サポート","客户支持","Soporte","Assistance","Support"],
+ "iap_remove_ads": ["Remove Ads","광고 제거","広告を削除","移除广告","Quitar anuncios","Supprimer les pubs","Werbung entfernen"],
+ "iap_remove_ads_desc": ["Enjoy ad-free play forever","광고 없이 평생 즐기기","ずっと広告なしで楽しむ","永久无广告畅玩","Disfruta sin anuncios para siempre","Profitez sans pub pour toujours","Für immer werbefrei spielen"],
+ "iap_purchased": ["Purchased","구매 완료","購入済み","已购买","Comprado","Acheté","Gekauft"],
+ "iap_restore": ["Restore Purchases","구매 복원","購入を復元","恢复购买","Restaurar compras","Restaurer les achats","Käufe wiederherstellen"],
+ "iap_restore_done": ["Purchases restored","구매를 복원했어요","購入を復元しました","已恢复购买","Compras restauradas","Achats restaurés","Käufe wiederhergestellt"],
+ "iap_restore_none": ["No purchases to restore","복원할 구매가 없어요","復元できる購入がありません","没有可恢复的购买","No hay compras que restaurar","Aucun achat à restaurer","Keine Käufe zum Wiederherstellen"],
+ "iap_failed": ["Purchase failed. Please try again.","구매에 실패했어요. 다시 시도해주세요.","購入に失敗しました。もう一度お試しください。","购买失败，请重试。","La compra falló. Inténtalo de nuevo.","Achat échoué. Réessayez.","Kauf fehlgeschlagen. Bitte erneut versuchen."],
+ "iap_loading": ["Loading…","불러오는 중…","読み込み中…","加载中…","Cargando…","Chargement…","Wird geladen…"],
 }
 
 def to_ios_fmt(s):

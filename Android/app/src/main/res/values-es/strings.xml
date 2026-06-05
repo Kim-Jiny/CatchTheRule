@@ -73,4 +73,12 @@
     <string name="status_replied">Respondido</string>
     <string name="status_pending">Pendiente</string>
     <string name="support">Soporte</string>
+    <string name="iap_remove_ads">Quitar anuncios</string>
+    <string name="iap_remove_ads_desc">Disfruta sin anuncios para siempre</string>
+    <string name="iap_purchased">Comprado</string>
+    <string name="iap_restore">Restaurar compras</string>
+    <string name="iap_restore_done">Compras restauradas</string>
+    <string name="iap_restore_none">No hay compras que restaurar</string>
+    <string name="iap_failed">La compra falló. Inténtalo de nuevo.</string>
+    <string name="iap_loading">Cargando…</string>
 </resources>
