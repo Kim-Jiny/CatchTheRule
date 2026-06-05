@@ -86,6 +86,7 @@ struct SettingsView: View {
 
     private var storeSection: some View {
         VStack(spacing: 0) {
+            // 광고 제거 (비소모성)
             if store.removeAdsPurchased {
                 SettingsRow(icon: "checkmark.seal.fill", title: String.loc("iap_remove_ads"),
                             value: String.loc("iap_purchased"), showChevron: false)
@@ -94,12 +95,25 @@ struct SettingsView: View {
                             value: store.priceText.isEmpty ? String.loc("iap_loading") : store.priceText) {
                     Task { await store.purchase() }
                 }
-                Divider().overlay(Theme.stroke)
-                SettingsRow(icon: "arrow.clockwise", title: String.loc("iap_restore"), value: nil) {
-                    Task {
-                        let restored = await store.restore()
-                        iapMessage = String.loc(restored ? "iap_restore_done" : "iap_restore_none")
+            }
+            Divider().overlay(Theme.stroke)
+            // 힌트 구매 (소모성)
+            SettingsRow(icon: "lightbulb.fill", title: String.loc("iap_buy_hints"),
+                        value: store.hintsPriceText.isEmpty ? String.loc("iap_loading") : store.hintsPriceText) {
+                Task {
+                    let n = await store.purchaseHints()
+                    if n > 0 {
+                        progress.hintsRemaining += n
+                        iapMessage = String.loc("iap_hints_added")
                     }
+                }
+            }
+            Divider().overlay(Theme.stroke)
+            // 구매 복원
+            SettingsRow(icon: "arrow.clockwise", title: String.loc("iap_restore"), value: nil) {
+                Task {
+                    let restored = await store.restore()
+                    iapMessage = String.loc(restored ? "iap_restore_done" : "iap_restore_none")
                 }
             }
         }

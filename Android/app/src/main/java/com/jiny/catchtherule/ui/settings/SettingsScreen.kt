@@ -98,8 +98,9 @@ fun SettingsScreen(modifier: Modifier = Modifier) {
                 SettingsRow(Icons.Filled.Lightbulb, stringResource(R.string.hints_left), stringResource(R.string.hints_value, progress.hintsRemaining), chevron = false, onClick = null)
             }
 
-            // 인앱결제 (광고 제거)
+            // 인앱결제
             Column(Modifier.fillMaxWidth().card()) {
+                // 광고 제거 (비소모성)
                 if (billing.removeAdsPurchased) {
                     SettingsRow(Icons.Filled.CheckCircle, stringResource(R.string.iap_remove_ads), stringResource(R.string.iap_purchased), chevron = false, onClick = null)
                 } else {
@@ -107,11 +108,19 @@ fun SettingsScreen(modifier: Modifier = Modifier) {
                         Icons.Filled.Block,
                         stringResource(R.string.iap_remove_ads),
                         billing.removeAdsPrice.ifEmpty { stringResource(R.string.iap_loading) },
-                    ) { activity?.let { billing.purchase(it) } }
-                    RowDivider()
-                    SettingsRow(Icons.Filled.Restore, stringResource(R.string.iap_restore), null) {
-                        billing.queryPurchases { restored -> iapMsg = if (restored) restoreDoneMsg else restoreNoneMsg }
-                    }
+                    ) { activity?.let { billing.purchase(it, com.jiny.catchtherule.data.BillingManager.REMOVE_ADS_ID) } }
+                }
+                RowDivider()
+                // 힌트 구매 (소모성)
+                SettingsRow(
+                    Icons.Filled.Lightbulb,
+                    stringResource(R.string.iap_buy_hints),
+                    billing.hintsPrice.ifEmpty { stringResource(R.string.iap_loading) },
+                ) { activity?.let { billing.purchase(it, com.jiny.catchtherule.data.BillingManager.HINTS_ID) } }
+                RowDivider()
+                // 구매 복원
+                SettingsRow(Icons.Filled.Restore, stringResource(R.string.iap_restore), null) {
+                    billing.queryPurchases { restored -> iapMsg = if (restored) restoreDoneMsg else restoreNoneMsg }
                 }
             }
 

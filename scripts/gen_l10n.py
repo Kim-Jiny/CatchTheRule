@@ -100,6 +100,9 @@ T = {
  "iap_restore_none": ["No purchases to restore","복원할 구매가 없어요","復元できる購入がありません","没有可恢复的购买","No hay compras que restaurar","Aucun achat à restaurer","Keine Käufe zum Wiederherstellen"],
  "iap_failed": ["Purchase failed. Please try again.","구매에 실패했어요. 다시 시도해주세요.","購入に失敗しました。もう一度お試しください。","购买失败，请重试。","La compra falló. Inténtalo de nuevo.","Achat échoué. Réessayez.","Kauf fehlgeschlagen. Bitte erneut versuchen."],
  "iap_loading": ["Loading…","불러오는 중…","読み込み中…","加载中…","Cargando…","Chargement…","Wird geladen…"],
+ "iap_buy_hints": ["Buy Hints","힌트 구매","ヒントを購入","购买提示","Comprar pistas","Acheter des indices","Tipps kaufen"],
+ "iap_hints_desc": ["Get a pack of hints","힌트 묶음 받기","ヒントパックを入手","获取提示包","Consigue un paquete de pistas","Obtenez un pack d'indices","Ein Tipp-Paket erhalten"],
+ "iap_hints_added": ["Hints added!","힌트가 추가됐어요!","ヒントを追加しました！","已添加提示！","¡Pistas añadidas!","Indices ajoutés !","Tipps hinzugefügt!"],
 }
 
 def to_ios_fmt(s):

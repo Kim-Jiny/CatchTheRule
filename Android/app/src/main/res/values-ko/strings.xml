@@ -81,4 +81,7 @@
     <string name="iap_restore_none">복원할 구매가 없어요</string>
     <string name="iap_failed">구매에 실패했어요. 다시 시도해주세요.</string>
     <string name="iap_loading">불러오는 중…</string>
+    <string name="iap_buy_hints">힌트 구매</string>
+    <string name="iap_hints_desc">힌트 묶음 받기</string>
+    <string name="iap_hints_added">힌트가 추가됐어요!</string>
 </resources>

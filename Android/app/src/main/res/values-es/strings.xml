@@ -81,4 +81,7 @@
     <string name="iap_restore_none">No hay compras que restaurar</string>
     <string name="iap_failed">La compra falló. Inténtalo de nuevo.</string>
     <string name="iap_loading">Cargando…</string>
+    <string name="iap_buy_hints">Comprar pistas</string>
+    <string name="iap_hints_desc">Consigue un paquete de pistas</string>
+    <string name="iap_hints_added">¡Pistas añadidas!</string>
 </resources>

@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
         Ranking.init(this)
         AnalyticsService.ping(this)
         val progress = ProgressStore(this)
-        billing = BillingManager(this).also { it.start() }
+        billing = BillingManager(this, progress).also { it.start() }
         setContent {
             CatchTheRuleTheme {
                 CompositionLocalProvider(

@@ -81,4 +81,7 @@
     <string name="iap_restore_none">No purchases to restore</string>
     <string name="iap_failed">Purchase failed. Please try again.</string>
     <string name="iap_loading">Loading…</string>
+    <string name="iap_buy_hints">Buy Hints</string>
+    <string name="iap_hints_desc">Get a pack of hints</string>
+    <string name="iap_hints_added">Hints added!</string>
 </resources>

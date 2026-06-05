@@ -60,6 +60,12 @@ class ProgressStore(context: Context) {
         }
     }
 
+    fun addHints(count: Int) {
+        if (count <= 0) return
+        hintsRemaining += count
+        prefs.edit().putInt(K_HINTS, hintsRemaining).apply()
+    }
+
     fun spendHint(): Boolean {
         if (hintsRemaining <= 0) return false
         hintsRemaining -= 1
