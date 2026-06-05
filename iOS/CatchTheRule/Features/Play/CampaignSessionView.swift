@@ -108,7 +108,7 @@ struct CampaignSessionView: View {
 
     private var shownHints: [String] {
         guard let puzzle else { return [] }
-        return Array(puzzle.hints.prefix(hintsShown))
+        return Array(puzzle.localizedHints.prefix(hintsShown))
     }
 
     private var hintBox: some View {
@@ -132,7 +132,7 @@ struct CampaignSessionView: View {
     }
 
     private func hintButton(for puzzle: Puzzle) -> some View {
-        let canHint = hintsShown < puzzle.hints.count && progress.hintsRemaining > 0 && !solved
+        let canHint = hintsShown < puzzle.localizedHints.count && progress.hintsRemaining > 0 && !solved
         return Button {
             useHint(for: puzzle)
         } label: {
@@ -151,7 +151,7 @@ struct CampaignSessionView: View {
     }
 
     private func useHint(for puzzle: Puzzle) {
-        guard hintsShown < puzzle.hints.count, progress.spendHint() else { return }
+        guard hintsShown < puzzle.localizedHints.count, progress.spendHint() else { return }
         if progress.hapticsOn { Haptics.tap() }
         withAnimation(.spring(duration: 0.3)) { hintsShown += 1 }
     }

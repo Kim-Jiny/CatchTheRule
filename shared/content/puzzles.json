@@ -4,927 +4,3822 @@
     "type": "arith",
     "chapter": 1,
     "order": 1,
-    "tokens": ["1", "2", "3", "4", null],
+    "tokens": [
+      "1",
+      "2",
+      "3",
+      "4",
+      null
+    ],
     "answer": "5",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "이웃한 숫자의 차이를 살펴보세요.",
-      "매번 1씩 커지고 있어요.",
-      "4 다음은 4보다 1 큰 수예요."
-    ],
-    "explanation": "1씩 커지는 등차수열: 1, 2, 3, 4, 5"
+    "hints": {
+      "ko": [
+        "이웃한 숫자의 차이를 살펴보세요.",
+        "매번 1씩 커지고 있어요.",
+        "4 다음은 4보다 1 큰 수예요."
+      ],
+      "en": [
+        "Look at the difference between neighboring numbers.",
+        "It grows by 1 each time.",
+        "After 4 comes the number that is 1 more than 4."
+      ],
+      "ja": [
+        "となり合う数の差を見てみましょう。",
+        "毎回1ずつ大きくなっています。",
+        "4の次は、4より1大きい数です。"
+      ],
+      "zh": [
+        "看看相邻数字之间的差。",
+        "每次都增加1。",
+        "4之后是比4大1的数。"
+      ],
+      "es": [
+        "Mira la diferencia entre números vecinos.",
+        "Aumenta de 1 en 1 cada vez.",
+        "Después del 4 viene el número que es 1 más que 4."
+      ],
+      "fr": [
+        "Regarde la différence entre les nombres voisins.",
+        "Il augmente de 1 à chaque fois.",
+        "Après 4 vient le nombre qui vaut 1 de plus que 4."
+      ],
+      "de": [
+        "Schau dir den Unterschied zwischen benachbarten Zahlen an.",
+        "Sie wird jedes Mal um 1 größer.",
+        "Nach 4 kommt die Zahl, die um 1 größer ist als 4."
+      ]
+    },
+    "explanation": {
+      "ko": "1씩 커지는 등차수열: 1, 2, 3, 4, 5",
+      "en": "An arithmetic sequence increasing by 1: 1, 2, 3, 4, 5",
+      "ja": "1ずつ大きくなる等差数列: 1, 2, 3, 4, 5",
+      "zh": "每次加1的等差数列：1, 2, 3, 4, 5",
+      "es": "Una sucesión aritmética que aumenta de 1 en 1: 1, 2, 3, 4, 5",
+      "fr": "Une suite arithmétique qui augmente de 1 : 1, 2, 3, 4, 5",
+      "de": "Eine arithmetische Folge, die um 1 wächst: 1, 2, 3, 4, 5"
+    }
   },
   {
     "id": "ch1_s02",
     "type": "step",
     "chapter": 1,
     "order": 2,
-    "tokens": ["2", "4", "6", "8", null],
+    "tokens": [
+      "2",
+      "4",
+      "6",
+      "8",
+      null
+    ],
     "answer": "10",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "모두 짝수예요.",
-      "2씩 커지고 있어요.",
-      "8 다음 짝수는 무엇일까요?"
-    ],
-    "explanation": "2씩 커지는 짝수: 2, 4, 6, 8, 10"
+    "hints": {
+      "ko": [
+        "모두 짝수예요.",
+        "2씩 커지고 있어요.",
+        "8 다음 짝수는 무엇일까요?"
+      ],
+      "en": [
+        "They are all even numbers.",
+        "It grows by 2 each time.",
+        "What even number comes after 8?"
+      ],
+      "ja": [
+        "すべて偶数です。",
+        "2ずつ大きくなっています。",
+        "8の次の偶数は何でしょう？"
+      ],
+      "zh": [
+        "它们都是偶数。",
+        "每次都增加2。",
+        "8之后的偶数是什么？"
+      ],
+      "es": [
+        "Todos son números pares.",
+        "Aumenta de 2 en 2 cada vez.",
+        "¿Qué número par viene después del 8?"
+      ],
+      "fr": [
+        "Ce sont tous des nombres pairs.",
+        "Il augmente de 2 à chaque fois.",
+        "Quel nombre pair vient après 8 ?"
+      ],
+      "de": [
+        "Es sind alles gerade Zahlen.",
+        "Sie wird jedes Mal um 2 größer.",
+        "Welche gerade Zahl kommt nach 8?"
+      ]
+    },
+    "explanation": {
+      "ko": "2씩 커지는 짝수: 2, 4, 6, 8, 10",
+      "en": "Even numbers increasing by 2: 2, 4, 6, 8, 10",
+      "ja": "2ずつ大きくなる偶数: 2, 4, 6, 8, 10",
+      "zh": "每次加2的偶数：2, 4, 6, 8, 10",
+      "es": "Números pares que aumentan de 2 en 2: 2, 4, 6, 8, 10",
+      "fr": "Des nombres pairs qui augmentent de 2 : 2, 4, 6, 8, 10",
+      "de": "Gerade Zahlen, die um 2 wachsen: 2, 4, 6, 8, 10"
+    }
   },
   {
     "id": "ch1_s03",
     "type": "odd_even",
     "chapter": 1,
     "order": 3,
-    "tokens": ["1", "3", null, "7"],
+    "tokens": [
+      "1",
+      "3",
+      null,
+      "7"
+    ],
     "answer": "5",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "숫자 사이의 간격을 보세요.",
-      "1과 3의 차이는 2예요.",
-      "홀수가 순서대로 나열돼요."
-    ],
-    "explanation": "연속된 홀수: 1, 3, 5, 7"
+    "hints": {
+      "ko": [
+        "숫자 사이의 간격을 보세요.",
+        "1과 3의 차이는 2예요.",
+        "홀수가 순서대로 나열돼요."
+      ],
+      "en": [
+        "Look at the gap between the numbers.",
+        "The difference between 1 and 3 is 2.",
+        "Odd numbers are listed in order."
+      ],
+      "ja": [
+        "数と数の間隔を見てみましょう。",
+        "1と3の差は2です。",
+        "奇数が順番に並んでいます。"
+      ],
+      "zh": [
+        "看看数字之间的间隔。",
+        "1和3的差是2。",
+        "奇数按顺序排列着。"
+      ],
+      "es": [
+        "Mira el espacio entre los números.",
+        "La diferencia entre 1 y 3 es 2.",
+        "Los números impares están en orden."
+      ],
+      "fr": [
+        "Regarde l'écart entre les nombres.",
+        "La différence entre 1 et 3 est 2.",
+        "Les nombres impairs sont rangés dans l'ordre."
+      ],
+      "de": [
+        "Schau dir den Abstand zwischen den Zahlen an.",
+        "Der Unterschied zwischen 1 und 3 ist 2.",
+        "Ungerade Zahlen sind der Reihe nach aufgelistet."
+      ]
+    },
+    "explanation": {
+      "ko": "연속된 홀수: 1, 3, 5, 7",
+      "en": "Consecutive odd numbers: 1, 3, 5, 7",
+      "ja": "連続する奇数: 1, 3, 5, 7",
+      "zh": "连续的奇数：1, 3, 5, 7",
+      "es": "Números impares consecutivos: 1, 3, 5, 7",
+      "fr": "Des nombres impairs consécutifs : 1, 3, 5, 7",
+      "de": "Aufeinanderfolgende ungerade Zahlen: 1, 3, 5, 7"
+    }
   },
   {
     "id": "ch1_s04",
     "type": "arith",
     "chapter": 1,
     "order": 4,
-    "tokens": ["5", "10", "15", "20", null],
+    "tokens": [
+      "5",
+      "10",
+      "15",
+      "20",
+      null
+    ],
     "answer": "25",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "5의 배수가 이어지고 있어요.",
-      "매번 5씩 커져요.",
-      "20 다음 5의 배수는?"
-    ],
-    "explanation": "5씩 커지는 수열: 5, 10, 15, 20, 25"
+    "hints": {
+      "ko": [
+        "5의 배수가 이어지고 있어요.",
+        "매번 5씩 커져요.",
+        "20 다음 5의 배수는?"
+      ],
+      "en": [
+        "Multiples of 5 are continuing.",
+        "It grows by 5 each time.",
+        "What multiple of 5 comes after 20?"
+      ],
+      "ja": [
+        "5の倍数が続いています。",
+        "毎回5ずつ大きくなります。",
+        "20の次の5の倍数は？"
+      ],
+      "zh": [
+        "5的倍数在延续。",
+        "每次都增加5。",
+        "20之后的5的倍数是什么？"
+      ],
+      "es": [
+        "Los múltiplos de 5 continúan.",
+        "Aumenta de 5 en 5 cada vez.",
+        "¿Qué múltiplo de 5 viene después del 20?"
+      ],
+      "fr": [
+        "Les multiples de 5 se suivent.",
+        "Il augmente de 5 à chaque fois.",
+        "Quel multiple de 5 vient après 20 ?"
+      ],
+      "de": [
+        "Die Vielfachen von 5 gehen weiter.",
+        "Sie wird jedes Mal um 5 größer.",
+        "Welches Vielfache von 5 kommt nach 20?"
+      ]
+    },
+    "explanation": {
+      "ko": "5씩 커지는 수열: 5, 10, 15, 20, 25",
+      "en": "A sequence increasing by 5: 5, 10, 15, 20, 25",
+      "ja": "5ずつ大きくなる数列: 5, 10, 15, 20, 25",
+      "zh": "每次加5的数列：5, 10, 15, 20, 25",
+      "es": "Una sucesión que aumenta de 5 en 5: 5, 10, 15, 20, 25",
+      "fr": "Une suite qui augmente de 5 : 5, 10, 15, 20, 25",
+      "de": "Eine Folge, die um 5 wächst: 5, 10, 15, 20, 25"
+    }
   },
   {
     "id": "ch1_s05",
     "type": "step",
     "chapter": 1,
     "order": 5,
-    "tokens": ["3", "6", "9", "12", null],
+    "tokens": [
+      "3",
+      "6",
+      "9",
+      "12",
+      null
+    ],
     "answer": "15",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "3단 구구단을 떠올려보세요.",
-      "3씩 커지고 있어요.",
-      "12 다음 3의 배수는?"
-    ],
-    "explanation": "3의 배수: 3, 6, 9, 12, 15"
+    "hints": {
+      "ko": [
+        "3단 구구단을 떠올려보세요.",
+        "3씩 커지고 있어요.",
+        "12 다음 3의 배수는?"
+      ],
+      "en": [
+        "Think of the 3 times table.",
+        "It grows by 3 each time.",
+        "What multiple of 3 comes after 12?"
+      ],
+      "ja": [
+        "3の段の九九を思い出してみましょう。",
+        "3ずつ大きくなっています。",
+        "12の次の3の倍数は？"
+      ],
+      "zh": [
+        "想想3的乘法口诀。",
+        "每次都增加3。",
+        "12之后的3的倍数是什么？"
+      ],
+      "es": [
+        "Piensa en la tabla del 3.",
+        "Aumenta de 3 en 3 cada vez.",
+        "¿Qué múltiplo de 3 viene después del 12?"
+      ],
+      "fr": [
+        "Pense à la table de 3.",
+        "Il augmente de 3 à chaque fois.",
+        "Quel multiple de 3 vient après 12 ?"
+      ],
+      "de": [
+        "Denk an die 3er-Reihe.",
+        "Sie wird jedes Mal um 3 größer.",
+        "Welches Vielfache von 3 kommt nach 12?"
+      ]
+    },
+    "explanation": {
+      "ko": "3의 배수: 3, 6, 9, 12, 15",
+      "en": "Multiples of 3: 3, 6, 9, 12, 15",
+      "ja": "3の倍数: 3, 6, 9, 12, 15",
+      "zh": "3的倍数：3, 6, 9, 12, 15",
+      "es": "Múltiplos de 3: 3, 6, 9, 12, 15",
+      "fr": "Des multiples de 3 : 3, 6, 9, 12, 15",
+      "de": "Vielfache von 3: 3, 6, 9, 12, 15"
+    }
   },
   {
     "id": "ch2_s01",
     "type": "geo",
     "chapter": 2,
     "order": 1,
-    "tokens": ["2", "4", "8", "16", null],
+    "tokens": [
+      "2",
+      "4",
+      "8",
+      "16",
+      null
+    ],
     "answer": "32",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "차이가 점점 커져요. 곱셈을 떠올려보세요.",
-      "앞 수에 2를 곱하고 있어요.",
-      "16 × 2 = ?"
-    ],
-    "explanation": "2배씩 커지는 등비수열: 2, 4, 8, 16, 32"
+    "hints": {
+      "ko": [
+        "차이가 점점 커져요. 곱셈을 떠올려보세요.",
+        "앞 수에 2를 곱하고 있어요.",
+        "16 × 2 = ?"
+      ],
+      "en": [
+        "The difference keeps growing. Think of multiplication.",
+        "Each number is multiplied by 2.",
+        "16 × 2 = ?"
+      ],
+      "ja": [
+        "差がだんだん大きくなります。かけ算を思い出してみましょう。",
+        "前の数に2をかけています。",
+        "16 × 2 = ?"
+      ],
+      "zh": [
+        "差越来越大。想想乘法。",
+        "每个数都乘以2。",
+        "16 × 2 = ?"
+      ],
+      "es": [
+        "La diferencia sigue creciendo. Piensa en la multiplicación.",
+        "Cada número se multiplica por 2.",
+        "16 × 2 = ?"
+      ],
+      "fr": [
+        "La différence ne cesse de grandir. Pense à la multiplication.",
+        "Chaque nombre est multiplié par 2.",
+        "16 × 2 = ?"
+      ],
+      "de": [
+        "Der Unterschied wird immer größer. Denk an Multiplikation.",
+        "Jede Zahl wird mit 2 multipliziert.",
+        "16 × 2 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "2배씩 커지는 등비수열: 2, 4, 8, 16, 32",
+      "en": "A geometric sequence doubling each time: 2, 4, 8, 16, 32",
+      "ja": "2倍ずつ大きくなる等比数列: 2, 4, 8, 16, 32",
+      "zh": "每次乘2的等比数列：2, 4, 8, 16, 32",
+      "es": "Una sucesión geométrica que se duplica cada vez: 2, 4, 8, 16, 32",
+      "fr": "Une suite géométrique qui double à chaque fois : 2, 4, 8, 16, 32",
+      "de": "Eine geometrische Folge, die sich jedes Mal verdoppelt: 2, 4, 8, 16, 32"
+    }
   },
   {
     "id": "ch2_s02",
     "type": "square",
     "chapter": 2,
     "order": 2,
-    "tokens": ["1", "4", "9", "16", null],
+    "tokens": [
+      "1",
+      "4",
+      "9",
+      "16",
+      null
+    ],
     "answer": "25",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "1, 2, 3, 4 와 관련이 있어요.",
-      "각 수를 제곱하면? 1², 2², 3², 4² ...",
-      "5² 은 얼마일까요?"
-    ],
-    "explanation": "제곱수: 1², 2², 3², 4², 5² = 25"
+    "hints": {
+      "ko": [
+        "1, 2, 3, 4 와 관련이 있어요.",
+        "각 수를 제곱하면? 1², 2², 3², 4² ...",
+        "5² 은 얼마일까요?"
+      ],
+      "en": [
+        "It's related to 1, 2, 3, 4.",
+        "What if you square each number? 1², 2², 3², 4² ...",
+        "What is 5²?"
+      ],
+      "ja": [
+        "1, 2, 3, 4 と関係があります。",
+        "それぞれの数を2乗すると？ 1², 2², 3², 4² ...",
+        "5² はいくつでしょう？"
+      ],
+      "zh": [
+        "它和1, 2, 3, 4有关。",
+        "把每个数平方会怎样？ 1², 2², 3², 4² ...",
+        "5² 是多少？"
+      ],
+      "es": [
+        "Tiene que ver con 1, 2, 3, 4.",
+        "¿Y si elevas cada número al cuadrado? 1², 2², 3², 4² ...",
+        "¿Cuánto es 5²?"
+      ],
+      "fr": [
+        "C'est lié à 1, 2, 3, 4.",
+        "Et si tu élevais chaque nombre au carré ? 1², 2², 3², 4² ...",
+        "Combien fait 5² ?"
+      ],
+      "de": [
+        "Es hat mit 1, 2, 3, 4 zu tun.",
+        "Was, wenn du jede Zahl quadrierst? 1², 2², 3², 4² ...",
+        "Was ist 5²?"
+      ]
+    },
+    "explanation": {
+      "ko": "제곱수: 1², 2², 3², 4², 5² = 25",
+      "en": "Square numbers: 1², 2², 3², 4², 5² = 25",
+      "ja": "平方数: 1², 2², 3², 4², 5² = 25",
+      "zh": "平方数：1², 2², 3², 4², 5² = 25",
+      "es": "Números cuadrados: 1², 2², 3², 4², 5² = 25",
+      "fr": "Des carrés parfaits : 1², 2², 3², 4², 5² = 25",
+      "de": "Quadratzahlen: 1², 2², 3², 4², 5² = 25"
+    }
   },
   {
     "id": "ch2_s03",
     "type": "geo",
     "chapter": 2,
     "order": 3,
-    "tokens": ["3", "9", "27", null],
+    "tokens": [
+      "3",
+      "9",
+      "27",
+      null
+    ],
     "answer": "81",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "곱셈 규칙이에요.",
-      "앞 수에 3을 곱해요.",
-      "27 × 3 = ?"
-    ],
-    "explanation": "3배씩 커지는 수열: 3, 9, 27, 81"
+    "hints": {
+      "ko": [
+        "곱셈 규칙이에요.",
+        "앞 수에 3을 곱해요.",
+        "27 × 3 = ?"
+      ],
+      "en": [
+        "It's a multiplication rule.",
+        "Multiply the previous number by 3.",
+        "27 × 3 = ?"
+      ],
+      "ja": [
+        "かけ算のルールです。",
+        "前の数に3をかけます。",
+        "27 × 3 = ?"
+      ],
+      "zh": [
+        "这是乘法规律。",
+        "把前一个数乘以3。",
+        "27 × 3 = ?"
+      ],
+      "es": [
+        "Es una regla de multiplicación.",
+        "Multiplica el número anterior por 3.",
+        "27 × 3 = ?"
+      ],
+      "fr": [
+        "C'est une règle de multiplication.",
+        "Multiplie le nombre précédent par 3.",
+        "27 × 3 = ?"
+      ],
+      "de": [
+        "Es ist eine Multiplikationsregel.",
+        "Multipliziere die vorherige Zahl mit 3.",
+        "27 × 3 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "3배씩 커지는 수열: 3, 9, 27, 81",
+      "en": "A sequence tripling each time: 3, 9, 27, 81",
+      "ja": "3倍ずつ大きくなる数列: 3, 9, 27, 81",
+      "zh": "每次乘3的数列：3, 9, 27, 81",
+      "es": "Una sucesión que se triplica cada vez: 3, 9, 27, 81",
+      "fr": "Une suite qui triple à chaque fois : 3, 9, 27, 81",
+      "de": "Eine Folge, die sich jedes Mal verdreifacht: 3, 9, 27, 81"
+    }
   },
   {
     "id": "ch2_s04",
     "type": "arith",
     "chapter": 2,
     "order": 4,
-    "tokens": ["7", "14", "21", null, "35"],
+    "tokens": [
+      "7",
+      "14",
+      "21",
+      null,
+      "35"
+    ],
     "answer": "28",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "7단 구구단이에요.",
-      "7씩 커져요.",
-      "21과 35 사이의 7의 배수는?"
-    ],
-    "explanation": "7의 배수: 7, 14, 21, 28, 35"
+    "hints": {
+      "ko": [
+        "7단 구구단이에요.",
+        "7씩 커져요.",
+        "21과 35 사이의 7의 배수는?"
+      ],
+      "en": [
+        "It's the 7 times table.",
+        "It grows by 7 each time.",
+        "Which multiple of 7 is between 21 and 35?"
+      ],
+      "ja": [
+        "7の段の九九です。",
+        "7ずつ増えます。",
+        "21と35の間にある7の倍数は?"
+      ],
+      "zh": [
+        "这是7的乘法表。",
+        "每次增加7。",
+        "21和35之间7的倍数是哪个?"
+      ],
+      "es": [
+        "Es la tabla del 7.",
+        "Aumenta de 7 en 7.",
+        "¿Qué múltiplo de 7 hay entre 21 y 35?"
+      ],
+      "fr": [
+        "C'est la table de 7.",
+        "Ça augmente de 7 à chaque fois.",
+        "Quel multiple de 7 se trouve entre 21 et 35 ?"
+      ],
+      "de": [
+        "Das ist die 7er-Reihe.",
+        "Es wird jedes Mal um 7 größer.",
+        "Welches Vielfache von 7 liegt zwischen 21 und 35?"
+      ]
+    },
+    "explanation": {
+      "ko": "7의 배수: 7, 14, 21, 28, 35",
+      "en": "Multiples of 7: 7, 14, 21, 28, 35",
+      "ja": "7の倍数: 7, 14, 21, 28, 35",
+      "zh": "7的倍数: 7, 14, 21, 28, 35",
+      "es": "Múltiplos de 7: 7, 14, 21, 28, 35",
+      "fr": "Multiples de 7 : 7, 14, 21, 28, 35",
+      "de": "Vielfache von 7: 7, 14, 21, 28, 35"
+    }
   },
   {
     "id": "ch3_s01",
     "type": "fib",
     "chapter": 3,
     "order": 1,
-    "tokens": ["1", "1", "2", "3", "5", null],
+    "tokens": [
+      "1",
+      "1",
+      "2",
+      "3",
+      "5",
+      null
+    ],
     "answer": "8",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "앞의 두 수를 더해보세요.",
-      "3 + 5 를 계산하면?",
-      "피보나치 수열이에요."
-    ],
-    "explanation": "앞 두 수의 합(피보나치): 3 + 5 = 8"
+    "hints": {
+      "ko": [
+        "앞의 두 수를 더해보세요.",
+        "3 + 5 를 계산하면?",
+        "피보나치 수열이에요."
+      ],
+      "en": [
+        "Try adding the two numbers before it.",
+        "What is 3 + 5?",
+        "It's the Fibonacci sequence."
+      ],
+      "ja": [
+        "前の2つの数を足してみましょう。",
+        "3 + 5 はいくつ?",
+        "フィボナッチ数列です。"
+      ],
+      "zh": [
+        "试着把前面两个数相加。",
+        "3 + 5 是多少?",
+        "这是斐波那契数列。"
+      ],
+      "es": [
+        "Intenta sumar los dos números anteriores.",
+        "¿Cuánto es 3 + 5?",
+        "Es la sucesión de Fibonacci."
+      ],
+      "fr": [
+        "Essaie d'additionner les deux nombres précédents.",
+        "Combien font 3 + 5 ?",
+        "C'est la suite de Fibonacci."
+      ],
+      "de": [
+        "Addiere die beiden Zahlen davor.",
+        "Was ist 3 + 5?",
+        "Das ist die Fibonacci-Folge."
+      ]
+    },
+    "explanation": {
+      "ko": "앞 두 수의 합(피보나치): 3 + 5 = 8",
+      "en": "Sum of the two previous numbers (Fibonacci): 3 + 5 = 8",
+      "ja": "前の2つの数の和(フィボナッチ): 3 + 5 = 8",
+      "zh": "前两个数之和(斐波那契): 3 + 5 = 8",
+      "es": "Suma de los dos números anteriores (Fibonacci): 3 + 5 = 8",
+      "fr": "Somme des deux nombres précédents (Fibonacci) : 3 + 5 = 8",
+      "de": "Summe der beiden vorherigen Zahlen (Fibonacci): 3 + 5 = 8"
+    }
   },
   {
     "id": "ch3_s02",
     "type": "diff_inc",
     "chapter": 3,
     "order": 2,
-    "tokens": ["1", "2", "4", "7", "11", null],
+    "tokens": [
+      "1",
+      "2",
+      "4",
+      "7",
+      "11",
+      null
+    ],
     "answer": "16",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "차이를 나열해보세요: 1, 2, 3, 4 ...",
-      "더해지는 값이 1씩 늘어나요.",
-      "11 + 5 = ?"
-    ],
-    "explanation": "차이가 1, 2, 3, 4, 5 로 증가: 11 + 5 = 16"
+    "hints": {
+      "ko": [
+        "차이를 나열해보세요: 1, 2, 3, 4 ...",
+        "더해지는 값이 1씩 늘어나요.",
+        "11 + 5 = ?"
+      ],
+      "en": [
+        "List the differences: 1, 2, 3, 4 ...",
+        "The amount added grows by 1 each time.",
+        "11 + 5 = ?"
+      ],
+      "ja": [
+        "差を並べてみましょう: 1, 2, 3, 4 ...",
+        "足す数が1ずつ増えます。",
+        "11 + 5 = ?"
+      ],
+      "zh": [
+        "把差列出来: 1, 2, 3, 4 ...",
+        "每次相加的数增加1。",
+        "11 + 5 = ?"
+      ],
+      "es": [
+        "Escribe las diferencias: 1, 2, 3, 4 ...",
+        "Lo que se suma aumenta de 1 en 1.",
+        "11 + 5 = ?"
+      ],
+      "fr": [
+        "Liste les différences : 1, 2, 3, 4 ...",
+        "Ce qu'on ajoute augmente de 1 à chaque fois.",
+        "11 + 5 = ?"
+      ],
+      "de": [
+        "Schreibe die Differenzen auf: 1, 2, 3, 4 ...",
+        "Der Zuwachs wird jedes Mal um 1 größer.",
+        "11 + 5 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "차이가 1, 2, 3, 4, 5 로 증가: 11 + 5 = 16",
+      "en": "The difference grows by 1, 2, 3, 4, 5: 11 + 5 = 16",
+      "ja": "差が1, 2, 3, 4, 5 と増える: 11 + 5 = 16",
+      "zh": "差按1, 2, 3, 4, 5 递增: 11 + 5 = 16",
+      "es": "La diferencia aumenta de 1, 2, 3, 4, 5: 11 + 5 = 16",
+      "fr": "La différence augmente de 1, 2, 3, 4, 5 : 11 + 5 = 16",
+      "de": "Die Differenz wächst um 1, 2, 3, 4, 5: 11 + 5 = 16"
+    }
   },
   {
     "id": "ch3_s03",
     "type": "prime",
     "chapter": 3,
     "order": 3,
-    "tokens": ["2", "3", "5", "7", null],
+    "tokens": [
+      "2",
+      "3",
+      "5",
+      "7",
+      null
+    ],
     "answer": "11",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "나눠지지 않는 특별한 수들이에요.",
-      "1과 자기 자신으로만 나눠져요(소수).",
-      "7 다음 소수는?"
-    ],
-    "explanation": "소수: 2, 3, 5, 7, 11"
+    "hints": {
+      "ko": [
+        "나눠지지 않는 특별한 수들이에요.",
+        "1과 자기 자신으로만 나눠져요(소수).",
+        "7 다음 소수는?"
+      ],
+      "en": [
+        "These are special numbers that can't be divided.",
+        "Divisible only by 1 and itself (prime numbers).",
+        "What is the next prime after 7?"
+      ],
+      "ja": [
+        "割り切れない特別な数です。",
+        "1と自分自身だけで割れます(素数)。",
+        "7の次の素数は?"
+      ],
+      "zh": [
+        "这些是除不尽的特别的数。",
+        "只能被1和它本身整除(质数)。",
+        "7之后的下一个质数是?"
+      ],
+      "es": [
+        "Son números especiales que no se pueden dividir.",
+        "Solo se dividen por 1 y por sí mismos (números primos).",
+        "¿Cuál es el primo siguiente al 7?"
+      ],
+      "fr": [
+        "Ce sont des nombres spéciaux qui ne se divisent pas.",
+        "Divisibles seulement par 1 et par eux-mêmes (nombres premiers).",
+        "Quel est le nombre premier après 7 ?"
+      ],
+      "de": [
+        "Das sind besondere Zahlen, die sich nicht teilen lassen.",
+        "Nur durch 1 und sich selbst teilbar (Primzahlen).",
+        "Welche Primzahl kommt nach 7?"
+      ]
+    },
+    "explanation": {
+      "ko": "소수: 2, 3, 5, 7, 11",
+      "en": "Prime numbers: 2, 3, 5, 7, 11",
+      "ja": "素数: 2, 3, 5, 7, 11",
+      "zh": "质数: 2, 3, 5, 7, 11",
+      "es": "Números primos: 2, 3, 5, 7, 11",
+      "fr": "Nombres premiers : 2, 3, 5, 7, 11",
+      "de": "Primzahlen: 2, 3, 5, 7, 11"
+    }
   },
   {
     "id": "ch3_s04",
     "type": "fib",
     "chapter": 3,
     "order": 4,
-    "tokens": ["2", "3", "5", "8", "13", null],
+    "tokens": [
+      "2",
+      "3",
+      "5",
+      "8",
+      "13",
+      null
+    ],
     "answer": "21",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "앞의 두 수를 더해요.",
-      "8 + 13 을 계산하면?",
-      "피보나치 규칙이에요."
-    ],
-    "explanation": "앞 두 수의 합: 8 + 13 = 21"
+    "hints": {
+      "ko": [
+        "앞의 두 수를 더해요.",
+        "8 + 13 을 계산하면?",
+        "피보나치 규칙이에요."
+      ],
+      "en": [
+        "Add the two numbers before it.",
+        "What is 8 + 13?",
+        "It's the Fibonacci rule."
+      ],
+      "ja": [
+        "前の2つの数を足します。",
+        "8 + 13 はいくつ?",
+        "フィボナッチの規則です。"
+      ],
+      "zh": [
+        "把前面两个数相加。",
+        "8 + 13 是多少?",
+        "这是斐波那契规则。"
+      ],
+      "es": [
+        "Suma los dos números anteriores.",
+        "¿Cuánto es 8 + 13?",
+        "Es la regla de Fibonacci."
+      ],
+      "fr": [
+        "Additionne les deux nombres précédents.",
+        "Combien font 8 + 13 ?",
+        "C'est la règle de Fibonacci."
+      ],
+      "de": [
+        "Addiere die beiden Zahlen davor.",
+        "Was ist 8 + 13?",
+        "Das ist die Fibonacci-Regel."
+      ]
+    },
+    "explanation": {
+      "ko": "앞 두 수의 합: 8 + 13 = 21",
+      "en": "Sum of the two previous numbers: 8 + 13 = 21",
+      "ja": "前の2つの数の和: 8 + 13 = 21",
+      "zh": "前两个数之和: 8 + 13 = 21",
+      "es": "Suma de los dos números anteriores: 8 + 13 = 21",
+      "fr": "Somme des deux nombres précédents : 8 + 13 = 21",
+      "de": "Summe der beiden vorherigen Zahlen: 8 + 13 = 21"
+    }
   },
   {
     "id": "ch3_s05",
     "type": "diff_inc",
     "chapter": 3,
     "order": 5,
-    "tokens": ["2", "3", "5", "8", "12", null],
+    "tokens": [
+      "2",
+      "3",
+      "5",
+      "8",
+      "12",
+      null
+    ],
     "answer": "17",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "차이를 살펴보세요: 1, 2, 3, 4 ...",
-      "다음 차이는 5예요.",
-      "12 + 5 = ?"
-    ],
-    "explanation": "차이가 1, 2, 3, 4, 5 로 증가: 12 + 5 = 17"
+    "hints": {
+      "ko": [
+        "차이를 살펴보세요: 1, 2, 3, 4 ...",
+        "다음 차이는 5예요.",
+        "12 + 5 = ?"
+      ],
+      "en": [
+        "Look at the differences: 1, 2, 3, 4 ...",
+        "The next difference is 5.",
+        "12 + 5 = ?"
+      ],
+      "ja": [
+        "差を見てみましょう: 1, 2, 3, 4 ...",
+        "次の差は5です。",
+        "12 + 5 = ?"
+      ],
+      "zh": [
+        "看看差: 1, 2, 3, 4 ...",
+        "下一个差是5。",
+        "12 + 5 = ?"
+      ],
+      "es": [
+        "Mira las diferencias: 1, 2, 3, 4 ...",
+        "La siguiente diferencia es 5.",
+        "12 + 5 = ?"
+      ],
+      "fr": [
+        "Regarde les différences : 1, 2, 3, 4 ...",
+        "La différence suivante est 5.",
+        "12 + 5 = ?"
+      ],
+      "de": [
+        "Schau dir die Differenzen an: 1, 2, 3, 4 ...",
+        "Die nächste Differenz ist 5.",
+        "12 + 5 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "차이가 1, 2, 3, 4, 5 로 증가: 12 + 5 = 17",
+      "en": "The difference grows by 1, 2, 3, 4, 5: 12 + 5 = 17",
+      "ja": "差が1, 2, 3, 4, 5 と増える: 12 + 5 = 17",
+      "zh": "差按1, 2, 3, 4, 5 递增: 12 + 5 = 17",
+      "es": "La diferencia aumenta de 1, 2, 3, 4, 5: 12 + 5 = 17",
+      "fr": "La différence augmente de 1, 2, 3, 4, 5 : 12 + 5 = 17",
+      "de": "Die Differenz wächst um 1, 2, 3, 4, 5: 12 + 5 = 17"
+    }
   },
   {
     "id": "ch3_s06",
     "type": "alt",
     "chapter": 3,
     "order": 6,
-    "tokens": ["1", "10", "2", "20", "3", null],
+    "tokens": [
+      "1",
+      "10",
+      "2",
+      "20",
+      "3",
+      null
+    ],
     "answer": "30",
     "inputType": "choices",
-    "choices": ["30", "4", "15", "25"],
-    "hints": [
-      "두 개의 규칙이 번갈아 나와요.",
-      "홀수 번째는 1,2,3 / 짝수 번째는 10,20 ...",
-      "3 다음 짝수 번째 자리에는 30이 와요."
+    "choices": [
+      "30",
+      "4",
+      "15",
+      "25"
     ],
-    "explanation": "교차 규칙: (1,2,3...)과 (10,20,30...)이 번갈아. 3 다음은 30"
+    "hints": {
+      "ko": [
+        "두 개의 규칙이 번갈아 나와요.",
+        "홀수 번째는 1,2,3 / 짝수 번째는 10,20 ...",
+        "3 다음 짝수 번째 자리에는 30이 와요."
+      ],
+      "en": [
+        "Two rules take turns.",
+        "Odd spots are 1, 2, 3 / even spots are 10, 20 ...",
+        "After 3, the even spot gets 30."
+      ],
+      "ja": [
+        "2つの規則が交互に出てきます。",
+        "奇数番目は1, 2, 3 / 偶数番目は10, 20 ...",
+        "3の次の偶数番目には30が入ります。"
+      ],
+      "zh": [
+        "两种规则交替出现。",
+        "奇数位是1, 2, 3 / 偶数位是10, 20 ...",
+        "3之后的偶数位是30。"
+      ],
+      "es": [
+        "Dos reglas se turnan.",
+        "Las posiciones impares son 1, 2, 3 / las pares son 10, 20 ...",
+        "Después del 3, en la posición par va el 30."
+      ],
+      "fr": [
+        "Deux règles alternent.",
+        "Les positions impaires sont 1, 2, 3 / les paires sont 10, 20 ...",
+        "Après le 3, la position paire reçoit 30."
+      ],
+      "de": [
+        "Zwei Regeln wechseln sich ab.",
+        "Ungerade Stellen sind 1, 2, 3 / gerade Stellen sind 10, 20 ...",
+        "Nach der 3 kommt an der geraden Stelle 30."
+      ]
+    },
+    "explanation": {
+      "ko": "교차 규칙: (1,2,3...)과 (10,20,30...)이 번갈아. 3 다음은 30",
+      "en": "Alternating rules: (1, 2, 3...) and (10, 20, 30...) take turns. After 3 comes 30",
+      "ja": "交互の規則: (1, 2, 3...)と(10, 20, 30...)が交互に。3の次は30",
+      "zh": "交替规则: (1, 2, 3...)和(10, 20, 30...)交替出现。3之后是30",
+      "es": "Reglas alternas: (1, 2, 3...) y (10, 20, 30...) se turnan. Después del 3 viene 30",
+      "fr": "Règles alternées : (1, 2, 3...) et (10, 20, 30...) se relaient. Après 3 vient 30",
+      "de": "Abwechselnde Regeln: (1, 2, 3...) und (10, 20, 30...) wechseln sich ab. Nach 3 kommt 30"
+    }
   },
   {
     "id": "ch3_s07",
     "type": "prime",
     "chapter": 3,
     "order": 7,
-    "tokens": ["11", null, "17", "19"],
+    "tokens": [
+      "11",
+      null,
+      "17",
+      "19"
+    ],
     "answer": "13",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "모두 소수예요.",
-      "11과 17 사이의 소수는?",
-      "13은 1과 13으로만 나눠져요."
-    ],
-    "explanation": "소수: 11, 13, 17, 19"
+    "hints": {
+      "ko": [
+        "모두 소수예요.",
+        "11과 17 사이의 소수는?",
+        "13은 1과 13으로만 나눠져요."
+      ],
+      "en": [
+        "They are all prime numbers.",
+        "Which prime is between 11 and 17?",
+        "13 is divisible only by 1 and 13."
+      ],
+      "ja": [
+        "すべて素数です。",
+        "11と17の間の素数は?",
+        "13は1と13だけで割れます。"
+      ],
+      "zh": [
+        "它们都是质数。",
+        "11和17之间的质数是?",
+        "13只能被1和13整除。"
+      ],
+      "es": [
+        "Todos son números primos.",
+        "¿Qué primo hay entre 11 y 17?",
+        "13 solo se divide por 1 y por 13."
+      ],
+      "fr": [
+        "Ce sont tous des nombres premiers.",
+        "Quel nombre premier se trouve entre 11 et 17 ?",
+        "13 n'est divisible que par 1 et 13."
+      ],
+      "de": [
+        "Es sind alles Primzahlen.",
+        "Welche Primzahl liegt zwischen 11 und 17?",
+        "13 ist nur durch 1 und 13 teilbar."
+      ]
+    },
+    "explanation": {
+      "ko": "소수: 11, 13, 17, 19",
+      "en": "Prime numbers: 11, 13, 17, 19",
+      "ja": "素数: 11, 13, 17, 19",
+      "zh": "质数: 11, 13, 17, 19",
+      "es": "Números primos: 11, 13, 17, 19",
+      "fr": "Nombres premiers : 11, 13, 17, 19",
+      "de": "Primzahlen: 11, 13, 17, 19"
+    }
   },
   {
     "id": "ch4_s01",
     "type": "letter",
     "chapter": 4,
     "order": 1,
-    "tokens": ["A", "C", "E", "G", null],
+    "tokens": [
+      "A",
+      "C",
+      "E",
+      "G",
+      null
+    ],
     "answer": "I",
     "inputType": "choices",
-    "choices": ["I", "H", "J", "F"],
-    "hints": [
-      "알파벳 순서를 떠올려보세요.",
-      "한 글자씩 건너뛰고 있어요 (A_C_E_G).",
-      "G 다음 한 칸 건너뛴 글자는?"
+    "choices": [
+      "I",
+      "H",
+      "J",
+      "F"
     ],
-    "explanation": "한 칸씩 건너뛴 알파벳: A, C, E, G, I"
+    "hints": {
+      "ko": [
+        "알파벳 순서를 떠올려보세요.",
+        "한 글자씩 건너뛰고 있어요 (A_C_E_G).",
+        "G 다음 한 칸 건너뛴 글자는?"
+      ],
+      "en": [
+        "Think about the order of the alphabet.",
+        "It skips one letter each time (A_C_E_G).",
+        "What letter comes one step after G?"
+      ],
+      "ja": [
+        "アルファベットの順番を思い出してみよう。",
+        "1文字ずつ飛ばしているよ (A_C_E_G)。",
+        "Gの次に1つ飛ばした文字は?"
+      ],
+      "zh": [
+        "想想字母的顺序。",
+        "每次跳过一个字母 (A_C_E_G)。",
+        "G 之后跳过一个的字母是?"
+      ],
+      "es": [
+        "Piensa en el orden del alfabeto.",
+        "Salta una letra cada vez (A_C_E_G).",
+        "¿Qué letra viene un paso después de G?"
+      ],
+      "fr": [
+        "Pense à l'ordre de l'alphabet.",
+        "On saute une lettre à chaque fois (A_C_E_G).",
+        "Quelle lettre vient un cran après G ?"
+      ],
+      "de": [
+        "Denk an die Reihenfolge des Alphabets.",
+        "Es wird jedes Mal ein Buchstabe übersprungen (A_C_E_G).",
+        "Welcher Buchstabe kommt einen Schritt nach G?"
+      ]
+    },
+    "explanation": {
+      "ko": "한 칸씩 건너뛴 알파벳: A, C, E, G, I",
+      "en": "Letters skipping one each time: A, C, E, G, I",
+      "ja": "1つずつ飛ばしたアルファベット: A, C, E, G, I",
+      "zh": "每次跳过一个的字母: A, C, E, G, I",
+      "es": "Letras saltando una cada vez: A, C, E, G, I",
+      "fr": "Lettres en sautant une à chaque fois : A, C, E, G, I",
+      "de": "Buchstaben mit je einem übersprungen: A, C, E, G, I"
+    }
   },
   {
     "id": "ch4_s02",
     "type": "letter",
     "chapter": 4,
     "order": 2,
-    "tokens": ["B", "D", "F", "H", null],
+    "tokens": [
+      "B",
+      "D",
+      "F",
+      "H",
+      null
+    ],
     "answer": "J",
     "inputType": "choices",
-    "choices": ["J", "K", "I", "L"],
-    "hints": [
-      "짝수 번째 알파벳이에요.",
-      "한 칸씩 건너뛰고 있어요 (B_D_F_H).",
-      "H 다음 한 칸 건너뛴 글자는?"
+    "choices": [
+      "J",
+      "K",
+      "I",
+      "L"
     ],
-    "explanation": "한 칸씩 건너뛴 알파벳: B, D, F, H, J"
+    "hints": {
+      "ko": [
+        "짝수 번째 알파벳이에요.",
+        "한 칸씩 건너뛰고 있어요 (B_D_F_H).",
+        "H 다음 한 칸 건너뛴 글자는?"
+      ],
+      "en": [
+        "These are the even-positioned letters.",
+        "It skips one letter each time (B_D_F_H).",
+        "What letter comes one step after H?"
+      ],
+      "ja": [
+        "偶数番目のアルファベットだよ。",
+        "1文字ずつ飛ばしているよ (B_D_F_H)。",
+        "Hの次に1つ飛ばした文字は?"
+      ],
+      "zh": [
+        "这些是偶数位的字母。",
+        "每次跳过一个字母 (B_D_F_H)。",
+        "H 之后跳过一个的字母是?"
+      ],
+      "es": [
+        "Son las letras en posición par.",
+        "Salta una letra cada vez (B_D_F_H).",
+        "¿Qué letra viene un paso después de H?"
+      ],
+      "fr": [
+        "Ce sont les lettres en position paire.",
+        "On saute une lettre à chaque fois (B_D_F_H).",
+        "Quelle lettre vient un cran après H ?"
+      ],
+      "de": [
+        "Das sind die Buchstaben an gerader Position.",
+        "Es wird jedes Mal ein Buchstabe übersprungen (B_D_F_H).",
+        "Welcher Buchstabe kommt einen Schritt nach H?"
+      ]
+    },
+    "explanation": {
+      "ko": "한 칸씩 건너뛴 알파벳: B, D, F, H, J",
+      "en": "Letters skipping one each time: B, D, F, H, J",
+      "ja": "1つずつ飛ばしたアルファベット: B, D, F, H, J",
+      "zh": "每次跳过一个的字母: B, D, F, H, J",
+      "es": "Letras saltando una cada vez: B, D, F, H, J",
+      "fr": "Lettres en sautant une à chaque fois : B, D, F, H, J",
+      "de": "Buchstaben mit je einem übersprungen: B, D, F, H, J"
+    }
   },
   {
     "id": "ch4_s03",
     "type": "letter",
     "chapter": 4,
     "order": 3,
-    "tokens": ["Z", "Y", "X", "W", null],
+    "tokens": [
+      "Z",
+      "Y",
+      "X",
+      "W",
+      null
+    ],
     "answer": "V",
     "inputType": "choices",
-    "choices": ["V", "U", "T", "S"],
-    "hints": [
-      "알파벳을 거꾸로 읽고 있어요.",
-      "Z, Y, X, W ... 뒤로 가고 있죠.",
-      "W 바로 앞 글자는?"
+    "choices": [
+      "V",
+      "U",
+      "T",
+      "S"
     ],
-    "explanation": "거꾸로 가는 알파벳: Z, Y, X, W, V"
+    "hints": {
+      "ko": [
+        "알파벳을 거꾸로 읽고 있어요.",
+        "Z, Y, X, W ... 뒤로 가고 있죠.",
+        "W 바로 앞 글자는?"
+      ],
+      "en": [
+        "You're reading the alphabet backwards.",
+        "Z, Y, X, W ... it's going back.",
+        "What letter comes right before W?"
+      ],
+      "ja": [
+        "アルファベットを逆から読んでいるよ。",
+        "Z, Y, X, W ... 後ろに進んでいるね。",
+        "Wのすぐ前の文字は?"
+      ],
+      "zh": [
+        "你在倒着读字母表。",
+        "Z、Y、X、W…… 在往回走。",
+        "W 前面紧挨着的字母是?"
+      ],
+      "es": [
+        "Estás leyendo el alfabeto al revés.",
+        "Z, Y, X, W ... va hacia atrás.",
+        "¿Qué letra va justo antes de W?"
+      ],
+      "fr": [
+        "Tu lis l'alphabet à l'envers.",
+        "Z, Y, X, W ... ça recule.",
+        "Quelle lettre vient juste avant W ?"
+      ],
+      "de": [
+        "Du liest das Alphabet rückwärts.",
+        "Z, Y, X, W ... es geht rückwärts.",
+        "Welcher Buchstabe kommt direkt vor W?"
+      ]
+    },
+    "explanation": {
+      "ko": "거꾸로 가는 알파벳: Z, Y, X, W, V",
+      "en": "Alphabet going backwards: Z, Y, X, W, V",
+      "ja": "逆に進むアルファベット: Z, Y, X, W, V",
+      "zh": "倒着走的字母: Z, Y, X, W, V",
+      "es": "Alfabeto en orden inverso: Z, Y, X, W, V",
+      "fr": "Alphabet à l'envers : Z, Y, X, W, V",
+      "de": "Alphabet rückwärts: Z, Y, X, W, V"
+    }
   },
   {
     "id": "ch4_s04",
     "type": "letter",
     "chapter": 4,
     "order": 4,
-    "tokens": ["A", "C", null, "G", "I"],
+    "tokens": [
+      "A",
+      "C",
+      null,
+      "G",
+      "I"
+    ],
     "answer": "E",
     "inputType": "choices",
-    "choices": ["E", "D", "F", "B"],
-    "hints": [
-      "한 칸씩 건너뛰는 규칙이에요.",
-      "C와 G 사이에 들어갈 글자예요.",
-      "A, C, ?, G, I ... ? 자리는?"
+    "choices": [
+      "E",
+      "D",
+      "F",
+      "B"
     ],
-    "explanation": "한 칸씩 건너뛴 알파벳: A, C, E, G, I"
+    "hints": {
+      "ko": [
+        "한 칸씩 건너뛰는 규칙이에요.",
+        "C와 G 사이에 들어갈 글자예요.",
+        "A, C, ?, G, I ... ? 자리는?"
+      ],
+      "en": [
+        "The rule skips one letter each time.",
+        "It's the letter between C and G.",
+        "A, C, ?, G, I ... what goes in the ? spot?"
+      ],
+      "ja": [
+        "1文字ずつ飛ばすルールだよ。",
+        "CとGの間に入る文字だよ。",
+        "A, C, ?, G, I ... ?の場所は?"
+      ],
+      "zh": [
+        "规则是每次跳过一个字母。",
+        "是 C 和 G 之间的字母。",
+        "A, C, ?, G, I …… ? 处是哪个?"
+      ],
+      "es": [
+        "La regla salta una letra cada vez.",
+        "Es la letra entre C y G.",
+        "A, C, ?, G, I ... ¿qué va en el lugar de ?"
+      ],
+      "fr": [
+        "La règle saute une lettre à chaque fois.",
+        "C'est la lettre entre C et G.",
+        "A, C, ?, G, I ... que va à la place du ?"
+      ],
+      "de": [
+        "Die Regel überspringt jedes Mal einen Buchstaben.",
+        "Es ist der Buchstabe zwischen C und G.",
+        "A, C, ?, G, I ... was kommt an die Stelle von ?"
+      ]
+    },
+    "explanation": {
+      "ko": "한 칸씩 건너뛴 알파벳: A, C, E, G, I",
+      "en": "Letters skipping one each time: A, C, E, G, I",
+      "ja": "1つずつ飛ばしたアルファベット: A, C, E, G, I",
+      "zh": "每次跳过一个的字母: A, C, E, G, I",
+      "es": "Letras saltando una cada vez: A, C, E, G, I",
+      "fr": "Lettres en sautant une à chaque fois : A, C, E, G, I",
+      "de": "Buchstaben mit je einem übersprungen: A, C, E, G, I"
+    }
   },
   {
     "id": "ch4_s05",
     "type": "letter",
     "chapter": 4,
     "order": 5,
-    "tokens": ["A", "B", "D", "G", null],
+    "tokens": [
+      "A",
+      "B",
+      "D",
+      "G",
+      null
+    ],
     "answer": "K",
     "inputType": "choices",
-    "choices": ["K", "J", "L", "H"],
-    "hints": [
-      "건너뛰는 칸이 점점 늘어나요.",
-      "+1, +2, +3, +4 만큼 이동해요.",
-      "G에서 4칸 뒤 글자는?"
+    "choices": [
+      "K",
+      "J",
+      "L",
+      "H"
     ],
-    "explanation": "이동 폭이 1,2,3,4 로 증가: A, B, D, G, K"
+    "hints": {
+      "ko": [
+        "건너뛰는 칸이 점점 늘어나요.",
+        "+1, +2, +3, +4 만큼 이동해요.",
+        "G에서 4칸 뒤 글자는?"
+      ],
+      "en": [
+        "The number of skipped letters keeps growing.",
+        "It moves +1, +2, +3, +4.",
+        "What letter is 4 steps after G?"
+      ],
+      "ja": [
+        "飛ばす数がだんだん増えていくよ。",
+        "+1, +2, +3, +4 ずつ進むよ。",
+        "Gから4つ後の文字は?"
+      ],
+      "zh": [
+        "跳过的字母越来越多。",
+        "依次移动 +1、+2、+3、+4。",
+        "G 之后第 4 个字母是?"
+      ],
+      "es": [
+        "La cantidad de letras saltadas va creciendo.",
+        "Avanza +1, +2, +3, +4.",
+        "¿Qué letra está 4 pasos después de G?"
+      ],
+      "fr": [
+        "Le nombre de lettres sautées augmente.",
+        "On avance de +1, +2, +3, +4.",
+        "Quelle lettre est 4 crans après G ?"
+      ],
+      "de": [
+        "Die Zahl der übersprungenen Buchstaben wächst.",
+        "Es geht +1, +2, +3, +4 weiter.",
+        "Welcher Buchstabe ist 4 Schritte nach G?"
+      ]
+    },
+    "explanation": {
+      "ko": "이동 폭이 1,2,3,4 로 증가: A, B, D, G, K",
+      "en": "The step grows 1, 2, 3, 4: A, B, D, G, K",
+      "ja": "進む幅が 1, 2, 3, 4 と増える: A, B, D, G, K",
+      "zh": "步长依次增大 1、2、3、4: A, B, D, G, K",
+      "es": "El paso crece 1, 2, 3, 4: A, B, D, G, K",
+      "fr": "Le pas augmente : 1, 2, 3, 4 : A, B, D, G, K",
+      "de": "Der Schritt wächst 1, 2, 3, 4: A, B, D, G, K"
+    }
   },
   {
     "id": "ch4_s06",
     "type": "letter",
     "chapter": 4,
     "order": 6,
-    "tokens": ["A", "Z", "B", "Y", "C", null],
+    "tokens": [
+      "A",
+      "Z",
+      "B",
+      "Y",
+      "C",
+      null
+    ],
     "answer": "X",
     "inputType": "choices",
-    "choices": ["X", "D", "W", "V"],
-    "hints": [
-      "두 규칙이 번갈아 나와요.",
-      "앞에서부터(A,B,C)와 뒤에서부터(Z,Y,...)가 교차해요.",
-      "C 다음 뒤에서부터 차례는?"
+    "choices": [
+      "X",
+      "D",
+      "W",
+      "V"
     ],
-    "explanation": "교차: 앞(A,B,C)과 뒤(Z,Y,X)가 번갈아. C 다음은 X"
+    "hints": {
+      "ko": [
+        "두 규칙이 번갈아 나와요.",
+        "앞에서부터(A,B,C)와 뒤에서부터(Z,Y,...)가 교차해요.",
+        "C 다음 뒤에서부터 차례는?"
+      ],
+      "en": [
+        "Two rules alternate.",
+        "From the front (A,B,C) and from the back (Z,Y,...) take turns.",
+        "After C, what's next from the back?"
+      ],
+      "ja": [
+        "2つのルールが交互に出てくるよ。",
+        "前から(A,B,C)と後ろから(Z,Y,...)が交互だよ。",
+        "Cの次、後ろから数える順番は?"
+      ],
+      "zh": [
+        "两条规则交替出现。",
+        "从前面(A,B,C)和从后面(Z,Y,...)轮流出现。",
+        "C 之后,从后面数轮到哪个?"
+      ],
+      "es": [
+        "Se alternan dos reglas.",
+        "Desde el principio (A,B,C) y desde el final (Z,Y,...) se turnan.",
+        "Después de C, ¿qué sigue desde el final?"
+      ],
+      "fr": [
+        "Deux règles alternent.",
+        "Le début (A,B,C) et la fin (Z,Y,...) se relaient.",
+        "Après C, qu'est-ce qui vient depuis la fin ?"
+      ],
+      "de": [
+        "Zwei Regeln wechseln sich ab.",
+        "Von vorne (A,B,C) und von hinten (Z,Y,...) im Wechsel.",
+        "Was kommt nach C von hinten an die Reihe?"
+      ]
+    },
+    "explanation": {
+      "ko": "교차: 앞(A,B,C)과 뒤(Z,Y,X)가 번갈아. C 다음은 X",
+      "en": "Alternating: front (A,B,C) and back (Z,Y,X) take turns. After C comes X",
+      "ja": "交互: 前(A,B,C)と後ろ(Z,Y,X)が交互に。Cの次はX",
+      "zh": "交替: 前(A,B,C)和后(Z,Y,X)轮流。C 之后是 X",
+      "es": "Alternancia: el principio (A,B,C) y el final (Z,Y,X) se turnan. Después de C viene X",
+      "fr": "Alternance : le début (A,B,C) et la fin (Z,Y,X) se relaient. Après C vient X",
+      "de": "Im Wechsel: vorne (A,B,C) und hinten (Z,Y,X). Nach C kommt X"
+    }
   },
   {
     "id": "ch5_s01",
     "type": "shape",
     "chapter": 5,
     "order": 1,
-    "tokens": ["⬆️", "➡️", "⬇️", "⬅️", null],
+    "tokens": [
+      "⬆️",
+      "➡️",
+      "⬇️",
+      "⬅️",
+      null
+    ],
     "answer": "⬆️",
     "inputType": "choices",
-    "choices": ["⬆️", "➡️", "⬇️", "⬅️"],
-    "hints": [
-      "화살표가 어느 방향으로 도는지 보세요.",
-      "시계 방향으로 90도씩 회전해요.",
-      "왼쪽(⬅️) 다음은 다시 처음 방향으로 돌아와요."
+    "choices": [
+      "⬆️",
+      "➡️",
+      "⬇️",
+      "⬅️"
     ],
-    "explanation": "시계 방향 회전: ⬆️ → ➡️ → ⬇️ → ⬅️ → ⬆️"
+    "hints": {
+      "ko": [
+        "화살표가 어느 방향으로 도는지 보세요.",
+        "시계 방향으로 90도씩 회전해요.",
+        "왼쪽(⬅️) 다음은 다시 처음 방향으로 돌아와요."
+      ],
+      "en": [
+        "Look at which way the arrow is turning.",
+        "It rotates 90° clockwise each time.",
+        "After left (⬅️), it comes back to the first direction."
+      ],
+      "ja": [
+        "矢印がどの方向に回っているか見てみよう。",
+        "時計回りに90度ずつ回転しているよ。",
+        "左(⬅️)の次は、また最初の方向に戻るよ。"
+      ],
+      "zh": [
+        "看看箭头朝哪个方向转。",
+        "每次顺时针旋转 90°。",
+        "向左(⬅️)之后,又回到最初的方向。"
+      ],
+      "es": [
+        "Mira hacia dónde gira la flecha.",
+        "Gira 90° en sentido horario cada vez.",
+        "Después de la izquierda (⬅️), vuelve a la primera dirección."
+      ],
+      "fr": [
+        "Regarde dans quel sens la flèche tourne.",
+        "Elle tourne de 90° dans le sens horaire à chaque fois.",
+        "Après la gauche (⬅️), on revient à la première direction."
+      ],
+      "de": [
+        "Schau, in welche Richtung sich der Pfeil dreht.",
+        "Er dreht sich jedes Mal um 90° im Uhrzeigersinn.",
+        "Nach links (⬅️) kommt wieder die erste Richtung."
+      ]
+    },
+    "explanation": {
+      "ko": "시계 방향 회전: ⬆️ → ➡️ → ⬇️ → ⬅️ → ⬆️",
+      "en": "Clockwise rotation: ⬆️ → ➡️ → ⬇️ → ⬅️ → ⬆️",
+      "ja": "時計回りに回転: ⬆️ → ➡️ → ⬇️ → ⬅️ → ⬆️",
+      "zh": "顺时针旋转: ⬆️ → ➡️ → ⬇️ → ⬅️ → ⬆️",
+      "es": "Rotación en sentido horario: ⬆️ → ➡️ → ⬇️ → ⬅️ → ⬆️",
+      "fr": "Rotation dans le sens horaire : ⬆️ → ➡️ → ⬇️ → ⬅️ → ⬆️",
+      "de": "Drehung im Uhrzeigersinn: ⬆️ → ➡️ → ⬇️ → ⬅️ → ⬆️"
+    }
   },
   {
     "id": "ch5_s02",
     "type": "shape",
     "chapter": 5,
     "order": 2,
-    "tokens": ["🔺", "🔻", "🔺", "🔻", null],
+    "tokens": [
+      "🔺",
+      "🔻",
+      "🔺",
+      "🔻",
+      null
+    ],
     "answer": "🔺",
     "inputType": "choices",
-    "choices": ["🔺", "🔻", "🔶", "⭐"],
-    "hints": [
-      "두 모양이 번갈아 나와요.",
-      "위 삼각형, 아래 삼각형이 반복돼요.",
-      "🔻 다음 차례는?"
+    "choices": [
+      "🔺",
+      "🔻",
+      "🔶",
+      "⭐"
     ],
-    "explanation": "🔺 와 🔻 가 번갈아 반복: 다음은 🔺"
+    "hints": {
+      "ko": [
+        "두 모양이 번갈아 나와요.",
+        "위 삼각형, 아래 삼각형이 반복돼요.",
+        "🔻 다음 차례는?"
+      ],
+      "en": [
+        "Two shapes alternate.",
+        "An up triangle and a down triangle repeat.",
+        "What comes after 🔻?"
+      ],
+      "ja": [
+        "2つの形が交互に出てくるよ。",
+        "上向き三角と下向き三角が繰り返すよ。",
+        "🔻の次の順番は?"
+      ],
+      "zh": [
+        "两个形状交替出现。",
+        "正三角和倒三角不断重复。",
+        "🔻 之后轮到哪个?"
+      ],
+      "es": [
+        "Se alternan dos formas.",
+        "Un triángulo hacia arriba y uno hacia abajo se repiten.",
+        "¿Qué viene después de 🔻?"
+      ],
+      "fr": [
+        "Deux formes alternent.",
+        "Un triangle vers le haut et un vers le bas se répètent.",
+        "Qu'est-ce qui vient après 🔻 ?"
+      ],
+      "de": [
+        "Zwei Formen wechseln sich ab.",
+        "Ein Dreieck nach oben und eins nach unten wiederholen sich.",
+        "Was kommt nach 🔻?"
+      ]
+    },
+    "explanation": {
+      "ko": "🔺 와 🔻 가 번갈아 반복: 다음은 🔺",
+      "en": "🔺 and 🔻 alternate and repeat: next is 🔺",
+      "ja": "🔺 と 🔻 が交互に繰り返す: 次は 🔺",
+      "zh": "🔺 和 🔻 交替重复: 下一个是 🔺",
+      "es": "🔺 y 🔻 se alternan y se repiten: el siguiente es 🔺",
+      "fr": "🔺 et 🔻 alternent et se répètent : le suivant est 🔺",
+      "de": "🔺 und 🔻 wechseln sich ab und wiederholen sich: als Nächstes 🔺"
+    }
   },
   {
     "id": "ch5_s03",
     "type": "shape",
     "chapter": 5,
     "order": 3,
-    "tokens": ["🔴", "🟡", "🟢", "🔴", "🟡", null],
+    "tokens": [
+      "🔴",
+      "🟡",
+      "🟢",
+      "🔴",
+      "🟡",
+      null
+    ],
     "answer": "🟢",
     "inputType": "choices",
-    "choices": ["🟢", "🔴", "🟡", "🔵"],
-    "hints": [
-      "색이 일정한 순서로 반복돼요.",
-      "빨강 → 노랑 → 초록 이 한 묶음이에요.",
-      "노랑(🟡) 다음 차례는?"
+    "choices": [
+      "🟢",
+      "🔴",
+      "🟡",
+      "🔵"
     ],
-    "explanation": "신호등처럼 빨강·노랑·초록 반복: 다음은 🟢"
+    "hints": {
+      "ko": [
+        "색이 일정한 순서로 반복돼요.",
+        "빨강 → 노랑 → 초록 이 한 묶음이에요.",
+        "노랑(🟡) 다음 차례는?"
+      ],
+      "en": [
+        "The colors repeat in a fixed order.",
+        "Red → Yellow → Green is one group.",
+        "What comes after Yellow (🟡)?"
+      ],
+      "ja": [
+        "色が決まった順番でくり返します。",
+        "赤 → 黄 → 緑 が1つのまとまりです。",
+        "黄（🟡）の次の番は？"
+      ],
+      "zh": [
+        "颜色按固定顺序重复。",
+        "红 → 黄 → 绿 是一组。",
+        "黄色（🟡）后面是哪个？"
+      ],
+      "es": [
+        "Los colores se repiten en un orden fijo.",
+        "Rojo → Amarillo → Verde es un grupo.",
+        "¿Qué viene después del amarillo (🟡)?"
+      ],
+      "fr": [
+        "Les couleurs se répètent dans un ordre fixe.",
+        "Rouge → Jaune → Vert forme un groupe.",
+        "Qu'est-ce qui vient après le jaune (🟡) ?"
+      ],
+      "de": [
+        "Die Farben wiederholen sich in fester Reihenfolge.",
+        "Rot → Gelb → Grün ist eine Gruppe.",
+        "Was kommt nach Gelb (🟡)?"
+      ]
+    },
+    "explanation": {
+      "ko": "신호등처럼 빨강·노랑·초록 반복: 다음은 🟢",
+      "en": "Like a traffic light, red·yellow·green repeat: next is 🟢",
+      "ja": "信号機のように赤・黄・緑がくり返し：次は 🟢",
+      "zh": "像红绿灯一样红·黄·绿重复：下一个是 🟢",
+      "es": "Como un semáforo, rojo·amarillo·verde se repiten: el siguiente es 🟢",
+      "fr": "Comme un feu tricolore, rouge·jaune·vert se répètent : le suivant est 🟢",
+      "de": "Wie eine Ampel wiederholen sich rot·gelb·grün: als Nächstes 🟢"
+    }
   },
   {
     "id": "ch5_s04",
     "type": "shape",
     "chapter": 5,
     "order": 4,
-    "tokens": ["🌑", "🌒", "🌓", "🌔", null],
+    "tokens": [
+      "🌑",
+      "🌒",
+      "🌓",
+      "🌔",
+      null
+    ],
     "answer": "🌕",
     "inputType": "choices",
-    "choices": ["🌕", "🌖", "🌑", "🌗"],
-    "hints": [
-      "달이 점점 차오르고 있어요.",
-      "그믐 → 초승 → 반달 → ... 순서예요.",
-      "🌔 다음은 꽉 찬 달이에요."
+    "choices": [
+      "🌕",
+      "🌖",
+      "🌑",
+      "🌗"
     ],
-    "explanation": "달이 차오르는 순서: 🌑 🌒 🌓 🌔 🌕"
+    "hints": {
+      "ko": [
+        "달이 점점 차오르고 있어요.",
+        "그믐 → 초승 → 반달 → ... 순서예요.",
+        "🌔 다음은 꽉 찬 달이에요."
+      ],
+      "en": [
+        "The moon is gradually getting fuller.",
+        "New → Crescent → Half → ... in order.",
+        "After 🌔 comes the full moon."
+      ],
+      "ja": [
+        "月がだんだん満ちていきます。",
+        "新月 → 三日月 → 半月 → ... の順番です。",
+        "🌔 の次は満月です。"
+      ],
+      "zh": [
+        "月亮在渐渐变圆。",
+        "新月 → 蛾眉月 → 半月 → ... 的顺序。",
+        "🌔 之后是满月。"
+      ],
+      "es": [
+        "La luna se va llenando poco a poco.",
+        "Nueva → Creciente → Media → ... en orden.",
+        "Después de 🌔 viene la luna llena."
+      ],
+      "fr": [
+        "La lune se remplit peu à peu.",
+        "Nouvelle → Croissant → Demi → ... dans l'ordre.",
+        "Après 🌔 vient la pleine lune."
+      ],
+      "de": [
+        "Der Mond wird allmählich voller.",
+        "Neumond → Sichel → Halbmond → ... der Reihe nach.",
+        "Nach 🌔 kommt der Vollmond."
+      ]
+    },
+    "explanation": {
+      "ko": "달이 차오르는 순서: 🌑 🌒 🌓 🌔 🌕",
+      "en": "Order of the moon waxing: 🌑 🌒 🌓 🌔 🌕",
+      "ja": "月が満ちていく順番：🌑 🌒 🌓 🌔 🌕",
+      "zh": "月亮渐圆的顺序：🌑 🌒 🌓 🌔 🌕",
+      "es": "Orden de la luna creciente: 🌑 🌒 🌓 🌔 🌕",
+      "fr": "Ordre de la lune croissante : 🌑 🌒 🌓 🌔 🌕",
+      "de": "Reihenfolge des zunehmenden Mondes: 🌑 🌒 🌓 🌔 🌕"
+    }
   },
   {
     "id": "ch5_s05",
     "type": "shape",
     "chapter": 5,
     "order": 5,
-    "tokens": ["🕐", "🕑", "🕒", "🕓", null],
+    "tokens": [
+      "🕐",
+      "🕑",
+      "🕒",
+      "🕓",
+      null
+    ],
     "answer": "🕔",
     "inputType": "choices",
-    "choices": ["🕔", "🕕", "🕐", "🕖"],
-    "hints": [
-      "시계가 가리키는 시각을 보세요.",
-      "1시, 2시, 3시, 4시 ... 한 시간씩 늘어나요.",
-      "4시 다음은?"
+    "choices": [
+      "🕔",
+      "🕕",
+      "🕐",
+      "🕖"
     ],
-    "explanation": "한 시간씩 증가: 1시→2시→3시→4시→5시(🕔)"
+    "hints": {
+      "ko": [
+        "시계가 가리키는 시각을 보세요.",
+        "1시, 2시, 3시, 4시 ... 한 시간씩 늘어나요.",
+        "4시 다음은?"
+      ],
+      "en": [
+        "Look at the time each clock shows.",
+        "1, 2, 3, 4 o'clock ... it goes up by one hour.",
+        "What comes after 4 o'clock?"
+      ],
+      "ja": [
+        "時計がさしている時刻を見ましょう。",
+        "1時、2時、3時、4時 ... 1時間ずつ増えます。",
+        "4時の次は？"
+      ],
+      "zh": [
+        "看每个时钟指向的时间。",
+        "1点、2点、3点、4点 ... 每次增加一小时。",
+        "4点之后是几点？"
+      ],
+      "es": [
+        "Mira la hora que marca cada reloj.",
+        "Las 1, 2, 3, 4 ... aumenta una hora cada vez.",
+        "¿Qué viene después de las 4?"
+      ],
+      "fr": [
+        "Regarde l'heure indiquée par chaque horloge.",
+        "1 h, 2 h, 3 h, 4 h ... cela augmente d'une heure.",
+        "Qu'est-ce qui vient après 4 h ?"
+      ],
+      "de": [
+        "Schau auf die Uhrzeit, die jede Uhr anzeigt.",
+        "1, 2, 3, 4 Uhr ... es steigt um eine Stunde.",
+        "Was kommt nach 4 Uhr?"
+      ]
+    },
+    "explanation": {
+      "ko": "한 시간씩 증가: 1시→2시→3시→4시→5시(🕔)",
+      "en": "Increases by one hour: 1→2→3→4→5 o'clock (🕔)",
+      "ja": "1時間ずつ増加：1時→2時→3時→4時→5時（🕔）",
+      "zh": "每次增加一小时：1点→2点→3点→4点→5点（🕔）",
+      "es": "Aumenta una hora cada vez: 1→2→3→4→5 (🕔)",
+      "fr": "Augmente d'une heure : 1 h→2 h→3 h→4 h→5 h (🕔)",
+      "de": "Steigt um eine Stunde: 1→2→3→4→5 Uhr (🕔)"
+    }
   },
   {
     "id": "ch6_s01",
     "type": "cube",
     "chapter": 6,
     "order": 1,
-    "tokens": ["1", "8", "27", "64", null],
+    "tokens": [
+      "1",
+      "8",
+      "27",
+      "64",
+      null
+    ],
     "answer": "125",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "1, 2, 3, 4 와 관련이 있어요.",
-      "각 수를 세제곱하면? 1³, 2³, 3³, 4³ ...",
-      "5³ 은 얼마일까요?"
-    ],
-    "explanation": "세제곱수: 1³, 2³, 3³, 4³, 5³ = 125"
+    "hints": {
+      "ko": [
+        "1, 2, 3, 4 와 관련이 있어요.",
+        "각 수를 세제곱하면? 1³, 2³, 3³, 4³ ...",
+        "5³ 은 얼마일까요?"
+      ],
+      "en": [
+        "It's related to 1, 2, 3, 4.",
+        "Cube each number: 1³, 2³, 3³, 4³ ...",
+        "What is 5³?"
+      ],
+      "ja": [
+        "1, 2, 3, 4 と関係があります。",
+        "それぞれを3乗すると？ 1³, 2³, 3³, 4³ ...",
+        "5³ はいくつ？"
+      ],
+      "zh": [
+        "和 1、2、3、4 有关。",
+        "把每个数立方：1³、2³、3³、4³ ...",
+        "5³ 是多少？"
+      ],
+      "es": [
+        "Está relacionado con 1, 2, 3, 4.",
+        "Eleva al cubo cada número: 1³, 2³, 3³, 4³ ...",
+        "¿Cuánto es 5³?"
+      ],
+      "fr": [
+        "C'est lié à 1, 2, 3, 4.",
+        "Mets chaque nombre au cube : 1³, 2³, 3³, 4³ ...",
+        "Combien fait 5³ ?"
+      ],
+      "de": [
+        "Es hängt mit 1, 2, 3, 4 zusammen.",
+        "Jede Zahl hoch drei: 1³, 2³, 3³, 4³ ...",
+        "Was ist 5³?"
+      ]
+    },
+    "explanation": {
+      "ko": "세제곱수: 1³, 2³, 3³, 4³, 5³ = 125",
+      "en": "Cubes: 1³, 2³, 3³, 4³, 5³ = 125",
+      "ja": "3乗の数：1³, 2³, 3³, 4³, 5³ = 125",
+      "zh": "立方数：1³、2³、3³、4³、5³ = 125",
+      "es": "Cubos: 1³, 2³, 3³, 4³, 5³ = 125",
+      "fr": "Cubes : 1³, 2³, 3³, 4³, 5³ = 125",
+      "de": "Kubikzahlen: 1³, 2³, 3³, 4³, 5³ = 125"
+    }
   },
   {
     "id": "ch6_s02",
     "type": "mul_add",
     "chapter": 6,
     "order": 2,
-    "tokens": ["1", "3", "7", "15", null],
+    "tokens": [
+      "1",
+      "3",
+      "7",
+      "15",
+      null
+    ],
     "answer": "31",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "앞 수를 2배 한 뒤 무언가를 더해요.",
-      "×2 하고 +1 을 반복해요.",
-      "15 × 2 + 1 = ?"
-    ],
-    "explanation": "앞 수 ×2 +1: 15×2+1 = 31"
+    "hints": {
+      "ko": [
+        "앞 수를 2배 한 뒤 무언가를 더해요.",
+        "×2 하고 +1 을 반복해요.",
+        "15 × 2 + 1 = ?"
+      ],
+      "en": [
+        "Double the previous number, then add something.",
+        "Repeat ×2 and +1.",
+        "15 × 2 + 1 = ?"
+      ],
+      "ja": [
+        "前の数を2倍してから何かを足します。",
+        "×2 と +1 をくり返します。",
+        "15 × 2 + 1 = ?"
+      ],
+      "zh": [
+        "把前一个数翻倍，再加上某个数。",
+        "重复 ×2 再 +1。",
+        "15 × 2 + 1 = ?"
+      ],
+      "es": [
+        "Duplica el número anterior y luego suma algo.",
+        "Repite ×2 y +1.",
+        "15 × 2 + 1 = ?"
+      ],
+      "fr": [
+        "Double le nombre précédent, puis ajoute quelque chose.",
+        "Répète ×2 et +1.",
+        "15 × 2 + 1 = ?"
+      ],
+      "de": [
+        "Verdopple die vorherige Zahl und addiere dann etwas.",
+        "Wiederhole ×2 und +1.",
+        "15 × 2 + 1 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "앞 수 ×2 +1: 15×2+1 = 31",
+      "en": "Previous ×2 +1: 15×2+1 = 31",
+      "ja": "前の数 ×2 +1：15×2+1 = 31",
+      "zh": "前一个数 ×2 +1：15×2+1 = 31",
+      "es": "Anterior ×2 +1: 15×2+1 = 31",
+      "fr": "Précédent ×2 +1 : 15×2+1 = 31",
+      "de": "Vorherige ×2 +1: 15×2+1 = 31"
+    }
   },
   {
     "id": "ch6_s03",
     "type": "triangular",
     "chapter": 6,
     "order": 3,
-    "tokens": ["1", "3", "6", "10", "15", null],
+    "tokens": [
+      "1",
+      "3",
+      "6",
+      "10",
+      "15",
+      null
+    ],
     "answer": "21",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "더해지는 값을 보세요: 2, 3, 4, 5 ...",
-      "1부터 차례로 더한 수예요 (삼각수).",
-      "15 + 6 = ?"
-    ],
-    "explanation": "삼각수(1씩 더 더함): 15 + 6 = 21"
+    "hints": {
+      "ko": [
+        "더해지는 값을 보세요: 2, 3, 4, 5 ...",
+        "1부터 차례로 더한 수예요 (삼각수).",
+        "15 + 6 = ?"
+      ],
+      "en": [
+        "Look at what's added: 2, 3, 4, 5 ...",
+        "It's the running sum from 1 (triangular numbers).",
+        "15 + 6 = ?"
+      ],
+      "ja": [
+        "足される値を見て：2, 3, 4, 5 ...",
+        "1から順に足した数です（三角数）。",
+        "15 + 6 = ?"
+      ],
+      "zh": [
+        "看每次加的数：2、3、4、5 ...",
+        "是从 1 开始依次相加的数（三角形数）。",
+        "15 + 6 = ?"
+      ],
+      "es": [
+        "Mira lo que se suma: 2, 3, 4, 5 ...",
+        "Es la suma acumulada desde 1 (números triangulares).",
+        "15 + 6 = ?"
+      ],
+      "fr": [
+        "Regarde ce qu'on ajoute : 2, 3, 4, 5 ...",
+        "C'est la somme cumulée à partir de 1 (nombres triangulaires).",
+        "15 + 6 = ?"
+      ],
+      "de": [
+        "Schau, was addiert wird: 2, 3, 4, 5 ...",
+        "Es ist die laufende Summe ab 1 (Dreieckszahlen).",
+        "15 + 6 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "삼각수(1씩 더 더함): 15 + 6 = 21",
+      "en": "Triangular numbers (add one more each time): 15 + 6 = 21",
+      "ja": "三角数（1ずつ多く足す）：15 + 6 = 21",
+      "zh": "三角形数（每次多加 1）：15 + 6 = 21",
+      "es": "Números triangulares (se suma uno más cada vez): 15 + 6 = 21",
+      "fr": "Nombres triangulaires (on ajoute un de plus à chaque fois) : 15 + 6 = 21",
+      "de": "Dreieckszahlen (jedes Mal eins mehr addieren): 15 + 6 = 21"
+    }
   },
   {
     "id": "ch6_s04",
     "type": "square_plus",
     "chapter": 6,
     "order": 4,
-    "tokens": ["2", "5", "10", "17", null],
+    "tokens": [
+      "2",
+      "5",
+      "10",
+      "17",
+      null
+    ],
     "answer": "26",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "제곱수와 비교해보세요: 1, 4, 9, 16 ...",
-      "각 항은 제곱수보다 1 큰 수예요.",
-      "5² + 1 = ?"
-    ],
-    "explanation": "n² + 1: 1²+1, 2²+1, 3²+1, 4²+1, 5²+1 = 26"
+    "hints": {
+      "ko": [
+        "제곱수와 비교해보세요: 1, 4, 9, 16 ...",
+        "각 항은 제곱수보다 1 큰 수예요.",
+        "5² + 1 = ?"
+      ],
+      "en": [
+        "Compare with the squares: 1, 4, 9, 16 ...",
+        "Each term is one more than a square.",
+        "5² + 1 = ?"
+      ],
+      "ja": [
+        "平方数とくらべてみて：1, 4, 9, 16 ...",
+        "各項は平方数より1大きい数です。",
+        "5² + 1 = ?"
+      ],
+      "zh": [
+        "和平方数比较：1、4、9、16 ...",
+        "每一项都比平方数大 1。",
+        "5² + 1 = ?"
+      ],
+      "es": [
+        "Compara con los cuadrados: 1, 4, 9, 16 ...",
+        "Cada término es uno más que un cuadrado.",
+        "5² + 1 = ?"
+      ],
+      "fr": [
+        "Compare avec les carrés : 1, 4, 9, 16 ...",
+        "Chaque terme vaut un de plus qu'un carré.",
+        "5² + 1 = ?"
+      ],
+      "de": [
+        "Vergleiche mit den Quadratzahlen: 1, 4, 9, 16 ...",
+        "Jedes Glied ist um eins größer als eine Quadratzahl.",
+        "5² + 1 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "n² + 1: 1²+1, 2²+1, 3²+1, 4²+1, 5²+1 = 26",
+      "en": "n² + 1: 1²+1, 2²+1, 3²+1, 4²+1, 5²+1 = 26",
+      "ja": "n² + 1：1²+1, 2²+1, 3²+1, 4²+1, 5²+1 = 26",
+      "zh": "n² + 1：1²+1、2²+1、3²+1、4²+1、5²+1 = 26",
+      "es": "n² + 1: 1²+1, 2²+1, 3²+1, 4²+1, 5²+1 = 26",
+      "fr": "n² + 1 : 1²+1, 2²+1, 3²+1, 4²+1, 5²+1 = 26",
+      "de": "n² + 1: 1²+1, 2²+1, 3²+1, 4²+1, 5²+1 = 26"
+    }
   },
   {
     "id": "ch6_s05",
     "type": "diff_sq",
     "chapter": 6,
     "order": 5,
-    "tokens": ["1", "2", "6", "15", null],
+    "tokens": [
+      "1",
+      "2",
+      "6",
+      "15",
+      null
+    ],
     "answer": "31",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "차이를 나열해보세요: 1, 4, 9 ...",
-      "더해지는 값이 제곱수(1², 2², 3², 4²)예요.",
-      "15 + 16 = ?"
-    ],
-    "explanation": "차이가 제곱수(1,4,9,16): 15 + 16 = 31"
+    "hints": {
+      "ko": [
+        "차이를 나열해보세요: 1, 4, 9 ...",
+        "더해지는 값이 제곱수(1², 2², 3², 4²)예요.",
+        "15 + 16 = ?"
+      ],
+      "en": [
+        "List the differences: 1, 4, 9 ...",
+        "What's added are square numbers (1², 2², 3², 4²).",
+        "15 + 16 = ?"
+      ],
+      "ja": [
+        "差を並べてみて：1, 4, 9 ...",
+        "足される値が平方数（1², 2², 3², 4²）です。",
+        "15 + 16 = ?"
+      ],
+      "zh": [
+        "列出差值：1、4、9 ...",
+        "每次加的是平方数（1²、2²、3²、4²）。",
+        "15 + 16 = ?"
+      ],
+      "es": [
+        "Enumera las diferencias: 1, 4, 9 ...",
+        "Lo que se suma son números cuadrados (1², 2², 3², 4²).",
+        "15 + 16 = ?"
+      ],
+      "fr": [
+        "Liste les différences : 1, 4, 9 ...",
+        "Ce qu'on ajoute, ce sont des carrés (1², 2², 3², 4²).",
+        "15 + 16 = ?"
+      ],
+      "de": [
+        "Liste die Differenzen auf: 1, 4, 9 ...",
+        "Addiert werden Quadratzahlen (1², 2², 3², 4²).",
+        "15 + 16 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "차이가 제곱수(1,4,9,16): 15 + 16 = 31",
+      "en": "Differences are squares (1, 4, 9, 16): 15 + 16 = 31",
+      "ja": "差が平方数（1, 4, 9, 16）：15 + 16 = 31",
+      "zh": "差是平方数（1、4、9、16）：15 + 16 = 31",
+      "es": "Las diferencias son cuadrados (1, 4, 9, 16): 15 + 16 = 31",
+      "fr": "Les différences sont des carrés (1, 4, 9, 16) : 15 + 16 = 31",
+      "de": "Differenzen sind Quadratzahlen (1, 4, 9, 16): 15 + 16 = 31"
+    }
   },
   {
     "id": "ch6_s07",
     "type": "letter",
     "chapter": 6,
     "order": 7,
-    "tokens": ["A", "D", "I", "P", null],
+    "tokens": [
+      "A",
+      "D",
+      "I",
+      "P",
+      null
+    ],
     "answer": "Y",
     "inputType": "choices",
-    "choices": ["Y", "T", "W", "Z"],
-    "hints": [
-      "글자의 순서 번호를 보세요 (A=1, D=4 ...).",
-      "1, 4, 9, 16 — 제곱수 위치예요.",
-      "다음은 25번째 글자(=5²)."
+    "choices": [
+      "Y",
+      "T",
+      "W",
+      "Z"
     ],
-    "explanation": "제곱수 위치의 알파벳: A(1) D(4) I(9) P(16) Y(25)"
+    "hints": {
+      "ko": [
+        "글자의 순서 번호를 보세요 (A=1, D=4 ...).",
+        "1, 4, 9, 16 — 제곱수 위치예요.",
+        "다음은 25번째 글자(=5²)."
+      ],
+      "en": [
+        "Look at each letter's position number (A=1, D=4 ...).",
+        "1, 4, 9, 16 — these are square-number positions.",
+        "The next one is the 25th letter (=5²)."
+      ],
+      "ja": [
+        "文字の順番の番号を見てください (A=1, D=4 ...)。",
+        "1, 4, 9, 16 — 平方数の位置です。",
+        "次は25番目の文字 (=5²)。"
+      ],
+      "zh": [
+        "看每个字母的顺序号 (A=1, D=4 ...)。",
+        "1, 4, 9, 16 — 都是平方数的位置。",
+        "下一个是第25个字母 (=5²)。"
+      ],
+      "es": [
+        "Mira el número de posición de cada letra (A=1, D=4 ...).",
+        "1, 4, 9, 16 — son posiciones de números cuadrados.",
+        "La siguiente es la letra número 25 (=5²)."
+      ],
+      "fr": [
+        "Regarde le numéro de position de chaque lettre (A=1, D=4 ...).",
+        "1, 4, 9, 16 — ce sont des positions de carrés parfaits.",
+        "La suivante est la 25e lettre (=5²)."
+      ],
+      "de": [
+        "Schau dir die Positionsnummer jedes Buchstabens an (A=1, D=4 ...).",
+        "1, 4, 9, 16 — das sind Quadratzahl-Positionen.",
+        "Der nächste ist der 25. Buchstabe (=5²)."
+      ]
+    },
+    "explanation": {
+      "ko": "제곱수 위치의 알파벳: A(1) D(4) I(9) P(16) Y(25)",
+      "en": "Letters at square-number positions: A(1) D(4) I(9) P(16) Y(25)",
+      "ja": "平方数の位置のアルファベット: A(1) D(4) I(9) P(16) Y(25)",
+      "zh": "平方数位置上的字母: A(1) D(4) I(9) P(16) Y(25)",
+      "es": "Letras en posiciones de números cuadrados: A(1) D(4) I(9) P(16) Y(25)",
+      "fr": "Lettres aux positions de carrés parfaits : A(1) D(4) I(9) P(16) Y(25)",
+      "de": "Buchstaben an Quadratzahl-Positionen: A(1) D(4) I(9) P(16) Y(25)"
+    }
   },
   {
     "id": "ch6_s08",
     "type": "tribonacci",
     "chapter": 6,
     "order": 8,
-    "tokens": ["1", "1", "2", "4", "7", "13", null],
+    "tokens": [
+      "1",
+      "1",
+      "2",
+      "4",
+      "7",
+      "13",
+      null
+    ],
     "answer": "24",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "앞의 두 수만으로는 안 돼요.",
-      "앞의 세 수를 더해보세요.",
-      "4 + 7 + 13 = ?"
-    ],
-    "explanation": "앞 세 수의 합(트리보나치): 4+7+13 = 24"
+    "hints": {
+      "ko": [
+        "앞의 두 수만으로는 안 돼요.",
+        "앞의 세 수를 더해보세요.",
+        "4 + 7 + 13 = ?"
+      ],
+      "en": [
+        "The two previous numbers alone won't work.",
+        "Try adding the three previous numbers.",
+        "4 + 7 + 13 = ?"
+      ],
+      "ja": [
+        "前の2つの数だけではできません。",
+        "前の3つの数を足してみてください。",
+        "4 + 7 + 13 = ?"
+      ],
+      "zh": [
+        "只用前两个数是不行的。",
+        "试着把前三个数加起来。",
+        "4 + 7 + 13 = ?"
+      ],
+      "es": [
+        "Con los dos números anteriores no basta.",
+        "Prueba a sumar los tres números anteriores.",
+        "4 + 7 + 13 = ?"
+      ],
+      "fr": [
+        "Les deux nombres précédents ne suffisent pas.",
+        "Essaie d'additionner les trois nombres précédents.",
+        "4 + 7 + 13 = ?"
+      ],
+      "de": [
+        "Die zwei vorherigen Zahlen reichen nicht.",
+        "Versuche, die drei vorherigen Zahlen zu addieren.",
+        "4 + 7 + 13 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "앞 세 수의 합(트리보나치): 4+7+13 = 24",
+      "en": "Sum of the three previous numbers (tribonacci): 4+7+13 = 24",
+      "ja": "前の3つの数の合計（トリボナッチ）: 4+7+13 = 24",
+      "zh": "前三个数之和（三波那契数列）: 4+7+13 = 24",
+      "es": "Suma de los tres números anteriores (tribonacci): 4+7+13 = 24",
+      "fr": "Somme des trois nombres précédents (tribonacci) : 4+7+13 = 24",
+      "de": "Summe der drei vorherigen Zahlen (Tribonacci): 4+7+13 = 24"
+    }
   },
   {
     "id": "ch7_s01",
     "type": "mul_sub",
     "chapter": 7,
     "order": 1,
-    "tokens": ["2", "5", "14", "41", null],
+    "tokens": [
+      "2",
+      "5",
+      "14",
+      "41",
+      null
+    ],
     "answer": "122",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "곱셈과 뺄셈이 섞여 있어요.",
-      "앞 수 ×3 에서 1을 빼요.",
-      "41 × 3 − 1 = ?"
-    ],
-    "explanation": "앞 수 ×3 −1: 41×3−1 = 122"
+    "hints": {
+      "ko": [
+        "곱셈과 뺄셈이 섞여 있어요.",
+        "앞 수 ×3 에서 1을 빼요.",
+        "41 × 3 − 1 = ?"
+      ],
+      "en": [
+        "Multiplication and subtraction are mixed together.",
+        "Multiply the previous number ×3, then subtract 1.",
+        "41 × 3 − 1 = ?"
+      ],
+      "ja": [
+        "掛け算と引き算が混ざっています。",
+        "前の数 ×3 から1を引きます。",
+        "41 × 3 − 1 = ?"
+      ],
+      "zh": [
+        "乘法和减法混在一起。",
+        "把前一个数 ×3 再减1。",
+        "41 × 3 − 1 = ?"
+      ],
+      "es": [
+        "Se mezclan multiplicación y resta.",
+        "Multiplica el número anterior ×3 y resta 1.",
+        "41 × 3 − 1 = ?"
+      ],
+      "fr": [
+        "La multiplication et la soustraction sont mélangées.",
+        "Multiplie le nombre précédent ×3, puis enlève 1.",
+        "41 × 3 − 1 = ?"
+      ],
+      "de": [
+        "Multiplikation und Subtraktion sind vermischt.",
+        "Multipliziere die vorherige Zahl ×3 und ziehe 1 ab.",
+        "41 × 3 − 1 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "앞 수 ×3 −1: 41×3−1 = 122",
+      "en": "Previous number ×3 −1: 41×3−1 = 122",
+      "ja": "前の数 ×3 −1: 41×3−1 = 122",
+      "zh": "前一个数 ×3 −1: 41×3−1 = 122",
+      "es": "Número anterior ×3 −1: 41×3−1 = 122",
+      "fr": "Nombre précédent ×3 −1 : 41×3−1 = 122",
+      "de": "Vorherige Zahl ×3 −1: 41×3−1 = 122"
+    }
   },
   {
     "id": "ch7_s02",
     "type": "diff_prime",
     "chapter": 7,
     "order": 2,
-    "tokens": ["3", "5", "8", "13", "20", null],
+    "tokens": [
+      "3",
+      "5",
+      "8",
+      "13",
+      "20",
+      null
+    ],
     "answer": "31",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "차이를 나열해보세요: 2, 3, 5, 7 ...",
-      "더해지는 값이 소수예요.",
-      "20 + 11 = ?"
-    ],
-    "explanation": "차이가 소수(2,3,5,7,11): 20 + 11 = 31"
+    "hints": {
+      "ko": [
+        "차이를 나열해보세요: 2, 3, 5, 7 ...",
+        "더해지는 값이 소수예요.",
+        "20 + 11 = ?"
+      ],
+      "en": [
+        "List the differences: 2, 3, 5, 7 ...",
+        "The numbers being added are prime numbers.",
+        "20 + 11 = ?"
+      ],
+      "ja": [
+        "差を並べてみましょう: 2, 3, 5, 7 ...",
+        "足される数は素数です。",
+        "20 + 11 = ?"
+      ],
+      "zh": [
+        "把差列出来: 2, 3, 5, 7 ...",
+        "加上的数都是质数。",
+        "20 + 11 = ?"
+      ],
+      "es": [
+        "Haz una lista de las diferencias: 2, 3, 5, 7 ...",
+        "Los números que se suman son números primos.",
+        "20 + 11 = ?"
+      ],
+      "fr": [
+        "Liste les écarts : 2, 3, 5, 7 ...",
+        "Les nombres ajoutés sont des nombres premiers.",
+        "20 + 11 = ?"
+      ],
+      "de": [
+        "Liste die Differenzen auf: 2, 3, 5, 7 ...",
+        "Die addierten Zahlen sind Primzahlen.",
+        "20 + 11 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "차이가 소수(2,3,5,7,11): 20 + 11 = 31",
+      "en": "The differences are primes (2,3,5,7,11): 20 + 11 = 31",
+      "ja": "差が素数(2,3,5,7,11): 20 + 11 = 31",
+      "zh": "差是质数(2,3,5,7,11): 20 + 11 = 31",
+      "es": "Las diferencias son primos (2,3,5,7,11): 20 + 11 = 31",
+      "fr": "Les écarts sont des nombres premiers (2,3,5,7,11) : 20 + 11 = 31",
+      "de": "Die Differenzen sind Primzahlen (2,3,5,7,11): 20 + 11 = 31"
+    }
   },
   {
     "id": "ch7_s03",
     "type": "prime_sq",
     "chapter": 7,
     "order": 3,
-    "tokens": ["4", "9", "25", "49", null],
+    "tokens": [
+      "4",
+      "9",
+      "25",
+      "49",
+      null
+    ],
     "answer": "121",
     "inputType": "choices",
-    "choices": ["121", "81", "64", "100"],
-    "hints": [
-      "각 수의 제곱근을 떠올려보세요: 2, 3, 5, 7 ...",
-      "소수(2,3,5,7)의 제곱이에요.",
-      "다음 소수 11의 제곱은?"
+    "choices": [
+      "121",
+      "81",
+      "64",
+      "100"
     ],
-    "explanation": "소수의 제곱: 2², 3², 5², 7², 11² = 121"
+    "hints": {
+      "ko": [
+        "각 수의 제곱근을 떠올려보세요: 2, 3, 5, 7 ...",
+        "소수(2,3,5,7)의 제곱이에요.",
+        "다음 소수 11의 제곱은?"
+      ],
+      "en": [
+        "Think of each number's square root: 2, 3, 5, 7 ...",
+        "These are squares of prime numbers (2,3,5,7).",
+        "What is the square of the next prime, 11?"
+      ],
+      "ja": [
+        "各数の平方根を思い浮かべてください: 2, 3, 5, 7 ...",
+        "素数(2,3,5,7)の平方です。",
+        "次の素数11の平方は？"
+      ],
+      "zh": [
+        "想想每个数的平方根: 2, 3, 5, 7 ...",
+        "它们是质数(2,3,5,7)的平方。",
+        "下一个质数11的平方是多少？"
+      ],
+      "es": [
+        "Piensa en la raíz cuadrada de cada número: 2, 3, 5, 7 ...",
+        "Son cuadrados de números primos (2,3,5,7).",
+        "¿Cuál es el cuadrado del siguiente primo, el 11?"
+      ],
+      "fr": [
+        "Pense à la racine carrée de chaque nombre : 2, 3, 5, 7 ...",
+        "Ce sont des carrés de nombres premiers (2,3,5,7).",
+        "Quel est le carré du nombre premier suivant, 11 ?"
+      ],
+      "de": [
+        "Denk an die Quadratwurzel jeder Zahl: 2, 3, 5, 7 ...",
+        "Das sind Quadrate von Primzahlen (2,3,5,7).",
+        "Was ist das Quadrat der nächsten Primzahl 11?"
+      ]
+    },
+    "explanation": {
+      "ko": "소수의 제곱: 2², 3², 5², 7², 11² = 121",
+      "en": "Squares of primes: 2², 3², 5², 7², 11² = 121",
+      "ja": "素数の平方: 2², 3², 5², 7², 11² = 121",
+      "zh": "质数的平方: 2², 3², 5², 7², 11² = 121",
+      "es": "Cuadrados de primos: 2², 3², 5², 7², 11² = 121",
+      "fr": "Carrés de nombres premiers : 2², 3², 5², 7², 11² = 121",
+      "de": "Quadrate von Primzahlen: 2², 3², 5², 7², 11² = 121"
+    }
   },
   {
     "id": "ch7_s04",
     "type": "letter",
     "chapter": 7,
     "order": 4,
-    "tokens": ["A", "A", "B", "C", "E", "H", null],
+    "tokens": [
+      "A",
+      "A",
+      "B",
+      "C",
+      "E",
+      "H",
+      null
+    ],
     "answer": "M",
     "inputType": "choices",
-    "choices": ["M", "K", "L", "N"],
-    "hints": [
-      "글자 위치 번호: 1, 1, 2, 3, 5, 8 ...",
-      "피보나치 수열 위치예요.",
-      "다음은 13번째 글자."
+    "choices": [
+      "M",
+      "K",
+      "L",
+      "N"
     ],
-    "explanation": "피보나치 위치의 알파벳: 1,1,2,3,5,8,13 → M(13)"
+    "hints": {
+      "ko": [
+        "글자 위치 번호: 1, 1, 2, 3, 5, 8 ...",
+        "피보나치 수열 위치예요.",
+        "다음은 13번째 글자."
+      ],
+      "en": [
+        "Letter position numbers: 1, 1, 2, 3, 5, 8 ...",
+        "These are Fibonacci sequence positions.",
+        "The next one is the 13th letter."
+      ],
+      "ja": [
+        "文字の位置番号: 1, 1, 2, 3, 5, 8 ...",
+        "フィボナッチ数列の位置です。",
+        "次は13番目の文字。"
+      ],
+      "zh": [
+        "字母的位置号: 1, 1, 2, 3, 5, 8 ...",
+        "这些是斐波那契数列的位置。",
+        "下一个是第13个字母。"
+      ],
+      "es": [
+        "Números de posición de las letras: 1, 1, 2, 3, 5, 8 ...",
+        "Son posiciones de la sucesión de Fibonacci.",
+        "La siguiente es la letra número 13."
+      ],
+      "fr": [
+        "Numéros de position des lettres : 1, 1, 2, 3, 5, 8 ...",
+        "Ce sont des positions de la suite de Fibonacci.",
+        "La suivante est la 13e lettre."
+      ],
+      "de": [
+        "Positionsnummern der Buchstaben: 1, 1, 2, 3, 5, 8 ...",
+        "Das sind Positionen der Fibonacci-Folge.",
+        "Der nächste ist der 13. Buchstabe."
+      ]
+    },
+    "explanation": {
+      "ko": "피보나치 위치의 알파벳: 1,1,2,3,5,8,13 → M(13)",
+      "en": "Letters at Fibonacci positions: 1,1,2,3,5,8,13 → M(13)",
+      "ja": "フィボナッチ位置のアルファベット: 1,1,2,3,5,8,13 → M(13)",
+      "zh": "斐波那契位置上的字母: 1,1,2,3,5,8,13 → M(13)",
+      "es": "Letras en posiciones de Fibonacci: 1,1,2,3,5,8,13 → M(13)",
+      "fr": "Lettres aux positions de Fibonacci : 1,1,2,3,5,8,13 → M(13)",
+      "de": "Buchstaben an Fibonacci-Positionen: 1,1,2,3,5,8,13 → M(13)"
+    }
   },
   {
     "id": "ch7_s05",
     "type": "alt_ops",
     "chapter": 7,
     "order": 5,
-    "tokens": ["2", "5", "10", "13", "26", null],
+    "tokens": [
+      "2",
+      "5",
+      "10",
+      "13",
+      "26",
+      null
+    ],
     "answer": "29",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "두 가지 연산이 번갈아 나와요.",
-      "+3 과 ×2 가 반복돼요.",
-      "26 + 3 = ?"
-    ],
-    "explanation": "+3, ×2 반복: 2(+3)5(×2)10(+3)13(×2)26(+3)29"
+    "hints": {
+      "ko": [
+        "두 가지 연산이 번갈아 나와요.",
+        "+3 과 ×2 가 반복돼요.",
+        "26 + 3 = ?"
+      ],
+      "en": [
+        "Two operations take turns.",
+        "+3 and ×2 repeat in turns.",
+        "26 + 3 = ?"
+      ],
+      "ja": [
+        "2つの計算が交互に出てきます。",
+        "+3 と ×2 が繰り返されます。",
+        "26 + 3 = ?"
+      ],
+      "zh": [
+        "两种运算交替出现。",
+        "+3 和 ×2 反复进行。",
+        "26 + 3 = ?"
+      ],
+      "es": [
+        "Dos operaciones se van alternando.",
+        "+3 y ×2 se repiten alternándose.",
+        "26 + 3 = ?"
+      ],
+      "fr": [
+        "Deux opérations alternent.",
+        "+3 et ×2 se répètent en alternance.",
+        "26 + 3 = ?"
+      ],
+      "de": [
+        "Zwei Rechenarten wechseln sich ab.",
+        "+3 und ×2 wiederholen sich abwechselnd.",
+        "26 + 3 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "+3, ×2 반복: 2(+3)5(×2)10(+3)13(×2)26(+3)29",
+      "en": "+3, ×2 repeating: 2(+3)5(×2)10(+3)13(×2)26(+3)29",
+      "ja": "+3, ×2 の繰り返し: 2(+3)5(×2)10(+3)13(×2)26(+3)29",
+      "zh": "+3, ×2 反复: 2(+3)5(×2)10(+3)13(×2)26(+3)29",
+      "es": "+3, ×2 alternándose: 2(+3)5(×2)10(+3)13(×2)26(+3)29",
+      "fr": "+3, ×2 en alternance : 2(+3)5(×2)10(+3)13(×2)26(+3)29",
+      "de": "+3, ×2 im Wechsel: 2(+3)5(×2)10(+3)13(×2)26(+3)29"
+    }
   },
   {
     "id": "ch7_s06",
     "type": "n_times",
     "chapter": 7,
     "order": 6,
-    "tokens": ["2", "6", "12", "20", "30", null],
+    "tokens": [
+      "2",
+      "6",
+      "12",
+      "20",
+      "30",
+      null
+    ],
     "answer": "42",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "연속된 두 수의 곱이에요.",
-      "1×2, 2×3, 3×4, 4×5, 5×6 ...",
-      "6 × 7 = ?"
-    ],
-    "explanation": "n×(n+1): 1·2, 2·3, 3·4, 4·5, 5·6, 6·7 = 42"
+    "hints": {
+      "ko": [
+        "연속된 두 수의 곱이에요.",
+        "1×2, 2×3, 3×4, 4×5, 5×6 ...",
+        "6 × 7 = ?"
+      ],
+      "en": [
+        "It's the product of two consecutive numbers.",
+        "1×2, 2×3, 3×4, 4×5, 5×6 ...",
+        "6 × 7 = ?"
+      ],
+      "ja": [
+        "連続する2つの数の積です。",
+        "1×2, 2×3, 3×4, 4×5, 5×6 ...",
+        "6 × 7 = ?"
+      ],
+      "zh": [
+        "是两个连续数的乘积。",
+        "1×2, 2×3, 3×4, 4×5, 5×6 ...",
+        "6 × 7 = ?"
+      ],
+      "es": [
+        "Es el producto de dos números consecutivos.",
+        "1×2, 2×3, 3×4, 4×5, 5×6 ...",
+        "6 × 7 = ?"
+      ],
+      "fr": [
+        "C'est le produit de deux nombres consécutifs.",
+        "1×2, 2×3, 3×4, 4×5, 5×6 ...",
+        "6 × 7 = ?"
+      ],
+      "de": [
+        "Es ist das Produkt zweier aufeinanderfolgender Zahlen.",
+        "1×2, 2×3, 3×4, 4×5, 5×6 ...",
+        "6 × 7 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "n×(n+1): 1·2, 2·3, 3·4, 4·5, 5·6, 6·7 = 42",
+      "en": "n×(n+1): 1·2, 2·3, 3·4, 4·5, 5·6, 6·7 = 42",
+      "ja": "n×(n+1): 1·2, 2·3, 3·4, 4·5, 5·6, 6·7 = 42",
+      "zh": "n×(n+1): 1·2, 2·3, 3·4, 4·5, 5·6, 6·7 = 42",
+      "es": "n×(n+1): 1·2, 2·3, 3·4, 4·5, 5·6, 6·7 = 42",
+      "fr": "n×(n+1) : 1·2, 2·3, 3·4, 4·5, 5·6, 6·7 = 42",
+      "de": "n×(n+1): 1·2, 2·3, 3·4, 4·5, 5·6, 6·7 = 42"
+    }
   },
   {
     "id": "ch7_s07",
     "type": "look_say",
     "chapter": 7,
     "order": 7,
-    "tokens": ["1", "11", "21", "1211", null],
+    "tokens": [
+      "1",
+      "11",
+      "21",
+      "1211",
+      null
+    ],
     "answer": "111221",
     "inputType": "choices",
-    "choices": ["111221", "112211", "11221", "12111"],
-    "hints": [
-      "다음 줄은 '앞 줄을 소리내어 읽은 것'이에요.",
-      "21 → '2가 한 개, 1이 한 개' → 1211.",
-      "1211 → '1이 한 개, 2가 한 개, 1이 두 개' → ?"
+    "choices": [
+      "111221",
+      "112211",
+      "11221",
+      "12111"
     ],
-    "explanation": "읽고 말하기(look-and-say): 1211 = '1 한 개, 2 한 개, 1 두 개' → 111221"
+    "hints": {
+      "ko": [
+        "다음 줄은 '앞 줄을 소리내어 읽은 것'이에요.",
+        "21 → '2가 한 개, 1이 한 개' → 1211.",
+        "1211 → '1이 한 개, 2가 한 개, 1이 두 개' → ?"
+      ],
+      "en": [
+        "Each line is the previous line 'read out loud'.",
+        "21 → 'one 2, one 1' → 1211.",
+        "1211 → 'one 1, one 2, two 1s' → ?"
+      ],
+      "ja": [
+        "次の行は「前の行を声に出して読んだもの」です。",
+        "21 → 「2が1個、1が1個」 → 1211。",
+        "1211 → 「1が1個、2が1個、1が2個」 → ?"
+      ],
+      "zh": [
+        "下一行是「把上一行大声读出来」。",
+        "21 → 「1个2，1个1」 → 1211。",
+        "1211 → 「1个1，1个2，2个1」 → ?"
+      ],
+      "es": [
+        "Cada línea es la anterior 'leída en voz alta'.",
+        "21 → 'un 2, un 1' → 1211.",
+        "1211 → 'un 1, un 2, dos 1' → ?"
+      ],
+      "fr": [
+        "Chaque ligne est la précédente 'lue à voix haute'.",
+        "21 → 'un 2, un 1' → 1211.",
+        "1211 → 'un 1, un 2, deux 1' → ?"
+      ],
+      "de": [
+        "Jede Zeile ist die vorherige Zeile 'laut vorgelesen'.",
+        "21 → 'eine 2, eine 1' → 1211.",
+        "1211 → 'eine 1, eine 2, zwei 1en' → ?"
+      ]
+    },
+    "explanation": {
+      "ko": "읽고 말하기(look-and-say): 1211 = '1 한 개, 2 한 개, 1 두 개' → 111221",
+      "en": "Look-and-say: 1211 = 'one 1, one 2, two 1s' → 111221",
+      "ja": "見て言う（look-and-say）：1211 =「1が1個、2が1個、1が2個」→ 111221",
+      "zh": "看图说数（look-and-say）：1211 = 「1个1，1个2，2个1」→ 111221",
+      "es": "Leer y decir (look-and-say): 1211 = 'un 1, un 2, dos 1' → 111221",
+      "fr": "Lire et dire (look-and-say) : 1211 = 'un 1, un 2, deux 1' → 111221",
+      "de": "Lesen und sagen (look-and-say): 1211 = 'eine 1, eine 2, zwei 1en' → 111221"
+    }
   },
   {
     "id": "ch8_s01",
     "type": "row_relation",
     "chapter": 8,
     "order": 1,
-    "grid": [["2", "4", "6", "8"], ["5", "9", "13", null]],
+    "grid": [
+      [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      [
+        "5",
+        "9",
+        "13",
+        null
+      ]
+    ],
     "answer": "17",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "위 줄과 아래 줄을 세로로 비교해보세요.",
-      "아래 = 위 × 2 + 1 이에요.",
-      "8 × 2 + 1 = ?"
-    ],
-    "explanation": "아래 줄 = 위 줄 × 2 + 1: 8×2+1 = 17"
+    "hints": {
+      "ko": [
+        "위 줄과 아래 줄을 세로로 비교해보세요.",
+        "아래 = 위 × 2 + 1 이에요.",
+        "8 × 2 + 1 = ?"
+      ],
+      "en": [
+        "Compare the top row and bottom row vertically.",
+        "Bottom = top × 2 + 1.",
+        "8 × 2 + 1 = ?"
+      ],
+      "ja": [
+        "上の行と下の行を縦に比べてみましょう。",
+        "下 = 上 × 2 + 1 です。",
+        "8 × 2 + 1 = ?"
+      ],
+      "zh": [
+        "把上面一行和下面一行竖着比较一下。",
+        "下面 = 上面 × 2 + 1。",
+        "8 × 2 + 1 = ?"
+      ],
+      "es": [
+        "Compara la fila de arriba y la de abajo en vertical.",
+        "Abajo = arriba × 2 + 1.",
+        "8 × 2 + 1 = ?"
+      ],
+      "fr": [
+        "Compare la ligne du haut et celle du bas verticalement.",
+        "Bas = haut × 2 + 1.",
+        "8 × 2 + 1 = ?"
+      ],
+      "de": [
+        "Vergleiche die obere und die untere Reihe senkrecht.",
+        "Unten = oben × 2 + 1.",
+        "8 × 2 + 1 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "아래 줄 = 위 줄 × 2 + 1: 8×2+1 = 17",
+      "en": "Bottom row = top row × 2 + 1: 8×2+1 = 17",
+      "ja": "下の行 = 上の行 × 2 + 1：8×2+1 = 17",
+      "zh": "下面一行 = 上面一行 × 2 + 1：8×2+1 = 17",
+      "es": "Fila de abajo = fila de arriba × 2 + 1: 8×2+1 = 17",
+      "fr": "Ligne du bas = ligne du haut × 2 + 1 : 8×2+1 = 17",
+      "de": "Untere Reihe = obere Reihe × 2 + 1: 8×2+1 = 17"
+    }
   },
   {
     "id": "ch8_s02",
     "type": "row_relation",
     "chapter": 8,
     "order": 2,
-    "grid": [["3", "5", "7", "9"], ["9", "25", "49", null]],
+    "grid": [
+      [
+        "3",
+        "5",
+        "7",
+        "9"
+      ],
+      [
+        "9",
+        "25",
+        "49",
+        null
+      ]
+    ],
     "answer": "81",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "위 줄과 아래 줄의 관계를 보세요.",
-      "아래 = 위의 제곱이에요.",
-      "9² = ?"
-    ],
-    "explanation": "아래 줄 = 위 줄의 제곱: 9² = 81"
+    "hints": {
+      "ko": [
+        "위 줄과 아래 줄의 관계를 보세요.",
+        "아래 = 위의 제곱이에요.",
+        "9² = ?"
+      ],
+      "en": [
+        "Look at the relationship between the top row and the bottom row.",
+        "Bottom = the square of the top.",
+        "9² = ?"
+      ],
+      "ja": [
+        "上の行と下の行の関係を見てみましょう。",
+        "下 = 上の2乗です。",
+        "9² = ?"
+      ],
+      "zh": [
+        "看看上面一行和下面一行的关系。",
+        "下面 = 上面的平方。",
+        "9² = ?"
+      ],
+      "es": [
+        "Observa la relación entre la fila de arriba y la de abajo.",
+        "Abajo = el cuadrado de arriba.",
+        "9² = ?"
+      ],
+      "fr": [
+        "Regarde la relation entre la ligne du haut et celle du bas.",
+        "Bas = le carré du haut.",
+        "9² = ?"
+      ],
+      "de": [
+        "Schau dir die Beziehung zwischen der oberen und der unteren Reihe an.",
+        "Unten = das Quadrat von oben.",
+        "9² = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "아래 줄 = 위 줄의 제곱: 9² = 81",
+      "en": "Bottom row = square of the top row: 9² = 81",
+      "ja": "下の行 = 上の行の2乗：9² = 81",
+      "zh": "下面一行 = 上面一行的平方：9² = 81",
+      "es": "Fila de abajo = el cuadrado de la fila de arriba: 9² = 81",
+      "fr": "Ligne du bas = le carré de la ligne du haut : 9² = 81",
+      "de": "Untere Reihe = das Quadrat der oberen Reihe: 9² = 81"
+    }
   },
   {
     "id": "ch8_s03",
     "type": "matrix",
     "chapter": 8,
     "order": 3,
-    "grid": [["2", "3", "5"], ["4", "5", "9"], ["6", "7", null]],
+    "grid": [
+      [
+        "2",
+        "3",
+        "5"
+      ],
+      [
+        "4",
+        "5",
+        "9"
+      ],
+      [
+        "6",
+        "7",
+        null
+      ]
+    ],
     "answer": "13",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "각 가로줄(행) 안에서 규칙을 찾아보세요.",
-      "앞 두 칸을 더하면 마지막 칸이 돼요.",
-      "6 + 7 = ?"
-    ],
-    "explanation": "각 행: 1열 + 2열 = 3열 → 6+7 = 13"
+    "hints": {
+      "ko": [
+        "각 가로줄(행) 안에서 규칙을 찾아보세요.",
+        "앞 두 칸을 더하면 마지막 칸이 돼요.",
+        "6 + 7 = ?"
+      ],
+      "en": [
+        "Find the rule within each horizontal row.",
+        "Add the first two cells to get the last cell.",
+        "6 + 7 = ?"
+      ],
+      "ja": [
+        "それぞれの横の行（行）の中で規則を探しましょう。",
+        "前の2マスを足すと最後のマスになります。",
+        "6 + 7 = ?"
+      ],
+      "zh": [
+        "在每一横行里找规律。",
+        "把前两格相加就是最后一格。",
+        "6 + 7 = ?"
+      ],
+      "es": [
+        "Busca la regla dentro de cada fila horizontal.",
+        "Suma las dos primeras casillas para obtener la última.",
+        "6 + 7 = ?"
+      ],
+      "fr": [
+        "Trouve la règle dans chaque ligne horizontale.",
+        "Additionne les deux premières cases pour obtenir la dernière.",
+        "6 + 7 = ?"
+      ],
+      "de": [
+        "Finde die Regel innerhalb jeder waagerechten Reihe.",
+        "Addiere die ersten beiden Felder, um das letzte zu erhalten.",
+        "6 + 7 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "각 행: 1열 + 2열 = 3열 → 6+7 = 13",
+      "en": "Each row: column 1 + column 2 = column 3 → 6+7 = 13",
+      "ja": "各行：1列目 + 2列目 = 3列目 → 6+7 = 13",
+      "zh": "每一行：第1列 + 第2列 = 第3列 → 6+7 = 13",
+      "es": "Cada fila: columna 1 + columna 2 = columna 3 → 6+7 = 13",
+      "fr": "Chaque ligne : colonne 1 + colonne 2 = colonne 3 → 6+7 = 13",
+      "de": "Jede Reihe: Spalte 1 + Spalte 2 = Spalte 3 → 6+7 = 13"
+    }
   },
   {
     "id": "ch8_s04",
     "type": "matrix",
     "chapter": 8,
     "order": 4,
-    "grid": [["2", "3", "6"], ["4", "2", "8"], ["5", "3", null]],
+    "grid": [
+      [
+        "2",
+        "3",
+        "6"
+      ],
+      [
+        "4",
+        "2",
+        "8"
+      ],
+      [
+        "5",
+        "3",
+        null
+      ]
+    ],
     "answer": "15",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "각 행에서 앞 두 칸과 마지막 칸의 관계를 보세요.",
-      "앞 두 칸을 곱하면 마지막 칸이에요.",
-      "5 × 3 = ?"
-    ],
-    "explanation": "각 행: 1열 × 2열 = 3열 → 5×3 = 15"
+    "hints": {
+      "ko": [
+        "각 행에서 앞 두 칸과 마지막 칸의 관계를 보세요.",
+        "앞 두 칸을 곱하면 마지막 칸이에요.",
+        "5 × 3 = ?"
+      ],
+      "en": [
+        "Look at how the first two cells relate to the last cell in each row.",
+        "Multiply the first two cells to get the last cell.",
+        "5 × 3 = ?"
+      ],
+      "ja": [
+        "各行で前の2マスと最後のマスの関係を見ましょう。",
+        "前の2マスをかけると最後のマスになります。",
+        "5 × 3 = ?"
+      ],
+      "zh": [
+        "看看每一行里前两格和最后一格的关系。",
+        "把前两格相乘就是最后一格。",
+        "5 × 3 = ?"
+      ],
+      "es": [
+        "Observa la relación entre las dos primeras casillas y la última en cada fila.",
+        "Multiplica las dos primeras casillas para obtener la última.",
+        "5 × 3 = ?"
+      ],
+      "fr": [
+        "Regarde la relation entre les deux premières cases et la dernière dans chaque ligne.",
+        "Multiplie les deux premières cases pour obtenir la dernière.",
+        "5 × 3 = ?"
+      ],
+      "de": [
+        "Schau dir an, wie die ersten beiden Felder mit dem letzten Feld in jeder Reihe zusammenhängen.",
+        "Multipliziere die ersten beiden Felder, um das letzte zu erhalten.",
+        "5 × 3 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "각 행: 1열 × 2열 = 3열 → 5×3 = 15",
+      "en": "Each row: column 1 × column 2 = column 3 → 5×3 = 15",
+      "ja": "各行：1列目 × 2列目 = 3列目 → 5×3 = 15",
+      "zh": "每一行：第1列 × 第2列 = 第3列 → 5×3 = 15",
+      "es": "Cada fila: columna 1 × columna 2 = columna 3 → 5×3 = 15",
+      "fr": "Chaque ligne : colonne 1 × colonne 2 = colonne 3 → 5×3 = 15",
+      "de": "Jede Reihe: Spalte 1 × Spalte 2 = Spalte 3 → 5×3 = 15"
+    }
   },
   {
     "id": "ch8_s05",
     "type": "equation",
     "chapter": 8,
     "order": 5,
-    "grid": [["3", "4", "25"], ["5", "2", "29"], ["6", "1", null]],
+    "grid": [
+      [
+        "3",
+        "4",
+        "25"
+      ],
+      [
+        "5",
+        "2",
+        "29"
+      ],
+      [
+        "6",
+        "1",
+        null
+      ]
+    ],
     "answer": "37",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "각 행: 앞 두 수로 마지막 수를 만들어요.",
-      "두 수를 각각 제곱해서 더해요.",
-      "6² + 1² = ?"
-    ],
-    "explanation": "각 행: a² + b². 6²+1² = 37 (3²+4²=25, 5²+2²=29)"
+    "hints": {
+      "ko": [
+        "각 행: 앞 두 수로 마지막 수를 만들어요.",
+        "두 수를 각각 제곱해서 더해요.",
+        "6² + 1² = ?"
+      ],
+      "en": [
+        "Each row: make the last number from the first two numbers.",
+        "Square each of the two numbers and add them.",
+        "6² + 1² = ?"
+      ],
+      "ja": [
+        "各行：前の2つの数で最後の数を作ります。",
+        "2つの数をそれぞれ2乗して足します。",
+        "6² + 1² = ?"
+      ],
+      "zh": [
+        "每一行：用前两个数得出最后一个数。",
+        "把两个数分别平方再相加。",
+        "6² + 1² = ?"
+      ],
+      "es": [
+        "Cada fila: forma el último número con los dos primeros.",
+        "Eleva al cuadrado cada uno de los dos números y súmalos.",
+        "6² + 1² = ?"
+      ],
+      "fr": [
+        "Chaque ligne : forme le dernier nombre à partir des deux premiers.",
+        "Élève chacun des deux nombres au carré et additionne-les.",
+        "6² + 1² = ?"
+      ],
+      "de": [
+        "Jede Reihe: Bilde die letzte Zahl aus den ersten beiden Zahlen.",
+        "Quadriere jede der beiden Zahlen und addiere sie.",
+        "6² + 1² = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "각 행: a² + b². 6²+1² = 37 (3²+4²=25, 5²+2²=29)",
+      "en": "Each row: a² + b². 6²+1² = 37 (3²+4²=25, 5²+2²=29)",
+      "ja": "各行：a² + b²。6²+1² = 37 (3²+4²=25, 5²+2²=29)",
+      "zh": "每一行：a² + b²。6²+1² = 37 (3²+4²=25, 5²+2²=29)",
+      "es": "Cada fila: a² + b². 6²+1² = 37 (3²+4²=25, 5²+2²=29)",
+      "fr": "Chaque ligne : a² + b². 6²+1² = 37 (3²+4²=25, 5²+2²=29)",
+      "de": "Jede Reihe: a² + b². 6²+1² = 37 (3²+4²=25, 5²+2²=29)"
+    }
   },
   {
     "id": "ch8_s06",
     "type": "equation",
     "chapter": 8,
     "order": 6,
-    "grid": [["5", "4", "21"], ["6", "2", "34"], ["7", "5", null]],
+    "grid": [
+      [
+        "5",
+        "4",
+        "21"
+      ],
+      [
+        "6",
+        "2",
+        "34"
+      ],
+      [
+        "7",
+        "5",
+        null
+      ]
+    ],
     "answer": "44",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "각 행: 앞 두 수로 마지막 수를 만들어요.",
-      "첫 수를 제곱하고 둘째 수를 빼요.",
-      "7² − 5 = ?"
-    ],
-    "explanation": "각 행: a² − b. 7²−5 = 44 (5²−4=21, 6²−2=34)"
+    "hints": {
+      "ko": [
+        "각 행: 앞 두 수로 마지막 수를 만들어요.",
+        "첫 수를 제곱하고 둘째 수를 빼요.",
+        "7² − 5 = ?"
+      ],
+      "en": [
+        "Each row: make the last number from the first two numbers.",
+        "Square the first number and subtract the second.",
+        "7² − 5 = ?"
+      ],
+      "ja": [
+        "各行：前の2つの数で最後の数を作ります。",
+        "最初の数を2乗して、2つ目の数を引きます。",
+        "7² − 5 = ?"
+      ],
+      "zh": [
+        "每一行：用前两个数得出最后一个数。",
+        "把第一个数平方，再减去第二个数。",
+        "7² − 5 = ?"
+      ],
+      "es": [
+        "Cada fila: forma el último número con los dos primeros.",
+        "Eleva al cuadrado el primer número y resta el segundo.",
+        "7² − 5 = ?"
+      ],
+      "fr": [
+        "Chaque ligne : forme le dernier nombre à partir des deux premiers.",
+        "Élève le premier nombre au carré et soustrais le second.",
+        "7² − 5 = ?"
+      ],
+      "de": [
+        "Jede Reihe: Bilde die letzte Zahl aus den ersten beiden Zahlen.",
+        "Quadriere die erste Zahl und ziehe die zweite ab.",
+        "7² − 5 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "각 행: a² − b. 7²−5 = 44 (5²−4=21, 6²−2=34)",
+      "en": "Each row: a² − b. 7²−5 = 44 (5²−4=21, 6²−2=34)",
+      "ja": "各行：a² − b。7²−5 = 44 (5²−4=21, 6²−2=34)",
+      "zh": "每一行：a² − b。7²−5 = 44 (5²−4=21, 6²−2=34)",
+      "es": "Cada fila: a² − b. 7²−5 = 44 (5²−4=21, 6²−2=34)",
+      "fr": "Chaque ligne : a² − b. 7²−5 = 44 (5²−4=21, 6²−2=34)",
+      "de": "Jede Reihe: a² − b. 7²−5 = 44 (5²−4=21, 6²−2=34)"
+    }
   },
   {
     "id": "ch8_s07",
     "type": "row_relation",
     "chapter": 8,
     "order": 7,
-    "grid": [["1", "2", "3", "4"], ["1", "4", "9", "16"], ["1", "8", "27", null]],
+    "grid": [
+      [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      [
+        "1",
+        "4",
+        "9",
+        "16"
+      ],
+      [
+        "1",
+        "8",
+        "27",
+        null
+      ]
+    ],
     "answer": "64",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "세 줄을 세로로 비교해보세요.",
-      "1줄=n, 2줄=n², 3줄=n³ 이에요.",
-      "4³ = ?"
-    ],
-    "explanation": "세로: n, n², n³. 4³ = 64"
+    "hints": {
+      "ko": [
+        "세 줄을 세로로 비교해보세요.",
+        "1줄=n, 2줄=n², 3줄=n³ 이에요.",
+        "4³ = ?"
+      ],
+      "en": [
+        "Compare the three rows vertically.",
+        "Row 1 = n, row 2 = n², row 3 = n³.",
+        "4³ = ?"
+      ],
+      "ja": [
+        "3つの行を縦に比べてみましょう。",
+        "1行目=n、2行目=n²、3行目=n³ です。",
+        "4³ = ?"
+      ],
+      "zh": [
+        "把三行竖着比较一下。",
+        "第1行=n，第2行=n²，第3行=n³。",
+        "4³ = ?"
+      ],
+      "es": [
+        "Compara las tres filas en vertical.",
+        "Fila 1 = n, fila 2 = n², fila 3 = n³.",
+        "4³ = ?"
+      ],
+      "fr": [
+        "Compare les trois lignes verticalement.",
+        "Ligne 1 = n, ligne 2 = n², ligne 3 = n³.",
+        "4³ = ?"
+      ],
+      "de": [
+        "Vergleiche die drei Reihen senkrecht.",
+        "Reihe 1 = n, Reihe 2 = n², Reihe 3 = n³.",
+        "4³ = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "세로: n, n², n³. 4³ = 64",
+      "en": "Vertically: n, n², n³. 4³ = 64",
+      "ja": "縦：n、n²、n³。4³ = 64",
+      "zh": "竖着看：n、n²、n³。4³ = 64",
+      "es": "En vertical: n, n², n³. 4³ = 64",
+      "fr": "Verticalement : n, n², n³. 4³ = 64",
+      "de": "Senkrecht: n, n², n³. 4³ = 64"
+    }
   },
   {
     "id": "ch8_s08",
     "type": "matrix",
     "chapter": 8,
     "order": 8,
-    "grid": [["8", "3", "11"], ["6", "5", "11"], ["9", "2", null]],
+    "grid": [
+      [
+        "8",
+        "3",
+        "11"
+      ],
+      [
+        "6",
+        "5",
+        "11"
+      ],
+      [
+        "9",
+        "2",
+        null
+      ]
+    ],
     "answer": "11",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "각 행의 세 수의 관계를 보세요.",
-      "앞 두 수를 더하면? 모든 행이 같은 값이에요.",
-      "9 + 2 = ?"
-    ],
-    "explanation": "각 행: 1열 + 2열 = 3열 (항상 11) → 9+2 = 11"
+    "hints": {
+      "ko": [
+        "각 행의 세 수의 관계를 보세요.",
+        "앞 두 수를 더하면? 모든 행이 같은 값이에요.",
+        "9 + 2 = ?"
+      ],
+      "en": [
+        "Look at how the three numbers in each row relate.",
+        "Add the first two numbers — every row gives the same value!",
+        "9 + 2 = ?"
+      ],
+      "ja": [
+        "各行の3つの数の関係を見てみよう。",
+        "前の2つの数をたすと？ どの行も同じ値だよ。",
+        "9 + 2 = ?"
+      ],
+      "zh": [
+        "看看每一行三个数之间的关系。",
+        "把前两个数相加吧？每一行的结果都一样哦。",
+        "9 + 2 = ?"
+      ],
+      "es": [
+        "Mira cómo se relacionan los tres números de cada fila.",
+        "¡Suma los dos primeros números! Todas las filas dan el mismo valor.",
+        "9 + 2 = ?"
+      ],
+      "fr": [
+        "Regarde la relation entre les trois nombres de chaque ligne.",
+        "Additionne les deux premiers nombres ! Toutes les lignes donnent la même valeur.",
+        "9 + 2 = ?"
+      ],
+      "de": [
+        "Schau, wie die drei Zahlen in jeder Reihe zusammenhängen.",
+        "Addiere die ersten beiden Zahlen! Jede Reihe ergibt denselben Wert.",
+        "9 + 2 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "각 행: 1열 + 2열 = 3열 (항상 11) → 9+2 = 11",
+      "en": "Each row: column 1 + column 2 = column 3 (always 11) → 9+2 = 11",
+      "ja": "各行：1列目 + 2列目 = 3列目（いつも11）→ 9+2 = 11",
+      "zh": "每一行：第1列 + 第2列 = 第3列（总是11）→ 9+2 = 11",
+      "es": "Cada fila: columna 1 + columna 2 = columna 3 (siempre 11) → 9+2 = 11",
+      "fr": "Chaque ligne : colonne 1 + colonne 2 = colonne 3 (toujours 11) → 9+2 = 11",
+      "de": "Jede Reihe: Spalte 1 + Spalte 2 = Spalte 3 (immer 11) → 9+2 = 11"
+    }
   },
   {
     "id": "ch8_s09",
     "type": "equation",
     "chapter": 8,
     "order": 9,
-    "grid": [["6", "2", "10"], ["7", "3", "18"], ["8", "4", null]],
+    "grid": [
+      [
+        "6",
+        "2",
+        "10"
+      ],
+      [
+        "7",
+        "3",
+        "18"
+      ],
+      [
+        "8",
+        "4",
+        null
+      ]
+    ],
     "answer": "28",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "각 행: 앞 두 수로 마지막 수를 만들어요.",
-      "두 수를 곱한 뒤 둘째 수를 빼요.",
-      "8 × 4 − 4 = ?"
-    ],
-    "explanation": "각 행: a×b − b. 8×4−4 = 28 (6×2−2=10, 7×3−3=18)"
+    "hints": {
+      "ko": [
+        "각 행: 앞 두 수로 마지막 수를 만들어요.",
+        "두 수를 곱한 뒤 둘째 수를 빼요.",
+        "8 × 4 − 4 = ?"
+      ],
+      "en": [
+        "In each row, make the last number from the first two.",
+        "Multiply the two numbers, then subtract the second one.",
+        "8 × 4 − 4 = ?"
+      ],
+      "ja": [
+        "各行：前の2つの数で最後の数を作るよ。",
+        "2つの数をかけてから、2つ目の数を引こう。",
+        "8 × 4 − 4 = ?"
+      ],
+      "zh": [
+        "每一行：用前两个数算出最后一个数。",
+        "把两个数相乘，再减去第二个数。",
+        "8 × 4 − 4 = ?"
+      ],
+      "es": [
+        "En cada fila, forma el último número con los dos primeros.",
+        "Multiplica los dos números y luego resta el segundo.",
+        "8 × 4 − 4 = ?"
+      ],
+      "fr": [
+        "Dans chaque ligne, fabrique le dernier nombre à partir des deux premiers.",
+        "Multiplie les deux nombres, puis soustrais le deuxième.",
+        "8 × 4 − 4 = ?"
+      ],
+      "de": [
+        "Bilde in jeder Reihe die letzte Zahl aus den ersten beiden.",
+        "Multipliziere die zwei Zahlen und ziehe dann die zweite ab.",
+        "8 × 4 − 4 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "각 행: a×b − b. 8×4−4 = 28 (6×2−2=10, 7×3−3=18)",
+      "en": "Each row: a×b − b. 8×4−4 = 28 (6×2−2=10, 7×3−3=18)",
+      "ja": "各行：a×b − b。8×4−4 = 28（6×2−2=10、7×3−3=18）",
+      "zh": "每一行：a×b − b。8×4−4 = 28（6×2−2=10，7×3−3=18）",
+      "es": "Cada fila: a×b − b. 8×4−4 = 28 (6×2−2=10, 7×3−3=18)",
+      "fr": "Chaque ligne : a×b − b. 8×4−4 = 28 (6×2−2=10, 7×3−3=18)",
+      "de": "Jede Reihe: a×b − b. 8×4−4 = 28 (6×2−2=10, 7×3−3=18)"
+    }
   },
   {
     "id": "ch9_s01",
     "type": "recursive",
     "chapter": 9,
     "order": 1,
-    "tokens": ["1", "2", "6", "24", null],
+    "tokens": [
+      "1",
+      "2",
+      "6",
+      "24",
+      null
+    ],
     "answer": "120",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "곱하는 수가 점점 커져요.",
-      "앞 수에 ×2, ×3, ×4 ... 를 차례로 곱해요.",
-      "24 × 5 = ?"
-    ],
-    "explanation": "앞 수에 2,3,4,5 를 차례로 곱함: 24×5 = 120"
+    "hints": {
+      "ko": [
+        "곱하는 수가 점점 커져요.",
+        "앞 수에 ×2, ×3, ×4 ... 를 차례로 곱해요.",
+        "24 × 5 = ?"
+      ],
+      "en": [
+        "The number you multiply by keeps getting bigger.",
+        "Multiply the previous number by ×2, ×3, ×4 ... in turn.",
+        "24 × 5 = ?"
+      ],
+      "ja": [
+        "かける数がだんだん大きくなるよ。",
+        "前の数に ×2、×3、×4 ... を順番にかけよう。",
+        "24 × 5 = ?"
+      ],
+      "zh": [
+        "相乘的数越来越大。",
+        "把前一个数依次乘以 ×2、×3、×4 ...",
+        "24 × 5 = ?"
+      ],
+      "es": [
+        "El número por el que multiplicas se hace cada vez mayor.",
+        "Multiplica el número anterior por ×2, ×3, ×4 ... en orden.",
+        "24 × 5 = ?"
+      ],
+      "fr": [
+        "Le nombre par lequel tu multiplies grandit à chaque fois.",
+        "Multiplie le nombre précédent par ×2, ×3, ×4 ... tour à tour.",
+        "24 × 5 = ?"
+      ],
+      "de": [
+        "Die Zahl, mit der du multiplizierst, wird immer größer.",
+        "Multipliziere die vorherige Zahl nacheinander mit ×2, ×3, ×4 ...",
+        "24 × 5 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "앞 수에 2,3,4,5 를 차례로 곱함: 24×5 = 120",
+      "en": "Multiply the previous number by 2, 3, 4, 5 in turn: 24×5 = 120",
+      "ja": "前の数に2、3、4、5を順番にかける：24×5 = 120",
+      "zh": "把前一个数依次乘以2、3、4、5：24×5 = 120",
+      "es": "Multiplica el número anterior por 2, 3, 4, 5 en orden: 24×5 = 120",
+      "fr": "Multiplie le nombre précédent par 2, 3, 4, 5 tour à tour : 24×5 = 120",
+      "de": "Multipliziere die vorherige Zahl nacheinander mit 2, 3, 4, 5: 24×5 = 120"
+    }
   },
   {
     "id": "ch9_s02",
     "type": "tetrahedral",
     "chapter": 9,
     "order": 2,
-    "tokens": ["1", "4", "10", "20", "35", null],
+    "tokens": [
+      "1",
+      "4",
+      "10",
+      "20",
+      "35",
+      null
+    ],
     "answer": "56",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "차이를 보세요: 3, 6, 10, 15 ...",
-      "그 차이들은 삼각수(3,6,10,15,21)예요.",
-      "35 + 21 = ?"
-    ],
-    "explanation": "차이가 삼각수(3,6,10,15,21): 35+21 = 56 (사면체수)"
+    "hints": {
+      "ko": [
+        "차이를 보세요: 3, 6, 10, 15 ...",
+        "그 차이들은 삼각수(3,6,10,15,21)예요.",
+        "35 + 21 = ?"
+      ],
+      "en": [
+        "Look at the differences: 3, 6, 10, 15 ...",
+        "Those differences are triangular numbers (3, 6, 10, 15, 21).",
+        "35 + 21 = ?"
+      ],
+      "ja": [
+        "差を見てみよう：3, 6, 10, 15 ...",
+        "その差は三角数（3, 6, 10, 15, 21）だよ。",
+        "35 + 21 = ?"
+      ],
+      "zh": [
+        "看看差值：3, 6, 10, 15 ...",
+        "这些差值是三角形数（3, 6, 10, 15, 21）。",
+        "35 + 21 = ?"
+      ],
+      "es": [
+        "Observa las diferencias: 3, 6, 10, 15 ...",
+        "Esas diferencias son números triangulares (3, 6, 10, 15, 21).",
+        "35 + 21 = ?"
+      ],
+      "fr": [
+        "Regarde les différences : 3, 6, 10, 15 ...",
+        "Ces différences sont des nombres triangulaires (3, 6, 10, 15, 21).",
+        "35 + 21 = ?"
+      ],
+      "de": [
+        "Schau dir die Differenzen an: 3, 6, 10, 15 ...",
+        "Diese Differenzen sind Dreieckszahlen (3, 6, 10, 15, 21).",
+        "35 + 21 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "차이가 삼각수(3,6,10,15,21): 35+21 = 56 (사면체수)",
+      "en": "The differences are triangular numbers (3, 6, 10, 15, 21): 35+21 = 56 (tetrahedral numbers)",
+      "ja": "差が三角数（3, 6, 10, 15, 21）：35+21 = 56（四面体数）",
+      "zh": "差值是三角形数（3, 6, 10, 15, 21）：35+21 = 56（四面体数）",
+      "es": "Las diferencias son números triangulares (3, 6, 10, 15, 21): 35+21 = 56 (números tetraédricos)",
+      "fr": "Les différences sont des nombres triangulaires (3, 6, 10, 15, 21) : 35+21 = 56 (nombres tétraédriques)",
+      "de": "Die Differenzen sind Dreieckszahlen (3, 6, 10, 15, 21): 35+21 = 56 (Tetraederzahlen)"
+    }
   },
   {
     "id": "ch9_s03",
     "type": "recursive",
     "chapter": 9,
     "order": 3,
-    "tokens": ["1", "1", "3", "5", "11", "21", null],
+    "tokens": [
+      "1",
+      "1",
+      "3",
+      "5",
+      "11",
+      "21",
+      null
+    ],
     "answer": "43",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "앞의 두 수를 사용해요.",
-      "바로 앞 수 + (그 앞 수 × 2) 예요.",
-      "21 + 11 × 2 = ?"
-    ],
-    "explanation": "a(n) = a(n-1) + 2·a(n-2): 21 + 11×2 = 43"
+    "hints": {
+      "ko": [
+        "앞의 두 수를 사용해요.",
+        "바로 앞 수 + (그 앞 수 × 2) 예요.",
+        "21 + 11 × 2 = ?"
+      ],
+      "en": [
+        "Use the two numbers before it.",
+        "Take the number right before it + (the one before that × 2).",
+        "21 + 11 × 2 = ?"
+      ],
+      "ja": [
+        "前の2つの数を使うよ。",
+        "すぐ前の数 +（そのさらに前の数 × 2）だよ。",
+        "21 + 11 × 2 = ?"
+      ],
+      "zh": [
+        "用它前面的两个数。",
+        "紧挨着它的前一个数 +（再前一个数 × 2）。",
+        "21 + 11 × 2 = ?"
+      ],
+      "es": [
+        "Usa los dos números anteriores.",
+        "Toma el número justo anterior + (el de antes × 2).",
+        "21 + 11 × 2 = ?"
+      ],
+      "fr": [
+        "Utilise les deux nombres précédents.",
+        "Prends le nombre juste avant + (celui d'encore avant × 2).",
+        "21 + 11 × 2 = ?"
+      ],
+      "de": [
+        "Verwende die zwei vorherigen Zahlen.",
+        "Nimm die Zahl direkt davor + (die davor × 2).",
+        "21 + 11 × 2 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "a(n) = a(n-1) + 2·a(n-2): 21 + 11×2 = 43",
+      "en": "a(n) = a(n-1) + 2·a(n-2): 21 + 11×2 = 43",
+      "ja": "a(n) = a(n-1) + 2·a(n-2)：21 + 11×2 = 43",
+      "zh": "a(n) = a(n-1) + 2·a(n-2)：21 + 11×2 = 43",
+      "es": "a(n) = a(n-1) + 2·a(n-2): 21 + 11×2 = 43",
+      "fr": "a(n) = a(n-1) + 2·a(n-2) : 21 + 11×2 = 43",
+      "de": "a(n) = a(n-1) + 2·a(n-2): 21 + 11×2 = 43"
+    }
   },
   {
     "id": "ch9_s04",
     "type": "magic_square",
     "chapter": 9,
     "order": 4,
-    "grid": [["6", "1", "8"], ["7", "5", "3"], ["2", "9", null]],
+    "grid": [
+      [
+        "6",
+        "1",
+        "8"
+      ],
+      [
+        "7",
+        "5",
+        "3"
+      ],
+      [
+        "2",
+        "9",
+        null
+      ]
+    ],
     "answer": "4",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "가로·세로 각 줄의 합을 비교해보세요.",
-      "모든 줄(가로·세로)의 합이 같아요 (=15).",
-      "2 + 9 + ? = 15"
-    ],
-    "explanation": "마법진: 모든 가로·세로 합이 15. 2+9+4 = 15"
+    "hints": {
+      "ko": [
+        "가로·세로 각 줄의 합을 비교해보세요.",
+        "모든 줄(가로·세로)의 합이 같아요 (=15).",
+        "2 + 9 + ? = 15"
+      ],
+      "en": [
+        "Compare the sums of each row and each column.",
+        "Every line (row and column) adds up to the same total (=15).",
+        "2 + 9 + ? = 15"
+      ],
+      "ja": [
+        "たての列・よこの行それぞれの合計を比べてみよう。",
+        "すべての列・行の合計が同じだよ（=15）。",
+        "2 + 9 + ? = 15"
+      ],
+      "zh": [
+        "比较一下每一行和每一列的和。",
+        "每一条线（行和列）的和都一样（=15）。",
+        "2 + 9 + ? = 15"
+      ],
+      "es": [
+        "Compara las sumas de cada fila y cada columna.",
+        "Cada línea (fila y columna) suma el mismo total (=15).",
+        "2 + 9 + ? = 15"
+      ],
+      "fr": [
+        "Compare les sommes de chaque ligne et de chaque colonne.",
+        "Chaque ligne (ligne et colonne) donne le même total (=15).",
+        "2 + 9 + ? = 15"
+      ],
+      "de": [
+        "Vergleiche die Summen jeder Zeile und jeder Spalte.",
+        "Jede Linie (Zeile und Spalte) ergibt dieselbe Summe (=15).",
+        "2 + 9 + ? = 15"
+      ]
+    },
+    "explanation": {
+      "ko": "마법진: 모든 가로·세로 합이 15. 2+9+4 = 15",
+      "en": "Magic square: every row and column adds up to 15. 2+9+4 = 15",
+      "ja": "魔方陣：すべてのたて・よこの合計が15。2+9+4 = 15",
+      "zh": "幻方：每一行和每一列的和都是15。2+9+4 = 15",
+      "es": "Cuadrado mágico: cada fila y columna suma 15. 2+9+4 = 15",
+      "fr": "Carré magique : chaque ligne et colonne donne 15. 2+9+4 = 15",
+      "de": "Magisches Quadrat: jede Zeile und Spalte ergibt 15. 2+9+4 = 15"
+    }
   },
   {
     "id": "ch9_s05",
     "type": "equation",
     "chapter": 9,
     "order": 5,
-    "grid": [["5", "3", "16"], ["7", "4", "33"], ["8", "6", null]],
+    "grid": [
+      [
+        "5",
+        "3",
+        "16"
+      ],
+      [
+        "7",
+        "4",
+        "33"
+      ],
+      [
+        "8",
+        "6",
+        null
+      ]
+    ],
     "answer": "28",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "각 행: 앞 두 수로 마지막 수를 만들어요.",
-      "두 수의 제곱의 차예요 (a² − b²).",
-      "8² − 6² = ?"
-    ],
-    "explanation": "각 행: a² − b². 8²−6² = 28 (25−9=16, 49−16=33)"
+    "hints": {
+      "ko": [
+        "각 행: 앞 두 수로 마지막 수를 만들어요.",
+        "두 수의 제곱의 차예요 (a² − b²).",
+        "8² − 6² = ?"
+      ],
+      "en": [
+        "In each row, make the last number from the first two.",
+        "It's the difference of their squares (a² − b²).",
+        "8² − 6² = ?"
+      ],
+      "ja": [
+        "各行：前の2つの数で最後の数を作るよ。",
+        "2つの数の平方の差だよ（a² − b²）。",
+        "8² − 6² = ?"
+      ],
+      "zh": [
+        "每一行：用前两个数算出最后一个数。",
+        "是两个数平方的差（a² − b²）。",
+        "8² − 6² = ?"
+      ],
+      "es": [
+        "En cada fila, forma el último número con los dos primeros.",
+        "Es la diferencia de sus cuadrados (a² − b²).",
+        "8² − 6² = ?"
+      ],
+      "fr": [
+        "Dans chaque ligne, fabrique le dernier nombre à partir des deux premiers.",
+        "C'est la différence de leurs carrés (a² − b²).",
+        "8² − 6² = ?"
+      ],
+      "de": [
+        "Bilde in jeder Reihe die letzte Zahl aus den ersten beiden.",
+        "Es ist die Differenz ihrer Quadrate (a² − b²).",
+        "8² − 6² = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "각 행: a² − b². 8²−6² = 28 (25−9=16, 49−16=33)",
+      "en": "Each row: a² − b². 8²−6² = 28 (25−9=16, 49−16=33)",
+      "ja": "各行：a² − b²。8²−6² = 28（25−9=16、49−16=33）",
+      "zh": "每一行：a² − b²。8²−6² = 28（25−9=16，49−16=33）",
+      "es": "Cada fila: a² − b². 8²−6² = 28 (25−9=16, 49−16=33)",
+      "fr": "Chaque ligne : a² − b². 8²−6² = 28 (25−9=16, 49−16=33)",
+      "de": "Jede Reihe: a² − b². 8²−6² = 28 (25−9=16, 49−16=33)"
+    }
   },
   {
     "id": "ch9_s06",
     "type": "equation",
     "chapter": 9,
     "order": 6,
-    "grid": [["2", "3", "4", "24"], ["1", "5", "2", "10"], ["3", "3", "2", null]],
+    "grid": [
+      [
+        "2",
+        "3",
+        "4",
+        "24"
+      ],
+      [
+        "1",
+        "5",
+        "2",
+        "10"
+      ],
+      [
+        "3",
+        "3",
+        "2",
+        null
+      ]
+    ],
     "answer": "18",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "각 행의 앞 세 수로 마지막 수를 만들어요.",
-      "세 수를 모두 곱해요.",
-      "3 × 3 × 2 = ?"
-    ],
-    "explanation": "각 행: a×b×c. 3×3×2 = 18 (2×3×4=24, 1×5×2=10)"
+    "hints": {
+      "ko": [
+        "각 행의 앞 세 수로 마지막 수를 만들어요.",
+        "세 수를 모두 곱해요.",
+        "3 × 3 × 2 = ?"
+      ],
+      "en": [
+        "In each row, make the last number from the first three.",
+        "Multiply all three numbers together.",
+        "3 × 3 × 2 = ?"
+      ],
+      "ja": [
+        "各行：前の3つの数で最後の数を作るよ。",
+        "3つの数を全部かけ合わせよう。",
+        "3 × 3 × 2 = ?"
+      ],
+      "zh": [
+        "每一行：用前三个数算出最后一个数。",
+        "把三个数全部相乘。",
+        "3 × 3 × 2 = ?"
+      ],
+      "es": [
+        "En cada fila, forma el último número con los tres primeros.",
+        "Multiplica los tres números entre sí.",
+        "3 × 3 × 2 = ?"
+      ],
+      "fr": [
+        "Dans chaque ligne, fabrique le dernier nombre à partir des trois premiers.",
+        "Multiplie les trois nombres entre eux.",
+        "3 × 3 × 2 = ?"
+      ],
+      "de": [
+        "Bilde in jeder Reihe die letzte Zahl aus den ersten drei.",
+        "Multipliziere alle drei Zahlen miteinander.",
+        "3 × 3 × 2 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "각 행: a×b×c. 3×3×2 = 18 (2×3×4=24, 1×5×2=10)",
+      "en": "Each row: a×b×c. 3×3×2 = 18 (2×3×4=24, 1×5×2=10)",
+      "ja": "各行：a×b×c。3×3×2 = 18（2×3×4=24、1×5×2=10）",
+      "zh": "每一行：a×b×c。3×3×2 = 18（2×3×4=24，1×5×2=10）",
+      "es": "Cada fila: a×b×c. 3×3×2 = 18 (2×3×4=24, 1×5×2=10)",
+      "fr": "Chaque ligne : a×b×c. 3×3×2 = 18 (2×3×4=24, 1×5×2=10)",
+      "de": "Jede Reihe: a×b×c. 3×3×2 = 18 (2×3×4=24, 1×5×2=10)"
+    }
   },
   {
     "id": "ch9_s07",
     "type": "fib_square",
     "chapter": 9,
     "order": 7,
-    "tokens": ["1", "1", "4", "9", "25", "64", null],
+    "tokens": [
+      "1",
+      "1",
+      "4",
+      "9",
+      "25",
+      "64",
+      null
+    ],
     "answer": "169",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "각 수의 제곱근을 보세요: 1, 1, 2, 3, 5, 8 ...",
-      "피보나치 수의 제곱이에요.",
-      "다음 피보나치는 13 → 13²?"
-    ],
-    "explanation": "피보나치(1,1,2,3,5,8,13)의 제곱: 13² = 169"
+    "hints": {
+      "ko": [
+        "각 수의 제곱근을 보세요: 1, 1, 2, 3, 5, 8 ...",
+        "피보나치 수의 제곱이에요.",
+        "다음 피보나치는 13 → 13²?"
+      ],
+      "en": [
+        "Look at the square root of each number: 1, 1, 2, 3, 5, 8 ...",
+        "They are the squares of Fibonacci numbers.",
+        "The next Fibonacci number is 13 → 13²?"
+      ],
+      "ja": [
+        "それぞれの数の平方根を見てみよう: 1, 1, 2, 3, 5, 8 ...",
+        "フィボナッチ数の2乗だよ。",
+        "次のフィボナッチ数は 13 → 13²?"
+      ],
+      "zh": [
+        "看看每个数的平方根: 1, 1, 2, 3, 5, 8 ...",
+        "它们是斐波那契数的平方。",
+        "下一个斐波那契数是 13 → 13²?"
+      ],
+      "es": [
+        "Mira la raíz cuadrada de cada número: 1, 1, 2, 3, 5, 8 ...",
+        "Son los cuadrados de los números de Fibonacci.",
+        "El siguiente número de Fibonacci es 13 → 13²?"
+      ],
+      "fr": [
+        "Regarde la racine carrée de chaque nombre : 1, 1, 2, 3, 5, 8 ...",
+        "Ce sont les carrés des nombres de Fibonacci.",
+        "Le nombre de Fibonacci suivant est 13 → 13²?"
+      ],
+      "de": [
+        "Schau dir die Quadratwurzel jeder Zahl an: 1, 1, 2, 3, 5, 8 ...",
+        "Es sind die Quadrate der Fibonacci-Zahlen.",
+        "Die nächste Fibonacci-Zahl ist 13 → 13²?"
+      ]
+    },
+    "explanation": {
+      "ko": "피보나치(1,1,2,3,5,8,13)의 제곱: 13² = 169",
+      "en": "Squares of Fibonacci numbers (1,1,2,3,5,8,13): 13² = 169",
+      "ja": "フィボナッチ数列(1,1,2,3,5,8,13)の2乗: 13² = 169",
+      "zh": "斐波那契数(1,1,2,3,5,8,13)的平方: 13² = 169",
+      "es": "Cuadrados de los números de Fibonacci (1,1,2,3,5,8,13): 13² = 169",
+      "fr": "Carrés des nombres de Fibonacci (1,1,2,3,5,8,13) : 13² = 169",
+      "de": "Quadrate der Fibonacci-Zahlen (1,1,2,3,5,8,13): 13² = 169"
+    }
   },
   {
     "id": "ch9_s08",
     "type": "matrix",
     "chapter": 9,
     "order": 8,
-    "grid": [["3", "2", "10"], ["5", "1", "12"], ["4", "6", null]],
+    "grid": [
+      [
+        "3",
+        "2",
+        "10"
+      ],
+      [
+        "5",
+        "1",
+        "12"
+      ],
+      [
+        "4",
+        "6",
+        null
+      ]
+    ],
     "answer": "20",
     "inputType": "keypad",
     "choices": null,
-    "hints": [
-      "각 행: 앞 두 수와 마지막 수의 관계를 보세요.",
-      "앞 두 수를 더한 뒤 2를 곱해요.",
-      "(4 + 6) × 2 = ?"
-    ],
-    "explanation": "각 행: (a+b)×2. (4+6)×2 = 20 ((3+2)×2=10, (5+1)×2=12)"
+    "hints": {
+      "ko": [
+        "각 행: 앞 두 수와 마지막 수의 관계를 보세요.",
+        "앞 두 수를 더한 뒤 2를 곱해요.",
+        "(4 + 6) × 2 = ?"
+      ],
+      "en": [
+        "Each row: look at how the first two numbers relate to the last one.",
+        "Add the first two numbers, then multiply by 2.",
+        "(4 + 6) × 2 = ?"
+      ],
+      "ja": [
+        "各行で、最初の2つの数と最後の数の関係を見てみよう。",
+        "最初の2つの数を足してから2をかけるよ。",
+        "(4 + 6) × 2 = ?"
+      ],
+      "zh": [
+        "每一行: 看看前两个数和最后一个数的关系。",
+        "把前两个数相加, 然后乘以 2。",
+        "(4 + 6) × 2 = ?"
+      ],
+      "es": [
+        "En cada fila: mira cómo se relacionan los dos primeros números con el último.",
+        "Suma los dos primeros números y luego multiplica por 2.",
+        "(4 + 6) × 2 = ?"
+      ],
+      "fr": [
+        "Dans chaque ligne : regarde le lien entre les deux premiers nombres et le dernier.",
+        "Additionne les deux premiers nombres, puis multiplie par 2.",
+        "(4 + 6) × 2 = ?"
+      ],
+      "de": [
+        "Schau in jeder Zeile, wie die ersten beiden Zahlen mit der letzten zusammenhängen.",
+        "Addiere die ersten beiden Zahlen und multipliziere dann mit 2.",
+        "(4 + 6) × 2 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "각 행: (a+b)×2. (4+6)×2 = 20 ((3+2)×2=10, (5+1)×2=12)",
+      "en": "Each row: (a+b)×2. (4+6)×2 = 20 ((3+2)×2=10, (5+1)×2=12)",
+      "ja": "各行: (a+b)×2。(4+6)×2 = 20 ((3+2)×2=10, (5+1)×2=12)",
+      "zh": "每一行: (a+b)×2。(4+6)×2 = 20 ((3+2)×2=10, (5+1)×2=12)",
+      "es": "Cada fila: (a+b)×2. (4+6)×2 = 20 ((3+2)×2=10, (5+1)×2=12)",
+      "fr": "Chaque ligne : (a+b)×2. (4+6)×2 = 20 ((3+2)×2=10, (5+1)×2=12)",
+      "de": "Jede Zeile: (a+b)×2. (4+6)×2 = 20 ((3+2)×2=10, (5+1)×2=12)"
+    }
   }
 ]

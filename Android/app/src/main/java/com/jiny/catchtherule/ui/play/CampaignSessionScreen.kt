@@ -102,9 +102,9 @@ fun CampaignSessionScreen(onClose: () -> Unit) {
                 Box(Modifier.weight(1f))
                 HintButton(
                     remaining = progress.hintsRemaining,
-                    enabled = hintsShown < puzzle.hints.size && progress.hintsRemaining > 0 && !solved,
+                    enabled = hintsShown < puzzle.localizedHints.size && progress.hintsRemaining > 0 && !solved,
                 ) {
-                    if (hintsShown < puzzle.hints.size && progress.spendHint()) hintsShown += 1
+                    if (hintsShown < puzzle.localizedHints.size && progress.spendHint()) hintsShown += 1
                 }
             }
 
@@ -121,7 +121,7 @@ fun CampaignSessionScreen(onClose: () -> Unit) {
                             Modifier.fillMaxWidth().card().padding(16.dp),
                             verticalArrangement = Arrangement.spacedBy(8.dp),
                         ) {
-                            puzzle.hints.take(hintsShown).forEach { hint ->
+                            puzzle.localizedHints.take(hintsShown).forEach { hint ->
                                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                                     Icon(Icons.Filled.Lightbulb, null, tint = AppColors.Star, modifier = Modifier.size(14.dp).padding(top = 2.dp))
                                     Text(hint, color = AppColors.TextSecondary, fontSize = 14.sp)

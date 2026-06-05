@@ -19,11 +19,23 @@ struct Puzzle: Codable, Identifiable, Equatable {
     let answer: String
     let inputType: InputType
     let choices: [String]?
-    let hints: [String]
-    let explanation: String
+    let hints: [String: [String]]        // 로케일코드 → 힌트 3개
+    let explanation: [String: String]    // 로케일코드 → 해설
 
     /// 격자형 퍼즐 여부.
     var isGrid: Bool { (grid?.isEmpty == false) }
+
+    /// 현재 언어의 힌트(없으면 영어 → 임의 폴백).
+    var localizedHints: [String] {
+        let code = Locale.current.language.languageCode?.identifier ?? "en"
+        return hints[code] ?? hints["en"] ?? hints.values.first ?? []
+    }
+
+    /// 현재 언어의 해설.
+    var localizedExplanation: String {
+        let code = Locale.current.language.languageCode?.identifier ?? "en"
+        return explanation[code] ?? explanation["en"] ?? ""
+    }
 
     func isCorrect(_ value: String) -> Bool {
         value.trimmingCharacters(in: .whitespaces) == answer

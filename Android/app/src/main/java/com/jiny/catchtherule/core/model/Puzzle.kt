@@ -20,10 +20,24 @@ data class Puzzle(
     val answer: String,
     val inputType: String,      // "keypad" | "choices"
     val choices: List<String>? = null,
-    val hints: List<String>,
-    val explanation: String,
+    val hints: Map<String, List<String>>,      // 로케일코드 → 힌트 3개
+    val explanation: Map<String, String>,      // 로케일코드 → 해설
 ) {
     val isGrid: Boolean get() = grid?.isNotEmpty() == true
+
+    /** 현재 언어의 힌트(없으면 영어 → 임의 폴백). */
+    val localizedHints: List<String>
+        get() {
+            val code = java.util.Locale.getDefault().language
+            return hints[code] ?: hints["en"] ?: hints.values.firstOrNull() ?: emptyList()
+        }
+
+    /** 현재 언어의 해설. */
+    val localizedExplanation: String
+        get() {
+            val code = java.util.Locale.getDefault().language
+            return explanation[code] ?: explanation["en"] ?: ""
+        }
 
     fun isCorrect(value: String): Boolean = value.trim() == answer
 }
