@@ -21,5 +21,10 @@ Android/.kotlin/
 *.iml
 .cxx/
 
+# ── 서명 키 (절대 커밋 금지: 공개 저장소) ──
+*.jks
+*.keystore
+keystore.properties
+
 # ── 기타 ──
 *.log
