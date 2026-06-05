@@ -110,13 +110,15 @@ fun SettingsScreen(modifier: Modifier = Modifier) {
                         billing.removeAdsPrice.ifEmpty { stringResource(R.string.iap_loading) },
                     ) { activity?.let { billing.purchase(it, com.jiny.catchtherule.data.BillingManager.REMOVE_ADS_ID) } }
                 }
-                RowDivider()
-                // 힌트 구매 (소모성)
-                SettingsRow(
-                    Icons.Filled.Lightbulb,
-                    stringResource(R.string.iap_buy_hints),
-                    billing.hintsPrice.ifEmpty { stringResource(R.string.iap_loading) },
-                ) { activity?.let { billing.purchase(it, com.jiny.catchtherule.data.BillingManager.HINTS_ID) } }
+                // 힌트 구매 (소모성, 5·10·20·50)
+                com.jiny.catchtherule.data.BillingManager.HINT_TIERS.forEach { n ->
+                    RowDivider()
+                    SettingsRow(
+                        Icons.Filled.Lightbulb,
+                        stringResource(R.string.iap_hints_n, n),
+                        billing.hintsPrices[n].orEmpty().ifEmpty { stringResource(R.string.iap_loading) },
+                    ) { activity?.let { billing.purchase(it, com.jiny.catchtherule.data.BillingManager.hintsId(n)) } }
+                }
                 RowDivider()
                 // 구매 복원
                 SettingsRow(Icons.Filled.Restore, stringResource(R.string.iap_restore), null) {

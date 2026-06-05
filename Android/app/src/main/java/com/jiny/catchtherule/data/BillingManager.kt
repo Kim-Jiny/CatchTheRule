@@ -38,7 +38,7 @@ class BillingManager(context: Context, private val progress: ProgressStore) {
         private set
     var removeAdsPrice by mutableStateOf("")
         private set
-    var hintsPrice by mutableStateOf("")
+    var hintsPrices by mutableStateOf<Map<Int, String>>(emptyMap())
         private set
 
     private val productDetails = mutableMapOf<String, ProductDetails>()
@@ -69,9 +69,10 @@ class BillingManager(context: Context, private val progress: ProgressStore) {
     }
 
     private fun queryProducts() {
+        val ids = listOf(REMOVE_ADS_ID) + HINT_TIERS.map { hintsId(it) }
         val params = QueryProductDetailsParams.newBuilder()
             .setProductList(
-                listOf(REMOVE_ADS_ID, HINTS_ID).map {
+                ids.map {
                     QueryProductDetailsParams.Product.newBuilder()
                         .setProductId(it)
                         .setProductType(BillingClient.ProductType.INAPP)
@@ -82,7 +83,9 @@ class BillingManager(context: Context, private val progress: ProgressStore) {
             if (result.responseCode == BillingClient.BillingResponseCode.OK) {
                 list.forEach { productDetails[it.productId] = it }
                 removeAdsPrice = productDetails[REMOVE_ADS_ID]?.oneTimePurchaseOfferDetails?.formattedPrice ?: ""
-                hintsPrice = productDetails[HINTS_ID]?.oneTimePurchaseOfferDetails?.formattedPrice ?: ""
+                hintsPrices = HINT_TIERS.associateWith { n ->
+                    productDetails[hintsId(n)]?.oneTimePurchaseOfferDetails?.formattedPrice ?: ""
+                }
             }
         }
     }
@@ -126,18 +129,19 @@ class BillingManager(context: Context, private val progress: ProgressStore) {
     private fun handlePurchase(p: Purchase) {
         if (p.purchaseState != Purchase.PurchaseState.PURCHASED) return
         verifyOnServer(p)
+        val hintGrant = p.products.firstNotNullOfOrNull { HINT_GRANTS[it] }
         when {
             p.products.contains(REMOVE_ADS_ID) -> {
                 setPurchased(true)
                 acknowledge(p)
             }
-            p.products.contains(HINTS_ID) -> {
+            hintGrant != null -> {
                 // 소모성: 소비 후 힌트 지급(소비되면 재조회에서 다시 잡히지 않음 → 1회 지급)
                 client.consumeAsync(
                     ConsumeParams.newBuilder().setPurchaseToken(p.purchaseToken).build()
                 ) { result, _ ->
                     if (result.responseCode == BillingClient.BillingResponseCode.OK) {
-                        progress.addHints(HINTS_GRANT)
+                        progress.addHints(hintGrant)
                     }
                 }
             }
@@ -188,8 +192,9 @@ class BillingManager(context: Context, private val progress: ProgressStore) {
 
     companion object {
         const val REMOVE_ADS_ID = "remove_ads"
-        const val HINTS_ID = "hints_20"
-        const val HINTS_GRANT = 20
+        val HINT_TIERS = listOf(5, 10, 20, 50)
+        fun hintsId(n: Int) = "hints_$n"
+        private val HINT_GRANTS = HINT_TIERS.associateBy { hintsId(it) }   // "hints_5" -> 5
         private const val K_REMOVE_ADS = "remove_ads"
         private const val BASE_URL = "https://duo.jiny.shop"
     }

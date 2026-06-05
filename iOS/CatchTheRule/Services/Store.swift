@@ -9,12 +9,11 @@ import StoreKit
 @Observable
 final class StoreManager {
     static let removeAdsID = "com.jiny.catchtherule.remove_ads"
-    static let hintsID = "com.jiny.catchtherule.hints_20"
-    static let hintsGrant = 20
+    static let hintTiers = [5, 10, 20, 50]
+    static func hintsID(_ n: Int) -> String { "com.jiny.catchtherule.hints_\(n)" }
     private static let removeAdsKey = "ctr_remove_ads"
 
-    private(set) var removeAdsProduct: Product?
-    private(set) var hintsProduct: Product?
+    private(set) var products: [String: Product] = [:]
     private(set) var removeAdsPurchased: Bool
     private(set) var loading = false
 
@@ -30,14 +29,18 @@ final class StoreManager {
         }
     }
 
+    var removeAdsProduct: Product? { products[Self.removeAdsID] }
     var priceText: String { removeAdsProduct?.displayPrice ?? "" }
-    var hintsPriceText: String { hintsProduct?.displayPrice ?? "" }
+    /// 해당 힌트 티어의 표시 가격(스토어 현지화). 로드 전이면 빈 문자열.
+    func hintsPrice(_ n: Int) -> String { products[Self.hintsID(n)]?.displayPrice ?? "" }
 
     func loadProducts() async {
+        let ids = [Self.removeAdsID] + Self.hintTiers.map { Self.hintsID($0) }
         do {
-            let products = try await Product.products(for: [Self.removeAdsID, Self.hintsID])
-            removeAdsProduct = products.first { $0.id == Self.removeAdsID }
-            hintsProduct = products.first { $0.id == Self.hintsID }
+            let loaded = try await Product.products(for: ids)
+            var map: [String: Product] = [:]
+            for p in loaded { map[p.id] = p }
+            products = map
         } catch {
             // 네트워크/구성 문제 — 가격 미표시.
         }
@@ -53,12 +56,12 @@ final class StoreManager {
         return true
     }
 
-    /// 힌트 묶음 구매(소모성). 성공 시 지급할 힌트 수, 실패/취소 시 0.
-    func purchaseHints() async -> Int {
-        guard let product = hintsProduct else { return 0 }
+    /// 힌트 묶음 구매(소모성). 성공 시 지급할 힌트 수(count), 실패/취소 시 0.
+    func purchaseHints(_ count: Int) async -> Int {
+        guard let product = products[Self.hintsID(count)] else { return 0 }
         guard let transaction = await buy(product) else { return 0 }
         await transaction.finish()   // 소모성: finish 로 소비 처리
-        return Self.hintsGrant
+        return count
     }
 
     /// 구매 복원.

@@ -82,6 +82,7 @@
     <string name="iap_failed">购买失败，请重试。</string>
     <string name="iap_loading">加载中…</string>
     <string name="iap_buy_hints">购买提示</string>
+    <string name="iap_hints_n">%d个提示</string>
     <string name="iap_hints_desc">获取提示包</string>
     <string name="iap_hints_added">已添加提示！</string>
 </resources>

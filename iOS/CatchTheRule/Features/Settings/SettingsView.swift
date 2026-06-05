@@ -96,15 +96,17 @@ struct SettingsView: View {
                     Task { await store.purchase() }
                 }
             }
-            Divider().overlay(Theme.stroke)
-            // 힌트 구매 (소모성)
-            SettingsRow(icon: "lightbulb.fill", title: String.loc("iap_buy_hints"),
-                        value: store.hintsPriceText.isEmpty ? String.loc("iap_loading") : store.hintsPriceText) {
-                Task {
-                    let n = await store.purchaseHints()
-                    if n > 0 {
-                        progress.hintsRemaining += n
-                        iapMessage = String.loc("iap_hints_added")
+            // 힌트 구매 (소모성, 5·10·20·50)
+            ForEach(StoreManager.hintTiers, id: \.self) { n in
+                Divider().overlay(Theme.stroke)
+                SettingsRow(icon: "lightbulb.fill", title: String.loc("iap_hints_n", n),
+                            value: store.hintsPrice(n).isEmpty ? String.loc("iap_loading") : store.hintsPrice(n)) {
+                    Task {
+                        let granted = await store.purchaseHints(n)
+                        if granted > 0 {
+                            progress.hintsRemaining += granted
+                            iapMessage = String.loc("iap_hints_added")
+                        }
                     }
                 }
             }
