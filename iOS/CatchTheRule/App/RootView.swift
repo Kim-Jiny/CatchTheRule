@@ -23,6 +23,9 @@ struct RootView: View {
                 .tabItem { Label(String.loc("tab_settings"), systemImage: "gearshape.fill") }
         }
         .tint(Theme.accent)
-        .task { AnalyticsService.ping() }
+        .task {
+            AnalyticsService.ping()
+            await PuzzleStore.refreshFromServer()   // 추가 스테이지 캐시 갱신(다음 실행 반영)
+        }
     }
 }

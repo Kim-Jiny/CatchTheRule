@@ -22,6 +22,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         Ranking.init(this)
         AnalyticsService.ping(this)
+        com.jiny.catchtherule.core.PuzzleStore.refreshFromServer(this)  // 추가 스테이지 캐시 갱신
         val progress = ProgressStore(this)
         billing = BillingManager(this, progress).also { it.start() }
         setContent {
