@@ -75,26 +75,25 @@ fun SequenceDisplay(
     val popScale = pop.value
     val grid = puzzle.grid
     if (puzzle.type == "equation" && !grid.isNullOrEmpty()) {
-        // 수식형: 각 줄을 "2 + 3 = 13" 한 줄 등식으로, 빈칸만 강조 박스
+        // 수식형: "[2] + [3] = [13]" — 숫자는 박스, 연산자는 사이 텍스트, 빈칸은 강조 박스
         val cols = (grid.maxOfOrNull { it.size } ?: 1).coerceAtLeast(1)
-        val fontSize = when { cols >= 7 -> 20.sp; cols >= 6 -> 23.sp; cols >= 5 -> 27.sp; else -> 31.sp }
+        val fontSize = when { cols >= 7 -> 19.sp; cols >= 6 -> 22.sp; cols >= 5 -> 25.sp; else -> 28.sp }
+        val side = (fontSize.value * 1.95f).dp
         androidx.compose.foundation.layout.Column(
             modifier.fillMaxWidth(),
             verticalArrangement = Arrangement.spacedBy(12.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
         ) {
             grid.forEach { row ->
-                Row(horizontalArrangement = Arrangement.spacedBy(7.dp), verticalAlignment = Alignment.CenterVertically) {
+                Row(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalAlignment = Alignment.CenterVertically) {
                     row.forEach { value ->
-                        if (value == null) {
-                            EqBlank(blankText, fontSize, feedback, popScale)
-                        } else {
-                            Text(
-                                value,
-                                color = if (isEqOperator(value)) AppColors.TextTertiary else AppColors.TextPrimary,
-                                fontSize = fontSize, fontWeight = FontWeight.Bold,
-                                fontFamily = FontFamily.SansSerif, maxLines = 1, softWrap = false,
+                        when {
+                            value == null -> EqBox(blankText, fontSize, side, true, feedback, popScale)
+                            isEqOperator(value) -> Text(
+                                value, color = AppColors.TextTertiary, fontSize = fontSize,
+                                fontWeight = FontWeight.SemiBold, fontFamily = FontFamily.SansSerif, maxLines = 1, softWrap = false,
                             )
+                            else -> EqBox(value, fontSize, side, false, feedback, popScale)
                         }
                     }
                 }
@@ -181,25 +180,36 @@ private fun RowScope.SeqCell(
     }
 }
 
-/** 수식형 빈칸(강조 박스). */
+/** 수식형 숫자/빈칸 박스. */
 @Composable
-private fun EqBlank(text: String, fontSize: androidx.compose.ui.unit.TextUnit, feedback: AnswerFeedback?, popScale: Float) {
-    val strokeBrush: Brush = when (feedback) {
-        AnswerFeedback.Correct -> SolidColor(AppColors.Success)
-        AnswerFeedback.Wrong -> SolidColor(AppColors.Danger)
+private fun EqBox(
+    text: String,
+    fontSize: androidx.compose.ui.unit.TextUnit,
+    side: androidx.compose.ui.unit.Dp,
+    isBlank: Boolean,
+    feedback: AnswerFeedback?,
+    popScale: Float,
+) {
+    val strokeBrush: Brush = when {
+        !isBlank -> SolidColor(AppColors.Stroke)
+        feedback == AnswerFeedback.Correct -> SolidColor(AppColors.Success)
+        feedback == AnswerFeedback.Wrong -> SolidColor(AppColors.Danger)
         else -> AppColors.AccentGradient
     }
     Box(
         Modifier
-            .graphicsLayer { scaleX = popScale; scaleY = popScale }
-            .clip(RoundedCornerShape(10.dp))
-            .background(Color.White.copy(alpha = 0.04f))
-            .border(2.dp, strokeBrush, RoundedCornerShape(10.dp))
-            .padding(horizontal = 9.dp, vertical = 5.dp),
+            .graphicsLayer { if (isBlank) { scaleX = popScale; scaleY = popScale } }
+            .defaultMinSize(minWidth = side, minHeight = side)
+            .clip(RoundedCornerShape(12.dp))
+            .background(if (isBlank) Color.White.copy(alpha = 0.03f) else AppColors.Card)
+            .border(if (isBlank) 2.dp else 1.dp, strokeBrush, RoundedCornerShape(12.dp))
+            .padding(horizontal = 6.dp),
         contentAlignment = Alignment.Center,
     ) {
         Text(
-            text, color = AppColors.TextPrimary, fontSize = fontSize, fontWeight = FontWeight.Bold,
+            text,
+            color = if (isBlank) AppColors.TextPrimary else AppColors.TextSecondary,
+            fontSize = fontSize, fontWeight = FontWeight.Bold,
             fontFamily = FontFamily.SansSerif, maxLines = 1, softWrap = false,
         )
     }

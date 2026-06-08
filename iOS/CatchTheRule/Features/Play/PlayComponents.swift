@@ -36,22 +36,24 @@ struct SequenceDisplay: View {
 
     // MARK: - 수식형(type=equation)
 
-    /// 각 줄을 "2 + 3 = 13" 같은 한 줄 등식으로 표시. 빈칸만 강조 박스.
+    /// 각 줄을 "[2] + [3] = [13]" 처럼 — 숫자는 박스, 연산자는 사이 텍스트, 빈칸은 강조 박스.
     private func equationBody(_ grid: [[String?]]) -> some View {
         let cols = max(1, grid.map(\.count).max() ?? 1)
-        let fontSize: CGFloat = cols >= 7 ? 20 : (cols >= 6 ? 23 : (cols >= 5 ? 27 : 31))
+        let fontSize: CGFloat = cols >= 7 ? 19 : (cols >= 6 ? 22 : (cols >= 5 ? 25 : 28))
+        let boxSide: CGFloat = fontSize * 1.95
         return VStack(spacing: 12) {
             ForEach(Array(grid.enumerated()), id: \.offset) { _, row in
-                HStack(spacing: 7) {
+                HStack(spacing: 6) {
                     ForEach(Array(row.enumerated()), id: \.offset) { _, value in
                         if value == nil {
-                            eqBlank(fontSize: fontSize)
-                        } else {
+                            eqBox(blankText(), fontSize: fontSize, side: boxSide, isBlank: true)
+                        } else if isOperator(value!) {
                             Text(value!)
-                                .font(.system(size: fontSize, weight: .bold, design: .rounded))
-                                .foregroundStyle(isOperator(value!) ? Theme.textTertiary : Theme.textPrimary)
-                                .lineLimit(1)
-                                .minimumScaleFactor(0.5)
+                                .font(.system(size: fontSize, weight: .semibold, design: .rounded))
+                                .foregroundStyle(Theme.textTertiary)
+                                .frame(minWidth: fontSize * 0.7)
+                        } else {
+                            eqBox(value!, fontSize: fontSize, side: boxSide, isBlank: false)
                         }
                     }
                 }
@@ -64,19 +66,25 @@ struct SequenceDisplay: View {
         ["+", "-", "−", "×", "x", "*", "÷", "/", "=", "·", ">", "<", "→"].contains(s)
     }
 
-    private func eqBlank(fontSize: CGFloat) -> some View {
-        Text(blankText())
+    /// 수식형 숫자/빈칸 박스.
+    private func eqBox(_ text: String, fontSize: CGFloat, side: CGFloat, isBlank: Bool) -> some View {
+        Text(text)
             .font(.system(size: fontSize, weight: .bold, design: .rounded))
-            .foregroundStyle(Theme.textPrimary)
+            .foregroundStyle(isBlank ? Theme.textPrimary : Theme.textSecondary)
             .lineLimit(1)
             .minimumScaleFactor(0.5)
-            .frame(minWidth: fontSize * 1.4)
-            .padding(.vertical, 5)
-            .padding(.horizontal, 9)
-            .background(RoundedRectangle(cornerRadius: 10, style: .continuous).fill(Color.white.opacity(0.04)))
-            .overlay(RoundedRectangle(cornerRadius: 10, style: .continuous).stroke(blankStroke, lineWidth: 2))
-            .shadow(color: Theme.success.opacity(feedback == .correct ? 0.7 : 0), radius: 10)
-            .scaleEffect(popScale)
+            .frame(minWidth: side, minHeight: side)
+            .padding(.horizontal, 6)
+            .background(
+                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .fill(isBlank ? Color.white.opacity(0.03) : Theme.card)
+            )
+            .overlay(
+                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .stroke(isBlank ? blankStroke : AnyShapeStyle(Theme.stroke), lineWidth: isBlank ? 2 : 1)
+            )
+            .shadow(color: Theme.success.opacity(isBlank && feedback == .correct ? 0.7 : 0), radius: 10)
+            .scaleEffect(isBlank ? popScale : 1)
     }
 
     private func triggerPop() {
