@@ -92,6 +92,8 @@ T = {
  "status_replied": ["Replied","답변완료","返信済み","已回复","Respondido","Répondu","Beantwortet"],
  "status_pending": ["Pending","대기중","対応中","待回复","Pendiente","En attente","Ausstehend"],
  "support": ["Support","고객지원","サポート","客户支持","Soporte","Assistance","Support"],
+ "calc_title": ["Calculator","계산기","電卓","计算器","Calculadora","Calculatrice","Rechner"],
+ "calc_no_history": ["No history yet","아직 기록이 없어요","履歴がありません","暂无记录","Sin historial","Aucun historique","Noch kein Verlauf"],
  "iap_remove_ads": ["Remove Ads","광고 제거","広告を削除","移除广告","Quitar anuncios","Supprimer les pubs","Werbung entfernen"],
  "iap_remove_ads_desc": ["Enjoy ad-free play forever","광고 없이 평생 즐기기","ずっと広告なしで楽しむ","永久无广告畅玩","Disfruta sin anuncios para siempre","Profitez sans pub pour toujours","Für immer werbefrei spielen"],
  "iap_purchased": ["Purchased","구매 완료","購入済み","已购买","Comprado","Acheté","Gekauft"],

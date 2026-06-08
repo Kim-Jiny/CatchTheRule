@@ -73,6 +73,8 @@
     <string name="status_replied">답변완료</string>
     <string name="status_pending">대기중</string>
     <string name="support">고객지원</string>
+    <string name="calc_title">계산기</string>
+    <string name="calc_no_history">아직 기록이 없어요</string>
     <string name="iap_remove_ads">광고 제거</string>
     <string name="iap_remove_ads_desc">광고 없이 평생 즐기기</string>
     <string name="iap_purchased">구매 완료</string>

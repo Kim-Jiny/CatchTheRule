@@ -73,6 +73,8 @@
     <string name="status_replied">Beantwortet</string>
     <string name="status_pending">Ausstehend</string>
     <string name="support">Support</string>
+    <string name="calc_title">Rechner</string>
+    <string name="calc_no_history">Noch kein Verlauf</string>
     <string name="iap_remove_ads">Werbung entfernen</string>
     <string name="iap_remove_ads_desc">Für immer werbefrei spielen</string>
     <string name="iap_purchased">Gekauft</string>

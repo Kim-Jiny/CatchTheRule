@@ -73,6 +73,8 @@
     <string name="status_replied">Respondido</string>
     <string name="status_pending">Pendiente</string>
     <string name="support">Soporte</string>
+    <string name="calc_title">Calculadora</string>
+    <string name="calc_no_history">Sin historial</string>
     <string name="iap_remove_ads">Quitar anuncios</string>
     <string name="iap_remove_ads_desc">Disfruta sin anuncios para siempre</string>
     <string name="iap_purchased">Comprado</string>

@@ -73,6 +73,8 @@
     <string name="status_replied">Replied</string>
     <string name="status_pending">Pending</string>
     <string name="support">Support</string>
+    <string name="calc_title">Calculator</string>
+    <string name="calc_no_history">No history yet</string>
     <string name="iap_remove_ads">Remove Ads</string>
     <string name="iap_remove_ads_desc">Enjoy ad-free play forever</string>
     <string name="iap_purchased">Purchased</string>

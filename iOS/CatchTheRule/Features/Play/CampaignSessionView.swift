@@ -16,6 +16,7 @@ struct CampaignSessionView: View {
     @State private var shake: CGFloat = 0
     @State private var solved = false       // 현재 퍼즐 정답 처리 완료
     @State private var showHintShop = false // 힌트 0개일 때 광고/구매 팝업
+    @State private var showCalc = false      // 플로팅 계산기
 
     init(startIndex: Int) {
         _index = State(initialValue: max(0, startIndex))
@@ -42,6 +43,13 @@ struct CampaignSessionView: View {
             }
         }
         .animation(.spring(response: 0.35, dampingFraction: 0.55), value: feedback)
+        .overlay {
+            if showCalc {
+                CalculatorPanel(isPresented: $showCalc)
+                    .transition(.scale(scale: 0.85).combined(with: .opacity))
+            }
+        }
+        .animation(.spring(response: 0.3, dampingFraction: 0.7), value: showCalc)
         .toolbar(.hidden, for: .navigationBar)
         .sheet(isPresented: $showHintShop) {
             HintShopSheet()
@@ -105,7 +113,10 @@ struct CampaignSessionView: View {
 
             Spacer()
 
-            hintButton(for: puzzle)
+            HStack(spacing: 8) {
+                calcButton
+                hintButton(for: puzzle)
+            }
         }
         .padding(.horizontal, 20)
     }
@@ -135,6 +146,17 @@ struct CampaignSessionView: View {
         .padding(16)
         .frame(maxWidth: .infinity)
         .card()
+    }
+
+    private var calcButton: some View {
+        Button { showCalc.toggle() } label: {
+            Image(systemName: "function")
+                .font(.system(size: 15, weight: .semibold))
+                .foregroundStyle(showCalc ? Theme.accent2 : Theme.textSecondary)
+                .frame(width: 38, height: 38)
+                .card(cornerRadius: 12)
+        }
+        .buttonStyle(.plain)
     }
 
     private func hintButton(for puzzle: Puzzle) -> some View {

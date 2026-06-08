@@ -73,6 +73,8 @@
     <string name="status_replied">已回复</string>
     <string name="status_pending">待回复</string>
     <string name="support">客户支持</string>
+    <string name="calc_title">计算器</string>
+    <string name="calc_no_history">暂无记录</string>
     <string name="iap_remove_ads">移除广告</string>
     <string name="iap_remove_ads_desc">永久无广告畅玩</string>
     <string name="iap_purchased">已购买</string>
