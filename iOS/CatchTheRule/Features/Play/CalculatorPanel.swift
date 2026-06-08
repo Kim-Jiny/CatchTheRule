@@ -56,7 +56,7 @@ struct CalculatorPanel: View {
         .padding(.vertical, 12)
         .contentShape(Rectangle())
         .gesture(
-            DragGesture()
+            DragGesture(coordinateSpace: .global)   // 글로벌 좌표 → 이동 중 떨림 방지
                 .updating($dragOffset) { v, s, _ in s = v.translation }
                 .onEnded { v in
                     position.width += v.translation.width
