@@ -556,6 +556,133 @@
     }
   },
   {
+    "id": "ch2_e1",
+    "type": "equation",
+    "chapter": 2,
+    "order": 5,
+    "grid": [
+      [
+        "8",
+        "×",
+        null,
+        "=",
+        "72"
+      ]
+    ],
+    "answer": "9",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "곱셈식의 빈칸을 채워요.",
+        "8에 무엇을 곱하면 72?",
+        "72 ÷ 8 = ?"
+      ],
+      "en": [
+        "Fill in the blank of the multiplication.",
+        "What times 8 gives 72?",
+        "72 ÷ 8 = ?"
+      ],
+      "ja": [
+        "かけ算の空欄をうめましょう。",
+        "8に何をかけると72?",
+        "72 ÷ 8 = ?"
+      ],
+      "zh": [
+        "填上乘法算式的空格。",
+        "8乘以多少等于72?",
+        "72 ÷ 8 = ?"
+      ],
+      "es": [
+        "Completa el hueco de la multiplicación.",
+        "¿Por cuánto se multiplica 8 para dar 72?",
+        "72 ÷ 8 = ?"
+      ],
+      "fr": [
+        "Complète le vide de la multiplication.",
+        "Par combien multiplier 8 pour obtenir 72 ?",
+        "72 ÷ 8 = ?"
+      ],
+      "de": [
+        "Fülle die Lücke der Multiplikation aus.",
+        "Womit muss man 8 multiplizieren, um 72 zu erhalten?",
+        "72 ÷ 8 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "8 × 9 = 72",
+      "en": "8 × 9 = 72",
+      "ja": "8 × 9 = 72",
+      "zh": "8 × 9 = 72",
+      "es": "8 × 9 = 72",
+      "fr": "8 × 9 = 72",
+      "de": "8 × 9 = 72"
+    }
+  },
+  {
+    "id": "ch2_e2",
+    "type": "equation",
+    "chapter": 2,
+    "order": 6,
+    "grid": [
+      [
+        null,
+        "²",
+        "=",
+        "64"
+      ]
+    ],
+    "answer": "8",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "어떤 수의 제곱이 64일까요?",
+        "□ × □ = 64",
+        "8 × 8 = 64"
+      ],
+      "en": [
+        "Which number squared equals 64?",
+        "□ × □ = 64",
+        "8 × 8 = 64"
+      ],
+      "ja": [
+        "どの数の2乗が64?",
+        "□ × □ = 64",
+        "8 × 8 = 64"
+      ],
+      "zh": [
+        "哪个数的平方等于64?",
+        "□ × □ = 64",
+        "8 × 8 = 64"
+      ],
+      "es": [
+        "¿Qué número al cuadrado es 64?",
+        "□ × □ = 64",
+        "8 × 8 = 64"
+      ],
+      "fr": [
+        "Quel nombre au carré vaut 64 ?",
+        "□ × □ = 64",
+        "8 × 8 = 64"
+      ],
+      "de": [
+        "Welche Zahl im Quadrat ergibt 64?",
+        "□ × □ = 64",
+        "8 × 8 = 64"
+      ]
+    },
+    "explanation": {
+      "ko": "8² = 64",
+      "en": "8² = 64",
+      "ja": "8² = 64",
+      "zh": "8² = 64",
+      "es": "8² = 64",
+      "fr": "8² = 64",
+      "de": "8² = 64"
+    }
+  },
+  {
     "id": "ch3_s01",
     "type": "fib",
     "chapter": 3,
@@ -996,6 +1123,176 @@
       "es": "Números primos: 11, 13, 17, 19",
       "fr": "Nombres premiers : 11, 13, 17, 19",
       "de": "Primzahlen: 11, 13, 17, 19"
+    }
+  },
+  {
+    "id": "ch3_e1",
+    "type": "equation",
+    "chapter": 3,
+    "order": 8,
+    "grid": [
+      [
+        "2",
+        "+",
+        "3",
+        "=",
+        "10"
+      ],
+      [
+        "3",
+        "+",
+        "4",
+        "=",
+        "14"
+      ],
+      [
+        "4",
+        "+",
+        "5",
+        "=",
+        "18"
+      ],
+      [
+        "5",
+        "+",
+        "6",
+        "=",
+        null
+      ]
+    ],
+    "answer": "22",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "+처럼 보이지만 결과가 너무 커요.",
+        "두 수를 더한 뒤 ×2.",
+        "(5+6)×2 = ?"
+      ],
+      "en": [
+        "It looks like +, but the result is too big.",
+        "Add the two numbers, then ×2.",
+        "(5+6)×2 = ?"
+      ],
+      "ja": [
+        "+に見えますが、結果が大きすぎます。",
+        "2つの数を足してから×2。",
+        "(5+6)×2 = ?"
+      ],
+      "zh": [
+        "看起来像+,但结果太大了。",
+        "把两个数相加,再×2。",
+        "(5+6)×2 = ?"
+      ],
+      "es": [
+        "Parece un +, pero el resultado es demasiado grande.",
+        "Suma los dos números y luego ×2.",
+        "(5+6)×2 = ?"
+      ],
+      "fr": [
+        "Cela ressemble à +, mais le résultat est trop grand.",
+        "Additionne les deux nombres, puis ×2.",
+        "(5+6)×2 = ?"
+      ],
+      "de": [
+        "Es sieht aus wie +, aber das Ergebnis ist zu groß.",
+        "Addiere die beiden Zahlen, dann ×2.",
+        "(5+6)×2 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "(a+b)×2: (5+6)×2 = 22",
+      "en": "(a+b)×2: (5+6)×2 = 22",
+      "ja": "(a+b)×2: (5+6)×2 = 22",
+      "zh": "(a+b)×2: (5+6)×2 = 22",
+      "es": "(a+b)×2: (5+6)×2 = 22",
+      "fr": "(a+b)×2: (5+6)×2 = 22",
+      "de": "(a+b)×2: (5+6)×2 = 22"
+    }
+  },
+  {
+    "id": "ch3_e2",
+    "type": "equation",
+    "chapter": 3,
+    "order": 9,
+    "grid": [
+      [
+        "1",
+        "+",
+        "2",
+        "=",
+        "2"
+      ],
+      [
+        "2",
+        "+",
+        "3",
+        "=",
+        "6"
+      ],
+      [
+        "3",
+        "+",
+        "4",
+        "=",
+        "12"
+      ],
+      [
+        "4",
+        "+",
+        "5",
+        "=",
+        null
+      ]
+    ],
+    "answer": "20",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "+ 기호는 함정이에요.",
+        "사실은 두 수를 곱해요.",
+        "4 × 5 = ?"
+      ],
+      "en": [
+        "The + sign is a decoy.",
+        "Actually, you multiply the two numbers.",
+        "4 × 5 = ?"
+      ],
+      "ja": [
+        "+記号はワナです。",
+        "実は2つの数をかけます。",
+        "4 × 5 = ?"
+      ],
+      "zh": [
+        "+号是个陷阱。",
+        "其实是把两个数相乘。",
+        "4 × 5 = ?"
+      ],
+      "es": [
+        "El signo + es un señuelo.",
+        "En realidad se multiplican los dos números.",
+        "4 × 5 = ?"
+      ],
+      "fr": [
+        "Le signe + est un leurre.",
+        "En réalité, on multiplie les deux nombres.",
+        "4 × 5 = ?"
+      ],
+      "de": [
+        "Das +-Zeichen ist eine Falle.",
+        "Eigentlich multipliziert man die beiden Zahlen.",
+        "4 × 5 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "a×b: 4 × 5 = 20",
+      "en": "a×b: 4 × 5 = 20",
+      "ja": "a×b: 4 × 5 = 20",
+      "zh": "a×b: 4 × 5 = 20",
+      "es": "a×b: 4 × 5 = 20",
+      "fr": "a×b: 4 × 5 = 20",
+      "de": "a×b: 4 × 5 = 20"
     }
   },
   {
@@ -2180,6 +2477,176 @@
     }
   },
   {
+    "id": "ch6_e1",
+    "type": "equation",
+    "chapter": 6,
+    "order": 8,
+    "grid": [
+      [
+        "2",
+        "+",
+        "3",
+        "=",
+        "7"
+      ],
+      [
+        "3",
+        "+",
+        "4",
+        "=",
+        "13"
+      ],
+      [
+        "4",
+        "+",
+        "5",
+        "=",
+        "21"
+      ],
+      [
+        "5",
+        "+",
+        "6",
+        "=",
+        null
+      ]
+    ],
+    "answer": "31",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "두 수의 곱에서 시작해요.",
+        "a×b 한 뒤 1을 더해요.",
+        "5×6 + 1 = ?"
+      ],
+      "en": [
+        "Start with the product of the two numbers.",
+        "Compute a×b, then add 1.",
+        "5×6 + 1 = ?"
+      ],
+      "ja": [
+        "2つの数の積から始めます。",
+        "a×bを計算してから1を足します。",
+        "5×6 + 1 = ?"
+      ],
+      "zh": [
+        "先从两个数的乘积开始。",
+        "算出a×b后再加1。",
+        "5×6 + 1 = ?"
+      ],
+      "es": [
+        "Empieza con el producto de los dos números.",
+        "Calcula a×b y luego suma 1.",
+        "5×6 + 1 = ?"
+      ],
+      "fr": [
+        "Commence par le produit des deux nombres.",
+        "Calcule a×b, puis ajoute 1.",
+        "5×6 + 1 = ?"
+      ],
+      "de": [
+        "Beginne mit dem Produkt der beiden Zahlen.",
+        "Berechne a×b und addiere dann 1.",
+        "5×6 + 1 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "a×b + 1: 5×6+1 = 31",
+      "en": "a×b + 1: 5×6+1 = 31",
+      "ja": "a×b + 1: 5×6+1 = 31",
+      "zh": "a×b + 1: 5×6+1 = 31",
+      "es": "a×b + 1: 5×6+1 = 31",
+      "fr": "a×b + 1: 5×6+1 = 31",
+      "de": "a×b + 1: 5×6+1 = 31"
+    }
+  },
+  {
+    "id": "ch6_e2",
+    "type": "equation",
+    "chapter": 6,
+    "order": 9,
+    "grid": [
+      [
+        "2",
+        "+",
+        "3",
+        "=",
+        "10"
+      ],
+      [
+        "3",
+        "+",
+        "4",
+        "=",
+        "21"
+      ],
+      [
+        "4",
+        "+",
+        "5",
+        "=",
+        "36"
+      ],
+      [
+        "5",
+        "+",
+        "6",
+        "=",
+        null
+      ]
+    ],
+    "answer": "55",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "앞의 수도 규칙에 쓰여요.",
+        "앞 수 × (두 수의 합).",
+        "5 × (5+6) = ?"
+      ],
+      "en": [
+        "The first number is also used in the rule.",
+        "First number × (sum of the two numbers).",
+        "5 × (5+6) = ?"
+      ],
+      "ja": [
+        "前の数も規則に使われます。",
+        "前の数 ×(2つの数の合計)。",
+        "5 × (5+6) = ?"
+      ],
+      "zh": [
+        "前面的数也用在规则里。",
+        "前面的数 ×(两数之和)。",
+        "5 × (5+6) = ?"
+      ],
+      "es": [
+        "El primer número también se usa en la regla.",
+        "Primer número × (suma de los dos números).",
+        "5 × (5+6) = ?"
+      ],
+      "fr": [
+        "Le premier nombre sert aussi dans la règle.",
+        "Premier nombre × (somme des deux nombres).",
+        "5 × (5+6) = ?"
+      ],
+      "de": [
+        "Die erste Zahl wird ebenfalls in der Regel verwendet.",
+        "Erste Zahl × (Summe der beiden Zahlen).",
+        "5 × (5+6) = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "a×(a+b): 5×11 = 55",
+      "en": "a×(a+b): 5×11 = 55",
+      "ja": "a×(a+b): 5×11 = 55",
+      "zh": "a×(a+b): 5×11 = 55",
+      "es": "a×(a+b): 5×11 = 55",
+      "fr": "a×(a+b): 5×11 = 55",
+      "de": "a×(a+b): 5×11 = 55"
+    }
+  },
+  {
     "id": "ch7_s01",
     "type": "mul_sub",
     "chapter": 7,
@@ -2631,6 +3098,163 @@
       "es": "Leer y decir (look-and-say): 1211 = 'un 1, un 2, dos 1' → 111221",
       "fr": "Lire et dire (look-and-say) : 1211 = 'un 1, un 2, deux 1' → 111221",
       "de": "Lesen und sagen (look-and-say): 1211 = 'eine 1, eine 2, zwei 1en' → 111221"
+    }
+  },
+  {
+    "id": "ch7_e1",
+    "type": "equation",
+    "chapter": 7,
+    "order": 8,
+    "grid": [
+      [
+        "1",
+        "+",
+        "2",
+        "=",
+        "5"
+      ],
+      [
+        "2",
+        "+",
+        "3",
+        "=",
+        "13"
+      ],
+      [
+        "3",
+        "+",
+        "4",
+        "=",
+        "25"
+      ],
+      [
+        "4",
+        "+",
+        "5",
+        "=",
+        null
+      ]
+    ],
+    "answer": "41",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "결과가 제곱처럼 커져요.",
+        "두 수를 각각 제곱해 더해요.",
+        "4² + 5² = ?"
+      ],
+      "en": [
+        "The result grows like a square.",
+        "Square each number, then add them.",
+        "4² + 5² = ?"
+      ],
+      "ja": [
+        "結果が2乗のように大きくなります。",
+        "それぞれの数を2乗して足します。",
+        "4² + 5² = ?"
+      ],
+      "zh": [
+        "结果像平方一样增大。",
+        "把每个数各自平方再相加。",
+        "4² + 5² = ?"
+      ],
+      "es": [
+        "El resultado crece como un cuadrado.",
+        "Eleva al cuadrado cada número y luego súmalos.",
+        "4² + 5² = ?"
+      ],
+      "fr": [
+        "Le résultat grandit comme un carré.",
+        "Mets chaque nombre au carré, puis additionne-les.",
+        "4² + 5² = ?"
+      ],
+      "de": [
+        "Das Ergebnis wächst wie ein Quadrat.",
+        "Quadriere jede Zahl und addiere sie dann.",
+        "4² + 5² = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "a²+b²: 16+25 = 41",
+      "en": "a²+b²: 16+25 = 41",
+      "ja": "a²+b²: 16+25 = 41",
+      "zh": "a²+b²: 16+25 = 41",
+      "es": "a²+b²: 16+25 = 41",
+      "fr": "a²+b²: 16+25 = 41",
+      "de": "a²+b²: 16+25 = 41"
+    }
+  },
+  {
+    "id": "ch7_e2",
+    "type": "equation",
+    "chapter": 7,
+    "order": 9,
+    "grid": [
+      [
+        "12",
+        "=",
+        "33"
+      ],
+      [
+        "13",
+        "=",
+        "44"
+      ],
+      [
+        "14",
+        "=",
+        null
+      ]
+    ],
+    "answer": "55",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "왼쪽 수를 거꾸로 뒤집어 보세요.",
+        "원래 수 + 뒤집은 수.",
+        "14 + 41 = ?"
+      ],
+      "en": [
+        "Try reversing the number on the left.",
+        "Original number + reversed number.",
+        "14 + 41 = ?"
+      ],
+      "ja": [
+        "左の数を逆さまにしてみましょう。",
+        "元の数 + 逆さまにした数。",
+        "14 + 41 = ?"
+      ],
+      "zh": [
+        "试着把左边的数反过来。",
+        "原来的数 + 反转后的数。",
+        "14 + 41 = ?"
+      ],
+      "es": [
+        "Prueba a invertir el número de la izquierda.",
+        "Número original + número invertido.",
+        "14 + 41 = ?"
+      ],
+      "fr": [
+        "Essaie d'inverser le nombre de gauche.",
+        "Nombre d'origine + nombre inversé.",
+        "14 + 41 = ?"
+      ],
+      "de": [
+        "Versuche, die Zahl links umzudrehen.",
+        "Ursprüngliche Zahl + umgedrehte Zahl.",
+        "14 + 41 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "수+뒤집은수: 14+41 = 55",
+      "en": "number + reversed number: 14+41 = 55",
+      "ja": "数 + 逆さまにした数: 14+41 = 55",
+      "zh": "数 + 反转后的数: 14+41 = 55",
+      "es": "número + número invertido: 14+41 = 55",
+      "fr": "nombre + nombre inversé : 14+41 = 55",
+      "de": "Zahl + umgedrehte Zahl: 14+41 = 55"
     }
   },
   {
@@ -3279,6 +3903,176 @@
     }
   },
   {
+    "id": "ch8_e1",
+    "type": "equation",
+    "chapter": 8,
+    "order": 10,
+    "grid": [
+      [
+        "2",
+        "+",
+        "3",
+        "=",
+        "13"
+      ],
+      [
+        "3",
+        "+",
+        "4",
+        "=",
+        "25"
+      ],
+      [
+        "4",
+        "+",
+        "5",
+        "=",
+        "41"
+      ],
+      [
+        "5",
+        "+",
+        "6",
+        "=",
+        null
+      ]
+    ],
+    "answer": "61",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "등식처럼 보이지만 숨은 규칙!",
+        "두 수의 제곱의 합.",
+        "5² + 6² = ?"
+      ],
+      "en": [
+        "It looks like an equation, but there's a hidden rule!",
+        "The sum of the squares of the two numbers.",
+        "5² + 6² = ?"
+      ],
+      "ja": [
+        "等式のように見えるけど、隠れたルールがある！",
+        "2つの数の二乗の和。",
+        "5² + 6² = ?"
+      ],
+      "zh": [
+        "看起来像等式，但有隐藏规则！",
+        "两个数的平方之和。",
+        "5² + 6² = ?"
+      ],
+      "es": [
+        "¡Parece una ecuación, pero hay una regla oculta!",
+        "La suma de los cuadrados de los dos números.",
+        "5² + 6² = ?"
+      ],
+      "fr": [
+        "Cela ressemble à une équation, mais il y a une règle cachée !",
+        "La somme des carrés des deux nombres.",
+        "5² + 6² = ?"
+      ],
+      "de": [
+        "Sieht aus wie eine Gleichung, aber es gibt eine versteckte Regel!",
+        "Die Summe der Quadrate der beiden Zahlen.",
+        "5² + 6² = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "a²+b²: 25+36 = 61",
+      "en": "a²+b²: 25+36 = 61",
+      "ja": "a²+b²: 25+36 = 61",
+      "zh": "a²+b²: 25+36 = 61",
+      "es": "a²+b²: 25+36 = 61",
+      "fr": "a²+b²: 25+36 = 61",
+      "de": "a²+b²: 25+36 = 61"
+    }
+  },
+  {
+    "id": "ch8_e2",
+    "type": "equation",
+    "chapter": 8,
+    "order": 11,
+    "grid": [
+      [
+        "3",
+        "+",
+        "4",
+        "=",
+        "5"
+      ],
+      [
+        "4",
+        "+",
+        "5",
+        "=",
+        "11"
+      ],
+      [
+        "5",
+        "+",
+        "6",
+        "=",
+        "19"
+      ],
+      [
+        "6",
+        "+",
+        "7",
+        "=",
+        null
+      ]
+    ],
+    "answer": "29",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "곱과 합을 함께 써요.",
+        "a×b − (a+b).",
+        "6×7 − (6+7) = ?"
+      ],
+      "en": [
+        "Use both the product and the sum.",
+        "a×b − (a+b).",
+        "6×7 − (6+7) = ?"
+      ],
+      "ja": [
+        "積と和を一緒に使います。",
+        "a×b − (a+b)。",
+        "6×7 − (6+7) = ?"
+      ],
+      "zh": [
+        "同时使用乘积和加和。",
+        "a×b − (a+b)。",
+        "6×7 − (6+7) = ?"
+      ],
+      "es": [
+        "Usa tanto el producto como la suma.",
+        "a×b − (a+b).",
+        "6×7 − (6+7) = ?"
+      ],
+      "fr": [
+        "Utilise à la fois le produit et la somme.",
+        "a×b − (a+b).",
+        "6×7 − (6+7) = ?"
+      ],
+      "de": [
+        "Verwende sowohl das Produkt als auch die Summe.",
+        "a×b − (a+b).",
+        "6×7 − (6+7) = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "ab−(a+b): 42−13 = 29",
+      "en": "ab−(a+b): 42−13 = 29",
+      "ja": "ab−(a+b): 42−13 = 29",
+      "zh": "ab−(a+b): 42−13 = 29",
+      "es": "ab−(a+b): 42−13 = 29",
+      "fr": "ab−(a+b): 42−13 = 29",
+      "de": "ab−(a+b): 42−13 = 29"
+    }
+  },
+  {
     "id": "ch9_s01",
     "type": "recursive",
     "chapter": 9,
@@ -3823,6 +4617,165 @@
     }
   },
   {
+    "id": "ch9_e1",
+    "type": "equation",
+    "chapter": 9,
+    "order": 9,
+    "grid": [
+      [
+        "1",
+        "=",
+        "1"
+      ],
+      [
+        "2",
+        "=",
+        "4"
+      ],
+      [
+        "3",
+        "=",
+        "18"
+      ],
+      [
+        "4",
+        "=",
+        "96"
+      ],
+      [
+        "5",
+        "=",
+        null
+      ]
+    ],
+    "answer": "600",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "순번 n과 관련 있어요.",
+        "n × n!(팩토리얼).",
+        "5 × 120 = ?"
+      ],
+      "en": [
+        "It's related to the position number n.",
+        "n × n! (factorial).",
+        "5 × 120 = ?"
+      ],
+      "ja": [
+        "順番の数 n と関係があります。",
+        "n × n!（階乗）。",
+        "5 × 120 = ?"
+      ],
+      "zh": [
+        "与序号 n 有关。",
+        "n × n!（阶乘）。",
+        "5 × 120 = ?"
+      ],
+      "es": [
+        "Está relacionado con el número de posición n.",
+        "n × n! (factorial).",
+        "5 × 120 = ?"
+      ],
+      "fr": [
+        "C'est lié au numéro de position n.",
+        "n × n! (factorielle).",
+        "5 × 120 = ?"
+      ],
+      "de": [
+        "Es hängt mit der Positionszahl n zusammen.",
+        "n × n! (Fakultät).",
+        "5 × 120 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "n×n!: 5×120 = 600",
+      "en": "n×n!: 5×120 = 600",
+      "ja": "n×n!: 5×120 = 600",
+      "zh": "n×n!: 5×120 = 600",
+      "es": "n×n!: 5×120 = 600",
+      "fr": "n×n!: 5×120 = 600",
+      "de": "n×n!: 5×120 = 600"
+    }
+  },
+  {
+    "id": "ch9_e2",
+    "type": "equation",
+    "chapter": 9,
+    "order": 10,
+    "grid": [
+      [
+        "2",
+        "=",
+        "6"
+      ],
+      [
+        "3",
+        "=",
+        "24"
+      ],
+      [
+        "4",
+        "=",
+        "60"
+      ],
+      [
+        "5",
+        "=",
+        null
+      ]
+    ],
+    "answer": "120",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "세제곱 근처 값이에요.",
+        "n³ − n.",
+        "5³ − 5 = ?"
+      ],
+      "en": [
+        "It's a value near the cube.",
+        "n³ − n.",
+        "5³ − 5 = ?"
+      ],
+      "ja": [
+        "三乗に近い値です。",
+        "n³ − n。",
+        "5³ − 5 = ?"
+      ],
+      "zh": [
+        "是接近立方的值。",
+        "n³ − n。",
+        "5³ − 5 = ?"
+      ],
+      "es": [
+        "Es un valor cercano al cubo.",
+        "n³ − n.",
+        "5³ − 5 = ?"
+      ],
+      "fr": [
+        "C'est une valeur proche du cube.",
+        "n³ − n.",
+        "5³ − 5 = ?"
+      ],
+      "de": [
+        "Es ist ein Wert nahe der dritten Potenz.",
+        "n³ − n.",
+        "5³ − 5 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "n³−n: 125−5 = 120",
+      "en": "n³−n: 125−5 = 120",
+      "ja": "n³−n: 125−5 = 120",
+      "zh": "n³−n: 125−5 = 120",
+      "es": "n³−n: 125−5 = 120",
+      "fr": "n³−n: 125−5 = 120",
+      "de": "n³−n: 125−5 = 120"
+    }
+  },
+  {
     "id": "ch10_s01",
     "type": "sequence",
     "chapter": 10,
@@ -4335,6 +5288,168 @@
       "es": "n² − 1: 7² − 1 = 48",
       "fr": "n² − 1 : 7² − 1 = 48",
       "de": "n² − 1: 7² − 1 = 48"
+    }
+  },
+  {
+    "id": "ch10_e1",
+    "type": "equation",
+    "chapter": 10,
+    "order": 9,
+    "grid": [
+      [
+        "2",
+        "+",
+        "3",
+        "=",
+        "11"
+      ],
+      [
+        "3",
+        "+",
+        "4",
+        "=",
+        "19"
+      ],
+      [
+        "4",
+        "+",
+        "5",
+        "=",
+        "29"
+      ],
+      [
+        "5",
+        "+",
+        "6",
+        "=",
+        null
+      ]
+    ],
+    "answer": "41",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "곱과 두 수를 모두 써요.",
+        "a×b + a + b.",
+        "5×6 + 5 + 6 = ?"
+      ],
+      "en": [
+        "Use the product and both numbers.",
+        "a×b + a + b.",
+        "5×6 + 5 + 6 = ?"
+      ],
+      "ja": [
+        "積と2つの数の両方を使います。",
+        "a×b + a + b。",
+        "5×6 + 5 + 6 = ?"
+      ],
+      "zh": [
+        "使用乘积和两个数。",
+        "a×b + a + b。",
+        "5×6 + 5 + 6 = ?"
+      ],
+      "es": [
+        "Usa el producto y ambos números.",
+        "a×b + a + b.",
+        "5×6 + 5 + 6 = ?"
+      ],
+      "fr": [
+        "Utilise le produit et les deux nombres.",
+        "a×b + a + b.",
+        "5×6 + 5 + 6 = ?"
+      ],
+      "de": [
+        "Verwende das Produkt und beide Zahlen.",
+        "a×b + a + b.",
+        "5×6 + 5 + 6 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "ab+a+b: 30+11 = 41",
+      "en": "ab+a+b: 30+11 = 41",
+      "ja": "ab+a+b: 30+11 = 41",
+      "zh": "ab+a+b: 30+11 = 41",
+      "es": "ab+a+b: 30+11 = 41",
+      "fr": "ab+a+b: 30+11 = 41",
+      "de": "ab+a+b: 30+11 = 41"
+    }
+  },
+  {
+    "id": "ch10_e2",
+    "type": "equation",
+    "chapter": 10,
+    "order": 10,
+    "grid": [
+      [
+        "2",
+        "=",
+        "4"
+      ],
+      [
+        "3",
+        "=",
+        "27"
+      ],
+      [
+        "4",
+        "=",
+        "256"
+      ],
+      [
+        "5",
+        "=",
+        null
+      ]
+    ],
+    "answer": "3125",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "자기 자신을 거듭제곱해요.",
+        "nⁿ.",
+        "5⁵ = ?"
+      ],
+      "en": [
+        "Raise the number to its own power.",
+        "nⁿ.",
+        "5⁵ = ?"
+      ],
+      "ja": [
+        "自分自身を累乗します。",
+        "nⁿ。",
+        "5⁵ = ?"
+      ],
+      "zh": [
+        "把这个数自乘到它自己的次方。",
+        "nⁿ。",
+        "5⁵ = ?"
+      ],
+      "es": [
+        "Eleva el número a su propia potencia.",
+        "nⁿ.",
+        "5⁵ = ?"
+      ],
+      "fr": [
+        "Élève le nombre à sa propre puissance.",
+        "nⁿ.",
+        "5⁵ = ?"
+      ],
+      "de": [
+        "Erhebe die Zahl in ihre eigene Potenz.",
+        "nⁿ.",
+        "5⁵ = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "nⁿ: 5⁵ = 3125",
+      "en": "nⁿ: 5⁵ = 3125",
+      "ja": "nⁿ: 5⁵ = 3125",
+      "zh": "nⁿ: 5⁵ = 3125",
+      "es": "nⁿ: 5⁵ = 3125",
+      "fr": "nⁿ: 5⁵ = 3125",
+      "de": "nⁿ: 5⁵ = 3125"
     }
   },
   {
@@ -5254,6 +6369,176 @@
       "es": "Posiciones del alfabeto ×2 (1,2,4,8,16): 16ª letra → P",
       "fr": "Positions de l'alphabet ×2 (1,2,4,8,16) : 16e lettre → P",
       "de": "Alphabet-Positionen ×2 (1,2,4,8,16): 16. Buchstabe → P"
+    }
+  },
+  {
+    "id": "ch11_e1",
+    "type": "equation",
+    "chapter": 11,
+    "order": 15,
+    "grid": [
+      [
+        "2",
+        "+",
+        "3",
+        "=",
+        "12"
+      ],
+      [
+        "3",
+        "+",
+        "4",
+        "=",
+        "24"
+      ],
+      [
+        "4",
+        "+",
+        "5",
+        "=",
+        "40"
+      ],
+      [
+        "5",
+        "+",
+        "6",
+        "=",
+        null
+      ]
+    ],
+    "answer": "60",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "제곱의 합에서 살짝 빼요.",
+        "a²+b² − 1.",
+        "5²+6² − 1 = ?"
+      ],
+      "en": [
+        "Subtract a little from the sum of the squares.",
+        "a²+b² − 1.",
+        "5²+6² − 1 = ?"
+      ],
+      "ja": [
+        "二乗の和から少し引きます。",
+        "a²+b² − 1。",
+        "5²+6² − 1 = ?"
+      ],
+      "zh": [
+        "从平方和中减去一点。",
+        "a²+b² − 1。",
+        "5²+6² − 1 = ?"
+      ],
+      "es": [
+        "Resta un poco a la suma de los cuadrados.",
+        "a²+b² − 1.",
+        "5²+6² − 1 = ?"
+      ],
+      "fr": [
+        "Soustrais un peu à la somme des carrés.",
+        "a²+b² − 1.",
+        "5²+6² − 1 = ?"
+      ],
+      "de": [
+        "Ziehe etwas von der Summe der Quadrate ab.",
+        "a²+b² − 1.",
+        "5²+6² − 1 = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "a²+b²−1: 61−1 = 60",
+      "en": "a²+b²−1: 61−1 = 60",
+      "ja": "a²+b²−1: 61−1 = 60",
+      "zh": "a²+b²−1: 61−1 = 60",
+      "es": "a²+b²−1: 61−1 = 60",
+      "fr": "a²+b²−1: 61−1 = 60",
+      "de": "a²+b²−1: 61−1 = 60"
+    }
+  },
+  {
+    "id": "ch11_e2",
+    "type": "equation",
+    "chapter": 11,
+    "order": 16,
+    "grid": [
+      [
+        "1",
+        "+",
+        "2",
+        "=",
+        "9"
+      ],
+      [
+        "2",
+        "+",
+        "3",
+        "=",
+        "25"
+      ],
+      [
+        "3",
+        "+",
+        "4",
+        "=",
+        "49"
+      ],
+      [
+        "4",
+        "+",
+        "5",
+        "=",
+        null
+      ]
+    ],
+    "answer": "81",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "두 수의 합이 핵심이에요.",
+        "(a+b)를 제곱해요.",
+        "(4+5)² = ?"
+      ],
+      "en": [
+        "The sum of the two numbers is the key.",
+        "Square (a+b).",
+        "(4+5)² = ?"
+      ],
+      "ja": [
+        "2つの数の和が鍵です。",
+        "(a+b) を二乗します。",
+        "(4+5)² = ?"
+      ],
+      "zh": [
+        "两个数的和是关键。",
+        "把 (a+b) 平方。",
+        "(4+5)² = ?"
+      ],
+      "es": [
+        "La suma de los dos números es la clave.",
+        "Eleva (a+b) al cuadrado.",
+        "(4+5)² = ?"
+      ],
+      "fr": [
+        "La somme des deux nombres est la clé.",
+        "Mets (a+b) au carré.",
+        "(4+5)² = ?"
+      ],
+      "de": [
+        "Die Summe der beiden Zahlen ist der Schlüssel.",
+        "Quadriere (a+b).",
+        "(4+5)² = ?"
+      ]
+    },
+    "explanation": {
+      "ko": "(a+b)²: 9² = 81",
+      "en": "(a+b)²: 9² = 81",
+      "ja": "(a+b)²: 9² = 81",
+      "zh": "(a+b)²: 9² = 81",
+      "es": "(a+b)²: 9² = 81",
+      "fr": "(a+b)²: 9² = 81",
+      "de": "(a+b)²: 9² = 81"
     }
   }
 ]

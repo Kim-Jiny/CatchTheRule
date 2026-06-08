@@ -21,7 +21,9 @@ struct SequenceDisplay: View {
 
     var body: some View {
         Group {
-            if let grid = puzzle.grid, !grid.isEmpty {
+            if puzzle.type == "equation", let grid = puzzle.grid, !grid.isEmpty {
+                equationBody(grid)
+            } else if let grid = puzzle.grid, !grid.isEmpty {
                 gridBody(grid)
             } else {
                 rowBody(puzzle.tokens ?? [])
@@ -30,6 +32,59 @@ struct SequenceDisplay: View {
         .onChange(of: feedback) { _, newValue in
             if newValue == .correct { triggerPop() }
         }
+    }
+
+    // MARK: - 수식형(type=equation)
+
+    /// 각 줄을 "[2] + [3] = [13]" 처럼 — 숫자는 박스, 연산자는 사이 텍스트, 빈칸은 강조 박스.
+    private func equationBody(_ grid: [[String?]]) -> some View {
+        let cols = max(1, grid.map(\.count).max() ?? 1)
+        let fontSize: CGFloat = cols >= 7 ? 19 : (cols >= 6 ? 22 : (cols >= 5 ? 25 : 28))
+        let boxSide: CGFloat = fontSize * 1.95
+        return VStack(spacing: 12) {
+            ForEach(Array(grid.enumerated()), id: \.offset) { _, row in
+                HStack(spacing: 6) {
+                    ForEach(Array(row.enumerated()), id: \.offset) { _, value in
+                        if value == nil {
+                            eqBox(blankText(), fontSize: fontSize, side: boxSide, isBlank: true)
+                        } else if isOperator(value!) {
+                            Text(value!)
+                                .font(.system(size: fontSize, weight: .semibold, design: .rounded))
+                                .foregroundStyle(Theme.textTertiary)
+                                .frame(minWidth: fontSize * 0.7)
+                        } else {
+                            eqBox(value!, fontSize: fontSize, side: boxSide, isBlank: false)
+                        }
+                    }
+                }
+            }
+        }
+        .frame(maxWidth: .infinity)
+    }
+
+    private func isOperator(_ s: String) -> Bool {
+        ["+", "-", "−", "×", "x", "*", "÷", "/", "=", "·", ">", "<", "→"].contains(s)
+    }
+
+    /// 수식형 숫자/빈칸 박스.
+    private func eqBox(_ text: String, fontSize: CGFloat, side: CGFloat, isBlank: Bool) -> some View {
+        Text(text)
+            .font(.system(size: fontSize, weight: .bold, design: .rounded))
+            .foregroundStyle(isBlank ? Theme.textPrimary : Theme.textSecondary)
+            .lineLimit(1)
+            .minimumScaleFactor(0.5)
+            .frame(minWidth: side, minHeight: side)
+            .padding(.horizontal, 6)
+            .background(
+                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .fill(isBlank ? Color.white.opacity(0.03) : Theme.card)
+            )
+            .overlay(
+                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .stroke(isBlank ? blankStroke : AnyShapeStyle(Theme.stroke), lineWidth: isBlank ? 2 : 1)
+            )
+            .shadow(color: Theme.success.opacity(isBlank && feedback == .correct ? 0.7 : 0), radius: 10)
+            .scaleEffect(isBlank ? popScale : 1)
     }
 
     private func triggerPop() {

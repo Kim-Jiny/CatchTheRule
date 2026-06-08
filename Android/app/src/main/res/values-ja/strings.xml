@@ -73,6 +73,8 @@
     <string name="status_replied">返信済み</string>
     <string name="status_pending">対応中</string>
     <string name="support">サポート</string>
+    <string name="calc_title">電卓</string>
+    <string name="calc_no_history">履歴がありません</string>
     <string name="iap_remove_ads">広告を削除</string>
     <string name="iap_remove_ads_desc">ずっと広告なしで楽しむ</string>
     <string name="iap_purchased">購入済み</string>

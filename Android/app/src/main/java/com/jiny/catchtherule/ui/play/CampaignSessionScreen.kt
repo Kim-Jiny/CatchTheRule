@@ -19,6 +19,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Calculate
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Lightbulb
@@ -70,6 +71,7 @@ fun CampaignSessionScreen(onClose: () -> Unit) {
     var reveal by remember { mutableStateOf(false) }
     var solved by remember { mutableStateOf(false) }
     var showHintShop by remember { mutableStateOf(false) }
+    var showCalc by remember { mutableStateOf(false) }
 
     val puzzle: Puzzle? = puzzles.getOrNull(index)
 
@@ -107,6 +109,11 @@ fun CampaignSessionScreen(onClose: () -> Unit) {
                     Text(stringResource(R.string.stage_label, position?.second ?: puzzle.order), color = AppColors.TextPrimary, fontSize = 15.sp, fontWeight = FontWeight.Bold)
                 }
                 Box(Modifier.weight(1f))
+                Box(
+                    Modifier.size(38.dp).card(12.dp).clickable { showCalc = !showCalc },
+                    contentAlignment = Alignment.Center,
+                ) { Icon(Icons.Filled.Calculate, null, tint = if (showCalc) AppColors.Accent2 else AppColors.TextSecondary, modifier = Modifier.size(18.dp)) }
+                Box(Modifier.size(8.dp))
                 HintButton(
                     remaining = progress.hintsRemaining,
                     enabled = hintsShown < puzzle.localizedHints.size && !solved,
@@ -169,6 +176,10 @@ fun CampaignSessionScreen(onClose: () -> Unit) {
                 enter = scaleIn(initialScale = 0.5f) + fadeIn(),
                 exit = scaleOut(targetScale = 0.5f) + fadeOut(),
             ) { CorrectBadge() }
+
+            if (showCalc) {
+                Box(Modifier.align(Alignment.Center)) { CalculatorPanel { showCalc = false } }
+            }
         }
 
         if (showHintShop) {
