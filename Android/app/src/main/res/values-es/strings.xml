@@ -86,7 +86,7 @@
     <string name="iap_buy_hints">Comprar pistas</string>
     <string name="iap_hints_n">%d pistas</string>
     <string name="iap_need_hints_title">Sin pistas</string>
-    <string name="iap_need_hints_msg">Mira un anuncio o compra pistas para continuar.</string>
+    <string name="iap_need_hints_msg">Compra pistas para continuar.</string>
     <string name="iap_watch_ad">Ver un anuncio</string>
     <string name="iap_coming_soon">Próximamente</string>
     <string name="iap_hints_desc">Consigue un paquete de pistas</string>

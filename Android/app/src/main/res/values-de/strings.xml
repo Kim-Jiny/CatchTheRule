@@ -86,7 +86,7 @@
     <string name="iap_buy_hints">Tipps kaufen</string>
     <string name="iap_hints_n">%d Tipps</string>
     <string name="iap_need_hints_title">Keine Tipps mehr</string>
-    <string name="iap_need_hints_msg">Sieh dir Werbung an oder kaufe Tipps, um weiterzuspielen.</string>
+    <string name="iap_need_hints_msg">Kaufe Tipps, um weiterzuspielen.</string>
     <string name="iap_watch_ad">Werbung ansehen</string>
     <string name="iap_coming_soon">Demnächst</string>
     <string name="iap_hints_desc">Ein Tipp-Paket erhalten</string>

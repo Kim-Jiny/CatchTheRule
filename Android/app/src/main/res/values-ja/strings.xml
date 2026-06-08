@@ -86,7 +86,7 @@
     <string name="iap_buy_hints">ヒントを購入</string>
     <string name="iap_hints_n">ヒント%d個</string>
     <string name="iap_need_hints_title">ヒントがありません</string>
-    <string name="iap_need_hints_msg">広告を見るかヒントを購入して続けよう。</string>
+    <string name="iap_need_hints_msg">ヒントを購入して続けよう。</string>
     <string name="iap_watch_ad">広告を見て獲得</string>
     <string name="iap_coming_soon">準備中</string>
     <string name="iap_hints_desc">ヒントパックを入手</string>

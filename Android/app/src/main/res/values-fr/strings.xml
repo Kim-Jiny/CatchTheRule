@@ -86,7 +86,7 @@
     <string name="iap_buy_hints">Acheter des indices</string>
     <string name="iap_hints_n">%d indices</string>
     <string name="iap_need_hints_title">Plus d\'indices</string>
-    <string name="iap_need_hints_msg">Regardez une pub ou achetez des indices pour continuer.</string>
+    <string name="iap_need_hints_msg">Achetez des indices pour continuer.</string>
     <string name="iap_watch_ad">Regarder une pub</string>
     <string name="iap_coming_soon">Bientôt</string>
     <string name="iap_hints_desc">Obtenez un pack d\'indices</string>

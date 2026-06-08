@@ -202,16 +202,6 @@ private fun HintShopDialog(billing: BillingManager, onDismiss: () -> Unit) {
             Text(stringResource(R.string.iap_need_hints_title), color = AppColors.TextPrimary, fontSize = 19.sp, fontWeight = FontWeight.Bold)
             Text(stringResource(R.string.iap_need_hints_msg), color = AppColors.TextSecondary, fontSize = 13.sp, textAlign = TextAlign.Center)
 
-            // 광고 보고 받기 (준비중)
-            Row(
-                Modifier.fillMaxWidth().card().padding(14.dp),
-                verticalAlignment = Alignment.CenterVertically,
-            ) {
-                Text(stringResource(R.string.iap_watch_ad), color = AppColors.TextTertiary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold)
-                Box(Modifier.weight(1f))
-                Text(stringResource(R.string.iap_coming_soon), color = AppColors.TextTertiary, fontSize = 12.sp)
-            }
-
             // 힌트 구매 (4 티어)
             BillingManager.HINT_TIERS.forEach { n ->
                 Row(

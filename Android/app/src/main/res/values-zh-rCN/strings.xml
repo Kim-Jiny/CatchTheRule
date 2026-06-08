@@ -86,7 +86,7 @@
     <string name="iap_buy_hints">购买提示</string>
     <string name="iap_hints_n">%d个提示</string>
     <string name="iap_need_hints_title">提示用完了</string>
-    <string name="iap_need_hints_msg">看广告或购买提示来继续。</string>
+    <string name="iap_need_hints_msg">购买提示来继续。</string>
     <string name="iap_watch_ad">看广告获取</string>
     <string name="iap_coming_soon">即将推出</string>
     <string name="iap_hints_desc">获取提示包</string>

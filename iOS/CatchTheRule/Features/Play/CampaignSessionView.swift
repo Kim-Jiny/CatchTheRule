@@ -282,22 +282,6 @@ struct HintShopSheet: View {
                         .multilineTextAlignment(.center)
                         .padding(.bottom, 4)
 
-                    // 광고 보고 받기 (준비중)
-                    HStack(spacing: 10) {
-                        Image(systemName: "play.rectangle.fill")
-                        Text(String.loc("iap_watch_ad"))
-                        Spacer()
-                        Text(String.loc("iap_coming_soon"))
-                            .font(.system(size: 12))
-                            .foregroundStyle(Theme.textTertiary)
-                    }
-                    .font(.system(size: 16, weight: .semibold))
-                    .foregroundStyle(Theme.textSecondary)
-                    .padding(16)
-                    .frame(maxWidth: .infinity)
-                    .card()
-                    .opacity(0.55)
-
                     // 힌트 구매 (4 티어)
                     ForEach(StoreManager.hintTiers, id: \.self) { n in
                         Button {
@@ -332,7 +316,7 @@ struct HintShopSheet: View {
                 .padding(24)
             }
         }
-        .presentationDetents([.medium, .large])
+        .presentationDetents([.fraction(0.66), .large])
     }
 }
 

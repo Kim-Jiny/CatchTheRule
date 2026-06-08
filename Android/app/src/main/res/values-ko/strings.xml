@@ -86,7 +86,7 @@
     <string name="iap_buy_hints">힌트 구매</string>
     <string name="iap_hints_n">힌트 %d개</string>
     <string name="iap_need_hints_title">힌트가 떨어졌어요</string>
-    <string name="iap_need_hints_msg">광고를 보거나 힌트를 구매해 이어가세요.</string>
+    <string name="iap_need_hints_msg">힌트를 구매해 이어가세요.</string>
     <string name="iap_watch_ad">광고 보고 받기</string>
     <string name="iap_coming_soon">준비중</string>
     <string name="iap_hints_desc">힌트 묶음 받기</string>

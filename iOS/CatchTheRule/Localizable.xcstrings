@@ -4049,43 +4049,43 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Watch an ad or buy hints to keep going."
+            "value": "Buy hints to keep going."
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "광고를 보거나 힌트를 구매해 이어가세요."
+            "value": "힌트를 구매해 이어가세요."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "広告を見るかヒントを購入して続けよう。"
+            "value": "ヒントを購入して続けよう。"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "看广告或购买提示来继续。"
+            "value": "购买提示来继续。"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mira un anuncio o compra pistas para continuar."
+            "value": "Compra pistas para continuar."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Regardez une pub ou achetez des indices pour continuer."
+            "value": "Achetez des indices pour continuer."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sieh dir Werbung an oder kaufe Tipps, um weiterzuspielen."
+            "value": "Kaufe Tipps, um weiterzuspielen."
           }
         }
       }
