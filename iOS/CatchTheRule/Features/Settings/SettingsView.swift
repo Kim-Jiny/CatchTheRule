@@ -7,6 +7,7 @@ struct SettingsView: View {
     @State private var editingNickname = false
     @State private var draftNickname = ""
     @State private var showInquiry = false
+    @State private var showHintShop = false
     @State private var iapMessage: String?
 
     private let termsURL = "https://duo.jiny.shop/ctr/terms"
@@ -38,6 +39,10 @@ struct SettingsView: View {
         }
         .sheet(isPresented: $showInquiry) {
             NavigationStack { InquiryView() }
+                .preferredColorScheme(.dark)
+        }
+        .sheet(isPresented: $showHintShop) {
+            HintShopSheet()
                 .preferredColorScheme(.dark)
         }
         .alert(String.loc("reset_confirm_title"), isPresented: $showResetConfirm) {
@@ -86,27 +91,9 @@ struct SettingsView: View {
 
     private var storeSection: some View {
         VStack(spacing: 0) {
-            // 광고 제거 (비소모성)
-            if store.removeAdsPurchased {
-                SettingsRow(icon: "checkmark.seal.fill", title: String.loc("iap_remove_ads"),
-                            value: String.loc("iap_purchased"), showChevron: false)
-            } else {
-                SettingsRow(icon: "nosign", title: String.loc("iap_remove_ads"),
-                            value: store.priceText.isEmpty ? String.loc("iap_loading") : store.priceText) {
-                    Task { await store.purchase() }
-                }
-            }
-            // 힌트 구매 (소모성, 5·10·20·50)
-            ForEach(StoreManager.hintTiers, id: \.self) { n in
-                Divider().overlay(Theme.stroke)
-                SettingsRow(icon: "lightbulb.fill", title: String.loc("iap_hints_n", n),
-                            value: store.hintsPrice(n).isEmpty ? String.loc("iap_loading") : store.hintsPrice(n)) {
-                    Task {
-                        if await store.purchaseHints(n) {   // 지급은 콜백(durable)
-                            iapMessage = String.loc("iap_hints_added")
-                        }
-                    }
-                }
+            // 힌트 구매 — 단일 버튼(누르면 5·10·20·50 팝업)
+            SettingsRow(icon: "lightbulb.fill", title: String.loc("iap_buy_hints"), value: nil) {
+                showHintShop = true
             }
             Divider().overlay(Theme.stroke)
             // 구매 복원

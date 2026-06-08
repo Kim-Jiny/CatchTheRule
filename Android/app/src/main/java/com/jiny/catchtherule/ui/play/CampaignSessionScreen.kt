@@ -188,9 +188,9 @@ fun CampaignSessionScreen(onClose: () -> Unit) {
     }
 }
 
-/** 힌트 0개일 때 뜨는 "광고 볼래?/구매할래?" 팝업. 광고는 준비중(비활성), 구매는 즉시 동작. */
+/** 힌트 구매 팝업(5·10·20·50). 캠페인의 힌트 0 상황 + 설정의 "힌트 구매"에서 공용. */
 @Composable
-private fun HintShopDialog(billing: BillingManager, onDismiss: () -> Unit) {
+fun HintShopDialog(billing: BillingManager, onDismiss: () -> Unit) {
     val activity = LocalContext.current as? Activity
     Dialog(onDismissRequest = onDismiss) {
         Column(

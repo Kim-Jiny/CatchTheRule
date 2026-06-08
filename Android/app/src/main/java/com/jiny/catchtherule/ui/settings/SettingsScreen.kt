@@ -75,6 +75,7 @@ fun SettingsScreen(modifier: Modifier = Modifier) {
     var showNickname by remember { mutableStateOf(false) }
     var draftNick by remember { mutableStateOf("") }
     var showInquiry by remember { mutableStateOf(false) }
+    var showHintShop by remember { mutableStateOf(false) }
     var iapMsg by remember { mutableStateOf<String?>(null) }
 
     if (showInquiry) {
@@ -100,24 +101,9 @@ fun SettingsScreen(modifier: Modifier = Modifier) {
 
             // 인앱결제
             Column(Modifier.fillMaxWidth().card()) {
-                // 광고 제거 (비소모성)
-                if (billing.removeAdsPurchased) {
-                    SettingsRow(Icons.Filled.CheckCircle, stringResource(R.string.iap_remove_ads), stringResource(R.string.iap_purchased), chevron = false, onClick = null)
-                } else {
-                    SettingsRow(
-                        Icons.Filled.Block,
-                        stringResource(R.string.iap_remove_ads),
-                        billing.removeAdsPrice.ifEmpty { stringResource(R.string.iap_loading) },
-                    ) { activity?.let { billing.purchase(it, com.jiny.catchtherule.data.BillingManager.REMOVE_ADS_ID) } }
-                }
-                // 힌트 구매 (소모성, 5·10·20·50)
-                com.jiny.catchtherule.data.BillingManager.HINT_TIERS.forEach { n ->
-                    RowDivider()
-                    SettingsRow(
-                        Icons.Filled.Lightbulb,
-                        stringResource(R.string.iap_hints_n, n),
-                        billing.hintsPrices[n].orEmpty().ifEmpty { stringResource(R.string.iap_loading) },
-                    ) { activity?.let { billing.purchase(it, com.jiny.catchtherule.data.BillingManager.hintsId(n)) } }
+                // 힌트 구매 — 단일 버튼(누르면 5·10·20·50 팝업)
+                SettingsRow(Icons.Filled.Lightbulb, stringResource(R.string.iap_buy_hints), null) {
+                    showHintShop = true
                 }
                 RowDivider()
                 // 구매 복원
@@ -173,6 +159,10 @@ fun SettingsScreen(modifier: Modifier = Modifier) {
             confirmButton = { TextButton(onClick = { iapMsg = null }) { Text(stringResource(R.string.close)) } },
             containerColor = AppColors.Card,
         )
+    }
+
+    if (showHintShop) {
+        com.jiny.catchtherule.ui.play.HintShopDialog(billing) { showHintShop = false }
     }
 
     if (showReset) {
