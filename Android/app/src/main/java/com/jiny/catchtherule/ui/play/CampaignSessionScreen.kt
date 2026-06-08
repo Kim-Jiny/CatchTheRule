@@ -191,7 +191,8 @@ fun CampaignSessionScreen(onClose: () -> Unit) {
 /** 힌트 구매 팝업(5·10·20·50). 캠페인의 힌트 0 상황 + 설정의 "힌트 구매"에서 공용. */
 @Composable
 fun HintShopDialog(billing: BillingManager, onDismiss: () -> Unit) {
-    val activity = LocalContext.current as? Activity
+    val ctx = LocalContext.current
+    val activity = ctx as? Activity
     Dialog(onDismissRequest = onDismiss) {
         Column(
             Modifier.fillMaxWidth().card(20.dp).padding(20.dp),
@@ -220,6 +221,17 @@ fun HintShopDialog(billing: BillingManager, onDismiss: () -> Unit) {
                     )
                 }
             }
+
+            // 결제 전 환불·이용약관 고지
+            Text(
+                stringResource(R.string.iap_refund_policy),
+                color = AppColors.Accent2, fontSize = 13.sp,
+                modifier = Modifier.clickable {
+                    val lang = java.util.Locale.getDefault().language
+                    ctx.startActivity(android.content.Intent(android.content.Intent.ACTION_VIEW,
+                        android.net.Uri.parse("https://duo.jiny.shop/ctr/terms?lang=$lang")))
+                }.padding(4.dp),
+            )
 
             Text(
                 stringResource(R.string.close),

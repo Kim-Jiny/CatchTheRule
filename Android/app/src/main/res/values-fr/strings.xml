@@ -83,6 +83,7 @@
     <string name="iap_restore_none">Aucun achat à restaurer</string>
     <string name="iap_failed">Achat échoué. Réessayez.</string>
     <string name="iap_loading">Chargement…</string>
+    <string name="iap_refund_policy">Remboursements et CGU</string>
     <string name="iap_buy_hints">Acheter des indices</string>
     <string name="iap_hints_n">%d indices</string>
     <string name="iap_need_hints_title">Plus d\'indices</string>

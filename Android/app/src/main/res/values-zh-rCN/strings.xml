@@ -83,6 +83,7 @@
     <string name="iap_restore_none">没有可恢复的购买</string>
     <string name="iap_failed">购买失败，请重试。</string>
     <string name="iap_loading">加载中…</string>
+    <string name="iap_refund_policy">退款·服务条款</string>
     <string name="iap_buy_hints">购买提示</string>
     <string name="iap_hints_n">%d个提示</string>
     <string name="iap_need_hints_title">提示用完了</string>

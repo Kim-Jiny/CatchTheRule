@@ -83,6 +83,7 @@
     <string name="iap_restore_none">No hay compras que restaurar</string>
     <string name="iap_failed">La compra falló. Inténtalo de nuevo.</string>
     <string name="iap_loading">Cargando…</string>
+    <string name="iap_refund_policy">Reembolsos y términos</string>
     <string name="iap_buy_hints">Comprar pistas</string>
     <string name="iap_hints_n">%d pistas</string>
     <string name="iap_need_hints_title">Sin pistas</string>

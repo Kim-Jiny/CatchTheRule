@@ -83,6 +83,7 @@
     <string name="iap_restore_none">復元できる購入がありません</string>
     <string name="iap_failed">購入に失敗しました。もう一度お試しください。</string>
     <string name="iap_loading">読み込み中…</string>
+    <string name="iap_refund_policy">返金・利用規約</string>
     <string name="iap_buy_hints">ヒントを購入</string>
     <string name="iap_hints_n">ヒント%d個</string>
     <string name="iap_need_hints_title">ヒントがありません</string>

@@ -304,6 +304,13 @@ struct HintShopSheet: View {
                         .buttonStyle(.plain)
                     }
 
+                    // 결제 전 환불·이용약관 고지
+                    Link(String.loc("iap_refund_policy"),
+                         destination: URL(string: "https://duo.jiny.shop/ctr/terms?lang=\(Locale.current.language.languageCode?.identifier ?? "en")")!)
+                        .font(.system(size: 13))
+                        .foregroundStyle(Theme.accent2)
+                        .padding(.top, 4)
+
                     Button(String.loc("close")) { dismiss() }
                         .font(.system(size: 15))
                         .foregroundStyle(Theme.textSecondary)

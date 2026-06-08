@@ -102,6 +102,7 @@ T = {
  "iap_restore_none": ["No purchases to restore","복원할 구매가 없어요","復元できる購入がありません","没有可恢复的购买","No hay compras que restaurar","Aucun achat à restaurer","Keine Käufe zum Wiederherstellen"],
  "iap_failed": ["Purchase failed. Please try again.","구매에 실패했어요. 다시 시도해주세요.","購入に失敗しました。もう一度お試しください。","购买失败，请重试。","La compra falló. Inténtalo de nuevo.","Achat échoué. Réessayez.","Kauf fehlgeschlagen. Bitte erneut versuchen."],
  "iap_loading": ["Loading…","불러오는 중…","読み込み中…","加载中…","Cargando…","Chargement…","Wird geladen…"],
+ "iap_refund_policy": ["Refunds & Terms","환불·이용약관","返金・利用規約","退款·服务条款","Reembolsos y términos","Remboursements et CGU","Erstattung & AGB"],
  "iap_buy_hints": ["Buy Hints","힌트 구매","ヒントを購入","购买提示","Comprar pistas","Acheter des indices","Tipps kaufen"],
  "iap_hints_n": ["%d Hints","힌트 %d개","ヒント%d個","%d个提示","%d pistas","%d indices","%d Tipps"],
  "iap_need_hints_title": ["Out of hints","힌트가 떨어졌어요","ヒントがありません","提示用完了","Sin pistas","Plus d'indices","Keine Tipps mehr"],

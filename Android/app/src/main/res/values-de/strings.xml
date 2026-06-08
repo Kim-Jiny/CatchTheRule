@@ -83,6 +83,7 @@
     <string name="iap_restore_none">Keine Käufe zum Wiederherstellen</string>
     <string name="iap_failed">Kauf fehlgeschlagen. Bitte erneut versuchen.</string>
     <string name="iap_loading">Wird geladen…</string>
+    <string name="iap_refund_policy">Erstattung &amp; AGB</string>
     <string name="iap_buy_hints">Tipps kaufen</string>
     <string name="iap_hints_n">%d Tipps</string>
     <string name="iap_need_hints_title">Keine Tipps mehr</string>
