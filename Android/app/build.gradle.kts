@@ -22,7 +22,7 @@ android {
         applicationId = "com.jiny.catchtherule"
         minSdk = 24
         targetSdk = 35
-        versionCode = 1
+        versionCode = 3
         versionName = "1.0.0"
     }
 
