@@ -141,7 +141,7 @@ class BillingManager(context: Context, private val progress: ProgressStore) {
                     ConsumeParams.newBuilder().setPurchaseToken(p.purchaseToken).build()
                 ) { result, _ ->
                     if (result.responseCode == BillingClient.BillingResponseCode.OK) {
-                        progress.addHints(hintGrant)
+                        runOnMain { progress.addHints(hintGrant) }   // 콜백은 백그라운드 → 메인에서 상태 갱신
                     }
                 }
             }
@@ -185,9 +185,15 @@ class BillingManager(context: Context, private val progress: ProgressStore) {
         }.start()
     }
 
-    private fun setPurchased(value: Boolean) {
+    private fun setPurchased(value: Boolean) = runOnMain {
         removeAdsPurchased = value
         prefs().edit().putBoolean(K_REMOVE_ADS, value).apply()
+    }
+
+    private val mainHandler = android.os.Handler(android.os.Looper.getMainLooper())
+    private fun runOnMain(block: () -> Unit) {
+        if (android.os.Looper.myLooper() == android.os.Looper.getMainLooper()) block()
+        else mainHandler.post(block)
     }
 
     companion object {

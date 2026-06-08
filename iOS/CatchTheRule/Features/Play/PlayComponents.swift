@@ -39,8 +39,9 @@ struct SequenceDisplay: View {
     /// 각 줄을 "[2] + [3] = [13]" 처럼 — 숫자는 박스, 연산자는 사이 텍스트, 빈칸은 강조 박스.
     private func equationBody(_ grid: [[String?]]) -> some View {
         let cols = max(1, grid.map(\.count).max() ?? 1)
-        let fontSize: CGFloat = cols >= 7 ? 19 : (cols >= 6 ? 22 : (cols >= 5 ? 25 : 28))
-        let boxSide: CGFloat = fontSize * 1.95
+        // 칸 수가 많아도 가로로 넘치지 않게 폰트/박스를 단계적으로 축소.
+        let fontSize: CGFloat = cols >= 9 ? 14 : (cols >= 8 ? 16 : (cols >= 7 ? 18 : (cols >= 6 ? 21 : (cols >= 5 ? 24 : 28))))
+        let boxSide: CGFloat = fontSize * 1.8
         return VStack(spacing: 12) {
             ForEach(Array(grid.enumerated()), id: \.offset) { _, row in
                 HStack(spacing: 6) {

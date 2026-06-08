@@ -34,7 +34,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.input.pointer.pointerInput
-import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
@@ -53,6 +54,11 @@ fun CalculatorPanel(onClose: () -> Unit) {
     val history = remember { mutableStateListOf<String>() }
     var offsetX by remember { mutableStateOf(0f) }
     var offsetY by remember { mutableStateOf(0f) }
+    // 화면 밖으로 끌려나가 사라지지 않도록 이동 범위 제한.
+    val cfg = LocalConfiguration.current
+    val density = LocalDensity.current
+    val maxX = with(density) { ((cfg.screenWidthDp.dp - 250.dp) / 2 - 8.dp).toPx() }.coerceAtLeast(0f)
+    val maxY = with(density) { ((cfg.screenHeightDp.dp - 430.dp) / 2 - 8.dp).toPx() }.coerceAtLeast(0f)
 
     val rows = listOf(
         listOf("C", "⌫", "÷", "×"),
@@ -91,8 +97,11 @@ fun CalculatorPanel(onClose: () -> Unit) {
             Row(
                 Modifier
                     .fillMaxWidth()
-                    .pointerInput(Unit) {
-                        detectDragGestures { _, drag -> offsetX += drag.x; offsetY += drag.y }
+                    .pointerInput(maxX, maxY) {
+                        detectDragGestures { _, drag ->
+                            offsetX = (offsetX + drag.x).coerceIn(-maxX, maxX)
+                            offsetY = (offsetY + drag.y).coerceIn(-maxY, maxY)
+                        }
                     }
                     .padding(horizontal = 14.dp, vertical = 12.dp),
                 verticalAlignment = Alignment.CenterVertically,

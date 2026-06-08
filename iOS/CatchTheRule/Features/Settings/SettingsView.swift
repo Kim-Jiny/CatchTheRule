@@ -102,9 +102,7 @@ struct SettingsView: View {
                 SettingsRow(icon: "lightbulb.fill", title: String.loc("iap_hints_n", n),
                             value: store.hintsPrice(n).isEmpty ? String.loc("iap_loading") : store.hintsPrice(n)) {
                     Task {
-                        let granted = await store.purchaseHints(n)
-                        if granted > 0 {
-                            progress.hintsRemaining += granted
+                        if await store.purchaseHints(n) {   // 지급은 콜백(durable)
                             iapMessage = String.loc("iap_hints_added")
                         }
                     }

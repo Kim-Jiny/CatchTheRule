@@ -286,11 +286,7 @@ struct HintShopSheet: View {
                     ForEach(StoreManager.hintTiers, id: \.self) { n in
                         Button {
                             Task {
-                                let granted = await store.purchaseHints(n)
-                                if granted > 0 {
-                                    progress.hintsRemaining += granted
-                                    dismiss()
-                                }
+                                if await store.purchaseHints(n) { dismiss() }  // 지급은 콜백(durable)
                             }
                         } label: {
                             HStack(spacing: 10) {

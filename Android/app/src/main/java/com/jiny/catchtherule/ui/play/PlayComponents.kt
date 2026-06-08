@@ -77,8 +77,9 @@ fun SequenceDisplay(
     if (puzzle.type == "equation" && !grid.isNullOrEmpty()) {
         // 수식형: "[2] + [3] = [13]" — 숫자는 박스, 연산자는 사이 텍스트, 빈칸은 강조 박스
         val cols = (grid.maxOfOrNull { it.size } ?: 1).coerceAtLeast(1)
-        val fontSize = when { cols >= 7 -> 19.sp; cols >= 6 -> 22.sp; cols >= 5 -> 25.sp; else -> 28.sp }
-        val side = (fontSize.value * 1.95f).dp
+        // 칸 수가 많아도 가로로 넘치지 않게 단계적 축소.
+        val fontSize = when { cols >= 9 -> 14.sp; cols >= 8 -> 16.sp; cols >= 7 -> 18.sp; cols >= 6 -> 21.sp; cols >= 5 -> 24.sp; else -> 28.sp }
+        val side = (fontSize.value * 1.8f).dp
         androidx.compose.foundation.layout.Column(
             modifier.fillMaxWidth(),
             verticalArrangement = Arrangement.spacedBy(12.dp),

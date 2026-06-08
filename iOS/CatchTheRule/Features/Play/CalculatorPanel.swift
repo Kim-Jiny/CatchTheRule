@@ -32,8 +32,17 @@ struct CalculatorPanel: View {
         .overlay(
             RoundedRectangle(cornerRadius: 20, style: .continuous).stroke(Theme.stroke, lineWidth: 1)
         )
-        .offset(x: position.width + dragOffset.width, y: position.height + dragOffset.height)
+        .offset(x: clamp(position.width + dragOffset.width, maxOffset.width),
+                y: clamp(position.height + dragOffset.height, maxOffset.height))
     }
+
+    /// 화면 밖으로 끌려나가 사라지지 않도록 이동 범위 제한.
+    private var maxOffset: CGSize {
+        let s = UIScreen.main.bounds
+        return CGSize(width: max(0, (s.width - 250) / 2 - 8),
+                      height: max(0, (s.height - 430) / 2 - 8))
+    }
+    private func clamp(_ v: CGFloat, _ m: CGFloat) -> CGFloat { min(max(v, -m), m) }
 
     // 이동 핸들(드래그) + 제목 + 닫기
     private var handle: some View {
@@ -59,8 +68,8 @@ struct CalculatorPanel: View {
             DragGesture(coordinateSpace: .global)   // 글로벌 좌표 → 이동 중 떨림 방지
                 .updating($dragOffset) { v, s, _ in s = v.translation }
                 .onEnded { v in
-                    position.width += v.translation.width
-                    position.height += v.translation.height
+                    position.width = clamp(position.width + v.translation.width, maxOffset.width)
+                    position.height = clamp(position.height + v.translation.height, maxOffset.height)
                 }
         )
     }
@@ -235,6 +244,6 @@ enum CalcEval {
     static func format(_ d: Double) -> String {
         if d.isNaN || d.isInfinite { return "0" }
         if d == d.rounded() && abs(d) < 1e15 { return String(Int(d)) }
-        return String(format: "%g", d)
+        return String(format: "%.10g", d)
     }
 }
