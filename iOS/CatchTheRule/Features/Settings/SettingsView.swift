@@ -28,6 +28,7 @@ struct SettingsView: View {
                         profileSection
                         storeSection
                         preferencesSection
+                        BannerAd(unitID: BannerUnits.settings)
                         supportSection
                         dangerSection
                         footer

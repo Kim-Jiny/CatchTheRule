@@ -81,6 +81,9 @@ fun ChallengeScreen(modifier: Modifier = Modifier, onStart: () -> Unit) {
                 PrimaryButton(stringResource(R.string.challenge_start), icon = Icons.Filled.PlayArrow, onClick = onStart)
             }
 
+            // 도전탭 배너 (타임어택 시작 ↔ 랭킹)
+            com.jiny.catchtherule.ui.BannerAd(com.jiny.catchtherule.ui.BannerUnits.challenge)
+
             Row(verticalAlignment = Alignment.CenterVertically) {
                 SectionHeader(stringResource(R.string.ranking), Modifier.weight(1f))
                 if (loading) CircularProgressIndicator(strokeWidth = 2.dp, modifier = Modifier.size(18.dp), color = AppColors.TextSecondary)

@@ -119,6 +119,9 @@ fun SettingsScreen(modifier: Modifier = Modifier) {
                 ToggleRow(Icons.Filled.Vibration, stringResource(R.string.haptics), progress.hapticsOn) { progress.setHaptics(it) }
             }
 
+            // 설정탭 배너 (햅틱 ↔ 문의하기)
+            com.jiny.catchtherule.ui.BannerAd(com.jiny.catchtherule.ui.BannerUnits.settings)
+
             // 지원
             Column(Modifier.fillMaxWidth().card()) {
                 SettingsRow(Icons.Filled.Email, stringResource(R.string.contact), null) {

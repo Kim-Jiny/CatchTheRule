@@ -14,6 +14,7 @@ struct ChallengeView: View {
                     VStack(spacing: 20) {
                         header
                         startCard
+                        BannerAd(unitID: BannerUnits.challenge)
                         leaderboard
                     }
                     .padding(20)

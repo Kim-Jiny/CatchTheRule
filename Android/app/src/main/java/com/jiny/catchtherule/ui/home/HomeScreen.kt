@@ -91,6 +91,9 @@ fun HomeScreen(modifier: Modifier = Modifier, onContinue: () -> Unit) {
                 )
             }
 
+            // 홈탭 배너 (이어하기 ↔ 챕터)
+            com.jiny.catchtherule.ui.BannerAd(com.jiny.catchtherule.ui.BannerUnits.home)
+
             // 챕터 목록
             SectionHeader(stringResource(R.string.chapters))
             store.chapters.forEach { chapter ->

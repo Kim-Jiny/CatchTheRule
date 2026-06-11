@@ -170,6 +170,9 @@ fun CampaignSessionScreen(onClose: () -> Unit) {
                     }
                 }
             }
+
+            // 스테이지 배너 (맨 아래)
+            com.jiny.catchtherule.ui.BannerAd(com.jiny.catchtherule.ui.BannerUnits.stage)
         }
 
             AnimatedVisibility(

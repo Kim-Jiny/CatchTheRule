@@ -84,6 +84,8 @@ struct CampaignSessionView: View {
             inputArea(for: puzzle)
                 .padding(.horizontal, 20)
                 .padding(.bottom, 12)
+
+            BannerAd(unitID: BannerUnits.stage, horizontalInset: 0)
         }
         .padding(.top, 8)
     }

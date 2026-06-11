@@ -16,6 +16,7 @@ struct HomeView: View {
                     VStack(spacing: 20) {
                         title
                         continueCard
+                        BannerAd(unitID: BannerUnits.home)
                         chapterList
                     }
                     .padding(20)
