@@ -60,6 +60,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true   // BuildConfig.DEBUG 분기(테스트/실제 광고 ID)에 필요
     }
 
     // 퍼즐 콘텐츠 단일 소스: 리포 루트 shared/content 를 그대로 asset 으로 사용.
@@ -90,6 +91,9 @@ dependencies {
 
     // 인앱결제 (광고 제거)
     implementation("com.android.billingclient:billing-ktx:7.1.1")
+
+    // 리워드 광고 (광고 보고 힌트 받기)
+    implementation("com.google.android.gms:play-services-ads:23.6.0")
 
     debugImplementation("androidx.compose.ui:ui-tooling")
 }

@@ -23,6 +23,7 @@ import androidx.compose.material.icons.filled.Calculate
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material.icons.filled.Lightbulb
+import androidx.compose.material.icons.filled.PlayCircle
 import androidx.compose.material.icons.outlined.Lightbulb
 import androidx.compose.material.icons.filled.Verified
 import androidx.compose.material3.Icon
@@ -45,6 +46,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import com.jiny.catchtherule.data.BillingManager
+import com.jiny.catchtherule.data.LocalAds
 import com.jiny.catchtherule.data.LocalBilling
 import com.jiny.catchtherule.R
 import com.jiny.catchtherule.core.PuzzleStore
@@ -193,6 +195,12 @@ fun CampaignSessionScreen(onClose: () -> Unit) {
 fun HintShopDialog(billing: BillingManager, onDismiss: () -> Unit) {
     val ctx = LocalContext.current
     val activity = ctx as? Activity
+    val ads = LocalAds.current
+    val progress = LocalProgress.current
+
+    // 팝업이 떠 있는 동안 광고를 미리 로드해 둔다.
+    LaunchedEffect(Unit) { ads.load() }
+
     Dialog(onDismissRequest = onDismiss) {
         Column(
             Modifier.fillMaxWidth().card(20.dp).padding(20.dp),
@@ -202,6 +210,26 @@ fun HintShopDialog(billing: BillingManager, onDismiss: () -> Unit) {
             Icon(Icons.Filled.Lightbulb, null, tint = AppColors.Star, modifier = Modifier.size(40.dp))
             Text(stringResource(R.string.iap_need_hints_title), color = AppColors.TextPrimary, fontSize = 19.sp, fontWeight = FontWeight.Bold)
             Text(stringResource(R.string.iap_need_hints_msg), color = AppColors.TextSecondary, fontSize = 13.sp, textAlign = TextAlign.Center)
+
+            // 광고 보고 힌트 받기 (+1) — 준비됐을 때만 활성
+            Row(
+                Modifier.fillMaxWidth().card().clickable(enabled = ads.isReady) {
+                    activity?.let { act ->
+                        if (ads.showRewarded(act) { progress.addHints(1) }) onDismiss()
+                    }
+                }.padding(14.dp),
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Icon(Icons.Filled.PlayCircle, null, tint = AppColors.Accent, modifier = Modifier.size(18.dp))
+                Box(Modifier.size(8.dp))
+                Text(stringResource(R.string.iap_watch_ad), color = AppColors.TextPrimary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold)
+                Box(Modifier.weight(1f))
+                Text(
+                    if (ads.isReady) "+1" else stringResource(R.string.iap_loading),
+                    color = if (ads.isReady) AppColors.Accent else AppColors.TextTertiary,
+                    fontSize = 14.sp, fontWeight = FontWeight.SemiBold,
+                )
+            }
 
             // 힌트 구매 (4 티어)
             BillingManager.HINT_TIERS.forEach { n ->

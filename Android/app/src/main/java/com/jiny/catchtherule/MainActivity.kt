@@ -5,8 +5,10 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.CompositionLocalProvider
+import com.jiny.catchtherule.data.AdsManager
 import com.jiny.catchtherule.data.AnalyticsService
 import com.jiny.catchtherule.data.BillingManager
+import com.jiny.catchtherule.data.LocalAds
 import com.jiny.catchtherule.data.LocalBilling
 import com.jiny.catchtherule.data.LocalProgress
 import com.jiny.catchtherule.data.ProgressStore
@@ -16,6 +18,7 @@ import com.jiny.catchtherule.ui.theme.CatchTheRuleTheme
 
 class MainActivity : ComponentActivity() {
     private lateinit var billing: BillingManager
+    private lateinit var ads: AdsManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,11 +28,13 @@ class MainActivity : ComponentActivity() {
         com.jiny.catchtherule.core.PuzzleStore.refreshFromServer(this)  // 추가 스테이지 캐시 갱신
         val progress = ProgressStore(this)
         billing = BillingManager(this, progress).also { it.start() }
+        ads = AdsManager(this).also { it.start() }
         setContent {
             CatchTheRuleTheme {
                 CompositionLocalProvider(
                     LocalProgress provides progress,
                     LocalBilling provides billing,
+                    LocalAds provides ads,
                 ) {
                     RootScreen()
                 }

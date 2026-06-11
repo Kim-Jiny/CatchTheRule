@@ -262,6 +262,7 @@ struct CampaignSessionView: View {
 struct HintShopSheet: View {
     @Environment(StoreManager.self) private var store
     @Environment(ProgressStore.self) private var progress
+    @Environment(AdsManager.self) private var ads
     @Environment(\.dismiss) private var dismiss
 
     var body: some View {
@@ -281,6 +282,28 @@ struct HintShopSheet: View {
                         .foregroundStyle(Theme.textSecondary)
                         .multilineTextAlignment(.center)
                         .padding(.bottom, 4)
+
+                    // 광고 보고 힌트 받기 (+1) — 준비됐을 때만 활성. 보상 시 +1 후 닫기.
+                    Button {
+                        ads.showRewarded {
+                            progress.hintsRemaining += 1
+                            dismiss()
+                        }
+                    } label: {
+                        HStack(spacing: 10) {
+                            Image(systemName: "play.circle.fill").foregroundStyle(Theme.accent)
+                            Text(String.loc("iap_watch_ad")).foregroundStyle(Theme.textPrimary)
+                            Spacer()
+                            Text(ads.isReady ? "+1" : String.loc("iap_loading"))
+                                .foregroundStyle(ads.isReady ? Theme.accent : Theme.textTertiary)
+                        }
+                        .font(.system(size: 16, weight: .semibold))
+                        .padding(16)
+                        .frame(maxWidth: .infinity)
+                        .card()
+                    }
+                    .buttonStyle(.plain)
+                    .disabled(!ads.isReady)
 
                     // 힌트 구매 (4 티어)
                     ForEach(StoreManager.hintTiers, id: \.self) { n in
