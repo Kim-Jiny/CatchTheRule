@@ -93,11 +93,25 @@ fun HomeScreen(modifier: Modifier = Modifier, onPlay: (Int) -> Unit) {
                     Text(stringResource(R.string.stars_of_max, progress.maxStars), color = AppColors.TextTertiary, fontSize = 14.sp)
                 }
 
-                PrimaryButton(
-                    text = stringResource(if (progress.isCampaignFinished) R.string.home_retry else R.string.home_continue),
-                    icon = Icons.Filled.PlayArrow,
-                    onClick = { onPlay(progress.currentIndex) },
-                )
+                if (progress.isCampaignFinished) {
+                    // 모든 단계 클리어 — 재도전 대신 다음 업데이트 안내
+                    Box(
+                        Modifier.fillMaxWidth().clip(RoundedCornerShape(14.dp))
+                            .background(AppColors.BgElevated).padding(vertical = 14.dp),
+                        contentAlignment = Alignment.Center,
+                    ) {
+                        Text(
+                            stringResource(R.string.home_wait_update),
+                            color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold,
+                        )
+                    }
+                } else {
+                    PrimaryButton(
+                        text = stringResource(R.string.home_continue),
+                        icon = Icons.Filled.PlayArrow,
+                        onClick = { onPlay(progress.currentIndex) },
+                    )
+                }
             }
 
             // 홈탭 배너 (이어하기 ↔ 챕터)

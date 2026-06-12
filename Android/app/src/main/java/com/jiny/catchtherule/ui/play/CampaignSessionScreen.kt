@@ -324,6 +324,8 @@ private fun CampaignComplete(onClose: () -> Unit) {
         Text(stringResource(R.string.campaign_complete), color = AppColors.TextPrimary, fontSize = 22.sp, fontWeight = FontWeight.Bold)
         Spacer(Modifier.height(8.dp))
         Text(stringResource(R.string.stars_earned, progress.totalStars, progress.maxStars), color = AppColors.TextSecondary, fontSize = 15.sp)
+        Spacer(Modifier.height(8.dp))
+        Text(stringResource(R.string.home_wait_update), color = AppColors.TextTertiary, fontSize = 14.sp, textAlign = TextAlign.Center)
         Spacer(Modifier.height(24.dp))
         PrimaryButton(stringResource(R.string.go_home), icon = Icons.Filled.Home, modifier = Modifier.padding(horizontal = 40.dp)) { onClose() }
     }

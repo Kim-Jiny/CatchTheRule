@@ -10,6 +10,7 @@
     <string name="home_congrats">Congratulations! 🎉</string>
     <string name="home_continue">Continue</string>
     <string name="home_retry">Play Again</string>
+    <string name="home_wait_update">New stages coming soon — stay tuned! 🎉</string>
     <string name="chapters">Chapters</string>
     <string name="chapter_stages">%d stages</string>
     <string name="stars_of_max">/ %d stars</string>

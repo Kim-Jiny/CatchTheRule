@@ -88,10 +88,21 @@ struct HomeView: View {
             }
             .font(.system(size: 14))
 
-            PrimaryButton(String.loc(progress.isCampaignFinished ? "home_retry" : "home_continue"),
-                          systemImage: "play.fill") {
-                startIndex = progress.currentIndex
-                playing = true
+            if progress.isCampaignFinished {
+                // 모든 단계 클리어 — 재도전 대신 다음 업데이트 안내
+                Text(String.loc("home_wait_update"))
+                    .font(.system(size: 15, weight: .semibold))
+                    .foregroundStyle(Theme.textSecondary)
+                    .multilineTextAlignment(.center)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 14)
+                    .background(RoundedRectangle(cornerRadius: 14, style: .continuous).fill(Theme.bgElevated))
+                    .overlay(RoundedRectangle(cornerRadius: 14, style: .continuous).stroke(Theme.stroke, lineWidth: 1))
+            } else {
+                PrimaryButton(String.loc("home_continue"), systemImage: "play.fill") {
+                    startIndex = progress.currentIndex
+                    playing = true
+                }
             }
         }
         .padding(20)

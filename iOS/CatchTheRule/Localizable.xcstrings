@@ -1720,6 +1720,53 @@
         }
       }
     },
+    "home_wait_update" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neue Level kommen bald! 🎉"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New stages coming soon — stay tuned! 🎉"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Pronto habrá nuevos niveles! 🎉"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De nouveaux niveaux arrivent bientôt ! 🎉"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新しいステージは近日追加予定です。お楽しみに！🎉"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "새로운 단계 업데이트를 기다려 주세요 🎉"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新关卡即将上线，敬请期待！🎉"
+          }
+        }
+      }
+    },
     "home_retry" : {
       "extractionState" : "manual",
       "localizations" : {
