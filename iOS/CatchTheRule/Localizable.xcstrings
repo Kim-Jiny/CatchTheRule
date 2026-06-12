@@ -2425,6 +2425,53 @@
         }
       }
     },
+    "iap_remove_ads_note" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Werbeentfernung gilt nur für Banner- und Interstitial-Anzeigen. Tipps gibt es weiterhin nur über die Belohnungsanzeige „Werbung für einen Tipp ansehen“."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Removing ads applies only to banner and interstitial ads. Free hints still require watching the “Watch an ad for a hint” rewarded ad."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La eliminación de anuncios se aplica solo a banners e intersticiales. Para obtener pistas, deberás ver el anuncio recompensado “Ver un anuncio por una pista”."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La suppression des publicités s’applique uniquement aux bannières et interstitiels. Les indices nécessitent toujours de regarder la publicité avec récompense « Regarder une pub pour un indice »."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "広告削除はバナー・全面広告のみに適用されます。ヒントは「広告を見てヒント」リワード広告の視聴で獲得できます。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "광고 제거는 배너·전면 광고에만 적용됩니다. 힌트는 ‘광고 보고 힌트 받기’ 보상형 광고를 시청해야 받을 수 있어요."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "去广告仅适用于横幅和插页广告。提示仍需观看“看广告得提示”激励广告才能获得。"
+          }
+        }
+      }
+    },
     "iap_restore" : {
       "extractionState" : "manual",
       "localizations" : {

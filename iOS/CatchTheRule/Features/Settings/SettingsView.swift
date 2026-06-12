@@ -91,29 +91,40 @@ struct SettingsView: View {
     }
 
     private var storeSection: some View {
-        VStack(spacing: 0) {
-            // 광고 제거 — 구매 전에만 노출(구매 시 자동으로 사라짐)
-            if !store.removeAdsPurchased {
-                SettingsRow(icon: "rectangle.slash", title: String.loc("iap_remove_ads"),
-                            value: store.priceText.isEmpty ? String.loc("iap_loading") : store.priceText) {
-                    Task { _ = await store.purchase() }
+        VStack(alignment: .leading, spacing: 8) {
+            VStack(spacing: 0) {
+                // 광고 제거 — 구매 전에만 노출(구매 시 자동으로 사라짐)
+                if !store.removeAdsPurchased {
+                    SettingsRow(icon: "rectangle.slash", title: String.loc("iap_remove_ads"),
+                                value: store.priceText.isEmpty ? String.loc("iap_loading") : store.priceText) {
+                        Task { _ = await store.purchase() }
+                    }
+                    Divider().overlay(Theme.stroke)
+                }
+                // 힌트 구매 — 단일 버튼(누르면 5·10·20·50 팝업)
+                SettingsRow(icon: "lightbulb.fill", title: String.loc("iap_buy_hints"), value: nil) {
+                    showHintShop = true
                 }
                 Divider().overlay(Theme.stroke)
-            }
-            // 힌트 구매 — 단일 버튼(누르면 5·10·20·50 팝업)
-            SettingsRow(icon: "lightbulb.fill", title: String.loc("iap_buy_hints"), value: nil) {
-                showHintShop = true
-            }
-            Divider().overlay(Theme.stroke)
-            // 구매 복원
-            SettingsRow(icon: "arrow.clockwise", title: String.loc("iap_restore"), value: nil) {
-                Task {
-                    let restored = await store.restore()
-                    iapMessage = String.loc(restored ? "iap_restore_done" : "iap_restore_none")
+                // 구매 복원
+                SettingsRow(icon: "arrow.clockwise", title: String.loc("iap_restore"), value: nil) {
+                    Task {
+                        let restored = await store.restore()
+                        iapMessage = String.loc(restored ? "iap_restore_done" : "iap_restore_none")
+                    }
                 }
             }
+            .card()
+
+            // 광고 제거 범위 고지(배너·전면만 제거, 보상형 힌트 광고는 유지)
+            if !store.removeAdsPurchased {
+                Text(String.loc("iap_remove_ads_note"))
+                    .font(.system(size: 12))
+                    .foregroundStyle(Theme.textTertiary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 4)
+            }
         }
-        .card()
     }
 
     private var preferencesSection: some View {

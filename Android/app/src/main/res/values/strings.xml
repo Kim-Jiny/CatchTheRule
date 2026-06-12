@@ -77,6 +77,7 @@
     <string name="calc_no_history">No history yet</string>
     <string name="iap_remove_ads">Remove Ads</string>
     <string name="iap_remove_ads_desc">Enjoy ad-free play forever</string>
+    <string name="iap_remove_ads_note">Removing ads applies only to banner and interstitial ads. Free hints still require watching the “Watch an ad for a hint” rewarded ad.</string>
     <string name="iap_purchased">Purchased</string>
     <string name="iap_restore">Restore Purchases</string>
     <string name="iap_restore_done">Purchases restored</string>

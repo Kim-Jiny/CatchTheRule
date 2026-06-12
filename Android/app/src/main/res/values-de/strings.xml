@@ -77,6 +77,7 @@
     <string name="calc_no_history">Noch kein Verlauf</string>
     <string name="iap_remove_ads">Werbung entfernen</string>
     <string name="iap_remove_ads_desc">Für immer werbefrei spielen</string>
+    <string name="iap_remove_ads_note">Die Werbeentfernung gilt nur für Banner- und Interstitial-Anzeigen. Tipps gibt es weiterhin nur über die Belohnungsanzeige „Werbung für einen Tipp ansehen“.</string>
     <string name="iap_purchased">Gekauft</string>
     <string name="iap_restore">Käufe wiederherstellen</string>
     <string name="iap_restore_done">Käufe wiederhergestellt</string>

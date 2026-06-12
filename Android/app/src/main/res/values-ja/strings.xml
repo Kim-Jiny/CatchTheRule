@@ -77,6 +77,7 @@
     <string name="calc_no_history">履歴がありません</string>
     <string name="iap_remove_ads">広告を削除</string>
     <string name="iap_remove_ads_desc">ずっと広告なしで楽しむ</string>
+    <string name="iap_remove_ads_note">広告削除はバナー・全面広告のみに適用されます。ヒントは「広告を見てヒント」リワード広告の視聴で獲得できます。</string>
     <string name="iap_purchased">購入済み</string>
     <string name="iap_restore">購入を復元</string>
     <string name="iap_restore_done">購入を復元しました</string>

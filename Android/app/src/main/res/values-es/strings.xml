@@ -77,6 +77,7 @@
     <string name="calc_no_history">Sin historial</string>
     <string name="iap_remove_ads">Quitar anuncios</string>
     <string name="iap_remove_ads_desc">Disfruta sin anuncios para siempre</string>
+    <string name="iap_remove_ads_note">La eliminación de anuncios se aplica solo a banners e intersticiales. Para obtener pistas, deberás ver el anuncio recompensado “Ver un anuncio por una pista”.</string>
     <string name="iap_purchased">Comprado</string>
     <string name="iap_restore">Restaurar compras</string>
     <string name="iap_restore_done">Compras restauradas</string>

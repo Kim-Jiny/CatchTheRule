@@ -101,25 +101,36 @@ fun SettingsScreen(modifier: Modifier = Modifier) {
             }
 
             // 인앱결제
-            Column(Modifier.fillMaxWidth().card()) {
-                // 광고 제거 — 구매 전에만 노출(구매 시 자동으로 사라짐)
-                if (!billing.removeAdsPurchased) {
-                    SettingsRow(
-                        Icons.Filled.Block, stringResource(R.string.iap_remove_ads),
-                        billing.removeAdsPrice.ifEmpty { stringResource(R.string.iap_loading) },
-                    ) {
-                        activity?.let { billing.purchase(it, BillingManager.REMOVE_ADS_ID) }
+            Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                Column(Modifier.fillMaxWidth().card()) {
+                    // 광고 제거 — 구매 전에만 노출(구매 시 자동으로 사라짐)
+                    if (!billing.removeAdsPurchased) {
+                        SettingsRow(
+                            Icons.Filled.Block, stringResource(R.string.iap_remove_ads),
+                            billing.removeAdsPrice.ifEmpty { stringResource(R.string.iap_loading) },
+                        ) {
+                            activity?.let { billing.purchase(it, BillingManager.REMOVE_ADS_ID) }
+                        }
+                        RowDivider()
+                    }
+                    // 힌트 구매 — 단일 버튼(누르면 5·10·20·50 팝업)
+                    SettingsRow(Icons.Filled.Lightbulb, stringResource(R.string.iap_buy_hints), null) {
+                        showHintShop = true
                     }
                     RowDivider()
+                    // 구매 복원
+                    SettingsRow(Icons.Filled.Restore, stringResource(R.string.iap_restore), null) {
+                        billing.queryPurchases { restored -> iapMsg = if (restored) restoreDoneMsg else restoreNoneMsg }
+                    }
                 }
-                // 힌트 구매 — 단일 버튼(누르면 5·10·20·50 팝업)
-                SettingsRow(Icons.Filled.Lightbulb, stringResource(R.string.iap_buy_hints), null) {
-                    showHintShop = true
-                }
-                RowDivider()
-                // 구매 복원
-                SettingsRow(Icons.Filled.Restore, stringResource(R.string.iap_restore), null) {
-                    billing.queryPurchases { restored -> iapMsg = if (restored) restoreDoneMsg else restoreNoneMsg }
+
+                // 광고 제거 범위 고지(배너·전면만 제거, 보상형 힌트 광고는 유지)
+                if (!billing.removeAdsPurchased) {
+                    Text(
+                        stringResource(R.string.iap_remove_ads_note),
+                        color = AppColors.TextTertiary, fontSize = 12.sp,
+                        modifier = Modifier.padding(horizontal = 4.dp),
+                    )
                 }
             }
 

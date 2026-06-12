@@ -77,6 +77,7 @@
     <string name="calc_no_history">Aucun historique</string>
     <string name="iap_remove_ads">Supprimer les pubs</string>
     <string name="iap_remove_ads_desc">Profitez sans pub pour toujours</string>
+    <string name="iap_remove_ads_note">La suppression des publicités s\'applique uniquement aux bannières et interstitiels. Les indices nécessitent toujours de regarder la publicité avec récompense « Regarder une pub pour un indice ».</string>
     <string name="iap_purchased">Acheté</string>
     <string name="iap_restore">Restaurer les achats</string>
     <string name="iap_restore_done">Achats restaurés</string>
