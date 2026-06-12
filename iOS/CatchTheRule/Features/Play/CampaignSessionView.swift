@@ -64,23 +64,28 @@ struct CampaignSessionView: View {
         VStack(spacing: 0) {
             header(for: puzzle)
 
-            Spacer(minLength: 12)
+            // 가운데 영역만 스크롤: 힌트가 늘어도 키패드·배너는 안 밀린다.
+            // 내용이 짧으면 minHeight + center 로 기존처럼 가운데 정렬.
+            GeometryReader { geo in
+                ScrollView {
+                    VStack(spacing: 28) {
+                        Text(String.loc("play_prompt"))
+                            .font(.system(size: 15))
+                            .foregroundStyle(Theme.textSecondary)
 
-            VStack(spacing: 28) {
-                Text(String.loc("play_prompt"))
-                    .font(.system(size: 15))
-                    .foregroundStyle(Theme.textSecondary)
+                        SequenceDisplay(puzzle: puzzle, typed: typed, reveal: reveal, feedback: feedback)
+                            .modifier(Shake(animatableData: shake))
 
-                SequenceDisplay(puzzle: puzzle, typed: typed, reveal: reveal, feedback: feedback)
-                    .modifier(Shake(animatableData: shake))
-
-                if !shownHints.isEmpty {
-                    hintBox
+                        if !shownHints.isEmpty {
+                            hintBox
+                        }
+                    }
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 12)
+                    .frame(maxWidth: .infinity, minHeight: geo.size.height, alignment: .center)
                 }
+                .scrollIndicators(.hidden)
             }
-            .padding(.horizontal, 20)
-
-            Spacer(minLength: 12)
 
             inputArea(for: puzzle)
                 .padding(.horizontal, 20)

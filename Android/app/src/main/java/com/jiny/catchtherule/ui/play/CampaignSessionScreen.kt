@@ -6,6 +6,8 @@ import androidx.compose.animation.fadeOut
 import androidx.compose.animation.scaleIn
 import androidx.compose.animation.scaleOut
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -136,10 +138,12 @@ fun CampaignSessionScreen(startIndex: Int, onClose: () -> Unit) {
             }
 
             Box(Modifier.weight(1f)) {
+                // 가운데 영역만 스크롤: 힌트가 늘어도 키패드·배너는 안 밀린다.
+                // 내용이 짧으면 CenterVertically 로 기존처럼 가운데 정렬.
                 Column(
-                    Modifier.fillMaxWidth().align(Alignment.Center).padding(horizontal = 20.dp),
+                    Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(horizontal = 20.dp, vertical = 12.dp),
                     horizontalAlignment = Alignment.CenterHorizontally,
-                    verticalArrangement = Arrangement.spacedBy(28.dp),
+                    verticalArrangement = Arrangement.spacedBy(28.dp, Alignment.CenterVertically),
                 ) {
                     Text(stringResource(R.string.play_prompt), color = AppColors.TextSecondary, fontSize = 15.sp)
                     SequenceDisplay(puzzle = puzzle, typed = typed, reveal = reveal, feedback = feedback)
