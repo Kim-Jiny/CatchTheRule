@@ -4,6 +4,7 @@ import SwiftUI
 struct CampaignSessionView: View {
     @Environment(ProgressStore.self) private var progress
     @Environment(StoreManager.self) private var store
+    @Environment(AdsManager.self) private var ads
     @Environment(\.dismiss) private var dismiss
 
     private let puzzles = PuzzleStore.shared.puzzles
@@ -232,6 +233,10 @@ struct CampaignSessionView: View {
             if progress.hapticsOn { Haptics.success() }
             Task {
                 try? await Task.sleep(nanoseconds: 900_000_000)
+                // 스테이지 클리어 전면광고(챕터 2+ / 10% / 3분 쿨다운). 광고제거 구매 시 제외.
+                if !store.removeAdsPurchased {
+                    ads.maybeShowInterstitial(chapter: puzzle.chapter)
+                }
                 advance()
             }
         } else {

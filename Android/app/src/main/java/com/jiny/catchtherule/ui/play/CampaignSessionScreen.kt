@@ -63,6 +63,8 @@ import kotlinx.coroutines.delay
 fun CampaignSessionScreen(startIndex: Int, onClose: () -> Unit) {
     val progress = LocalProgress.current
     val billing = LocalBilling.current
+    val ads = LocalAds.current
+    val activity = LocalContext.current as? Activity
     val store = PuzzleStore.get(LocalContext.current)
     val puzzles = store.puzzles
 
@@ -81,6 +83,11 @@ fun CampaignSessionScreen(startIndex: Int, onClose: () -> Unit) {
     LaunchedEffect(solved) {
         if (solved) {
             delay(900)
+            // 스테이지 클리어 전면광고(챕터 2+ / 챕터별 확률 / 3분 쿨다운). 광고제거 구매 시 제외.
+            val ch = puzzle?.chapter ?: 0
+            if (!billing.removeAdsPurchased && activity != null) {
+                ads.maybeShowInterstitial(activity, ch)
+            }
             index += 1
             typed = ""; hintsShown = 0; feedback = null; reveal = false; solved = false
         }
