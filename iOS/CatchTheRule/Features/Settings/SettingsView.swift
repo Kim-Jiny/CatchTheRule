@@ -92,6 +92,14 @@ struct SettingsView: View {
 
     private var storeSection: some View {
         VStack(spacing: 0) {
+            // 광고 제거 — 구매 전에만 노출(구매 시 자동으로 사라짐)
+            if !store.removeAdsPurchased {
+                SettingsRow(icon: "rectangle.slash", title: String.loc("iap_remove_ads"),
+                            value: store.priceText.isEmpty ? String.loc("iap_loading") : store.priceText) {
+                    Task { _ = await store.purchase() }
+                }
+                Divider().overlay(Theme.stroke)
+            }
             // 힌트 구매 — 단일 버튼(누르면 5·10·20·50 팝업)
             SettingsRow(icon: "lightbulb.fill", title: String.loc("iap_buy_hints"), value: nil) {
                 showHintShop = true

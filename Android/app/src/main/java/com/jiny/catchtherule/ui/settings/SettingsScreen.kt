@@ -50,6 +50,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.jiny.catchtherule.R
+import com.jiny.catchtherule.data.BillingManager
 import com.jiny.catchtherule.data.LocalBilling
 import com.jiny.catchtherule.data.LocalProgress
 import com.jiny.catchtherule.ui.theme.AppColors
@@ -101,6 +102,16 @@ fun SettingsScreen(modifier: Modifier = Modifier) {
 
             // 인앱결제
             Column(Modifier.fillMaxWidth().card()) {
+                // 광고 제거 — 구매 전에만 노출(구매 시 자동으로 사라짐)
+                if (!billing.removeAdsPurchased) {
+                    SettingsRow(
+                        Icons.Filled.Block, stringResource(R.string.iap_remove_ads),
+                        billing.removeAdsPrice.ifEmpty { stringResource(R.string.iap_loading) },
+                    ) {
+                        activity?.let { billing.purchase(it, BillingManager.REMOVE_ADS_ID) }
+                    }
+                    RowDivider()
+                }
                 // 힌트 구매 — 단일 버튼(누르면 5·10·20·50 팝업)
                 SettingsRow(Icons.Filled.Lightbulb, stringResource(R.string.iap_buy_hints), null) {
                     showHintShop = true
