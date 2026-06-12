@@ -5660,38 +5660,31 @@
     "hints": {
       "ko": [
         "증가 폭이 점점 빨라져요.",
-        "유명한 '카탈란 수' 수열이에요.",
-        "1, 2, 5, 14, 42 다음은?"
+        "유명한 '카탈란 수' 수열이에요."
       ],
       "en": [
         "The increase gets faster and faster.",
-        "This is the famous 'Catalan numbers' sequence.",
-        "What comes after 1, 2, 5, 14, 42?"
+        "This is the famous 'Catalan numbers' sequence."
       ],
       "ja": [
         "増加の幅がどんどん速くなります。",
-        "有名な「カタラン数」の数列です。",
-        "1, 2, 5, 14, 42 の次は?"
+        "有名な「カタラン数」の数列です。"
       ],
       "zh": [
         "增长越来越快。",
-        "这是著名的「卡塔兰数」数列。",
-        "1, 2, 5, 14, 42 之后是?"
+        "这是著名的「卡塔兰数」数列。"
       ],
       "es": [
         "El aumento es cada vez más rápido.",
-        "Es la famosa sucesión de los 'números de Catalan'.",
-        "¿Qué sigue después de 1, 2, 5, 14, 42?"
+        "Es la famosa sucesión de los 'números de Catalan'."
       ],
       "fr": [
         "L'augmentation devient de plus en plus rapide.",
-        "C'est la célèbre suite des « nombres de Catalan ».",
-        "Que vient après 1, 2, 5, 14, 42 ?"
+        "C'est la célèbre suite des « nombres de Catalan »."
       ],
       "de": [
         "Der Zuwachs wird immer schneller.",
-        "Das ist die berühmte Folge der 'Catalan-Zahlen'.",
-        "Was kommt nach 1, 2, 5, 14, 42?"
+        "Das ist die berühmte Folge der 'Catalan-Zahlen'."
       ]
     },
     "explanation": {
