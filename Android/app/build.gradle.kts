@@ -22,8 +22,8 @@ android {
         applicationId = "com.jiny.catchtherule"
         minSdk = 24
         targetSdk = 35
-        versionCode = 4
-        versionName = "1.0.0"
+        versionCode = 5
+        versionName = "1.0.1"
     }
 
     signingConfigs {
