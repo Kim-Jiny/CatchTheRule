@@ -197,11 +197,12 @@ class BillingManager(context: Context, private val progress: ProgressStore) {
     }
 
     companion object {
-        const val REMOVE_ADS_ID = "remove_ads"
+        // 상품 ID는 iOS(App Store)와 동일하게 맞춘다.
+        const val REMOVE_ADS_ID = "com.jiny.catchtherule.remove_ads"
         val HINT_TIERS = listOf(5, 10, 20, 50)
-        fun hintsId(n: Int) = "hints_$n"
-        private val HINT_GRANTS = HINT_TIERS.associateBy { hintsId(it) }   // "hints_5" -> 5
-        private const val K_REMOVE_ADS = "remove_ads"
+        fun hintsId(n: Int) = "com.jiny.catchtherule.hints_$n"
+        private val HINT_GRANTS = HINT_TIERS.associateBy { hintsId(it) }   // "com.jiny.catchtherule.hints_5" -> 5
+        private const val K_REMOVE_ADS = "remove_ads"   // 로컬 SharedPreferences 키(상품 ID 아님)
         private const val BASE_URL = "https://duo.jiny.shop"
     }
 }
