@@ -92,6 +92,7 @@ final class StoreManager {
 
     /// 구매 → 로컬 검증된 트랜잭션. 서버 2차검증 + redeem(지급) 수행. 실패/취소 시 nil.
     private func buy(_ product: Product) async -> Transaction? {
+        guard !loading else { return nil }   // 진행 중이면 중복 결제창 방지(연타 대응)
         loading = true
         defer { loading = false }
         do {

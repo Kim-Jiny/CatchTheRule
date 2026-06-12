@@ -43,7 +43,11 @@ class BillingManager(context: Context, private val progress: ProgressStore) {
 
     private val productDetails = mutableMapOf<String, ProductDetails>()
 
+    /** 결제 플로우가 떠 있는 동안 true. 연타로 결제창이 여러 번 뜨는 것을 막는다. */
+    private var purchaseInProgress = false
+
     private val purchasesListener = PurchasesUpdatedListener { result, purchases ->
+        purchaseInProgress = false   // 결제창이 닫혔다(성공/취소/오류) → 잠금 해제
         if (result.responseCode == BillingClient.BillingResponseCode.OK && purchases != null) {
             purchases.forEach { handlePurchase(it) }
         }
@@ -92,6 +96,7 @@ class BillingManager(context: Context, private val progress: ProgressStore) {
 
     /** 기존 구매 조회(앱 시작·복원 공용). onResult = 광고제거 소유 여부. */
     fun queryPurchases(onResult: ((Boolean) -> Unit)? = null) {
+        purchaseInProgress = false   // 포그라운드 복귀(onResume) 등 → 결제창 종료로 간주, 잠금 해제(안전망)
         val params = QueryPurchasesParams.newBuilder()
             .setProductType(BillingClient.ProductType.INAPP)
             .build()
@@ -114,6 +119,7 @@ class BillingManager(context: Context, private val progress: ProgressStore) {
 
     /** 구매 플로우 시작. productId = REMOVE_ADS_ID | HINTS_ID */
     fun purchase(activity: Activity, productId: String) {
+        if (purchaseInProgress) return   // 이미 결제 플로우 진행 중 → 중복 실행 방지
         val pd = productDetails[productId] ?: return
         val params = BillingFlowParams.newBuilder()
             .setProductDetailsParamsList(
@@ -123,7 +129,10 @@ class BillingManager(context: Context, private val progress: ProgressStore) {
                         .build()
                 )
             ).build()
-        client.launchBillingFlow(activity, params)
+        val result = client.launchBillingFlow(activity, params)
+        if (result.responseCode == BillingClient.BillingResponseCode.OK) {
+            purchaseInProgress = true
+        }
     }
 
     private fun handlePurchase(p: Purchase) {
