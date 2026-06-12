@@ -1,6 +1,7 @@
 package com.jiny.catchtherule.ui.home
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -13,14 +14,21 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ExpandMore
 import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.Stroke
@@ -41,10 +49,11 @@ import com.jiny.catchtherule.ui.theme.card
 import kotlin.math.roundToInt
 
 @Composable
-fun HomeScreen(modifier: Modifier = Modifier, onContinue: () -> Unit) {
+fun HomeScreen(modifier: Modifier = Modifier, onPlay: (Int) -> Unit) {
     val progress = LocalProgress.current
     val store = PuzzleStore.get(LocalContext.current)
     val position = store.position(progress.currentIndex.coerceAtMost(store.totalCount - 1))
+    var expanded by remember { mutableStateOf(setOf<Int>()) }
 
     ScreenBackground {
         Column(
@@ -87,7 +96,7 @@ fun HomeScreen(modifier: Modifier = Modifier, onContinue: () -> Unit) {
                 PrimaryButton(
                     text = stringResource(if (progress.isCampaignFinished) R.string.home_retry else R.string.home_continue),
                     icon = Icons.Filled.PlayArrow,
-                    onClick = onContinue,
+                    onClick = { onPlay(progress.currentIndex) },
                 )
             }
 
@@ -97,7 +106,12 @@ fun HomeScreen(modifier: Modifier = Modifier, onContinue: () -> Unit) {
             // 챕터 목록
             SectionHeader(stringResource(R.string.chapters))
             store.chapters.forEach { chapter ->
-                ChapterRow(chapter)
+                ChapterBlock(
+                    chapter = chapter,
+                    expanded = chapter in expanded,
+                    onToggle = { expanded = if (chapter in expanded) expanded - chapter else expanded + chapter },
+                    onReplay = onPlay,
+                )
             }
         }
     }
@@ -123,39 +137,83 @@ private fun ProgressRing(fraction: Float) {
     }
 }
 
+/** 챕터 한 칸. 완료(지나간) 챕터는 탭하면 스테이지 목록을 펼쳐 이전 문제를 다시 풀 수 있다. */
 @Composable
-private fun ChapterRow(chapter: Int) {
+private fun ChapterBlock(
+    chapter: Int,
+    expanded: Boolean,
+    onToggle: () -> Unit,
+    onReplay: (Int) -> Unit,
+) {
     val progress = LocalProgress.current
     val store = PuzzleStore.get(LocalContext.current)
     val items = store.puzzlesIn(chapter)
     val earned = items.sumOf { progress.starCount(it.id) }
     val maxStars = items.size * 3
-    // 해당 챕터의 첫 전역 인덱스에 도달했는지(=잠금 해제). order 는 챕터 내 번호라 전역 인덱스로 비교.
+    // 해당 챕터의 첫 전역 인덱스(=잠금 해제 기준). order 는 챕터 내 번호라 전역 인덱스로 비교.
     val firstGlobal = store.puzzles.indexOfFirst { it.chapter == chapter }.coerceAtLeast(0)
+    val lastGlobal = firstGlobal + items.size - 1
     val unlocked = progress.currentIndex >= firstGlobal
+    val completed = progress.currentIndex > lastGlobal   // 챕터 전체를 지나감
     val starLevel = if (maxStars == 0) 0 else (earned.toDouble() / maxStars * 3).roundToInt()
 
-    Row(
-        Modifier.fillMaxWidth().card().padding(16.dp),
-        verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.spacedBy(14.dp),
-    ) {
-        val badgeBrush = if (unlocked) AppColors.AccentGradient
-        else androidx.compose.ui.graphics.SolidColor(AppColors.Accent.copy(alpha = 0.25f))
-        Box(
-            Modifier.size(46.dp).clip(RoundedCornerShape(14.dp)).background(badgeBrush),
-            contentAlignment = Alignment.Center,
+    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+        Row(
+            Modifier.fillMaxWidth().card()
+                .let { if (completed) it.clickable { onToggle() } else it }
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(14.dp),
         ) {
-            Text("$chapter", color = Color.White, fontSize = 18.sp, fontWeight = FontWeight.Bold)
+            val badgeBrush = if (unlocked) AppColors.AccentGradient
+            else androidx.compose.ui.graphics.SolidColor(AppColors.Accent.copy(alpha = 0.25f))
+            Box(
+                Modifier.size(46.dp).clip(RoundedCornerShape(14.dp)).background(badgeBrush),
+                contentAlignment = Alignment.Center,
+            ) {
+                Text("$chapter", color = Color.White, fontSize = 18.sp, fontWeight = FontWeight.Bold)
+            }
+            Column(Modifier.weight(1f)) {
+                Text(chapterTitle(chapter), color = AppColors.TextPrimary, fontSize = 16.sp, fontWeight = FontWeight.SemiBold)
+                Text(stringResource(R.string.chapter_stages, items.size), color = AppColors.TextTertiary, fontSize = 13.sp)
+            }
+            Column(horizontalAlignment = Alignment.End, verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                StarRow(starLevel)
+                Text("$earned/$maxStars", color = AppColors.TextTertiary, fontSize = 12.sp)
+            }
+            if (completed) {
+                Icon(
+                    Icons.Filled.ExpandMore, null, tint = AppColors.TextTertiary,
+                    modifier = Modifier.size(20.dp).rotate(if (expanded) 180f else 0f),
+                )
+            }
         }
-        Column(Modifier.weight(1f)) {
-            Text(chapterTitle(chapter), color = AppColors.TextPrimary, fontSize = 16.sp, fontWeight = FontWeight.SemiBold)
-            Text(stringResource(R.string.chapter_stages, items.size), color = AppColors.TextTertiary, fontSize = 13.sp)
+
+        if (completed && expanded) {
+            items.forEachIndexed { offset, puzzle ->
+                StageReplayRow(
+                    stage = offset + 1,
+                    stars = progress.starCount(puzzle.id),
+                    onClick = { onReplay(firstGlobal + offset) },
+                )
+            }
         }
-        Column(horizontalAlignment = Alignment.End, verticalArrangement = Arrangement.spacedBy(4.dp)) {
-            StarRow(starLevel)
-            Text("$earned/$maxStars", color = AppColors.TextTertiary, fontSize = 12.sp)
-        }
+    }
+}
+
+/** 완료된 챕터의 스테이지 한 줄 — 누르면 그 스테이지부터 다시 플레이. */
+@Composable
+private fun StageReplayRow(stage: Int, stars: Int, onClick: () -> Unit) {
+    Row(
+        Modifier.fillMaxWidth().padding(start = 12.dp).card().clickable { onClick() }
+            .padding(horizontal = 16.dp, vertical = 12.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(12.dp),
+    ) {
+        Text(stringResource(R.string.stage_label, stage), color = AppColors.TextPrimary, fontSize = 14.sp, fontWeight = FontWeight.SemiBold)
+        StarRow(stars, size = 12)
+        Box(Modifier.weight(1f))
+        Icon(Icons.Filled.Refresh, null, tint = AppColors.Accent2, modifier = Modifier.size(16.dp))
     }
 }
 

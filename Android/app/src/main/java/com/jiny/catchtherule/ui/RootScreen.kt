@@ -31,7 +31,7 @@ import com.jiny.catchtherule.ui.settings.SettingsScreen
 import com.jiny.catchtherule.ui.theme.AppColors
 
 private sealed interface FullScreen {
-    data object Campaign : FullScreen
+    data class Campaign(val startIndex: Int) : FullScreen
     data object TimeAttack : FullScreen
 }
 
@@ -42,9 +42,9 @@ fun RootScreen() {
     var fullScreen by remember { mutableStateOf<FullScreen?>(null) }
     var selectedTab by remember { mutableIntStateOf(0) }
 
-    when (fullScreen) {
-        FullScreen.Campaign -> {
-            CampaignSessionScreen(onClose = { fullScreen = null })
+    when (val fs = fullScreen) {
+        is FullScreen.Campaign -> {
+            CampaignSessionScreen(startIndex = fs.startIndex, onClose = { fullScreen = null })
             return
         }
         FullScreen.TimeAttack -> {
@@ -85,7 +85,7 @@ fun RootScreen() {
         when (selectedTab) {
             0 -> HomeScreen(
                 modifier = Modifier.fillMaxSize().padding(padding),
-                onContinue = { fullScreen = FullScreen.Campaign },
+                onPlay = { startIndex -> fullScreen = FullScreen.Campaign(startIndex) },
             )
             1 -> ChallengeScreen(
                 modifier = Modifier.fillMaxSize().padding(padding),

@@ -60,13 +60,13 @@ import com.jiny.catchtherule.ui.theme.card
 import kotlinx.coroutines.delay
 
 @Composable
-fun CampaignSessionScreen(onClose: () -> Unit) {
+fun CampaignSessionScreen(startIndex: Int, onClose: () -> Unit) {
     val progress = LocalProgress.current
     val billing = LocalBilling.current
     val store = PuzzleStore.get(LocalContext.current)
     val puzzles = store.puzzles
 
-    var index by remember { mutableIntStateOf(progress.currentIndex) }
+    var index by remember { mutableIntStateOf(startIndex) }
     var typed by remember { mutableStateOf("") }
     var hintsShown by remember { mutableIntStateOf(0) }
     var feedback by remember { mutableStateOf<AnswerFeedback?>(null) }

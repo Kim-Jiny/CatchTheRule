@@ -3,6 +3,8 @@ import SwiftUI
 struct HomeView: View {
     @Environment(ProgressStore.self) private var progress
     @State private var playing = false
+    @State private var startIndex = 0
+    @State private var expandedChapters: Set<Int> = []
 
     private var position: (chapter: Int, stage: Int)? {
         PuzzleStore.shared.position(of: min(progress.currentIndex, PuzzleStore.shared.totalCount - 1))
@@ -25,7 +27,7 @@ struct HomeView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar(.hidden, for: .navigationBar)
             .fullScreenCover(isPresented: $playing) {
-                CampaignSessionView(startIndex: progress.currentIndex)
+                CampaignSessionView(startIndex: startIndex)
             }
         }
     }
@@ -88,6 +90,7 @@ struct HomeView: View {
 
             PrimaryButton(String.loc(progress.isCampaignFinished ? "home_retry" : "home_continue"),
                           systemImage: "play.fill") {
+                startIndex = progress.currentIndex
                 playing = true
             }
         }
@@ -99,18 +102,43 @@ struct HomeView: View {
         VStack(alignment: .leading, spacing: 12) {
             SectionHeader(title: String.loc("chapters"))
             ForEach(PuzzleStore.shared.chapters, id: \.self) { chapter in
-                chapterRow(chapter)
+                chapterBlock(chapter)
             }
         }
     }
 
-    private func chapterRow(_ chapter: Int) -> some View {
+    /// 챕터 한 칸. 완료(지나간) 챕터는 탭하면 스테이지 목록을 펼쳐 이전 문제를 다시 풀 수 있다.
+    @ViewBuilder
+    private func chapterBlock(_ chapter: Int) -> some View {
         let items = PuzzleStore.shared.puzzles(in: chapter)
+        // 해당 챕터의 첫 전역 인덱스(=잠금 해제 기준). order 는 챕터 내 번호라 전역 인덱스로 비교해야 함.
+        let firstGlobal = PuzzleStore.shared.puzzles.firstIndex { $0.chapter == chapter } ?? 0
+        let lastGlobal = firstGlobal + items.count - 1
+        let unlocked = progress.currentIndex >= firstGlobal
+        let completed = progress.currentIndex > lastGlobal   // 챕터 전체를 지나감
+        let expanded = expandedChapters.contains(chapter)
+
+        VStack(spacing: 10) {
+            Button {
+                guard completed else { return }
+                withAnimation(.easeInOut(duration: 0.2)) {
+                    if expanded { expandedChapters.remove(chapter) } else { expandedChapters.insert(chapter) }
+                }
+            } label: {
+                chapterRow(chapter, items: items, unlocked: unlocked, completed: completed, expanded: expanded)
+            }
+            .buttonStyle(.plain)
+            .disabled(!completed)
+
+            if completed && expanded {
+                stageList(items: items, firstGlobal: firstGlobal)
+            }
+        }
+    }
+
+    private func chapterRow(_ chapter: Int, items: [Puzzle], unlocked: Bool, completed: Bool, expanded: Bool) -> some View {
         let earned = items.reduce(0) { $0 + progress.starCount(for: $1.id) }
         let maxStars = items.count * 3
-        // 해당 챕터의 첫 전역 인덱스에 도달했는지(=잠금 해제). order 는 챕터 내 번호라 전역 인덱스로 비교해야 함.
-        let firstGlobal = PuzzleStore.shared.puzzles.firstIndex { $0.chapter == chapter } ?? 0
-        let unlocked = progress.currentIndex >= firstGlobal
         return HStack(spacing: 14) {
             ZStack {
                 RoundedRectangle(cornerRadius: 14, style: .continuous)
@@ -135,9 +163,45 @@ struct HomeView: View {
                     .font(.system(size: 12))
                     .foregroundStyle(Theme.textTertiary)
             }
+            if completed {
+                Image(systemName: "chevron.down")
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundStyle(Theme.textTertiary)
+                    .rotationEffect(.degrees(expanded ? 180 : 0))
+            }
         }
         .padding(16)
         .card()
+    }
+
+    /// 완료된 챕터의 스테이지 목록 — 각 항목을 누르면 그 스테이지부터 다시 플레이.
+    private func stageList(items: [Puzzle], firstGlobal: Int) -> some View {
+        VStack(spacing: 8) {
+            ForEach(Array(items.enumerated()), id: \.element.id) { offset, puzzle in
+                Button {
+                    startIndex = firstGlobal + offset
+                    playing = true
+                } label: {
+                    HStack(spacing: 12) {
+                        Text(String.loc("stage_label", offset + 1))
+                            .font(.system(size: 14, weight: .semibold))
+                            .foregroundStyle(Theme.textPrimary)
+                            .frame(minWidth: 64, alignment: .leading)
+                        StarRow(count: progress.starCount(for: puzzle.id), size: 12)
+                        Spacer()
+                        Image(systemName: "arrow.clockwise")
+                            .font(.system(size: 13, weight: .semibold))
+                            .foregroundStyle(Theme.accent2)
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 12)
+                    .card()
+                }
+                .buttonStyle(.plain)
+            }
+        }
+        .padding(.leading, 12)
+        .transition(.opacity.combined(with: .move(edge: .top)))
     }
 
     private func chapterTitle(_ chapter: Int) -> String {
