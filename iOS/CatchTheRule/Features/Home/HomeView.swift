@@ -402,6 +402,15 @@ struct CampaignTrackView: View {
         if track == "shapes" {
             switch chapter {
             case 1: return String.loc("shape_chapter_1")
+            case 2: return String.loc("shape_chapter_2")
+            case 3: return String.loc("shape_chapter_3")
+            case 4: return String.loc("shape_chapter_4")
+            case 5: return String.loc("shape_chapter_5")
+            case 6: return String.loc("shape_chapter_6")
+            case 7: return String.loc("shape_chapter_7")
+            case 8: return String.loc("shape_chapter_8")
+            case 9: return String.loc("shape_chapter_9")
+            case 10: return String.loc("shape_chapter_10")
             default: return String.loc("chapter_label", chapter)
             }
         }

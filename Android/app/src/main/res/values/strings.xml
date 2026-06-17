@@ -30,6 +30,15 @@
     <string name="mode_numbers">Find the Rule</string>
     <string name="mode_shapes">Rules in Shapes</string>
     <string name="shape_chapter_1">Shapes &amp; Numbers</string>
+    <string name="shape_chapter_2">Sums &amp; Differences</string>
+    <string name="shape_chapter_3">Products &amp; Patterns</string>
+    <string name="shape_chapter_4">Rotation &amp; Symmetry</string>
+    <string name="shape_chapter_5">Hidden Rules</string>
+    <string name="shape_chapter_6">Final Challenge</string>
+    <string name="shape_chapter_7">Expert Rules</string>
+    <string name="shape_chapter_8">Grandmaster</string>
+    <string name="shape_chapter_9">Legendary</string>
+    <string name="shape_chapter_10">Nonsense</string>
     <string name="select_mode">Select a Mode</string>
     <string name="mode_complete">Complete</string>
     <string name="mode_progress">%d%% done</string>

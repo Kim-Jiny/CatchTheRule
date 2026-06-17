@@ -30,6 +30,15 @@
     <string name="mode_numbers">Finde die Regel</string>
     <string name="mode_shapes">Regeln in Formen</string>
     <string name="shape_chapter_1">Formen &amp; Zahlen</string>
+    <string name="shape_chapter_2">Summen &amp; Differenzen</string>
+    <string name="shape_chapter_3">Produkte &amp; Muster</string>
+    <string name="shape_chapter_4">Drehung &amp; Symmetrie</string>
+    <string name="shape_chapter_5">Versteckte Regeln</string>
+    <string name="shape_chapter_6">Letzte Herausforderung</string>
+    <string name="shape_chapter_7">Profi-Regeln</string>
+    <string name="shape_chapter_8">Großmeister</string>
+    <string name="shape_chapter_9">Legendär</string>
+    <string name="shape_chapter_10">Verrückt</string>
     <string name="select_mode">Modus wählen</string>
     <string name="mode_complete">Fertig</string>
     <string name="mode_progress">%d%% fertig</string>

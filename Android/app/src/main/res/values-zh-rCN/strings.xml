@@ -30,6 +30,15 @@
     <string name="mode_numbers">找规律</string>
     <string name="mode_shapes">图形找规律</string>
     <string name="shape_chapter_1">图形与数字</string>
+    <string name="shape_chapter_2">和与差</string>
+    <string name="shape_chapter_3">乘法规律</string>
+    <string name="shape_chapter_4">旋转与对称</string>
+    <string name="shape_chapter_5">隐藏的规律</string>
+    <string name="shape_chapter_6">最终挑战</string>
+    <string name="shape_chapter_7">高手规律</string>
+    <string name="shape_chapter_8">大师级</string>
+    <string name="shape_chapter_9">传说级</string>
+    <string name="shape_chapter_10">脑筋急转弯</string>
     <string name="select_mode">选择模式</string>
     <string name="mode_complete">完成</string>
     <string name="mode_progress">%d%% 完成</string>

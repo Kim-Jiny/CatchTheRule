@@ -150,7 +150,10 @@ struct FigureNumberView: View {
             let verts = [CGPoint(x: side / 2, y: lo + 6),
                          CGPoint(x: hi - 6, y: hi - 4),
                          CGPoint(x: lo + 6, y: hi - 4)]
-            return n > 3 ? verts + [center] : Array(verts.prefix(n))
+            // 삼각형 무게중심은 박스 정중앙보다 아래 → 중앙 슬롯을 꼭짓점 평균으로.
+            let triCenter = CGPoint(x: side / 2,
+                                    y: verts.reduce(0) { $0 + $1.y } / CGFloat(verts.count))
+            return n > 3 ? verts + [triCenter] : Array(verts.prefix(n))
         }
     }
 }

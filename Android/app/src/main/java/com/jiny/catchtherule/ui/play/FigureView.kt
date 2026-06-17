@@ -169,7 +169,9 @@ private fun anchorFractions(shape: String, n: Int): List<Pair<Float, Float>> {
         }
         else -> { // triangle
             val verts = listOf(0.5f to 0.18f, 0.80f to 0.80f, 0.20f to 0.80f)
-            if (n > 3) verts + center else verts.take(n)
+            // 삼각형 무게중심은 박스 정중앙(0.5)보다 아래 → 중앙 슬롯을 꼭짓점 평균으로.
+            val triCenter = 0.5f to (verts.sumOf { it.second.toDouble() } / verts.size).toFloat()
+            if (n > 3) verts + triCenter else verts.take(n)
         }
     }
 }

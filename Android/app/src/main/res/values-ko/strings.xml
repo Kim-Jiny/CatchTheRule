@@ -30,6 +30,15 @@
     <string name="mode_numbers">규칙찾기</string>
     <string name="mode_shapes">도형에서 규칙찾기</string>
     <string name="shape_chapter_1">도형과 숫자</string>
+    <string name="shape_chapter_2">합과 차</string>
+    <string name="shape_chapter_3">곱셈의 규칙</string>
+    <string name="shape_chapter_4">회전과 대칭</string>
+    <string name="shape_chapter_5">숨은 규칙</string>
+    <string name="shape_chapter_6">마지막 도전</string>
+    <string name="shape_chapter_7">고수의 규칙</string>
+    <string name="shape_chapter_8">최상급</string>
+    <string name="shape_chapter_9">전설</string>
+    <string name="shape_chapter_10">넌센스</string>
     <string name="select_mode">모드 선택</string>
     <string name="mode_complete">완료</string>
     <string name="mode_progress">%d%% 완료</string>

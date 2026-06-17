@@ -6549,13 +6549,13 @@
     "inputType": "keypad",
     "choices": null,
     "hints": {
-      "ko": ["앞의 두 도형은 완성된 예시예요.", "가운데 수 = 세 꼭짓점의 합 (5+2+3=10).", "마지막 삼각형: 6+2+3은?"],
-      "en": ["The first two figures are completed examples.", "Center = sum of the three corners (5+2+3=10).", "Last triangle: what is 6+2+3?"],
-      "ja": ["最初の2つは完成した例です。", "真ん中 = 3頂点の和 (5+2+3=10)。", "最後の三角形: 6+2+3 は?"],
-      "zh": ["前两个是完整的示例。", "中间 = 三个顶点之和 (5+2+3=10)。", "最后一个三角形：6+2+3 是多少？"],
-      "es": ["Las dos primeras figuras son ejemplos completos.", "Centro = suma de las tres esquinas (5+2+3=10).", "Último triángulo: ¿cuánto es 6+2+3?"],
-      "fr": ["Les deux premières figures sont des exemples complets.", "Centre = somme des trois sommets (5+2+3=10).", "Dernier triangle : combien font 6+2+3 ?"],
-      "de": ["Die ersten beiden Figuren sind vollständige Beispiele.", "Mitte = Summe der drei Ecken (5+2+3=10).", "Letztes Dreieck: Was ist 6+2+3?"]
+      "ko": ["가운데 수 = 세 꼭짓점의 합 (5+2+3=10).", "마지막 삼각형: 6+2+3은?"],
+      "en": ["Center = sum of the three corners (5+2+3=10).", "Last triangle: what is 6+2+3?"],
+      "ja": ["真ん中 = 3頂点の和 (5+2+3=10)。", "最後の三角形: 6+2+3 は?"],
+      "zh": ["中间 = 三个顶点之和 (5+2+3=10)。", "最后一个三角形：6+2+3 是多少？"],
+      "es": ["Centro = suma de las tres esquinas (5+2+3=10).", "Último triángulo: ¿cuánto es 6+2+3?"],
+      "fr": ["Centre = somme des trois sommets (5+2+3=10).", "Dernier triangle : combien font 6+2+3 ?"],
+      "de": ["Mitte = Summe der drei Ecken (5+2+3=10).", "Letztes Dreieck: Was ist 6+2+3?"]
     },
     "explanation": {
       "ko": "가운데 = 세 꼭짓점의 합. 6+2+3 = 11 (예: 5+2+3=10, 4+1+2=7)",
@@ -6582,13 +6582,13 @@
     "inputType": "keypad",
     "choices": null,
     "hints": {
-      "ko": ["앞의 두 원은 완성된 예시예요.", "마주보는 두 수의 합이 같아요 (8+6 = 5+9 = 14).", "마지막 원: 10+7=17, 4+?=17"],
-      "en": ["The first two circles are completed examples.", "Opposite numbers share the same sum (8+6 = 5+9 = 14).", "Last circle: 10+7=17, 4+?=17"],
-      "ja": ["最初の2つの円は完成した例です。", "向かい合う数の和が同じ (8+6 = 5+9 = 14)。", "最後の円: 10+7=17, 4+?=17"],
-      "zh": ["前两个圆是完整示例。", "相对两数之和相同 (8+6 = 5+9 = 14)。", "最后一个圆：10+7=17，4+?=17"],
-      "es": ["Los dos primeros círculos son ejemplos completos.", "Los números opuestos suman lo mismo (8+6 = 5+9 = 14).", "Último círculo: 10+7=17, 4+?=17"],
-      "fr": ["Les deux premiers cercles sont des exemples complets.", "Les nombres opposés ont la même somme (8+6 = 5+9 = 14).", "Dernier cercle : 10+7=17, 4+?=17"],
-      "de": ["Die ersten beiden Kreise sind vollständige Beispiele.", "Gegenüberliegende Zahlen haben dieselbe Summe (8+6 = 5+9 = 14).", "Letzter Kreis: 10+7=17, 4+?=17"]
+      "ko": ["마주보는 두 수의 합이 같아요 (8+6 = 5+9 = 14).", "마지막 원: 10+7=17, 4+?=17"],
+      "en": ["Opposite numbers share the same sum (8+6 = 5+9 = 14).", "Last circle: 10+7=17, 4+?=17"],
+      "ja": ["向かい合う数の和が同じ (8+6 = 5+9 = 14)。", "最後の円: 10+7=17, 4+?=17"],
+      "zh": ["相对两数之和相同 (8+6 = 5+9 = 14)。", "最后一个圆：10+7=17，4+?=17"],
+      "es": ["Los números opuestos suman lo mismo (8+6 = 5+9 = 14).", "Último círculo: 10+7=17, 4+?=17"],
+      "fr": ["Les nombres opposés ont la même somme (8+6 = 5+9 = 14).", "Dernier cercle : 10+7=17, 4+?=17"],
+      "de": ["Gegenüberliegende Zahlen haben dieselbe Summe (8+6 = 5+9 = 14).", "Letzter Kreis: 10+7=17, 4+?=17"]
     },
     "explanation": {
       "ko": "마주보는 두 수의 합이 같다. 4+13 = 10+7 = 17 (예: 8+6=5+9=14, 7+5=3+9=12)",
@@ -6615,13 +6615,13 @@
     "inputType": "keypad",
     "choices": null,
     "hints": {
-      "ko": ["앞 두 사각형은 완성된 예시예요.", "가운데 = 네 모서리의 합 (2+3+4+5=14).", "마지막: 3+1+2+4는?"],
-      "en": ["The first two squares are completed examples.", "Center = sum of the four corners (2+3+4+5=14).", "Last one: what is 3+1+2+4?"],
-      "ja": ["最初の2つの四角は完成した例です。", "真ん中 = 4つの角の和 (2+3+4+5=14)。", "最後: 3+1+2+4 は?"],
-      "zh": ["前两个方块是完整示例。", "中间 = 四角之和 (2+3+4+5=14)。", "最后一个：3+1+2+4 是多少？"],
-      "es": ["Los dos primeros cuadrados son ejemplos completos.", "Centro = suma de las cuatro esquinas (2+3+4+5=14).", "El último: ¿cuánto es 3+1+2+4?"],
-      "fr": ["Les deux premiers carrés sont des exemples complets.", "Centre = somme des quatre coins (2+3+4+5=14).", "Le dernier : combien font 3+1+2+4 ?"],
-      "de": ["Die ersten beiden Quadrate sind vollständige Beispiele.", "Mitte = Summe der vier Ecken (2+3+4+5=14).", "Letztes: Was ist 3+1+2+4?"]
+      "ko": ["가운데 = 네 모서리의 합 (2+3+4+5=14).", "마지막: 3+1+2+4는?"],
+      "en": ["Center = sum of the four corners (2+3+4+5=14).", "Last one: what is 3+1+2+4?"],
+      "ja": ["真ん中 = 4つの角の和 (2+3+4+5=14)。", "最後: 3+1+2+4 は?"],
+      "zh": ["中间 = 四角之和 (2+3+4+5=14)。", "最后一个：3+1+2+4 是多少？"],
+      "es": ["Centro = suma de las cuatro esquinas (2+3+4+5=14).", "El último: ¿cuánto es 3+1+2+4?"],
+      "fr": ["Centre = somme des quatre coins (2+3+4+5=14).", "Le dernier : combien font 3+1+2+4 ?"],
+      "de": ["Mitte = Summe der vier Ecken (2+3+4+5=14).", "Letztes: Was ist 3+1+2+4?"]
     },
     "explanation": {
       "ko": "가운데 = 네 모서리의 합. 3+1+2+4 = 10 (예: 2+3+4+5=14)",
@@ -6712,6 +6712,6660 @@
       "es": "El número de figuras aumenta de 1 en 1: 1, 2, 3, 4",
       "fr": "Le nombre de formes augmente de 1 : 1, 2, 3, 4",
       "de": "Die Anzahl der Formen steigt um 1: 1, 2, 3, 4"
+    }
+  },
+  {
+    "id": "sh2_s01",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 2,
+    "order": 1,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "3",
+          "4",
+          "5",
+          "12"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "6",
+          "1",
+          "9"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          null,
+          "4",
+          "2",
+          "11"
+        ]
+      }
+    ],
+    "answer": "5",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "빈 꼭짓점 = 가운데 − 두 꼭짓점 (3+4+5=12).",
+        "마지막 삼각형: 11−4−2는?"
+      ],
+      "en": [
+        "Empty corner = center − two corners (3+4+5=12).",
+        "Last triangle: what is 11−4−2?"
+      ],
+      "ja": [
+        "空きの頂点 = 真ん中 − 2頂点 (3+4+5=12)。",
+        "最後の三角形: 11−4−2 は?"
+      ],
+      "zh": [
+        "空缺顶点 = 中间 − 两个顶点（3+4+5=12）。",
+        "最后一个三角形：11−4−2 是多少？"
+      ],
+      "es": [
+        "Esquina vacía = centro − dos esquinas (3+4+5=12).",
+        "Último triángulo: ¿cuánto es 11−4−2?"
+      ],
+      "fr": [
+        "Sommet vide = centre − deux sommets (3+4+5=12).",
+        "Dernier triangle : combien font 11−4−2 ?"
+      ],
+      "de": [
+        "Leere Ecke = Mitte − zwei Ecken (3+4+5=12).",
+        "Letztes Dreieck: Was ist 11−4−2?"
+      ]
+    },
+    "explanation": {
+      "ko": "빈 꼭짓점 = 가운데 − 두 꼭짓점. 11 − 4 − 2 = 5 (예: 3+4+5=12, 2+6+1=9)",
+      "en": "Empty corner = center − two corners. 11 − 4 − 2 = 5 (e.g. 3+4+5=12, 2+6+1=9)",
+      "ja": "空きの頂点 = 真ん中 − 2頂点。11 − 4 − 2 = 5 (例: 3+4+5=12, 2+6+1=9)",
+      "zh": "空缺顶点 = 中间 − 两个顶点。11 − 4 − 2 = 5（例：3+4+5=12，2+6+1=9）",
+      "es": "Esquina vacía = centro − dos esquinas. 11 − 4 − 2 = 5 (ej.: 3+4+5=12, 2+6+1=9)",
+      "fr": "Sommet vide = centre − deux sommets. 11 − 4 − 2 = 5 (ex. : 3+4+5=12, 2+6+1=9)",
+      "de": "Leere Ecke = Mitte − zwei Ecken. 11 − 4 − 2 = 5 (z. B. 3+4+5=12, 2+6+1=9)"
+    }
+  },
+  {
+    "id": "sh2_s02",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 2,
+    "order": 2,
+    "figures": [
+      {
+        "shape": "circle",
+        "slots": [
+          "1",
+          "3",
+          "5",
+          "7"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "2",
+          "4",
+          "6",
+          "8"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "3",
+          "5",
+          "7",
+          null
+        ]
+      }
+    ],
+    "answer": "9",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "시계 방향으로 2씩 커진다 (1→3→5→7).",
+        "마지막 원: 7+2는?"
+      ],
+      "en": [
+        "Each step adds 2 clockwise (1→3→5→7).",
+        "Last circle: what is 7+2?"
+      ],
+      "ja": [
+        "時計回りに2ずつ増える (1→3→5→7)。",
+        "最後の円: 7+2 は?"
+      ],
+      "zh": [
+        "顺时针每次加2（1→3→5→7）。",
+        "最后一个圆：7+2 是多少？"
+      ],
+      "es": [
+        "Suma 2 en sentido horario (1→3→5→7).",
+        "Último círculo: ¿cuánto es 7+2?"
+      ],
+      "fr": [
+        "Ajoute 2 dans le sens horaire (1→3→5→7).",
+        "Dernier cercle : combien font 7+2 ?"
+      ],
+      "de": [
+        "Im Uhrzeigersinn je +2 (1→3→5→7).",
+        "Letzter Kreis: Was ist 7+2?"
+      ]
+    },
+    "explanation": {
+      "ko": "시계 방향으로 2씩 커진다. 3→5→7→9 (예: 1→3→5→7, 2→4→6→8)",
+      "en": "Each step adds 2 clockwise. 3→5→7→9 (e.g. 1→3→5→7, 2→4→6→8)",
+      "ja": "時計回りに2ずつ増える。3→5→7→9 (例: 1→3→5→7, 2→4→6→8)",
+      "zh": "顺时针每次加2。3→5→7→9（例：1→3→5→7，2→4→6→8）",
+      "es": "Suma 2 en sentido horario. 3→5→7→9 (ej.: 1→3→5→7, 2→4→6→8)",
+      "fr": "Ajoute 2 dans le sens horaire. 3→5→7→9 (ex. : 1→3→5→7, 2→4→6→8)",
+      "de": "Im Uhrzeigersinn je +2. 3→5→7→9 (z. B. 1→3→5→7, 2→4→6→8)"
+    }
+  },
+  {
+    "id": "sh2_s03",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 2,
+    "order": 3,
+    "figures": [
+      {
+        "shape": "square",
+        "slots": [
+          "3",
+          "5",
+          "6",
+          "4"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "2",
+          "7",
+          "8",
+          "3"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "4",
+          "6",
+          null,
+          "5"
+        ]
+      }
+    ],
+    "answer": "7",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "대각선 두 꼭짓점의 합이 같다 (3+6=5+4=9).",
+        "마지막 사각형: 11−4는?"
+      ],
+      "en": [
+        "The two diagonal sums are equal (3+6=5+4=9).",
+        "Last square: what is 11−4?"
+      ],
+      "ja": [
+        "対角線の2頂点の和が等しい (3+6=5+4=9)。",
+        "最後の四角形: 11−4 は?"
+      ],
+      "zh": [
+        "对角线两顶点之和相等（3+6=5+4=9）。",
+        "最后一个正方形：11−4 是多少？"
+      ],
+      "es": [
+        "Las dos sumas diagonales son iguales (3+6=5+4=9).",
+        "Último cuadrado: ¿cuánto es 11−4?"
+      ],
+      "fr": [
+        "Les deux sommes diagonales sont égales (3+6=5+4=9).",
+        "Dernier carré : combien font 11−4 ?"
+      ],
+      "de": [
+        "Die beiden Diagonalsummen sind gleich (3+6=5+4=9).",
+        "Letztes Quadrat: Was ist 11−4?"
+      ]
+    },
+    "explanation": {
+      "ko": "대각선 두 꼭짓점의 합이 같다. 4+7 = 6+5 = 11 (예: 3+6=5+4=9, 2+8=7+3=10)",
+      "en": "The two diagonal sums are equal. 4+7 = 6+5 = 11 (e.g. 3+6=5+4=9, 2+8=7+3=10)",
+      "ja": "対角線の2頂点の和が等しい。4+7 = 6+5 = 11 (例: 3+6=5+4=9, 2+8=7+3=10)",
+      "zh": "对角线两顶点之和相等。4+7 = 6+5 = 11（例：3+6=5+4=9，2+8=7+3=10）",
+      "es": "Las dos sumas diagonales son iguales. 4+7 = 6+5 = 11 (ej.: 3+6=5+4=9, 2+8=7+3=10)",
+      "fr": "Les deux sommes diagonales sont égales. 4+7 = 6+5 = 11 (ex. : 3+6=5+4=9, 2+8=7+3=10)",
+      "de": "Die beiden Diagonalsummen sind gleich. 4+7 = 6+5 = 11 (z. B. 3+6=5+4=9, 2+8=7+3=10)"
+    }
+  },
+  {
+    "id": "sh2_s04",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 2,
+    "order": 4,
+    "figureTokens": [
+      {
+        "shape": "arrow",
+        "rotation": 0
+      },
+      {
+        "shape": "arrow",
+        "rotation": 270
+      },
+      {
+        "shape": "arrow",
+        "rotation": 180
+      },
+      {
+        "shape": "arrow",
+        "rotation": 90
+      },
+      null
+    ],
+    "figureChoices": [
+      {
+        "shape": "arrow",
+        "rotation": 0,
+        "code": "up"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 90,
+        "code": "right"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 180,
+        "code": "down"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 270,
+        "code": "left"
+      }
+    ],
+    "answer": "up",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "화살표 방향이 어떻게 바뀌나요?",
+        "반시계 방향으로 90°씩 돌아요.",
+        "다음에 무엇이 올지 생각해 보세요."
+      ],
+      "en": [
+        "How does the arrow turn?",
+        "It rotates 90° counter-clockwise each step.",
+        "Think about what comes next."
+      ],
+      "ja": [
+        "矢印の向きはどう変わる？",
+        "反時計回りに90°ずつ回ります。",
+        "次に何が来るか考えてみましょう。"
+      ],
+      "zh": [
+        "箭头方向怎么变？",
+        "每次逆时针转90°。",
+        "想一想下一个是什么。"
+      ],
+      "es": [
+        "¿Cómo gira la flecha?",
+        "Gira 90° en sentido antihorario cada paso.",
+        "Piensa qué viene después."
+      ],
+      "fr": [
+        "Comment tourne la flèche ?",
+        "Elle tourne de 90° dans le sens antihoraire.",
+        "Réfléchis à ce qui suit."
+      ],
+      "de": [
+        "Wie dreht sich der Pfeil?",
+        "Es dreht sich um 90° gegen den Uhrzeigersinn.",
+        "Überlege, was als Nächstes kommt."
+      ]
+    },
+    "explanation": {
+      "ko": "화살표가 반시계 방향으로 90°씩 회전: 위→왼쪽→아래→오른쪽",
+      "en": "The arrow rotates 90° counter-clockwise: up→left→down→right",
+      "ja": "矢印が反時計回りに90°ずつ回転: 上→左→下→右",
+      "zh": "箭头逆时针每次转90°：上→左→下→右",
+      "es": "La flecha gira 90° en sentido antihorario: arriba→izquierda→abajo→derecha",
+      "fr": "La flèche tourne de 90° dans le sens antihoraire : haut→gauche→bas→droite",
+      "de": "Der Pfeil dreht sich um 90° gegen den Uhrzeigersinn: oben→links→unten→rechts"
+    }
+  },
+  {
+    "id": "sh2_s05",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 2,
+    "order": 5,
+    "figures": [
+      {
+        "shape": "circle",
+        "slots": [
+          "12",
+          "9",
+          "6",
+          "3"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "10",
+          "7",
+          "4",
+          "1"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "11",
+          "8",
+          "5",
+          null
+        ]
+      }
+    ],
+    "answer": "2",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "시계 방향으로 3씩 작아진다 (12→9→6→3).",
+        "마지막 원: 5−3은?"
+      ],
+      "en": [
+        "Each step subtracts 3 clockwise (12→9→6→3).",
+        "Last circle: what is 5−3?"
+      ],
+      "ja": [
+        "時計回りに3ずつ減る (12→9→6→3)。",
+        "最後の円: 5−3 は?"
+      ],
+      "zh": [
+        "顺时针每次减3（12→9→6→3）。",
+        "最后一个圆：5−3 是多少？"
+      ],
+      "es": [
+        "Resta 3 en sentido horario (12→9→6→3).",
+        "Último círculo: ¿cuánto es 5−3?"
+      ],
+      "fr": [
+        "Soustrait 3 dans le sens horaire (12→9→6→3).",
+        "Dernier cercle : combien font 5−3 ?"
+      ],
+      "de": [
+        "Im Uhrzeigersinn je −3 (12→9→6→3).",
+        "Letzter Kreis: Was ist 5−3?"
+      ]
+    },
+    "explanation": {
+      "ko": "시계 방향으로 3씩 작아진다. 11→8→5→2 (예: 12→9→6→3, 10→7→4→1)",
+      "en": "Each step subtracts 3 clockwise. 11→8→5→2 (e.g. 12→9→6→3, 10→7→4→1)",
+      "ja": "時計回りに3ずつ減る。11→8→5→2 (例: 12→9→6→3, 10→7→4→1)",
+      "zh": "顺时针每次减3。11→8→5→2（例：12→9→6→3，10→7→4→1）",
+      "es": "Resta 3 en sentido horario. 11→8→5→2 (ej.: 12→9→6→3, 10→7→4→1)",
+      "fr": "Soustrait 3 dans le sens horaire. 11→8→5→2 (ex. : 12→9→6→3, 10→7→4→1)",
+      "de": "Im Uhrzeigersinn je −3. 11→8→5→2 (z. B. 12→9→6→3, 10→7→4→1)"
+    }
+  },
+  {
+    "id": "sh2_s06",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 2,
+    "order": 6,
+    "figureTokens": [
+      {
+        "shape": "triangle"
+      },
+      {
+        "shape": "square"
+      },
+      {
+        "shape": "circle"
+      },
+      {
+        "shape": "triangle"
+      },
+      null
+    ],
+    "figureChoices": [
+      {
+        "shape": "square",
+        "code": "square"
+      },
+      {
+        "shape": "circle",
+        "code": "circle"
+      },
+      {
+        "shape": "triangle",
+        "code": "triangle"
+      },
+      {
+        "shape": "arrow",
+        "code": "arrow"
+      }
+    ],
+    "answer": "square",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모양이 어떻게 바뀌나요?",
+        "세모→네모→동그라미 가 반복돼요.",
+        "다음은 네모예요."
+      ],
+      "en": [
+        "How does the shape change?",
+        "It repeats triangle→square→circle.",
+        "Next is square."
+      ],
+      "ja": [
+        "形はどう変わる？",
+        "三角→四角→丸 の繰り返しです。",
+        "次は四角です。"
+      ],
+      "zh": [
+        "形状怎么变？",
+        "三角形→正方形→圆形 循环。",
+        "下一个是正方形。"
+      ],
+      "es": [
+        "¿Cómo cambia la forma?",
+        "Se repite triángulo→cuadrado→círculo.",
+        "El siguiente es cuadrado."
+      ],
+      "fr": [
+        "Comment change la forme ?",
+        "Ça répète triangle→carré→cercle.",
+        "Le suivant est carré."
+      ],
+      "de": [
+        "Wie ändert sich die Form?",
+        "Es wiederholt Dreieck→Quadrat→Kreis.",
+        "Als Nächstes Quadrat."
+      ]
+    },
+    "explanation": {
+      "ko": "모양이 세모→네모→동그라미 순서로 반복",
+      "en": "The shape repeats triangle→square→circle",
+      "ja": "形が 三角→四角→丸 の順で繰り返す",
+      "zh": "形状按 三角形→正方形→圆形 循环",
+      "es": "La forma se repite triángulo→cuadrado→círculo",
+      "fr": "La forme se répète triangle→carré→cercle",
+      "de": "Die Form wiederholt Dreieck→Quadrat→Kreis"
+    }
+  },
+  {
+    "id": "sh2_s07",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 2,
+    "order": 7,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "8",
+          "5",
+          "3"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "9",
+          "6",
+          "3"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          null,
+          "4",
+          "4"
+        ]
+      }
+    ],
+    "answer": "8",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "위 꼭짓점 = 아래 두 꼭짓점의 합 (5+3=8).",
+        "마지막 삼각형: 4+4는?"
+      ],
+      "en": [
+        "Top corner = sum of the two bottom corners (5+3=8).",
+        "Last triangle: what is 4+4?"
+      ],
+      "ja": [
+        "上の頂点 = 下2頂点の和 (5+3=8)。",
+        "最後の三角形: 4+4 は?"
+      ],
+      "zh": [
+        "顶点 = 两个底角之和（5+3=8）。",
+        "最后一个三角形：4+4 是多少？"
+      ],
+      "es": [
+        "Vértice superior = suma de los dos inferiores (5+3=8).",
+        "Último triángulo: ¿cuánto es 4+4?"
+      ],
+      "fr": [
+        "Sommet haut = somme des deux sommets bas (5+3=8).",
+        "Dernier triangle : combien font 4+4 ?"
+      ],
+      "de": [
+        "Obere Ecke = Summe der beiden unteren (5+3=8).",
+        "Letztes Dreieck: Was ist 4+4?"
+      ]
+    },
+    "explanation": {
+      "ko": "위 꼭짓점 = 아래 두 꼭짓점의 합. 4+4 = 8 (예: 5+3=8, 6+3=9)",
+      "en": "Top corner = sum of the two bottom corners. 4+4 = 8 (e.g. 5+3=8, 6+3=9)",
+      "ja": "上の頂点 = 下2頂点の和。4+4 = 8 (例: 5+3=8, 6+3=9)",
+      "zh": "顶点 = 两个底角之和。4+4 = 8（例：5+3=8，6+3=9）",
+      "es": "Vértice superior = suma de los dos inferiores. 4+4 = 8 (ej.: 5+3=8, 6+3=9)",
+      "fr": "Sommet haut = somme des deux sommets bas. 4+4 = 8 (ex. : 5+3=8, 6+3=9)",
+      "de": "Obere Ecke = Summe der beiden unteren. 4+4 = 8 (z. B. 5+3=8, 6+3=9)"
+    }
+  },
+  {
+    "id": "sh3_s01",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 3,
+    "order": 1,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "1",
+          "2",
+          "3",
+          "6"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "2",
+          "2",
+          "8"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "3",
+          "2",
+          null
+        ]
+      }
+    ],
+    "answer": "12",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가운데 = 세 꼭짓점의 곱 (1×2×3=6).",
+        "마지막 삼각형: 2×3×2는?"
+      ],
+      "en": [
+        "Center = product of the three corners (1×2×3=6).",
+        "Last triangle: what is 2×3×2?"
+      ],
+      "ja": [
+        "真ん中 = 3頂点の積 (1×2×3=6)。",
+        "最後の三角形: 2×3×2 は?"
+      ],
+      "zh": [
+        "中间 = 三个顶点之积（1×2×3=6）。",
+        "最后一个三角形：2×3×2 是多少？"
+      ],
+      "es": [
+        "Centro = producto de las tres esquinas (1×2×3=6).",
+        "Último triángulo: ¿cuánto es 2×3×2?"
+      ],
+      "fr": [
+        "Centre = produit des trois sommets (1×2×3=6).",
+        "Dernier triangle : combien font 2×3×2 ?"
+      ],
+      "de": [
+        "Mitte = Produkt der drei Ecken (1×2×3=6).",
+        "Letztes Dreieck: Was ist 2×3×2?"
+      ]
+    },
+    "explanation": {
+      "ko": "가운데 = 세 꼭짓점의 곱. 2×3×2 = 12 (예: 1×2×3=6, 2×2×2=8)",
+      "en": "Center = product of the three corners. 2×3×2 = 12 (e.g. 1×2×3=6, 2×2×2=8)",
+      "ja": "真ん中 = 3頂点の積。2×3×2 = 12 (例: 1×2×3=6, 2×2×2=8)",
+      "zh": "中间 = 三个顶点之积。2×3×2 = 12（例：1×2×3=6，2×2×2=8）",
+      "es": "Centro = producto de las tres esquinas. 2×3×2 = 12 (ej.: 1×2×3=6, 2×2×2=8)",
+      "fr": "Centre = produit des trois sommets. 2×3×2 = 12 (ex. : 1×2×3=6, 2×2×2=8)",
+      "de": "Mitte = Produkt der drei Ecken. 2×3×2 = 12 (z. B. 1×2×3=6, 2×2×2=8)"
+    }
+  },
+  {
+    "id": "sh3_s02",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 3,
+    "order": 2,
+    "figures": [
+      {
+        "shape": "circle",
+        "slots": [
+          "4",
+          "6",
+          "3",
+          "2"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "6",
+          "4",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "8",
+          "6",
+          "3",
+          null
+        ]
+      }
+    ],
+    "answer": "4",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "마주보는 두 수의 곱이 같다 (4×3=6×2=12).",
+        "마지막 원: 24÷6은?"
+      ],
+      "en": [
+        "Opposite numbers have equal products (4×3=6×2=12).",
+        "Last circle: what is 24÷6?"
+      ],
+      "ja": [
+        "向かい合う2数の積が等しい (4×3=6×2=12)。",
+        "最後の円: 24÷6 は?"
+      ],
+      "zh": [
+        "相对两数之积相等（4×3=6×2=12）。",
+        "最后一个圆：24÷6 是多少？"
+      ],
+      "es": [
+        "Los números opuestos tienen el mismo producto (4×3=6×2=12).",
+        "Último círculo: ¿cuánto es 24÷6?"
+      ],
+      "fr": [
+        "Les nombres opposés ont le même produit (4×3=6×2=12).",
+        "Dernier cercle : combien font 24÷6 ?"
+      ],
+      "de": [
+        "Gegenüberliegende Zahlen haben gleiches Produkt (4×3=6×2=12).",
+        "Letzter Kreis: Was ist 24÷6?"
+      ]
+    },
+    "explanation": {
+      "ko": "마주보는 두 수의 곱이 같다. 6×4 = 8×3 = 24 (예: 4×3=6×2=12, 6×2=4×3=12)",
+      "en": "Opposite numbers have equal products. 6×4 = 8×3 = 24 (e.g. 4×3=6×2=12, 6×2=4×3=12)",
+      "ja": "向かい合う2数の積が等しい。6×4 = 8×3 = 24 (例: 4×3=6×2=12, 6×2=4×3=12)",
+      "zh": "相对两数之积相等。6×4 = 8×3 = 24（例：4×3=6×2=12，6×2=4×3=12）",
+      "es": "Los números opuestos tienen el mismo producto. 6×4 = 8×3 = 24 (ej.: 4×3=6×2=12, 6×2=4×3=12)",
+      "fr": "Les nombres opposés ont le même produit. 6×4 = 8×3 = 24 (ex. : 4×3=6×2=12, 6×2=4×3=12)",
+      "de": "Gegenüberliegende Zahlen haben gleiches Produkt. 6×4 = 8×3 = 24 (z. B. 4×3=6×2=12, 6×2=4×3=12)"
+    }
+  },
+  {
+    "id": "sh3_s03",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 3,
+    "order": 3,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "3",
+          "1",
+          "8"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "3",
+          "2",
+          "2",
+          "12"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "3",
+          "2",
+          null
+        ]
+      }
+    ],
+    "answer": "10",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가운데 = 위 × (아래 두 꼭짓점의 합) (2×(3+1)=8).",
+        "마지막 삼각형: 2×(3+2)는?"
+      ],
+      "en": [
+        "Center = top × (sum of the two bottom corners) (2×(3+1)=8).",
+        "Last triangle: what is 2×(3+2)?"
+      ],
+      "ja": [
+        "真ん中 = 上 × (下2頂点の和) (2×(3+1)=8)。",
+        "最後の三角形: 2×(3+2) は?"
+      ],
+      "zh": [
+        "中间 = 顶 × (两个底角之和)（2×(3+1)=8）。",
+        "最后一个三角形：2×(3+2) 是多少？"
+      ],
+      "es": [
+        "Centro = arriba × (suma de los dos inferiores) (2×(3+1)=8).",
+        "Último triángulo: ¿cuánto es 2×(3+2)?"
+      ],
+      "fr": [
+        "Centre = haut × (somme des deux sommets bas) (2×(3+1)=8).",
+        "Dernier triangle : combien font 2×(3+2) ?"
+      ],
+      "de": [
+        "Mitte = oben × (Summe der beiden unteren) (2×(3+1)=8).",
+        "Letztes Dreieck: Was ist 2×(3+2)?"
+      ]
+    },
+    "explanation": {
+      "ko": "가운데 = 위 × (아래 두 꼭짓점의 합). 2×(3+2) = 10 (예: 2×(3+1)=8, 3×(2+2)=12)",
+      "en": "Center = top × (sum of the two bottom corners). 2×(3+2) = 10 (e.g. 2×(3+1)=8, 3×(2+2)=12)",
+      "ja": "真ん中 = 上 × (下2頂点の和)。2×(3+2) = 10 (例: 2×(3+1)=8, 3×(2+2)=12)",
+      "zh": "中间 = 顶 × (两个底角之和)。2×(3+2) = 10（例：2×(3+1)=8，3×(2+2)=12）",
+      "es": "Centro = arriba × (suma de los dos inferiores). 2×(3+2) = 10 (ej.: 2×(3+1)=8, 3×(2+2)=12)",
+      "fr": "Centre = haut × (somme des deux sommets bas). 2×(3+2) = 10 (ex. : 2×(3+1)=8, 3×(2+2)=12)",
+      "de": "Mitte = oben × (Summe der beiden unteren). 2×(3+2) = 10 (z. B. 2×(3+1)=8, 3×(2+2)=12)"
+    }
+  },
+  {
+    "id": "sh3_s04",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 3,
+    "order": 4,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "3",
+          "1",
+          "6"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "2",
+          "2",
+          "8"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          null,
+          "3",
+          "24"
+        ]
+      }
+    ],
+    "answer": "4",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "빈 꼭짓점 = 가운데 ÷ 두 꼭짓점의 곱 (2×3×1=6).",
+        "마지막 삼각형: 24÷6은?"
+      ],
+      "en": [
+        "Empty corner = center ÷ product of the others (2×3×1=6).",
+        "Last triangle: what is 24÷6?"
+      ],
+      "ja": [
+        "空きの頂点 = 真ん中 ÷ 残り2頂点の積 (2×3×1=6)。",
+        "最後の三角形: 24÷6 は?"
+      ],
+      "zh": [
+        "空缺顶点 = 中间 ÷ 其余两顶点之积（2×3×1=6）。",
+        "最后一个三角形：24÷6 是多少？"
+      ],
+      "es": [
+        "Esquina vacía = centro ÷ producto de las otras (2×3×1=6).",
+        "Último triángulo: ¿cuánto es 24÷6?"
+      ],
+      "fr": [
+        "Sommet vide = centre ÷ produit des autres (2×3×1=6).",
+        "Dernier triangle : combien font 24÷6 ?"
+      ],
+      "de": [
+        "Leere Ecke = Mitte ÷ Produkt der anderen (2×3×1=6).",
+        "Letztes Dreieck: Was ist 24÷6?"
+      ]
+    },
+    "explanation": {
+      "ko": "빈 꼭짓점 = 가운데 ÷ 두 꼭짓점의 곱. 24 ÷ (2×3) = 4 (예: 2×3×1=6, 2×2×2=8)",
+      "en": "Empty corner = center ÷ product of the others. 24 ÷ (2×3) = 4 (e.g. 2×3×1=6, 2×2×2=8)",
+      "ja": "空きの頂点 = 真ん中 ÷ 残り2頂点の積。24 ÷ (2×3) = 4 (例: 2×3×1=6, 2×2×2=8)",
+      "zh": "空缺顶点 = 中间 ÷ 其余两顶点之积。24 ÷ (2×3) = 4（例：2×3×1=6，2×2×2=8）",
+      "es": "Esquina vacía = centro ÷ producto de las otras. 24 ÷ (2×3) = 4 (ej.: 2×3×1=6, 2×2×2=8)",
+      "fr": "Sommet vide = centre ÷ produit des autres. 24 ÷ (2×3) = 4 (ex. : 2×3×1=6, 2×2×2=8)",
+      "de": "Leere Ecke = Mitte ÷ Produkt der anderen. 24 ÷ (2×3) = 4 (z. B. 2×3×1=6, 2×2×2=8)"
+    }
+  },
+  {
+    "id": "sh3_s05",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 3,
+    "order": 5,
+    "figureTokens": [
+      {
+        "shape": "triangle",
+        "rotation": 0
+      },
+      {
+        "shape": "triangle",
+        "rotation": 90
+      },
+      {
+        "shape": "triangle",
+        "rotation": 180
+      },
+      {
+        "shape": "triangle",
+        "rotation": 270
+      },
+      null
+    ],
+    "figureChoices": [
+      {
+        "shape": "triangle",
+        "rotation": 0,
+        "code": "r0"
+      },
+      {
+        "shape": "triangle",
+        "rotation": 90,
+        "code": "r90"
+      },
+      {
+        "shape": "triangle",
+        "rotation": 180,
+        "code": "r180"
+      },
+      {
+        "shape": "triangle",
+        "rotation": 270,
+        "code": "r270"
+      }
+    ],
+    "answer": "r0",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "삼각형이 어떻게 바뀌나요?",
+        "시계 방향으로 90°씩 돌아요.",
+        "다음에 무엇이 올지 생각해 보세요."
+      ],
+      "en": [
+        "How does the triangle change?",
+        "It rotates 90° clockwise each step.",
+        "Think about what comes next."
+      ],
+      "ja": [
+        "三角形はどう変わる？",
+        "時計回りに90°ずつ回ります。",
+        "次に何が来るか考えてみましょう。"
+      ],
+      "zh": [
+        "三角形怎么变？",
+        "每次顺时针转90°。",
+        "想一想下一个是什么。"
+      ],
+      "es": [
+        "¿Cómo cambia el triángulo?",
+        "Gira 90° en sentido horario cada paso.",
+        "Piensa qué viene después."
+      ],
+      "fr": [
+        "Comment change le triangle ?",
+        "Elle tourne de 90° dans le sens horaire.",
+        "Réfléchis à ce qui suit."
+      ],
+      "de": [
+        "Wie ändert sich das Dreieck?",
+        "Es dreht sich um 90° im Uhrzeigersinn.",
+        "Überlege, was als Nächstes kommt."
+      ]
+    },
+    "explanation": {
+      "ko": "삼각형이 시계 방향으로 90°씩 회전: 0°→90°→180°→270°→0°",
+      "en": "The triangle rotates 90° clockwise: 0°→90°→180°→270°→0°",
+      "ja": "三角形が時計回りに90°ずつ回転: 0°→90°→180°→270°→0°",
+      "zh": "三角形顺时针每次转90°：0°→90°→180°→270°→0°",
+      "es": "El triángulo gira 90° en sentido horario: 0°→90°→180°→270°→0°",
+      "fr": "Le triangle tourne de 90° dans le sens horaire : 0°→90°→180°→270°→0°",
+      "de": "Das Dreieck dreht sich um 90° im Uhrzeigersinn: 0°→90°→180°→270°→0°"
+    }
+  },
+  {
+    "id": "sh3_s06",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 3,
+    "order": 6,
+    "figureTokens": [
+      {
+        "shape": "square",
+        "filled": true
+      },
+      {
+        "shape": "square",
+        "filled": false
+      },
+      {
+        "shape": "square",
+        "filled": true
+      },
+      {
+        "shape": "square",
+        "filled": false
+      },
+      null
+    ],
+    "figureChoices": [
+      {
+        "shape": "square",
+        "filled": true,
+        "code": "f"
+      },
+      {
+        "shape": "square",
+        "filled": false,
+        "code": "o"
+      },
+      {
+        "shape": "circle",
+        "filled": true,
+        "code": "fc"
+      },
+      {
+        "shape": "circle",
+        "filled": false,
+        "code": "oc"
+      }
+    ],
+    "answer": "f",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "색이 어떻게 바뀌나요?",
+        "칠한 것과 빈 것이 번갈아 나와요.",
+        "다음에 무엇이 올지 생각해 보세요."
+      ],
+      "en": [
+        "How does the fill change?",
+        "Filled and empty alternate.",
+        "Think about what comes next."
+      ],
+      "ja": [
+        "色はどう変わる？",
+        "塗りと空きが交互です。",
+        "次に何が来るか考えてみましょう。"
+      ],
+      "zh": [
+        "填充怎么变？",
+        "实心和空心交替。",
+        "想一想下一个是什么。"
+      ],
+      "es": [
+        "¿Cómo cambia el relleno?",
+        "Se alternan relleno y vacío.",
+        "Piensa qué viene después."
+      ],
+      "fr": [
+        "Comment cambia el relleno ?",
+        "Plein et vide alternent.",
+        "Réfléchis à ce qui suit."
+      ],
+      "de": [
+        "Wie ändert sich die Füllung?",
+        "Gefüllt und leer wechseln sich ab.",
+        "Überlege, was als Nächstes kommt."
+      ]
+    },
+    "explanation": {
+      "ko": "칠한 도형과 빈 도형이 번갈아 나온다",
+      "en": "Filled and outlined shapes alternate",
+      "ja": "塗りと枠線が交互に並ぶ",
+      "zh": "实心与空心交替出现",
+      "es": "Se alternan figuras rellenas y vacías",
+      "fr": "Les formes pleines et vides alternent",
+      "de": "Gefüllte und leere Formen wechseln sich ab"
+    }
+  },
+  {
+    "id": "sh3_s07",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 3,
+    "order": 7,
+    "figures": [
+      {
+        "shape": "square",
+        "slots": [
+          "2",
+          "3",
+          "6",
+          "4",
+          "12"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "4",
+          "2",
+          "5",
+          "10",
+          "20"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "3",
+          "2",
+          "4",
+          null,
+          "12"
+        ]
+      }
+    ],
+    "answer": "6",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "두 대각선의 곱이 같고, 가운데 = 그 곱 (2×6=3×4=12).",
+        "마지막 사각형: 12÷2는?"
+      ],
+      "en": [
+        "Both diagonal products are equal; center = that product (2×6=3×4=12).",
+        "Last square: what is 12÷2?"
+      ],
+      "ja": [
+        "2つの対角線の積が等しく、真ん中 = その積 (2×6=3×4=12)。",
+        "最後の四角形: 12÷2 は?"
+      ],
+      "zh": [
+        "两条对角线之积相等，中间 = 该积（2×6=3×4=12）。",
+        "最后一个正方形：12÷2 是多少？"
+      ],
+      "es": [
+        "Los productos diagonales son iguales; centro = ese producto (2×6=3×4=12).",
+        "Último cuadrado: ¿cuánto es 12÷2?"
+      ],
+      "fr": [
+        "Les produits diagonaux sont égaux ; centre = ce produit (2×6=3×4=12).",
+        "Dernier carré : combien font 12÷2 ?"
+      ],
+      "de": [
+        "Beide Diagonalprodukte sind gleich; Mitte = dieses Produkt (2×6=3×4=12).",
+        "Letztes Quadrat: Was ist 12÷2?"
+      ]
+    },
+    "explanation": {
+      "ko": "두 대각선의 곱이 같고, 가운데 = 그 곱. 12 ÷ 2 = 6 (예: 2×6=3×4=12, 4×5=2×10=20)",
+      "en": "Both diagonal products are equal; center = that product. 12 ÷ 2 = 6 (e.g. 2×6=3×4=12, 4×5=2×10=20)",
+      "ja": "2つの対角線の積が等しく、真ん中 = その積。12 ÷ 2 = 6 (例: 2×6=3×4=12, 4×5=2×10=20)",
+      "zh": "两条对角线之积相等，中间 = 该积。12 ÷ 2 = 6（例：2×6=3×4=12，4×5=2×10=20）",
+      "es": "Los productos diagonales son iguales; centro = ese producto. 12 ÷ 2 = 6 (ej.: 2×6=3×4=12, 4×5=2×10=20)",
+      "fr": "Les produits diagonaux sont égaux ; centre = ce produit. 12 ÷ 2 = 6 (ex. : 2×6=3×4=12, 4×5=2×10=20)",
+      "de": "Beide Diagonalprodukte sind gleich; Mitte = dieses Produkt. 12 ÷ 2 = 6 (z. B. 2×6=3×4=12, 4×5=2×10=20)"
+    }
+  },
+  {
+    "id": "sh4_s01",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 4,
+    "order": 1,
+    "figures": [
+      {
+        "shape": "circle",
+        "slots": [
+          "3",
+          "4",
+          "5",
+          "4"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "6",
+          "5",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "4",
+          "6",
+          "7",
+          null
+        ]
+      }
+    ],
+    "answer": "5",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "위+아래 = 왼쪽+오른쪽 (3+5=4+4=8).",
+        "마지막 원: 4+7−6은?"
+      ],
+      "en": [
+        "top + bottom = left + right (3+5=4+4=8).",
+        "Last circle: what is 4+7−6?"
+      ],
+      "ja": [
+        "上+下 = 左+右 (3+5=4+4=8)。",
+        "最後の円: 4+7−6 は?"
+      ],
+      "zh": [
+        "上+下 = 左+右（3+5=4+4=8）。",
+        "最后一个圆：4+7−6 是多少？"
+      ],
+      "es": [
+        "arriba + abajo = izquierda + derecha (3+5=4+4=8).",
+        "Último círculo: ¿cuánto es 4+7−6?"
+      ],
+      "fr": [
+        "haut + bas = gauche + droite (3+5=4+4=8).",
+        "Dernier cercle : combien font 4+7−6 ?"
+      ],
+      "de": [
+        "oben + unten = links + rechts (3+5=4+4=8).",
+        "Letzter Kreis: Was ist 4+7−6?"
+      ]
+    },
+    "explanation": {
+      "ko": "위+아래 = 왼쪽+오른쪽. 4+7 − 6 = 5 (예: 3+5=4+4=8, 6+2=3+5=8)",
+      "en": "top + bottom = left + right. 4+7 − 6 = 5 (e.g. 3+5=4+4=8, 6+2=3+5=8)",
+      "ja": "上+下 = 左+右。4+7 − 6 = 5 (例: 3+5=4+4=8, 6+2=3+5=8)",
+      "zh": "上+下 = 左+右。4+7 − 6 = 5（例：3+5=4+4=8，6+2=3+5=8）",
+      "es": "arriba + abajo = izquierda + derecha. 4+7 − 6 = 5 (ej.: 3+5=4+4=8, 6+2=3+5=8)",
+      "fr": "haut + bas = gauche + droite. 4+7 − 6 = 5 (ex. : 3+5=4+4=8, 6+2=3+5=8)",
+      "de": "oben + unten = links + rechts. 4+7 − 6 = 5 (z. B. 3+5=4+4=8, 6+2=3+5=8)"
+    }
+  },
+  {
+    "id": "sh4_s02",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 4,
+    "order": 2,
+    "figures": [
+      {
+        "shape": "square",
+        "slots": [
+          "2",
+          "3",
+          "1",
+          "4"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "6",
+          "1",
+          "4",
+          "3"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "5",
+          "2",
+          null,
+          "3"
+        ]
+      }
+    ],
+    "answer": "4",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "위 두 꼭짓점의 합 = 아래 두 꼭짓점의 합 (2+3=4+1=5).",
+        "마지막 사각형: 5+2−3은?"
+      ],
+      "en": [
+        "Top two corners = bottom two corners (sums) (2+3=4+1=5).",
+        "Last square: what is 5+2−3?"
+      ],
+      "ja": [
+        "上2頂点の和 = 下2頂点の和 (2+3=4+1=5)。",
+        "最後の四角形: 5+2−3 は?"
+      ],
+      "zh": [
+        "上两顶点之和 = 下两顶点之和（2+3=4+1=5）。",
+        "最后一个正方形：5+2−3 是多少？"
+      ],
+      "es": [
+        "Suma de arriba = suma de abajo (2+3=4+1=5).",
+        "Último cuadrado: ¿cuánto es 5+2−3?"
+      ],
+      "fr": [
+        "Somme du haut = somme du bas (2+3=4+1=5).",
+        "Dernier carré : combien font 5+2−3 ?"
+      ],
+      "de": [
+        "Summe oben = Summe unten (2+3=4+1=5).",
+        "Letztes Quadrat: Was ist 5+2−3?"
+      ]
+    },
+    "explanation": {
+      "ko": "위 두 꼭짓점의 합 = 아래 두 꼭짓점의 합. 5+2 − 3 = 4 (예: 2+3=4+1=5, 6+1=3+4=7)",
+      "en": "Top two corners = bottom two corners (sums). 5+2 − 3 = 4 (e.g. 2+3=4+1=5, 6+1=3+4=7)",
+      "ja": "上2頂点の和 = 下2頂点の和。5+2 − 3 = 4 (例: 2+3=4+1=5, 6+1=3+4=7)",
+      "zh": "上两顶点之和 = 下两顶点之和。5+2 − 3 = 4（例：2+3=4+1=5，6+1=3+4=7）",
+      "es": "Suma de arriba = suma de abajo. 5+2 − 3 = 4 (ej.: 2+3=4+1=5, 6+1=3+4=7)",
+      "fr": "Somme du haut = somme du bas. 5+2 − 3 = 4 (ex. : 2+3=4+1=5, 6+1=3+4=7)",
+      "de": "Summe oben = Summe unten. 5+2 − 3 = 4 (z. B. 2+3=4+1=5, 6+1=3+4=7)"
+    }
+  },
+  {
+    "id": "sh4_s03",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 4,
+    "order": 3,
+    "figureTokens": [
+      {
+        "shape": "arrow",
+        "rotation": 0
+      },
+      {
+        "shape": "arrow",
+        "rotation": 180
+      },
+      {
+        "shape": "arrow",
+        "rotation": 0
+      },
+      {
+        "shape": "arrow",
+        "rotation": 180
+      },
+      null
+    ],
+    "figureChoices": [
+      {
+        "shape": "arrow",
+        "rotation": 0,
+        "code": "up"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 180,
+        "code": "down"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 90,
+        "code": "right"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 270,
+        "code": "left"
+      }
+    ],
+    "answer": "up",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "화살표 방향이 어떻게 바뀌나요?",
+        "시계 방향으로 180°씩 돌아요.",
+        "다음에 무엇이 올지 생각해 보세요."
+      ],
+      "en": [
+        "How does the arrow turn?",
+        "It rotates 180° clockwise each step.",
+        "Think about what comes next."
+      ],
+      "ja": [
+        "矢印の向きはどう変わる？",
+        "時計回りに180°ずつ回ります。",
+        "次に何が来るか考えてみましょう。"
+      ],
+      "zh": [
+        "箭头方向怎么变？",
+        "每次顺时针转180°。",
+        "想一想下一个是什么。"
+      ],
+      "es": [
+        "¿Cómo gira la flecha?",
+        "Gira 180° en sentido horario cada paso.",
+        "Piensa qué viene después."
+      ],
+      "fr": [
+        "Comment tourne la flèche ?",
+        "Elle tourne de 180° dans le sens horaire.",
+        "Réfléchis à ce qui suit."
+      ],
+      "de": [
+        "Wie dreht sich der Pfeil?",
+        "Es dreht sich um 180° im Uhrzeigersinn.",
+        "Überlege, was als Nächstes kommt."
+      ]
+    },
+    "explanation": {
+      "ko": "화살표가 시계 방향으로 180°씩 회전: 위→아래→위→아래",
+      "en": "The arrow rotates 180° clockwise: up→down→up→down",
+      "ja": "矢印が時計回りに180°ずつ回転: 上→下→上→下",
+      "zh": "箭头顺时针每次转180°：上→下→上→下",
+      "es": "La flecha gira 180° en sentido horario: arriba→abajo→arriba→abajo",
+      "fr": "La flèche tourne de 180° dans le sens horaire : haut→bas→haut→bas",
+      "de": "Der Pfeil dreht sich um 180° im Uhrzeigersinn: oben→unten→oben→unten"
+    }
+  },
+  {
+    "id": "sh4_s04",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 4,
+    "order": 4,
+    "figureTokens": [
+      {
+        "shape": "triangle",
+        "rotation": 0
+      },
+      {
+        "shape": "triangle",
+        "rotation": 180
+      },
+      {
+        "shape": "triangle",
+        "rotation": 0
+      },
+      {
+        "shape": "triangle",
+        "rotation": 180
+      },
+      null
+    ],
+    "figureChoices": [
+      {
+        "shape": "triangle",
+        "rotation": 0,
+        "code": "r0"
+      },
+      {
+        "shape": "triangle",
+        "rotation": 180,
+        "code": "r180"
+      },
+      {
+        "shape": "triangle",
+        "rotation": 90,
+        "code": "r90"
+      },
+      {
+        "shape": "triangle",
+        "rotation": 270,
+        "code": "r270"
+      }
+    ],
+    "answer": "r0",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "삼각형이 어떻게 바뀌나요?",
+        "시계 방향으로 180°씩 돌아요.",
+        "다음에 무엇이 올지 생각해 보세요."
+      ],
+      "en": [
+        "How does the triangle change?",
+        "It rotates 180° clockwise each step.",
+        "Think about what comes next."
+      ],
+      "ja": [
+        "三角形はどう変わる？",
+        "時計回りに180°ずつ回ります。",
+        "次に何が来るか考えてみましょう。"
+      ],
+      "zh": [
+        "三角形怎么变？",
+        "每次顺时针转180°。",
+        "想一想下一个是什么。"
+      ],
+      "es": [
+        "¿Cómo cambia el triángulo?",
+        "Gira 180° en sentido horario cada paso.",
+        "Piensa qué viene después."
+      ],
+      "fr": [
+        "Comment change le triangle ?",
+        "Elle tourne de 180° dans le sens horaire.",
+        "Réfléchis à ce qui suit."
+      ],
+      "de": [
+        "Wie ändert sich das Dreieck?",
+        "Es dreht sich um 180° im Uhrzeigersinn.",
+        "Überlege, was als Nächstes kommt."
+      ]
+    },
+    "explanation": {
+      "ko": "삼각형이 시계 방향으로 180°씩 회전: 0°→180°→0°→180°→0°",
+      "en": "The triangle rotates 180° clockwise: 0°→180°→0°→180°→0°",
+      "ja": "三角形が時計回りに180°ずつ回転: 0°→180°→0°→180°→0°",
+      "zh": "三角形顺时针每次转180°：0°→180°→0°→180°→0°",
+      "es": "El triángulo gira 180° en sentido horario: 0°→180°→0°→180°→0°",
+      "fr": "Le triangle tourne de 180° dans le sens horaire : 0°→180°→0°→180°→0°",
+      "de": "Das Dreieck dreht sich um 180° im Uhrzeigersinn: 0°→180°→0°→180°→0°"
+    }
+  },
+  {
+    "id": "sh4_s05",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 4,
+    "order": 5,
+    "figures": [
+      {
+        "shape": "square",
+        "slots": [
+          "4",
+          "7",
+          "9",
+          "6"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "5",
+          "8",
+          "9",
+          "6"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "6",
+          "9",
+          null,
+          "7"
+        ]
+      }
+    ],
+    "answer": "10",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "대각선 두 꼭짓점의 합이 같다 (4+9=7+6=13).",
+        "마지막 사각형: 9+7−6은?"
+      ],
+      "en": [
+        "The two diagonal sums are equal (4+9=7+6=13).",
+        "Last square: what is 9+7−6?"
+      ],
+      "ja": [
+        "対角線の2頂点の和が等しい (4+9=7+6=13)。",
+        "最後の四角形: 9+7−6 は?"
+      ],
+      "zh": [
+        "对角线两顶点之和相等（4+9=7+6=13）。",
+        "最后一个正方形：9+7−6 是多少？"
+      ],
+      "es": [
+        "Las dos sumas diagonales son iguales (4+9=7+6=13).",
+        "Último cuadrado: ¿cuánto es 9+7−6?"
+      ],
+      "fr": [
+        "Les deux sommes diagonales sont égales (4+9=7+6=13).",
+        "Dernier carré : combien font 9+7−6 ?"
+      ],
+      "de": [
+        "Die beiden Diagonalsummen sind gleich (4+9=7+6=13).",
+        "Letztes Quadrat: Was ist 9+7−6?"
+      ]
+    },
+    "explanation": {
+      "ko": "대각선 두 꼭짓점의 합이 같다. 9+7 − 6 = 10 (예: 4+9=7+6=13, 5+9=8+6=14)",
+      "en": "The two diagonal sums are equal. 9+7 − 6 = 10 (e.g. 4+9=7+6=13, 5+9=8+6=14)",
+      "ja": "対角線の2頂点の和が等しい。9+7 − 6 = 10 (例: 4+9=7+6=13, 5+9=8+6=14)",
+      "zh": "对角线两顶点之和相等。9+7 − 6 = 10（例：4+9=7+6=13，5+9=8+6=14）",
+      "es": "Las dos sumas diagonales son iguales. 9+7 − 6 = 10 (ej.: 4+9=7+6=13, 5+9=8+6=14)",
+      "fr": "Les deux sommes diagonales sont égales. 9+7 − 6 = 10 (ex. : 4+9=7+6=13, 5+9=8+6=14)",
+      "de": "Die beiden Diagonalsummen sind gleich. 9+7 − 6 = 10 (z. B. 4+9=7+6=13, 5+9=8+6=14)"
+    }
+  },
+  {
+    "id": "sh4_s06",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 4,
+    "order": 6,
+    "figureTokens": [
+      {
+        "shape": "arrow",
+        "rotation": 90
+      },
+      {
+        "shape": "arrow",
+        "rotation": 180
+      },
+      {
+        "shape": "arrow",
+        "rotation": 270
+      },
+      {
+        "shape": "arrow",
+        "rotation": 0
+      },
+      null
+    ],
+    "figureChoices": [
+      {
+        "shape": "arrow",
+        "rotation": 0,
+        "code": "up"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 90,
+        "code": "right"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 180,
+        "code": "down"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 270,
+        "code": "left"
+      }
+    ],
+    "answer": "right",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "화살표 방향이 어떻게 바뀌나요?",
+        "시계 방향으로 90°씩 돌아요.",
+        "다음에 무엇이 올지 생각해 보세요."
+      ],
+      "en": [
+        "How does the arrow turn?",
+        "It rotates 90° clockwise each step.",
+        "Think about what comes next."
+      ],
+      "ja": [
+        "矢印の向きはどう変わる？",
+        "時計回りに90°ずつ回ります。",
+        "次に何が来るか考えてみましょう。"
+      ],
+      "zh": [
+        "箭头方向怎么变？",
+        "每次顺时针转90°。",
+        "想一想下一个是什么。"
+      ],
+      "es": [
+        "¿Cómo gira la flecha?",
+        "Gira 90° en sentido horario cada paso.",
+        "Piensa qué viene después."
+      ],
+      "fr": [
+        "Comment tourne la flèche ?",
+        "Elle tourne de 90° dans le sens horaire.",
+        "Réfléchis à ce qui suit."
+      ],
+      "de": [
+        "Wie dreht sich der Pfeil?",
+        "Es dreht sich um 90° im Uhrzeigersinn.",
+        "Überlege, was als Nächstes kommt."
+      ]
+    },
+    "explanation": {
+      "ko": "화살표가 시계 방향으로 90°씩 회전: 오른쪽→아래→왼쪽→위→오른쪽",
+      "en": "The arrow rotates 90° clockwise: right→down→left→up→right",
+      "ja": "矢印が時計回りに90°ずつ回転: 右→下→左→上→右",
+      "zh": "箭头顺时针每次转90°：右→下→左→上→右",
+      "es": "La flecha gira 90° en sentido horario: derecha→abajo→izquierda→arriba→derecha",
+      "fr": "La flèche tourne de 90° dans le sens horaire : droite→bas→gauche→haut→droite",
+      "de": "Der Pfeil dreht sich um 90° im Uhrzeigersinn: rechts→unten→links→oben→rechts"
+    }
+  },
+  {
+    "id": "sh5_s01",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 5,
+    "order": 1,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "3",
+          "1",
+          "7"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "4",
+          "2",
+          "2",
+          "10"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "3",
+          "3",
+          "2",
+          null
+        ]
+      }
+    ],
+    "answer": "11",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가운데 = (위 × 오른쪽 아래) + 왼쪽 아래 (2×3+1=7).",
+        "마지막 삼각형: 3×3+2는?"
+      ],
+      "en": [
+        "Center = (top × bottom-right) + bottom-left (2×3+1=7).",
+        "Last triangle: what is 3×3+2?"
+      ],
+      "ja": [
+        "真ん中 = (上 × 右下) + 左下 (2×3+1=7)。",
+        "最後の三角形: 3×3+2 は?"
+      ],
+      "zh": [
+        "中间 = (顶 × 右下) + 左下（2×3+1=7）。",
+        "最后一个三角形：3×3+2 是多少？"
+      ],
+      "es": [
+        "Centro = (arriba × abajo-der) + abajo-izq (2×3+1=7).",
+        "Último triángulo: ¿cuánto es 3×3+2?"
+      ],
+      "fr": [
+        "Centre = (haut × bas-droite) + bas-gauche (2×3+1=7).",
+        "Dernier triangle : combien font 3×3+2 ?"
+      ],
+      "de": [
+        "Mitte = (oben × unten-rechts) + unten-links (2×3+1=7).",
+        "Letztes Dreieck: Was ist 3×3+2?"
+      ]
+    },
+    "explanation": {
+      "ko": "가운데 = (위 × 오른쪽 아래) + 왼쪽 아래. 3×3+2 = 11 (예: 2×3+1=7, 4×2+2=10)",
+      "en": "Center = (top × bottom-right) + bottom-left. 3×3+2 = 11 (e.g. 2×3+1=7, 4×2+2=10)",
+      "ja": "真ん中 = (上 × 右下) + 左下。3×3+2 = 11 (例: 2×3+1=7, 4×2+2=10)",
+      "zh": "中间 = (顶 × 右下) + 左下。3×3+2 = 11（例：2×3+1=7，4×2+2=10）",
+      "es": "Centro = (arriba × abajo-der) + abajo-izq. 3×3+2 = 11 (ej.: 2×3+1=7, 4×2+2=10)",
+      "fr": "Centre = (haut × bas-droite) + bas-gauche. 3×3+2 = 11 (ex. : 2×3+1=7, 4×2+2=10)",
+      "de": "Mitte = (oben × unten-rechts) + unten-links. 3×3+2 = 11 (z. B. 2×3+1=7, 4×2+2=10)"
+    }
+  },
+  {
+    "id": "sh5_s02",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 5,
+    "order": 2,
+    "figures": [
+      {
+        "shape": "circle",
+        "slots": [
+          "1",
+          "2",
+          "4",
+          "8"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "2",
+          "4",
+          "8",
+          "16"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "3",
+          "6",
+          "12",
+          null
+        ]
+      }
+    ],
+    "answer": "24",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "시계 방향으로 2배씩 커진다 (1→2→4→8).",
+        "마지막 원: 12×2는?"
+      ],
+      "en": [
+        "Each step doubles clockwise (1→2→4→8).",
+        "Last circle: what is 12×2?"
+      ],
+      "ja": [
+        "時計回りに2倍ずつ (1→2→4→8)。",
+        "最後の円: 12×2 は?"
+      ],
+      "zh": [
+        "顺时针每次翻倍（1→2→4→8）。",
+        "最后一个圆：12×2 是多少？"
+      ],
+      "es": [
+        "Se duplica en sentido horario (1→2→4→8).",
+        "Último círculo: ¿cuánto es 12×2?"
+      ],
+      "fr": [
+        "Double dans le sens horaire (1→2→4→8).",
+        "Dernier cercle : combien font 12×2 ?"
+      ],
+      "de": [
+        "Im Uhrzeigersinn jeweils verdoppeln (1→2→4→8).",
+        "Letzter Kreis: Was ist 12×2?"
+      ]
+    },
+    "explanation": {
+      "ko": "시계 방향으로 2배씩 커진다. 3→6→12→24 (예: 1→2→4→8, 2→4→8→16)",
+      "en": "Each step doubles clockwise. 3→6→12→24 (e.g. 1→2→4→8, 2→4→8→16)",
+      "ja": "時計回りに2倍ずつ。3→6→12→24 (例: 1→2→4→8, 2→4→8→16)",
+      "zh": "顺时针每次翻倍。3→6→12→24（例：1→2→4→8，2→4→8→16）",
+      "es": "Se duplica en sentido horario. 3→6→12→24 (ej.: 1→2→4→8, 2→4→8→16)",
+      "fr": "Double dans le sens horaire. 3→6→12→24 (ex. : 1→2→4→8, 2→4→8→16)",
+      "de": "Im Uhrzeigersinn jeweils verdoppeln. 3→6→12→24 (z. B. 1→2→4→8, 2→4→8→16)"
+    }
+  },
+  {
+    "id": "sh5_s03",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 5,
+    "order": 3,
+    "figures": [
+      {
+        "shape": "circle",
+        "slots": [
+          "1",
+          "3",
+          "6",
+          "10"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "2",
+          "4",
+          "7",
+          "11"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "3",
+          "5",
+          "8",
+          null
+        ]
+      }
+    ],
+    "answer": "12",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "더하는 수가 2, 3, 4로 커진다 (1→3→6→10).",
+        "마지막 원: 8+4는?"
+      ],
+      "en": [
+        "The added amount grows 2, 3, 4 (1→3→6→10).",
+        "Last circle: what is 8+4?"
+      ],
+      "ja": [
+        "足す数が2, 3, 4と増える (1→3→6→10)。",
+        "最後の円: 8+4 は?"
+      ],
+      "zh": [
+        "所加的数依次为2, 3, 4（1→3→6→10）。",
+        "最后一个圆：8+4 是多少？"
+      ],
+      "es": [
+        "Lo que se suma crece 2, 3, 4 (1→3→6→10).",
+        "Último círculo: ¿cuánto es 8+4?"
+      ],
+      "fr": [
+        "L’ajout augmente : 2, 3, 4 (1→3→6→10).",
+        "Dernier cercle : combien font 8+4 ?"
+      ],
+      "de": [
+        "Der Zuwachs wächst: 2, 3, 4 (1→3→6→10).",
+        "Letzter Kreis: Was ist 8+4?"
+      ]
+    },
+    "explanation": {
+      "ko": "더하는 수가 2, 3, 4로 커진다. 8 + 4 = 12 (예: 1→3→6→10, 2→4→7→11)",
+      "en": "The added amount grows 2, 3, 4. 8 + 4 = 12 (e.g. 1→3→6→10, 2→4→7→11)",
+      "ja": "足す数が2, 3, 4と増える。8 + 4 = 12 (例: 1→3→6→10, 2→4→7→11)",
+      "zh": "所加的数依次为2, 3, 4。8 + 4 = 12（例：1→3→6→10，2→4→7→11）",
+      "es": "Lo que se suma crece 2, 3, 4. 8 + 4 = 12 (ej.: 1→3→6→10, 2→4→7→11)",
+      "fr": "L’ajout augmente : 2, 3, 4. 8 + 4 = 12 (ex. : 1→3→6→10, 2→4→7→11)",
+      "de": "Der Zuwachs wächst: 2, 3, 4. 8 + 4 = 12 (z. B. 1→3→6→10, 2→4→7→11)"
+    }
+  },
+  {
+    "id": "sh5_s04",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 5,
+    "order": 4,
+    "figures": [
+      {
+        "shape": "circle",
+        "slots": [
+          "1",
+          "2",
+          "3",
+          "5"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "2",
+          "3",
+          "5",
+          "8"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "1",
+          "3",
+          "4",
+          null
+        ]
+      }
+    ],
+    "answer": "7",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "다음 수 = 앞 두 수의 합 (시계 방향, 피보나치) (1, 2→3→5).",
+        "마지막 원: 3+4는?"
+      ],
+      "en": [
+        "Next = sum of the previous two (clockwise, Fibonacci) (1, 2→3→5).",
+        "Last circle: what is 3+4?"
+      ],
+      "ja": [
+        "次の数 = 前の2数の和 (時計回り、フィボナッチ) (1, 2→3→5)。",
+        "最後の円: 3+4 は?"
+      ],
+      "zh": [
+        "下一个 = 前两数之和（顺时针，斐波那契）（1, 2→3→5）。",
+        "最后一个圆：3+4 是多少？"
+      ],
+      "es": [
+        "Siguiente = suma de los dos anteriores (horario, Fibonacci) (1, 2→3→5).",
+        "Último círculo: ¿cuánto es 3+4?"
+      ],
+      "fr": [
+        "Suivant = somme des deux précédents (horaire, Fibonacci) (1, 2→3→5).",
+        "Dernier cercle : combien font 3+4 ?"
+      ],
+      "de": [
+        "Nächste = Summe der beiden vorigen (im Uhrzeigersinn, Fibonacci) (1, 2→3→5).",
+        "Letzter Kreis: Was ist 3+4?"
+      ]
+    },
+    "explanation": {
+      "ko": "다음 수 = 앞 두 수의 합 (시계 방향, 피보나치). 3 + 4 = 7 (예: 1, 2→3→5, 2, 3→5→8)",
+      "en": "Next = sum of the previous two (clockwise, Fibonacci). 3 + 4 = 7 (e.g. 1, 2→3→5, 2, 3→5→8)",
+      "ja": "次の数 = 前の2数の和 (時計回り、フィボナッチ)。3 + 4 = 7 (例: 1, 2→3→5, 2, 3→5→8)",
+      "zh": "下一个 = 前两数之和（顺时针，斐波那契）。3 + 4 = 7（例：1, 2→3→5，2, 3→5→8）",
+      "es": "Siguiente = suma de los dos anteriores (horario, Fibonacci). 3 + 4 = 7 (ej.: 1, 2→3→5, 2, 3→5→8)",
+      "fr": "Suivant = somme des deux précédents (horaire, Fibonacci). 3 + 4 = 7 (ex. : 1, 2→3→5, 2, 3→5→8)",
+      "de": "Nächste = Summe der beiden vorigen (im Uhrzeigersinn, Fibonacci). 3 + 4 = 7 (z. B. 1, 2→3→5, 2, 3→5→8)"
+    }
+  },
+  {
+    "id": "sh5_s05",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 5,
+    "order": 5,
+    "figureTokens": [
+      {
+        "shape": "triangle",
+        "filled": true
+      },
+      {
+        "shape": "square",
+        "filled": false
+      },
+      {
+        "shape": "circle",
+        "filled": true
+      },
+      {
+        "shape": "triangle",
+        "filled": false
+      },
+      null
+    ],
+    "figureChoices": [
+      {
+        "shape": "square",
+        "filled": true,
+        "code": "sf"
+      },
+      {
+        "shape": "square",
+        "filled": false,
+        "code": "so"
+      },
+      {
+        "shape": "circle",
+        "filled": true,
+        "code": "cf"
+      },
+      {
+        "shape": "triangle",
+        "filled": true,
+        "code": "tf"
+      }
+    ],
+    "answer": "sf",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모양이 어떻게 바뀌나요?",
+        "모양과 색이 함께 바뀌어요.",
+        "다음에 무엇이 올지 생각해 보세요."
+      ],
+      "en": [
+        "How does the shape change?",
+        "Both shape and fill change.",
+        "Think about what comes next."
+      ],
+      "ja": [
+        "形はどう変わる？",
+        "形と色が同時に変わります。",
+        "次に何が来るか考えてみましょう。"
+      ],
+      "zh": [
+        "形状怎么变？",
+        "形状和填充同时变化。",
+        "想一想下一个是什么。"
+      ],
+      "es": [
+        "¿Cómo cambia la forma?",
+        "Cambian forma y relleno.",
+        "Piensa qué viene después."
+      ],
+      "fr": [
+        "Comment change la forme ?",
+        "La forme et le remplissage changent.",
+        "Réfléchis à ce qui suit."
+      ],
+      "de": [
+        "Wie ändert sich die Form?",
+        "Form und Füllung ändern sich.",
+        "Überlege, was als Nächstes kommt."
+      ]
+    },
+    "explanation": {
+      "ko": "모양은 세모→네모→동그라미, 색은 참·빔 번갈아",
+      "en": "Shape cycles triangle→square→circle; fill alternates",
+      "ja": "形は三角→四角→丸、色は塗り・空き交互",
+      "zh": "形状三角→正方→圆，填充实空交替",
+      "es": "Forma: triángulo→cuadrado→círculo; relleno alterna",
+      "fr": "Forme : triangle→carré→cercle ; remplissage alterné",
+      "de": "Form: Dreieck→Quadrat→Kreis; Füllung wechselt"
+    }
+  },
+  {
+    "id": "sh5_s06",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 5,
+    "order": 6,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "3",
+          "1",
+          "7"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "4",
+          "2",
+          "2",
+          "10"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "3",
+          null,
+          "2",
+          "11"
+        ]
+      }
+    ],
+    "answer": "3",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "오른쪽 아래 = (가운데 − 왼쪽 아래) ÷ 위 (2×3+1=7).",
+        "마지막 삼각형: (11−2)÷3은?"
+      ],
+      "en": [
+        "Bottom-right = (center − bottom-left) ÷ top (2×3+1=7).",
+        "Last triangle: what is (11−2)÷3?"
+      ],
+      "ja": [
+        "右下 = (真ん中 − 左下) ÷ 上 (2×3+1=7)。",
+        "最後の三角形: (11−2)÷3 は?"
+      ],
+      "zh": [
+        "右下 = (中间 − 左下) ÷ 顶（2×3+1=7）。",
+        "最后一个三角形：(11−2)÷3 是多少？"
+      ],
+      "es": [
+        "Abajo-der = (centro − abajo-izq) ÷ arriba (2×3+1=7).",
+        "Último triángulo: ¿cuánto es (11−2)÷3?"
+      ],
+      "fr": [
+        "Bas-droite = (centre − bas-gauche) ÷ haut (2×3+1=7).",
+        "Dernier triangle : combien font (11−2)÷3 ?"
+      ],
+      "de": [
+        "Unten-rechts = (Mitte − unten-links) ÷ oben (2×3+1=7).",
+        "Letztes Dreieck: Was ist (11−2)÷3?"
+      ]
+    },
+    "explanation": {
+      "ko": "오른쪽 아래 = (가운데 − 왼쪽 아래) ÷ 위. (11 − 2) ÷ 3 = 3 (예: 2×3+1=7, 4×2+2=10)",
+      "en": "Bottom-right = (center − bottom-left) ÷ top. (11 − 2) ÷ 3 = 3 (e.g. 2×3+1=7, 4×2+2=10)",
+      "ja": "右下 = (真ん中 − 左下) ÷ 上。(11 − 2) ÷ 3 = 3 (例: 2×3+1=7, 4×2+2=10)",
+      "zh": "右下 = (中间 − 左下) ÷ 顶。(11 − 2) ÷ 3 = 3（例：2×3+1=7，4×2+2=10）",
+      "es": "Abajo-der = (centro − abajo-izq) ÷ arriba. (11 − 2) ÷ 3 = 3 (ej.: 2×3+1=7, 4×2+2=10)",
+      "fr": "Bas-droite = (centre − bas-gauche) ÷ haut. (11 − 2) ÷ 3 = 3 (ex. : 2×3+1=7, 4×2+2=10)",
+      "de": "Unten-rechts = (Mitte − unten-links) ÷ oben. (11 − 2) ÷ 3 = 3 (z. B. 2×3+1=7, 4×2+2=10)"
+    }
+  },
+  {
+    "id": "sh5_s07",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 5,
+    "order": 7,
+    "figures": [
+      {
+        "shape": "square",
+        "slots": [
+          "2",
+          "3",
+          "4",
+          "3",
+          "6"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "3",
+          "5",
+          "4",
+          "2",
+          "7"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "4",
+          "3",
+          null,
+          "5",
+          "8"
+        ]
+      }
+    ],
+    "answer": "4",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "대각선 두 꼭짓점의 합 = 가운데 (2+4=3+3=6).",
+        "마지막 사각형: 8−4는?"
+      ],
+      "en": [
+        "Each diagonal sum = center (2+4=3+3=6).",
+        "Last square: what is 8−4?"
+      ],
+      "ja": [
+        "対角線の2頂点の和 = 真ん中 (2+4=3+3=6)。",
+        "最後の四角形: 8−4 は?"
+      ],
+      "zh": [
+        "对角线两顶点之和 = 中间（2+4=3+3=6）。",
+        "最后一个正方形：8−4 是多少？"
+      ],
+      "es": [
+        "Cada suma diagonal = centro (2+4=3+3=6).",
+        "Último cuadrado: ¿cuánto es 8−4?"
+      ],
+      "fr": [
+        "Chaque somme diagonale = centre (2+4=3+3=6).",
+        "Dernier carré : combien font 8−4 ?"
+      ],
+      "de": [
+        "Jede Diagonalsumme = Mitte (2+4=3+3=6).",
+        "Letztes Quadrat: Was ist 8−4?"
+      ]
+    },
+    "explanation": {
+      "ko": "대각선 두 꼭짓점의 합 = 가운데. 8 − 4 = 4 (예: 2+4=3+3=6, 3+4=5+2=7)",
+      "en": "Each diagonal sum = center. 8 − 4 = 4 (e.g. 2+4=3+3=6, 3+4=5+2=7)",
+      "ja": "対角線の2頂点の和 = 真ん中。8 − 4 = 4 (例: 2+4=3+3=6, 3+4=5+2=7)",
+      "zh": "对角线两顶点之和 = 中间。8 − 4 = 4（例：2+4=3+3=6，3+4=5+2=7）",
+      "es": "Cada suma diagonal = centro. 8 − 4 = 4 (ej.: 2+4=3+3=6, 3+4=5+2=7)",
+      "fr": "Chaque somme diagonale = centre. 8 − 4 = 4 (ex. : 2+4=3+3=6, 3+4=5+2=7)",
+      "de": "Jede Diagonalsumme = Mitte. 8 − 4 = 4 (z. B. 2+4=3+3=6, 3+4=5+2=7)"
+    }
+  },
+  {
+    "id": "sh6_s01",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 6,
+    "order": 1,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "1",
+          "1",
+          "1",
+          "9"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "1",
+          "2",
+          "1",
+          "16"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "1",
+          "2",
+          null
+        ]
+      }
+    ],
+    "answer": "25",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가운데 = 세 꼭짓점 합의 제곱 ((1+1+1)²=9).",
+        "마지막 삼각형: 5×5는?"
+      ],
+      "en": [
+        "Center = square of the corner sum ((1+1+1)²=9).",
+        "Last triangle: what is 5×5?"
+      ],
+      "ja": [
+        "真ん中 = 3頂点の和の2乗 ((1+1+1)²=9)。",
+        "最後の三角形: 5×5 は?"
+      ],
+      "zh": [
+        "中间 = 三顶点之和的平方（(1+1+1)²=9）。",
+        "最后一个三角形：5×5 是多少？"
+      ],
+      "es": [
+        "Centro = cuadrado de la suma de esquinas ((1+1+1)²=9).",
+        "Último triángulo: ¿cuánto es 5×5?"
+      ],
+      "fr": [
+        "Centre = carré de la somme des sommets ((1+1+1)²=9).",
+        "Dernier triangle : combien font 5×5 ?"
+      ],
+      "de": [
+        "Mitte = Quadrat der Eckensumme ((1+1+1)²=9).",
+        "Letztes Dreieck: Was ist 5×5?"
+      ]
+    },
+    "explanation": {
+      "ko": "가운데 = 세 꼭짓점 합의 제곱. (2+1+2)² = 25 (예: (1+1+1)²=9, (1+2+1)²=16)",
+      "en": "Center = square of the corner sum. (2+1+2)² = 25 (e.g. (1+1+1)²=9, (1+2+1)²=16)",
+      "ja": "真ん中 = 3頂点の和の2乗。(2+1+2)² = 25 (例: (1+1+1)²=9, (1+2+1)²=16)",
+      "zh": "中间 = 三顶点之和的平方。(2+1+2)² = 25（例：(1+1+1)²=9，(1+2+1)²=16）",
+      "es": "Centro = cuadrado de la suma de esquinas. (2+1+2)² = 25 (ej.: (1+1+1)²=9, (1+2+1)²=16)",
+      "fr": "Centre = carré de la somme des sommets. (2+1+2)² = 25 (ex. : (1+1+1)²=9, (1+2+1)²=16)",
+      "de": "Mitte = Quadrat der Eckensumme. (2+1+2)² = 25 (z. B. (1+1+1)²=9, (1+2+1)²=16)"
+    }
+  },
+  {
+    "id": "sh6_s02",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 6,
+    "order": 2,
+    "figures": [
+      {
+        "shape": "square",
+        "slots": [
+          "2",
+          "3",
+          "1",
+          "4",
+          "10"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "3",
+          "2",
+          "2",
+          "3",
+          "12"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "4",
+          "2",
+          "3",
+          "3",
+          null
+        ]
+      }
+    ],
+    "answer": "17",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가운데 = (위 두 곱) + (아래 두 곱) (2×3+1×4=10).",
+        "마지막 사각형: 4×2+3×3은?"
+      ],
+      "en": [
+        "Center = (top pair product) + (bottom pair product) (2×3+1×4=10).",
+        "Last square: what is 4×2+3×3?"
+      ],
+      "ja": [
+        "真ん中 = (上2つの積) + (下2つの積) (2×3+1×4=10)。",
+        "最後の四角形: 4×2+3×3 は?"
+      ],
+      "zh": [
+        "中间 = (上两数之积) + (下两数之积)（2×3+1×4=10）。",
+        "最后一个正方形：4×2+3×3 是多少？"
+      ],
+      "es": [
+        "Centro = (producto de arriba) + (producto de abajo) (2×3+1×4=10).",
+        "Último cuadrado: ¿cuánto es 4×2+3×3?"
+      ],
+      "fr": [
+        "Centre = (produit du haut) + (produit du bas) (2×3+1×4=10).",
+        "Dernier carré : combien font 4×2+3×3 ?"
+      ],
+      "de": [
+        "Mitte = (Produkt oben) + (Produkt unten) (2×3+1×4=10).",
+        "Letztes Quadrat: Was ist 4×2+3×3?"
+      ]
+    },
+    "explanation": {
+      "ko": "가운데 = (위 두 곱) + (아래 두 곱). 4×2 + 3×3 = 17 (예: 2×3+1×4=10, 3×2+2×3=12)",
+      "en": "Center = (top pair product) + (bottom pair product). 4×2 + 3×3 = 17 (e.g. 2×3+1×4=10, 3×2+2×3=12)",
+      "ja": "真ん中 = (上2つの積) + (下2つの積)。4×2 + 3×3 = 17 (例: 2×3+1×4=10, 3×2+2×3=12)",
+      "zh": "中间 = (上两数之积) + (下两数之积)。4×2 + 3×3 = 17（例：2×3+1×4=10，3×2+2×3=12）",
+      "es": "Centro = (producto de arriba) + (producto de abajo). 4×2 + 3×3 = 17 (ej.: 2×3+1×4=10, 3×2+2×3=12)",
+      "fr": "Centre = (produit du haut) + (produit du bas). 4×2 + 3×3 = 17 (ex. : 2×3+1×4=10, 3×2+2×3=12)",
+      "de": "Mitte = (Produkt oben) + (Produkt unten). 4×2 + 3×3 = 17 (z. B. 2×3+1×4=10, 3×2+2×3=12)"
+    }
+  },
+  {
+    "id": "sh6_s03",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 6,
+    "order": 3,
+    "figures": [
+      {
+        "shape": "circle",
+        "slots": [
+          "2",
+          "3",
+          "5",
+          "9"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "3",
+          "5",
+          "9",
+          "17"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "4",
+          "7",
+          "13",
+          null
+        ]
+      }
+    ],
+    "answer": "25",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "다음 = 앞 수 × 2 − 1 (시계 방향) (2→3→5→9).",
+        "마지막 원: 13×2−1은?"
+      ],
+      "en": [
+        "Next = previous × 2 − 1 (clockwise) (2→3→5→9).",
+        "Last circle: what is 13×2−1?"
+      ],
+      "ja": [
+        "次 = 前の数 × 2 − 1 (時計回り) (2→3→5→9)。",
+        "最後の円: 13×2−1 は?"
+      ],
+      "zh": [
+        "下一个 = 前一个 × 2 − 1（顺时针）（2→3→5→9）。",
+        "最后一个圆：13×2−1 是多少？"
+      ],
+      "es": [
+        "Siguiente = anterior × 2 − 1 (horario) (2→3→5→9).",
+        "Último círculo: ¿cuánto es 13×2−1?"
+      ],
+      "fr": [
+        "Suivant = précédent × 2 − 1 (horaire) (2→3→5→9).",
+        "Dernier cercle : combien font 13×2−1 ?"
+      ],
+      "de": [
+        "Nächste = vorige × 2 − 1 (im Uhrzeigersinn) (2→3→5→9).",
+        "Letzter Kreis: Was ist 13×2−1?"
+      ]
+    },
+    "explanation": {
+      "ko": "다음 = 앞 수 × 2 − 1 (시계 방향). 13×2 − 1 = 25 (예: 2→3→5→9, 3→5→9→17)",
+      "en": "Next = previous × 2 − 1 (clockwise). 13×2 − 1 = 25 (e.g. 2→3→5→9, 3→5→9→17)",
+      "ja": "次 = 前の数 × 2 − 1 (時計回り)。13×2 − 1 = 25 (例: 2→3→5→9, 3→5→9→17)",
+      "zh": "下一个 = 前一个 × 2 − 1（顺时针）。13×2 − 1 = 25（例：2→3→5→9，3→5→9→17）",
+      "es": "Siguiente = anterior × 2 − 1 (horario). 13×2 − 1 = 25 (ej.: 2→3→5→9, 3→5→9→17)",
+      "fr": "Suivant = précédent × 2 − 1 (horaire). 13×2 − 1 = 25 (ex. : 2→3→5→9, 3→5→9→17)",
+      "de": "Nächste = vorige × 2 − 1 (im Uhrzeigersinn). 13×2 − 1 = 25 (z. B. 2→3→5→9, 3→5→9→17)"
+    }
+  },
+  {
+    "id": "sh6_s04",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 6,
+    "order": 4,
+    "figures": [
+      {
+        "shape": "square",
+        "slots": [
+          "1",
+          "2",
+          "4",
+          "1",
+          "15"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "2",
+          "3",
+          "2",
+          "1",
+          "16"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "3",
+          "1",
+          "2",
+          "2",
+          null
+        ]
+      }
+    ],
+    "answer": "15",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가운데 = (한 대각선 합) × (다른 대각선 합) ((1+4)×(2+1)=15).",
+        "마지막 사각형: 5×3은?"
+      ],
+      "en": [
+        "Center = (one diagonal sum) × (the other diagonal sum) ((1+4)×(2+1)=15).",
+        "Last square: what is 5×3?"
+      ],
+      "ja": [
+        "真ん中 = (一方の対角線の和) × (もう一方の和) ((1+4)×(2+1)=15)。",
+        "最後の四角形: 5×3 は?"
+      ],
+      "zh": [
+        "中间 = (一条对角线之和) × (另一条之和)（(1+4)×(2+1)=15）。",
+        "最后一个正方形：5×3 是多少？"
+      ],
+      "es": [
+        "Centro = (suma de una diagonal) × (la otra) ((1+4)×(2+1)=15).",
+        "Último cuadrado: ¿cuánto es 5×3?"
+      ],
+      "fr": [
+        "Centre = (somme d’une diagonale) × (l’autre) ((1+4)×(2+1)=15).",
+        "Dernier carré : combien font 5×3 ?"
+      ],
+      "de": [
+        "Mitte = (eine Diagonalsumme) × (die andere) ((1+4)×(2+1)=15).",
+        "Letztes Quadrat: Was ist 5×3?"
+      ]
+    },
+    "explanation": {
+      "ko": "가운데 = (한 대각선 합) × (다른 대각선 합). (3+2)×(1+2) = 15 (예: (1+4)×(2+1)=15, (2+2)×(3+1)=16)",
+      "en": "Center = (one diagonal sum) × (the other diagonal sum). (3+2)×(1+2) = 15 (e.g. (1+4)×(2+1)=15, (2+2)×(3+1)=16)",
+      "ja": "真ん中 = (一方の対角線の和) × (もう一方の和)。(3+2)×(1+2) = 15 (例: (1+4)×(2+1)=15, (2+2)×(3+1)=16)",
+      "zh": "中间 = (一条对角线之和) × (另一条之和)。(3+2)×(1+2) = 15（例：(1+4)×(2+1)=15，(2+2)×(3+1)=16）",
+      "es": "Centro = (suma de una diagonal) × (la otra). (3+2)×(1+2) = 15 (ej.: (1+4)×(2+1)=15, (2+2)×(3+1)=16)",
+      "fr": "Centre = (somme d’une diagonale) × (l’autre). (3+2)×(1+2) = 15 (ex. : (1+4)×(2+1)=15, (2+2)×(3+1)=16)",
+      "de": "Mitte = (eine Diagonalsumme) × (die andere). (3+2)×(1+2) = 15 (z. B. (1+4)×(2+1)=15, (2+2)×(3+1)=16)"
+    }
+  },
+  {
+    "id": "sh6_s05",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 6,
+    "order": 5,
+    "figureTokens": [
+      {
+        "shape": "triangle",
+        "rotation": 0,
+        "filled": true
+      },
+      {
+        "shape": "triangle",
+        "rotation": 90,
+        "filled": false
+      },
+      {
+        "shape": "triangle",
+        "rotation": 180,
+        "filled": true
+      },
+      {
+        "shape": "triangle",
+        "rotation": 270,
+        "filled": false
+      },
+      null
+    ],
+    "figureChoices": [
+      {
+        "shape": "triangle",
+        "rotation": 0,
+        "filled": true,
+        "code": "A"
+      },
+      {
+        "shape": "triangle",
+        "rotation": 0,
+        "filled": false,
+        "code": "B"
+      },
+      {
+        "shape": "triangle",
+        "rotation": 90,
+        "filled": true,
+        "code": "C"
+      },
+      {
+        "shape": "triangle",
+        "rotation": 270,
+        "filled": false,
+        "code": "D"
+      }
+    ],
+    "answer": "A",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "삼각형이 어떻게 바뀌나요?",
+        "회전하면서 색도 번갈아 바뀌어요.",
+        "다음에 무엇이 올지 생각해 보세요."
+      ],
+      "en": [
+        "How does the triangle change?",
+        "It rotates and the fill alternates.",
+        "Think about what comes next."
+      ],
+      "ja": [
+        "三角形はどう変わる？",
+        "回転しながら色も交互に変わります。",
+        "次に何が来るか考えてみましょう。"
+      ],
+      "zh": [
+        "三角形怎么变？",
+        "一边旋转一边交替填充。",
+        "想一想下一个是什么。"
+      ],
+      "es": [
+        "¿Cómo cambia el triángulo?",
+        "Gira y el relleno alterna.",
+        "Piensa qué viene después."
+      ],
+      "fr": [
+        "Comment change le triangle ?",
+        "Elle tourne et le remplissage alterne.",
+        "Réfléchis à ce qui suit."
+      ],
+      "de": [
+        "Wie ändert sich das Dreieck?",
+        "Es dreht sich und die Füllung wechselt.",
+        "Überlege, was als Nächstes kommt."
+      ]
+    },
+    "explanation": {
+      "ko": "시계 방향 90°씩 회전 + 칠함·빔 번갈아",
+      "en": "Rotate 90° clockwise and alternate filled/empty",
+      "ja": "時計回りに90°回転＋塗り・空き交互",
+      "zh": "顺时针转90°且实空交替",
+      "es": "Gira 90° horario y alterna relleno/vacío",
+      "fr": "Tourne 90° horaire et alterne plein/vide",
+      "de": "90° im Uhrzeigersinn drehen und Füllung wechseln"
+    }
+  },
+  {
+    "id": "sh6_s06",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 6,
+    "order": 6,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "1",
+          "1",
+          "1",
+          "9"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "1",
+          "1",
+          "16"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          null,
+          "1",
+          "1",
+          "36"
+        ]
+      }
+    ],
+    "answer": "4",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "세 꼭짓점 합 = √가운데 → 빈 꼭짓점 채우기 ((1+1+1)²=9).",
+        "마지막 삼각형: 6−1−1은?"
+      ],
+      "en": [
+        "Corner sum = √center → fill the empty corner ((1+1+1)²=9).",
+        "Last triangle: what is 6−1−1?"
+      ],
+      "ja": [
+        "3頂点の和 = √真ん中 → 空きを埋める ((1+1+1)²=9)。",
+        "最後の三角形: 6−1−1 は?"
+      ],
+      "zh": [
+        "三顶点之和 = √中间 → 补空缺（(1+1+1)²=9）。",
+        "最后一个三角形：6−1−1 是多少？"
+      ],
+      "es": [
+        "Suma = √centro → completa la esquina ((1+1+1)²=9).",
+        "Último triángulo: ¿cuánto es 6−1−1?"
+      ],
+      "fr": [
+        "Somme = √centre → complète le sommet ((1+1+1)²=9).",
+        "Dernier triangle : combien font 6−1−1 ?"
+      ],
+      "de": [
+        "Eckensumme = √Mitte → leere Ecke füllen ((1+1+1)²=9).",
+        "Letztes Dreieck: Was ist 6−1−1?"
+      ]
+    },
+    "explanation": {
+      "ko": "세 꼭짓점 합 = √가운데 → 빈 꼭짓점 채우기. √36 − 1 − 1 = 4 (예: (1+1+1)²=9, (2+1+1)²=16)",
+      "en": "Corner sum = √center → fill the empty corner. √36 − 1 − 1 = 4 (e.g. (1+1+1)²=9, (2+1+1)²=16)",
+      "ja": "3頂点の和 = √真ん中 → 空きを埋める。√36 − 1 − 1 = 4 (例: (1+1+1)²=9, (2+1+1)²=16)",
+      "zh": "三顶点之和 = √中间 → 补空缺。√36 − 1 − 1 = 4（例：(1+1+1)²=9，(2+1+1)²=16）",
+      "es": "Suma = √centro → completa la esquina. √36 − 1 − 1 = 4 (ej.: (1+1+1)²=9, (2+1+1)²=16)",
+      "fr": "Somme = √centre → complète le sommet. √36 − 1 − 1 = 4 (ex. : (1+1+1)²=9, (2+1+1)²=16)",
+      "de": "Eckensumme = √Mitte → leere Ecke füllen. √36 − 1 − 1 = 4 (z. B. (1+1+1)²=9, (2+1+1)²=16)"
+    }
+  },
+  {
+    "id": "sh6_s07",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 6,
+    "order": 7,
+    "figures": [
+      {
+        "shape": "square",
+        "slots": [
+          "4",
+          "2",
+          "3",
+          "1",
+          "10"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "5",
+          "3",
+          "2",
+          "2",
+          "4"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "6",
+          "2",
+          "3",
+          "4",
+          null
+        ]
+      }
+    ],
+    "answer": "10",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가운데 = (한 대각선 곱) − (다른 대각선 곱) (4×3−2×1=10).",
+        "마지막 사각형: 6×3−2×4는?"
+      ],
+      "en": [
+        "Center = (one diagonal product) − (the other) (4×3−2×1=10).",
+        "Last square: what is 6×3−2×4?"
+      ],
+      "ja": [
+        "真ん中 = (一方の対角線の積) − (もう一方) (4×3−2×1=10)。",
+        "最後の四角形: 6×3−2×4 は?"
+      ],
+      "zh": [
+        "中间 = (一条对角线之积) − (另一条)（4×3−2×1=10）。",
+        "最后一个正方形：6×3−2×4 是多少？"
+      ],
+      "es": [
+        "Centro = (producto de una diagonal) − (la otra) (4×3−2×1=10).",
+        "Último cuadrado: ¿cuánto es 6×3−2×4?"
+      ],
+      "fr": [
+        "Centre = (produit d’une diagonale) − (l’autre) (4×3−2×1=10).",
+        "Dernier carré : combien font 6×3−2×4 ?"
+      ],
+      "de": [
+        "Mitte = (ein Diagonalprodukt) − (das andere) (4×3−2×1=10).",
+        "Letztes Quadrat: Was ist 6×3−2×4?"
+      ]
+    },
+    "explanation": {
+      "ko": "가운데 = (한 대각선 곱) − (다른 대각선 곱). 6×3 − 2×4 = 10 (예: 4×3−2×1=10, 5×2−3×2=4)",
+      "en": "Center = (one diagonal product) − (the other). 6×3 − 2×4 = 10 (e.g. 4×3−2×1=10, 5×2−3×2=4)",
+      "ja": "真ん中 = (一方の対角線の積) − (もう一方)。6×3 − 2×4 = 10 (例: 4×3−2×1=10, 5×2−3×2=4)",
+      "zh": "中间 = (一条对角线之积) − (另一条)。6×3 − 2×4 = 10（例：4×3−2×1=10，5×2−3×2=4）",
+      "es": "Centro = (producto de una diagonal) − (la otra). 6×3 − 2×4 = 10 (ej.: 4×3−2×1=10, 5×2−3×2=4)",
+      "fr": "Centre = (produit d’une diagonale) − (l’autre). 6×3 − 2×4 = 10 (ex. : 4×3−2×1=10, 5×2−3×2=4)",
+      "de": "Mitte = (ein Diagonalprodukt) − (das andere). 6×3 − 2×4 = 10 (z. B. 4×3−2×1=10, 5×2−3×2=4)"
+    }
+  },
+  {
+    "id": "sh7_s01",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 7,
+    "order": 1,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "3",
+          "1",
+          "12"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "1",
+          "4",
+          "2",
+          "14"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "4",
+          "1",
+          null
+        ]
+      }
+    ],
+    "answer": "21",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가운데 = (세 꼭짓점 합) × (오른쪽 아래 − 왼쪽 아래) ((2+3+1)×(3−1)=12).",
+        "마지막 삼각형: 7×3은?"
+      ],
+      "en": [
+        "Center = (corner sum) × (bottom-right − bottom-left) ((2+3+1)×(3−1)=12).",
+        "Last triangle: what is 7×3?"
+      ],
+      "ja": [
+        "真ん中 = (3頂点の和) × (右下 − 左下) ((2+3+1)×(3−1)=12)。",
+        "最後の三角形: 7×3 は?"
+      ],
+      "zh": [
+        "中间 = (三顶点之和) × (右下 − 左下)（(2+3+1)×(3−1)=12）。",
+        "最后一个三角形：7×3 是多少？"
+      ],
+      "es": [
+        "Centro = (suma de esquinas) × (abajo-der − abajo-izq) ((2+3+1)×(3−1)=12).",
+        "Último triángulo: ¿cuánto es 7×3?"
+      ],
+      "fr": [
+        "Centre = (somme des sommets) × (bas-droite − bas-gauche) ((2+3+1)×(3−1)=12).",
+        "Dernier triangle : combien font 7×3 ?"
+      ],
+      "de": [
+        "Mitte = (Eckensumme) × (unten-rechts − unten-links) ((2+3+1)×(3−1)=12).",
+        "Letztes Dreieck: Was ist 7×3?"
+      ]
+    },
+    "explanation": {
+      "ko": "가운데 = (세 꼭짓점 합) × (오른쪽 아래 − 왼쪽 아래). (2+4+1)×(4−1) = 21 (예: (2+3+1)×(3−1)=12, (1+4+2)×(4−2)=14)",
+      "en": "Center = (corner sum) × (bottom-right − bottom-left). (2+4+1)×(4−1) = 21 (e.g. (2+3+1)×(3−1)=12, (1+4+2)×(4−2)=14)",
+      "ja": "真ん中 = (3頂点の和) × (右下 − 左下)。(2+4+1)×(4−1) = 21 (例: (2+3+1)×(3−1)=12, (1+4+2)×(4−2)=14)",
+      "zh": "中间 = (三顶点之和) × (右下 − 左下)。(2+4+1)×(4−1) = 21（例：(2+3+1)×(3−1)=12，(1+4+2)×(4−2)=14）",
+      "es": "Centro = (suma de esquinas) × (abajo-der − abajo-izq). (2+4+1)×(4−1) = 21 (ej.: (2+3+1)×(3−1)=12, (1+4+2)×(4−2)=14)",
+      "fr": "Centre = (somme des sommets) × (bas-droite − bas-gauche). (2+4+1)×(4−1) = 21 (ex. : (2+3+1)×(3−1)=12, (1+4+2)×(4−2)=14)",
+      "de": "Mitte = (Eckensumme) × (unten-rechts − unten-links). (2+4+1)×(4−1) = 21 (z. B. (2+3+1)×(3−1)=12, (1+4+2)×(4−2)=14)"
+    }
+  },
+  {
+    "id": "sh7_s02",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 7,
+    "order": 2,
+    "figures": [
+      {
+        "shape": "square",
+        "slots": [
+          "3",
+          "2",
+          "4",
+          "1",
+          "9"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "4",
+          "3",
+          "2",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "5",
+          "2",
+          "2",
+          "3",
+          null
+        ]
+      }
+    ],
+    "answer": "5",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가운데 = (왼위 × 오른아래) − (오른위 + 왼아래) (3×4−(2+1)=9).",
+        "마지막 사각형: 10−5는?"
+      ],
+      "en": [
+        "Center = (TL × BR) − (TR + BL) (3×4−(2+1)=9).",
+        "Last square: what is 10−5?"
+      ],
+      "ja": [
+        "真ん中 = (左上 × 右下) − (右上 + 左下) (3×4−(2+1)=9)。",
+        "最後の四角形: 10−5 は?"
+      ],
+      "zh": [
+        "中间 = (左上 × 右下) − (右上 + 左下)（3×4−(2+1)=9）。",
+        "最后一个正方形：10−5 是多少？"
+      ],
+      "es": [
+        "Centro = (sup-izq × inf-der) − (sup-der + inf-izq) (3×4−(2+1)=9).",
+        "Último cuadrado: ¿cuánto es 10−5?"
+      ],
+      "fr": [
+        "Centre = (haut-gauche × bas-droite) − (haut-droite + bas-gauche) (3×4−(2+1)=9).",
+        "Dernier carré : combien font 10−5 ?"
+      ],
+      "de": [
+        "Mitte = (oben-links × unten-rechts) − (oben-rechts + unten-links) (3×4−(2+1)=9).",
+        "Letztes Quadrat: Was ist 10−5?"
+      ]
+    },
+    "explanation": {
+      "ko": "가운데 = (왼위 × 오른아래) − (오른위 + 왼아래). 5×2 − (2+3) = 5 (예: 3×4−(2+1)=9, 4×2−(3+2)=3)",
+      "en": "Center = (TL × BR) − (TR + BL). 5×2 − (2+3) = 5 (e.g. 3×4−(2+1)=9, 4×2−(3+2)=3)",
+      "ja": "真ん中 = (左上 × 右下) − (右上 + 左下)。5×2 − (2+3) = 5 (例: 3×4−(2+1)=9, 4×2−(3+2)=3)",
+      "zh": "中间 = (左上 × 右下) − (右上 + 左下)。5×2 − (2+3) = 5（例：3×4−(2+1)=9，4×2−(3+2)=3）",
+      "es": "Centro = (sup-izq × inf-der) − (sup-der + inf-izq). 5×2 − (2+3) = 5 (ej.: 3×4−(2+1)=9, 4×2−(3+2)=3)",
+      "fr": "Centre = (haut-gauche × bas-droite) − (haut-droite + bas-gauche). 5×2 − (2+3) = 5 (ex. : 3×4−(2+1)=9, 4×2−(3+2)=3)",
+      "de": "Mitte = (oben-links × unten-rechts) − (oben-rechts + unten-links). 5×2 − (2+3) = 5 (z. B. 3×4−(2+1)=9, 4×2−(3+2)=3)"
+    }
+  },
+  {
+    "id": "sh7_s03",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 7,
+    "order": 3,
+    "figureTokens": [
+      {
+        "shape": "arrow",
+        "rotation": 0
+      },
+      {
+        "shape": "arrow",
+        "rotation": 90
+      },
+      {
+        "shape": "arrow",
+        "rotation": 270
+      },
+      {
+        "shape": "arrow",
+        "rotation": 0
+      },
+      null
+    ],
+    "figureChoices": [
+      {
+        "shape": "arrow",
+        "rotation": 0,
+        "code": "up"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 90,
+        "code": "right"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 180,
+        "code": "down"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 270,
+        "code": "left"
+      }
+    ],
+    "answer": "down",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "화살표 방향이 어떻게 바뀌나요?",
+        "+90°, +180° 가 번갈아 회전해요.",
+        "다음에 무엇이 올지 생각해 보세요."
+      ],
+      "en": [
+        "How does the arrow turn?",
+        "It alternates +90° and +180° turns.",
+        "Think about what comes next."
+      ],
+      "ja": [
+        "矢印の向きはどう変わる？",
+        "+90°と+180°が交互に回ります。",
+        "次に何が来るか考えてみましょう。"
+      ],
+      "zh": [
+        "箭头方向怎么变？",
+        "交替转 +90° 和 +180°。",
+        "想一想下一个是什么。"
+      ],
+      "es": [
+        "¿Cómo gira la flecha?",
+        "Alterna giros de +90° y +180°.",
+        "Piensa qué viene después."
+      ],
+      "fr": [
+        "Comment tourne la flèche ?",
+        "Alterne des rotations de +90° et +180°.",
+        "Réfléchis à ce qui suit."
+      ],
+      "de": [
+        "Wie dreht sich der Pfeil?",
+        "Es wechselt +90°- und +180°-Drehungen ab.",
+        "Überlege, was als Nächstes kommt."
+      ]
+    },
+    "explanation": {
+      "ko": "시계 방향 +90°, +180° 번갈아: 위→오른쪽→왼쪽→위→아래",
+      "en": "+90° then +180°, alternating: up→right→left→up→down",
+      "ja": "時計回りに+90°→+180°交互: 上→右→左→上→下",
+      "zh": "顺时针 +90°、+180° 交替：上→右→左→上→下",
+      "es": "+90° y +180° alternando: arriba→derecha→izquierda→arriba→abajo",
+      "fr": "+90° puis +180°, en alternance : haut→droite→gauche→haut→bas",
+      "de": "+90° und +180° abwechselnd: oben→rechts→links→oben→unten"
+    }
+  },
+  {
+    "id": "sh7_s04",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 7,
+    "order": 4,
+    "figures": [
+      {
+        "shape": "circle",
+        "slots": [
+          "3",
+          "4",
+          "6",
+          "10"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "4",
+          "6",
+          "10",
+          "18"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "5",
+          "8",
+          "14",
+          null
+        ]
+      }
+    ],
+    "answer": "26",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "다음 수 = 앞 수 × 2 − 2 (시계 방향) (3→4→6→10).",
+        "마지막 원: 14×2−2는?"
+      ],
+      "en": [
+        "Next = previous × 2 − 2 (clockwise) (3→4→6→10).",
+        "Last circle: what is 14×2−2?"
+      ],
+      "ja": [
+        "次の数 = 前の数 × 2 − 2 (時計回り) (3→4→6→10)。",
+        "最後の円: 14×2−2 は?"
+      ],
+      "zh": [
+        "下一个 = 前一个 × 2 − 2（顺时针）（3→4→6→10）。",
+        "最后一个圆：14×2−2 是多少？"
+      ],
+      "es": [
+        "Siguiente = anterior × 2 − 2 (horario) (3→4→6→10).",
+        "Último círculo: ¿cuánto es 14×2−2?"
+      ],
+      "fr": [
+        "Suivant = précédent × 2 − 2 (horaire) (3→4→6→10).",
+        "Dernier cercle : combien font 14×2−2 ?"
+      ],
+      "de": [
+        "Nächste = vorige × 2 − 2 (im Uhrzeigersinn) (3→4→6→10).",
+        "Letzter Kreis: Was ist 14×2−2?"
+      ]
+    },
+    "explanation": {
+      "ko": "다음 수 = 앞 수 × 2 − 2 (시계 방향). 14×2 − 2 = 26 (예: 3→4→6→10, 4→6→10→18)",
+      "en": "Next = previous × 2 − 2 (clockwise). 14×2 − 2 = 26 (e.g. 3→4→6→10, 4→6→10→18)",
+      "ja": "次の数 = 前の数 × 2 − 2 (時計回り)。14×2 − 2 = 26 (例: 3→4→6→10, 4→6→10→18)",
+      "zh": "下一个 = 前一个 × 2 − 2（顺时针）。14×2 − 2 = 26（例：3→4→6→10，4→6→10→18）",
+      "es": "Siguiente = anterior × 2 − 2 (horario). 14×2 − 2 = 26 (ej.: 3→4→6→10, 4→6→10→18)",
+      "fr": "Suivant = précédent × 2 − 2 (horaire). 14×2 − 2 = 26 (ex. : 3→4→6→10, 4→6→10→18)",
+      "de": "Nächste = vorige × 2 − 2 (im Uhrzeigersinn). 14×2 − 2 = 26 (z. B. 3→4→6→10, 4→6→10→18)"
+    }
+  },
+  {
+    "id": "sh7_s05",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 7,
+    "order": 5,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "2",
+          "2",
+          "2"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "3",
+          "2",
+          "5"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "3",
+          "3",
+          "2",
+          null
+        ]
+      }
+    ],
+    "answer": "10",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가운데 = (세 꼭짓점의 곱) − (세 꼭짓점의 합) (2×2×2−6=2).",
+        "마지막 삼각형: 18−8은?"
+      ],
+      "en": [
+        "Center = (product of corners) − (sum of corners) (2×2×2−6=2).",
+        "Last triangle: what is 18−8?"
+      ],
+      "ja": [
+        "真ん中 = (3頂点の積) − (3頂点の和) (2×2×2−6=2)。",
+        "最後の三角形: 18−8 は?"
+      ],
+      "zh": [
+        "中间 = (三顶点之积) − (三顶点之和)（2×2×2−6=2）。",
+        "最后一个三角形：18−8 是多少？"
+      ],
+      "es": [
+        "Centro = (producto de esquinas) − (suma de esquinas) (2×2×2−6=2).",
+        "Último triángulo: ¿cuánto es 18−8?"
+      ],
+      "fr": [
+        "Centre = (produit des sommets) − (somme des sommets) (2×2×2−6=2).",
+        "Dernier triangle : combien font 18−8 ?"
+      ],
+      "de": [
+        "Mitte = (Produkt der Ecken) − (Summe der Ecken) (2×2×2−6=2).",
+        "Letztes Dreieck: Was ist 18−8?"
+      ]
+    },
+    "explanation": {
+      "ko": "가운데 = (세 꼭짓점의 곱) − (세 꼭짓점의 합). 3×3×2 − 8 = 10 (예: 2×2×2−6=2, 2×3×2−7=5)",
+      "en": "Center = (product of corners) − (sum of corners). 3×3×2 − 8 = 10 (e.g. 2×2×2−6=2, 2×3×2−7=5)",
+      "ja": "真ん中 = (3頂点の積) − (3頂点の和)。3×3×2 − 8 = 10 (例: 2×2×2−6=2, 2×3×2−7=5)",
+      "zh": "中间 = (三顶点之积) − (三顶点之和)。3×3×2 − 8 = 10（例：2×2×2−6=2，2×3×2−7=5）",
+      "es": "Centro = (producto de esquinas) − (suma de esquinas). 3×3×2 − 8 = 10 (ej.: 2×2×2−6=2, 2×3×2−7=5)",
+      "fr": "Centre = (produit des sommets) − (somme des sommets). 3×3×2 − 8 = 10 (ex. : 2×2×2−6=2, 2×3×2−7=5)",
+      "de": "Mitte = (Produkt der Ecken) − (Summe der Ecken). 3×3×2 − 8 = 10 (z. B. 2×2×2−6=2, 2×3×2−7=5)"
+    }
+  },
+  {
+    "id": "sh7_s06",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 7,
+    "order": 6,
+    "figureTokens": [
+      {
+        "shape": "square",
+        "filled": true
+      },
+      {
+        "shape": "square",
+        "filled": true
+      },
+      {
+        "shape": "square",
+        "filled": false
+      },
+      {
+        "shape": "square",
+        "filled": true
+      },
+      {
+        "shape": "square",
+        "filled": true
+      },
+      null
+    ],
+    "figureChoices": [
+      {
+        "shape": "square",
+        "filled": true,
+        "code": "f"
+      },
+      {
+        "shape": "square",
+        "filled": false,
+        "code": "o"
+      },
+      {
+        "shape": "circle",
+        "filled": true,
+        "code": "fc"
+      },
+      {
+        "shape": "circle",
+        "filled": false,
+        "code": "oc"
+      }
+    ],
+    "answer": "o",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "색이 어떻게 바뀌나요?",
+        "칠함·칠함·빔 이 반복돼요(3개 주기).",
+        "다음에 무엇이 올지 생각해 보세요."
+      ],
+      "en": [
+        "How does the fill change?",
+        "Pattern: filled, filled, empty (period 3).",
+        "Think about what comes next."
+      ],
+      "ja": [
+        "色はどう変わる？",
+        "塗り・塗り・空きの繰り返し(3周期)。",
+        "次に何が来るか考えてみましょう。"
+      ],
+      "zh": [
+        "填充怎么变？",
+        "实、实、空 循环（周期3）。",
+        "想一想下一个是什么。"
+      ],
+      "es": [
+        "¿Cómo cambia el relleno?",
+        "Relleno, relleno, vacío (periodo 3).",
+        "Piensa qué viene después."
+      ],
+      "fr": [
+        "Comment change le remplissage ?",
+        "Plein, plein, vide (période 3).",
+        "Réfléchis à ce qui suit."
+      ],
+      "de": [
+        "Wie ändert sich die Füllung?",
+        "Voll, voll, leer (Periode 3).",
+        "Überlege, was als Nächstes kommt."
+      ]
+    },
+    "explanation": {
+      "ko": "칠함·칠함·빔 3개 주기로 반복 → 다음은 빔",
+      "en": "Filled, filled, empty repeating (period 3) → next is empty",
+      "ja": "塗り・塗り・空きが3周期で繰り返す→次は空き",
+      "zh": "实、实、空 周期3 → 下一个是空",
+      "es": "Relleno, relleno, vacío (periodo 3) → sigue vacío",
+      "fr": "Plein, plein, vide (période 3) → ensuite vide",
+      "de": "Voll, voll, leer (Periode 3) → als Nächstes leer"
+    }
+  },
+  {
+    "id": "sh7_s07",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 7,
+    "order": 7,
+    "figures": [
+      {
+        "shape": "square",
+        "slots": [
+          "3",
+          "4",
+          "2",
+          "1",
+          "15"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "2",
+          "5",
+          "4",
+          "2",
+          "18"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "4",
+          "5",
+          "3",
+          "2",
+          null
+        ]
+      }
+    ],
+    "answer": "21",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가운데 = (왼위 + 오른아래) × (오른위 − 왼아래) ((3+2)×(4−1)=15).",
+        "마지막 사각형: 7×3은?"
+      ],
+      "en": [
+        "Center = (TL + BR) × (TR − BL) ((3+2)×(4−1)=15).",
+        "Last square: what is 7×3?"
+      ],
+      "ja": [
+        "真ん中 = (左上 + 右下) × (右上 − 左下) ((3+2)×(4−1)=15)。",
+        "最後の四角形: 7×3 は?"
+      ],
+      "zh": [
+        "中间 = (左上 + 右下) × (右上 − 左下)（(3+2)×(4−1)=15）。",
+        "最后一个正方形：7×3 是多少？"
+      ],
+      "es": [
+        "Centro = (sup-izq + inf-der) × (sup-der − inf-izq) ((3+2)×(4−1)=15).",
+        "Último cuadrado: ¿cuánto es 7×3?"
+      ],
+      "fr": [
+        "Centre = (haut-gauche + bas-droite) × (haut-droite − bas-gauche) ((3+2)×(4−1)=15).",
+        "Dernier carré : combien font 7×3 ?"
+      ],
+      "de": [
+        "Mitte = (oben-links + unten-rechts) × (oben-rechts − unten-links) ((3+2)×(4−1)=15).",
+        "Letztes Quadrat: Was ist 7×3?"
+      ]
+    },
+    "explanation": {
+      "ko": "가운데 = (왼위 + 오른아래) × (오른위 − 왼아래). (4+3)×(5−2) = 21 (예: (3+2)×(4−1)=15, (2+4)×(5−2)=18)",
+      "en": "Center = (TL + BR) × (TR − BL). (4+3)×(5−2) = 21 (e.g. (3+2)×(4−1)=15, (2+4)×(5−2)=18)",
+      "ja": "真ん中 = (左上 + 右下) × (右上 − 左下)。(4+3)×(5−2) = 21 (例: (3+2)×(4−1)=15, (2+4)×(5−2)=18)",
+      "zh": "中间 = (左上 + 右下) × (右上 − 左下)。(4+3)×(5−2) = 21（例：(3+2)×(4−1)=15，(2+4)×(5−2)=18）",
+      "es": "Centro = (sup-izq + inf-der) × (sup-der − inf-izq). (4+3)×(5−2) = 21 (ej.: (3+2)×(4−1)=15, (2+4)×(5−2)=18)",
+      "fr": "Centre = (haut-gauche + bas-droite) × (haut-droite − bas-gauche). (4+3)×(5−2) = 21 (ex. : (3+2)×(4−1)=15, (2+4)×(5−2)=18)",
+      "de": "Mitte = (oben-links + unten-rechts) × (oben-rechts − unten-links). (4+3)×(5−2) = 21 (z. B. (3+2)×(4−1)=15, (2+4)×(5−2)=18)"
+    }
+  },
+  {
+    "id": "sh8_s01",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 8,
+    "order": 1,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "1",
+          "1",
+          "1",
+          "8"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "1",
+          "1",
+          "14"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "2",
+          "1",
+          null
+        ]
+      }
+    ],
+    "answer": "21",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가운데 = (세 꼭짓점 합)² − (세 꼭짓점 곱) ((1+1+1)²−1=8).",
+        "마지막 삼각형: 25−4는?"
+      ],
+      "en": [
+        "Center = (corner sum)² − (corner product) ((1+1+1)²−1=8).",
+        "Last triangle: what is 25−4?"
+      ],
+      "ja": [
+        "真ん中 = (3頂点の和)² − (3頂点の積) ((1+1+1)²−1=8)。",
+        "最後の三角形: 25−4 は?"
+      ],
+      "zh": [
+        "中间 = (三顶点之和)² − (三顶点之积)（(1+1+1)²−1=8）。",
+        "最后一个三角形：25−4 是多少？"
+      ],
+      "es": [
+        "Centro = (suma)² − (producto) ((1+1+1)²−1=8).",
+        "Último triángulo: ¿cuánto es 25−4?"
+      ],
+      "fr": [
+        "Centre = (somme)² − (produit) ((1+1+1)²−1=8).",
+        "Dernier triangle : combien font 25−4 ?"
+      ],
+      "de": [
+        "Mitte = (Summe)² − (Produkt) ((1+1+1)²−1=8).",
+        "Letztes Dreieck: Was ist 25−4?"
+      ]
+    },
+    "explanation": {
+      "ko": "가운데 = (세 꼭짓점 합)² − (세 꼭짓점 곱). (2+2+1)² − (2×2×1) = 21 (예: (1+1+1)²−1=8, (2+1+1)²−2=14)",
+      "en": "Center = (corner sum)² − (corner product). (2+2+1)² − (2×2×1) = 21 (e.g. (1+1+1)²−1=8, (2+1+1)²−2=14)",
+      "ja": "真ん中 = (3頂点の和)² − (3頂点の積)。(2+2+1)² − (2×2×1) = 21 (例: (1+1+1)²−1=8, (2+1+1)²−2=14)",
+      "zh": "中间 = (三顶点之和)² − (三顶点之积)。(2+2+1)² − (2×2×1) = 21（例：(1+1+1)²−1=8，(2+1+1)²−2=14）",
+      "es": "Centro = (suma)² − (producto). (2+2+1)² − (2×2×1) = 21 (ej.: (1+1+1)²−1=8, (2+1+1)²−2=14)",
+      "fr": "Centre = (somme)² − (produit). (2+2+1)² − (2×2×1) = 21 (ex. : (1+1+1)²−1=8, (2+1+1)²−2=14)",
+      "de": "Mitte = (Summe)² − (Produkt). (2+2+1)² − (2×2×1) = 21 (z. B. (1+1+1)²−1=8, (2+1+1)²−2=14)"
+    }
+  },
+  {
+    "id": "sh8_s02",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 8,
+    "order": 2,
+    "figures": [
+      {
+        "shape": "square",
+        "slots": [
+          "3",
+          "1",
+          "4",
+          "2",
+          "8"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "4",
+          "2",
+          "5",
+          "2",
+          "13"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "5",
+          "2",
+          "4",
+          "1",
+          null
+        ]
+      }
+    ],
+    "answer": "18",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가운데 = (왼위 − 오른위)² + (오른아래 − 왼아래)² ((3−1)²+(4−2)²=8).",
+        "마지막 사각형: 9+9는?"
+      ],
+      "en": [
+        "Center = (TL − TR)² + (BR − BL)² ((3−1)²+(4−2)²=8).",
+        "Last square: what is 9+9?"
+      ],
+      "ja": [
+        "真ん中 = (左上 − 右上)² + (右下 − 左下)² ((3−1)²+(4−2)²=8)。",
+        "最後の四角形: 9+9 は?"
+      ],
+      "zh": [
+        "中间 = (左上 − 右上)² + (右下 − 左下)²（(3−1)²+(4−2)²=8）。",
+        "最后一个正方形：9+9 是多少？"
+      ],
+      "es": [
+        "Centro = (sup-izq − sup-der)² + (inf-der − inf-izq)² ((3−1)²+(4−2)²=8).",
+        "Último cuadrado: ¿cuánto es 9+9?"
+      ],
+      "fr": [
+        "Centre = (HG − HD)² + (BD − BG)² ((3−1)²+(4−2)²=8).",
+        "Dernier carré : combien font 9+9 ?"
+      ],
+      "de": [
+        "Mitte = (OL − OR)² + (UR − UL)² ((3−1)²+(4−2)²=8).",
+        "Letztes Quadrat: Was ist 9+9?"
+      ]
+    },
+    "explanation": {
+      "ko": "가운데 = (왼위 − 오른위)² + (오른아래 − 왼아래)². (5−2)² + (4−1)² = 18 (예: (3−1)²+(4−2)²=8, (4−2)²+(5−2)²=13)",
+      "en": "Center = (TL − TR)² + (BR − BL)². (5−2)² + (4−1)² = 18 (e.g. (3−1)²+(4−2)²=8, (4−2)²+(5−2)²=13)",
+      "ja": "真ん中 = (左上 − 右上)² + (右下 − 左下)²。(5−2)² + (4−1)² = 18 (例: (3−1)²+(4−2)²=8, (4−2)²+(5−2)²=13)",
+      "zh": "中间 = (左上 − 右上)² + (右下 − 左下)²。(5−2)² + (4−1)² = 18（例：(3−1)²+(4−2)²=8，(4−2)²+(5−2)²=13）",
+      "es": "Centro = (sup-izq − sup-der)² + (inf-der − inf-izq)². (5−2)² + (4−1)² = 18 (ej.: (3−1)²+(4−2)²=8, (4−2)²+(5−2)²=13)",
+      "fr": "Centre = (HG − HD)² + (BD − BG)². (5−2)² + (4−1)² = 18 (ex. : (3−1)²+(4−2)²=8, (4−2)²+(5−2)²=13)",
+      "de": "Mitte = (OL − OR)² + (UR − UL)². (5−2)² + (4−1)² = 18 (z. B. (3−1)²+(4−2)²=8, (4−2)²+(5−2)²=13)"
+    }
+  },
+  {
+    "id": "sh8_s03",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 8,
+    "order": 3,
+    "figureTokens": [
+      {
+        "shape": "arrow",
+        "rotation": 0
+      },
+      {
+        "shape": "arrow",
+        "rotation": 45
+      },
+      {
+        "shape": "arrow",
+        "rotation": 135
+      },
+      {
+        "shape": "arrow",
+        "rotation": 270
+      },
+      null
+    ],
+    "figureChoices": [
+      {
+        "shape": "arrow",
+        "rotation": 0,
+        "code": "up"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 90,
+        "code": "right"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 180,
+        "code": "down"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 270,
+        "code": "left"
+      }
+    ],
+    "answer": "right",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "화살표 방향이 어떻게 바뀌나요?",
+        "도는 각도가 +45°, +90°, +135°… 점점 커져요.",
+        "다음에 무엇이 올지 생각해 보세요."
+      ],
+      "en": [
+        "How does the arrow turn?",
+        "The turn grows: +45°, +90°, +135°…",
+        "Think about what comes next."
+      ],
+      "ja": [
+        "矢印の向きはどう変わる？",
+        "回る角度が +45°, +90°, +135°… と増えます。",
+        "次に何が来るか考えてみましょう。"
+      ],
+      "zh": [
+        "箭头方向怎么变？",
+        "旋转角度递增：+45°、+90°、+135°…",
+        "想一想下一个是什么。"
+      ],
+      "es": [
+        "¿Cómo gira la flecha?",
+        "El giro crece: +45°, +90°, +135°…",
+        "Piensa qué viene después."
+      ],
+      "fr": [
+        "Comment tourne la flèche ?",
+        "La rotation augmente : +45°, +90°, +135°…",
+        "Réfléchis à ce qui suit."
+      ],
+      "de": [
+        "Wie dreht sich der Pfeil?",
+        "Die Drehung wächst: +45°, +90°, +135°…",
+        "Überlege, was als Nächstes kommt."
+      ]
+    },
+    "explanation": {
+      "ko": "회전 각도가 45°씩 커진다(+45,+90,+135,+180): 마지막은 오른쪽",
+      "en": "Each turn is 45° more (+45,+90,+135,+180): ends right",
+      "ja": "回転角が45°ずつ増える(+45,+90,+135,+180): 最後は右",
+      "zh": "每次旋转多45°（+45,+90,+135,+180）：最后朝右",
+      "es": "Cada giro aumenta 45° (+45,+90,+135,+180): termina a la derecha",
+      "fr": "Chaque rotation +45° (+45,+90,+135,+180) : finit à droite",
+      "de": "Jede Drehung +45° (+45,+90,+135,+180): endet rechts"
+    }
+  },
+  {
+    "id": "sh8_s04",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 8,
+    "order": 4,
+    "figures": [
+      {
+        "shape": "circle",
+        "slots": [
+          "2",
+          "4",
+          "3",
+          "2"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "3",
+          "4",
+          "2",
+          "2"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "4",
+          "5",
+          "2",
+          null
+        ]
+      }
+    ],
+    "answer": "3",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "마주보는 두 수의 곱 = 나머지 두 수의 합 (2×3=4+2).",
+        "마지막 원: 8−5는?"
+      ],
+      "en": [
+        "Product of one opposite pair = sum of the other pair (2×3=4+2).",
+        "Last circle: what is 8−5?"
+      ],
+      "ja": [
+        "向かい合う2数の積 = もう一方の2数の和 (2×3=4+2)。",
+        "最後の円: 8−5 は?"
+      ],
+      "zh": [
+        "相对两数之积 = 另两数之和（2×3=4+2）。",
+        "最后一个圆：8−5 是多少？"
+      ],
+      "es": [
+        "Producto de un par opuesto = suma del otro par (2×3=4+2).",
+        "Último círculo: ¿cuánto es 8−5?"
+      ],
+      "fr": [
+        "Produit d’une paire opposée = somme de l’autre paire (2×3=4+2).",
+        "Dernier cercle : combien font 8−5 ?"
+      ],
+      "de": [
+        "Produkt eines Paares = Summe des anderen Paares (2×3=4+2).",
+        "Letzter Kreis: Was ist 8−5?"
+      ]
+    },
+    "explanation": {
+      "ko": "마주보는 두 수의 곱 = 나머지 두 수의 합. 4×2 − 5 = 3 (예: 2×3=4+2, 3×2=4+2)",
+      "en": "Product of one opposite pair = sum of the other pair. 4×2 − 5 = 3 (e.g. 2×3=4+2, 3×2=4+2)",
+      "ja": "向かい合う2数の積 = もう一方の2数の和。4×2 − 5 = 3 (例: 2×3=4+2, 3×2=4+2)",
+      "zh": "相对两数之积 = 另两数之和。4×2 − 5 = 3（例：2×3=4+2，3×2=4+2）",
+      "es": "Producto de un par opuesto = suma del otro par. 4×2 − 5 = 3 (ej.: 2×3=4+2, 3×2=4+2)",
+      "fr": "Produit d’une paire opposée = somme de l’autre paire. 4×2 − 5 = 3 (ex. : 2×3=4+2, 3×2=4+2)",
+      "de": "Produkt eines Paares = Summe des anderen Paares. 4×2 − 5 = 3 (z. B. 2×3=4+2, 3×2=4+2)"
+    }
+  },
+  {
+    "id": "sh8_s05",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 8,
+    "order": 5,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "3",
+          "1",
+          "11"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "1",
+          "2",
+          "2",
+          "8"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "2",
+          "3",
+          null
+        ]
+      }
+    ],
+    "answer": "16",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가운데 = 위 × (아래 두 합) + (아래 두 곱) (2×(3+1)+3×1=11).",
+        "마지막 삼각형: 10+6은?"
+      ],
+      "en": [
+        "Center = top × (bottom sum) + (bottom product) (2×(3+1)+3×1=11).",
+        "Last triangle: what is 10+6?"
+      ],
+      "ja": [
+        "真ん中 = 上 × (下2つの和) + (下2つの積) (2×(3+1)+3×1=11)。",
+        "最後の三角形: 10+6 は?"
+      ],
+      "zh": [
+        "中间 = 顶 × (两底之和) + (两底之积)（2×(3+1)+3×1=11）。",
+        "最后一个三角形：10+6 是多少？"
+      ],
+      "es": [
+        "Centro = arriba × (suma inf) + (producto inf) (2×(3+1)+3×1=11).",
+        "Último triángulo: ¿cuánto es 10+6?"
+      ],
+      "fr": [
+        "Centre = haut × (somme bas) + (produit bas) (2×(3+1)+3×1=11).",
+        "Dernier triangle : combien font 10+6 ?"
+      ],
+      "de": [
+        "Mitte = oben × (Summe unten) + (Produkt unten) (2×(3+1)+3×1=11).",
+        "Letztes Dreieck: Was ist 10+6?"
+      ]
+    },
+    "explanation": {
+      "ko": "가운데 = 위 × (아래 두 합) + (아래 두 곱). 2×(2+3) + 2×3 = 16 (예: 2×(3+1)+3×1=11, 1×(2+2)+2×2=8)",
+      "en": "Center = top × (bottom sum) + (bottom product). 2×(2+3) + 2×3 = 16 (e.g. 2×(3+1)+3×1=11, 1×(2+2)+2×2=8)",
+      "ja": "真ん中 = 上 × (下2つの和) + (下2つの積)。2×(2+3) + 2×3 = 16 (例: 2×(3+1)+3×1=11, 1×(2+2)+2×2=8)",
+      "zh": "中间 = 顶 × (两底之和) + (两底之积)。2×(2+3) + 2×3 = 16（例：2×(3+1)+3×1=11，1×(2+2)+2×2=8）",
+      "es": "Centro = arriba × (suma inf) + (producto inf). 2×(2+3) + 2×3 = 16 (ej.: 2×(3+1)+3×1=11, 1×(2+2)+2×2=8)",
+      "fr": "Centre = haut × (somme bas) + (produit bas). 2×(2+3) + 2×3 = 16 (ex. : 2×(3+1)+3×1=11, 1×(2+2)+2×2=8)",
+      "de": "Mitte = oben × (Summe unten) + (Produkt unten). 2×(2+3) + 2×3 = 16 (z. B. 2×(3+1)+3×1=11, 1×(2+2)+2×2=8)"
+    }
+  },
+  {
+    "id": "sh8_s06",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 8,
+    "order": 6,
+    "figureTokens": [
+      {
+        "shape": "triangle",
+        "filled": true
+      },
+      {
+        "shape": "square",
+        "filled": false
+      },
+      {
+        "shape": "circle",
+        "filled": true
+      },
+      {
+        "shape": "triangle",
+        "filled": false
+      },
+      {
+        "shape": "square",
+        "filled": true
+      },
+      null
+    ],
+    "figureChoices": [
+      {
+        "shape": "circle",
+        "filled": false,
+        "code": "oc"
+      },
+      {
+        "shape": "circle",
+        "filled": true,
+        "code": "fc"
+      },
+      {
+        "shape": "square",
+        "filled": false,
+        "code": "so"
+      },
+      {
+        "shape": "triangle",
+        "filled": true,
+        "code": "tf"
+      }
+    ],
+    "answer": "oc",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모양이 어떻게 바뀌나요?",
+        "모양은 세모→네모→동그라미, 색은 참·빔 — 둘이 동시에 바뀌어요.",
+        "다음에 무엇이 올지 생각해 보세요."
+      ],
+      "en": [
+        "How does the shape change?",
+        "Shape cycles tri→square→circle; fill alternates — both at once.",
+        "Think about what comes next."
+      ],
+      "ja": [
+        "形はどう変わる？",
+        "形は三角→四角→丸、色は塗り・空き — 同時に変化。",
+        "次に何が来るか考えてみましょう。"
+      ],
+      "zh": [
+        "形状怎么变？",
+        "形状三角→正方→圆，填充实空交替——同时变化。",
+        "想一想下一个是什么。"
+      ],
+      "es": [
+        "¿Cómo cambia la forma?",
+        "Forma triángulo→cuadrado→círculo y relleno alterna a la vez.",
+        "Piensa qué viene después."
+      ],
+      "fr": [
+        "Comment change la forme ?",
+        "Forme triangle→carré→cercle et remplissage alternent ensemble.",
+        "Réfléchis à ce qui suit."
+      ],
+      "de": [
+        "Wie ändert sich die Form?",
+        "Form Dreieck→Quadrat→Kreis und Füllung wechseln zugleich.",
+        "Überlege, was als Nächstes kommt."
+      ]
+    },
+    "explanation": {
+      "ko": "모양(세모→네모→동그라미)과 색(참·빔)이 동시에 순환 → 다음은 빈 동그라미",
+      "en": "Shape and fill cycle together → next is an empty circle",
+      "ja": "形と色が同時に循環 → 次は空の丸",
+      "zh": "形状与填充同时循环 → 下一个是空心圆",
+      "es": "Forma y relleno ciclan juntos → sigue círculo vacío",
+      "fr": "Forme et remplissage tournent ensemble → ensuite cercle vide",
+      "de": "Form und Füllung zyklen zusammen → als Nächstes leerer Kreis"
+    }
+  },
+  {
+    "id": "sh8_s07",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 8,
+    "order": 7,
+    "figures": [
+      {
+        "shape": "square",
+        "slots": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "10"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "2",
+          "1",
+          "1",
+          "1",
+          "11"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "1",
+          "2",
+          "1",
+          "2",
+          null
+        ]
+      }
+    ],
+    "answer": "16",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "왼위부터 시계 방향으로 ×1, ×2, ×3, ×4 한 합 (1+2+3+4=10).",
+        "마지막 사각형: 1+4+3+8은?"
+      ],
+      "en": [
+        "Weighted sum: ×1, ×2, ×3, ×4 clockwise from TL (1+2+3+4=10).",
+        "Last square: what is 1+4+3+8?"
+      ],
+      "ja": [
+        "左上から時計回りに ×1, ×2, ×3, ×4 した和 (1+2+3+4=10)。",
+        "最後の四角形: 1+4+3+8 は?"
+      ],
+      "zh": [
+        "从左上顺时针 ×1, ×2, ×3, ×4 之和（1+2+3+4=10）。",
+        "最后一个正方形：1+4+3+8 是多少？"
+      ],
+      "es": [
+        "Suma ponderada: ×1, ×2, ×3, ×4 desde sup-izq (horario) (1+2+3+4=10).",
+        "Último cuadrado: ¿cuánto es 1+4+3+8?"
+      ],
+      "fr": [
+        "Somme pondérée : ×1, ×2, ×3, ×4 depuis HG (horaire) (1+2+3+4=10).",
+        "Dernier carré : combien font 1+4+3+8 ?"
+      ],
+      "de": [
+        "Gewichtete Summe: ×1, ×2, ×3, ×4 ab OL (im Uhrzeigersinn) (1+2+3+4=10).",
+        "Letztes Quadrat: Was ist 1+4+3+8?"
+      ]
+    },
+    "explanation": {
+      "ko": "왼위부터 시계 방향으로 ×1, ×2, ×3, ×4 한 합. 1 + 2×2 + 1×3 + 2×4 = 16 (예: 1+2+3+4=10, 2+2+3+4=11)",
+      "en": "Weighted sum: ×1, ×2, ×3, ×4 clockwise from TL. 1 + 2×2 + 1×3 + 2×4 = 16 (e.g. 1+2+3+4=10, 2+2+3+4=11)",
+      "ja": "左上から時計回りに ×1, ×2, ×3, ×4 した和。1 + 2×2 + 1×3 + 2×4 = 16 (例: 1+2+3+4=10, 2+2+3+4=11)",
+      "zh": "从左上顺时针 ×1, ×2, ×3, ×4 之和。1 + 2×2 + 1×3 + 2×4 = 16（例：1+2+3+4=10，2+2+3+4=11）",
+      "es": "Suma ponderada: ×1, ×2, ×3, ×4 desde sup-izq (horario). 1 + 2×2 + 1×3 + 2×4 = 16 (ej.: 1+2+3+4=10, 2+2+3+4=11)",
+      "fr": "Somme pondérée : ×1, ×2, ×3, ×4 depuis HG (horaire). 1 + 2×2 + 1×3 + 2×4 = 16 (ex. : 1+2+3+4=10, 2+2+3+4=11)",
+      "de": "Gewichtete Summe: ×1, ×2, ×3, ×4 ab OL (im Uhrzeigersinn). 1 + 2×2 + 1×3 + 2×4 = 16 (z. B. 1+2+3+4=10, 2+2+3+4=11)"
+    }
+  },
+  {
+    "id": "sh9_s01",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 9,
+    "order": 1,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "4",
+          "3",
+          "2",
+          "6"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "6",
+          "2",
+          "4",
+          "3"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "6",
+          "4",
+          "3",
+          null
+        ]
+      }
+    ],
+    "answer": "8",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가운데 = (위 × 오른쪽 아래) ÷ 왼쪽 아래 (4×3÷2=6).",
+        "마지막 삼각형: 24÷3은?"
+      ],
+      "en": [
+        "Center = (top × bottom-right) ÷ bottom-left (4×3÷2=6).",
+        "Last triangle: what is 24÷3?"
+      ],
+      "ja": [
+        "真ん中 = (上 × 右下) ÷ 左下 (4×3÷2=6)。",
+        "最後の三角形: 24÷3 は?"
+      ],
+      "zh": [
+        "中间 = (顶 × 右下) ÷ 左下（4×3÷2=6）。",
+        "最后一个三角形：24÷3 是多少？"
+      ],
+      "es": [
+        "Centro = (arriba × abajo-der) ÷ abajo-izq (4×3÷2=6).",
+        "Último triángulo: ¿cuánto es 24÷3?"
+      ],
+      "fr": [
+        "Centre = (haut × bas-droite) ÷ bas-gauche (4×3÷2=6).",
+        "Dernier triangle : combien font 24÷3 ?"
+      ],
+      "de": [
+        "Mitte = (oben × unten-rechts) ÷ unten-links (4×3÷2=6).",
+        "Letztes Dreieck: Was ist 24÷3?"
+      ]
+    },
+    "explanation": {
+      "ko": "가운데 = (위 × 오른쪽 아래) ÷ 왼쪽 아래. 6×4 ÷ 3 = 8 (예: 4×3÷2=6, 6×2÷4=3)",
+      "en": "Center = (top × bottom-right) ÷ bottom-left. 6×4 ÷ 3 = 8 (e.g. 4×3÷2=6, 6×2÷4=3)",
+      "ja": "真ん中 = (上 × 右下) ÷ 左下。6×4 ÷ 3 = 8 (例: 4×3÷2=6, 6×2÷4=3)",
+      "zh": "中间 = (顶 × 右下) ÷ 左下。6×4 ÷ 3 = 8（例：4×3÷2=6，6×2÷4=3）",
+      "es": "Centro = (arriba × abajo-der) ÷ abajo-izq. 6×4 ÷ 3 = 8 (ej.: 4×3÷2=6, 6×2÷4=3)",
+      "fr": "Centre = (haut × bas-droite) ÷ bas-gauche. 6×4 ÷ 3 = 8 (ex. : 4×3÷2=6, 6×2÷4=3)",
+      "de": "Mitte = (oben × unten-rechts) ÷ unten-links. 6×4 ÷ 3 = 8 (z. B. 4×3÷2=6, 6×2÷4=3)"
+    }
+  },
+  {
+    "id": "sh9_s02",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 9,
+    "order": 2,
+    "figures": [
+      {
+        "shape": "square",
+        "slots": [
+          "4",
+          "2",
+          "3",
+          "1",
+          "14"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "3",
+          "3",
+          "2",
+          "2",
+          "12"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "5",
+          "2",
+          "2",
+          "3",
+          null
+        ]
+      }
+    ],
+    "answer": "16",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가운데 = (왼위 × 오른아래) + (오른위 × 왼아래) (4×3+2×1=14).",
+        "마지막 사각형: 10+6은?"
+      ],
+      "en": [
+        "Center = (TL × BR) + (TR × BL) (4×3+2×1=14).",
+        "Last square: what is 10+6?"
+      ],
+      "ja": [
+        "真ん中 = (左上 × 右下) + (右上 × 左下) (4×3+2×1=14)。",
+        "最後の四角形: 10+6 は?"
+      ],
+      "zh": [
+        "中间 = (左上 × 右下) + (右上 × 左下)（4×3+2×1=14）。",
+        "最后一个正方形：10+6 是多少？"
+      ],
+      "es": [
+        "Centro = (sup-izq × inf-der) + (sup-der × inf-izq) (4×3+2×1=14).",
+        "Último cuadrado: ¿cuánto es 10+6?"
+      ],
+      "fr": [
+        "Centre = (HG × BD) + (HD × BG) (4×3+2×1=14).",
+        "Dernier carré : combien font 10+6 ?"
+      ],
+      "de": [
+        "Mitte = (OL × UR) + (OR × UL) (4×3+2×1=14).",
+        "Letztes Quadrat: Was ist 10+6?"
+      ]
+    },
+    "explanation": {
+      "ko": "가운데 = (왼위 × 오른아래) + (오른위 × 왼아래). 5×2 + 2×3 = 16 (예: 4×3+2×1=14, 3×2+3×2=12)",
+      "en": "Center = (TL × BR) + (TR × BL). 5×2 + 2×3 = 16 (e.g. 4×3+2×1=14, 3×2+3×2=12)",
+      "ja": "真ん中 = (左上 × 右下) + (右上 × 左下)。5×2 + 2×3 = 16 (例: 4×3+2×1=14, 3×2+3×2=12)",
+      "zh": "中间 = (左上 × 右下) + (右上 × 左下)。5×2 + 2×3 = 16（例：4×3+2×1=14，3×2+3×2=12）",
+      "es": "Centro = (sup-izq × inf-der) + (sup-der × inf-izq). 5×2 + 2×3 = 16 (ej.: 4×3+2×1=14, 3×2+3×2=12)",
+      "fr": "Centre = (HG × BD) + (HD × BG). 5×2 + 2×3 = 16 (ex. : 4×3+2×1=14, 3×2+3×2=12)",
+      "de": "Mitte = (OL × UR) + (OR × UL). 5×2 + 2×3 = 16 (z. B. 4×3+2×1=14, 3×2+3×2=12)"
+    }
+  },
+  {
+    "id": "sh9_s03",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 9,
+    "order": 3,
+    "figureTokens": [
+      {
+        "shape": "arrow",
+        "rotation": 0
+      },
+      {
+        "shape": "arrow",
+        "rotation": 90
+      },
+      {
+        "shape": "arrow",
+        "rotation": 180
+      },
+      {
+        "shape": "arrow",
+        "rotation": 90
+      },
+      null
+    ],
+    "figureChoices": [
+      {
+        "shape": "arrow",
+        "rotation": 0,
+        "code": "up"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 90,
+        "code": "right"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 180,
+        "code": "down"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 270,
+        "code": "left"
+      }
+    ],
+    "answer": "up",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "화살표 방향이 어떻게 바뀌나요?",
+        "갔다가 다시 되돌아와요.",
+        "다음에 무엇이 올지 생각해 보세요."
+      ],
+      "en": [
+        "How does the arrow turn?",
+        "It turns out, then back.",
+        "Think about what comes next."
+      ],
+      "ja": [
+        "矢印の向きはどう変わる？",
+        "進んでから戻ります。",
+        "次に何が来るか考えてみましょう。"
+      ],
+      "zh": [
+        "箭头方向怎么变？",
+        "先转过去再转回来。",
+        "想一想下一个是什么。"
+      ],
+      "es": [
+        "¿Cómo gira la flecha?",
+        "Va y luego vuelve.",
+        "Piensa qué viene después."
+      ],
+      "fr": [
+        "Comment tourne la flèche ?",
+        "Elle va puis revient.",
+        "Réfléchis à ce qui suit."
+      ],
+      "de": [
+        "Wie dreht sich der Pfeil?",
+        "Es dreht hin und zurück.",
+        "Überlege, was als Nächstes kommt."
+      ]
+    },
+    "explanation": {
+      "ko": "갔다가 되돌아옴: 위→오른쪽→아래→오른쪽→위",
+      "en": "Turns there and back: up→right→down→right→up",
+      "ja": "進んで戻る: 上→右→下→右→上",
+      "zh": "过去又回来：上→右→下→右→上",
+      "es": "Va y vuelve: arriba→derecha→abajo→derecha→arriba",
+      "fr": "Va et revient : haut→droite→bas→droite→haut",
+      "de": "Hin und zurück: oben→rechts→unten→rechts→oben"
+    }
+  },
+  {
+    "id": "sh9_s04",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 9,
+    "order": 4,
+    "figures": [
+      {
+        "shape": "circle",
+        "slots": [
+          "1",
+          "3",
+          "6",
+          "8"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "2",
+          "4",
+          "8",
+          "10"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "3",
+          "5",
+          "10",
+          null
+        ]
+      }
+    ],
+    "answer": "12",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "시계 방향으로 +2, ×2, +2 순서로 변한다 (1→3→6→8).",
+        "마지막 원: 10+2는?"
+      ],
+      "en": [
+        "Clockwise: +2, ×2, +2 in turn (1→3→6→8).",
+        "Last circle: what is 10+2?"
+      ],
+      "ja": [
+        "時計回りに +2, ×2, +2 の順 (1→3→6→8)。",
+        "最後の円: 10+2 は?"
+      ],
+      "zh": [
+        "顺时针依次 +2, ×2, +2（1→3→6→8）。",
+        "最后一个圆：10+2 是多少？"
+      ],
+      "es": [
+        "En sentido horario: +2, ×2, +2 (1→3→6→8).",
+        "Último círculo: ¿cuánto es 10+2?"
+      ],
+      "fr": [
+        "Dans le sens horaire : +2, ×2, +2 (1→3→6→8).",
+        "Dernier cercle : combien font 10+2 ?"
+      ],
+      "de": [
+        "Im Uhrzeigersinn: +2, ×2, +2 (1→3→6→8).",
+        "Letzter Kreis: Was ist 10+2?"
+      ]
+    },
+    "explanation": {
+      "ko": "시계 방향으로 +2, ×2, +2 순서로 변한다. 10 + 2 = 12 (예: 1→3→6→8, 2→4→8→10)",
+      "en": "Clockwise: +2, ×2, +2 in turn. 10 + 2 = 12 (e.g. 1→3→6→8, 2→4→8→10)",
+      "ja": "時計回りに +2, ×2, +2 の順。10 + 2 = 12 (例: 1→3→6→8, 2→4→8→10)",
+      "zh": "顺时针依次 +2, ×2, +2。10 + 2 = 12（例：1→3→6→8，2→4→8→10）",
+      "es": "En sentido horario: +2, ×2, +2. 10 + 2 = 12 (ej.: 1→3→6→8, 2→4→8→10)",
+      "fr": "Dans le sens horaire : +2, ×2, +2. 10 + 2 = 12 (ex. : 1→3→6→8, 2→4→8→10)",
+      "de": "Im Uhrzeigersinn: +2, ×2, +2. 10 + 2 = 12 (z. B. 1→3→6→8, 2→4→8→10)"
+    }
+  },
+  {
+    "id": "sh9_s05",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 9,
+    "order": 5,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "3",
+          "2",
+          "2",
+          "5"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "4",
+          "3",
+          "2",
+          "10"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "3",
+          "2",
+          "1",
+          null
+        ]
+      }
+    ],
+    "answer": "7",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가운데 = 위² − (아래 두 꼭짓점의 곱) (3²−2×2=5).",
+        "마지막 삼각형: 9−2는?"
+      ],
+      "en": [
+        "Center = top² − (product of the two bottom corners) (3²−2×2=5).",
+        "Last triangle: what is 9−2?"
+      ],
+      "ja": [
+        "真ん中 = 上² − (下2頂点の積) (3²−2×2=5)。",
+        "最後の三角形: 9−2 は?"
+      ],
+      "zh": [
+        "中间 = 顶² − (两个底角之积)（3²−2×2=5）。",
+        "最后一个三角形：9−2 是多少？"
+      ],
+      "es": [
+        "Centro = arriba² − (producto de los dos inferiores) (3²−2×2=5).",
+        "Último triángulo: ¿cuánto es 9−2?"
+      ],
+      "fr": [
+        "Centre = haut² − (produit des deux sommets bas) (3²−2×2=5).",
+        "Dernier triangle : combien font 9−2 ?"
+      ],
+      "de": [
+        "Mitte = oben² − (Produkt der beiden unteren) (3²−2×2=5).",
+        "Letztes Dreieck: Was ist 9−2?"
+      ]
+    },
+    "explanation": {
+      "ko": "가운데 = 위² − (아래 두 꼭짓점의 곱). 3² − 2×1 = 7 (예: 3²−2×2=5, 4²−3×2=10)",
+      "en": "Center = top² − (product of the two bottom corners). 3² − 2×1 = 7 (e.g. 3²−2×2=5, 4²−3×2=10)",
+      "ja": "真ん中 = 上² − (下2頂点の積)。3² − 2×1 = 7 (例: 3²−2×2=5, 4²−3×2=10)",
+      "zh": "中间 = 顶² − (两个底角之积)。3² − 2×1 = 7（例：3²−2×2=5，4²−3×2=10）",
+      "es": "Centro = arriba² − (producto de los dos inferiores). 3² − 2×1 = 7 (ej.: 3²−2×2=5, 4²−3×2=10)",
+      "fr": "Centre = haut² − (produit des deux sommets bas). 3² − 2×1 = 7 (ex. : 3²−2×2=5, 4²−3×2=10)",
+      "de": "Mitte = oben² − (Produkt der beiden unteren). 3² − 2×1 = 7 (z. B. 3²−2×2=5, 4²−3×2=10)"
+    }
+  },
+  {
+    "id": "sh9_s06",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 9,
+    "order": 6,
+    "figureTokens": [
+      {
+        "shape": "triangle",
+        "rotation": 0,
+        "filled": true
+      },
+      {
+        "shape": "triangle",
+        "rotation": 90,
+        "filled": false
+      },
+      {
+        "shape": "triangle",
+        "rotation": 180,
+        "filled": false
+      },
+      {
+        "shape": "triangle",
+        "rotation": 270,
+        "filled": true
+      },
+      null
+    ],
+    "figureChoices": [
+      {
+        "shape": "triangle",
+        "rotation": 0,
+        "filled": false,
+        "code": "A"
+      },
+      {
+        "shape": "triangle",
+        "rotation": 0,
+        "filled": true,
+        "code": "B"
+      },
+      {
+        "shape": "triangle",
+        "rotation": 90,
+        "filled": false,
+        "code": "C"
+      },
+      {
+        "shape": "triangle",
+        "rotation": 270,
+        "filled": true,
+        "code": "D"
+      }
+    ],
+    "answer": "A",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "삼각형이 어떻게 바뀌나요?",
+        "회전하면서 색은 참·빔·빔 순서로 바뀌어요.",
+        "다음에 무엇이 올지 생각해 보세요."
+      ],
+      "en": [
+        "How does the triangle change?",
+        "It rotates; fill goes filled, empty, empty.",
+        "Think about what comes next."
+      ],
+      "ja": [
+        "三角形はどう変わる？",
+        "回転しながら色は塗り・空き・空きの順。",
+        "次に何が来るか考えてみましょう。"
+      ],
+      "zh": [
+        "三角形怎么变？",
+        "一边旋转，填充按 实、空、空。",
+        "想一想下一个是什么。"
+      ],
+      "es": [
+        "¿Cómo cambia el triángulo?",
+        "Gira; el relleno: lleno, vacío, vacío.",
+        "Piensa qué viene después."
+      ],
+      "fr": [
+        "Comment change le triangle ?",
+        "Elle tourne ; remplissage : plein, vide, vide.",
+        "Réfléchis à ce qui suit."
+      ],
+      "de": [
+        "Wie ändert sich das Dreieck?",
+        "Es dreht; Füllung: voll, leer, leer.",
+        "Überlege, was als Nächstes kommt."
+      ]
+    },
+    "explanation": {
+      "ko": "시계 방향 90° 회전 + 색 참·빔·빔(3주기) 반복",
+      "en": "Rotate 90° clockwise; fill cycles filled, empty, empty",
+      "ja": "時計回り90°回転＋色は塗り・空き・空き",
+      "zh": "顺时针转90°＋填充 实空空 循环",
+      "es": "Gira 90° horario; relleno: lleno, vacío, vacío",
+      "fr": "Tourne 90° horaire ; remplissage plein, vide, vide",
+      "de": "90° im Uhrzeigersinn; Füllung voll, leer, leer"
+    }
+  },
+  {
+    "id": "sh9_s07",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 9,
+    "order": 7,
+    "figures": [
+      {
+        "shape": "square",
+        "slots": [
+          "1",
+          "2",
+          "3",
+          "1",
+          "7"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "2",
+          "1",
+          "4",
+          "2",
+          "27"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "2",
+          "2",
+          "3",
+          "1",
+          null
+        ]
+      }
+    ],
+    "answer": "16",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가운데 = (왼위 + 오른아래)² − (오른위 + 왼아래)² ((1+3)²−(2+1)²=7).",
+        "마지막 사각형: 25−9는?"
+      ],
+      "en": [
+        "Center = (TL + BR)² − (TR + BL)² ((1+3)²−(2+1)²=7).",
+        "Last square: what is 25−9?"
+      ],
+      "ja": [
+        "真ん中 = (左上 + 右下)² − (右上 + 左下)² ((1+3)²−(2+1)²=7)。",
+        "最後の四角形: 25−9 は?"
+      ],
+      "zh": [
+        "中间 = (左上 + 右下)² − (右上 + 左下)²（(1+3)²−(2+1)²=7）。",
+        "最后一个正方形：25−9 是多少？"
+      ],
+      "es": [
+        "Centro = (sup-izq + inf-der)² − (sup-der + inf-izq)² ((1+3)²−(2+1)²=7).",
+        "Último cuadrado: ¿cuánto es 25−9?"
+      ],
+      "fr": [
+        "Centre = (HG + BD)² − (HD + BG)² ((1+3)²−(2+1)²=7).",
+        "Dernier carré : combien font 25−9 ?"
+      ],
+      "de": [
+        "Mitte = (OL + UR)² − (OR + UL)² ((1+3)²−(2+1)²=7).",
+        "Letztes Quadrat: Was ist 25−9?"
+      ]
+    },
+    "explanation": {
+      "ko": "가운데 = (왼위 + 오른아래)² − (오른위 + 왼아래)². (2+3)² − (2+1)² = 16 (예: (1+3)²−(2+1)²=7, (2+4)²−(1+2)²=27)",
+      "en": "Center = (TL + BR)² − (TR + BL)². (2+3)² − (2+1)² = 16 (e.g. (1+3)²−(2+1)²=7, (2+4)²−(1+2)²=27)",
+      "ja": "真ん中 = (左上 + 右下)² − (右上 + 左下)²。(2+3)² − (2+1)² = 16 (例: (1+3)²−(2+1)²=7, (2+4)²−(1+2)²=27)",
+      "zh": "中间 = (左上 + 右下)² − (右上 + 左下)²。(2+3)² − (2+1)² = 16（例：(1+3)²−(2+1)²=7，(2+4)²−(1+2)²=27）",
+      "es": "Centro = (sup-izq + inf-der)² − (sup-der + inf-izq)². (2+3)² − (2+1)² = 16 (ej.: (1+3)²−(2+1)²=7, (2+4)²−(1+2)²=27)",
+      "fr": "Centre = (HG + BD)² − (HD + BG)². (2+3)² − (2+1)² = 16 (ex. : (1+3)²−(2+1)²=7, (2+4)²−(1+2)²=27)",
+      "de": "Mitte = (OL + UR)² − (OR + UL)². (2+3)² − (2+1)² = 16 (z. B. (1+3)²−(2+1)²=7, (2+4)²−(1+2)²=27)"
+    }
+  },
+  {
+    "id": "sh10_s01",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 1,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "3",
+          "4",
+          "2"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "1",
+          "3",
+          "5",
+          "0"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "4",
+          "6",
+          null
+        ]
+      }
+    ],
+    "answer": "3",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "더하지 마세요! 꼭짓점 중 짝수의 개수가 가운데 수예요.",
+        "2, 4, 6 — 짝수가 몇 개?"
+      ],
+      "en": [
+        "Don’t add! The center is how many corners are even.",
+        "2, 4, 6 — how many are even?"
+      ],
+      "ja": [
+        "足さないで！偶数の頂点が何個あるかが真ん中です。",
+        "2, 4, 6 — 偶数はいくつ？"
+      ],
+      "zh": [
+        "别加！中间是偶数顶点的个数。",
+        "2、4、6 — 有几个偶数？"
+      ],
+      "es": [
+        "¡No sumes! El centro es cuántas esquinas son pares.",
+        "2, 4, 6: ¿cuántos pares?"
+      ],
+      "fr": [
+        "N’additionne pas ! Le centre = combien de sommets sont pairs.",
+        "2, 4, 6 : combien de pairs ?"
+      ],
+      "de": [
+        "Nicht addieren! Mitte = Anzahl gerader Ecken.",
+        "2, 4, 6 — wie viele gerade?"
+      ]
+    },
+    "explanation": {
+      "ko": "합이 아니라 짝수의 개수! 2·4·6은 모두 짝수 → 3",
+      "en": "Not the sum — the count of even numbers! 2, 4, 6 are all even → 3",
+      "ja": "和ではなく偶数の個数！2·4·6はすべて偶数 → 3",
+      "zh": "不是和，是偶数的个数！2、4、6 都是偶数 → 3",
+      "es": "No la suma: ¡la cantidad de pares! 2, 4, 6 son pares → 3",
+      "fr": "Pas la somme : le nombre de pairs ! 2, 4, 6 sont pairs → 3",
+      "de": "Nicht die Summe — die Anzahl gerader Zahlen! 2, 4, 6 sind gerade → 3"
+    }
+  },
+  {
+    "id": "sh10_s02",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 2,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "5",
+          "2",
+          "8",
+          "3"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "4",
+          "1",
+          "7",
+          "2",
+          "4"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "3",
+          "9",
+          "1",
+          null
+        ]
+      }
+    ],
+    "answer": "3",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "숫자는 함정! 가운데 = 도형의 꼭짓점 개수예요.",
+        "삼각형의 꼭짓점은 몇 개?"
+      ],
+      "en": [
+        "The numbers are a trap! Center = number of corners of the shape.",
+        "How many corners does a triangle have?"
+      ],
+      "ja": [
+        "数字はワナ！真ん中 = その図形の頂点の数。",
+        "三角形の頂点はいくつ？"
+      ],
+      "zh": [
+        "数字是陷阱！中间 = 这个图形的顶点数。",
+        "三角形有几个顶点？"
+      ],
+      "es": [
+        "¡Los números engañan! Centro = número de esquinas de la figura.",
+        "¿Cuántas esquinas tiene un triángulo?"
+      ],
+      "fr": [
+        "Les nombres sont un piège ! Centre = nombre de sommets de la figure.",
+        "Combien de sommets a un triangle ?"
+      ],
+      "de": [
+        "Die Zahlen täuschen! Mitte = Anzahl der Ecken der Figur.",
+        "Wie viele Ecken hat ein Dreieck?"
+      ]
+    },
+    "explanation": {
+      "ko": "꼭짓점 숫자는 미끼! 가운데 = 변(꼭짓점) 수. 삼각형=3, 사각형=4 → 3",
+      "en": "The corner numbers are bait! Center = corner count. Triangle=3, square=4 → 3",
+      "ja": "頂点の数字はおとり！真ん中 = 頂点の数。三角形=3, 四角形=4 → 3",
+      "zh": "顶点数字是诱饵！中间 = 顶点数。三角形=3，正方形=4 → 3",
+      "es": "¡Los números son cebo! Centro = nº de esquinas. Triángulo=3, cuadrado=4 → 3",
+      "fr": "Les nombres sont un leurre ! Centre = nb de sommets. Triangle=3, carré=4 → 3",
+      "de": "Die Zahlen sind Köder! Mitte = Eckenzahl. Dreieck=3, Quadrat=4 → 3"
+    }
+  },
+  {
+    "id": "sh10_s03",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 3,
+    "figureTokens": [
+      {
+        "shape": "arrow",
+        "rotation": 0
+      },
+      {
+        "shape": "arrow",
+        "rotation": 0
+      },
+      {
+        "shape": "arrow",
+        "rotation": 0
+      },
+      {
+        "shape": "arrow",
+        "rotation": 0
+      },
+      null
+    ],
+    "figureChoices": [
+      {
+        "shape": "arrow",
+        "rotation": 0,
+        "code": "up"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 90,
+        "code": "right"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 180,
+        "code": "down"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 270,
+        "code": "left"
+      }
+    ],
+    "answer": "up",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "화살표 방향이 어떻게 바뀌나요?",
+        "…안 바뀌어요. 계속 위!",
+        "너무 깊게 생각하지 마세요. 그대로 위예요."
+      ],
+      "en": [
+        "How does the arrow turn?",
+        "…it doesn’t change. Still up!",
+        "Don’t overthink it. It stays up."
+      ],
+      "ja": [
+        "矢印の向きはどう変わる？",
+        "…変わりません。ずっと上！",
+        "考えすぎないで。そのまま上です。"
+      ],
+      "zh": [
+        "箭头方向怎么变？",
+        "……没变。一直朝上！",
+        "别想太多。还是朝上。"
+      ],
+      "es": [
+        "¿Cómo gira la flecha?",
+        "…no cambia. ¡Siempre arriba!",
+        "No le des vueltas. Sigue arriba."
+      ],
+      "fr": [
+        "Comment tourne la flèche ?",
+        "…elle ne change pas. Toujours en haut !",
+        "Ne réfléchis pas trop. Ça reste en haut."
+      ],
+      "de": [
+        "Wie dreht sich der Pfeil?",
+        "…er ändert sich nicht. Immer oben!",
+        "Nicht zu kompliziert denken. Bleibt oben."
+      ]
+    },
+    "explanation": {
+      "ko": "함정! 아무것도 변하지 않아요 — 답은 그대로 위쪽.",
+      "en": "Trick! Nothing changes — the answer is still up.",
+      "ja": "ワナ！何も変わりません — 答えは上のまま。",
+      "zh": "陷阱！什么都没变——答案还是上。",
+      "es": "¡Truco! Nada cambia: la respuesta sigue siendo arriba.",
+      "fr": "Piège ! Rien ne change — la réponse reste en haut.",
+      "de": "Trick! Nichts ändert sich — die Antwort bleibt oben."
+    }
+  },
+  {
+    "id": "sh10_s04",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 4,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "5",
+          "2",
+          "8",
+          "6"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "1",
+          "4",
+          "9",
+          "8"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "3",
+          "7",
+          "2",
+          null
+        ]
+      }
+    ],
+    "answer": "5",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가운데 = 가장 큰 수 − 가장 작은 수.",
+        "7과 2의 차이는?"
+      ],
+      "en": [
+        "Center = largest number − smallest number.",
+        "The gap between 7 and 2?"
+      ],
+      "ja": [
+        "真ん中 = 一番大きい数 − 一番小さい数。",
+        "7と2の差は？"
+      ],
+      "zh": [
+        "中间 = 最大数 − 最小数。",
+        "7 和 2 相差多少？"
+      ],
+      "es": [
+        "Centro = número mayor − número menor.",
+        "¿La diferencia entre 7 y 2?"
+      ],
+      "fr": [
+        "Centre = plus grand − plus petit.",
+        "L’écart entre 7 et 2 ?"
+      ],
+      "de": [
+        "Mitte = größte Zahl − kleinste Zahl.",
+        "Der Abstand zwischen 7 und 2?"
+      ]
+    },
+    "explanation": {
+      "ko": "최댓값 − 최솟값. 7 − 2 = 5",
+      "en": "Max − min. 7 − 2 = 5",
+      "ja": "最大 − 最小。7 − 2 = 5",
+      "zh": "最大 − 最小。7 − 2 = 5",
+      "es": "Máx − mín. 7 − 2 = 5",
+      "fr": "Max − min. 7 − 2 = 5",
+      "de": "Max − min. 7 − 2 = 5"
+    }
+  },
+  {
+    "id": "sh10_s05",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 5,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "3",
+          "2",
+          "5",
+          "15"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "1",
+          "4",
+          "7",
+          "7"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "3",
+          "2",
+          "3",
+          null
+        ]
+      }
+    ],
+    "answer": "9",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "홀수만 골라 곱해요. 짝수는 무시!",
+        "3과 3을 곱하면? (2는 무시)"
+      ],
+      "en": [
+        "Multiply only the odd numbers. Ignore the even ones!",
+        "3 times 3? (ignore the 2)"
+      ],
+      "ja": [
+        "奇数だけ掛けます。偶数は無視！",
+        "3×3は？（2は無視）"
+      ],
+      "zh": [
+        "只把奇数相乘。忽略偶数！",
+        "3 乘 3？（忽略 2）"
+      ],
+      "es": [
+        "Multiplica solo los impares. ¡Ignora los pares!",
+        "¿3 por 3? (ignora el 2)"
+      ],
+      "fr": [
+        "Multiplie seulement les impairs. Ignore les pairs !",
+        "3 fois 3 ? (ignore le 2)"
+      ],
+      "de": [
+        "Nur die ungeraden multiplizieren. Gerade ignorieren!",
+        "3 mal 3? (die 2 ignorieren)"
+      ]
+    },
+    "explanation": {
+      "ko": "홀수끼리만 곱셈. 3×3=9 (2는 빼고)",
+      "en": "Multiply odds only. 3×3=9 (the 2 is dropped)",
+      "ja": "奇数だけ掛ける。3×3=9（2は除く）",
+      "zh": "只乘奇数。3×3=9（去掉 2）",
+      "es": "Solo impares. 3×3=9 (sin el 2)",
+      "fr": "Seulement les impairs. 3×3=9 (sans le 2)",
+      "de": "Nur Ungerade. 3×3=9 (die 2 weg)"
+    }
+  },
+  {
+    "id": "sh10_s06",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 6,
+    "figureTokens": [
+      {
+        "shape": "triangle"
+      },
+      {
+        "shape": "square"
+      },
+      {
+        "shape": "circle"
+      },
+      {
+        "shape": "triangle"
+      },
+      {
+        "shape": "square"
+      },
+      null
+    ],
+    "figureChoices": [
+      {
+        "shape": "circle",
+        "code": "circle"
+      },
+      {
+        "shape": "triangle",
+        "code": "triangle"
+      },
+      {
+        "shape": "square",
+        "code": "square"
+      },
+      {
+        "shape": "arrow",
+        "code": "arrow"
+      }
+    ],
+    "answer": "circle",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모양이 어떻게 바뀌나요?",
+        "모서리가 점점 사라져요: 세모→네모→동그라미.",
+        "다음은 동그라미."
+      ],
+      "en": [
+        "How does the shape change?",
+        "Corners keep vanishing: triangle→square→circle.",
+        "Next is the circle."
+      ],
+      "ja": [
+        "形はどう変わる？",
+        "角がだんだん消える: 三角→四角→丸。",
+        "次は丸。"
+      ],
+      "zh": [
+        "形状怎么变？",
+        "棱角渐渐消失：三角→正方→圆。",
+        "下一个是圆。"
+      ],
+      "es": [
+        "¿Cómo cambia la forma?",
+        "Las esquinas desaparecen: triángulo→cuadrado→círculo.",
+        "El siguiente es el círculo."
+      ],
+      "fr": [
+        "Comment change la forme ?",
+        "Les coins disparaissent : triangle→carré→cercle.",
+        "Le suivant est le cercle."
+      ],
+      "de": [
+        "Wie ändert sich die Form?",
+        "Die Ecken verschwinden: Dreieck→Quadrat→Kreis.",
+        "Als Nächstes der Kreis."
+      ]
+    },
+    "explanation": {
+      "ko": "세모→네모→동그라미가 반복돼요. 다음은 동그라미!",
+      "en": "Triangle→square→circle repeats. Next is the circle!",
+      "ja": "三角→四角→丸の繰り返し。次は丸！",
+      "zh": "三角→正方→圆 循环。下一个是圆！",
+      "es": "Triángulo→cuadrado→círculo se repite. ¡Sigue el círculo!",
+      "fr": "Triangle→carré→cercle se répète. Ensuite le cercle !",
+      "de": "Dreieck→Quadrat→Kreis wiederholt sich. Als Nächstes der Kreis!"
+    }
+  },
+  {
+    "id": "sh10_s07",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 7,
+    "figures": [
+      {
+        "shape": "square",
+        "slots": [
+          "2",
+          "2",
+          "3",
+          "3",
+          "2"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "4",
+          "4",
+          "4",
+          "4",
+          "1"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "1",
+          "2",
+          "3",
+          "3",
+          null
+        ]
+      }
+    ],
+    "answer": "3",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가운데 = 서로 다른 숫자가 몇 종류인지.",
+        "1, 2, 3, 3 — 몇 종류?"
+      ],
+      "en": [
+        "Center = how many different numbers there are.",
+        "1, 2, 3, 3 — how many kinds?"
+      ],
+      "ja": [
+        "真ん中 = 異なる数字が何種類あるか。",
+        "1, 2, 3, 3 — 何種類？"
+      ],
+      "zh": [
+        "中间 = 有几种不同的数字。",
+        "1、2、3、3 — 有几种？"
+      ],
+      "es": [
+        "Centro = cuántos números distintos hay.",
+        "1, 2, 3, 3: ¿cuántos tipos?"
+      ],
+      "fr": [
+        "Centre = combien de nombres différents.",
+        "1, 2, 3, 3 : combien de sortes ?"
+      ],
+      "de": [
+        "Mitte = wie viele verschiedene Zahlen es gibt.",
+        "1, 2, 3, 3 — wie viele Arten?"
+      ]
+    },
+    "explanation": {
+      "ko": "값의 종류 수를 세요. {1, 2, 3} → 3종류",
+      "en": "Count the distinct values. {1, 2, 3} → 3 kinds",
+      "ja": "値の種類を数える。{1, 2, 3} → 3種類",
+      "zh": "数不同的值。{1, 2, 3} → 3 种",
+      "es": "Cuenta los valores distintos. {1, 2, 3} → 3",
+      "fr": "Compte les valeurs distinctes. {1, 2, 3} → 3",
+      "de": "Zähle die verschiedenen Werte. {1, 2, 3} → 3"
+    }
+  },
+  {
+    "id": "sh10_s08",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 8,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "3",
+          "4",
+          "6"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "1",
+          "3",
+          "5",
+          "0"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "6",
+          "3",
+          null
+        ]
+      }
+    ],
+    "answer": "8",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "짝수만 더해요. 홀수는 무시!",
+        "2와 6을 더하면? (3은 무시)"
+      ],
+      "en": [
+        "Add only the even numbers. Ignore the odds!",
+        "2 plus 6? (ignore the 3)"
+      ],
+      "ja": [
+        "偶数だけ足します。奇数は無視！",
+        "2＋6は？（3は無視）"
+      ],
+      "zh": [
+        "只加偶数。忽略奇数！",
+        "2 加 6？（忽略 3）"
+      ],
+      "es": [
+        "Suma solo los pares. ¡Ignora los impares!",
+        "¿2 más 6? (ignora el 3)"
+      ],
+      "fr": [
+        "Additionne seulement les pairs. Ignore les impairs !",
+        "2 plus 6 ? (ignore le 3)"
+      ],
+      "de": [
+        "Nur die geraden addieren. Ungerade ignorieren!",
+        "2 plus 6? (die 3 ignorieren)"
+      ]
+    },
+    "explanation": {
+      "ko": "짝수끼리만 덧셈. 2+6=8 (3은 빼고)",
+      "en": "Add evens only. 2+6=8 (the 3 is dropped)",
+      "ja": "偶数だけ足す。2+6=8（3は除く）",
+      "zh": "只加偶数。2+6=8（去掉 3）",
+      "es": "Solo pares. 2+6=8 (sin el 3)",
+      "fr": "Seulement les pairs. 2+6=8 (sans le 3)",
+      "de": "Nur Gerade. 2+6=8 (die 3 weg)"
+    }
+  },
+  {
+    "id": "sh10_s09",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 9,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "5",
+          "2",
+          "8",
+          "5"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "1",
+          "4",
+          "9",
+          "4"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "3",
+          "7",
+          "2",
+          null
+        ]
+      }
+    ],
+    "answer": "3",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가장 크지도 작지도 않은 가운데 수를 골라요.",
+        "3, 7, 2 중 가운데 값은?"
+      ],
+      "en": [
+        "Pick the middle one — not biggest, not smallest.",
+        "Of 3, 7, 2, which is the middle?"
+      ],
+      "ja": [
+        "一番大きくも小さくもない真ん中の数を選ぶ。",
+        "3, 7, 2 の真ん中は？"
+      ],
+      "zh": [
+        "选不大不小、正中间的那个数。",
+        "3、7、2 中间是哪个？"
+      ],
+      "es": [
+        "Elige el del medio: ni el mayor ni el menor.",
+        "De 3, 7, 2, ¿cuál es el del medio?"
+      ],
+      "fr": [
+        "Choisis celui du milieu : ni le plus grand ni le plus petit.",
+        "Parmi 3, 7, 2, lequel est au milieu ?"
+      ],
+      "de": [
+        "Wähle die mittlere — nicht größte, nicht kleinste.",
+        "Welche ist von 3, 7, 2 die mittlere?"
+      ]
+    },
+    "explanation": {
+      "ko": "중앙값(가운데 크기). 2 < 3 < 7 → 3",
+      "en": "The median. 2 < 3 < 7 → 3",
+      "ja": "中央値。2 < 3 < 7 → 3",
+      "zh": "中位数。2 < 3 < 7 → 3",
+      "es": "La mediana. 2 < 3 < 7 → 3",
+      "fr": "La médiane. 2 < 3 < 7 → 3",
+      "de": "Der Median. 2 < 3 < 7 → 3"
+    }
+  },
+  {
+    "id": "sh10_s10",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 10,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "3",
+          "5",
+          "3",
+          "3"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "7",
+          "7",
+          "2",
+          "7"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "4",
+          "6",
+          "6",
+          null
+        ]
+      }
+    ],
+    "answer": "6",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "두 번 나온 숫자가 답이에요.",
+        "4, 6, 6 — 겹치는 건?"
+      ],
+      "en": [
+        "The answer is the number that appears twice.",
+        "4, 6, 6 — which repeats?"
+      ],
+      "ja": [
+        "2回出てくる数が答えです。",
+        "4, 6, 6 — かぶってるのは？"
+      ],
+      "zh": [
+        "出现两次的数就是答案。",
+        "4、6、6 — 哪个重复？"
+      ],
+      "es": [
+        "La respuesta es el número que se repite.",
+        "4, 6, 6: ¿cuál se repite?"
+      ],
+      "fr": [
+        "La réponse est le nombre qui apparaît deux fois.",
+        "4, 6, 6 : lequel se répète ?"
+      ],
+      "de": [
+        "Die Antwort ist die Zahl, die zweimal vorkommt.",
+        "4, 6, 6 — welche wiederholt sich?"
+      ]
+    },
+    "explanation": {
+      "ko": "두 번 나온 수가 답. 6이 두 번 → 6",
+      "en": "The repeated number wins. 6 appears twice → 6",
+      "ja": "2回出た数が答え。6が2回 → 6",
+      "zh": "重复的数获胜。6 出现两次 → 6",
+      "es": "Gana el repetido. 6 dos veces → 6",
+      "fr": "Le nombre répété gagne. 6 deux fois → 6",
+      "de": "Die wiederholte Zahl gewinnt. 6 zweimal → 6"
+    }
+  },
+  {
+    "id": "sh10_s11",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 11,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "1",
+          "2",
+          "4",
+          "3"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "3",
+          "4",
+          "1"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "1",
+          "3",
+          "4",
+          null
+        ]
+      }
+    ],
+    "answer": "2",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "1, 2, 3, 4 중 빠진 숫자가 답이에요.",
+        "1, 3, 4 — 빠진 건?"
+      ],
+      "en": [
+        "Of 1, 2, 3, 4, the missing one is the answer.",
+        "1, 3, 4 — which is missing?"
+      ],
+      "ja": [
+        "1, 2, 3, 4 のうち抜けている数が答え。",
+        "1, 3, 4 — 抜けてるのは？"
+      ],
+      "zh": [
+        "1、2、3、4 中缺的那个就是答案。",
+        "1、3、4 — 缺哪个？"
+      ],
+      "es": [
+        "De 1, 2, 3, 4, el que falta es la respuesta.",
+        "1, 3, 4: ¿cuál falta?"
+      ],
+      "fr": [
+        "Parmi 1, 2, 3, 4, celui qui manque est la réponse.",
+        "1, 3, 4 : lequel manque ?"
+      ],
+      "de": [
+        "Von 1, 2, 3, 4 fehlt eine — das ist die Antwort.",
+        "1, 3, 4 — welche fehlt?"
+      ]
+    },
+    "explanation": {
+      "ko": "1~4 중 안 보이는 수. 1,3,4 있으니 → 2",
+      "en": "The one not shown from 1–4. We see 1,3,4 → 2",
+      "ja": "1〜4で見えない数。1,3,4があるので → 2",
+      "zh": "1~4 中没出现的。有 1,3,4 → 2",
+      "es": "El que falta de 1–4. Están 1,3,4 → 2",
+      "fr": "Celui absent de 1–4. On a 1,3,4 → 2",
+      "de": "Die fehlende von 1–4. Da sind 1,3,4 → 2"
+    }
+  },
+  {
+    "id": "sh10_s12",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 12,
+    "figureTokens": [
+      {
+        "shape": "circle"
+      },
+      {
+        "shape": "triangle"
+      },
+      {
+        "shape": "square"
+      },
+      {
+        "shape": "circle"
+      },
+      {
+        "shape": "triangle"
+      },
+      null
+    ],
+    "figureChoices": [
+      {
+        "shape": "square",
+        "code": "square"
+      },
+      {
+        "shape": "circle",
+        "code": "circle"
+      },
+      {
+        "shape": "triangle",
+        "code": "triangle"
+      },
+      {
+        "shape": "arrow",
+        "code": "arrow"
+      }
+    ],
+    "answer": "square",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모양이 어떻게 바뀌나요?",
+        "점점 뾰족해져요: 동그라미→세모→네모.",
+        "다음은 네모."
+      ],
+      "en": [
+        "How does the shape change?",
+        "It gets pointier: circle→triangle→square.",
+        "Next is the square."
+      ],
+      "ja": [
+        "形はどう変わる？",
+        "だんだん尖る: 丸→三角→四角。",
+        "次は四角。"
+      ],
+      "zh": [
+        "形状怎么变？",
+        "越来越尖：圆→三角→正方。",
+        "下一个是正方形。"
+      ],
+      "es": [
+        "¿Cómo cambia la forma?",
+        "Cada vez más puntiaguda: círculo→triángulo→cuadrado.",
+        "El siguiente es el cuadrado."
+      ],
+      "fr": [
+        "Comment change la forme ?",
+        "De plus en plus pointue : cercle→triangle→carré.",
+        "Le suivant est le carré."
+      ],
+      "de": [
+        "Wie ändert sich die Form?",
+        "Immer spitzer: Kreis→Dreieck→Quadrat.",
+        "Als Nächstes das Quadrat."
+      ]
+    },
+    "explanation": {
+      "ko": "모서리가 점점 늘어요: 동그라미→세모→네모 반복. 다음은 네모!",
+      "en": "More corners each time: circle→triangle→square, repeating. Next is square!",
+      "ja": "角が増える: 丸→三角→四角の繰り返し。次は四角！",
+      "zh": "棱角渐增：圆→三角→正方 循环。下一个是正方形！",
+      "es": "Más esquinas: círculo→triángulo→cuadrado. ¡Sigue el cuadrado!",
+      "fr": "Plus de coins : cercle→triangle→carré. Ensuite le carré !",
+      "de": "Mehr Ecken: Kreis→Dreieck→Quadrat. Als Nächstes Quadrat!"
+    }
+  },
+  {
+    "id": "sh10_s13",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 13,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "5",
+          "7",
+          "9",
+          "1"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "4",
+          "8",
+          "6",
+          "8"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "6",
+          "8",
+          "9",
+          null
+        ]
+      }
+    ],
+    "answer": "3",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "다 더한 뒤 끝자리(일의 자리)만!",
+        "6+8+9=23 → 끝자리?"
+      ],
+      "en": [
+        "Add them all, then keep only the last digit!",
+        "6+8+9=23 → last digit?"
+      ],
+      "ja": [
+        "全部足して、下一桁だけ！",
+        "6+8+9=23 → 下一桁は？"
+      ],
+      "zh": [
+        "全部相加，只留末位数字！",
+        "6+8+9=23 → 末位？"
+      ],
+      "es": [
+        "Súmalos y quédate solo con la última cifra.",
+        "6+8+9=23 → ¿última cifra?"
+      ],
+      "fr": [
+        "Additionne tout, garde seulement le dernier chiffre !",
+        "6+8+9=23 → dernier chiffre ?"
+      ],
+      "de": [
+        "Alles addieren, nur die letzte Ziffer behalten!",
+        "6+8+9=23 → letzte Ziffer?"
+      ]
+    },
+    "explanation": {
+      "ko": "합의 끝자리만. 6+8+9=23 → 3",
+      "en": "Only the units digit of the sum. 6+8+9=23 → 3",
+      "ja": "和の下一桁だけ。6+8+9=23 → 3",
+      "zh": "只取和的末位。6+8+9=23 → 3",
+      "es": "Solo la última cifra de la suma. 6+8+9=23 → 3",
+      "fr": "Seulement le chiffre des unités. 6+8+9=23 → 3",
+      "de": "Nur die Einerstelle der Summe. 6+8+9=23 → 3"
+    }
+  },
+  {
+    "id": "sh10_s14",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 14,
+    "figureTokens": [
+      {
+        "shape": "triangle"
+      },
+      {
+        "shape": "circle"
+      },
+      {
+        "shape": "square"
+      },
+      {
+        "shape": "circle"
+      },
+      null
+    ],
+    "figureChoices": [
+      {
+        "shape": "triangle",
+        "code": "triangle"
+      },
+      {
+        "shape": "square",
+        "code": "square"
+      },
+      {
+        "shape": "circle",
+        "code": "circle"
+      },
+      {
+        "shape": "arrow",
+        "code": "arrow"
+      }
+    ],
+    "answer": "triangle",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모양이 어떻게 바뀌나요?",
+        "뾰족이와 동그라미가 번갈아 나와요.",
+        "동그라미 다음은 뾰족이 차례 — 세모."
+      ],
+      "en": [
+        "How does the shape change?",
+        "Pointy and round shapes alternate.",
+        "After the circle, a pointy one — the triangle."
+      ],
+      "ja": [
+        "形はどう変わる？",
+        "尖った形と丸が交互。",
+        "丸の次は尖り — 三角。"
+      ],
+      "zh": [
+        "形状怎么变？",
+        "尖形和圆形交替。",
+        "圆之后轮到尖的——三角。"
+      ],
+      "es": [
+        "¿Cómo cambia la forma?",
+        "Se alternan figuras puntiagudas y redondas.",
+        "Tras el círculo, una puntiaguda: el triángulo."
+      ],
+      "fr": [
+        "Comment change la forme ?",
+        "Les formes pointues et rondes alternent.",
+        "Après le cercle, une pointue : le triangle."
+      ],
+      "de": [
+        "Wie ändert sich die Form?",
+        "Spitze und runde Formen wechseln sich ab.",
+        "Nach dem Kreis eine spitze — das Dreieck."
+      ]
+    },
+    "explanation": {
+      "ko": "뾰족이(세모↔네모)와 동그라미가 번갈아. 뾰족이는 세모→네모 순서라 다음은 세모!",
+      "en": "Pointy (triangle/square) alternates with circle; pointy ones go triangle→square, so next is triangle!",
+      "ja": "尖り(三角・四角)と丸が交互。尖りは三角→四角の順なので次は三角！",
+      "zh": "尖形(三角/正方)与圆交替；尖形按三角→正方，所以下一个是三角！",
+      "es": "Puntiaguda (triángulo/cuadrado) alterna con círculo; van triángulo→cuadrado, ¡así que sigue triángulo!",
+      "fr": "Pointue (triangle/carré) alterne avec cercle ; triangle→carré, donc ensuite triangle !",
+      "de": "Spitz (Dreieck/Quadrat) wechselt mit Kreis; Dreieck→Quadrat, also Dreieck!"
+    }
+  },
+  {
+    "id": "sh10_s15",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 15,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "3",
+          "5",
+          "2",
+          "2"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "1",
+          "3",
+          "5",
+          "3"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "4",
+          "7",
+          null
+        ]
+      }
+    ],
+    "answer": "1",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "홀수가 몇 개인지 세요. (더하지 마세요!)",
+        "2, 4, 7 중 홀수는?"
+      ],
+      "en": [
+        "Count how many are odd. (Don’t add!)",
+        "2, 4, 7 — how many odd?"
+      ],
+      "ja": [
+        "奇数が何個か数えて。（足さないで！）",
+        "2, 4, 7 — 奇数は？"
+      ],
+      "zh": [
+        "数有几个奇数。（别加！）",
+        "2、4、7 — 几个奇数？"
+      ],
+      "es": [
+        "Cuenta cuántos son impares. (¡No sumes!)",
+        "2, 4, 7: ¿cuántos impares?"
+      ],
+      "fr": [
+        "Compte combien sont impairs. (N’additionne pas !)",
+        "2, 4, 7 : combien d’impairs ?"
+      ],
+      "de": [
+        "Zähle, wie viele ungerade sind. (Nicht addieren!)",
+        "2, 4, 7 — wie viele ungerade?"
+      ]
+    },
+    "explanation": {
+      "ko": "홀수의 개수! 2,4,7 중 홀수는 7뿐 → 1",
+      "en": "Count of odds! Among 2,4,7 only 7 is odd → 1",
+      "ja": "奇数の個数！2,4,7で奇数は7だけ → 1",
+      "zh": "奇数个数！2、4、7 中只有 7 → 1",
+      "es": "Cantidad de impares. De 2,4,7 solo 7 → 1",
+      "fr": "Nombre d’impairs. De 2,4,7 seul 7 → 1",
+      "de": "Anzahl ungerader. Von 2,4,7 nur 7 → 1"
+    }
+  },
+  {
+    "id": "sh10_s16",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 16,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "3",
+          "2",
+          "5",
+          "8"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "1",
+          "4",
+          "2",
+          "1"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "3",
+          "4",
+          "3",
+          null
+        ]
+      }
+    ],
+    "answer": "6",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "홀수만 더해요. 짝수는 무시!",
+        "3과 3을 더하면? (4는 무시)"
+      ],
+      "en": [
+        "Add only the odd numbers. Ignore the evens!",
+        "3 plus 3? (ignore the 4)"
+      ],
+      "ja": [
+        "奇数だけ足す。偶数は無視！",
+        "3＋3は？（4は無視）"
+      ],
+      "zh": [
+        "只加奇数。忽略偶数！",
+        "3 加 3？（忽略 4）"
+      ],
+      "es": [
+        "Suma solo los impares. ¡Ignora los pares!",
+        "¿3 más 3? (ignora el 4)"
+      ],
+      "fr": [
+        "Additionne seulement les impairs. Ignore les pairs !",
+        "3 plus 3 ? (ignore le 4)"
+      ],
+      "de": [
+        "Nur die ungeraden addieren. Gerade ignorieren!",
+        "3 plus 3? (die 4 ignorieren)"
+      ]
+    },
+    "explanation": {
+      "ko": "홀수끼리만 덧셈. 3+3=6 (4는 빼고)",
+      "en": "Add odds only. 3+3=6 (the 4 is dropped)",
+      "ja": "奇数だけ足す。3+3=6（4は除く）",
+      "zh": "只加奇数。3+3=6（去掉 4）",
+      "es": "Solo impares. 3+3=6 (sin el 4)",
+      "fr": "Seulement les impairs. 3+3=6 (sans le 4)",
+      "de": "Nur Ungerade. 3+3=6 (die 4 weg)"
+    }
+  },
+  {
+    "id": "sh10_s17",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 17,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "5",
+          "2",
+          "8",
+          "8"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "3",
+          "9",
+          "1",
+          "9"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "4",
+          "7",
+          "2",
+          null
+        ]
+      }
+    ],
+    "answer": "7",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가장 큰 수가 답이에요.",
+        "4, 7, 2 중 제일 큰 건?"
+      ],
+      "en": [
+        "The biggest number is the answer.",
+        "Biggest of 4, 7, 2?"
+      ],
+      "ja": [
+        "一番大きい数が答え。",
+        "4, 7, 2 で一番大きいのは？"
+      ],
+      "zh": [
+        "最大的数就是答案。",
+        "4、7、2 最大是？"
+      ],
+      "es": [
+        "El número más grande es la respuesta.",
+        "¿El mayor de 4, 7, 2?"
+      ],
+      "fr": [
+        "Le plus grand nombre est la réponse.",
+        "Le plus grand de 4, 7, 2 ?"
+      ],
+      "de": [
+        "Die größte Zahl ist die Antwort.",
+        "Größte von 4, 7, 2?"
+      ]
+    },
+    "explanation": {
+      "ko": "최댓값. 4, 7, 2 중 7",
+      "en": "The maximum. 7 of 4, 7, 2",
+      "ja": "最大値。4,7,2で7",
+      "zh": "最大值。4、7、2 中 7",
+      "es": "El máximo. 7 de 4, 7, 2",
+      "fr": "Le maximum. 7 de 4, 7, 2",
+      "de": "Das Maximum. 7 von 4, 7, 2"
+    }
+  },
+  {
+    "id": "sh10_s18",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 18,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "5",
+          "2",
+          "8",
+          "2"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "3",
+          "9",
+          "4",
+          "3"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "6",
+          "4",
+          "7",
+          null
+        ]
+      }
+    ],
+    "answer": "4",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가장 작은 수가 답이에요.",
+        "6, 4, 7 중 제일 작은 건?"
+      ],
+      "en": [
+        "The smallest number is the answer.",
+        "Smallest of 6, 4, 7?"
+      ],
+      "ja": [
+        "一番小さい数が答え。",
+        "6, 4, 7 で一番小さいのは？"
+      ],
+      "zh": [
+        "最小的数就是答案。",
+        "6、4、7 最小是？"
+      ],
+      "es": [
+        "El número más pequeño es la respuesta.",
+        "¿El menor de 6, 4, 7?"
+      ],
+      "fr": [
+        "Le plus petit nombre est la réponse.",
+        "Le plus petit de 6, 4, 7 ?"
+      ],
+      "de": [
+        "Die kleinste Zahl ist die Antwort.",
+        "Kleinste von 6, 4, 7?"
+      ]
+    },
+    "explanation": {
+      "ko": "최솟값. 6, 4, 7 중 4",
+      "en": "The minimum. 4 of 6, 4, 7",
+      "ja": "最小値。6,4,7で4",
+      "zh": "最小值。6、4、7 中 4",
+      "es": "El mínimo. 4 de 6, 4, 7",
+      "fr": "Le minimum. 4 de 6, 4, 7",
+      "de": "Das Minimum. 4 von 6, 4, 7"
+    }
+  },
+  {
+    "id": "sh10_s19",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 19,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "5",
+          "2",
+          "8",
+          "13"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "1",
+          "6",
+          "4",
+          "10"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "3",
+          "7",
+          "2",
+          null
+        ]
+      }
+    ],
+    "answer": "10",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가장 작은 수는 버리고, 큰 두 수만 더해요.",
+        "3, 7, 2 — 큰 두 개의 합은?"
+      ],
+      "en": [
+        "Drop the smallest; add the two biggest.",
+        "3, 7, 2 — sum of the two biggest?"
+      ],
+      "ja": [
+        "一番小さい数は捨て、大きい2つを足す。",
+        "3, 7, 2 — 大きい2つの和は？"
+      ],
+      "zh": [
+        "丢掉最小，把两个大的相加。",
+        "3、7、2 — 两个大的和？"
+      ],
+      "es": [
+        "Descarta el menor; suma los dos mayores.",
+        "3, 7, 2: ¿suma de los dos mayores?"
+      ],
+      "fr": [
+        "Jette le plus petit ; additionne les deux plus grands.",
+        "3, 7, 2 : somme des deux plus grands ?"
+      ],
+      "de": [
+        "Kleinste weglassen; die zwei größten addieren.",
+        "3, 7, 2 — Summe der zwei größten?"
+      ]
+    },
+    "explanation": {
+      "ko": "작은 2는 버림. 7+3=10",
+      "en": "Drop the small 2. 7+3=10",
+      "ja": "小さい2は捨て。7+3=10",
+      "zh": "丢掉小的 2。7+3=10",
+      "es": "Quita el 2. 7+3=10",
+      "fr": "Jette le 2. 7+3=10",
+      "de": "Die 2 weg. 7+3=10"
+    }
+  },
+  {
+    "id": "sh10_s20",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 20,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "5",
+          "2",
+          "8",
+          "7"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "1",
+          "6",
+          "4",
+          "5"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "3",
+          "7",
+          "2",
+          null
+        ]
+      }
+    ],
+    "answer": "5",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "가장 큰 수는 버리고, 작은 두 수만 더해요.",
+        "3, 7, 2 — 작은 두 개의 합은?"
+      ],
+      "en": [
+        "Drop the biggest; add the two smallest.",
+        "3, 7, 2 — sum of the two smallest?"
+      ],
+      "ja": [
+        "一番大きい数は捨て、小さい2つを足す。",
+        "3, 7, 2 — 小さい2つの和は？"
+      ],
+      "zh": [
+        "丢掉最大，把两个小的相加。",
+        "3、7、2 — 两个小的和？"
+      ],
+      "es": [
+        "Descarta el mayor; suma los dos menores.",
+        "3, 7, 2: ¿suma de los dos menores?"
+      ],
+      "fr": [
+        "Jette le plus grand ; additionne les deux plus petits.",
+        "3, 7, 2 : somme des deux plus petits ?"
+      ],
+      "de": [
+        "Größte weglassen; die zwei kleinsten addieren.",
+        "3, 7, 2 — Summe der zwei kleinsten?"
+      ]
+    },
+    "explanation": {
+      "ko": "큰 7은 버림. 2+3=5",
+      "en": "Drop the big 7. 2+3=5",
+      "ja": "大きい7は捨て。2+3=5",
+      "zh": "丢掉大的 7。2+3=5",
+      "es": "Quita el 7. 2+3=5",
+      "fr": "Jette le 7. 2+3=5",
+      "de": "Die 7 weg. 2+3=5"
+    }
+  },
+  {
+    "id": "sh10_s21",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 21,
+    "figures": [
+      {
+        "shape": "triangle",
+        "slots": [
+          "5",
+          "3",
+          "8",
+          "5"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "2",
+          "7",
+          "4",
+          "3"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "9",
+          "6",
+          "2",
+          null
+        ]
+      }
+    ],
+    "answer": "4",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "아래 두 꼭짓점의 차이예요. (위는 무시!)",
+        "6과 2의 차이는?"
+      ],
+      "en": [
+        "The gap between the two bottom corners. (Ignore the top!)",
+        "Gap between 6 and 2?"
+      ],
+      "ja": [
+        "下2頂点の差。（上は無視！）",
+        "6と2の差は？"
+      ],
+      "zh": [
+        "两个底角的差。（忽略顶角！）",
+        "6 和 2 相差？"
+      ],
+      "es": [
+        "La diferencia de los dos inferiores. (¡Ignora el de arriba!)",
+        "¿Diferencia entre 6 y 2?"
+      ],
+      "fr": [
+        "L’écart des deux sommets bas. (Ignore le haut !)",
+        "Écart entre 6 et 2 ?"
+      ],
+      "de": [
+        "Der Abstand der beiden unteren. (Oben ignorieren!)",
+        "Abstand zwischen 6 und 2?"
+      ]
+    },
+    "explanation": {
+      "ko": "아래 두 수의 차. |6 − 2| = 4 (위 9는 무시)",
+      "en": "Difference of the bottom two. |6 − 2| = 4 (top 9 ignored)",
+      "ja": "下2数の差。|6 − 2| = 4（上の9は無視）",
+      "zh": "两底之差。|6 − 2| = 4（忽略顶部 9）",
+      "es": "Diferencia de los inferiores. |6 − 2| = 4 (sin el 9)",
+      "fr": "Écart des deux du bas. |6 − 2| = 4 (sans le 9)",
+      "de": "Differenz der unteren. |6 − 2| = 4 (9 ignoriert)"
+    }
+  },
+  {
+    "id": "sh10_s22",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 22,
+    "figures": [
+      {
+        "shape": "square",
+        "slots": [
+          "2",
+          "4",
+          "6",
+          "8",
+          "1"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "3",
+          "5",
+          "7",
+          "9",
+          "3"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "2",
+          "3",
+          "5",
+          "4",
+          null
+        ]
+      }
+    ],
+    "answer": "3",
+    "inputType": "keypad",
+    "choices": null,
+    "figureChoices": null,
+    "hints": {
+      "ko": [
+        "소수(2,3,5,7)가 몇 개인지 세요.",
+        "2, 3, 5, 4 중 소수는?"
+      ],
+      "en": [
+        "Count how many are prime (2,3,5,7).",
+        "2, 3, 5, 4 — how many prime?"
+      ],
+      "ja": [
+        "素数(2,3,5,7)が何個か数えて。",
+        "2, 3, 5, 4 — 素数は？"
+      ],
+      "zh": [
+        "数有几个质数（2,3,5,7）。",
+        "2、3、5、4 — 几个质数？"
+      ],
+      "es": [
+        "Cuenta cuántos son primos (2,3,5,7).",
+        "2, 3, 5, 4: ¿cuántos primos?"
+      ],
+      "fr": [
+        "Compte combien sont premiers (2,3,5,7).",
+        "2, 3, 5, 4 : combien de premiers ?"
+      ],
+      "de": [
+        "Zähle, wie viele Primzahlen (2,3,5,7) es gibt.",
+        "2, 3, 5, 4 — wie viele Primzahlen?"
+      ]
+    },
+    "explanation": {
+      "ko": "소수의 개수. 2,3,5는 소수, 4는 아님 → 3",
+      "en": "Count of primes. 2,3,5 are prime, 4 is not → 3",
+      "ja": "素数の個数。2,3,5は素数、4は違う → 3",
+      "zh": "质数个数。2,3,5 是质数，4 不是 → 3",
+      "es": "Cantidad de primos. 2,3,5 sí, 4 no → 3",
+      "fr": "Nombre de premiers. 2,3,5 oui, 4 non → 3",
+      "de": "Anzahl Primzahlen. 2,3,5 ja, 4 nein → 3"
+    }
+  },
+  {
+    "id": "sh10_s23",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 23,
+    "figureTokens": [
+      {
+        "shape": "circle",
+        "filled": true
+      },
+      {
+        "shape": "circle",
+        "filled": false
+      },
+      {
+        "shape": "circle",
+        "filled": true
+      },
+      {
+        "shape": "circle",
+        "filled": false
+      },
+      null
+    ],
+    "figureChoices": [
+      {
+        "shape": "circle",
+        "filled": true,
+        "code": "fc"
+      },
+      {
+        "shape": "circle",
+        "filled": false,
+        "code": "oc"
+      },
+      {
+        "shape": "square",
+        "filled": true,
+        "code": "f"
+      },
+      {
+        "shape": "square",
+        "filled": false,
+        "code": "o"
+      }
+    ],
+    "answer": "fc",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "색이 어떻게 바뀌나요?",
+        "칠했다 비웠다 깜빡여요.",
+        "다음에 무엇이 올지 생각해 보세요."
+      ],
+      "en": [
+        "How does the fill change?",
+        "It blinks: filled, empty, filled…",
+        "Think about what comes next."
+      ],
+      "ja": [
+        "色はどう変わる？",
+        "点滅: 塗り・空き・塗り…",
+        "次に何が来るか考えてみましょう。"
+      ],
+      "zh": [
+        "填充怎么变？",
+        "一闪一闪：实、空、实…",
+        "想一想下一个是什么。"
+      ],
+      "es": [
+        "¿Cómo cambia el relleno?",
+        "Parpadea: lleno, vacío, lleno…",
+        "Piensa qué viene después."
+      ],
+      "fr": [
+        "Comment change le remplissage ?",
+        "Ça clignote : plein, vide, plein…",
+        "Réfléchis à ce qui suit."
+      ],
+      "de": [
+        "Wie ändert sich die Füllung?",
+        "Es blinkt: voll, leer, voll…",
+        "Überlege, was als Nächstes kommt."
+      ]
+    },
+    "explanation": {
+      "ko": "참·빔이 번갈아 깜빡. 빈 것 다음은 칠한 것!",
+      "en": "Filled/empty blink. After empty comes filled!",
+      "ja": "塗り・空きが交互。空きの次は塗り！",
+      "zh": "实空交替闪烁。空之后是实！",
+      "es": "Lleno/vacío parpadean. Tras vacío, lleno.",
+      "fr": "Plein/vide clignotent. Après vide, plein !",
+      "de": "Voll/leer blinken. Nach leer kommt voll!"
+    }
+  },
+  {
+    "id": "sh10_s24",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 10,
+    "order": 24,
+    "figureTokens": [
+      {
+        "shape": "arrow",
+        "rotation": 0
+      },
+      {
+        "shape": "arrow",
+        "rotation": 90
+      },
+      {
+        "shape": "arrow",
+        "rotation": 180
+      },
+      {
+        "shape": "arrow",
+        "rotation": 270
+      },
+      null
+    ],
+    "figureChoices": [
+      {
+        "shape": "arrow",
+        "rotation": 0,
+        "code": "up"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 90,
+        "code": "right"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 180,
+        "code": "down"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 270,
+        "code": "left"
+      }
+    ],
+    "answer": "up",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "화살표 방향이 어떻게 바뀌나요?",
+        "빙글빙글… 한 바퀴 돌아요.",
+        "한 바퀴 돌면 제자리."
+      ],
+      "en": [
+        "How does the arrow turn?",
+        "Round and round… a full turn.",
+        "A full turn lands back home."
+      ],
+      "ja": [
+        "矢印の向きはどう変わる？",
+        "ぐるぐる…一周します。",
+        "一周すると元の位置。"
+      ],
+      "zh": [
+        "箭头方向怎么变？",
+        "转呀转……转一圈。",
+        "转一圈回到原位。"
+      ],
+      "es": [
+        "¿Cómo gira la flecha?",
+        "Da vueltas… una vuelta completa.",
+        "Una vuelta y vuelve al inicio."
+      ],
+      "fr": [
+        "Comment tourne la flèche ?",
+        "Tourne, tourne… un tour complet.",
+        "Un tour et retour au départ."
+      ],
+      "de": [
+        "Wie dreht sich der Pfeil?",
+        "Dreht und dreht… einmal herum.",
+        "Eine Runde und zurück zum Start."
+      ]
+    },
+    "explanation": {
+      "ko": "90°씩 돌아 한 바퀴(위→오→아래→왼) → 다시 위!",
+      "en": "Turns 90° each, full circle (up→right→down→left) → back to up!",
+      "ja": "90°ずつ一周(上→右→下→左)→ また上！",
+      "zh": "每次转90°转一圈（上→右→下→左）→ 回到上！",
+      "es": "Gira 90° una vuelta (arriba→derecha→abajo→izquierda) → ¡arriba!",
+      "fr": "Tourne 90° un tour (haut→droite→bas→gauche) → en haut !",
+      "de": "Je 90° eine Runde (oben→rechts→unten→links) → wieder oben!"
     }
   }
 ]
