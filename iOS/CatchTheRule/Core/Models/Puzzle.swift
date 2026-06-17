@@ -12,18 +12,31 @@ enum InputType: String, Codable {
 struct Puzzle: Codable, Identifiable, Equatable {
     let id: String
     let type: String
+    let track: String?        // "numbers"(기본/nil) | "shapes". 모드 구분.
     let chapter: Int
     let order: Int
     let tokens: [String?]?    // 단일 행. nil 인 항이 빈칸. (grid 사용 시 생략)
     let grid: [[String?]]?    // 다중 행/매트릭스/수식형. 한 칸이 nil(빈칸).
+    let figures: [Figure]?           // 숫자형 도형(예시 도형 여러 개를 한 줄에, 마지막에 빈칸 슬롯)
+    let figureTokens: [Figure?]?     // 시각형 시퀀스. nil = 빈칸 셀.
+    let figureChoices: [Figure]?     // 시각형 보기(도형 보기)
     let answer: String
     let inputType: InputType
     let choices: [String]?
     let hints: [String: [String]]        // 로케일코드 → 힌트 3개
     let explanation: [String: String]    // 로케일코드 → 해설
 
+    /// 소속 트랙(없으면 기본 캠페인 "numbers").
+    var trackKey: String { track ?? "numbers" }
+
     /// 격자형 퍼즐 여부.
     var isGrid: Bool { (grid?.isEmpty == false) }
+
+    /// 숫자형 도형(여러 예시) 퍼즐 여부.
+    var isFigure: Bool { (figures?.isEmpty == false) }
+
+    /// 도형 시퀀스(시각형) 퍼즐 여부.
+    var isFigureSequence: Bool { (figureTokens?.isEmpty == false) }
 
     /// 현재 언어의 힌트(없으면 영어 → 임의 폴백).
     var localizedHints: [String] {

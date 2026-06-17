@@ -27,6 +27,16 @@
     <string name="chapter_9">천재</string>
     <string name="chapter_10">레전드</string>
     <string name="chapter_11">멘사 챌린지</string>
+    <string name="mode_numbers">규칙찾기</string>
+    <string name="mode_shapes">도형에서 규칙찾기</string>
+    <string name="shape_chapter_1">도형과 숫자</string>
+    <string name="select_mode">모드 선택</string>
+    <string name="mode_complete">완료</string>
+    <string name="mode_progress">%d%% 완료</string>
+    <string name="mode_locked">잠김</string>
+    <string name="unlock_title">도형규칙 해금!</string>
+    <string name="unlock_msg">5챕터를 클리어했어요! 새로운 모드가 열렸어요 — 도형 속 규칙을 찾아보세요.</string>
+    <string name="unlock_ok">좋아요!</string>
     <string name="challenge_title">타임어택</string>
     <string name="challenge_subtitle">60초 동안 최대한 많이 풀고 랭킹에 도전하세요</string>
     <string name="challenge_best">내 최고 점수</string>

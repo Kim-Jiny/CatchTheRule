@@ -27,6 +27,16 @@
     <string name="chapter_9">Génie</string>
     <string name="chapter_10">Légende</string>
     <string name="chapter_11">Défi Mensa</string>
+    <string name="mode_numbers">Trouve la règle</string>
+    <string name="mode_shapes">Règles des formes</string>
+    <string name="shape_chapter_1">Formes et nombres</string>
+    <string name="select_mode">Choisir un mode</string>
+    <string name="mode_complete">Terminé</string>
+    <string name="mode_progress">%d%% fait</string>
+    <string name="mode_locked">Verrouillé</string>
+    <string name="unlock_title">Règles des formes débloquées !</string>
+    <string name="unlock_msg">Tu as terminé 5 chapitres ! Un nouveau mode s\'ouvre — trouve les règles cachées dans les formes.</string>
+    <string name="unlock_ok">C\'est parti !</string>
     <string name="challenge_title">Contre-la-montre</string>
     <string name="challenge_subtitle">Résolvez-en un max en 60 s et grimpez au classement</string>
     <string name="challenge_best">Mon meilleur score</string>

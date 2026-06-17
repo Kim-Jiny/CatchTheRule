@@ -74,7 +74,11 @@ fun SequenceDisplay(
     }
     val popScale = pop.value
     val grid = puzzle.grid
-    if (puzzle.type == "equation" && !grid.isNullOrEmpty()) {
+    if (puzzle.isFigure && puzzle.figures != null) {
+        FigureNumberRow(figures = puzzle.figures, blankText = blankText, feedback = feedback)
+    } else if (puzzle.isFigureSequence) {
+        FigureRow(puzzle.figureTokens ?: emptyList(), puzzle, reveal, feedback, popScale)
+    } else if (puzzle.type == "equation" && !grid.isNullOrEmpty()) {
         // 수식형: "[2] + [3] = [13]" — 숫자는 박스, 연산자는 사이 텍스트, 빈칸은 강조 박스
         val cols = (grid.maxOfOrNull { it.size } ?: 1).coerceAtLeast(1)
         // 칸 수가 많아도 가로로 넘치지 않게 단계적 축소.
@@ -306,6 +310,33 @@ fun ChoicesGrid(choices: List<String>, enabled: Boolean = true, onPick: (String)
                         contentAlignment = Alignment.Center,
                     ) {
                         Text(c, color = AppColors.TextPrimary, fontSize = 24.sp, fontWeight = FontWeight.Bold)
+                    }
+                }
+            }
+        }
+    }
+}
+
+/** 도형 보기 4개(2x2). 탭하면 그 도형의 code 를 제출한다. */
+@Composable
+fun FigureChoicesGrid(
+    choices: List<com.jiny.catchtherule.core.model.Figure>,
+    enabled: Boolean = true,
+    onPick: (String) -> Unit,
+) {
+    androidx.compose.foundation.layout.Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+        choices.chunked(2).forEach { pair ->
+            Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                pair.forEach { fig ->
+                    Box(
+                        Modifier
+                            .weight(1f)
+                            .height(72.dp)
+                            .card(16.dp)
+                            .clickable(enabled = enabled) { onPick(fig.code ?: "") },
+                        contentAlignment = Alignment.Center,
+                    ) {
+                        FigureGlyph(figure = fig, size = 46.dp)
                     }
                 }
             }

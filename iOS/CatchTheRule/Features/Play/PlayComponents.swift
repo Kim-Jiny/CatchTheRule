@@ -21,7 +21,11 @@ struct SequenceDisplay: View {
 
     var body: some View {
         Group {
-            if puzzle.type == "equation", let grid = puzzle.grid, !grid.isEmpty {
+            if puzzle.isFigure, let figures = puzzle.figures {
+                FigureNumberRow(figures: figures, blankText: blankText(), feedback: feedback)
+            } else if puzzle.isFigureSequence {
+                figureRow(puzzle.figureTokens ?? [])
+            } else if puzzle.type == "equation", let grid = puzzle.grid, !grid.isEmpty {
                 equationBody(grid)
             } else if let grid = puzzle.grid, !grid.isEmpty {
                 gridBody(grid)
@@ -32,6 +36,50 @@ struct SequenceDisplay: View {
         .onChange(of: feedback) { _, newValue in
             if newValue == .correct { triggerPop() }
         }
+    }
+
+    // MARK: - 도형 시퀀스(시각형)
+
+    /// 도형이 칸별로 변하는 시퀀스. nil 셀이 빈칸(보기에서 고를 도형 자리).
+    private func figureRow(_ figs: [Figure?]) -> some View {
+        let count = max(1, figs.count)
+        let spacing: CGFloat = count >= 6 ? 6 : 10
+        let glyph: CGFloat = count >= 6 ? 34 : 42
+        return HStack(spacing: spacing) {
+            ForEach(Array(figs.enumerated()), id: \.offset) { _, fig in
+                if let fig {
+                    FigureGlyph(figure: fig, size: glyph)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 76)
+                        .card(cornerRadius: 16)
+                } else {
+                    figureBlankCell(glyph: glyph)
+                }
+            }
+        }
+        .frame(maxWidth: .infinity)
+    }
+
+    // 시퀀스의 빈칸. reveal 이면 정답 도형(code 일치)을 보여준다.
+    @ViewBuilder
+    private func figureBlankCell(glyph: CGFloat) -> some View {
+        let answerFig = reveal ? puzzle.figureChoices?.first(where: { $0.code == puzzle.answer }) : nil
+        ZStack {
+            if let answerFig {
+                FigureGlyph(figure: answerFig, size: glyph)
+            } else {
+                Text("?")
+                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                    .foregroundStyle(Theme.textPrimary)
+            }
+        }
+        .frame(maxWidth: .infinity)
+        .frame(height: 76)
+        .background(RoundedRectangle(cornerRadius: 16, style: .continuous).fill(Color.white.opacity(0.03)))
+        .overlay(RoundedRectangle(cornerRadius: 16, style: .continuous)
+            .stroke(blankStroke, lineWidth: 2))
+        .shadow(color: Theme.success.opacity(feedback == .correct ? 0.75 : 0), radius: 14)
+        .scaleEffect(popScale)
     }
 
     // MARK: - 수식형(type=equation)
@@ -266,6 +314,32 @@ struct ChoicesView: View {
                         .foregroundStyle(Theme.textPrimary)
                         .frame(maxWidth: .infinity)
                         .frame(height: 64)
+                        .card(cornerRadius: 16)
+                }
+                .buttonStyle(.plain)
+            }
+        }
+        .disabled(disabled)
+    }
+}
+
+// MARK: - Figure choices (시각형 보기)
+
+/// 도형 보기 4개. 탭하면 그 도형의 code 를 제출한다.
+struct FigureChoicesView: View {
+    let choices: [Figure]
+    var disabled: Bool = false
+    let onPick: (String) -> Void
+
+    private let columns = Array(repeating: GridItem(.flexible(), spacing: 12), count: 2)
+
+    var body: some View {
+        LazyVGrid(columns: columns, spacing: 12) {
+            ForEach(Array(choices.enumerated()), id: \.offset) { _, fig in
+                Button { onPick(fig.code ?? "") } label: {
+                    FigureGlyph(figure: fig, size: 46)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 72)
                         .card(cornerRadius: 16)
                 }
                 .buttonStyle(.plain)

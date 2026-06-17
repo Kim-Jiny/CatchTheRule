@@ -62,13 +62,13 @@ import com.jiny.catchtherule.ui.theme.card
 import kotlinx.coroutines.delay
 
 @Composable
-fun CampaignSessionScreen(startIndex: Int, onClose: () -> Unit) {
+fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_TRACK, onClose: () -> Unit) {
     val progress = LocalProgress.current
     val billing = LocalBilling.current
     val ads = LocalAds.current
     val activity = LocalContext.current as? Activity
     val store = PuzzleStore.get(LocalContext.current)
-    val puzzles = store.puzzles
+    val puzzles = store.puzzles(track)
 
     var index by remember { mutableIntStateOf(startIndex) }
     var typed by remember { mutableStateOf("") }
@@ -97,11 +97,11 @@ fun CampaignSessionScreen(startIndex: Int, onClose: () -> Unit) {
 
     ScreenBackground {
         if (puzzle == null) {
-            CampaignComplete(onClose)
+            CampaignComplete(track, onClose)
             return@ScreenBackground
         }
 
-        val position = store.position(index)
+        val position = store.position(index, track)
 
         Box(Modifier.fillMaxSize()) {
         Column(Modifier.fillMaxSize().padding(top = 8.dp)) {
@@ -165,7 +165,14 @@ fun CampaignSessionScreen(startIndex: Int, onClose: () -> Unit) {
 
             // 입력 영역
             Box(Modifier.padding(horizontal = 20.dp, vertical = 12.dp)) {
-                when (InputType.from(puzzle.inputType)) {
+                if (puzzle.isFigureSequence) {
+                    // 시각형(도형 시퀀스)은 도형 보기로 고른다.
+                    FigureChoicesGrid(puzzle.figureChoices ?: emptyList(), enabled = !solved) { picked ->
+                        submitCampaign(puzzle, index, picked, progress, hintsShown,
+                            onCorrect = { feedback = AnswerFeedback.Correct; reveal = true; solved = true },
+                            onWrong = { feedback = AnswerFeedback.Wrong })
+                    }
+                } else when (InputType.from(puzzle.inputType)) {
                     InputType.Keypad -> Keypad(
                         canSubmit = typed.isNotEmpty() && !solved,
                         onDigit = { if (!solved && typed.length < 4) typed += it.toString() },
@@ -316,7 +323,7 @@ private fun HintButton(remaining: Int, enabled: Boolean, onClick: () -> Unit) {
 }
 
 @Composable
-private fun CampaignComplete(onClose: () -> Unit) {
+private fun CampaignComplete(track: String, onClose: () -> Unit) {
     val progress = LocalProgress.current
     Column(
         Modifier.fillMaxSize().padding(32.dp),
@@ -327,7 +334,7 @@ private fun CampaignComplete(onClose: () -> Unit) {
         Spacer(Modifier.height(20.dp))
         Text(stringResource(R.string.campaign_complete), color = AppColors.TextPrimary, fontSize = 22.sp, fontWeight = FontWeight.Bold)
         Spacer(Modifier.height(8.dp))
-        Text(stringResource(R.string.stars_earned, progress.totalStars, progress.maxStars), color = AppColors.TextSecondary, fontSize = 15.sp)
+        Text(stringResource(R.string.stars_earned, progress.earnedStars(track), progress.maxStars(track)), color = AppColors.TextSecondary, fontSize = 15.sp)
         Spacer(Modifier.height(8.dp))
         Text(stringResource(R.string.home_wait_update), color = AppColors.TextTertiary, fontSize = 14.sp, textAlign = TextAlign.Center)
         Spacer(Modifier.height(24.dp))

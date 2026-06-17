@@ -6533,5 +6533,185 @@
       "fr": "(a+b)²: 9² = 81",
       "de": "(a+b)²: 9² = 81"
     }
+  },
+  {
+    "id": "sh1_s01",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 1,
+    "order": 1,
+    "figures": [
+      { "shape": "triangle", "slots": ["5", "2", "3", "10"] },
+      { "shape": "triangle", "slots": ["4", "1", "2", "7"] },
+      { "shape": "triangle", "slots": ["6", "2", "3", null] }
+    ],
+    "answer": "11",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": ["앞의 두 도형은 완성된 예시예요.", "가운데 수 = 세 꼭짓점의 합 (5+2+3=10).", "마지막 삼각형: 6+2+3은?"],
+      "en": ["The first two figures are completed examples.", "Center = sum of the three corners (5+2+3=10).", "Last triangle: what is 6+2+3?"],
+      "ja": ["最初の2つは完成した例です。", "真ん中 = 3頂点の和 (5+2+3=10)。", "最後の三角形: 6+2+3 は?"],
+      "zh": ["前两个是完整的示例。", "中间 = 三个顶点之和 (5+2+3=10)。", "最后一个三角形：6+2+3 是多少？"],
+      "es": ["Las dos primeras figuras son ejemplos completos.", "Centro = suma de las tres esquinas (5+2+3=10).", "Último triángulo: ¿cuánto es 6+2+3?"],
+      "fr": ["Les deux premières figures sont des exemples complets.", "Centre = somme des trois sommets (5+2+3=10).", "Dernier triangle : combien font 6+2+3 ?"],
+      "de": ["Die ersten beiden Figuren sind vollständige Beispiele.", "Mitte = Summe der drei Ecken (5+2+3=10).", "Letztes Dreieck: Was ist 6+2+3?"]
+    },
+    "explanation": {
+      "ko": "가운데 = 세 꼭짓점의 합. 6+2+3 = 11 (예: 5+2+3=10, 4+1+2=7)",
+      "en": "Center = sum of the three corners. 6+2+3 = 11 (e.g. 5+2+3=10, 4+1+2=7)",
+      "ja": "真ん中 = 3頂点の和。6+2+3 = 11 (例: 5+2+3=10, 4+1+2=7)",
+      "zh": "中间 = 三个顶点之和。6+2+3 = 11（例：5+2+3=10，4+1+2=7）",
+      "es": "Centro = suma de las tres esquinas. 6+2+3 = 11 (ej.: 5+2+3=10, 4+1+2=7)",
+      "fr": "Centre = somme des trois sommets. 6+2+3 = 11 (ex. : 5+2+3=10, 4+1+2=7)",
+      "de": "Mitte = Summe der drei Ecken. 6+2+3 = 11 (z. B. 5+2+3=10, 4+1+2=7)"
+    }
+  },
+  {
+    "id": "sh1_s02",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 1,
+    "order": 2,
+    "figures": [
+      { "shape": "circle", "slots": ["8", "5", "6", "9"] },
+      { "shape": "circle", "slots": ["7", "3", "5", "9"] },
+      { "shape": "circle", "slots": ["10", "4", "7", null] }
+    ],
+    "answer": "13",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": ["앞의 두 원은 완성된 예시예요.", "마주보는 두 수의 합이 같아요 (8+6 = 5+9 = 14).", "마지막 원: 10+7=17, 4+?=17"],
+      "en": ["The first two circles are completed examples.", "Opposite numbers share the same sum (8+6 = 5+9 = 14).", "Last circle: 10+7=17, 4+?=17"],
+      "ja": ["最初の2つの円は完成した例です。", "向かい合う数の和が同じ (8+6 = 5+9 = 14)。", "最後の円: 10+7=17, 4+?=17"],
+      "zh": ["前两个圆是完整示例。", "相对两数之和相同 (8+6 = 5+9 = 14)。", "最后一个圆：10+7=17，4+?=17"],
+      "es": ["Los dos primeros círculos son ejemplos completos.", "Los números opuestos suman lo mismo (8+6 = 5+9 = 14).", "Último círculo: 10+7=17, 4+?=17"],
+      "fr": ["Les deux premiers cercles sont des exemples complets.", "Les nombres opposés ont la même somme (8+6 = 5+9 = 14).", "Dernier cercle : 10+7=17, 4+?=17"],
+      "de": ["Die ersten beiden Kreise sind vollständige Beispiele.", "Gegenüberliegende Zahlen haben dieselbe Summe (8+6 = 5+9 = 14).", "Letzter Kreis: 10+7=17, 4+?=17"]
+    },
+    "explanation": {
+      "ko": "마주보는 두 수의 합이 같다. 4+13 = 10+7 = 17 (예: 8+6=5+9=14, 7+5=3+9=12)",
+      "en": "Opposite numbers share the same sum. 4+13 = 10+7 = 17 (e.g. 8+6=5+9=14, 7+5=3+9=12)",
+      "ja": "向かい合う数の和が同じ。4+13 = 10+7 = 17 (例: 8+6=5+9=14, 7+5=3+9=12)",
+      "zh": "相对两数之和相同。4+13 = 10+7 = 17（例：8+6=5+9=14，7+5=3+9=12）",
+      "es": "Los números opuestos suman lo mismo. 4+13 = 10+7 = 17 (ej.: 8+6=5+9=14, 7+5=3+9=12)",
+      "fr": "Les nombres opposés ont la même somme. 4+13 = 10+7 = 17 (ex. : 8+6=5+9=14, 7+5=3+9=12)",
+      "de": "Gegenüberliegende Zahlen haben dieselbe Summe. 4+13 = 10+7 = 17 (z. B. 8+6=5+9=14, 7+5=3+9=12)"
+    }
+  },
+  {
+    "id": "sh1_s03",
+    "type": "shape_num",
+    "track": "shapes",
+    "chapter": 1,
+    "order": 3,
+    "figures": [
+      { "shape": "square", "slots": ["2", "3", "4", "5", "14"] },
+      { "shape": "square", "slots": ["1", "2", "3", "4", "10"] },
+      { "shape": "square", "slots": ["3", "1", "2", "4", null] }
+    ],
+    "answer": "10",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": ["앞 두 사각형은 완성된 예시예요.", "가운데 = 네 모서리의 합 (2+3+4+5=14).", "마지막: 3+1+2+4는?"],
+      "en": ["The first two squares are completed examples.", "Center = sum of the four corners (2+3+4+5=14).", "Last one: what is 3+1+2+4?"],
+      "ja": ["最初の2つの四角は完成した例です。", "真ん中 = 4つの角の和 (2+3+4+5=14)。", "最後: 3+1+2+4 は?"],
+      "zh": ["前两个方块是完整示例。", "中间 = 四角之和 (2+3+4+5=14)。", "最后一个：3+1+2+4 是多少？"],
+      "es": ["Los dos primeros cuadrados son ejemplos completos.", "Centro = suma de las cuatro esquinas (2+3+4+5=14).", "El último: ¿cuánto es 3+1+2+4?"],
+      "fr": ["Les deux premiers carrés sont des exemples complets.", "Centre = somme des quatre coins (2+3+4+5=14).", "Le dernier : combien font 3+1+2+4 ?"],
+      "de": ["Die ersten beiden Quadrate sind vollständige Beispiele.", "Mitte = Summe der vier Ecken (2+3+4+5=14).", "Letztes: Was ist 3+1+2+4?"]
+    },
+    "explanation": {
+      "ko": "가운데 = 네 모서리의 합. 3+1+2+4 = 10 (예: 2+3+4+5=14)",
+      "en": "Center = sum of the four corners. 3+1+2+4 = 10 (e.g. 2+3+4+5=14)",
+      "ja": "真ん中 = 4つの角の和。3+1+2+4 = 10 (例: 2+3+4+5=14)",
+      "zh": "中间 = 四角之和。3+1+2+4 = 10（例：2+3+4+5=14）",
+      "es": "Centro = suma de las cuatro esquinas. 3+1+2+4 = 10 (ej.: 2+3+4+5=14)",
+      "fr": "Centre = somme des quatre coins. 3+1+2+4 = 10 (ex. : 2+3+4+5=14)",
+      "de": "Mitte = Summe der vier Ecken. 3+1+2+4 = 10 (z. B. 2+3+4+5=14)"
+    }
+  },
+  {
+    "id": "sh1_s04",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 1,
+    "order": 4,
+    "figureTokens": [
+      { "shape": "arrow", "rotation": 0 },
+      { "shape": "arrow", "rotation": 90 },
+      { "shape": "arrow", "rotation": 180 },
+      { "shape": "arrow", "rotation": 270 },
+      null
+    ],
+    "figureChoices": [
+      { "shape": "arrow", "rotation": 0, "code": "up" },
+      { "shape": "arrow", "rotation": 90, "code": "right" },
+      { "shape": "arrow", "rotation": 180, "code": "down" },
+      { "shape": "arrow", "rotation": 270, "code": "left" }
+    ],
+    "answer": "up",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": ["화살표 방향이 어떻게 바뀌나요?", "시계 방향으로 90°씩 돌아요.", "왼쪽 다음은 다시 위쪽이에요."],
+      "en": ["How does the arrow turn?", "It rotates 90° clockwise each step.", "After left comes up again."],
+      "ja": ["矢印の向きはどう変わる？", "時計回りに90°ずつ回ります。", "左の次はまた上です。"],
+      "zh": ["箭头方向怎么变？", "每次顺时针转90°。", "左之后又回到上。"],
+      "es": ["¿Cómo gira la flecha?", "Gira 90° en sentido horario cada paso.", "Después de la izquierda vuelve arriba."],
+      "fr": ["Comment tourne la flèche ?", "Elle tourne de 90° dans le sens horaire.", "Après la gauche revient le haut."],
+      "de": ["Wie dreht sich der Pfeil?", "Er dreht sich um 90° im Uhrzeigersinn.", "Nach links kommt wieder oben."]
+    },
+    "explanation": {
+      "ko": "화살표가 시계 방향으로 90°씩 회전: 위→오른쪽→아래→왼쪽→위",
+      "en": "The arrow rotates 90° clockwise: up→right→down→left→up",
+      "ja": "矢印が時計回りに90°ずつ回転: 上→右→下→左→上",
+      "zh": "箭头顺时针每次转90°：上→右→下→左→上",
+      "es": "La flecha gira 90° en sentido horario: arriba→derecha→abajo→izquierda→arriba",
+      "fr": "La flèche tourne de 90° dans le sens horaire : haut→droite→bas→gauche→haut",
+      "de": "Der Pfeil dreht sich um 90° im Uhrzeigersinn: oben→rechts→unten→links→oben"
+    }
+  },
+  {
+    "id": "sh1_s05",
+    "type": "shape_seq",
+    "track": "shapes",
+    "chapter": 1,
+    "order": 5,
+    "figureTokens": [
+      { "shape": "circle", "count": 1 },
+      { "shape": "circle", "count": 2 },
+      { "shape": "circle", "count": 3 },
+      null
+    ],
+    "figureChoices": [
+      { "shape": "circle", "count": 4, "code": "c4" },
+      { "shape": "circle", "count": 3, "code": "c3" },
+      { "shape": "circle", "count": 5, "code": "c5" },
+      { "shape": "circle", "count": 2, "code": "c2" }
+    ],
+    "answer": "c4",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": ["도형의 개수를 세어보세요.", "1개, 2개, 3개로 늘어나요.", "다음은 4개예요."],
+      "en": ["Count the shapes.", "It grows 1, 2, 3.", "Next is 4."],
+      "ja": ["図形の数を数えてみましょう。", "1個, 2個, 3個と増えます。", "次は4個です。"],
+      "zh": ["数一数图形的个数。", "依次是1个、2个、3个。", "下一个是4个。"],
+      "es": ["Cuenta las figuras.", "Crece 1, 2, 3.", "El siguiente es 4."],
+      "fr": ["Compte les formes.", "Ça augmente 1, 2, 3.", "Le suivant est 4."],
+      "de": ["Zähle die Formen.", "Es wächst 1, 2, 3.", "Als Nächstes 4."]
+    },
+    "explanation": {
+      "ko": "도형 개수가 1씩 증가: 1, 2, 3, 4",
+      "en": "The number of shapes increases by 1: 1, 2, 3, 4",
+      "ja": "図形の数が1ずつ増える: 1, 2, 3, 4",
+      "zh": "图形个数每次加1：1, 2, 3, 4",
+      "es": "El número de figuras aumenta de 1 en 1: 1, 2, 3, 4",
+      "fr": "Le nombre de formes augmente de 1 : 1, 2, 3, 4",
+      "de": "Die Anzahl der Formen steigt um 1: 1, 2, 3, 4"
+    }
   }
 ]

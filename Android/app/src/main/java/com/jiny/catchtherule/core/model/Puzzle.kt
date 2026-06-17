@@ -13,17 +13,30 @@ import kotlinx.serialization.Serializable
 data class Puzzle(
     val id: String,
     val type: String,
+    val track: String? = null,                // "numbers"(기본/null) | "shapes". 모드 구분.
     val chapter: Int,
     val order: Int,
     val tokens: List<String?>? = null,        // 단일 행. null 인 항이 빈칸. (grid 사용 시 생략)
     val grid: List<List<String?>>? = null,    // 다중 행/매트릭스/수식형. 한 칸이 null(빈칸).
+    val figures: List<Figure>? = null,        // 숫자형 도형(예시 여러 개를 한 줄에, 마지막에 빈칸 슬롯)
+    val figureTokens: List<Figure?>? = null,  // 시각형 시퀀스. null = 빈칸 셀.
+    val figureChoices: List<Figure>? = null,  // 시각형 보기(도형 보기)
     val answer: String,
     val inputType: String,      // "keypad" | "choices"
     val choices: List<String>? = null,
     val hints: Map<String, List<String>>,      // 로케일코드 → 힌트 3개
     val explanation: Map<String, String>,      // 로케일코드 → 해설
 ) {
+    /** 소속 트랙(없으면 기본 캠페인 "numbers"). */
+    val trackKey: String get() = track ?: "numbers"
+
     val isGrid: Boolean get() = grid?.isNotEmpty() == true
+
+    /** 숫자형 도형(여러 예시) 퍼즐 여부. */
+    val isFigure: Boolean get() = figures?.isNotEmpty() == true
+
+    /** 도형 시퀀스(시각형) 퍼즐 여부. */
+    val isFigureSequence: Boolean get() = figureTokens?.isNotEmpty() == true
 
     /** 현재 언어의 힌트(없으면 영어 → 임의 폴백). */
     val localizedHints: List<String>

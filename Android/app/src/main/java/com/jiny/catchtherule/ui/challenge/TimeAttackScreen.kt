@@ -68,7 +68,8 @@ fun TimeAttackScreen(onClose: () -> Unit) {
     val progress = LocalProgress.current
     val store = PuzzleStore.get(LocalContext.current)
 
-    var deck by remember { mutableStateOf(store.puzzles.shuffled()) }
+    // 타임어택은 숫자 규칙(numbers) 트랙만 — 도형 퍼즐은 제외.
+    var deck by remember { mutableStateOf(store.puzzles("numbers").shuffled()) }
     var deckIndex by remember { mutableIntStateOf(0) }
     var typed by remember { mutableStateOf("") }
     var score by remember { mutableIntStateOf(0) }

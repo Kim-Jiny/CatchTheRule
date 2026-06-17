@@ -68,21 +68,39 @@ final class PuzzleStore {
 
     // MARK: - Access
 
-    var totalCount: Int { puzzles.count }
+    static let defaultTrack = "numbers"
 
-    var chapters: [Int] { Array(Set(puzzles.map(\.chapter))).sorted() }
-
-    func puzzles(in chapter: Int) -> [Puzzle] {
-        puzzles.filter { $0.chapter == chapter }
+    /// 트랙별 퍼즐(이미 (챕터,순서) 정렬됨). 캠페인 인덱스는 이 배열 기준.
+    func puzzles(track: String = defaultTrack) -> [Puzzle] {
+        puzzles.filter { $0.trackKey == track }
     }
 
-    func puzzle(at globalIndex: Int) -> Puzzle? {
-        puzzles.indices.contains(globalIndex) ? puzzles[globalIndex] : nil
+    /// 존재하는 트랙 목록(numbers 우선, 등장 순).
+    var tracks: [String] {
+        var seen = Set<String>()
+        var result: [String] = []
+        for p in puzzles where seen.insert(p.trackKey).inserted { result.append(p.trackKey) }
+        return result
     }
 
-    func position(of globalIndex: Int) -> (chapter: Int, stage: Int)? {
-        guard let p = puzzle(at: globalIndex) else { return nil }
-        let stage = puzzles(in: p.chapter).firstIndex(where: { $0.id == p.id }).map { $0 + 1 } ?? 1
+    func totalCount(track: String = defaultTrack) -> Int { puzzles(track: track).count }
+
+    func chapters(track: String = defaultTrack) -> [Int] {
+        Array(Set(puzzles(track: track).map(\.chapter))).sorted()
+    }
+
+    func puzzles(in chapter: Int, track: String = defaultTrack) -> [Puzzle] {
+        puzzles(track: track).filter { $0.chapter == chapter }
+    }
+
+    func puzzle(at index: Int, track: String = defaultTrack) -> Puzzle? {
+        let list = puzzles(track: track)
+        return list.indices.contains(index) ? list[index] : nil
+    }
+
+    func position(of index: Int, track: String = defaultTrack) -> (chapter: Int, stage: Int)? {
+        guard let p = puzzle(at: index, track: track) else { return nil }
+        let stage = puzzles(in: p.chapter, track: track).firstIndex(where: { $0.id == p.id }).map { $0 + 1 } ?? 1
         return (p.chapter, stage)
     }
 }

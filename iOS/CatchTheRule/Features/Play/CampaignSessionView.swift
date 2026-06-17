@@ -7,7 +7,8 @@ struct CampaignSessionView: View {
     @Environment(AdsManager.self) private var ads
     @Environment(\.dismiss) private var dismiss
 
-    private let puzzles = PuzzleStore.shared.puzzles
+    private let track: String
+    private let puzzles: [Puzzle]
 
     @State private var index: Int
     @State private var typed = ""
@@ -19,7 +20,9 @@ struct CampaignSessionView: View {
     @State private var showHintShop = false // 힌트 0개일 때 광고/구매 팝업
     @State private var showCalc = false      // 플로팅 계산기
 
-    init(startIndex: Int) {
+    init(startIndex: Int, track: String = PuzzleStore.defaultTrack) {
+        self.track = track
+        self.puzzles = PuzzleStore.shared.puzzles(track: track)
         _index = State(initialValue: max(0, startIndex))
     }
 
@@ -33,7 +36,7 @@ struct CampaignSessionView: View {
             if let puzzle {
                 content(for: puzzle)
             } else {
-                CampaignCompleteView { dismiss() }
+                CampaignCompleteView(track: track) { dismiss() }
             }
         }
         .overlay {
@@ -97,7 +100,7 @@ struct CampaignSessionView: View {
     }
 
     private func header(for puzzle: Puzzle) -> some View {
-        let pos = PuzzleStore.shared.position(of: index)
+        let pos = PuzzleStore.shared.position(of: index, track: track)
         return HStack {
             Button { dismiss() } label: {
                 Image(systemName: "xmark")
@@ -201,25 +204,33 @@ struct CampaignSessionView: View {
 
     @ViewBuilder
     private func inputArea(for puzzle: Puzzle) -> some View {
-        switch puzzle.inputType {
-        case .keypad:
-            KeypadView(
-                onDigit: { d in
-                    guard !solved, typed.count < 4 else { return }
-                    typed.append("\(d)")
-                    if progress.hapticsOn { Haptics.soft() }
-                },
-                onDelete: {
-                    guard !solved, !typed.isEmpty else { return }
-                    typed.removeLast()
-                },
-                onSubmit: { submit(puzzle: puzzle, value: typed) },
-                canSubmit: !typed.isEmpty && !solved
-            )
-        case .choices:
-            ChoicesView(choices: puzzle.choices ?? [], disabled: solved) { picked in
+        if puzzle.isFigureSequence {
+            // 시각형(도형 시퀀스)은 도형 보기로 고른다.
+            FigureChoicesView(choices: puzzle.figureChoices ?? [], disabled: solved) { picked in
                 typed = picked
                 submit(puzzle: puzzle, value: picked)
+            }
+        } else {
+            switch puzzle.inputType {
+            case .keypad:
+                KeypadView(
+                    onDigit: { d in
+                        guard !solved, typed.count < 4 else { return }
+                        typed.append("\(d)")
+                        if progress.hapticsOn { Haptics.soft() }
+                    },
+                    onDelete: {
+                        guard !solved, !typed.isEmpty else { return }
+                        typed.removeLast()
+                    },
+                    onSubmit: { submit(puzzle: puzzle, value: typed) },
+                    canSubmit: !typed.isEmpty && !solved
+                )
+            case .choices:
+                ChoicesView(choices: puzzle.choices ?? [], disabled: solved) { picked in
+                    typed = picked
+                    submit(puzzle: puzzle, value: picked)
+                }
             }
         }
     }
@@ -233,7 +244,7 @@ struct CampaignSessionView: View {
             feedback = .correct
             reveal = true
             let earned = max(1, 3 - hintsShown)
-            progress.recordCampaignClear(puzzle: puzzle, atGlobalIndex: index, earnedStars: earned)
+            progress.recordCampaignClear(puzzle: puzzle, atIndex: index, earnedStars: earned)
             if progress.soundOn { /* 효과음 자리 */ }
             if progress.hapticsOn { Haptics.success() }
             Task {
@@ -362,6 +373,7 @@ struct HintShopSheet: View {
 
 struct CampaignCompleteView: View {
     @Environment(ProgressStore.self) private var progress
+    var track: String = PuzzleStore.defaultTrack
     let onClose: () -> Void
 
     var body: some View {
@@ -372,7 +384,7 @@ struct CampaignCompleteView: View {
             Text(String.loc("campaign_complete"))
                 .font(.system(size: 22, weight: .bold))
                 .foregroundStyle(Theme.textPrimary)
-            Text(String.loc("stars_earned", progress.totalStars, progress.maxStars))
+            Text(String.loc("stars_earned", progress.earnedStars(track: track), progress.maxStars(track: track)))
                 .font(.system(size: 15))
                 .foregroundStyle(Theme.textSecondary)
             Text(String.loc("home_wait_update"))

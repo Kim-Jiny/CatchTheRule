@@ -15,16 +15,24 @@ import java.net.URL
  * - 추가 스테이지: 서버에서 받아 캐시(filesDir). 오프라인이면 캐시/번들 폴백.
  * 서버 갱신은 캐시에 저장되어 **다음 실행**에 반영된다.
  */
-class PuzzleStore private constructor(val puzzles: List<Puzzle>) {
+class PuzzleStore private constructor(private val allPuzzles: List<Puzzle>) {
 
-    val totalCount: Int get() = puzzles.size
-    val chapters: List<Int> get() = puzzles.map { it.chapter }.distinct().sorted()
-    fun puzzlesIn(chapter: Int): List<Puzzle> = puzzles.filter { it.chapter == chapter }
-    fun puzzleAt(globalIndex: Int): Puzzle? = puzzles.getOrNull(globalIndex)
+    /** 트랙별 퍼즐(이미 (챕터,순서) 정렬됨). 캠페인 인덱스는 이 배열 기준. */
+    fun puzzles(track: String = DEFAULT_TRACK): List<Puzzle> = allPuzzles.filter { it.trackKey == track }
 
-    fun position(globalIndex: Int): Pair<Int, Int>? {
-        val p = puzzleAt(globalIndex) ?: return null
-        val stage = puzzlesIn(p.chapter).indexOfFirst { it.id == p.id } + 1
+    /** 존재하는 트랙 목록(numbers 우선, 등장 순). */
+    val tracks: List<String> get() = allPuzzles.map { it.trackKey }.distinct()
+
+    fun totalCount(track: String = DEFAULT_TRACK): Int = puzzles(track).size
+    fun chapters(track: String = DEFAULT_TRACK): List<Int> =
+        puzzles(track).map { it.chapter }.distinct().sorted()
+    fun puzzlesIn(chapter: Int, track: String = DEFAULT_TRACK): List<Puzzle> =
+        puzzles(track).filter { it.chapter == chapter }
+    fun puzzleAt(index: Int, track: String = DEFAULT_TRACK): Puzzle? = puzzles(track).getOrNull(index)
+
+    fun position(index: Int, track: String = DEFAULT_TRACK): Pair<Int, Int>? {
+        val p = puzzleAt(index, track) ?: return null
+        val stage = puzzlesIn(p.chapter, track).indexOfFirst { it.id == p.id } + 1
         return p.chapter to stage
     }
 
@@ -32,6 +40,7 @@ class PuzzleStore private constructor(val puzzles: List<Puzzle>) {
     private data class ServerPuzzles(val version: Long = 0, val puzzles: List<Puzzle> = emptyList())
 
     companion object {
+        const val DEFAULT_TRACK = "numbers"
         @Volatile private var instance: PuzzleStore? = null
         private val json = Json { ignoreUnknownKeys = true }
         private const val CACHE = "ctr_server_puzzles.json"

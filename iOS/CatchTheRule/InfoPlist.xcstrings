@@ -61,48 +61,13 @@
       }
     },
     "NSUserTrackingUsageDescription" : {
-      "extractionState" : "manual",
+      "comment" : "Privacy - Tracking Usage Description",
+      "extractionState" : "extracted_with_value",
       "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Erlaube Tracking, um dir relevantere Werbung zu zeigen und das Spiel kostenlos zu halten."
-          }
-        },
         "en" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "new",
             "value" : "Allow tracking to show ads more relevant to you and keep the game free."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Permite el seguimiento para mostrarte anuncios más relevantes y mantener el juego gratis."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Autorisez le suivi pour afficher des publicités plus pertinentes et garder le jeu gratuit."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "あなたに合った広告を表示し、ゲームを無料で提供するためにトラッキングを許可してください。"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "맞춤형 광고 제공과 무료 서비스 유지를 위해 추적을 허용해 주세요."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "允许跟踪以展示更相关的广告，并保持游戏免费。"
           }
         }
       }

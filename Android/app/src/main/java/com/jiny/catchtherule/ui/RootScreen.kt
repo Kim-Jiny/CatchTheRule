@@ -31,7 +31,7 @@ import com.jiny.catchtherule.ui.settings.SettingsScreen
 import com.jiny.catchtherule.ui.theme.AppColors
 
 private sealed interface FullScreen {
-    data class Campaign(val startIndex: Int) : FullScreen
+    data class Campaign(val startIndex: Int, val track: String) : FullScreen
     data object TimeAttack : FullScreen
 }
 
@@ -41,10 +41,11 @@ private data class Tab(val label: String, val icon: ImageVector)
 fun RootScreen() {
     var fullScreen by remember { mutableStateOf<FullScreen?>(null) }
     var selectedTab by remember { mutableIntStateOf(0) }
+    var homeMode by remember { mutableStateOf<String?>(null) }   // 선택된 모드 상세(허브 백스택)
 
     when (val fs = fullScreen) {
         is FullScreen.Campaign -> {
-            CampaignSessionScreen(startIndex = fs.startIndex, onClose = { fullScreen = null })
+            CampaignSessionScreen(startIndex = fs.startIndex, track = fs.track, onClose = { fullScreen = null })
             return
         }
         FullScreen.TimeAttack -> {
@@ -85,7 +86,10 @@ fun RootScreen() {
         when (selectedTab) {
             0 -> HomeScreen(
                 modifier = Modifier.fillMaxSize().padding(padding),
-                onPlay = { startIndex -> fullScreen = FullScreen.Campaign(startIndex) },
+                selectedMode = homeMode,
+                onSelectMode = { homeMode = it },
+                onBackToHub = { homeMode = null },
+                onPlay = { startIndex, track -> fullScreen = FullScreen.Campaign(startIndex, track) },
             )
             1 -> ChallengeScreen(
                 modifier = Modifier.fillMaxSize().padding(padding),

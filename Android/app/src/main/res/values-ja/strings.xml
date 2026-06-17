@@ -27,6 +27,16 @@
     <string name="chapter_9">天才</string>
     <string name="chapter_10">レジェンド</string>
     <string name="chapter_11">メンサチャレンジ</string>
+    <string name="mode_numbers">ルール探し</string>
+    <string name="mode_shapes">図形のルール探し</string>
+    <string name="shape_chapter_1">図形と数</string>
+    <string name="select_mode">モード選択</string>
+    <string name="mode_complete">クリア</string>
+    <string name="mode_progress">%d%% 完了</string>
+    <string name="mode_locked">ロック中</string>
+    <string name="unlock_title">図形ルール解放！</string>
+    <string name="unlock_msg">5チャプタークリア！新しいモードが解放されました — 図形に隠れたルールを探そう。</string>
+    <string name="unlock_ok">いいね！</string>
     <string name="challenge_title">タイムアタック</string>
     <string name="challenge_subtitle">60秒でできるだけ多く解いてランキングに挑戦</string>
     <string name="challenge_best">自己ベスト</string>

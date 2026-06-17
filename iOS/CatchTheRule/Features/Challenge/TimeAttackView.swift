@@ -114,7 +114,8 @@ struct TimeAttackView: View {
     // MARK: - Logic
 
     private func setup() {
-        deck = PuzzleStore.shared.puzzles.shuffled()
+        // 타임어택은 숫자 규칙(numbers) 트랙만 — 도형 퍼즐은 제외.
+        deck = PuzzleStore.shared.puzzles(track: "numbers").shuffled()
         deckIndex = 0
         score = 0
         timeLeft = Self.duration

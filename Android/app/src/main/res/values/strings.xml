@@ -27,6 +27,16 @@
     <string name="chapter_9">Genius</string>
     <string name="chapter_10">Legend</string>
     <string name="chapter_11">Mensa Challenge</string>
+    <string name="mode_numbers">Find the Rule</string>
+    <string name="mode_shapes">Rules in Shapes</string>
+    <string name="shape_chapter_1">Shapes &amp; Numbers</string>
+    <string name="select_mode">Select a Mode</string>
+    <string name="mode_complete">Complete</string>
+    <string name="mode_progress">%d%% done</string>
+    <string name="mode_locked">Locked</string>
+    <string name="unlock_title">Shape Rules Unlocked!</string>
+    <string name="unlock_msg">You cleared 5 chapters! A new mode is open — find the rules hidden in shapes.</string>
+    <string name="unlock_ok">Let\'s go!</string>
     <string name="challenge_title">Time Attack</string>
     <string name="challenge_subtitle">Solve as many as you can in 60s and climb the ranking</string>
     <string name="challenge_best">My Best Score</string>

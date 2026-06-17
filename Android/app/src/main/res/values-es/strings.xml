@@ -27,6 +27,16 @@
     <string name="chapter_9">Genio</string>
     <string name="chapter_10">Leyenda</string>
     <string name="chapter_11">Reto Mensa</string>
+    <string name="mode_numbers">Encuentra la regla</string>
+    <string name="mode_shapes">Reglas en figuras</string>
+    <string name="shape_chapter_1">Formas y números</string>
+    <string name="select_mode">Elige un modo</string>
+    <string name="mode_complete">Completado</string>
+    <string name="mode_progress">%d%% hecho</string>
+    <string name="mode_locked">Bloqueado</string>
+    <string name="unlock_title">¡Reglas de figuras desbloqueadas!</string>
+    <string name="unlock_msg">¡Superaste 5 capítulos! Se abrió un nuevo modo: encuentra las reglas en las figuras.</string>
+    <string name="unlock_ok">¡Vamos!</string>
     <string name="challenge_title">Contrarreloj</string>
     <string name="challenge_subtitle">Resuelve todo lo posible en 60 s y sube en el ranking</string>
     <string name="challenge_best">Mi mejor puntuación</string>
