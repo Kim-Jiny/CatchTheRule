@@ -177,7 +177,7 @@ struct SettingsView: View {
         VStack(spacing: 12) {
             // 새 문제(스토어 최신) 안내
             if version.updateAvailable {
-                Button { openURL(version.storeURL ?? "https://apps.apple.com/app/id0") } label: {
+                Button { openURL(version.storeURL ?? "https://apps.apple.com/") } label: {
                     HStack(spacing: 8) {
                         Image(systemName: "sparkles")
                         Text(String.loc("version_new_available"))
