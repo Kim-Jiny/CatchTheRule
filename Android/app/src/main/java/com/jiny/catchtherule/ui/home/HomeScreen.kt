@@ -411,6 +411,7 @@ private fun chapterTitle(track: String, chapter: Int): String {
             11 -> stringResource(R.string.logic_chapter_11)
             12 -> stringResource(R.string.logic_chapter_12)
             13 -> stringResource(R.string.logic_chapter_13)
+            14 -> stringResource(R.string.logic_chapter_14)
             else -> stringResource(R.string.chapter_label, chapter)
         }
     }
