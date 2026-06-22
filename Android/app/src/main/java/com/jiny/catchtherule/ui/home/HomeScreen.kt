@@ -18,6 +18,7 @@ import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.filled.ChangeHistory
 import androidx.compose.material.icons.filled.ExpandMore
+import androidx.compose.material.icons.filled.Lightbulb
 import androidx.compose.material.icons.filled.LockOpen
 import androidx.compose.material.icons.filled.Numbers
 import androidx.compose.material.icons.filled.PlayArrow
@@ -138,13 +139,13 @@ private fun ModeCard(track: String, onClick: () -> Unit) {
             contentAlignment = Alignment.Center,
         ) {
             Icon(
-                if (track == "shapes") Icons.Filled.ChangeHistory else Icons.Filled.Numbers,
+                modeIcon(track),
                 null, tint = Color.White, modifier = Modifier.size(22.dp),
             )
         }
         Column(Modifier.weight(1f)) {
             Text(
-                stringResource(if (track == "shapes") R.string.mode_shapes else R.string.mode_numbers),
+                stringResource(modeTitleRes(track)),
                 color = AppColors.TextPrimary, fontSize = 17.sp, fontWeight = FontWeight.Bold,
             )
             if (finished) {
@@ -176,7 +177,7 @@ private fun ModeDetail(modifier: Modifier, track: String, onBack: () -> Unit, on
                 ) { Icon(Icons.AutoMirrored.Filled.ArrowBack, null, tint = AppColors.TextSecondary, modifier = Modifier.size(18.dp)) }
                 Box(Modifier.weight(1f))
                 Text(
-                    stringResource(if (track == "shapes") R.string.mode_shapes else R.string.mode_numbers),
+                    stringResource(modeTitleRes(track)),
                     color = AppColors.TextPrimary, fontSize = 17.sp, fontWeight = FontWeight.Bold,
                 )
                 Box(Modifier.weight(1f))
@@ -381,8 +382,30 @@ private fun StageReplayRow(stage: Int, stars: Int, onClick: () -> Unit) {
     }
 }
 
+private fun modeTitleRes(track: String): Int = when (track) {
+    "shapes" -> R.string.mode_shapes
+    "logic" -> R.string.mode_logic
+    else -> R.string.mode_numbers
+}
+
+private fun modeIcon(track: String) = when (track) {
+    "shapes" -> Icons.Filled.ChangeHistory
+    "logic" -> Icons.Filled.Lightbulb
+    else -> Icons.Filled.Numbers
+}
+
 @Composable
 private fun chapterTitle(track: String, chapter: Int): String {
+    if (track == "logic") {
+        return when (chapter) {
+            1 -> stringResource(R.string.logic_chapter_1)
+            2 -> stringResource(R.string.logic_chapter_2)
+            3 -> stringResource(R.string.logic_chapter_3)
+            4 -> stringResource(R.string.logic_chapter_4)
+            5 -> stringResource(R.string.logic_chapter_5)
+            else -> stringResource(R.string.chapter_label, chapter)
+        }
+    }
     if (track == "shapes") {
         return when (chapter) {
             1 -> stringResource(R.string.shape_chapter_1)

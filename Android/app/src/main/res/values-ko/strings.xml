@@ -29,6 +29,7 @@
     <string name="chapter_11">멘사 챌린지</string>
     <string name="mode_numbers">규칙찾기</string>
     <string name="mode_shapes">도형에서 규칙찾기</string>
+    <string name="mode_logic">논리 퍼즐</string>
     <string name="shape_chapter_1">도형과 숫자</string>
     <string name="shape_chapter_2">합과 차</string>
     <string name="shape_chapter_3">곱셈의 규칙</string>
@@ -39,12 +40,17 @@
     <string name="shape_chapter_8">최상급</string>
     <string name="shape_chapter_9">전설</string>
     <string name="shape_chapter_10">넌센스</string>
+    <string name="logic_chapter_1">논리 입문</string>
+    <string name="logic_chapter_2">순서와 서열</string>
+    <string name="logic_chapter_3">짝과 조건</string>
+    <string name="logic_chapter_4">참과 거짓</string>
+    <string name="logic_chapter_5">종합 추리</string>
     <string name="select_mode">모드 선택</string>
     <string name="mode_complete">완료</string>
     <string name="mode_progress">%d%% 완료</string>
     <string name="mode_locked">잠김</string>
-    <string name="unlock_title">도형규칙 해금!</string>
-    <string name="unlock_msg">5챕터를 클리어했어요! 새로운 모드가 열렸어요 — 도형 속 규칙을 찾아보세요.</string>
+    <string name="unlock_title">새 모드 해금!</string>
+    <string name="unlock_msg">5챕터를 클리어했어요! 새로운 모드 두 개가 열렸어요 — 도형 속 규칙 찾기와 논리 퍼즐에 도전해 보세요.</string>
     <string name="unlock_ok">좋아요!</string>
     <string name="challenge_title">타임어택</string>
     <string name="challenge_subtitle">60초 동안 최대한 많이 풀고 랭킹에 도전하세요</string>

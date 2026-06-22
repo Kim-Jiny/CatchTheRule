@@ -29,6 +29,7 @@
     <string name="chapter_11">Mensa Challenge</string>
     <string name="mode_numbers">Find the Rule</string>
     <string name="mode_shapes">Rules in Shapes</string>
+    <string name="mode_logic">Logic Puzzles</string>
     <string name="shape_chapter_1">Shapes &amp; Numbers</string>
     <string name="shape_chapter_2">Sums &amp; Differences</string>
     <string name="shape_chapter_3">Products &amp; Patterns</string>
@@ -39,12 +40,17 @@
     <string name="shape_chapter_8">Grandmaster</string>
     <string name="shape_chapter_9">Legendary</string>
     <string name="shape_chapter_10">Nonsense</string>
+    <string name="logic_chapter_1">Logic Warm-up</string>
+    <string name="logic_chapter_2">Order &amp; Ranking</string>
+    <string name="logic_chapter_3">Matching &amp; Clues</string>
+    <string name="logic_chapter_4">Truth &amp; Lies</string>
+    <string name="logic_chapter_5">Master Deduction</string>
     <string name="select_mode">Select a Mode</string>
     <string name="mode_complete">Complete</string>
     <string name="mode_progress">%d%% done</string>
     <string name="mode_locked">Locked</string>
-    <string name="unlock_title">Shape Rules Unlocked!</string>
-    <string name="unlock_msg">You cleared 5 chapters! A new mode is open — find the rules hidden in shapes.</string>
+    <string name="unlock_title">New Modes Unlocked!</string>
+    <string name="unlock_msg">You cleared 5 chapters! Two new modes are open — find the rules hidden in shapes, and crack logic puzzles.</string>
     <string name="unlock_ok">Let\'s go!</string>
     <string name="challenge_title">Time Attack</string>
     <string name="challenge_subtitle">Solve as many as you can in 60s and climb the ranking</string>

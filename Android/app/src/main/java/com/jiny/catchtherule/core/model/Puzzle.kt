@@ -21,6 +21,7 @@ data class Puzzle(
     val figures: List<Figure>? = null,        // 숫자형 도형(예시 여러 개를 한 줄에, 마지막에 빈칸 슬롯)
     val figureTokens: List<Figure?>? = null,  // 시각형 시퀀스. null = 빈칸 셀.
     val figureChoices: List<Figure>? = null,  // 시각형 보기(도형 보기)
+    val prompt: Map<String, String>? = null,   // 논리형 질문 문단(로케일코드 → 문장). 있으면 수열 대신 질문 표시.
     val answer: String,
     val inputType: String,      // "keypad" | "choices"
     val choices: List<String>? = null,
@@ -37,6 +38,16 @@ data class Puzzle(
 
     /** 도형 시퀀스(시각형) 퍼즐 여부. */
     val isFigureSequence: Boolean get() = figureTokens?.isNotEmpty() == true
+
+    /** 논리형(질문 문단) 퍼즐 여부. */
+    val isPrompt: Boolean get() = prompt?.isNotEmpty() == true
+
+    /** 현재 언어의 질문 문단(없으면 영어 → 임의 폴백). */
+    val localizedPrompt: String
+        get() {
+            val code = java.util.Locale.getDefault().language
+            return prompt?.get(code) ?: prompt?.get("en") ?: prompt?.values?.firstOrNull() ?: ""
+        }
 
     /** 현재 언어의 힌트(없으면 영어 → 임의 폴백). */
     val localizedHints: List<String>

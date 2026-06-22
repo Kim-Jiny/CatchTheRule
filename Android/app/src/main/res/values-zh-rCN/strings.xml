@@ -29,6 +29,7 @@
     <string name="chapter_11">门萨挑战</string>
     <string name="mode_numbers">找规律</string>
     <string name="mode_shapes">图形找规律</string>
+    <string name="mode_logic">逻辑谜题</string>
     <string name="shape_chapter_1">图形与数字</string>
     <string name="shape_chapter_2">和与差</string>
     <string name="shape_chapter_3">乘法规律</string>
@@ -39,12 +40,17 @@
     <string name="shape_chapter_8">大师级</string>
     <string name="shape_chapter_9">传说级</string>
     <string name="shape_chapter_10">脑筋急转弯</string>
+    <string name="logic_chapter_1">逻辑入门</string>
+    <string name="logic_chapter_2">顺序与排名</string>
+    <string name="logic_chapter_3">配对与线索</string>
+    <string name="logic_chapter_4">真话与谎言</string>
+    <string name="logic_chapter_5">综合推理</string>
     <string name="select_mode">选择模式</string>
     <string name="mode_complete">完成</string>
     <string name="mode_progress">%d%% 完成</string>
     <string name="mode_locked">已锁定</string>
-    <string name="unlock_title">图形规律已解锁！</string>
-    <string name="unlock_msg">通关5个章节！新模式已开启 — 找出图形中隐藏的规律。</string>
+    <string name="unlock_title">新模式已解锁！</string>
+    <string name="unlock_msg">通关5个章节！开启两种新模式 — 图形找规律和逻辑谜题。</string>
     <string name="unlock_ok">好的！</string>
     <string name="challenge_title">限时挑战</string>
     <string name="challenge_subtitle">60秒内尽量多答，冲击排行榜</string>

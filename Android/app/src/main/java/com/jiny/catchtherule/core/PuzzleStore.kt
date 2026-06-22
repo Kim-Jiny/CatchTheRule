@@ -20,8 +20,11 @@ class PuzzleStore private constructor(private val allPuzzles: List<Puzzle>) {
     /** 트랙별 퍼즐(이미 (챕터,순서) 정렬됨). 캠페인 인덱스는 이 배열 기준. */
     fun puzzles(track: String = DEFAULT_TRACK): List<Puzzle> = allPuzzles.filter { it.trackKey == track }
 
-    /** 존재하는 트랙 목록(numbers 우선, 등장 순). */
-    val tracks: List<String> get() = allPuzzles.map { it.trackKey }.distinct()
+    /** 존재하는 트랙 목록(고정 순서 우선, 그 외는 등장 순). */
+    val tracks: List<String>
+        get() = allPuzzles.map { it.trackKey }.distinct().sortedWith(
+            compareBy({ TRACK_ORDER.indexOf(it).let { i -> if (i < 0) Int.MAX_VALUE else i } }, { it })
+        )
 
     fun totalCount(track: String = DEFAULT_TRACK): Int = puzzles(track).size
     fun chapters(track: String = DEFAULT_TRACK): List<Int> =
@@ -41,6 +44,8 @@ class PuzzleStore private constructor(private val allPuzzles: List<Puzzle>) {
 
     companion object {
         const val DEFAULT_TRACK = "numbers"
+        /** 모드 표시 순서(고정). 목록에 없는 트랙은 뒤에 등장 순으로 붙는다. */
+        private val TRACK_ORDER = listOf("numbers", "shapes", "logic")
         @Volatile private var instance: PuzzleStore? = null
         private val json = Json { ignoreUnknownKeys = true }
         private const val CACHE = "ctr_server_puzzles.json"

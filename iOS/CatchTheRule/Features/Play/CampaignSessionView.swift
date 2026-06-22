@@ -72,9 +72,11 @@ struct CampaignSessionView: View {
             GeometryReader { geo in
                 ScrollView {
                     VStack(spacing: 28) {
-                        Text(String.loc("play_prompt"))
-                            .font(.system(size: 15))
-                            .foregroundStyle(Theme.textSecondary)
+                        if !puzzle.isPrompt {
+                            Text(String.loc("play_prompt"))
+                                .font(.system(size: 15))
+                                .foregroundStyle(Theme.textSecondary)
+                        }
 
                         SequenceDisplay(puzzle: puzzle, typed: typed, reveal: reveal, feedback: feedback)
                             .modifier(Shake(animatableData: shake))

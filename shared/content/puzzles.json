@@ -6541,21 +6541,66 @@
     "chapter": 1,
     "order": 1,
     "figures": [
-      { "shape": "triangle", "slots": ["5", "2", "3", "10"] },
-      { "shape": "triangle", "slots": ["4", "1", "2", "7"] },
-      { "shape": "triangle", "slots": ["6", "2", "3", null] }
+      {
+        "shape": "triangle",
+        "slots": [
+          "5",
+          "2",
+          "3",
+          "10"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "4",
+          "1",
+          "2",
+          "7"
+        ]
+      },
+      {
+        "shape": "triangle",
+        "slots": [
+          "6",
+          "2",
+          "3",
+          null
+        ]
+      }
     ],
     "answer": "11",
     "inputType": "keypad",
     "choices": null,
     "hints": {
-      "ko": ["가운데 수 = 세 꼭짓점의 합 (5+2+3=10).", "마지막 삼각형: 6+2+3은?"],
-      "en": ["Center = sum of the three corners (5+2+3=10).", "Last triangle: what is 6+2+3?"],
-      "ja": ["真ん中 = 3頂点の和 (5+2+3=10)。", "最後の三角形: 6+2+3 は?"],
-      "zh": ["中间 = 三个顶点之和 (5+2+3=10)。", "最后一个三角形：6+2+3 是多少？"],
-      "es": ["Centro = suma de las tres esquinas (5+2+3=10).", "Último triángulo: ¿cuánto es 6+2+3?"],
-      "fr": ["Centre = somme des trois sommets (5+2+3=10).", "Dernier triangle : combien font 6+2+3 ?"],
-      "de": ["Mitte = Summe der drei Ecken (5+2+3=10).", "Letztes Dreieck: Was ist 6+2+3?"]
+      "ko": [
+        "가운데 수 = 세 꼭짓점의 합 (5+2+3=10).",
+        "마지막 삼각형: 6+2+3은?"
+      ],
+      "en": [
+        "Center = sum of the three corners (5+2+3=10).",
+        "Last triangle: what is 6+2+3?"
+      ],
+      "ja": [
+        "真ん中 = 3頂点の和 (5+2+3=10)。",
+        "最後の三角形: 6+2+3 は?"
+      ],
+      "zh": [
+        "中间 = 三个顶点之和 (5+2+3=10)。",
+        "最后一个三角形：6+2+3 是多少？"
+      ],
+      "es": [
+        "Centro = suma de las tres esquinas (5+2+3=10).",
+        "Último triángulo: ¿cuánto es 6+2+3?"
+      ],
+      "fr": [
+        "Centre = somme des trois sommets (5+2+3=10).",
+        "Dernier triangle : combien font 6+2+3 ?"
+      ],
+      "de": [
+        "Mitte = Summe der drei Ecken (5+2+3=10).",
+        "Letztes Dreieck: Was ist 6+2+3?"
+      ]
     },
     "explanation": {
       "ko": "가운데 = 세 꼭짓점의 합. 6+2+3 = 11 (예: 5+2+3=10, 4+1+2=7)",
@@ -6574,21 +6619,66 @@
     "chapter": 1,
     "order": 2,
     "figures": [
-      { "shape": "circle", "slots": ["8", "5", "6", "9"] },
-      { "shape": "circle", "slots": ["7", "3", "5", "9"] },
-      { "shape": "circle", "slots": ["10", "4", "7", null] }
+      {
+        "shape": "circle",
+        "slots": [
+          "8",
+          "5",
+          "6",
+          "9"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "7",
+          "3",
+          "5",
+          "9"
+        ]
+      },
+      {
+        "shape": "circle",
+        "slots": [
+          "10",
+          "4",
+          "7",
+          null
+        ]
+      }
     ],
     "answer": "13",
     "inputType": "keypad",
     "choices": null,
     "hints": {
-      "ko": ["마주보는 두 수의 합이 같아요 (8+6 = 5+9 = 14).", "마지막 원: 10+7=17, 4+?=17"],
-      "en": ["Opposite numbers share the same sum (8+6 = 5+9 = 14).", "Last circle: 10+7=17, 4+?=17"],
-      "ja": ["向かい合う数の和が同じ (8+6 = 5+9 = 14)。", "最後の円: 10+7=17, 4+?=17"],
-      "zh": ["相对两数之和相同 (8+6 = 5+9 = 14)。", "最后一个圆：10+7=17，4+?=17"],
-      "es": ["Los números opuestos suman lo mismo (8+6 = 5+9 = 14).", "Último círculo: 10+7=17, 4+?=17"],
-      "fr": ["Les nombres opposés ont la même somme (8+6 = 5+9 = 14).", "Dernier cercle : 10+7=17, 4+?=17"],
-      "de": ["Gegenüberliegende Zahlen haben dieselbe Summe (8+6 = 5+9 = 14).", "Letzter Kreis: 10+7=17, 4+?=17"]
+      "ko": [
+        "마주보는 두 수의 합이 같아요 (8+6 = 5+9 = 14).",
+        "마지막 원: 10+7=17, 4+?=17"
+      ],
+      "en": [
+        "Opposite numbers share the same sum (8+6 = 5+9 = 14).",
+        "Last circle: 10+7=17, 4+?=17"
+      ],
+      "ja": [
+        "向かい合う数の和が同じ (8+6 = 5+9 = 14)。",
+        "最後の円: 10+7=17, 4+?=17"
+      ],
+      "zh": [
+        "相对两数之和相同 (8+6 = 5+9 = 14)。",
+        "最后一个圆：10+7=17，4+?=17"
+      ],
+      "es": [
+        "Los números opuestos suman lo mismo (8+6 = 5+9 = 14).",
+        "Último círculo: 10+7=17, 4+?=17"
+      ],
+      "fr": [
+        "Les nombres opposés ont la même somme (8+6 = 5+9 = 14).",
+        "Dernier cercle : 10+7=17, 4+?=17"
+      ],
+      "de": [
+        "Gegenüberliegende Zahlen haben dieselbe Summe (8+6 = 5+9 = 14).",
+        "Letzter Kreis: 10+7=17, 4+?=17"
+      ]
     },
     "explanation": {
       "ko": "마주보는 두 수의 합이 같다. 4+13 = 10+7 = 17 (예: 8+6=5+9=14, 7+5=3+9=12)",
@@ -6607,21 +6697,69 @@
     "chapter": 1,
     "order": 3,
     "figures": [
-      { "shape": "square", "slots": ["2", "3", "4", "5", "14"] },
-      { "shape": "square", "slots": ["1", "2", "3", "4", "10"] },
-      { "shape": "square", "slots": ["3", "1", "2", "4", null] }
+      {
+        "shape": "square",
+        "slots": [
+          "2",
+          "3",
+          "4",
+          "5",
+          "14"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "10"
+        ]
+      },
+      {
+        "shape": "square",
+        "slots": [
+          "3",
+          "1",
+          "2",
+          "4",
+          null
+        ]
+      }
     ],
     "answer": "10",
     "inputType": "keypad",
     "choices": null,
     "hints": {
-      "ko": ["가운데 = 네 모서리의 합 (2+3+4+5=14).", "마지막: 3+1+2+4는?"],
-      "en": ["Center = sum of the four corners (2+3+4+5=14).", "Last one: what is 3+1+2+4?"],
-      "ja": ["真ん中 = 4つの角の和 (2+3+4+5=14)。", "最後: 3+1+2+4 は?"],
-      "zh": ["中间 = 四角之和 (2+3+4+5=14)。", "最后一个：3+1+2+4 是多少？"],
-      "es": ["Centro = suma de las cuatro esquinas (2+3+4+5=14).", "El último: ¿cuánto es 3+1+2+4?"],
-      "fr": ["Centre = somme des quatre coins (2+3+4+5=14).", "Le dernier : combien font 3+1+2+4 ?"],
-      "de": ["Mitte = Summe der vier Ecken (2+3+4+5=14).", "Letztes: Was ist 3+1+2+4?"]
+      "ko": [
+        "가운데 = 네 모서리의 합 (2+3+4+5=14).",
+        "마지막: 3+1+2+4는?"
+      ],
+      "en": [
+        "Center = sum of the four corners (2+3+4+5=14).",
+        "Last one: what is 3+1+2+4?"
+      ],
+      "ja": [
+        "真ん中 = 4つの角の和 (2+3+4+5=14)。",
+        "最後: 3+1+2+4 は?"
+      ],
+      "zh": [
+        "中间 = 四角之和 (2+3+4+5=14)。",
+        "最后一个：3+1+2+4 是多少？"
+      ],
+      "es": [
+        "Centro = suma de las cuatro esquinas (2+3+4+5=14).",
+        "El último: ¿cuánto es 3+1+2+4?"
+      ],
+      "fr": [
+        "Centre = somme des quatre coins (2+3+4+5=14).",
+        "Le dernier : combien font 3+1+2+4 ?"
+      ],
+      "de": [
+        "Mitte = Summe der vier Ecken (2+3+4+5=14).",
+        "Letztes: Was ist 3+1+2+4?"
+      ]
     },
     "explanation": {
       "ko": "가운데 = 네 모서리의 합. 3+1+2+4 = 10 (예: 2+3+4+5=14)",
@@ -6640,29 +6778,85 @@
     "chapter": 1,
     "order": 4,
     "figureTokens": [
-      { "shape": "arrow", "rotation": 0 },
-      { "shape": "arrow", "rotation": 90 },
-      { "shape": "arrow", "rotation": 180 },
-      { "shape": "arrow", "rotation": 270 },
+      {
+        "shape": "arrow",
+        "rotation": 0
+      },
+      {
+        "shape": "arrow",
+        "rotation": 90
+      },
+      {
+        "shape": "arrow",
+        "rotation": 180
+      },
+      {
+        "shape": "arrow",
+        "rotation": 270
+      },
       null
     ],
     "figureChoices": [
-      { "shape": "arrow", "rotation": 0, "code": "up" },
-      { "shape": "arrow", "rotation": 90, "code": "right" },
-      { "shape": "arrow", "rotation": 180, "code": "down" },
-      { "shape": "arrow", "rotation": 270, "code": "left" }
+      {
+        "shape": "arrow",
+        "rotation": 0,
+        "code": "up"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 90,
+        "code": "right"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 180,
+        "code": "down"
+      },
+      {
+        "shape": "arrow",
+        "rotation": 270,
+        "code": "left"
+      }
     ],
     "answer": "up",
     "inputType": "choices",
     "choices": null,
     "hints": {
-      "ko": ["화살표 방향이 어떻게 바뀌나요?", "시계 방향으로 90°씩 돌아요.", "왼쪽 다음은 다시 위쪽이에요."],
-      "en": ["How does the arrow turn?", "It rotates 90° clockwise each step.", "After left comes up again."],
-      "ja": ["矢印の向きはどう変わる？", "時計回りに90°ずつ回ります。", "左の次はまた上です。"],
-      "zh": ["箭头方向怎么变？", "每次顺时针转90°。", "左之后又回到上。"],
-      "es": ["¿Cómo gira la flecha?", "Gira 90° en sentido horario cada paso.", "Después de la izquierda vuelve arriba."],
-      "fr": ["Comment tourne la flèche ?", "Elle tourne de 90° dans le sens horaire.", "Après la gauche revient le haut."],
-      "de": ["Wie dreht sich der Pfeil?", "Er dreht sich um 90° im Uhrzeigersinn.", "Nach links kommt wieder oben."]
+      "ko": [
+        "화살표 방향이 어떻게 바뀌나요?",
+        "시계 방향으로 90°씩 돌아요.",
+        "왼쪽 다음은 다시 위쪽이에요."
+      ],
+      "en": [
+        "How does the arrow turn?",
+        "It rotates 90° clockwise each step.",
+        "After left comes up again."
+      ],
+      "ja": [
+        "矢印の向きはどう変わる？",
+        "時計回りに90°ずつ回ります。",
+        "左の次はまた上です。"
+      ],
+      "zh": [
+        "箭头方向怎么变？",
+        "每次顺时针转90°。",
+        "左之后又回到上。"
+      ],
+      "es": [
+        "¿Cómo gira la flecha?",
+        "Gira 90° en sentido horario cada paso.",
+        "Después de la izquierda vuelve arriba."
+      ],
+      "fr": [
+        "Comment tourne la flèche ?",
+        "Elle tourne de 90° dans le sens horaire.",
+        "Après la gauche revient le haut."
+      ],
+      "de": [
+        "Wie dreht sich der Pfeil?",
+        "Er dreht sich um 90° im Uhrzeigersinn.",
+        "Nach links kommt wieder oben."
+      ]
     },
     "explanation": {
       "ko": "화살표가 시계 방향으로 90°씩 회전: 위→오른쪽→아래→왼쪽→위",
@@ -6681,28 +6875,81 @@
     "chapter": 1,
     "order": 5,
     "figureTokens": [
-      { "shape": "circle", "count": 1 },
-      { "shape": "circle", "count": 2 },
-      { "shape": "circle", "count": 3 },
+      {
+        "shape": "circle",
+        "count": 1
+      },
+      {
+        "shape": "circle",
+        "count": 2
+      },
+      {
+        "shape": "circle",
+        "count": 3
+      },
       null
     ],
     "figureChoices": [
-      { "shape": "circle", "count": 4, "code": "c4" },
-      { "shape": "circle", "count": 3, "code": "c3" },
-      { "shape": "circle", "count": 5, "code": "c5" },
-      { "shape": "circle", "count": 2, "code": "c2" }
+      {
+        "shape": "circle",
+        "count": 4,
+        "code": "c4"
+      },
+      {
+        "shape": "circle",
+        "count": 3,
+        "code": "c3"
+      },
+      {
+        "shape": "circle",
+        "count": 5,
+        "code": "c5"
+      },
+      {
+        "shape": "circle",
+        "count": 2,
+        "code": "c2"
+      }
     ],
     "answer": "c4",
     "inputType": "choices",
     "choices": null,
     "hints": {
-      "ko": ["도형의 개수를 세어보세요.", "1개, 2개, 3개로 늘어나요.", "다음은 4개예요."],
-      "en": ["Count the shapes.", "It grows 1, 2, 3.", "Next is 4."],
-      "ja": ["図形の数を数えてみましょう。", "1個, 2個, 3個と増えます。", "次は4個です。"],
-      "zh": ["数一数图形的个数。", "依次是1个、2个、3个。", "下一个是4个。"],
-      "es": ["Cuenta las figuras.", "Crece 1, 2, 3.", "El siguiente es 4."],
-      "fr": ["Compte les formes.", "Ça augmente 1, 2, 3.", "Le suivant est 4."],
-      "de": ["Zähle die Formen.", "Es wächst 1, 2, 3.", "Als Nächstes 4."]
+      "ko": [
+        "도형의 개수를 세어보세요.",
+        "1개, 2개, 3개로 늘어나요.",
+        "다음은 4개예요."
+      ],
+      "en": [
+        "Count the shapes.",
+        "It grows 1, 2, 3.",
+        "Next is 4."
+      ],
+      "ja": [
+        "図形の数を数えてみましょう。",
+        "1個, 2個, 3個と増えます。",
+        "次は4個です。"
+      ],
+      "zh": [
+        "数一数图形的个数。",
+        "依次是1个、2个、3个。",
+        "下一个是4个。"
+      ],
+      "es": [
+        "Cuenta las figuras.",
+        "Crece 1, 2, 3.",
+        "El siguiente es 4."
+      ],
+      "fr": [
+        "Compte les formes.",
+        "Ça augmente 1, 2, 3.",
+        "Le suivant est 4."
+      ],
+      "de": [
+        "Zähle die Formen.",
+        "Es wächst 1, 2, 3.",
+        "Als Nächstes 4."
+      ]
     },
     "explanation": {
       "ko": "도형 개수가 1씩 증가: 1, 2, 3, 4",
@@ -13366,6 +13613,1926 @@
       "es": "Gira 90° una vuelta (arriba→derecha→abajo→izquierda) → ¡arriba!",
       "fr": "Tourne 90° un tour (haut→droite→bas→gauche) → en haut !",
       "de": "Je 90° eine Runde (oben→rechts→unten→links) → wieder oben!"
+    }
+  },
+  {
+    "id": "lg1_s01",
+    "type": "logic_holes",
+    "track": "logic",
+    "chapter": 1,
+    "order": 1,
+    "tokens": null,
+    "answer": "2",
+    "inputType": "choices",
+    "choices": [
+      "0",
+      "2",
+      "4",
+      "8"
+    ],
+    "prompt": {
+      "en": "A strange rule links each number to its result:\n8809 → 6,  7111 → 0,  2172 → 0,  8193 → 3\nSo what is  2581 → ?",
+      "ko": "이상한 규칙이 각 숫자를 결과와 잇습니다:\n8809 → 6,  7111 → 0,  2172 → 0,  8193 → 3\n그렇다면  2581 → ?",
+      "ja": "不思議な規則が数と答えを結びます:\n8809 → 6、 7111 → 0、 2172 → 0、 8193 → 3\nでは 2581 → ?",
+      "zh": "一个奇怪的规则把数字和结果联系起来：\n8809 → 6、 7111 → 0、 2172 → 0、 8193 → 3\n那么 2581 → ?",
+      "es": "Una regla extraña une cada número con su resultado:\n8809 → 6,  7111 → 0,  2172 → 0,  8193 → 3\n¿Entonces  2581 → ?",
+      "fr": "Une règle étrange relie chaque nombre à son résultat :\n8809 → 6,  7111 → 0,  2172 → 0,  8193 → 3\nAlors  2581 → ?",
+      "de": "Eine seltsame Regel verbindet jede Zahl mit ihrem Ergebnis:\n8809 → 6,  7111 → 0,  2172 → 0,  8193 → 3\nAlso  2581 → ?"
+    },
+    "hints": {
+      "en": [
+        "It's not addition or multiplication — look at the shape of the digits.",
+        "Count the closed loops: 8 has 2, while 0, 6, 9 each have 1."
+      ],
+      "ko": [
+        "덧셈도 곱셈도 아니에요 — 숫자의 '모양'을 보세요.",
+        "닫힌 구멍을 세보세요: 8은 2개, 0·6·9는 각 1개."
+      ],
+      "ja": [
+        "足し算でも掛け算でもありません — 数字の「形」を見て。",
+        "閉じた輪を数えよう: 8は2つ、0・6・9は各1つ。"
+      ],
+      "zh": [
+        "不是加法也不是乘法 — 看数字的「形状」。",
+        "数封闭的圈：8有2个，0、6、9各1个。"
+      ],
+      "es": [
+        "No es suma ni multiplicación: mira la forma de los dígitos.",
+        "Cuenta los bucles cerrados: el 8 tiene 2; el 0, 6 y 9 tienen 1 cada uno."
+      ],
+      "fr": [
+        "Ni addition ni multiplication — regarde la forme des chiffres.",
+        "Compte les boucles fermées : le 8 en a 2 ; 0, 6, 9 en ont 1 chacun."
+      ],
+      "de": [
+        "Weder Addition noch Multiplikation — schau auf die Form der Ziffern.",
+        "Zähle die geschlossenen Schleifen: 8 hat 2; 0, 6, 9 je 1."
+      ]
+    },
+    "explanation": {
+      "en": "Count the closed loops inside the digits. 8=2, and 0/6/9=1, others=0. For 2581: 0+0+2+0 = 2.",
+      "ko": "숫자 안의 닫힌 구멍 개수를 셉니다. 8=2, 0·6·9=1, 나머지=0. 2581 → 0+0+2+0 = 2.",
+      "ja": "数字の中の閉じた輪の数を数えます。8=2、0・6・9=1、他=0。2581 → 0+0+2+0 = 2。",
+      "zh": "数每个数字里封闭的圈。8=2，0/6/9=1，其余=0。2581 → 0+0+2+0 = 2。",
+      "es": "Cuenta los bucles cerrados dentro de los dígitos. 8=2, 0/6/9=1, los demás=0. Para 2581: 0+0+2+0 = 2.",
+      "fr": "Compte les boucles fermées dans les chiffres. 8=2, 0/6/9=1, les autres=0. Pour 2581 : 0+0+2+0 = 2.",
+      "de": "Zähle die geschlossenen Schleifen in den Ziffern. 8=2, 0/6/9=1, sonst=0. Für 2581: 0+0+2+0 = 2."
+    }
+  },
+  {
+    "id": "lg1_s02",
+    "type": "logic_count",
+    "track": "logic",
+    "chapter": 1,
+    "order": 2,
+    "tokens": null,
+    "answer": "4",
+    "inputType": "choices",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "prompt": {
+      "en": "Each word hides a number:\nCAT = 3,  TIGER = 5,  PANDA = 5,  LION = ?",
+      "ko": "각 단어에 숫자가 숨어 있어요:\nCAT = 3,  TIGER = 5,  PANDA = 5,  LION = ?",
+      "ja": "各単語に数字が隠れています:\nCAT = 3、 TIGER = 5、 PANDA = 5、 LION = ?",
+      "zh": "每个单词都藏着一个数字：\nCAT = 3、 TIGER = 5、 PANDA = 5、 LION = ?",
+      "es": "Cada palabra esconde un número:\nCAT = 3,  TIGER = 5,  PANDA = 5,  LION = ?",
+      "fr": "Chaque mot cache un nombre :\nCAT = 3,  TIGER = 5,  PANDA = 5,  LION = ?",
+      "de": "Jedes Wort verbirgt eine Zahl:\nCAT = 3,  TIGER = 5,  PANDA = 5,  LION = ?"
+    },
+    "hints": {
+      "en": [
+        "The animal's size or speed doesn't matter at all.",
+        "Just count the letters in each word."
+      ],
+      "ko": [
+        "동물의 크기나 속도는 전혀 상관없어요.",
+        "그냥 단어의 글자 수를 세어보세요."
+      ],
+      "ja": [
+        "動物の大きさや速さは全く関係ありません。",
+        "単語の文字数を数えるだけ。"
+      ],
+      "zh": [
+        "动物的大小或速度完全无关。",
+        "只要数每个单词的字母数。"
+      ],
+      "es": [
+        "El tamaño o la velocidad del animal no importan.",
+        "Solo cuenta las letras de cada palabra."
+      ],
+      "fr": [
+        "La taille ou la vitesse de l'animal n'a aucune importance.",
+        "Compte simplement les lettres de chaque mot."
+      ],
+      "de": [
+        "Größe oder Geschwindigkeit des Tieres spielen keine Rolle.",
+        "Zähle einfach die Buchstaben jedes Wortes."
+      ]
+    },
+    "explanation": {
+      "en": "The number is just the count of letters. LION has 4 letters → 4.",
+      "ko": "숫자는 단어의 글자 수일 뿐이에요. LION은 4글자 → 4.",
+      "ja": "数字は単語の文字数です。LION は4文字 → 4。",
+      "zh": "数字就是单词的字母数。LION 有4个字母 → 4。",
+      "es": "El número es solo la cantidad de letras. LION tiene 4 letras → 4.",
+      "fr": "Le nombre est juste le nombre de lettres. LION a 4 lettres → 4.",
+      "de": "Die Zahl ist nur die Anzahl der Buchstaben. LION hat 4 Buchstaben → 4."
+    }
+  },
+  {
+    "id": "lg1_s03",
+    "type": "logic_order",
+    "track": "logic",
+    "chapter": 1,
+    "order": 3,
+    "tokens": null,
+    "answer": "🐱",
+    "inputType": "choices",
+    "choices": [
+      "🐶",
+      "🐱",
+      "🐰",
+      "🦊"
+    ],
+    "prompt": {
+      "en": "In a race:\n🐶 finishes ahead of 🐱\n🐱 finishes ahead of 🐰\n🐰 finishes ahead of 🦊\nWho comes in 2nd place?",
+      "ko": "달리기 시합에서:\n🐶가 🐱보다 앞서 들어와요\n🐱가 🐰보다 앞서 들어와요\n🐰가 🦊보다 앞서 들어와요\n2등은 누구일까요?",
+      "ja": "かけっこで:\n🐶 は 🐱 より先にゴール\n🐱 は 🐰 より先にゴール\n🐰 は 🦊 より先にゴール\n2位は誰?",
+      "zh": "赛跑中：\n🐶 比 🐱 先到\n🐱 比 🐰 先到\n🐰 比 🦊 先到\n谁是第二名?",
+      "es": "En una carrera:\n🐶 llega antes que 🐱\n🐱 llega antes que 🐰\n🐰 llega antes que 🦊\n¿Quién queda en 2.º lugar?",
+      "fr": "Dans une course :\n🐶 arrive avant 🐱\n🐱 arrive avant 🐰\n🐰 arrive avant 🦊\nQui finit 2e ?",
+      "de": "In einem Rennen:\n🐶 kommt vor 🐱 ins Ziel\n🐱 kommt vor 🐰\n🐰 kommt vor 🦊\nWer wird Zweiter?"
+    },
+    "hints": {
+      "en": [
+        "Put everyone in order from first to last.",
+        "Order: 🐶, 🐱, 🐰, 🦊. The 2nd is right after the winner."
+      ],
+      "ko": [
+        "1등부터 꼴찌까지 순서대로 줄 세워 보세요.",
+        "순서: 🐶, 🐱, 🐰, 🦊. 2등은 1등 바로 다음이에요."
+      ],
+      "ja": [
+        "1位から最下位まで順番に並べてみよう。",
+        "順番: 🐶, 🐱, 🐰, 🦊。2位は1位の次。"
+      ],
+      "zh": [
+        "把大家从第一到最后排好顺序。",
+        "顺序：🐶, 🐱, 🐰, 🦊。第二名紧跟冠军。"
+      ],
+      "es": [
+        "Ordena a todos del primero al último.",
+        "Orden: 🐶, 🐱, 🐰, 🦊. El 2.º va justo tras el ganador."
+      ],
+      "fr": [
+        "Classe tout le monde du premier au dernier.",
+        "Ordre : 🐶, 🐱, 🐰, 🦊. Le 2e suit le gagnant."
+      ],
+      "de": [
+        "Bring alle vom Ersten bis zum Letzten in Reihenfolge.",
+        "Reihenfolge: 🐶, 🐱, 🐰, 🦊. Der Zweite folgt dem Sieger."
+      ]
+    },
+    "explanation": {
+      "en": "The finishing order is 🐶 > 🐱 > 🐰 > 🦊, so 🐱 comes 2nd.",
+      "ko": "도착 순서는 🐶 > 🐱 > 🐰 > 🦊, 따라서 2등은 🐱.",
+      "ja": "ゴール順は 🐶 > 🐱 > 🐰 > 🦊 なので2位は 🐱。",
+      "zh": "到达顺序是 🐶 > 🐱 > 🐰 > 🦊，所以第二名是 🐱。",
+      "es": "El orden de llegada es 🐶 > 🐱 > 🐰 > 🦊, así que 🐱 queda 2.º.",
+      "fr": "L'ordre d'arrivée est 🐶 > 🐱 > 🐰 > 🦊, donc 🐱 est 2e.",
+      "de": "Die Zielreihenfolge ist 🐶 > 🐱 > 🐰 > 🦊, also wird 🐱 Zweiter."
+    }
+  },
+  {
+    "id": "lg1_s04",
+    "type": "logic_order",
+    "track": "logic",
+    "chapter": 1,
+    "order": 4,
+    "tokens": null,
+    "answer": "🦊",
+    "inputType": "choices",
+    "choices": [
+      "🐶",
+      "🐱",
+      "🐰",
+      "🦊"
+    ],
+    "prompt": {
+      "en": "🐶 is taller than 🐱.\n🐰 is taller than 🐶.\n🐱 is taller than 🦊.\nWho is the shortest?",
+      "ko": "🐶는 🐱보다 크고,\n🐰는 🐶보다 크고,\n🐱는 🦊보다 큽니다.\n가장 작은 건 누구일까요?",
+      "ja": "🐶 は 🐱 より背が高い。\n🐰 は 🐶 より背が高い。\n🐱 は 🦊 より背が高い。\n一番背が低いのは誰?",
+      "zh": "🐶 比 🐱 高。\n🐰 比 🐶 高。\n🐱 比 🦊 高。\n谁最矮?",
+      "es": "🐶 es más alto que 🐱.\n🐰 es más alto que 🐶.\n🐱 es más alto que 🦊.\n¿Quién es el más bajo?",
+      "fr": "🐶 est plus grand que 🐱.\n🐰 est plus grand que 🐶.\n🐱 est plus grand que 🦊.\nQui est le plus petit ?",
+      "de": "🐶 ist größer als 🐱.\n🐰 ist größer als 🐶.\n🐱 ist größer als 🦊.\nWer ist am kleinsten?"
+    },
+    "hints": {
+      "en": [
+        "The clues are out of order — line them up into one chain.",
+        "From tallest: 🐰 > 🐶 > 🐱 > 🦊."
+      ],
+      "ko": [
+        "단서가 뒤섞여 있어요 — 하나의 사슬로 이어보세요.",
+        "큰 순서: 🐰 > 🐶 > 🐱 > 🦊."
+      ],
+      "ja": [
+        "手がかりはバラバラ — 1本の鎖につなげよう。",
+        "高い順: 🐰 > 🐶 > 🐱 > 🦊。"
+      ],
+      "zh": [
+        "线索是乱序的 — 把它们串成一条链。",
+        "从高到矮：🐰 > 🐶 > 🐱 > 🦊。"
+      ],
+      "es": [
+        "Las pistas están desordenadas: únelas en una cadena.",
+        "De más alto: 🐰 > 🐶 > 🐱 > 🦊."
+      ],
+      "fr": [
+        "Les indices sont en désordre — relie-les en une chaîne.",
+        "Du plus grand : 🐰 > 🐶 > 🐱 > 🦊."
+      ],
+      "de": [
+        "Die Hinweise sind ungeordnet — reihe sie zu einer Kette.",
+        "Vom Größten: 🐰 > 🐶 > 🐱 > 🦊."
+      ]
+    },
+    "explanation": {
+      "en": "Combining the clues gives 🐰 > 🐶 > 🐱 > 🦊, so 🦊 is the shortest.",
+      "ko": "단서를 합치면 🐰 > 🐶 > 🐱 > 🦊, 따라서 가장 작은 건 🦊.",
+      "ja": "手がかりを合わせると 🐰 > 🐶 > 🐱 > 🦊、よって一番低いのは 🦊。",
+      "zh": "综合线索得到 🐰 > 🐶 > 🐱 > 🦊，所以最矮的是 🦊。",
+      "es": "Al combinar las pistas: 🐰 > 🐶 > 🐱 > 🦊, así que 🦊 es el más bajo.",
+      "fr": "En combinant les indices : 🐰 > 🐶 > 🐱 > 🦊, donc 🦊 est le plus petit.",
+      "de": "Kombiniert ergibt sich 🐰 > 🐶 > 🐱 > 🦊, also ist 🦊 am kleinsten."
+    }
+  },
+  {
+    "id": "lg1_s05",
+    "type": "logic_liar",
+    "track": "logic",
+    "chapter": 1,
+    "order": 5,
+    "tokens": null,
+    "answer": "🐶",
+    "inputType": "choices",
+    "choices": [
+      "🐶",
+      "🐱",
+      "🐰",
+      "🦊"
+    ],
+    "prompt": {
+      "en": "Someone broke the cup. Exactly one of them tells the truth:\n🐶: \"I didn't break it.\"\n🐱: \"🐰 broke it.\"\n🐰: \"🐱 is lying.\"\nWho broke the cup?",
+      "ko": "누군가 컵을 깼어요. 셋 중 정확히 한 명만 진실을 말해요:\n🐶: \"난 안 깼어.\"\n🐱: \"🐰가 깼어.\"\n🐰: \"🐱는 거짓말이야.\"\n컵을 깬 건 누구일까요?",
+      "ja": "誰かがコップを割りました。ちょうど１匹だけが本当のことを言っています:\n🐶: 「ぼくは割ってない。」\n🐱: 「🐰 が割った。」\n🐰: 「🐱 は嘘つき。」\n割ったのは誰?",
+      "zh": "有人打破了杯子。其中恰好只有一个说真话：\n🐶：「不是我打破的。」\n🐱：「🐰 打破的。」\n🐰：「🐱 在说谎。」\n谁打破了杯子?",
+      "es": "Alguien rompió la taza. Solo uno dice la verdad:\n🐶: «Yo no la rompí.»\n🐱: «🐰 la rompió.»\n🐰: «🐱 miente.»\n¿Quién rompió la taza?",
+      "fr": "Quelqu'un a cassé la tasse. Un seul dit la vérité :\n🐶 : « Ce n'est pas moi. »\n🐱 : « C'est 🐰. »\n🐰 : « 🐱 ment. »\nQui a cassé la tasse ?",
+      "de": "Jemand hat die Tasse zerbrochen. Genau einer sagt die Wahrheit:\n🐶: „Ich war's nicht.“\n🐱: „🐰 war's.“\n🐰: „🐱 lügt.“\nWer hat die Tasse zerbrochen?"
+    },
+    "hints": {
+      "en": [
+        "🐱 and 🐰 say opposite things, so exactly one of them is the truth-teller.",
+        "That means 🐶's claim must be the lie."
+      ],
+      "ko": [
+        "🐱와 🐰는 서로 반대로 말해요 — 둘 중 정확히 한 명이 진실.",
+        "그렇다면 진실을 말한 한 명은 그 둘 중에 있으니, 🐶의 말은 거짓."
+      ],
+      "ja": [
+        "🐱 と 🐰 は正反対 — どちらか１匹だけが本当。",
+        "つまり本当を言う１匹はその2匹の中。だから 🐶 の発言は嘘。"
+      ],
+      "zh": [
+        "🐱 和 🐰 说的相反 — 其中恰好一个说真话。",
+        "所以那唯一的真话在这两个之中，🐶 的话必是假。"
+      ],
+      "es": [
+        "🐱 y 🐰 dicen lo contrario: uno de ellos es el sincero.",
+        "Entonces la afirmación de 🐶 debe ser la mentira."
+      ],
+      "fr": [
+        "🐱 et 🐰 disent le contraire — l'un d'eux dit la vérité.",
+        "Donc l'affirmation de 🐶 est le mensonge."
+      ],
+      "de": [
+        "🐱 und 🐰 sagen das Gegenteil — genau einer von ihnen sagt die Wahrheit.",
+        "Also muss 🐶s Aussage die Lüge sein."
+      ]
+    },
+    "explanation": {
+      "en": "🐱 (\"🐰 did it\") and 🐰 (\"🐱 lies\") contradict, so the one truth-teller is among them. Thus 🐶 lied — 🐶 broke it. (Check: 🐰 told the truth.)",
+      "ko": "🐱(\"🐰가 깼다\")와 🐰(\"🐱는 거짓말\")은 서로 모순이라, 진실을 말한 한 명은 이 둘 중에 있어요. 따라서 🐶가 거짓말 → 🐶가 깸. (확인: 진실을 말한 건 🐰.)",
+      "ja": "🐱（「🐰 が割った」）と 🐰（「🐱 は嘘」）は矛盾、よって本当を言う１匹はこの2匹の中。ゆえに 🐶 が嘘 → 🐶 が割った。（確認: 本当は 🐰。）",
+      "zh": "🐱（「🐰 打破」）与 🐰（「🐱 说谎」）矛盾，所以说真话的就在这两个之中。于是 🐶 说了谎 → 🐶 打破的。（验证：说真话的是 🐰。）",
+      "es": "🐱 («🐰 lo hizo») y 🐰 («🐱 miente») se contradicen, así que el sincero está entre ellos. Por tanto 🐶 mintió: 🐶 la rompió. (Comprobación: 🐰 dijo la verdad.)",
+      "fr": "🐱 (« c'est 🐰 ») et 🐰 (« 🐱 ment ») se contredisent, donc le seul sincère est l'un d'eux. Donc 🐶 a menti — c'est 🐶. (Vérif : 🐰 disait vrai.)",
+      "de": "🐱 („🐰 war's“) und 🐰 („🐱 lügt“) widersprechen sich, also ist der eine Ehrliche unter ihnen. Somit log 🐶 — 🐶 war's. (Check: 🐰 sagte die Wahrheit.)"
+    }
+  },
+  {
+    "id": "lg1_s06",
+    "type": "logic_knights",
+    "track": "logic",
+    "chapter": 1,
+    "order": 6,
+    "tokens": null,
+    "answer": "🐱",
+    "inputType": "choices",
+    "choices": [
+      "🐶",
+      "🐱",
+      "🐰",
+      "🦊"
+    ],
+    "prompt": {
+      "en": "Each animal always lies or always tells the truth.\n🐶: \"🐱 always lies.\"\n🐱: \"🐰 always lies.\"\n🐰: \"Both 🐶 and 🐱 always lie.\"\nWho is telling the truth?",
+      "ko": "각 동물은 항상 거짓말만 하거나 항상 진실만 말합니다.\n🐶: \"🐱는 늘 거짓말쟁이야.\"\n🐱: \"🐰는 늘 거짓말쟁이야.\"\n🐰: \"🐶랑 🐱 둘 다 늘 거짓말쟁이야.\"\n진실을 말하는 건 누구일까요?",
+      "ja": "各動物はいつも嘘をつくか、いつも本当を言うかのどちらか。\n🐶: 「🐱 はいつも嘘つき。」\n🐱: 「🐰 はいつも嘘つき。」\n🐰: 「🐶 も 🐱 も いつも嘘つき。」\n本当を言っているのは誰?",
+      "zh": "每只动物要么永远说谎，要么永远说真话。\n🐶：「🐱 总是说谎。」\n🐱：「🐰 总是说谎。」\n🐰：「🐶 和 🐱 都总是说谎。」\n谁在说真话?",
+      "es": "Cada animal siempre miente o siempre dice la verdad.\n🐶: «🐱 siempre miente.»\n🐱: «🐰 siempre miente.»\n🐰: «🐶 y 🐱 siempre mienten.»\n¿Quién dice la verdad?",
+      "fr": "Chaque animal ment toujours ou dit toujours la vérité.\n🐶 : « 🐱 ment toujours. »\n🐱 : « 🐰 ment toujours. »\n🐰 : « 🐶 et 🐱 mentent toujours. »\nQui dit la vérité ?",
+      "de": "Jedes Tier lügt immer oder sagt immer die Wahrheit.\n🐶: „🐱 lügt immer.“\n🐱: „🐰 lügt immer.“\n🐰: „🐶 und 🐱 lügen beide immer.“\nWer sagt die Wahrheit?"
+    },
+    "hints": {
+      "en": [
+        "Try assuming 🐰 tells the truth and see if it breaks.",
+        "If 🐰 lied, then 🐱 must be truthful — follow that chain."
+      ],
+      "ko": [
+        "🐰가 진실이라고 가정하고 모순이 생기는지 보세요.",
+        "🐰가 거짓이면 🐱는 진실이어야 해요 — 그 사슬을 따라가 보세요."
+      ],
+      "ja": [
+        "🐰 が本当だと仮定して矛盾するか確かめよう。",
+        "🐰 が嘘なら 🐱 は本当のはず — その連鎖を追って。"
+      ],
+      "zh": [
+        "先假设 🐰 说真话，看看会不会矛盾。",
+        "若 🐰 说谎，则 🐱 必说真话 — 顺着这条链推。"
+      ],
+      "es": [
+        "Supón que 🐰 dice la verdad y mira si se contradice.",
+        "Si 🐰 mintió, 🐱 debe ser sincero: sigue esa cadena."
+      ],
+      "fr": [
+        "Suppose que 🐰 dit vrai et vois si ça coince.",
+        "Si 🐰 ment, alors 🐱 dit vrai — suis cette chaîne."
+      ],
+      "de": [
+        "Nimm an, 🐰 sagt die Wahrheit, und prüfe, ob es scheitert.",
+        "Wenn 🐰 log, muss 🐱 ehrlich sein — folge dieser Kette."
+      ]
+    },
+    "explanation": {
+      "en": "If 🐰 were truthful, 🐶 would be a liar, making 🐶's claim (\"🐱 lies\") false → 🐱 truthful → 🐰's \"both lie\" is false. Contradiction. So 🐰 lies → 🐱 is truthful → 🐶 lies. Only 🐱 tells the truth.",
+      "ko": "🐰가 진실이면 🐶는 거짓말쟁이가 되어 🐶의 말(\"🐱는 거짓말\")이 거짓 → 🐱는 진실 → 🐰의 \"둘 다 거짓\"이 거짓이 되어 모순. 따라서 🐰는 거짓 → 🐱는 진실 → 🐶는 거짓. 진실을 말하는 건 🐱뿐.",
+      "ja": "🐰 が本当なら 🐶 は嘘つきになり、🐶 の「🐱 は嘘」が偽 → 🐱 は本当 → 🐰 の「両方嘘」が偽で矛盾。よって 🐰 は嘘 → 🐱 は本当 → 🐶 は嘘。本当を言うのは 🐱 だけ。",
+      "zh": "若 🐰 说真话，则 🐶 是说谎者，使 🐶 的话（「🐱 说谎」）为假 → 🐱 说真话 → 🐰 的「都说谎」为假，矛盾。所以 🐰 说谎 → 🐱 说真话 → 🐶 说谎。只有 🐱 说真话。",
+      "es": "Si 🐰 fuera sincero, 🐶 sería mentiroso, y «🐱 miente» sería falso → 🐱 sincero → el «ambos mienten» de 🐰 sería falso. Contradicción. Así que 🐰 miente → 🐱 sincero → 🐶 miente. Solo 🐱 dice la verdad.",
+      "fr": "Si 🐰 disait vrai, 🐶 serait menteur, donc « 🐱 ment » serait faux → 🐱 sincère → le « tous deux mentent » de 🐰 serait faux. Contradiction. Donc 🐰 ment → 🐱 sincère → 🐶 ment. Seul 🐱 dit la vérité.",
+      "de": "Wäre 🐰 ehrlich, wäre 🐶 ein Lügner, also „🐱 lügt“ falsch → 🐱 ehrlich → 🐰s „beide lügen“ falsch. Widerspruch. Also lügt 🐰 → 🐱 ehrlich → 🐶 lügt. Nur 🐱 sagt die Wahrheit."
+    }
+  },
+  {
+    "id": "lg2_s01",
+    "type": "logic_order",
+    "track": "logic",
+    "chapter": 2,
+    "order": 1,
+    "tokens": null,
+    "answer": "🐱",
+    "inputType": "choices",
+    "choices": [
+      "🐶",
+      "🐱",
+      "🐰",
+      "🦊"
+    ],
+    "prompt": {
+      "en": "In a line:\n🦊 is at the very front.\n🐰 is at the very back.\n🐶 is somewhere ahead of 🐱.\nWho is 3rd in line?",
+      "ko": "한 줄로 서 있어요:\n🦊가 맨 앞이에요.\n🐰가 맨 뒤예요.\n🐶는 🐱보다 앞에 있어요.\n앞에서 3번째는 누구일까요?",
+      "ja": "一列に並んでいます:\n🦊 が一番前。\n🐰 が一番後ろ。\n🐶 は 🐱 より前にいます。\n前から3番目は誰?",
+      "zh": "排成一列：\n🦊 在最前。\n🐰 在最后。\n🐶 排在 🐱 前面。\n从前数第3个是谁?",
+      "es": "En una fila:\n🦊 está al frente del todo.\n🐰 está al final del todo.\n🐶 va por delante de 🐱.\n¿Quién es el 3.º de la fila?",
+      "fr": "En file :\n🦊 est tout devant.\n🐰 est tout derrière.\n🐶 est devant 🐱.\nQui est 3e de la file ?",
+      "de": "In einer Reihe:\n🦊 steht ganz vorne.\n🐰 steht ganz hinten.\n🐶 steht vor 🐱.\nWer ist Dritter?"
+    },
+    "hints": {
+      "en": [
+        "Place 🦊 and 🐰 first, then fit the middle two.",
+        "Order: 🦊, 🐶, 🐱, 🐰."
+      ],
+      "ko": [
+        "🦊와 🐰를 먼저 놓고 가운데 둘을 끼우세요.",
+        "순서: 🦊, 🐶, 🐱, 🐰."
+      ],
+      "ja": [
+        "🦊 と 🐰 を先に置き、真ん中の2匹を入れよう。",
+        "順番: 🦊, 🐶, 🐱, 🐰。"
+      ],
+      "zh": [
+        "先放 🦊 和 🐰，再排中间两个。",
+        "顺序：🦊, 🐶, 🐱, 🐰。"
+      ],
+      "es": [
+        "Coloca 🦊 y 🐰 primero, luego los del medio.",
+        "Orden: 🦊, 🐶, 🐱, 🐰."
+      ],
+      "fr": [
+        "Place 🦊 et 🐰 d'abord, puis les deux du milieu.",
+        "Ordre : 🦊, 🐶, 🐱, 🐰."
+      ],
+      "de": [
+        "Setze zuerst 🦊 und 🐰, dann die mittleren zwei.",
+        "Reihenfolge: 🦊, 🐶, 🐱, 🐰."
+      ]
+    },
+    "explanation": {
+      "en": "The line is 🦊, 🐶, 🐱, 🐰, so 3rd is 🐱.",
+      "ko": "줄 순서는 🦊, 🐶, 🐱, 🐰, 따라서 3번째는 🐱.",
+      "ja": "並びは 🦊, 🐶, 🐱, 🐰 なので3番目は 🐱。",
+      "zh": "顺序是 🦊, 🐶, 🐱, 🐰，所以第3个是 🐱。",
+      "es": "La fila es 🦊, 🐶, 🐱, 🐰, así que el 3.º es 🐱.",
+      "fr": "La file est 🦊, 🐶, 🐱, 🐰, donc le 3e est 🐱.",
+      "de": "Die Reihe ist 🦊, 🐶, 🐱, 🐰, also ist 🐱 Dritter."
+    }
+  },
+  {
+    "id": "lg2_s02",
+    "type": "logic_order",
+    "track": "logic",
+    "chapter": 2,
+    "order": 2,
+    "tokens": null,
+    "answer": "🦊",
+    "inputType": "choices",
+    "choices": [
+      "🐶",
+      "🐱",
+      "🐻",
+      "🦊"
+    ],
+    "prompt": {
+      "en": "🐻 is taller than 🐶.\n🐶 is taller than 🐱.\n🦊 is taller than 🐻.\nWho is the tallest?",
+      "ko": "🐻는 🐶보다 크고,\n🐶는 🐱보다 크고,\n🦊는 🐻보다 큽니다.\n가장 큰 건 누구일까요?",
+      "ja": "🐻 は 🐶 より背が高い。\n🐶 は 🐱 より背が高い。\n🦊 は 🐻 より背が高い。\n一番背が高いのは誰?",
+      "zh": "🐻 比 🐶 高。\n🐶 比 🐱 高。\n🦊 比 🐻 高。\n谁最高?",
+      "es": "🐻 es más alto que 🐶.\n🐶 es más alto que 🐱.\n🦊 es más alto que 🐻.\n¿Quién es el más alto?",
+      "fr": "🐻 est plus grand que 🐶.\n🐶 est plus grand que 🐱.\n🦊 est plus grand que 🐻.\nQui est le plus grand ?",
+      "de": "🐻 ist größer als 🐶.\n🐶 ist größer als 🐱.\n🦊 ist größer als 🐻.\nWer ist am größten?"
+    },
+    "hints": {
+      "en": [
+        "Build one chain from tallest to shortest.",
+        "🦊 > 🐻 > 🐶 > 🐱."
+      ],
+      "ko": [
+        "가장 큰 쪽부터 하나의 사슬로 이어보세요.",
+        "🦊 > 🐻 > 🐶 > 🐱."
+      ],
+      "ja": [
+        "高い順に1本の鎖でつなごう。",
+        "🦊 > 🐻 > 🐶 > 🐱。"
+      ],
+      "zh": [
+        "从最高到最矮串成一条链。",
+        "🦊 > 🐻 > 🐶 > 🐱。"
+      ],
+      "es": [
+        "Haz una cadena de más alto a más bajo.",
+        "🦊 > 🐻 > 🐶 > 🐱."
+      ],
+      "fr": [
+        "Forme une chaîne du plus grand au plus petit.",
+        "🦊 > 🐻 > 🐶 > 🐱."
+      ],
+      "de": [
+        "Bilde eine Kette vom Größten zum Kleinsten.",
+        "🦊 > 🐻 > 🐶 > 🐱."
+      ]
+    },
+    "explanation": {
+      "en": "The chain is 🦊 > 🐻 > 🐶 > 🐱, so 🦊 is the tallest.",
+      "ko": "사슬은 🦊 > 🐻 > 🐶 > 🐱, 따라서 가장 큰 건 🦊.",
+      "ja": "鎖は 🦊 > 🐻 > 🐶 > 🐱、よって一番高いのは 🦊。",
+      "zh": "链是 🦊 > 🐻 > 🐶 > 🐱，所以最高的是 🦊。",
+      "es": "La cadena es 🦊 > 🐻 > 🐶 > 🐱, así que el más alto es 🦊.",
+      "fr": "La chaîne est 🦊 > 🐻 > 🐶 > 🐱, donc le plus grand est 🦊.",
+      "de": "Die Kette ist 🦊 > 🐻 > 🐶 > 🐱, also ist 🦊 am größten."
+    }
+  },
+  {
+    "id": "lg2_s03",
+    "type": "logic_order",
+    "track": "logic",
+    "chapter": 2,
+    "order": 3,
+    "tokens": null,
+    "answer": "🍌",
+    "inputType": "choices",
+    "choices": [
+      "🍎",
+      "🍌",
+      "🍇",
+      "🍒"
+    ],
+    "prompt": {
+      "en": "Three fruits sit in a row.\n🍎 is to the left of 🍌.\n🍇 is to the right of 🍌.\nWhich fruit is in the middle?",
+      "ko": "과일 셋이 한 줄로 놓여 있어요.\n🍎는 🍌의 왼쪽에 있어요.\n🍇는 🍌의 오른쪽에 있어요.\n가운데 과일은 무엇일까요?",
+      "ja": "果物が3つ横一列に並んでいます。\n🍎 は 🍌 の左。\n🍇 は 🍌 の右。\n真ん中の果物は?",
+      "zh": "三个水果排成一行。\n🍎 在 🍌 左边。\n🍇 在 🍌 右边。\n中间的水果是哪个?",
+      "es": "Tres frutas en fila.\n🍎 está a la izquierda de 🍌.\n🍇 está a la derecha de 🍌.\n¿Qué fruta está en el medio?",
+      "fr": "Trois fruits en rang.\n🍎 est à gauche de 🍌.\n🍇 est à droite de 🍌.\nQuel fruit est au milieu ?",
+      "de": "Drei Früchte in einer Reihe.\n🍎 ist links von 🍌.\n🍇 ist rechts von 🍌.\nWelche Frucht ist in der Mitte?"
+    },
+    "hints": {
+      "en": [
+        "🍌 has one fruit on each side.",
+        "Left to right: 🍎, 🍌, 🍇."
+      ],
+      "ko": [
+        "🍌의 양옆에 과일이 하나씩 있어요.",
+        "왼쪽부터: 🍎, 🍌, 🍇."
+      ],
+      "ja": [
+        "🍌 の両側に1つずつ果物がある。",
+        "左から: 🍎, 🍌, 🍇。"
+      ],
+      "zh": [
+        "🍌 两边各有一个水果。",
+        "从左到右：🍎, 🍌, 🍇。"
+      ],
+      "es": [
+        "🍌 tiene una fruta a cada lado.",
+        "De izq. a der.: 🍎, 🍌, 🍇."
+      ],
+      "fr": [
+        "🍌 a un fruit de chaque côté.",
+        "De gauche à droite : 🍎, 🍌, 🍇."
+      ],
+      "de": [
+        "🍌 hat auf jeder Seite eine Frucht.",
+        "Von links: 🍎, 🍌, 🍇."
+      ]
+    },
+    "explanation": {
+      "en": "Left to right it is 🍎, 🍌, 🍇, so 🍌 is in the middle.",
+      "ko": "왼쪽부터 🍎, 🍌, 🍇, 따라서 가운데는 🍌.",
+      "ja": "左から 🍎, 🍌, 🍇 なので真ん中は 🍌。",
+      "zh": "从左到右是 🍎, 🍌, 🍇，所以中间是 🍌。",
+      "es": "De izquierda a derecha es 🍎, 🍌, 🍇, así que en el medio está 🍌.",
+      "fr": "De gauche à droite : 🍎, 🍌, 🍇, donc au milieu c'est 🍌.",
+      "de": "Von links nach rechts: 🍎, 🍌, 🍇, also ist 🍌 in der Mitte."
+    }
+  },
+  {
+    "id": "lg2_s04",
+    "type": "logic_order",
+    "track": "logic",
+    "chapter": 2,
+    "order": 4,
+    "tokens": null,
+    "answer": "🐰",
+    "inputType": "choices",
+    "choices": [
+      "🐶",
+      "🐱",
+      "🐰",
+      "🦊"
+    ],
+    "prompt": {
+      "en": "🐱 is older than 🐶.\n🐰 is younger than 🐶.\n🦊 is older than 🐱.\nWho is the youngest?",
+      "ko": "🐱는 🐶보다 나이가 많아요.\n🐰는 🐶보다 어려요.\n🦊는 🐱보다 나이가 많아요.\n가장 어린 건 누구일까요?",
+      "ja": "🐱 は 🐶 より年上。\n🐰 は 🐶 より年下。\n🦊 は 🐱 より年上。\n一番年下は誰?",
+      "zh": "🐱 比 🐶 年长。\n🐰 比 🐶 年幼。\n🦊 比 🐱 年长。\n谁最小?",
+      "es": "🐱 es mayor que 🐶.\n🐰 es menor que 🐶.\n🦊 es mayor que 🐱.\n¿Quién es el más joven?",
+      "fr": "🐱 est plus âgé que 🐶.\n🐰 est plus jeune que 🐶.\n🦊 est plus âgé que 🐱.\nQui est le plus jeune ?",
+      "de": "🐱 ist älter als 🐶.\n🐰 ist jünger als 🐶.\n🦊 ist älter als 🐱.\nWer ist der Jüngste?"
+    },
+    "hints": {
+      "en": [
+        "Line them up from oldest to youngest.",
+        "🦊 > 🐱 > 🐶 > 🐰."
+      ],
+      "ko": [
+        "나이 많은 쪽부터 줄 세워 보세요.",
+        "🦊 > 🐱 > 🐶 > 🐰."
+      ],
+      "ja": [
+        "年上から順に並べよう。",
+        "🦊 > 🐱 > 🐶 > 🐰。"
+      ],
+      "zh": [
+        "从最大到最小排好。",
+        "🦊 > 🐱 > 🐶 > 🐰。"
+      ],
+      "es": [
+        "Ordénalos de mayor a menor.",
+        "🦊 > 🐱 > 🐶 > 🐰."
+      ],
+      "fr": [
+        "Classe-les du plus âgé au plus jeune.",
+        "🦊 > 🐱 > 🐶 > 🐰."
+      ],
+      "de": [
+        "Ordne sie vom Ältesten zum Jüngsten.",
+        "🦊 > 🐱 > 🐶 > 🐰."
+      ]
+    },
+    "explanation": {
+      "en": "By age: 🦊 > 🐱 > 🐶 > 🐰, so 🐰 is the youngest.",
+      "ko": "나이순은 🦊 > 🐱 > 🐶 > 🐰, 따라서 가장 어린 건 🐰.",
+      "ja": "年齢順は 🦊 > 🐱 > 🐶 > 🐰、よって一番年下は 🐰。",
+      "zh": "年龄顺序是 🦊 > 🐱 > 🐶 > 🐰，所以最小的是 🐰。",
+      "es": "Por edad: 🦊 > 🐱 > 🐶 > 🐰, así que el más joven es 🐰.",
+      "fr": "Par âge : 🦊 > 🐱 > 🐶 > 🐰, donc le plus jeune est 🐰.",
+      "de": "Nach Alter: 🦊 > 🐱 > 🐶 > 🐰, also ist 🐰 der Jüngste."
+    }
+  },
+  {
+    "id": "lg2_s05",
+    "type": "logic_order",
+    "track": "logic",
+    "chapter": 2,
+    "order": 5,
+    "tokens": null,
+    "answer": "🐰",
+    "inputType": "choices",
+    "choices": [
+      "🐶",
+      "🐱",
+      "🐰",
+      "🦊"
+    ],
+    "prompt": {
+      "en": "In a test:\n🦊 got the highest score.\n🐰 scored higher than 🐶.\n🐶 scored higher than 🐱.\nWho came 2nd?",
+      "ko": "시험에서:\n🦊가 가장 높은 점수예요.\n🐰는 🐶보다 점수가 높아요.\n🐶는 🐱보다 점수가 높아요.\n2등은 누구일까요?",
+      "ja": "テストで:\n🦊 が最高点。\n🐰 は 🐶 より高得点。\n🐶 は 🐱 より高得点。\n2位は誰?",
+      "zh": "考试中：\n🦊 分数最高。\n🐰 比 🐶 高。\n🐶 比 🐱 高。\n谁是第二名?",
+      "es": "En un examen:\n🦊 sacó la nota más alta.\n🐰 sacó más que 🐶.\n🐶 sacó más que 🐱.\n¿Quién quedó 2.º?",
+      "fr": "À un test :\n🦊 a la meilleure note.\n🐰 a mieux que 🐶.\n🐶 a mieux que 🐱.\nQui est 2e ?",
+      "de": "In einem Test:\n🦊 hat die höchste Punktzahl.\n🐰 besser als 🐶.\n🐶 besser als 🐱.\nWer wurde Zweiter?"
+    },
+    "hints": {
+      "en": [
+        "🦊 is 1st; rank the other three.",
+        "🦊 > 🐰 > 🐶 > 🐱."
+      ],
+      "ko": [
+        "🦊가 1등; 나머지 셋을 줄 세우세요.",
+        "🦊 > 🐰 > 🐶 > 🐱."
+      ],
+      "ja": [
+        "🦊 が1位; 残り3匹を並べよう。",
+        "🦊 > 🐰 > 🐶 > 🐱。"
+      ],
+      "zh": [
+        "🦊 第一；给其余三个排名。",
+        "🦊 > 🐰 > 🐶 > 🐱。"
+      ],
+      "es": [
+        "🦊 es 1.º; ordena a los otros tres.",
+        "🦊 > 🐰 > 🐶 > 🐱."
+      ],
+      "fr": [
+        "🦊 est 1er ; classe les trois autres.",
+        "🦊 > 🐰 > 🐶 > 🐱."
+      ],
+      "de": [
+        "🦊 ist 1.; ordne die anderen drei.",
+        "🦊 > 🐰 > 🐶 > 🐱."
+      ]
+    },
+    "explanation": {
+      "en": "Scores rank 🦊 > 🐰 > 🐶 > 🐱, so 2nd is 🐰.",
+      "ko": "점수 순위는 🦊 > 🐰 > 🐶 > 🐱, 따라서 2등은 🐰.",
+      "ja": "得点順は 🦊 > 🐰 > 🐶 > 🐱、よって2位は 🐰。",
+      "zh": "分数排名 🦊 > 🐰 > 🐶 > 🐱，所以第二是 🐰。",
+      "es": "El ranking es 🦊 > 🐰 > 🐶 > 🐱, así que el 2.º es 🐰.",
+      "fr": "Le classement est 🦊 > 🐰 > 🐶 > 🐱, donc le 2e est 🐰.",
+      "de": "Rangfolge 🦊 > 🐰 > 🐶 > 🐱, also ist 🐰 Zweiter."
+    }
+  },
+  {
+    "id": "lg2_s06",
+    "type": "logic_age",
+    "track": "logic",
+    "chapter": 2,
+    "order": 6,
+    "tokens": null,
+    "answer": "10",
+    "inputType": "choices",
+    "choices": [
+      "8",
+      "9",
+      "10",
+      "12"
+    ],
+    "prompt": {
+      "en": "🐶 is 2 years older than 🐱.\n🐰 is 3 years older than 🐶.\nIf 🐱 is 5 years old, how old is 🐰?",
+      "ko": "🐶는 🐱보다 2살 많아요.\n🐰는 🐶보다 3살 많아요.\n🐱가 5살이면, 🐰는 몇 살일까요?",
+      "ja": "🐶 は 🐱 より2歳年上。\n🐰 は 🐶 より3歳年上。\n🐱 が5歳なら、🐰 は何歳?",
+      "zh": "🐶 比 🐱 大2岁。\n🐰 比 🐶 大3岁。\n如果 🐱 是5岁，🐰 几岁?",
+      "es": "🐶 tiene 2 años más que 🐱.\n🐰 tiene 3 años más que 🐶.\nSi 🐱 tiene 5 años, ¿cuántos tiene 🐰?",
+      "fr": "🐶 a 2 ans de plus que 🐱.\n🐰 a 3 ans de plus que 🐶.\nSi 🐱 a 5 ans, quel âge a 🐰 ?",
+      "de": "🐶 ist 2 Jahre älter als 🐱.\n🐰 ist 3 Jahre älter als 🐶.\nWenn 🐱 5 ist, wie alt ist 🐰?"
+    },
+    "hints": {
+      "en": [
+        "First find 🐶's age from 🐱.",
+        "🐱=5 → 🐶=7 → 🐰=7+3."
+      ],
+      "ko": [
+        "먼저 🐱로 🐶의 나이를 구하세요.",
+        "🐱=5 → 🐶=7 → 🐰=7+3."
+      ],
+      "ja": [
+        "まず 🐱 から 🐶 の年齢を求めよう。",
+        "🐱=5 → 🐶=7 → 🐰=7+3。"
+      ],
+      "zh": [
+        "先用 🐱 求出 🐶 的年龄。",
+        "🐱=5 → 🐶=7 → 🐰=7+3。"
+      ],
+      "es": [
+        "Primero halla la edad de 🐶 desde 🐱.",
+        "🐱=5 → 🐶=7 → 🐰=7+3."
+      ],
+      "fr": [
+        "Trouve d'abord l'âge de 🐶 à partir de 🐱.",
+        "🐱=5 → 🐶=7 → 🐰=7+3."
+      ],
+      "de": [
+        "Finde zuerst 🐶s Alter aus 🐱.",
+        "🐱=5 → 🐶=7 → 🐰=7+3."
+      ]
+    },
+    "explanation": {
+      "en": "🐱=5, so 🐶=5+2=7, and 🐰=7+3=10.",
+      "ko": "🐱=5, 그래서 🐶=5+2=7, 🐰=7+3=10.",
+      "ja": "🐱=5 なので 🐶=5+2=7、🐰=7+3=10。",
+      "zh": "🐱=5，所以 🐶=5+2=7，🐰=7+3=10。",
+      "es": "🐱=5, así que 🐶=5+2=7 y 🐰=7+3=10.",
+      "fr": "🐱=5, donc 🐶=5+2=7 et 🐰=7+3=10.",
+      "de": "🐱=5, also 🐶=5+2=7 und 🐰=7+3=10."
+    }
+  },
+  {
+    "id": "lg3_s01",
+    "type": "logic_match",
+    "track": "logic",
+    "chapter": 3,
+    "order": 1,
+    "tokens": null,
+    "answer": "🔴",
+    "inputType": "choices",
+    "choices": [
+      "🔴",
+      "🔵",
+      "🟢",
+      "🟡"
+    ],
+    "prompt": {
+      "en": "🐶, 🐱, 🐰 each picked a different color (🔴 🔵 🟢).\n🐶 did not pick 🔴 or 🔵.\n🐱 picked 🔵.\nWhich color did 🐰 pick?",
+      "ko": "🐶, 🐱, 🐰가 서로 다른 색을 골랐어요 (🔴 🔵 🟢).\n🐶는 🔴도 🔵도 고르지 않았어요.\n🐱는 🔵를 골랐어요.\n🐰가 고른 색은?",
+      "ja": "🐶・🐱・🐰 はそれぞれ別の色を選びました (🔴 🔵 🟢)。\n🐶 は 🔴 も 🔵 も選んでいない。\n🐱 は 🔵 を選んだ。\n🐰 が選んだ色は?",
+      "zh": "🐶、🐱、🐰 各选了不同的颜色（🔴 🔵 🟢）。\n🐶 没选 🔴 也没选 🔵。\n🐱 选了 🔵。\n🐰 选的是哪个?",
+      "es": "🐶, 🐱, 🐰 eligieron un color distinto cada uno (🔴 🔵 🟢).\n🐶 no eligió 🔴 ni 🔵.\n🐱 eligió 🔵.\n¿Qué color eligió 🐰?",
+      "fr": "🐶, 🐱, 🐰 ont choisi chacun une couleur différente (🔴 🔵 🟢).\n🐶 n'a pris ni 🔴 ni 🔵.\n🐱 a pris 🔵.\nQuelle couleur a pris 🐰 ?",
+      "de": "🐶, 🐱, 🐰 wählten je eine andere Farbe (🔴 🔵 🟢).\n🐶 wählte weder 🔴 noch 🔵.\n🐱 wählte 🔵.\nWelche Farbe wählte 🐰?"
+    },
+    "hints": {
+      "en": [
+        "🐶 can only be 🟢.",
+        "Then 🐱=🔵, so 🐰 gets 🔴."
+      ],
+      "ko": [
+        "🐶는 🟢밖에 될 수 없어요.",
+        "그럼 🐱=🔵, 그래서 🐰는 🔴."
+      ],
+      "ja": [
+        "🐶 は 🟢 しかありえない。",
+        "すると 🐱=🔵、よって 🐰 は 🔴。"
+      ],
+      "zh": [
+        "🐶 只能是 🟢。",
+        "那么 🐱=🔵，所以 🐰 是 🔴。"
+      ],
+      "es": [
+        "🐶 solo puede ser 🟢.",
+        "Entonces 🐱=🔵, así que 🐰 es 🔴."
+      ],
+      "fr": [
+        "🐶 ne peut être que 🟢.",
+        "Alors 🐱=🔵, donc 🐰 a 🔴."
+      ],
+      "de": [
+        "🐶 kann nur 🟢 sein.",
+        "Dann 🐱=🔵, also 🐰 = 🔴."
+      ]
+    },
+    "explanation": {
+      "en": "🐶=🟢 (not 🔴/🔵), 🐱=🔵, so 🐰 is left with 🔴.",
+      "ko": "🐶=🟢(🔴·🔵 아님), 🐱=🔵, 남은 🐰는 🔴.",
+      "ja": "🐶=🟢（🔴・🔵 ではない）、🐱=🔵、残る 🐰 は 🔴。",
+      "zh": "🐶=🟢（非 🔴/🔵），🐱=🔵，剩下 🐰 是 🔴。",
+      "es": "🐶=🟢 (no 🔴/🔵), 🐱=🔵, así que a 🐰 le toca 🔴.",
+      "fr": "🐶=🟢 (ni 🔴/🔵), 🐱=🔵, donc il reste 🔴 pour 🐰.",
+      "de": "🐶=🟢 (nicht 🔴/🔵), 🐱=🔵, also bleibt 🔴 für 🐰."
+    }
+  },
+  {
+    "id": "lg3_s02",
+    "type": "logic_match",
+    "track": "logic",
+    "chapter": 3,
+    "order": 2,
+    "tokens": null,
+    "answer": "🍌",
+    "inputType": "choices",
+    "choices": [
+      "🍎",
+      "🍌",
+      "🍇",
+      "🍒"
+    ],
+    "prompt": {
+      "en": "🐶, 🐱, 🐰 each get a different fruit (🍎 🍌 🍇).\n🐶 gets 🍎.\n🐱 does not want 🍌.\nWhich fruit does 🐰 get?",
+      "ko": "🐶, 🐱, 🐰가 서로 다른 과일을 받아요 (🍎 🍌 🍇).\n🐶는 🍎를 받아요.\n🐱는 🍌를 싫어해요.\n🐰가 받는 과일은?",
+      "ja": "🐶・🐱・🐰 はそれぞれ別の果物をもらう (🍎 🍌 🍇)。\n🐶 は 🍎。\n🐱 は 🍌 が嫌い。\n🐰 がもらう果物は?",
+      "zh": "🐶、🐱、🐰 各拿不同的水果（🍎 🍌 🍇）。\n🐶 拿 🍎。\n🐱 不要 🍌。\n🐰 拿到哪个?",
+      "es": "🐶, 🐱, 🐰 reciben una fruta distinta (🍎 🍌 🍇).\n🐶 recibe 🍎.\n🐱 no quiere 🍌.\n¿Qué fruta recibe 🐰?",
+      "fr": "🐶, 🐱, 🐰 reçoivent chacun un fruit (🍎 🍌 🍇).\n🐶 reçoit 🍎.\n🐱 ne veut pas 🍌.\nQuel fruit reçoit 🐰 ?",
+      "de": "🐶, 🐱, 🐰 bekommen je eine Frucht (🍎 🍌 🍇).\n🐶 bekommt 🍎.\n🐱 will 🍌 nicht.\nWelche Frucht bekommt 🐰?"
+    },
+    "hints": {
+      "en": [
+        "🍎 is taken, and 🐱 refuses 🍌.",
+        "So 🐱=🍇, leaving 🍌 for 🐰."
+      ],
+      "ko": [
+        "🍎는 이미 갔고, 🐱는 🍌를 거부해요.",
+        "그럼 🐱=🍇, 🐰에게 🍌가 남아요."
+      ],
+      "ja": [
+        "🍎 は埋まり、🐱 は 🍌 を拒否。",
+        "よって 🐱=🍇、🐰 に 🍌 が残る。"
+      ],
+      "zh": [
+        "🍎 已被拿走，🐱 不要 🍌。",
+        "所以 🐱=🍇，剩 🍌 给 🐰。"
+      ],
+      "es": [
+        "🍎 está tomado y 🐱 rechaza 🍌.",
+        "Así 🐱=🍇, queda 🍌 para 🐰."
+      ],
+      "fr": [
+        "🍎 est pris et 🐱 refuse 🍌.",
+        "Donc 🐱=🍇, il reste 🍌 pour 🐰."
+      ],
+      "de": [
+        "🍎 ist weg, und 🐱 lehnt 🍌 ab.",
+        "Also 🐱=🍇, 🍌 bleibt für 🐰."
+      ]
+    },
+    "explanation": {
+      "en": "🐶=🍎; 🐱≠🍌 so 🐱=🍇; 🐰 gets 🍌.",
+      "ko": "🐶=🍎; 🐱≠🍌라 🐱=🍇; 🐰는 🍌.",
+      "ja": "🐶=🍎; 🐱≠🍌 なので 🐱=🍇; 🐰 は 🍌。",
+      "zh": "🐶=🍎；🐱≠🍌 所以 🐱=🍇；🐰 拿 🍌。",
+      "es": "🐶=🍎; 🐱≠🍌 así 🐱=🍇; 🐰 recibe 🍌.",
+      "fr": "🐶=🍎; 🐱≠🍌 donc 🐱=🍇; 🐰 reçoit 🍌.",
+      "de": "🐶=🍎; 🐱≠🍌, also 🐱=🍇; 🐰 bekommt 🍌."
+    }
+  },
+  {
+    "id": "lg3_s03",
+    "type": "logic_match",
+    "track": "logic",
+    "chapter": 3,
+    "order": 3,
+    "tokens": null,
+    "answer": "🐱",
+    "inputType": "choices",
+    "choices": [
+      "🐶",
+      "🐱",
+      "🐰",
+      "🦊"
+    ],
+    "prompt": {
+      "en": "🐶, 🐱, 🐰 sit in seats 1, 2, 3.\n🐰 is in seat 3.\n🐶 is not in seat 1.\nWho is in seat 1?",
+      "ko": "🐶, 🐱, 🐰가 1, 2, 3번 자리에 앉아요.\n🐰는 3번 자리예요.\n🐶는 1번 자리가 아니에요.\n1번 자리는 누구일까요?",
+      "ja": "🐶・🐱・🐰 が席1・2・3に座る。\n🐰 は席3。\n🐶 は席1ではない。\n席1は誰?",
+      "zh": "🐶、🐱、🐰 坐在1、2、3号位。\n🐰 在3号位。\n🐶 不在1号位。\n谁在1号位?",
+      "es": "🐶, 🐱, 🐰 se sientan en los asientos 1, 2, 3.\n🐰 está en el asiento 3.\n🐶 no está en el asiento 1.\n¿Quién está en el asiento 1?",
+      "fr": "🐶, 🐱, 🐰 sont aux places 1, 2, 3.\n🐰 est à la place 3.\n🐶 n'est pas à la place 1.\nQui est à la place 1 ?",
+      "de": "🐶, 🐱, 🐰 sitzen auf Platz 1, 2, 3.\n🐰 ist auf Platz 3.\n🐶 ist nicht auf Platz 1.\nWer ist auf Platz 1?"
+    },
+    "hints": {
+      "en": [
+        "🐰 fills seat 3, so seats 1–2 are 🐶,🐱.",
+        "🐶≠seat1, so 🐱 is in seat 1."
+      ],
+      "ko": [
+        "🐰가 3번이라 1·2번은 🐶,🐱.",
+        "🐶≠1번이라 1번은 🐱."
+      ],
+      "ja": [
+        "🐰 が席3なので席1・2は 🐶,🐱。",
+        "🐶≠席1 なので席1は 🐱。"
+      ],
+      "zh": [
+        "🐰 占3号位，1、2号是 🐶,🐱。",
+        "🐶≠1号，所以1号是 🐱。"
+      ],
+      "es": [
+        "🐰 ocupa el 3, así que 1–2 son 🐶,🐱.",
+        "🐶≠1, así que el 1 es 🐱."
+      ],
+      "fr": [
+        "🐰 occupe la 3, donc 1–2 sont 🐶,🐱.",
+        "🐶≠1, donc la place 1 est 🐱."
+      ],
+      "de": [
+        "🐰 ist Platz 3, also 1–2 sind 🐶,🐱.",
+        "🐶≠1, also ist 🐱 auf Platz 1."
+      ]
+    },
+    "explanation": {
+      "en": "🐰=seat3; 🐶≠seat1 so 🐶=seat2; 🐱 is in seat 1.",
+      "ko": "🐰=3번; 🐶≠1번이라 🐶=2번; 1번은 🐱.",
+      "ja": "🐰=席3; 🐶≠席1 なので 🐶=席2; 席1は 🐱。",
+      "zh": "🐰=3号；🐶≠1号 所以 🐶=2号；1号是 🐱。",
+      "es": "🐰=3; 🐶≠1 así 🐶=2; el asiento 1 es 🐱.",
+      "fr": "🐰=3; 🐶≠1 donc 🐶=2; la place 1 est 🐱.",
+      "de": "🐰=Platz3; 🐶≠1, also 🐶=2; Platz 1 ist 🐱."
+    }
+  },
+  {
+    "id": "lg3_s04",
+    "type": "logic_match",
+    "track": "logic",
+    "chapter": 3,
+    "order": 4,
+    "tokens": null,
+    "answer": "3",
+    "inputType": "choices",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "prompt": {
+      "en": "🐶, 🐱, 🐰, 🦊 each picked a different number from 1–4.\n🐶 picked 2.\n🦊 picked 4.\n🐱 picked higher than 🐰.\nWhat did 🐱 pick?",
+      "ko": "🐶, 🐱, 🐰, 🦊가 1~4 중 서로 다른 수를 골랐어요.\n🐶는 2를 골랐어요.\n🦊는 4를 골랐어요.\n🐱는 🐰보다 큰 수를 골랐어요.\n🐱가 고른 수는?",
+      "ja": "🐶・🐱・🐰・🦊 が1〜4から別々の数を選んだ。\n🐶 は2。\n🦊 は4。\n🐱 は 🐰 より大きい数。\n🐱 が選んだ数は?",
+      "zh": "🐶、🐱、🐰、🦊 各从1~4选了不同的数。\n🐶 选2。\n🦊 选4。\n🐱 比 🐰 大。\n🐱 选的是?",
+      "es": "🐶, 🐱, 🐰, 🦊 eligieron un número distinto de 1 a 4.\n🐶 eligió 2.\n🦊 eligió 4.\n🐱 eligió más que 🐰.\n¿Qué eligió 🐱?",
+      "fr": "🐶, 🐱, 🐰, 🦊 ont choisi un nombre distinct de 1 à 4.\n🐶 a pris 2.\n🦊 a pris 4.\n🐱 > 🐰.\nQu'a pris 🐱 ?",
+      "de": "🐶, 🐱, 🐰, 🦊 wählten je eine andere Zahl von 1–4.\n🐶 wählte 2.\n🦊 wählte 4.\n🐱 höher als 🐰.\nWas wählte 🐱?"
+    },
+    "hints": {
+      "en": [
+        "2 and 4 are taken, so 🐱,🐰 share 1 and 3.",
+        "🐱>🐰 means 🐱=3, 🐰=1."
+      ],
+      "ko": [
+        "2와 4는 갔으니 🐱,🐰는 1과 3.",
+        "🐱>🐰이라 🐱=3, 🐰=1."
+      ],
+      "ja": [
+        "2と4は埋まり、🐱,🐰 は1と3。",
+        "🐱>🐰 なので 🐱=3、🐰=1。"
+      ],
+      "zh": [
+        "2和4已选，🐱,🐰 用1和3。",
+        "🐱>🐰 所以 🐱=3，🐰=1。"
+      ],
+      "es": [
+        "2 y 4 tomados, 🐱,🐰 usan 1 y 3.",
+        "🐱>🐰 → 🐱=3, 🐰=1."
+      ],
+      "fr": [
+        "2 et 4 pris, 🐱,🐰 ont 1 et 3.",
+        "🐱>🐰 → 🐱=3, 🐰=1."
+      ],
+      "de": [
+        "2 und 4 weg, 🐱,🐰 haben 1 und 3.",
+        "🐱>🐰 → 🐱=3, 🐰=1."
+      ]
+    },
+    "explanation": {
+      "en": "🐶=2, 🦊=4 leave 1 and 3; since 🐱>🐰, 🐱=3.",
+      "ko": "🐶=2, 🦊=4라 1과 3이 남고, 🐱>🐰이므로 🐱=3.",
+      "ja": "🐶=2、🦊=4 で1と3が残り、🐱>🐰 なので 🐱=3。",
+      "zh": "🐶=2、🦊=4，剩1和3；因 🐱>🐰，🐱=3。",
+      "es": "🐶=2, 🦊=4 dejan 1 y 3; como 🐱>🐰, 🐱=3.",
+      "fr": "🐶=2, 🦊=4 laissent 1 et 3 ; comme 🐱>🐰, 🐱=3.",
+      "de": "🐶=2, 🦊=4 lassen 1 und 3; da 🐱>🐰, 🐱=3."
+    }
+  },
+  {
+    "id": "lg3_s05",
+    "type": "logic_match",
+    "track": "logic",
+    "chapter": 3,
+    "order": 5,
+    "tokens": null,
+    "answer": "🐱",
+    "inputType": "choices",
+    "choices": [
+      "🐶",
+      "🐱",
+      "🐰",
+      "🦊"
+    ],
+    "prompt": {
+      "en": "🐶, 🐱, 🐰 each have a different ball (⚽ 🏀 🎾).\n🐰 has 🎾.\n🐶 does not have ⚽.\nWho has ⚽?",
+      "ko": "🐶, 🐱, 🐰가 서로 다른 공을 가져요 (⚽ 🏀 🎾).\n🐰는 🎾를 가져요.\n🐶는 ⚽가 없어요.\n⚽를 가진 건 누구일까요?",
+      "ja": "🐶・🐱・🐰 はそれぞれ別のボールを持つ (⚽ 🏀 🎾)。\n🐰 は 🎾。\n🐶 は ⚽ を持っていない。\n⚽ を持つのは誰?",
+      "zh": "🐶、🐱、🐰 各持不同的球（⚽ 🏀 🎾）。\n🐰 拿 🎾。\n🐶 没有 ⚽。\n谁拿 ⚽?",
+      "es": "🐶, 🐱, 🐰 tienen una pelota distinta (⚽ 🏀 🎾).\n🐰 tiene 🎾.\n🐶 no tiene ⚽.\n¿Quién tiene ⚽?",
+      "fr": "🐶, 🐱, 🐰 ont chacun un ballon (⚽ 🏀 🎾).\n🐰 a 🎾.\n🐶 n'a pas ⚽.\nQui a ⚽ ?",
+      "de": "🐶, 🐱, 🐰 haben je einen Ball (⚽ 🏀 🎾).\n🐰 hat 🎾.\n🐶 hat nicht ⚽.\nWer hat ⚽?"
+    },
+    "hints": {
+      "en": [
+        "🐰 has 🎾; 🐶 can't have ⚽.",
+        "So 🐶=🏀, leaving ⚽ for 🐱."
+      ],
+      "ko": [
+        "🐰는 🎾; 🐶는 ⚽를 못 가져요.",
+        "그럼 🐶=🏀, ⚽는 🐱."
+      ],
+      "ja": [
+        "🐰 は 🎾; 🐶 は ⚽ を持てない。",
+        "よって 🐶=🏀、⚽ は 🐱。"
+      ],
+      "zh": [
+        "🐰 拿 🎾；🐶 不能拿 ⚽。",
+        "所以 🐶=🏀，⚽ 给 🐱。"
+      ],
+      "es": [
+        "🐰 tiene 🎾; 🐶 no puede ⚽.",
+        "Así 🐶=🏀, queda ⚽ para 🐱."
+      ],
+      "fr": [
+        "🐰 a 🎾 ; 🐶 ne peut pas ⚽.",
+        "Donc 🐶=🏀, ⚽ pour 🐱."
+      ],
+      "de": [
+        "🐰 hat 🎾; 🐶 kann nicht ⚽.",
+        "Also 🐶=🏀, ⚽ für 🐱."
+      ]
+    },
+    "explanation": {
+      "en": "🐰=🎾; 🐶≠⚽ so 🐶=🏀; 🐱 has ⚽.",
+      "ko": "🐰=🎾; 🐶≠⚽라 🐶=🏀; ⚽는 🐱.",
+      "ja": "🐰=🎾; 🐶≠⚽ なので 🐶=🏀; ⚽ は 🐱。",
+      "zh": "🐰=🎾；🐶≠⚽ 所以 🐶=🏀；🐱 拿 ⚽。",
+      "es": "🐰=🎾; 🐶≠⚽ así 🐶=🏀; 🐱 tiene ⚽.",
+      "fr": "🐰=🎾; 🐶≠⚽ donc 🐶=🏀; 🐱 a ⚽.",
+      "de": "🐰=🎾; 🐶≠⚽, also 🐶=🏀; 🐱 hat ⚽."
+    }
+  },
+  {
+    "id": "lg3_s06",
+    "type": "logic_match",
+    "track": "logic",
+    "chapter": 3,
+    "order": 6,
+    "tokens": null,
+    "answer": "🐶",
+    "inputType": "choices",
+    "choices": [
+      "🐶",
+      "🐱",
+      "🐰",
+      "🦊"
+    ],
+    "prompt": {
+      "en": "A race with 4 places.\n🐰 came 1st.\n🐱 came last.\n🦊 came right after 🐶.\nWho came 2nd?",
+      "ko": "4명이 달린 경주예요.\n🐰가 1등이에요.\n🐱가 꼴찌예요.\n🦊는 🐶 바로 뒤에 들어왔어요.\n2등은 누구일까요?",
+      "ja": "4位までのレース。\n🐰 が1位。\n🐱 が最下位。\n🦊 は 🐶 のすぐ後にゴール。\n2位は誰?",
+      "zh": "四个名次的比赛。\n🐰 第一。\n🐱 最后。\n🦊 紧跟在 🐶 之后。\n谁是第二?",
+      "es": "Una carrera de 4 puestos.\n🐰 llegó 1.º.\n🐱 llegó último.\n🦊 llegó justo después de 🐶.\n¿Quién llegó 2.º?",
+      "fr": "Une course à 4 places.\n🐰 est 1er.\n🐱 est dernier.\n🦊 juste après 🐶.\nQui est 2e ?",
+      "de": "Ein Rennen mit 4 Plätzen.\n🐰 wurde 1.\n🐱 wurde Letzter.\n🦊 kam direkt nach 🐶.\nWer wurde 2.?"
+    },
+    "hints": {
+      "en": [
+        "🐰=1st, 🐱=4th, so 🐶,🦊 fill 2nd–3rd.",
+        "🦊 right after 🐶 → 🐶=2nd, 🦊=3rd."
+      ],
+      "ko": [
+        "🐰=1등, 🐱=4등이라 🐶,🦊가 2·3등.",
+        "🦊가 🐶 바로 뒤 → 🐶=2등, 🦊=3등."
+      ],
+      "ja": [
+        "🐰=1位、🐱=4位なので 🐶,🦊 が2・3位。",
+        "🦊 は 🐶 の直後 → 🐶=2位、🦊=3位。"
+      ],
+      "zh": [
+        "🐰=1、🐱=4，所以 🐶,🦊 占2、3。",
+        "🦊 紧跟 🐶 → 🐶=2，🦊=3。"
+      ],
+      "es": [
+        "🐰=1.º, 🐱=4.º, así 🐶,🦊 van 2.º–3.º.",
+        "🦊 tras 🐶 → 🐶=2.º, 🦊=3.º."
+      ],
+      "fr": [
+        "🐰=1er, 🐱=4e, donc 🐶,🦊 en 2e–3e.",
+        "🦊 après 🐶 → 🐶=2e, 🦊=3e."
+      ],
+      "de": [
+        "🐰=1., 🐱=4., also 🐶,🦊 auf 2.–3.",
+        "🦊 direkt nach 🐶 → 🐶=2., 🦊=3."
+      ]
+    },
+    "explanation": {
+      "en": "🐰=1st, 🐱=4th; 🦊 right after 🐶 means 🐶=2nd, 🦊=3rd. So 2nd is 🐶.",
+      "ko": "🐰=1등, 🐱=4등; 🦊가 🐶 바로 뒤라 🐶=2등, 🦊=3등. 따라서 2등은 🐶.",
+      "ja": "🐰=1位、🐱=4位; 🦊 は 🐶 の直後で 🐶=2位、🦊=3位。よって2位は 🐶。",
+      "zh": "🐰=1、🐱=4；🦊 紧跟 🐶，故 🐶=2，🦊=3。所以第二是 🐶。",
+      "es": "🐰=1.º, 🐱=4.º; 🦊 tras 🐶 → 🐶=2.º, 🦊=3.º. El 2.º es 🐶.",
+      "fr": "🐰=1er, 🐱=4e ; 🦊 après 🐶 → 🐶=2e, 🦊=3e. Le 2e est 🐶.",
+      "de": "🐰=1., 🐱=4.; 🦊 nach 🐶 → 🐶=2., 🦊=3. Zweiter ist 🐶."
+    }
+  },
+  {
+    "id": "lg4_s01",
+    "type": "logic_liar",
+    "track": "logic",
+    "chapter": 4,
+    "order": 1,
+    "tokens": null,
+    "answer": "🐰",
+    "inputType": "choices",
+    "choices": [
+      "🐶",
+      "🐱",
+      "🐰",
+      "🦊"
+    ],
+    "prompt": {
+      "en": "Exactly one of them is lying.\n🐶: \"🐰 has the ball.\"\n🐰: \"I don't have the ball.\"\n🐱: \"🐶 is telling the truth.\"\nWho has the ball?",
+      "ko": "셋 중 정확히 한 명이 거짓말을 해요.\n🐶: \"🐰가 공을 가지고 있어.\"\n🐰: \"난 공이 없어.\"\n🐱: \"🐶 말이 맞아.\"\n공을 가진 건 누구일까요?",
+      "ja": "ちょうど1匹だけが嘘をついています。\n🐶: 「🐰 がボールを持ってる。」\n🐰: 「ぼくは持ってない。」\n🐱: 「🐶 は本当のことを言ってる。」\nボールを持つのは誰?",
+      "zh": "其中恰好一个在说谎。\n🐶：「🐰 拿着球。」\n🐰：「我没有球。」\n🐱：「🐶 说的是真的。」\n谁拿着球?",
+      "es": "Exactamente uno miente.\n🐶: «🐰 tiene la pelota.»\n🐰: «Yo no la tengo.»\n🐱: «🐶 dice la verdad.»\n¿Quién tiene la pelota?",
+      "fr": "Exactement un seul ment.\n🐶 : « 🐰 a le ballon. »\n🐰 : « Je ne l'ai pas. »\n🐱 : « 🐶 dit vrai. »\nQui a le ballon ?",
+      "de": "Genau einer lügt.\n🐶: „🐰 hat den Ball.“\n🐰: „Ich habe ihn nicht.“\n🐱: „🐶 sagt die Wahrheit.“\nWer hat den Ball?"
+    },
+    "hints": {
+      "en": [
+        "🐶 and 🐰 say opposite things — one of them lies.",
+        "If only one lies, 🐰 must be the liar, so 🐰 has it."
+      ],
+      "ko": [
+        "🐶와 🐰는 정반대로 말해요 — 둘 중 하나가 거짓.",
+        "거짓말이 한 명뿐이면 🐰가 거짓 → 🐰가 공을 가짐."
+      ],
+      "ja": [
+        "🐶 と 🐰 は正反対 — どちらかが嘘。",
+        "嘘が1匹だけなら 🐰 が嘘 → 🐰 が持つ。"
+      ],
+      "zh": [
+        "🐶 和 🐰 说法相反 — 其一在说谎。",
+        "若只有一人说谎，则 🐰 说谎 → 🐰 拿球。"
+      ],
+      "es": [
+        "🐶 y 🐰 dicen lo contrario — uno miente.",
+        "Si solo uno miente, es 🐰, así que 🐰 la tiene."
+      ],
+      "fr": [
+        "🐶 et 🐰 se contredisent — l'un ment.",
+        "Si un seul ment, c'est 🐰, donc 🐰 l'a."
+      ],
+      "de": [
+        "🐶 und 🐰 sagen Gegenteiliges — einer lügt.",
+        "Lügt nur einer, ist es 🐰, also hat 🐰 ihn."
+      ]
+    },
+    "explanation": {
+      "en": "🐱 backs 🐶, so if 🐶 lied that's two liars. Thus 🐶 is true and 🐰 lied — 🐰 has the ball.",
+      "ko": "🐱가 🐶를 편들어, 🐶가 거짓이면 거짓말쟁이가 둘. 따라서 🐶는 참, 🐰가 거짓 → 🐰가 공을 가짐.",
+      "ja": "🐱 は 🐶 を支持。🐶 が嘘なら嘘つきが2匹。よって 🐶 は本当で 🐰 が嘘 → 🐰 が持つ。",
+      "zh": "🐱 支持 🐶，若 🐶 说谎就有两个谎言。故 🐶 为真，🐰 说谎 → 🐰 拿球。",
+      "es": "🐱 apoya a 🐶; si 🐶 mintiera habría dos mentirosos. Así 🐶 dice verdad y 🐰 miente — 🐰 la tiene.",
+      "fr": "🐱 soutient 🐶 ; si 🐶 mentait, deux menteurs. Donc 🐶 dit vrai et 🐰 ment — 🐰 l'a.",
+      "de": "🐱 stützt 🐶; löge 🐶, gäbe es zwei Lügner. Also sagt 🐶 wahr und 🐰 log — 🐰 hat ihn."
+    }
+  },
+  {
+    "id": "lg4_s02",
+    "type": "logic_liar",
+    "track": "logic",
+    "chapter": 4,
+    "order": 2,
+    "tokens": null,
+    "answer": "🐶",
+    "inputType": "choices",
+    "choices": [
+      "🐶",
+      "🐱",
+      "🐰",
+      "🦊"
+    ],
+    "prompt": {
+      "en": "Someone broke a vase. Exactly one tells the truth.\n🐶: \"🐱 broke it.\"\n🐱: \"🐶 broke it.\"\n🐰: \"🐱 broke it.\"\nWho broke the vase?",
+      "ko": "누군가 꽃병을 깼어요. 정확히 한 명만 진실을 말해요.\n🐶: \"🐱가 깼어.\"\n🐱: \"🐶가 깼어.\"\n🐰: \"🐱가 깼어.\"\n꽃병을 깬 건 누구일까요?",
+      "ja": "誰かが花瓶を割った。ちょうど1匹だけ本当。\n🐶: 「🐱 が割った。」\n🐱: 「🐶 が割った。」\n🐰: 「🐱 が割った。」\n割ったのは誰?",
+      "zh": "有人打破了花瓶。恰好一个说真话。\n🐶：「🐱 打破的。」\n🐱：「🐶 打破的。」\n🐰：「🐱 打破的。」\n谁打破的?",
+      "es": "Alguien rompió un jarrón. Solo uno dice la verdad.\n🐶: «🐱 lo rompió.»\n🐱: «🐶 lo rompió.»\n🐰: «🐱 lo rompió.»\n¿Quién lo rompió?",
+      "fr": "Quelqu'un a cassé un vase. Un seul dit vrai.\n🐶 : « 🐱 l'a cassé. »\n🐱 : « 🐶 l'a cassé. »\n🐰 : « 🐱 l'a cassé. »\nQui a cassé le vase ?",
+      "de": "Jemand zerbrach eine Vase. Genau einer sagt die Wahrheit.\n🐶: „🐱 war's.“\n🐱: „🐶 war's.“\n🐰: „🐱 war's.“\nWer war's?"
+    },
+    "hints": {
+      "en": [
+        "🐶 and 🐰 make the same claim (🐱).",
+        "If 🐱 were guilty, two would be true. So 🐱 tells the truth → 🐶 broke it."
+      ],
+      "ko": [
+        "🐶와 🐰는 같은 주장(🐱)을 해요.",
+        "🐱가 범인이면 둘이 참이 돼요. 그래서 🐱가 진실 → 🐶가 깸."
+      ],
+      "ja": [
+        "🐶 と 🐰 は同じ主張（🐱）。",
+        "🐱 が犯人なら2匹が本当に。よって 🐱 が本当 → 🐶 が割った。"
+      ],
+      "zh": [
+        "🐶 和 🐰 说法相同（🐱）。",
+        "若 🐱 是凶手则有两真。故 🐱 说真话 → 🐶 打破。"
+      ],
+      "es": [
+        "🐶 y 🐰 afirman lo mismo (🐱).",
+        "Si 🐱 fuera culpable, habría dos verdades. Así 🐱 dice verdad → 🐶 lo rompió."
+      ],
+      "fr": [
+        "🐶 et 🐰 disent la même chose (🐱).",
+        "Si 🐱 était coupable, deux diraient vrai. Donc 🐱 dit vrai → 🐶 l'a cassé."
+      ],
+      "de": [
+        "🐶 und 🐰 behaupten dasselbe (🐱).",
+        "Wäre 🐱 schuldig, wären zwei wahr. Also sagt 🐱 wahr → 🐶 war's."
+      ]
+    },
+    "explanation": {
+      "en": "Only one truth: 🐶 and 🐰 both accuse 🐱, so they can't both be the single truth unless 🐱 is guilty — but that makes two truths. So 🐱 is the truth-teller, meaning 🐶 broke it.",
+      "ko": "진실은 한 명뿐: 🐶,🐰가 모두 🐱를 지목하니 🐱가 범인이면 둘 다 참이 돼 모순. 따라서 진실을 말한 건 🐱이고, 🐶가 깬 것.",
+      "ja": "本当は1匹だけ: 🐶,🐰 が共に 🐱 を指すので 🐱 が犯人だと2匹が本当に。よって本当は 🐱 で、🐶 が割った。",
+      "zh": "只有一真：🐶,🐰 都指 🐱，若 🐱 是凶手则两真矛盾。故说真话的是 🐱，即 🐶 打破。",
+      "es": "Solo una verdad: 🐶,🐰 acusan a 🐱; si 🐱 fuera culpable, dos verdades. Así el sincero es 🐱, y 🐶 lo rompió.",
+      "fr": "Une seule vérité : 🐶,🐰 accusent 🐱 ; si 🐱 coupable, deux vérités. Donc 🐱 dit vrai, et 🐶 l'a cassé.",
+      "de": "Nur eine Wahrheit: 🐶,🐰 beschuldigen 🐱; wäre 🐱 schuldig, zwei Wahrheiten. Also sagt 🐱 wahr, und 🐶 war's."
+    }
+  },
+  {
+    "id": "lg4_s03",
+    "type": "logic_liar",
+    "track": "logic",
+    "chapter": 4,
+    "order": 3,
+    "tokens": null,
+    "answer": "🦊",
+    "inputType": "choices",
+    "choices": [
+      "🐶",
+      "🐱",
+      "🐰",
+      "🦊"
+    ],
+    "prompt": {
+      "en": "Exactly one tells the truth.\n🐶: \"🦊 did it.\"\n🐱: \"🐶 did it.\"\n🦊: \"🐶 did it.\"\nWho did it?",
+      "ko": "정확히 한 명만 진실을 말해요.\n🐶: \"🦊가 했어.\"\n🐱: \"🐶가 했어.\"\n🦊: \"🐶가 했어.\"\n한 건 누구일까요?",
+      "ja": "ちょうど1匹だけ本当。\n🐶: 「🦊 がやった。」\n🐱: 「🐶 がやった。」\n🦊: 「🐶 がやった。」\nやったのは誰?",
+      "zh": "恰好一个说真话。\n🐶：「🦊 干的。」\n🐱：「🐶 干的。」\n🦊：「🐶 干的。」\n是谁干的?",
+      "es": "Solo uno dice la verdad.\n🐶: «🦊 lo hizo.»\n🐱: «🐶 lo hizo.»\n🦊: «🐶 lo hizo.»\n¿Quién lo hizo?",
+      "fr": "Un seul dit vrai.\n🐶 : « 🦊 l'a fait. »\n🐱 : « 🐶 l'a fait. »\n🦊 : « 🐶 l'a fait. »\nQui l'a fait ?",
+      "de": "Genau einer sagt die Wahrheit.\n🐶: „🦊 war's.“\n🐱: „🐶 war's.“\n🦊: „🐶 war's.“\nWer war's?"
+    },
+    "hints": {
+      "en": [
+        "🐱 and 🦊 make the same claim (🐶).",
+        "They can't both be the only truth, so both lie — 🐶 didn't do it. 🐶's claim is the true one."
+      ],
+      "ko": [
+        "🐱와 🦊는 같은 주장(🐶)을 해요.",
+        "둘 다 유일한 진실일 순 없으니 둘 다 거짓 → 🐶는 안 함. 🐶의 말이 진실."
+      ],
+      "ja": [
+        "🐱 と 🦊 は同じ主張（🐶）。",
+        "両方が唯一の本当にはなれないので両方嘘 → 🐶 ではない。🐶 の発言が本当。"
+      ],
+      "zh": [
+        "🐱 和 🦊 说法相同（🐶）。",
+        "两者不能同为唯一真话，故都假 → 非 🐶。🐶 的话为真。"
+      ],
+      "es": [
+        "🐱 y 🦊 afirman lo mismo (🐶).",
+        "No pueden ser ambos la única verdad, así que ambos mienten — no fue 🐶. Lo de 🐶 es verdad."
+      ],
+      "fr": [
+        "🐱 et 🦊 disent la même chose (🐶).",
+        "Ils ne peuvent être tous deux la seule vérité, donc tous deux mentent — pas 🐶. 🐶 dit vrai."
+      ],
+      "de": [
+        "🐱 und 🦊 behaupten dasselbe (🐶).",
+        "Beide können nicht die einzige Wahrheit sein, also lügen beide — nicht 🐶. 🐶 sagt wahr."
+      ]
+    },
+    "explanation": {
+      "en": "🐱 and 🦊 both accuse 🐶; both can't be the lone truth, so both lie. Then 🐶's statement is the true one — 🦊 did it.",
+      "ko": "🐱,🦊가 둘 다 🐶를 지목하는데 둘 다 유일한 진실일 순 없어 둘 다 거짓. 그럼 🐶의 말이 진실 → 🦊가 한 것.",
+      "ja": "🐱,🦊 は共に 🐶 を指すが両方が唯一の本当にはなれず両方嘘。すると 🐶 の発言が本当 → 🦊 がやった。",
+      "zh": "🐱,🦊 都指 🐶，二者不能同为唯一真话，故都假。于是 🐶 的话为真 → 🦊 干的。",
+      "es": "🐱,🦊 acusan a 🐶; no pueden ser ambos la única verdad, así que mienten. Entonces 🐶 dice verdad — fue 🦊.",
+      "fr": "🐱,🦊 accusent 🐶 ; pas tous deux la seule vérité, donc ils mentent. Alors 🐶 dit vrai — c'est 🦊.",
+      "de": "🐱,🦊 beschuldigen 🐶; nicht beide die einzige Wahrheit, also lügen beide. Dann sagt 🐶 wahr — 🦊 war's."
+    }
+  },
+  {
+    "id": "lg4_s04",
+    "type": "logic_count",
+    "track": "logic",
+    "chapter": 4,
+    "order": 4,
+    "tokens": null,
+    "answer": "2",
+    "inputType": "choices",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "prompt": {
+      "en": "Each animal either always lies or always tells the truth.\n🐶: \"Exactly one of us is lying.\"\n🐱: \"Exactly two of us are lying.\"\n🐰: \"All three of us are lying.\"\nHow many are lying?",
+      "ko": "각 동물은 항상 거짓말만 하거나 항상 진실만 말해요.\n🐶: \"우리 중 정확히 한 명이 거짓말.\"\n🐱: \"우리 중 정확히 두 명이 거짓말.\"\n🐰: \"우리 셋 다 거짓말.\"\n거짓말하는 건 몇 명일까요?",
+      "ja": "各動物はいつも嘘かいつも本当か。\n🐶: 「嘘つきはちょうど1匹。」\n🐱: 「嘘つきはちょうど2匹。」\n🐰: 「3匹とも嘘つき。」\n嘘つきは何匹?",
+      "zh": "每只动物要么永远说谎要么永远说真话。\n🐶：「我们中恰好一个说谎。」\n🐱：「我们中恰好两个说谎。」\n🐰：「我们三个都说谎。」\n有几个在说谎?",
+      "es": "Cada animal siempre miente o siempre dice la verdad.\n🐶: «Exactamente uno miente.»\n🐱: «Exactamente dos mienten.»\n🐰: «Los tres mentimos.»\n¿Cuántos mienten?",
+      "fr": "Chaque animal ment toujours ou dit toujours vrai.\n🐶 : « Exactement un de nous ment. »\n🐱 : « Exactement deux mentent. »\n🐰 : « Nous trois mentons. »\nCombien mentent ?",
+      "de": "Jedes Tier lügt immer oder sagt immer wahr.\n🐶: „Genau einer von uns lügt.“\n🐱: „Genau zwei lügen.“\n🐰: „Alle drei lügen.“\nWie viele lügen?"
+    },
+    "hints": {
+      "en": [
+        "🐰 can't be truthful (a truth-teller can't say 'we all lie').",
+        "The three claims clash, so at most one is true — test 🐱's 'two lie'."
+      ],
+      "ko": [
+        "🐰는 진실일 수 없어요('다 거짓'이라 말한 진실가는 모순).",
+        "세 주장이 서로 충돌하니 많아야 하나만 참 — 🐱의 '둘 거짓'을 확인."
+      ],
+      "ja": [
+        "🐰 は本当ではありえない（『全員嘘』と言う正直者は矛盾）。",
+        "3つの主張は両立せず、本当は最大1つ — 🐱 の『2匹嘘』を検証。"
+      ],
+      "zh": [
+        "🐰 不可能说真话（说真话者不会说『都说谎』）。",
+        "三句互相冲突，至多一真 — 验证 🐱 的『两个说谎』。"
+      ],
+      "es": [
+        "🐰 no puede ser sincero (un sincero no diría 'todos mentimos').",
+        "Las tres chocan, a lo sumo una es cierta — prueba el 'dos mienten' de 🐱."
+      ],
+      "fr": [
+        "🐰 ne peut dire vrai (un sincère ne dit pas « on ment tous »).",
+        "Les trois s'opposent, au plus une vraie — teste le « deux mentent » de 🐱."
+      ],
+      "de": [
+        "🐰 kann nicht ehrlich sein (ein Ehrlicher sagt nicht 'wir alle lügen').",
+        "Die drei widersprechen sich, höchstens eine wahr — prüfe 🐱s 'zwei lügen'."
+      ]
+    },
+    "explanation": {
+      "en": "🐰's claim is self-defeating, so 🐰 lies. The claims are mutually exclusive, so at least two lie. 🐱's 'exactly two lie' fits: 🐱 truthful, 🐶 and 🐰 lying → 2 are lying.",
+      "ko": "🐰의 말은 자기모순이라 🐰는 거짓. 세 주장은 서로 배타적이라 최소 둘이 거짓. 🐱의 '정확히 둘 거짓'이 맞음: 🐱는 진실, 🐶·🐰가 거짓 → 거짓말은 2명.",
+      "ja": "🐰 の発言は自己矛盾なので 🐰 は嘘。3主張は排他的で最低2匹が嘘。🐱 の『2匹嘘』が成立: 🐱 は本当、🐶・🐰 が嘘 → 嘘は2匹。",
+      "zh": "🐰 的话自相矛盾，故 🐰 说谎。三句互斥，至少两个说谎。🐱 的『恰好两个』成立：🐱 真，🐶·🐰 谎 → 说谎2个。",
+      "es": "Lo de 🐰 se contradice, así 🐰 miente. Las afirmaciones se excluyen, al menos dos mienten. El 'dos mienten' de 🐱 encaja: 🐱 sincero, 🐶 y 🐰 mienten → mienten 2.",
+      "fr": "L'affirmation de 🐰 se contredit, donc 🐰 ment. Elles s'excluent, au moins deux mentent. Le « deux mentent » de 🐱 colle : 🐱 sincère, 🐶 et 🐰 mentent → 2 mentent.",
+      "de": "🐰s Aussage widerspricht sich, also lügt 🐰. Die Aussagen schließen sich aus, mind. zwei lügen. 🐱s 'zwei lügen' passt: 🐱 ehrlich, 🐶 und 🐰 lügen → 2 lügen."
+    }
+  },
+  {
+    "id": "lg4_s05",
+    "type": "logic_knights",
+    "track": "logic",
+    "chapter": 4,
+    "order": 5,
+    "tokens": null,
+    "answer": "🐱",
+    "inputType": "choices",
+    "choices": [
+      "🐶",
+      "🐱",
+      "🐰",
+      "🦊"
+    ],
+    "prompt": {
+      "en": "Knights always tell the truth, knaves always lie.\n🐶: \"🐱 and 🐰 are both knaves.\"\n🐱: \"🐶 is a knave.\"\n🐰: \"🐶 is a knight.\"\nWho is the knight?",
+      "ko": "기사는 늘 진실, 악당은 늘 거짓을 말해요.\n🐶: \"🐱와 🐰는 둘 다 악당이야.\"\n🐱: \"🐶는 악당이야.\"\n🐰: \"🐶는 기사야.\"\n기사는 누구일까요?",
+      "ja": "騎士はいつも本当、悪党はいつも嘘。\n🐶: 「🐱 と 🐰 は両方悪党。」\n🐱: 「🐶 は悪党。」\n🐰: 「🐶 は騎士。」\n騎士は誰?",
+      "zh": "骑士永远说真话，恶徒永远说谎。\n🐶：「🐱 和 🐰 都是恶徒。」\n🐱：「🐶 是恶徒。」\n🐰：「🐶 是骑士。」\n谁是骑士?",
+      "es": "Los caballeros dicen verdad; los bribones mienten.\n🐶: «🐱 y 🐰 son bribones.»\n🐱: «🐶 es bribón.»\n🐰: «🐶 es caballero.»\n¿Quién es el caballero?",
+      "fr": "Les chevaliers disent vrai, les filous mentent.\n🐶 : « 🐱 et 🐰 sont des filous. »\n🐱 : « 🐶 est un filou. »\n🐰 : « 🐶 est un chevalier. »\nQui est le chevalier ?",
+      "de": "Ritter sagen wahr, Schurken lügen.\n🐶: „🐱 und 🐰 sind beide Schurken.“\n🐱: „🐶 ist ein Schurke.“\n🐰: „🐶 ist ein Ritter.“\nWer ist der Ritter?"
+    },
+    "hints": {
+      "en": [
+        "If 🐶 were a knight, 🐰 would be a knave — but 🐰 calls 🐶 a knight (a truth). Contradiction.",
+        "So 🐶 is a knave; then 🐱's 'D is a knave' is true → 🐱 is the knight."
+      ],
+      "ko": [
+        "🐶가 기사면 🐰는 악당 — 그런데 🐰는 🐶를 기사라 함(진실). 모순.",
+        "그래서 🐶는 악당; 그럼 🐱의 'D는 악당'이 참 → 🐱가 기사."
+      ],
+      "ja": [
+        "🐶 が騎士なら 🐰 は悪党 — だが 🐰 は 🐶 を騎士と言う(本当)。矛盾。",
+        "よって 🐶 は悪党; すると 🐱 の『D は悪党』が本当 → 🐱 が騎士。"
+      ],
+      "zh": [
+        "若 🐶 是骑士，则 🐰 是恶徒 — 但 🐰 说 🐶 是骑士(真话)。矛盾。",
+        "故 🐶 是恶徒；则 🐱 的『D 是恶徒』为真 → 🐱 是骑士。"
+      ],
+      "es": [
+        "Si 🐶 fuera caballero, 🐰 sería bribón — pero 🐰 dice que 🐶 es caballero (verdad). Contradicción.",
+        "Así 🐶 es bribón; entonces el 'D es bribón' de 🐱 es cierto → 🐱 es el caballero."
+      ],
+      "fr": [
+        "Si 🐶 était chevalier, 🐰 serait filou — mais 🐰 dit 🐶 chevalier (vrai). Contradiction.",
+        "Donc 🐶 est filou ; le « D est filou » de 🐱 est vrai → 🐱 est le chevalier."
+      ],
+      "de": [
+        "Wäre 🐶 Ritter, wäre 🐰 Schurke — doch 🐰 nennt 🐶 Ritter (wahr). Widerspruch.",
+        "Also ist 🐶 Schurke; dann ist 🐱s 'D ist Schurke' wahr → 🐱 ist der Ritter."
+      ]
+    },
+    "explanation": {
+      "en": "🐶 a knight would force 🐰 (who calls 🐶 a knight) to be a knave, contradicting 🐰's true statement. So 🐶 is a knave, making 🐱's claim true → 🐱 is the knight (🐰 is a knave).",
+      "ko": "🐶가 기사면 (🐶를 기사라 한) 🐰가 악당이 되어 🐰의 참말과 모순. 그래서 🐶는 악당이고 🐱의 말이 참 → 🐱가 기사 (🐰는 악당).",
+      "ja": "🐶 が騎士だと（🐶 を騎士と言う)🐰 が悪党になり 🐰 の本当と矛盾。よって 🐶 は悪党で 🐱 の発言が本当 → 🐱 が騎士（🐰 は悪党）。",
+      "zh": "🐶 若是骑士，则说 🐶 是骑士的 🐰 成为恶徒，与 🐰 的真话矛盾。故 🐶 是恶徒，🐱 的话为真 → 🐱 是骑士（🐰 是恶徒）。",
+      "es": "Si 🐶 fuera caballero, 🐰 (que lo llama caballero) sería bribón, contradiciendo su verdad. Así 🐶 es bribón y 🐱 dice verdad → 🐱 es caballero (🐰 bribón).",
+      "fr": "Si 🐶 était chevalier, 🐰 (qui le dit chevalier) serait filou, contredisant sa vérité. Donc 🐶 est filou et 🐱 dit vrai → 🐱 chevalier (🐰 filou).",
+      "de": "Wäre 🐶 Ritter, wäre 🐰 (der ihn Ritter nennt) Schurke — Widerspruch. Also ist 🐶 Schurke und 🐱 sagt wahr → 🐱 ist Ritter (🐰 Schurke)."
+    }
+  },
+  {
+    "id": "lg4_s06",
+    "type": "logic_count",
+    "track": "logic",
+    "chapter": 4,
+    "order": 6,
+    "tokens": null,
+    "answer": "🐰",
+    "inputType": "choices",
+    "choices": [
+      "🐶",
+      "🐱",
+      "🐰",
+      "🦊"
+    ],
+    "prompt": {
+      "en": "Knights tell the truth, knaves lie.\n🐶: \"All three of us are knaves.\"\n🐰: \"Exactly one of us is a knight.\"\n🐱: \"Exactly two of us are knights.\"\nWho is the knight?",
+      "ko": "기사는 진실, 악당은 거짓을 말해요.\n🐶: \"우리 셋 다 악당이야.\"\n🐰: \"우리 중 정확히 한 명이 기사야.\"\n🐱: \"우리 중 정확히 두 명이 기사야.\"\n기사는 누구일까요?",
+      "ja": "騎士は本当、悪党は嘘。\n🐶: 「3匹とも悪党。」\n🐰: 「騎士はちょうど1匹。」\n🐱: 「騎士はちょうど2匹。」\n騎士は誰?",
+      "zh": "骑士说真话，恶徒说谎。\n🐶：「我们三个都是恶徒。」\n🐰：「恰好一个是骑士。」\n🐱：「恰好两个是骑士。」\n谁是骑士?",
+      "es": "Caballeros dicen verdad, bribones mienten.\n🐶: «Los tres somos bribones.»\n🐰: «Exactamente uno es caballero.»\n🐱: «Exactamente dos son caballeros.»\n¿Quién es el caballero?",
+      "fr": "Chevaliers disent vrai, filous mentent.\n🐶 : « Nous trois sommes des filous. »\n🐰 : « Exactement un est chevalier. »\n🐱 : « Exactement deux sont chevaliers. »\nQui est le chevalier ?",
+      "de": "Ritter sagen wahr, Schurken lügen.\n🐶: „Wir drei sind Schurken.“\n🐰: „Genau einer ist Ritter.“\n🐱: „Genau zwei sind Ritter.“\nWer ist der Ritter?"
+    },
+    "hints": {
+      "en": [
+        "🐶 can't be a knight (then 🐶 wouldn't be a knave), so 🐶 lies → at least one knight exists.",
+        "Test 'exactly one knight': that fits 🐰 alone."
+      ],
+      "ko": [
+        "🐶는 기사일 수 없어요(그럼 악당이 아니게 됨) → 🐶는 거짓, 기사가 적어도 하나.",
+        "'정확히 한 명 기사'를 확인하면 🐰 혼자 맞아요."
+      ],
+      "ja": [
+        "🐶 は騎士になれない（なら悪党でない）→ 🐶 は嘘、騎士は最低1匹。",
+        "『騎士ちょうど1匹』を検証すると 🐰 単独で成立。"
+      ],
+      "zh": [
+        "🐶 不可能是骑士（否则它就不是恶徒）→ 🐶 说谎，至少有一个骑士。",
+        "验证『恰好一个骑士』，只有 🐰 成立。"
+      ],
+      "es": [
+        "🐶 no puede ser caballero (no sería bribón) → 🐶 miente, hay al menos un caballero.",
+        "Prueba 'exactamente uno': encaja solo 🐰."
+      ],
+      "fr": [
+        "🐶 ne peut être chevalier (sinon pas filou) → 🐶 ment, au moins un chevalier.",
+        "Teste « exactement un » : seul 🐰 convient."
+      ],
+      "de": [
+        "🐶 kann kein Ritter sein (sonst kein Schurke) → 🐶 lügt, mind. ein Ritter.",
+        "Prüfe 'genau einer': passt nur 🐰."
+      ]
+    },
+    "explanation": {
+      "en": "🐶's 'all knaves' is self-defeating → 🐶 is a knave, so a knight exists. If exactly one knight, it must be 🐰 (whose claim is then true); 🐱's 'two knights' would be false → 🐱 a knave. Consistent: only 🐰 is the knight.",
+      "ko": "🐶의 '다 악당'은 자기모순 → 🐶는 악당, 기사가 존재. 기사가 한 명이면 그건 🐰(그 말이 참); 🐱의 '두 명 기사'는 거짓 → 🐱는 악당. 모순 없음: 기사는 🐰뿐.",
+      "ja": "🐶 の『全員悪党』は自己矛盾 → 🐶 は悪党、騎士は存在。騎士が1匹なら 🐰（その発言が本当）; 🐱 の『2匹騎士』は偽 → 🐱 は悪党。整合: 騎士は 🐰 だけ。",
+      "zh": "🐶 的『都是恶徒』自相矛盾 → 🐶 是恶徒，存在骑士。若恰一个骑士便是 🐰（其话为真）；🐱 的『两个骑士』为假 → 🐱 是恶徒。一致：只有 🐰 是骑士。",
+      "es": "El 'todos bribones' de 🐶 se contradice → 🐶 bribón, hay un caballero. Si hay uno, es 🐰 (su frase es cierta); el 'dos' de 🐱 sería falso → 🐱 bribón. Consistente: solo 🐰 es caballero.",
+      "fr": "Le « tous filous » de 🐶 se contredit → 🐶 filou, un chevalier existe. S'il y en a un, c'est 🐰 (sa phrase vraie) ; le « deux » de 🐱 serait faux → 🐱 filou. Cohérent : seul 🐰 est chevalier.",
+      "de": "🐶s 'alle Schurken' widerspricht sich → 🐶 Schurke, ein Ritter existiert. Genau einer wäre 🐰 (dessen Aussage wahr); 🐱s 'zwei Ritter' falsch → 🐱 Schurke. Stimmig: nur 🐰 ist Ritter."
+    }
+  },
+  {
+    "id": "lg5_s01",
+    "type": "logic_order",
+    "track": "logic",
+    "chapter": 5,
+    "order": 1,
+    "tokens": null,
+    "answer": "🐱",
+    "inputType": "choices",
+    "choices": [
+      "🐶",
+      "🐱",
+      "🐰",
+      "🦊"
+    ],
+    "prompt": {
+      "en": "Four runners finished a race.\n🦊 finished last.\n🐰 was not first and not last.\n🐶 finished right before 🐰.\n🐶 was not first.\nWho finished first?",
+      "ko": "네 명이 경주를 끝냈어요.\n🦊가 꼴찌예요.\n🐰는 1등도 꼴찌도 아니에요.\n🐶는 🐰 바로 앞이에요.\n🐶는 1등이 아니에요.\n1등은 누구일까요?",
+      "ja": "4匹がレースを終えた。\n🦊 が最下位。\n🐰 は1位でも最下位でもない。\n🐶 は 🐰 のすぐ前。\n🐶 は1位ではない。\n1位は誰?",
+      "zh": "四名跑者完成比赛。\n🦊 最后。\n🐰 不是第一也不是最后。\n🐶 紧排在 🐰 前面。\n🐶 不是第一。\n谁第一?",
+      "es": "Cuatro corredores terminaron.\n🦊 llegó último.\n🐰 no fue ni primero ni último.\n🐶 llegó justo antes de 🐰.\n🐶 no fue primero.\n¿Quién fue primero?",
+      "fr": "Quatre coureurs ont fini.\n🦊 est dernier.\n🐰 n'est ni premier ni dernier.\n🐶 juste avant 🐰.\n🐶 n'est pas premier.\nQui est premier ?",
+      "de": "Vier Läufer kamen ins Ziel.\n🦊 wurde Letzter.\n🐰 war weder Erster noch Letzter.\n🐶 kam direkt vor 🐰.\n🐶 war nicht Erster.\nWer war Erster?"
+    },
+    "hints": {
+      "en": [
+        "🦊=4th. 🐶 is right before 🐰, and neither 🐰 nor 🐶 is first.",
+        "So 🐶=2nd, 🐰=3rd, leaving 🐱 first."
+      ],
+      "ko": [
+        "🦊=4등. 🐶는 🐰 바로 앞, 🐰·🐶 둘 다 1등 아님.",
+        "그럼 🐶=2등, 🐰=3등, 남은 🐱가 1등."
+      ],
+      "ja": [
+        "🦊=4位。🐶 は 🐰 の直前で、🐰・🐶 とも1位でない。",
+        "よって 🐶=2位、🐰=3位、残る 🐱 が1位。"
+      ],
+      "zh": [
+        "🦊=第4。🐶 紧排 🐰 前，且 🐰、🐶 都不是第一。",
+        "故 🐶=2，🐰=3，剩 🐱 第一。"
+      ],
+      "es": [
+        "🦊=4.º. 🐶 justo antes de 🐰, y ni 🐰 ni 🐶 son primeros.",
+        "Así 🐶=2.º, 🐰=3.º, queda 🐱 primero."
+      ],
+      "fr": [
+        "🦊=4e. 🐶 juste avant 🐰, et ni 🐰 ni 🐶 ne sont premiers.",
+        "Donc 🐶=2e, 🐰=3e, reste 🐱 premier."
+      ],
+      "de": [
+        "🦊=4. 🐶 direkt vor 🐰, und weder 🐰 noch 🐶 ist Erster.",
+        "Also 🐶=2., 🐰=3., bleibt 🐱 Erster."
+      ]
+    },
+    "explanation": {
+      "en": "🦊=4th; 🐶 right before 🐰 with neither first forces 🐶=2nd, 🐰=3rd. So 🐱 finished first.",
+      "ko": "🦊=4등; 🐶가 🐰 바로 앞이고 둘 다 1등이 아니라 🐶=2등, 🐰=3등. 따라서 🐱가 1등.",
+      "ja": "🦊=4位; 🐶 は 🐰 の直前で両者とも1位でないので 🐶=2位、🐰=3位。よって 🐱 が1位。",
+      "zh": "🦊=第4；🐶 紧排 🐰 前且都非第一，故 🐶=2，🐰=3。所以 🐱 第一。",
+      "es": "🦊=4.º; 🐶 antes de 🐰 y ninguno primero → 🐶=2.º, 🐰=3.º. Así 🐱 fue primero.",
+      "fr": "🦊=4e ; 🐶 avant 🐰 et aucun premier → 🐶=2e, 🐰=3e. Donc 🐱 est premier.",
+      "de": "🦊=4.; 🐶 vor 🐰 und keiner Erster → 🐶=2., 🐰=3. Also wurde 🐱 Erster."
+    }
+  },
+  {
+    "id": "lg5_s02",
+    "type": "logic_puzzle",
+    "track": "logic",
+    "chapter": 5,
+    "order": 2,
+    "tokens": null,
+    "answer": "3",
+    "inputType": "choices",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "prompt": {
+      "en": "A farm has only 🐔 (chickens) and 🐰 (rabbits).\nTogether there are 8 heads and 22 legs.\nHow many 🐰 are there?",
+      "ko": "농장에 🐔(닭)과 🐰(토끼)만 있어요.\n머리는 모두 8개, 다리는 모두 22개예요.\n🐰는 몇 마리일까요?",
+      "ja": "農場には 🐔(ニワトリ)と 🐰(ウサギ)だけ。\n頭は全部で8、足は全部で22。\n🐰 は何匹?",
+      "zh": "农场只有 🐔(鸡)和 🐰(兔)。\n共有8个头、22条腿。\n有几只 🐰?",
+      "es": "En una granja solo hay 🐔 (gallinas) y 🐰 (conejos).\nEn total: 8 cabezas y 22 patas.\n¿Cuántos 🐰 hay?",
+      "fr": "Une ferme n'a que des 🐔 (poules) et des 🐰 (lapins).\nEn tout : 8 têtes et 22 pattes.\nCombien de 🐰 ?",
+      "de": "Ein Hof hat nur 🐔 (Hühner) und 🐰 (Hasen).\nZusammen 8 Köpfe und 22 Beine.\nWie viele 🐰?"
+    },
+    "hints": {
+      "en": [
+        "8 heads means 8 animals total.",
+        "If all were chickens that's 16 legs; the extra 6 legs come 2 at a time → 3 rabbits."
+      ],
+      "ko": [
+        "머리 8개 = 동물 8마리.",
+        "모두 닭이면 다리 16개; 남는 6개를 2개씩 채우면 → 토끼 3마리."
+      ],
+      "ja": [
+        "頭8つ = 動物8匹。",
+        "全部ニワトリなら足16本; 余る6本を2本ずつ → ウサギ3匹。"
+      ],
+      "zh": [
+        "8个头 = 共8只。",
+        "若全是鸡则16条腿；多出的6条每次2条 → 3只兔。"
+      ],
+      "es": [
+        "8 cabezas = 8 animales.",
+        "Si todas fueran gallinas, 16 patas; las 6 de más, de 2 en 2 → 3 conejos."
+      ],
+      "fr": [
+        "8 têtes = 8 animaux.",
+        "Si tout étaient des poules : 16 pattes ; les 6 en trop, par 2 → 3 lapins."
+      ],
+      "de": [
+        "8 Köpfe = 8 Tiere.",
+        "Alle Hühner wären 16 Beine; die 6 extra, je 2 → 3 Hasen."
+      ]
+    },
+    "explanation": {
+      "en": "8 animals. Chickens c + rabbits r = 8 and 2c + 4r = 22. Solving gives r = 3.",
+      "ko": "동물 8마리. 닭 c + 토끼 r = 8, 2c + 4r = 22. 풀면 r = 3.",
+      "ja": "動物8匹。ニワトリ c + ウサギ r = 8、2c + 4r = 22。解くと r = 3。",
+      "zh": "共8只。鸡 c + 兔 r = 8，2c + 4r = 22。解得 r = 3。",
+      "es": "8 animales. Gallinas c + conejos r = 8 y 2c + 4r = 22. Resulta r = 3.",
+      "fr": "8 animaux. Poules c + lapins r = 8 et 2c + 4r = 22. On obtient r = 3.",
+      "de": "8 Tiere. Hühner c + Hasen r = 8 und 2c + 4r = 22. Ergibt r = 3."
+    }
+  },
+  {
+    "id": "lg5_s03",
+    "type": "logic_match",
+    "track": "logic",
+    "chapter": 5,
+    "order": 3,
+    "tokens": null,
+    "answer": "🍌",
+    "inputType": "choices",
+    "choices": [
+      "🍎",
+      "🍌",
+      "🍇",
+      "🍒"
+    ],
+    "prompt": {
+      "en": "🐶, 🐱, 🐰 each like a different fruit (🍎 🍌 🍇) and live on a different floor (1, 2, 3).\n🐶 lives on floor 2.\nThe 🍎 lover lives on floor 1.\n🐱 likes 🍇.\nWhich fruit does 🐶 like?",
+      "ko": "🐶, 🐱, 🐰가 서로 다른 과일(🍎 🍌 🍇)을 좋아하고, 서로 다른 층(1, 2, 3)에 살아요.\n🐶는 2층에 살아요.\n🍎를 좋아하는 친구는 1층에 살아요.\n🐱는 🍇를 좋아해요.\n🐶가 좋아하는 과일은?",
+      "ja": "🐶・🐱・🐰 は別々の果物(🍎 🍌 🍇)が好きで、別々の階(1・2・3)に住む。\n🐶 は2階。\n🍎 好きは1階。\n🐱 は 🍇 好き。\n🐶 が好きな果物は?",
+      "zh": "🐶、🐱、🐰 各喜欢不同水果(🍎 🍌 🍇)，住不同楼层(1、2、3)。\n🐶 住2楼。\n爱 🍎 的住1楼。\n🐱 喜欢 🍇。\n🐶 喜欢哪种水果?",
+      "es": "🐶, 🐱, 🐰 gustan de una fruta distinta (🍎 🍌 🍇) y viven en pisos distintos (1, 2, 3).\n🐶 vive en el piso 2.\nQuien ama 🍎 vive en el piso 1.\n🐱 ama 🍇.\n¿Qué fruta le gusta a 🐶?",
+      "fr": "🐶, 🐱, 🐰 aiment un fruit différent (🍎 🍌 🍇) et vivent à des étages différents (1, 2, 3).\n🐶 habite à l'étage 2.\nL'amateur de 🍎 habite à l'étage 1.\n🐱 aime 🍇.\nQuel fruit aime 🐶 ?",
+      "de": "🐶, 🐱, 🐰 mögen je eine andere Frucht (🍎 🍌 🍇) und wohnen in verschiedenen Etagen (1, 2, 3).\n🐶 wohnt in Etage 2.\nDer 🍎-Fan wohnt in Etage 1.\n🐱 mag 🍇.\nWelche Frucht mag 🐶?"
+    },
+    "hints": {
+      "en": [
+        "🐶 is on floor 2, but the 🍎 lover is on floor 1 → 🐶 doesn't like 🍎.",
+        "🐱 likes 🍇, so 🐶's only option left is 🍌."
+      ],
+      "ko": [
+        "🐶는 2층인데 🍎 애호가는 1층 → 🐶는 🍎 아님.",
+        "🐱는 🍇라, 🐶에게 남은 건 🍌."
+      ],
+      "ja": [
+        "🐶 は2階だが 🍎 好きは1階 → 🐶 は 🍎 ではない。",
+        "🐱 は 🍇 なので 🐶 に残るのは 🍌。"
+      ],
+      "zh": [
+        "🐶 在2楼，但爱 🍎 的在1楼 → 🐶 不爱 🍎。",
+        "🐱 喜欢 🍇，所以 🐶 只剩 🍌。"
+      ],
+      "es": [
+        "🐶 está en el piso 2, pero quien ama 🍎 está en el 1 → 🐶 no es 🍎.",
+        "🐱 ama 🍇, así que a 🐶 le queda 🍌."
+      ],
+      "fr": [
+        "🐶 est à l'étage 2, mais l'amateur de 🍎 est au 1 → 🐶 n'aime pas 🍎.",
+        "🐱 aime 🍇, donc il reste 🍌 à 🐶."
+      ],
+      "de": [
+        "🐶 ist in Etage 2, aber der 🍎-Fan in Etage 1 → 🐶 mag nicht 🍎.",
+        "🐱 mag 🍇, also bleibt 🍌 für 🐶."
+      ]
+    },
+    "explanation": {
+      "en": "🐶 (floor 2) can't be the 🍎 lover (floor 1), and 🐱 likes 🍇, so 🐶 likes 🍌.",
+      "ko": "🐶(2층)는 🍎 애호가(1층)일 수 없고 🐱는 🍇라, 🐶는 🍌.",
+      "ja": "🐶(2階)は 🍎 好き(1階)になれず 🐱 は 🍇 なので 🐶 は 🍌。",
+      "zh": "🐶(2楼)不是爱 🍎 的(1楼)，且 🐱 爱 🍇，所以 🐶 爱 🍌。",
+      "es": "🐶 (piso 2) no ama 🍎 (piso 1) y 🐱 ama 🍇, así que 🐶 ama 🍌.",
+      "fr": "🐶 (étage 2) n'aime pas 🍎 (étage 1) et 🐱 aime 🍇, donc 🐶 aime 🍌.",
+      "de": "🐶 (Etage 2) ist nicht der 🍎-Fan (Etage 1), und 🐱 mag 🍇, also mag 🐶 🍌."
+    }
+  },
+  {
+    "id": "lg5_s04",
+    "type": "logic_liar",
+    "track": "logic",
+    "chapter": 5,
+    "order": 4,
+    "tokens": null,
+    "answer": "🐰",
+    "inputType": "choices",
+    "choices": [
+      "🐶",
+      "🐱",
+      "🐰",
+      "🦊"
+    ],
+    "prompt": {
+      "en": "One of 🐶, 🐱, 🐰 is the thief. The thief lies; the other two tell the truth.\n🐶: \"🐰 is the thief.\"\n🐱: \"🐶 is not the thief.\"\n🐰: \"🐱 is the thief.\"\nWho is the thief?",
+      "ko": "🐶, 🐱, 🐰 중 한 명이 도둑이에요. 도둑은 거짓말, 나머지 둘은 진실을 말해요.\n🐶: \"🐰가 도둑이야.\"\n🐱: \"🐶는 도둑이 아니야.\"\n🐰: \"🐱가 도둑이야.\"\n도둑은 누구일까요?",
+      "ja": "🐶・🐱・🐰 の1匹が泥棒。泥棒は嘘、他の2匹は本当。\n🐶: 「🐰 が泥棒。」\n🐱: 「🐶 は泥棒じゃない。」\n🐰: 「🐱 が泥棒。」\n泥棒は誰?",
+      "zh": "🐶、🐱、🐰 中有一个是小偷。小偷说谎，另两个说真话。\n🐶：「🐰 是小偷。」\n🐱：「🐶 不是小偷。」\n🐰：「🐱 是小偷。」\n谁是小偷?",
+      "es": "Uno de 🐶, 🐱, 🐰 es el ladrón. El ladrón miente; los otros dos dicen verdad.\n🐶: «🐰 es el ladrón.»\n🐱: «🐶 no es el ladrón.»\n🐰: «🐱 es el ladrón.»\n¿Quién es el ladrón?",
+      "fr": "L'un de 🐶, 🐱, 🐰 est le voleur. Le voleur ment ; les deux autres disent vrai.\n🐶 : « 🐰 est le voleur. »\n🐱 : « 🐶 n'est pas le voleur. »\n🐰 : « 🐱 est le voleur. »\nQui est le voleur ?",
+      "de": "Einer von 🐶, 🐱, 🐰 ist der Dieb. Der Dieb lügt; die anderen sagen wahr.\n🐶: „🐰 ist der Dieb.“\n🐱: „🐶 ist nicht der Dieb.“\n🐰: „🐱 ist der Dieb.“\nWer ist der Dieb?"
+    },
+    "hints": {
+      "en": [
+        "Try each thief and check that exactly two statements stay true.",
+        "If 🐰 is the thief: 🐶 true, 🐱 true, 🐰 false — that works."
+      ],
+      "ko": [
+        "각자를 도둑으로 가정해 진술 둘이 참인지 확인하세요.",
+        "🐰가 도둑이면: 🐶 참, 🐱 참, 🐰 거짓 — 성립."
+      ],
+      "ja": [
+        "各々を泥棒と仮定し、2つが本当になるか確認。",
+        "🐰 が泥棒なら: 🐶 本当、🐱 本当、🐰 嘘 — 成立。"
+      ],
+      "zh": [
+        "逐个假设为小偷，检查恰有两句为真。",
+        "若 🐰 是小偷：🐶 真、🐱 真、🐰 假 — 成立。"
+      ],
+      "es": [
+        "Prueba cada ladrón y revisa que dos frases sean verdad.",
+        "Si 🐰 es el ladrón: 🐶 verdad, 🐱 verdad, 🐰 falso — funciona."
+      ],
+      "fr": [
+        "Teste chaque voleur et vérifie que deux phrases restent vraies.",
+        "Si 🐰 est le voleur : 🐶 vrai, 🐱 vrai, 🐰 faux — ça marche."
+      ],
+      "de": [
+        "Teste jeden Dieb und prüfe, ob zwei Aussagen wahr bleiben.",
+        "Wenn 🐰 der Dieb ist: 🐶 wahr, 🐱 wahr, 🐰 falsch — passt."
+      ]
+    },
+    "explanation": {
+      "en": "If 🐰 is the thief: 🐶's '🐰 is thief' is true, 🐱's '🐶 not thief' is true, and 🐰's '🐱 is thief' is the lie. Exactly one liar — consistent. Other guesses break, so 🐰 is the thief.",
+      "ko": "🐰가 도둑이면: 🐶의 '🐰가 도둑' 참, 🐱의 '🐶는 아님' 참, 🐰의 '🐱가 도둑' 거짓. 거짓말 한 명 — 성립. 나머지 가정은 깨지므로 도둑은 🐰.",
+      "ja": "🐰 が泥棒なら: 🐶 の『🐰 が泥棒』本当、🐱 の『🐶 は違う』本当、🐰 の『🐱 が泥棒』嘘。嘘1匹 — 整合。他は破綻、よって泥棒は 🐰。",
+      "zh": "若 🐰 是小偷：🐶 的『🐰 是小偷』真，🐱 的『🐶 不是』真，🐰 的『🐱 是小偷』假。恰一谎 — 一致。其他假设矛盾，故 🐰 是小偷。",
+      "es": "Si 🐰 es el ladrón: lo de 🐶 es verdad, lo de 🐱 es verdad, lo de 🐰 es mentira. Un solo mentiroso — consistente. Las otras opciones fallan, así que 🐰 es el ladrón.",
+      "fr": "Si 🐰 est le voleur : 🐶 vrai, 🐱 vrai, 🐰 faux. Un seul menteur — cohérent. Les autres cas échouent, donc 🐰 est le voleur.",
+      "de": "Wenn 🐰 der Dieb ist: 🐶 wahr, 🐱 wahr, 🐰 falsch. Genau ein Lügner — stimmig. Andere Fälle scheitern, also ist 🐰 der Dieb."
+    }
+  },
+  {
+    "id": "lg5_s05",
+    "type": "logic_match",
+    "track": "logic",
+    "chapter": 5,
+    "order": 5,
+    "tokens": null,
+    "answer": "4",
+    "inputType": "choices",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "prompt": {
+      "en": "🐶, 🐱, 🐰, 🦊 sit in a row of seats 1–4.\n🐱 is in seat 1.\n🐰 is in seat 2.\n🦊 is not next to 🐰.\nWhich seat is 🦊 in?",
+      "ko": "🐶, 🐱, 🐰, 🦊가 1~4번 자리에 한 줄로 앉아요.\n🐱는 1번 자리예요.\n🐰는 2번 자리예요.\n🦊는 🐰 옆이 아니에요.\n🦊는 몇 번 자리일까요?",
+      "ja": "🐶・🐱・🐰・🦊 が席1〜4に一列で座る。\n🐱 は席1。\n🐰 は席2。\n🦊 は 🐰 の隣ではない。\n🦊 は何番の席?",
+      "zh": "🐶、🐱、🐰、🦊 坐在1~4号一排。\n🐱 在1号。\n🐰 在2号。\n🦊 不在 🐰 旁边。\n🦊 在几号?",
+      "es": "🐶, 🐱, 🐰, 🦊 se sientan en fila, asientos 1–4.\n🐱 en el asiento 1.\n🐰 en el asiento 2.\n🦊 no está junto a 🐰.\n¿En qué asiento está 🦊?",
+      "fr": "🐶, 🐱, 🐰, 🦊 sont en rang, places 1–4.\n🐱 en place 1.\n🐰 en place 2.\n🦊 n'est pas à côté de 🐰.\nÀ quelle place est 🦊 ?",
+      "de": "🐶, 🐱, 🐰, 🦊 sitzen in einer Reihe, Plätze 1–4.\n🐱 auf Platz 1.\n🐰 auf Platz 2.\n🦊 ist nicht neben 🐰.\nAuf welchem Platz ist 🦊?"
+    },
+    "hints": {
+      "en": [
+        "Seats 1 and 2 are taken, so {F} is in seat 3 or 4.",
+        "Seat 3 is next to {R} (seat 2), so {F} must be in seat 4."
+      ],
+      "ko": [
+        "1·2번은 찼으니 {F}는 3번 또는 4번.",
+        "3번은 {R}(2번) 옆이라, {F}는 4번."
+      ],
+      "ja": [
+        "席1・2は埋まり、{F} は席3か4。",
+        "席3は {R}(席2)の隣なので {F} は席4。"
+      ],
+      "zh": [
+        "1、2号已占，{F} 在3或4号。",
+        "3号挨着 {R}(2号)，故 {F} 在4号。"
+      ],
+      "es": [
+        "1 y 2 están ocupados, {F} va en 3 o 4.",
+        "El 3 está junto a {R} (2), así que {F} en el 4."
+      ],
+      "fr": [
+        "Places 1 et 2 prises, {F} en 3 ou 4.",
+        "La 3 est à côté de {R} (2), donc {F} en 4."
+      ],
+      "de": [
+        "Plätze 1 und 2 belegt, {F} auf 3 oder 4.",
+        "Platz 3 ist neben {R} (2), also {F} auf 4."
+      ]
+    },
+    "explanation": {
+      "en": "🐱=1, 🐰=2, so 🦊 is in 3 or 4. Seat 3 is adjacent to 🐰, so 🦊 sits in seat 4.",
+      "ko": "🐱=1, 🐰=2라 🦊는 3 또는 4번. 3번은 🐰 옆이라 🦊는 4번.",
+      "ja": "🐱=1、🐰=2 なので 🦊 は3か4。席3は 🐰 の隣なので 🦊 は席4。",
+      "zh": "🐱=1、🐰=2，故 🦊 在3或4。3号挨着 🐰，所以 🦊 在4号。",
+      "es": "🐱=1, 🐰=2, así 🦊 en 3 o 4. El 3 está junto a 🐰, así que 🦊 en el 4.",
+      "fr": "🐱=1, 🐰=2, donc 🦊 en 3 ou 4. La 3 est à côté de 🐰, donc 🦊 en 4.",
+      "de": "🐱=1, 🐰=2, also 🦊 auf 3 oder 4. Platz 3 ist neben 🐰, also 🦊 auf Platz 4."
+    }
+  },
+  {
+    "id": "lg5_s06",
+    "type": "logic_riddle",
+    "track": "logic",
+    "chapter": 5,
+    "order": 6,
+    "tokens": null,
+    "answer": "63",
+    "inputType": "choices",
+    "choices": [
+      "63",
+      "36",
+      "84",
+      "48"
+    ],
+    "prompt": {
+      "en": "I'm thinking of a two-digit number.\nThe tens digit is double the ones digit.\nThe two digits add up to 9.\nWhat is the number?",
+      "ko": "두 자리 수를 생각하고 있어요.\n십의 자리는 일의 자리의 2배예요.\n두 자리 숫자를 더하면 9예요.\n이 수는 무엇일까요?",
+      "ja": "ある2桁の数を考えています。\n十の位は一の位の2倍。\n2つの数字を足すと9。\nその数は?",
+      "zh": "我想着一个两位数。\n十位是个位的2倍。\n两个数字相加等于9。\n这个数是多少?",
+      "es": "Pienso en un número de dos cifras.\nLa cifra de las decenas es el doble de las unidades.\nLas dos cifras suman 9.\n¿Qué número es?",
+      "fr": "Je pense à un nombre à deux chiffres.\nLe chiffre des dizaines est le double de celui des unités.\nLes deux chiffres font 9.\nQuel est ce nombre ?",
+      "de": "Ich denke an eine zweistellige Zahl.\nDie Zehnerziffer ist doppelt so groß wie die Einerziffer.\nDie beiden Ziffern ergeben zusammen 9.\nWelche Zahl ist es?"
+    },
+    "hints": {
+      "en": [
+        "If ones = x, tens = 2x, and x + 2x = 9.",
+        "So 3x = 9 → x = 3, tens = 6."
+      ],
+      "ko": [
+        "일의 자리를 x라 하면 십의 자리는 2x, x + 2x = 9.",
+        "그럼 3x = 9 → x = 3, 십의 자리 = 6."
+      ],
+      "ja": [
+        "一の位を x とすると十の位は 2x、x + 2x = 9。",
+        "よって 3x = 9 → x = 3、十の位 = 6。"
+      ],
+      "zh": [
+        "设个位为 x，十位为 2x，x + 2x = 9。",
+        "所以 3x = 9 → x = 3，十位 = 6。"
+      ],
+      "es": [
+        "Si unidades = x, decenas = 2x, y x + 2x = 9.",
+        "Así 3x = 9 → x = 3, decenas = 6."
+      ],
+      "fr": [
+        "Si unités = x, dizaines = 2x, et x + 2x = 9.",
+        "Donc 3x = 9 → x = 3, dizaines = 6."
+      ],
+      "de": [
+        "Wenn Einer = x, Zehner = 2x, und x + 2x = 9.",
+        "Also 3x = 9 → x = 3, Zehner = 6."
+      ]
+    },
+    "explanation": {
+      "en": "Ones = 3, tens = 6 (double of 3), and 6 + 3 = 9. The number is 63.",
+      "ko": "일의 자리 3, 십의 자리 6(3의 2배), 6 + 3 = 9. 이 수는 63.",
+      "ja": "一の位3、十の位6(3の2倍)、6 + 3 = 9。その数は 63。",
+      "zh": "个位3，十位6(3的2倍)，6 + 3 = 9。这个数是 63。",
+      "es": "Unidades 3, decenas 6 (doble de 3), y 6 + 3 = 9. El número es 63.",
+      "fr": "Unités 3, dizaines 6 (double de 3), et 6 + 3 = 9. Le nombre est 63.",
+      "de": "Einer 3, Zehner 6 (doppelt von 3), und 6 + 3 = 9. Die Zahl ist 63."
     }
   }
 ]

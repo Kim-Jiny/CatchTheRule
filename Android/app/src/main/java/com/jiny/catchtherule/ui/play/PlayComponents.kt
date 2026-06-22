@@ -74,7 +74,20 @@ fun SequenceDisplay(
     }
     val popScale = pop.value
     val grid = puzzle.grid
-    if (puzzle.isFigure && puzzle.figures != null) {
+    if (puzzle.isPrompt) {
+        // 논리형: 질문 문단을 카드로(줄바꿈 보존, 왼쪽 정렬).
+        Box(
+            modifier.fillMaxWidth().card().padding(20.dp),
+        ) {
+            Text(
+                puzzle.localizedPrompt,
+                color = AppColors.TextPrimary,
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Medium,
+                lineHeight = 26.sp,
+            )
+        }
+    } else if (puzzle.isFigure && puzzle.figures != null) {
         FigureNumberRow(figures = puzzle.figures, blankText = blankText, feedback = feedback)
     } else if (puzzle.isFigureSequence) {
         FigureRow(puzzle.figureTokens ?: emptyList(), puzzle, reveal, feedback, popScale)
@@ -297,6 +310,9 @@ private fun KeyBox(modifier: Modifier, onClick: () -> Unit, content: @Composable
 
 @Composable
 fun ChoicesGrid(choices: List<String>, enabled: Boolean = true, onPick: (String) -> Unit) {
+    // 긴 텍스트(논리형 보기)는 폰트를 줄여 한 칸에 들어가게.
+    val maxLen = choices.maxOfOrNull { it.length } ?: 1
+    val fontSize = when { maxLen >= 12 -> 16.sp; maxLen >= 7 -> 20.sp; else -> 24.sp }
     androidx.compose.foundation.layout.Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
         choices.chunked(2).forEach { pair ->
             Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
@@ -306,10 +322,14 @@ fun ChoicesGrid(choices: List<String>, enabled: Boolean = true, onPick: (String)
                             .weight(1f)
                             .height(64.dp)
                             .card(16.dp)
-                            .clickable(enabled = enabled) { onPick(c) },
+                            .clickable(enabled = enabled) { onPick(c) }
+                            .padding(horizontal = 8.dp),
                         contentAlignment = Alignment.Center,
                     ) {
-                        Text(c, color = AppColors.TextPrimary, fontSize = 24.sp, fontWeight = FontWeight.Bold)
+                        Text(
+                            c, color = AppColors.TextPrimary, fontSize = fontSize,
+                            fontWeight = FontWeight.Bold, maxLines = 2, textAlign = TextAlign.Center,
+                        )
                     }
                 }
             }

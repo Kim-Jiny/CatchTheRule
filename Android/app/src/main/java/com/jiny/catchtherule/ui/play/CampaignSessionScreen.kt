@@ -145,7 +145,9 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.spacedBy(28.dp, Alignment.CenterVertically),
                 ) {
-                    Text(stringResource(R.string.play_prompt), color = AppColors.TextSecondary, fontSize = 15.sp)
+                    if (!puzzle.isPrompt) {
+                        Text(stringResource(R.string.play_prompt), color = AppColors.TextSecondary, fontSize = 15.sp)
+                    }
                     SequenceDisplay(puzzle = puzzle, typed = typed, reveal = reveal, feedback = feedback)
                     if (hintsShown > 0) {
                         Column(

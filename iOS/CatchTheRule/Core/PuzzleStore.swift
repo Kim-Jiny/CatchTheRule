@@ -75,12 +75,19 @@ final class PuzzleStore {
         puzzles.filter { $0.trackKey == track }
     }
 
-    /// 존재하는 트랙 목록(numbers 우선, 등장 순).
+    /// 모드 표시 순서(고정). 목록에 없는 트랙은 뒤에 등장 순으로 붙는다.
+    static let trackOrder = ["numbers", "shapes", "logic"]
+
+    /// 존재하는 트랙 목록(고정 순서 우선, 그 외는 등장 순).
     var tracks: [String] {
         var seen = Set<String>()
         var result: [String] = []
         for p in puzzles where seen.insert(p.trackKey).inserted { result.append(p.trackKey) }
-        return result
+        return result.sorted { a, b in
+            let ia = Self.trackOrder.firstIndex(of: a) ?? Int.max
+            let ib = Self.trackOrder.firstIndex(of: b) ?? Int.max
+            return ia != ib ? ia < ib : a < b
+        }
     }
 
     func totalCount(track: String = defaultTrack) -> Int { puzzles(track: track).count }

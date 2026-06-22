@@ -21,7 +21,9 @@ struct SequenceDisplay: View {
 
     var body: some View {
         Group {
-            if puzzle.isFigure, let figures = puzzle.figures {
+            if puzzle.isPrompt {
+                promptCard(puzzle.localizedPrompt)
+            } else if puzzle.isFigure, let figures = puzzle.figures {
                 FigureNumberRow(figures: figures, blankText: blankText(), feedback: feedback)
             } else if puzzle.isFigureSequence {
                 figureRow(puzzle.figureTokens ?? [])
@@ -36,6 +38,20 @@ struct SequenceDisplay: View {
         .onChange(of: feedback) { _, newValue in
             if newValue == .correct { triggerPop() }
         }
+    }
+
+    // MARK: - 논리형(질문 문단)
+
+    /// 논리 퍼즐의 질문 문단을 카드로 표시. 줄바꿈 보존, 왼쪽 정렬.
+    private func promptCard(_ text: String) -> some View {
+        Text(text)
+            .font(.system(size: 18, weight: .medium))
+            .foregroundStyle(Theme.textPrimary)
+            .lineSpacing(6)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .fixedSize(horizontal: false, vertical: true)
+            .padding(20)
+            .card()
     }
 
     // MARK: - 도형 시퀀스(시각형)
@@ -312,6 +328,10 @@ struct ChoicesView: View {
                     Text(c)
                         .font(.system(size: 24, weight: .bold, design: .rounded))
                         .foregroundStyle(Theme.textPrimary)
+                        .lineLimit(2)
+                        .minimumScaleFactor(0.6)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 8)
                         .frame(maxWidth: .infinity)
                         .frame(height: 64)
                         .card(cornerRadius: 16)

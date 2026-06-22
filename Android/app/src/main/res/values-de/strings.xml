@@ -29,6 +29,7 @@
     <string name="chapter_11">Mensa-Challenge</string>
     <string name="mode_numbers">Finde die Regel</string>
     <string name="mode_shapes">Regeln in Formen</string>
+    <string name="mode_logic">Logikrätsel</string>
     <string name="shape_chapter_1">Formen &amp; Zahlen</string>
     <string name="shape_chapter_2">Summen &amp; Differenzen</string>
     <string name="shape_chapter_3">Produkte &amp; Muster</string>
@@ -39,12 +40,17 @@
     <string name="shape_chapter_8">Großmeister</string>
     <string name="shape_chapter_9">Legendär</string>
     <string name="shape_chapter_10">Verrückt</string>
+    <string name="logic_chapter_1">Logik-Aufwärmen</string>
+    <string name="logic_chapter_2">Reihenfolge &amp; Rang</string>
+    <string name="logic_chapter_3">Zuordnung &amp; Hinweise</string>
+    <string name="logic_chapter_4">Wahrheit &amp; Lüge</string>
+    <string name="logic_chapter_5">Meister-Deduktion</string>
     <string name="select_mode">Modus wählen</string>
     <string name="mode_complete">Fertig</string>
     <string name="mode_progress">%d%% fertig</string>
     <string name="mode_locked">Gesperrt</string>
-    <string name="unlock_title">Formen-Regeln freigeschaltet!</string>
-    <string name="unlock_msg">Du hast 5 Kapitel geschafft! Ein neuer Modus ist offen — finde die Regeln in den Formen.</string>
+    <string name="unlock_title">Neue Modi freigeschaltet!</string>
+    <string name="unlock_msg">Du hast 5 Kapitel geschafft! Zwei neue Modi sind offen — finde die Regeln in den Formen und löse Logikrätsel.</string>
     <string name="unlock_ok">Los geht\'s!</string>
     <string name="challenge_title">Zeitangriff</string>
     <string name="challenge_subtitle">Löse in 60 s so viele wie möglich und steige im Ranking</string>

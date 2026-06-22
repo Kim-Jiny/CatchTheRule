@@ -87,7 +87,7 @@ private struct ModeCard: View {
                 RoundedRectangle(cornerRadius: 14, style: .continuous)
                     .fill(Theme.accentGradient)
                     .frame(width: 50, height: 50)
-                Image(systemName: track == "shapes" ? "triangle.fill" : "number")
+                Image(systemName: modeIcon(track))
                     .font(.system(size: 20, weight: .bold))
                     .foregroundStyle(.white)
             }
@@ -129,7 +129,19 @@ private struct ModeCard: View {
 }
 
 private func modeTitle(_ track: String) -> String {
-    track == "shapes" ? String.loc("mode_shapes") : String.loc("mode_numbers")
+    switch track {
+    case "shapes": return String.loc("mode_shapes")
+    case "logic":  return String.loc("mode_logic")
+    default:       return String.loc("mode_numbers")
+    }
+}
+
+private func modeIcon(_ track: String) -> String {
+    switch track {
+    case "shapes": return "triangle.fill"
+    case "logic":  return "brain.head.profile"
+    default:       return "number"
+    }
 }
 
 // MARK: - 모드 상세 페이지
@@ -399,6 +411,16 @@ struct CampaignTrackView: View {
     }
 
     private func chapterTitle(_ chapter: Int) -> String {
+        if track == "logic" {
+            switch chapter {
+            case 1: return String.loc("logic_chapter_1")
+            case 2: return String.loc("logic_chapter_2")
+            case 3: return String.loc("logic_chapter_3")
+            case 4: return String.loc("logic_chapter_4")
+            case 5: return String.loc("logic_chapter_5")
+            default: return String.loc("chapter_label", chapter)
+            }
+        }
         if track == "shapes" {
             switch chapter {
             case 1: return String.loc("shape_chapter_1")
