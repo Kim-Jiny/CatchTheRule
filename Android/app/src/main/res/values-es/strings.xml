@@ -64,6 +64,7 @@
     <string name="challenge_title">Contrarreloj</string>
     <string name="challenge_subtitle">Resuelve todo lo posible en 60 s y sube en el ranking</string>
     <string name="challenge_best">Mi mejor puntuación</string>
+    <string name="challenge_mode_note">El Contrarreloj usa solo acertijos de Encuentra la regla.</string>
     <string name="challenge_start">Iniciar contrarreloj</string>
     <string name="ranking">Ranking</string>
     <string name="ranking_empty">Aún no hay registros. ¡Sé el primero!</string>

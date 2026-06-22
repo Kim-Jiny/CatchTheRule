@@ -64,6 +64,7 @@
     <string name="challenge_title">Zeitangriff</string>
     <string name="challenge_subtitle">Löse in 60 s so viele wie möglich und steige im Ranking</string>
     <string name="challenge_best">Meine Bestpunktzahl</string>
+    <string name="challenge_mode_note">Zeitangriff nutzt nur Finde-die-Regel-Rätsel.</string>
     <string name="challenge_start">Starten</string>
     <string name="ranking">Rangliste</string>
     <string name="ranking_empty">Noch keine Einträge. Sei der Erste!</string>

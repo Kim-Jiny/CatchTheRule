@@ -64,6 +64,7 @@
     <string name="challenge_title">타임어택</string>
     <string name="challenge_subtitle">60초 동안 최대한 많이 풀고 랭킹에 도전하세요</string>
     <string name="challenge_best">내 최고 점수</string>
+    <string name="challenge_mode_note">타임어택은 규칙찾기 문제만 출제돼요.</string>
     <string name="challenge_start">타임어택 시작</string>
     <string name="ranking">랭킹</string>
     <string name="ranking_empty">아직 기록이 없어요. 첫 주자가 되어보세요!</string>

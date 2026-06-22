@@ -64,6 +64,7 @@
     <string name="challenge_title">Contre-la-montre</string>
     <string name="challenge_subtitle">Résolvez-en un max en 60 s et grimpez au classement</string>
     <string name="challenge_best">Mon meilleur score</string>
+    <string name="challenge_mode_note">Le Contre-la-montre n\'utilise que des énigmes Trouve la règle.</string>
     <string name="challenge_start">Démarrer</string>
     <string name="ranking">Classement</string>
     <string name="ranking_empty">Aucun record. Soyez le premier !</string>

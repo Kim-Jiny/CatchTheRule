@@ -57,6 +57,15 @@ struct ChallengeView: View {
                     .font(.system(size: 30))
                     .foregroundStyle(Theme.accentGradient)
             }
+            HStack(spacing: 6) {
+                Image(systemName: "info.circle")
+                    .font(.system(size: 12))
+                Text(String.loc("challenge_mode_note"))
+                    .font(.system(size: 12))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .foregroundStyle(Theme.textTertiary)
+
             PrimaryButton(String.loc("challenge_start"), systemImage: "play.fill") { playing = true }
         }
         .padding(20)

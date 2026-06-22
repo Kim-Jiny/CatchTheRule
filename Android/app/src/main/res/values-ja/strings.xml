@@ -64,6 +64,7 @@
     <string name="challenge_title">タイムアタック</string>
     <string name="challenge_subtitle">60秒でできるだけ多く解いてランキングに挑戦</string>
     <string name="challenge_best">自己ベスト</string>
+    <string name="challenge_mode_note">タイムアタックはルール探しの問題のみ出題。</string>
     <string name="challenge_start">タイムアタック開始</string>
     <string name="ranking">ランキング</string>
     <string name="ranking_empty">まだ記録がありません。最初の挑戦者になろう！</string>

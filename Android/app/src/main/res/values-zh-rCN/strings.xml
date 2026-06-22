@@ -64,6 +64,7 @@
     <string name="challenge_title">限时挑战</string>
     <string name="challenge_subtitle">60秒内尽量多答，冲击排行榜</string>
     <string name="challenge_best">我的最高分</string>
+    <string name="challenge_mode_note">限时挑战只出「找规律」题。</string>
     <string name="challenge_start">开始限时挑战</string>
     <string name="ranking">排行榜</string>
     <string name="ranking_empty">还没有记录，来当第一名吧！</string>

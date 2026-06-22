@@ -83,6 +83,7 @@ T = {
  "challenge_title": ["Time Attack","타임어택","タイムアタック","限时挑战","Contrarreloj","Contre-la-montre","Zeitangriff"],
  "challenge_subtitle": ["Solve as many as you can in 60s and climb the ranking","60초 동안 최대한 많이 풀고 랭킹에 도전하세요","60秒でできるだけ多く解いてランキングに挑戦","60秒内尽量多答，冲击排行榜","Resuelve todo lo posible en 60 s y sube en el ranking","Résolvez-en un max en 60 s et grimpez au classement","Löse in 60 s so viele wie möglich und steige im Ranking"],
  "challenge_best": ["My Best Score","내 최고 점수","自己ベスト","我的最高分","Mi mejor puntuación","Mon meilleur score","Meine Bestpunktzahl"],
+ "challenge_mode_note": ["Time Attack uses Find the Rule puzzles only.","타임어택은 규칙찾기 문제만 출제돼요.","タイムアタックはルール探しの問題のみ出題。","限时挑战只出「找规律」题。","El Contrarreloj usa solo acertijos de Encuentra la regla.","Le Contre-la-montre n'utilise que des énigmes Trouve la règle.","Zeitangriff nutzt nur Finde-die-Regel-Rätsel."],
  "challenge_start": ["Start Time Attack","타임어택 시작","タイムアタック開始","开始限时挑战","Iniciar contrarreloj","Démarrer","Starten"],
  "ranking": ["Ranking","랭킹","ランキング","排行榜","Ranking","Classement","Rangliste"],
  "ranking_empty": ["No records yet. Be the first!","아직 기록이 없어요. 첫 주자가 되어보세요!","まだ記録がありません。最初の挑戦者になろう！","还没有记录，来当第一名吧！","Aún no hay registros. ¡Sé el primero!","Aucun record. Soyez le premier !","Noch keine Einträge. Sei der Erste!"],

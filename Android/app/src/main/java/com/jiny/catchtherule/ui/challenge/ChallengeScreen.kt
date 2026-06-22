@@ -17,6 +17,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Bolt
 import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material.icons.outlined.Info
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
@@ -77,6 +78,10 @@ fun ChallengeScreen(modifier: Modifier = Modifier, onStart: () -> Unit) {
                         Text("${progress.bestTimeAttack}", color = AppColors.TextPrimary, fontSize = 34.sp, fontWeight = FontWeight.Bold)
                     }
                     Icon(Icons.Filled.Bolt, null, tint = AppColors.Accent, modifier = Modifier.size(34.dp))
+                }
+                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                    Icon(Icons.Outlined.Info, null, tint = AppColors.TextTertiary, modifier = Modifier.size(14.dp))
+                    Text(stringResource(R.string.challenge_mode_note), color = AppColors.TextTertiary, fontSize = 12.sp)
                 }
                 PrimaryButton(stringResource(R.string.challenge_start), icon = Icons.Filled.PlayArrow, onClick = onStart)
             }
