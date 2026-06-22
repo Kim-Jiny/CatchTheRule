@@ -49,6 +49,7 @@
     <string name="logic_chapter_7">方向と空間</string>
     <string name="logic_chapter_8">数の推理</string>
     <string name="logic_chapter_9">なぞなぞ</string>
+    <string name="logic_chapter_10">川渡り</string>
     <string name="select_mode">モード選択</string>
     <string name="mode_complete">クリア</string>
     <string name="mode_progress">%d%% 完了</string>

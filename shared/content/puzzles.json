@@ -17070,5 +17070,325 @@
       "fr": "Le gant a un pouce et quatre doigts, n'est pas vivant et réchauffe la main. C'est le gant.",
       "de": "Der Handschuh hat Daumen und vier Finger, lebt nicht und wärmt die Hand. Antwort: der Handschuh."
     }
+  },
+  {
+    "id": "lg10_s01",
+    "type": "logic_crossing",
+    "track": "logic",
+    "chapter": 10,
+    "order": 1,
+    "tokens": null,
+    "answer": "5",
+    "inputType": "choices",
+    "choices": [
+      "3",
+      "5",
+      "7",
+      "9"
+    ],
+    "prompt": {
+      "en": "🐶 🐱 🐰 🦊 — four friends must cross a river by boat.\nThe boat holds only 2 at a time, and someone must row it back each trip.\nWhat is the fewest river crossings to get all four across?",
+      "ko": "🐶 🐱 🐰 🦊 — 친구 넷이 배로 강을 건너야 해요.\n배에는 한 번에 2명만 타고, 매번 누군가 노를 저어 돌아와야 해요.\n넷 모두 건너려면 강을 최소 몇 번 건너야 할까요?",
+      "ja": "🐶 🐱 🐰 🦊 — 4匹が船で川を渡ります。\n船は一度に2匹まで、毎回だれかが漕いで戻らないといけません。\n全員渡るには最少で何回川を渡る?",
+      "zh": "🐶 🐱 🐰 🦊 —— 四个朋友要坐船过河。\n船一次只能载2个，每趟都得有人把船划回来。\n四个全过河最少要渡几次?",
+      "es": "🐶 🐱 🐰 🦊: cuatro amigos deben cruzar un río en barca.\nLa barca lleva solo 2 y alguien debe remar de vuelta cada vez.\n¿Cuántos cruces como mínimo para pasar los cuatro?",
+      "fr": "🐶 🐱 🐰 🦊 — quatre amis doivent traverser une rivière en barque.\nLa barque ne porte que 2, et quelqu'un doit la ramener à chaque fois.\nCombien de traversées au minimum pour les faire tous passer ?",
+      "de": "🐶 🐱 🐰 🦊 — vier Freunde müssen mit dem Boot über einen Fluss.\nDas Boot fasst nur 2, und jemand muss es jedes Mal zurückrudern.\nWie wenige Überfahrten braucht es für alle vier?"
+    },
+    "hints": {
+      "en": [
+        "Two go over, but one has to bring the boat back.",
+        "Each round trip moves one friend across for good; the last trip needs no return."
+      ],
+      "ko": [
+        "둘이 건너가도 한 명은 배를 가지고 돌아와야 해요.",
+        "왕복 한 번에 한 명씩 넘어가고, 마지막엔 돌아올 필요가 없어요."
+      ],
+      "ja": [
+        "2匹渡っても1匹は船を戻さねば。",
+        "1往復で1匹ずつ向こうへ、最後は戻る必要なし。"
+      ],
+      "zh": [
+        "两个过去，但要有一个把船划回来。",
+        "每个往返净送一人过河，最后一趟不必返回。"
+      ],
+      "es": [
+        "Cruzan dos, pero uno trae la barca de vuelta.",
+        "Cada ida y vuelta deja a uno; el último cruce no necesita regreso."
+      ],
+      "fr": [
+        "Deux passent, mais un ramène la barque.",
+        "Chaque aller-retour fait passer un ami ; le dernier n'a pas de retour."
+      ],
+      "de": [
+        "Zwei fahren rüber, aber einer bringt das Boot zurück.",
+        "Jede Hin- und Rückfahrt bringt einen rüber; die letzte braucht keine Rückkehr."
+      ]
+    },
+    "explanation": {
+      "en": "Crossings: 2 over, 1 back, 2 over, 1 back, 2 over = 5 crossings in total.",
+      "ko": "건너기: 2명 →, 1명 ←, 2명 →, 1명 ←, 2명 → = 모두 5번.",
+      "ja": "渡る: 2匹→、1匹←、2匹→、1匹←、2匹→ = 合計5回。",
+      "zh": "渡河：2过、1回、2过、1回、2过 = 共5次。",
+      "es": "Cruces: 2 van, 1 vuelve, 2 van, 1 vuelve, 2 van = 5 cruces.",
+      "fr": "Traversées : 2 passent, 1 revient, 2 passent, 1 revient, 2 passent = 5.",
+      "de": "Überfahrten: 2 rüber, 1 zurück, 2 rüber, 1 zurück, 2 rüber = 5."
+    }
+  },
+  {
+    "id": "lg10_s02",
+    "type": "logic_crossing",
+    "track": "logic",
+    "chapter": 10,
+    "order": 2,
+    "tokens": null,
+    "answer": "7",
+    "inputType": "choices",
+    "choices": [
+      "5",
+      "7",
+      "9",
+      "11"
+    ],
+    "prompt": {
+      "en": "A farmer must take a 🐺 wolf, a 🐐 goat, and a 🥬 cabbage across a river.\nThe boat holds the farmer plus only ONE of them.\nIf left alone together, the 🐺 eats the 🐐, and the 🐐 eats the 🥬.\nWhat is the fewest river crossings to get all three across safely?",
+      "ko": "농부가 🐺 늑대, 🐐 염소, 🥬 양배추를 강 건너로 옮겨야 해요.\n배에는 농부와 그중 하나만 탈 수 있어요.\n둘만 남으면 🐺는 🐐를, 🐐는 🥬를 먹어요.\n셋 모두 안전하게 건너려면 강을 최소 몇 번 건너야 할까요?",
+      "ja": "農夫が 🐺 オオカミ・🐐 ヤギ・🥬 キャベツを川向こうへ運ぶ。\n船には農夫とそのうち1つだけ乗れる。\n2つだけ残ると 🐺 は 🐐 を、🐐 は 🥬 を食べる。\n全部を安全に渡すには最少で何回渡る?",
+      "zh": "农夫要把 🐺 狼、🐐 羊、🥬 白菜运过河。\n船只能载农夫加其中一个。\n单独留下时，🐺 吃 🐐，🐐 吃 🥬。\n全部安全过河最少要渡几次?",
+      "es": "Un granjero debe cruzar un 🐺 lobo, una 🐐 cabra y una 🥬 col.\nLa barca lleva al granjero y solo UNO de ellos.\nSolos, el 🐺 se come a la 🐐, y la 🐐 se come la 🥬.\n¿Cuántos cruces como mínimo para pasarlos a salvo?",
+      "fr": "Un fermier doit faire traverser un 🐺 loup, une 🐐 chèvre et un 🥬 chou.\nLa barque ne porte que le fermier et UN seul d'entre eux.\nSeuls, le 🐺 mange la 🐐, et la 🐐 mange le 🥬.\nCombien de traversées au minimum pour tout passer sans danger ?",
+      "de": "Ein Bauer muss einen 🐺 Wolf, eine 🐐 Ziege und einen 🥬 Kohl über den Fluss bringen.\nDas Boot fasst den Bauern und nur EINEN davon.\nAllein frisst der 🐺 die 🐐, und die 🐐 den 🥬.\nWie wenige Überfahrten braucht es, um alle sicher rüberzubringen?"
+    },
+    "hints": {
+      "en": [
+        "The 🐐 is the troublemaker — it can't be left with either one.",
+        "Trick: you may bring something BACK. Take the 🐐 over first."
+      ],
+      "ko": [
+        "🐐가 말썽이에요 — 어느 쪽과도 못 둬요.",
+        "비법: 무언가를 다시 데려올 수 있어요. 🐐를 먼저 건네세요."
+      ],
+      "ja": [
+        "🐐 が厄介 — どちらとも残せない。",
+        "コツ: 何かを戻してもよい。まず 🐐 を渡す。"
+      ],
+      "zh": [
+        "🐐 是麻烦 —— 跟谁都不能单独留。",
+        "诀窍：可以把东西带回来。先把 🐐 送过去。"
+      ],
+      "es": [
+        "La 🐐 es el problema: no puede quedar con ninguno.",
+        "Truco: puedes traer algo DE VUELTA. Lleva primero la 🐐."
+      ],
+      "fr": [
+        "La 🐐 pose problème : seule avec l'un ou l'autre, ça tourne mal.",
+        "Astuce : on peut RAMENER quelque chose. Emmène d'abord la 🐐."
+      ],
+      "de": [
+        "Die 🐐 ist das Problem — darf mit keinem allein bleiben.",
+        "Trick: Du darfst etwas ZURÜCKbringen. Bring zuerst die 🐐 rüber."
+      ]
+    },
+    "explanation": {
+      "en": "Goat over, return empty, wolf over, bring goat back, cabbage over, return empty, goat over = 7 crossings.",
+      "ko": "염소 →, 빈 배 ←, 늑대 →, 염소 데리고 ←, 양배추 →, 빈 배 ←, 염소 → = 7번.",
+      "ja": "ヤギ→、空で←、オオカミ→、ヤギを連れて←、キャベツ→、空で←、ヤギ→ = 7回。",
+      "zh": "羊过、空船回、狼过、带羊回、白菜过、空船回、羊过 = 7次。",
+      "es": "Cabra va, vuelve vacía, lobo va, trae la cabra, col va, vuelve vacía, cabra va = 7 cruces.",
+      "fr": "Chèvre passe, retour à vide, loup passe, ramène la chèvre, chou passe, retour à vide, chèvre passe = 7.",
+      "de": "Ziege rüber, leer zurück, Wolf rüber, Ziege zurück, Kohl rüber, leer zurück, Ziege rüber = 7."
+    }
+  },
+  {
+    "id": "lg10_s03",
+    "type": "logic_crossing",
+    "track": "logic",
+    "chapter": 10,
+    "order": 3,
+    "tokens": null,
+    "answer": "11",
+    "inputType": "choices",
+    "choices": [
+      "9",
+      "11",
+      "13",
+      "15"
+    ],
+    "prompt": {
+      "en": "3 🐔 hens and 3 🦊 foxes must cross a river.\nThe boat carries up to 2 animals and needs at least 1 to row.\nOn either bank, if 🦊 foxes ever outnumber 🐔 hens (with at least one hen there), the hens are eaten.\nWhat is the fewest crossings to get all 6 across safely?",
+      "ko": "🐔 닭 3마리와 🦊 여우 3마리가 강을 건너야 해요.\n배는 동물 2마리까지 타고, 노 저을 1마리는 꼭 있어야 해요.\n어느 쪽 강가든 🦊 여우가 🐔 닭보다 많아지면(닭이 한 마리라도 있을 때) 닭이 잡아먹혀요.\n6마리 모두 안전하게 건너려면 최소 몇 번 건너야 할까요?",
+      "ja": "🐔 ニワトリ3羽と 🦊 キツネ3匹が川を渡る。\n船は動物2匹まで、漕ぐのに最低1匹必要。\nどちらの岸でも 🦊 が 🐔 より多くなると(ニワトリが1羽でもいれば)食べられる。\n6匹全部を安全に渡すには最少で何回?",
+      "zh": "3只 🐔 鸡和3只 🦊 狐狸要过河。\n船最多载2只，至少要1只划船。\n任一岸上，只要 🦊 狐狸多过 🐔 鸡(且有鸡在)，鸡就被吃。\n6只全部安全过河最少几次?",
+      "es": "3 🐔 gallinas y 3 🦊 zorros deben cruzar un río.\nLa barca lleva hasta 2 y al menos 1 debe remar.\nEn cualquier orilla, si los 🦊 superan a las 🐔 (habiendo alguna gallina), se las comen.\n¿Cuántos cruces como mínimo para pasar los 6 a salvo?",
+      "fr": "3 🐔 poules et 3 🦊 renards doivent traverser une rivière.\nLa barque porte 2 animaux et il en faut au moins 1 pour ramer.\nSur une rive, si les 🦊 sont plus nombreux que les 🐔 (avec au moins une poule), elles sont mangées.\nCombien de traversées au minimum pour passer les 6 sans danger ?",
+      "de": "3 🐔 Hühner und 3 🦊 Füchse müssen über einen Fluss.\nDas Boot fasst 2 Tiere und mindestens 1 muss rudern.\nAn jedem Ufer: Sind die 🦊 in der Überzahl gegenüber den 🐔 (wo eine Henne ist), werden sie gefressen.\nWie wenige Überfahrten braucht es für alle 6 sicher?"
+    },
+    "hints": {
+      "en": [
+        "Never let foxes outnumber hens on a bank, and the boat always needs a rower back.",
+        "It can be done, but it takes more than a few back-and-forth trips."
+      ],
+      "ko": [
+        "어느 강가에서도 여우가 닭보다 많지 않게, 배는 늘 돌아올 노잡이가 필요해요.",
+        "가능하지만 왔다 갔다가 여러 번 필요해요."
+      ],
+      "ja": [
+        "どの岸でもキツネがニワトリを上回らないように、船は戻る漕ぎ手が要る。",
+        "可能だが、何度も往復が必要。"
+      ],
+      "zh": [
+        "任一岸都别让狐狸多过鸡，船每次都要有人划回。",
+        "做得到，但需要来回很多趟。"
+      ],
+      "es": [
+        "Que los zorros nunca superen a las gallinas; la barca siempre necesita remero.",
+        "Se puede, pero hacen falta muchas idas y vueltas."
+      ],
+      "fr": [
+        "Les renards ne doivent jamais dépasser les poules ; il faut toujours un rameur.",
+        "C'est faisable, mais il faut beaucoup d'allers-retours."
+      ],
+      "de": [
+        "Füchse dürfen Hennen nie überzahlen; das Boot braucht stets einen Ruderer.",
+        "Machbar, aber es braucht viele Hin- und Rückfahrten."
+      ]
+    },
+    "explanation": {
+      "en": "With careful trips that never leave foxes outnumbering hens, the minimum is 11 crossings.",
+      "ko": "여우가 닭보다 많아지지 않게 조심히 옮기면 최소 11번 건너면 돼요.",
+      "ja": "キツネがニワトリを上回らないよう運べば、最少11回。",
+      "zh": "小心安排、不让狐狸多过鸡，最少11次。",
+      "es": "Con cruces cuidadosos en que los zorros nunca superen a las gallinas, el mínimo es 11.",
+      "fr": "En veillant à ce que les renards ne dépassent jamais les poules, le minimum est 11.",
+      "de": "Mit sorgfältigen Fahrten, bei denen Füchse nie überzahlen, sind es mindestens 11."
+    }
+  },
+  {
+    "id": "lg10_s04",
+    "type": "logic_bridge",
+    "track": "logic",
+    "chapter": 10,
+    "order": 4,
+    "tokens": null,
+    "answer": "8",
+    "inputType": "choices",
+    "choices": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "prompt": {
+      "en": "3 friends must cross a dark bridge with one flashlight.\nThey walk at 1, 2, and 5 minutes.\nAt most 2 can cross together, they must carry the flashlight, and a pair moves at the slower one's speed.\nWhat is the shortest total time for all to cross?",
+      "ko": "친구 3명이 손전등 하나로 어두운 다리를 건너야 해요.\n각자 1분, 2분, 5분에 건너요.\n한 번에 2명까지, 손전등을 꼭 들어야 하고, 둘이 같이 가면 느린 쪽 속도예요.\n모두 건너는 데 걸리는 최소 시간은?",
+      "ja": "友達3人が懐中電灯1つで暗い橋を渡る。\n渡る時間は1分・2分・5分。\n一度に2人まで、懐中電灯を持ち、2人なら遅い方の速さ。\n全員渡る最短の合計時間は?",
+      "zh": "3个朋友要用一只手电筒过黑桥。\n他们各需1、2、5分钟。\n一次最多2人，必须带手电，两人同行按较慢的算。\n全部过桥最短共需多少分钟?",
+      "es": "3 amigos deben cruzar un puente oscuro con una linterna.\nTardan 1, 2 y 5 minutos.\nMáximo 2 a la vez, con la linterna, y una pareja va al ritmo del más lento.\n¿Cuál es el tiempo total mínimo para que crucen todos?",
+      "fr": "3 amis doivent traverser un pont sombre avec une lampe.\nIls mettent 1, 2 et 5 minutes.\nAu plus 2 à la fois, avec la lampe, et une paire avance au rythme du plus lent.\nQuel est le temps total minimum pour tous ?",
+      "de": "3 Freunde müssen mit einer Lampe über eine dunkle Brücke.\nSie brauchen 1, 2 und 5 Minuten.\nHöchstens 2 zugleich, mit der Lampe, ein Paar so schnell wie der Langsamere.\nWas ist die kürzeste Gesamtzeit für alle?"
+    },
+    "hints": {
+      "en": [
+        "The flashlight must come back, so the fastest should ferry it.",
+        "1&2 cross (2), 1 returns (1), 1&5 cross (5)."
+      ],
+      "ko": [
+        "손전등은 돌아와야 하니 가장 빠른 사람이 나르면 좋아요.",
+        "1·2 건넘(2), 1 돌아옴(1), 1·5 건넘(5)."
+      ],
+      "ja": [
+        "懐中電灯は戻す必要があるので、一番速い人が運ぶとよい。",
+        "1と2が渡る(2)、1が戻る(1)、1と5が渡る(5)。"
+      ],
+      "zh": [
+        "手电要带回，所以让最快的来回送。",
+        "1和2过(2)，1回(1)，1和5过(5)。"
+      ],
+      "es": [
+        "La linterna debe volver, que la lleve el más rápido.",
+        "1 y 2 cruzan (2), 1 vuelve (1), 1 y 5 cruzan (5)."
+      ],
+      "fr": [
+        "La lampe doit revenir : le plus rapide la transporte.",
+        "1 et 2 passent (2), 1 revient (1), 1 et 5 passent (5)."
+      ],
+      "de": [
+        "Die Lampe muss zurück, also trägt sie der Schnellste.",
+        "1&2 rüber (2), 1 zurück (1), 1&5 rüber (5)."
+      ]
+    },
+    "explanation": {
+      "en": "1 & 2 cross (2 min), 1 returns (1 min), then 1 & 5 cross (5 min): 2 + 1 + 5 = 8 minutes.",
+      "ko": "1·2가 건너고(2분), 1이 돌아오고(1분), 1·5가 건너요(5분): 2 + 1 + 5 = 8분.",
+      "ja": "1と2が渡り(2分)、1が戻り(1分)、1と5が渡る(5分): 2 + 1 + 5 = 8分。",
+      "zh": "1和2过(2分)，1回(1分)，1和5过(5分)：2 + 1 + 5 = 8分钟。",
+      "es": "1 y 2 cruzan (2), 1 vuelve (1), 1 y 5 cruzan (5): 2 + 1 + 5 = 8 minutos.",
+      "fr": "1 et 2 passent (2), 1 revient (1), 1 et 5 passent (5) : 2 + 1 + 5 = 8 minutes.",
+      "de": "1 & 2 rüber (2), 1 zurück (1), 1 & 5 rüber (5): 2 + 1 + 5 = 8 Minuten."
+    }
+  },
+  {
+    "id": "lg10_s05",
+    "type": "logic_bridge",
+    "track": "logic",
+    "chapter": 10,
+    "order": 5,
+    "tokens": null,
+    "answer": "17",
+    "inputType": "choices",
+    "choices": [
+      "15",
+      "17",
+      "19",
+      "21"
+    ],
+    "prompt": {
+      "en": "4 friends must cross a dark bridge with one flashlight.\nThey walk at 1, 2, 5, and 10 minutes.\nAt most 2 can cross together, they must carry the flashlight, and a pair moves at the slower one's speed.\nWhat is the shortest total time for all to cross?",
+      "ko": "친구 4명이 손전등 하나로 어두운 다리를 건너야 해요.\n각자 1분, 2분, 5분, 10분에 건너요.\n한 번에 2명까지, 손전등을 꼭 들어야 하고, 둘이 같이 가면 느린 쪽 속도예요.\n모두 건너는 데 걸리는 최소 시간은?",
+      "ja": "友達4人が懐中電灯1つで暗い橋を渡る。\n渡る時間は1分・2分・5分・10分。\n一度に2人まで、懐中電灯を持ち、2人なら遅い方の速さ。\n全員渡る最短の合計時間は?",
+      "zh": "4个朋友要用一只手电筒过黑桥。\n他们各需1、2、5、10分钟。\n一次最多2人，必须带手电，两人同行按较慢的算。\n全部过桥最短共需多少分钟?",
+      "es": "4 amigos deben cruzar un puente oscuro con una linterna.\nTardan 1, 2, 5 y 10 minutos.\nMáximo 2 a la vez, con la linterna, y una pareja va al ritmo del más lento.\n¿Cuál es el tiempo total mínimo para que crucen todos?",
+      "fr": "4 amis doivent traverser un pont sombre avec une lampe.\nIls mettent 1, 2, 5 et 10 minutes.\nAu plus 2 à la fois, avec la lampe, et une paire avance au rythme du plus lent.\nQuel est le temps total minimum pour tous ?",
+      "de": "4 Freunde müssen mit einer Lampe über eine dunkle Brücke.\nSie brauchen 1, 2, 5 und 10 Minuten.\nHöchstens 2 zugleich, mit der Lampe, ein Paar so schnell wie der Langsamere.\nWas ist die kürzeste Gesamtzeit für alle?"
+    },
+    "hints": {
+      "en": [
+        "Sending 10 with 1 each time wastes huge time — cross the two slowest together.",
+        "1&2 over (2), 1 back (1), 5&10 over (10), 2 back (2), 1&2 over (2)."
+      ],
+      "ko": [
+        "10을 1과 같이 매번 보내면 시간 낭비 — 느린 둘(5,10)을 함께 보내세요.",
+        "1·2 →(2), 1 ←(1), 5·10 →(10), 2 ←(2), 1·2 →(2)."
+      ],
+      "ja": [
+        "10を毎回1と送ると無駄 — 遅い2人(5,10)を一緒に渡す。",
+        "1·2→(2)、1←(1)、5·10→(10)、2←(2)、1·2→(2)。"
+      ],
+      "zh": [
+        "每次让10和1一起会浪费 —— 把最慢的两个(5,10)一起送。",
+        "1·2过(2)、1回(1)、5·10过(10)、2回(2)、1·2过(2)。"
+      ],
+      "es": [
+        "Mandar al 10 con el 1 cada vez es un derroche: cruza juntos a los dos más lentos.",
+        "1 y 2 (2), 1 vuelve (1), 5 y 10 (10), 2 vuelve (2), 1 y 2 (2)."
+      ],
+      "fr": [
+        "Envoyer 10 avec 1 à chaque fois gaspille du temps : fais passer les deux plus lents ensemble.",
+        "1 et 2 (2), 1 revient (1), 5 et 10 (10), 2 revient (2), 1 et 2 (2)."
+      ],
+      "de": [
+        "10 jedes Mal mit 1 zu schicken verschwendet Zeit — schick die zwei Langsamsten zusammen.",
+        "1&2 (2), 1 zurück (1), 5&10 (10), 2 zurück (2), 1&2 (2)."
+      ]
+    },
+    "explanation": {
+      "en": "1 & 2 over (2), 1 back (1), 5 & 10 over (10), 2 back (2), 1 & 2 over (2): 2 + 1 + 10 + 2 + 2 = 17 minutes.",
+      "ko": "1·2 건넘(2), 1 돌아옴(1), 5·10 건넘(10), 2 돌아옴(2), 1·2 건넘(2): 2 + 1 + 10 + 2 + 2 = 17분.",
+      "ja": "1·2渡る(2)、1戻る(1)、5·10渡る(10)、2戻る(2)、1·2渡る(2): 2 + 1 + 10 + 2 + 2 = 17分。",
+      "zh": "1·2过(2)、1回(1)、5·10过(10)、2回(2)、1·2过(2)：2 + 1 + 10 + 2 + 2 = 17分钟。",
+      "es": "1 y 2 (2), 1 vuelve (1), 5 y 10 (10), 2 vuelve (2), 1 y 2 (2): 2 + 1 + 10 + 2 + 2 = 17 minutos.",
+      "fr": "1 et 2 (2), 1 revient (1), 5 et 10 (10), 2 revient (2), 1 et 2 (2) : 2 + 1 + 10 + 2 + 2 = 17 minutes.",
+      "de": "1 & 2 (2), 1 zurück (1), 5 & 10 (10), 2 zurück (2), 1 & 2 (2): 2 + 1 + 10 + 2 + 2 = 17 Minuten."
+    }
   }
 ]

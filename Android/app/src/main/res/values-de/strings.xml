@@ -49,6 +49,7 @@
     <string name="logic_chapter_7">Richtung &amp; Raum</string>
     <string name="logic_chapter_8">Zahlenrätsel</string>
     <string name="logic_chapter_9">Knobeleien</string>
+    <string name="logic_chapter_10">Flussüberquerung</string>
     <string name="select_mode">Modus wählen</string>
     <string name="mode_complete">Fertig</string>
     <string name="mode_progress">%d%% fertig</string>

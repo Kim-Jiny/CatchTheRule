@@ -68,6 +68,7 @@ T = {
  "logic_chapter_7": ["Direction & Space","방향과 공간","方向と空間","方向与空间","Dirección y espacio","Direction et espace","Richtung & Raum"],
  "logic_chapter_8": ["Number Riddles","수 추리","数の推理","数字推理","Acertijos numéricos","Énigmes de nombres","Zahlenrätsel"],
  "logic_chapter_9": ["Brain Teasers","수수께끼","なぞなぞ","脑筋急转弯","Adivinanzas","Devinettes","Knobeleien"],
+ "logic_chapter_10": ["River Crossing","강 건너기","川渡り","过河难题","Cruzar el río","Traverser la rivière","Flussüberquerung"],
  "select_mode": ["Select a Mode","모드 선택","モード選択","选择模式","Elige un modo","Choisir un mode","Modus wählen"],
  "mode_complete": ["Complete","완료","クリア","完成","Completado","Terminé","Fertig"],
  "mode_progress": ["%d%% done","%d%% 완료","%d%% 完了","%d%% 完成","%d%% hecho","%d%% fait","%d%% fertig"],

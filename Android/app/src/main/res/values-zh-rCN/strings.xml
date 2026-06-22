@@ -49,6 +49,7 @@
     <string name="logic_chapter_7">方向与空间</string>
     <string name="logic_chapter_8">数字推理</string>
     <string name="logic_chapter_9">脑筋急转弯</string>
+    <string name="logic_chapter_10">过河难题</string>
     <string name="select_mode">选择模式</string>
     <string name="mode_complete">完成</string>
     <string name="mode_progress">%d%% 完成</string>
