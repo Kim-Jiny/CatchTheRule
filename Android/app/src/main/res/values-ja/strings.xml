@@ -82,6 +82,12 @@
     <string name="registering">登録中...</string>
     <string name="close">閉じる</string>
     <string name="settings">設定</string>
+    <string name="my_version">現在のバージョン</string>
+    <string name="store_version">ストアの最新</string>
+    <string name="version_up_to_date">最新バージョンです 👍</string>
+    <string name="version_new_available">新しい問題が追加されました！</string>
+    <string name="version_update_action">アップデート</string>
+    <string name="version_checking">確認中…</string>
     <string name="nickname">ニックネーム</string>
     <string name="not_set">未設定</string>
     <string name="hints_left">残りヒント</string>

@@ -82,6 +82,12 @@
     <string name="registering">Registering...</string>
     <string name="close">Close</string>
     <string name="settings">Settings</string>
+    <string name="my_version">Your version</string>
+    <string name="store_version">Store version</string>
+    <string name="version_up_to_date">You\'re on the latest version 👍</string>
+    <string name="version_new_available">New puzzles are available!</string>
+    <string name="version_update_action">Update</string>
+    <string name="version_checking">Checking…</string>
     <string name="nickname">Nickname</string>
     <string name="not_set">Not set</string>
     <string name="hints_left">Hints left</string>

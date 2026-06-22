@@ -82,6 +82,12 @@
     <string name="registering">Enregistrement...</string>
     <string name="close">Fermer</string>
     <string name="settings">Réglages</string>
+    <string name="my_version">Ta version</string>
+    <string name="store_version">Version du store</string>
+    <string name="version_up_to_date">Tu as la dernière version 👍</string>
+    <string name="version_new_available">De nouvelles énigmes sont disponibles !</string>
+    <string name="version_update_action">Mettre à jour</string>
+    <string name="version_checking">Vérification…</string>
     <string name="nickname">Pseudo</string>
     <string name="not_set">Non défini</string>
     <string name="hints_left">Indices restants</string>

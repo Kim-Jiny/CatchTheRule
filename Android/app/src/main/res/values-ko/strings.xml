@@ -82,6 +82,12 @@
     <string name="registering">등록 중...</string>
     <string name="close">닫기</string>
     <string name="settings">설정</string>
+    <string name="my_version">내 버전</string>
+    <string name="store_version">스토어 버전</string>
+    <string name="version_up_to_date">최신 버전이에요 👍</string>
+    <string name="version_new_available">새 문제가 업데이트되었어요!</string>
+    <string name="version_update_action">업데이트</string>
+    <string name="version_checking">확인 중…</string>
     <string name="nickname">닉네임</string>
     <string name="not_set">미설정</string>
     <string name="hints_left">남은 힌트</string>

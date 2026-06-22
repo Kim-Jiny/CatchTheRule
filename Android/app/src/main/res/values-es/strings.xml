@@ -82,6 +82,12 @@
     <string name="registering">Registrando...</string>
     <string name="close">Cerrar</string>
     <string name="settings">Ajustes</string>
+    <string name="my_version">Tu versión</string>
+    <string name="store_version">Versión de la tienda</string>
+    <string name="version_up_to_date">Tienes la última versión 👍</string>
+    <string name="version_new_available">¡Hay nuevos acertijos disponibles!</string>
+    <string name="version_update_action">Actualizar</string>
+    <string name="version_checking">Comprobando…</string>
     <string name="nickname">Apodo</string>
     <string name="not_set">Sin definir</string>
     <string name="hints_left">Pistas restantes</string>

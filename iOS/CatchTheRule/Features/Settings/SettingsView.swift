@@ -3,6 +3,7 @@ import SwiftUI
 struct SettingsView: View {
     @Environment(ProgressStore.self) private var progress
     @Environment(StoreManager.self) private var store
+    @State private var version = VersionService()
     @State private var showResetConfirm = false
     @State private var editingNickname = false
     @State private var draftNickname = ""
@@ -14,9 +15,6 @@ struct SettingsView: View {
     private let privacyURL = "https://duo.jiny.shop/ctr/privacy"
     private let supportURL = "https://duo.jiny.shop/ctr/support"
     private var langCode: String { Locale.current.language.languageCode?.identifier ?? "en" }
-    private var appVersion: String {
-        Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
-    }
 
     var body: some View {
         NavigationStack {
@@ -176,10 +174,57 @@ struct SettingsView: View {
     }
 
     private var footer: some View {
-        Text("CatchTheRule v\(appVersion)")
+        VStack(spacing: 12) {
+            // 새 문제(스토어 최신) 안내
+            if version.updateAvailable {
+                Button { openURL(version.storeURL ?? "https://apps.apple.com/app/id0") } label: {
+                    HStack(spacing: 8) {
+                        Image(systemName: "sparkles")
+                        Text(String.loc("version_new_available"))
+                            .fontWeight(.semibold)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        Text(String.loc("version_update_action"))
+                            .fontWeight(.bold)
+                    }
+                    .font(.system(size: 14))
+                    .foregroundStyle(.white)
+                    .padding(14)
+                    .frame(maxWidth: .infinity)
+                    .background(RoundedRectangle(cornerRadius: 14, style: .continuous).fill(Theme.accentGradient))
+                }
+                .buttonStyle(.plain)
+            }
+
+            VStack(spacing: 6) {
+                HStack {
+                    Text(String.loc("my_version")).foregroundStyle(Theme.textTertiary)
+                    Spacer()
+                    Text(version.current).foregroundStyle(Theme.textSecondary)
+                }
+                HStack {
+                    Text(String.loc("store_version")).foregroundStyle(Theme.textTertiary)
+                    Spacer()
+                    if let s = version.store {
+                        Text(s).foregroundStyle(version.updateAvailable ? Theme.accent2 : Theme.textSecondary)
+                    } else {
+                        Text(version.checked ? "—" : String.loc("version_checking"))
+                            .foregroundStyle(Theme.textTertiary)
+                    }
+                }
+                if version.checked, version.store != nil, !version.updateAvailable {
+                    Text(String.loc("version_up_to_date"))
+                        .foregroundStyle(Theme.success)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.top, 2)
+                }
+            }
             .font(.system(size: 13))
-            .foregroundStyle(Theme.textTertiary)
-            .padding(.top, 8)
+            .padding(16)
+            .frame(maxWidth: .infinity)
+            .card()
+        }
+        .padding(.top, 8)
+        .task { await version.checkOnce() }
     }
 
     // MARK: - Bindings (avoid @Bindable on Environment)

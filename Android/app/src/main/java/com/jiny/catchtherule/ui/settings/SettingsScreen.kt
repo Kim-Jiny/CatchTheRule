@@ -1,7 +1,9 @@
 package com.jiny.catchtherule.ui.settings
 
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -15,6 +17,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
+import androidx.compose.material.icons.filled.AutoAwesome
 import androidx.compose.material.icons.filled.Block
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.Delete
@@ -36,13 +39,21 @@ import androidx.compose.material3.SwitchDefaults
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.foundation.shape.RoundedCornerShape
+import com.google.android.play.core.appupdate.AppUpdateManagerFactory
+import com.google.android.play.core.install.model.UpdateAvailability
+import com.google.android.play.core.ktx.requestAppUpdateInfo
 import android.app.Activity
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
@@ -58,7 +69,6 @@ import com.jiny.catchtherule.ui.theme.ScreenBackground
 import com.jiny.catchtherule.ui.theme.card
 
 private const val CONTACT_EMAIL = "kjinyz@naver.com"
-private const val APP_VERSION = "1.0.0"
 private const val TERMS_URL = "https://duo.jiny.shop/ctr/terms"
 private const val PRIVACY_URL = "https://duo.jiny.shop/ctr/privacy"
 private const val SUPPORT_URL = "https://duo.jiny.shop/ctr/support"
@@ -173,7 +183,7 @@ fun SettingsScreen(modifier: Modifier = Modifier) {
                 Text(stringResource(R.string.reset_progress), color = AppColors.Danger, fontSize = 16.sp, fontWeight = FontWeight.Medium)
             }
 
-            Text("CatchTheRule v$APP_VERSION", color = AppColors.TextTertiary, fontSize = 13.sp, modifier = Modifier.padding(top = 8.dp))
+            AppInfoSection()
         }
     }
 
@@ -261,4 +271,80 @@ private fun ToggleRow(icon: ImageVector, title: String, checked: Boolean, onChan
 @Composable
 private fun RowDivider() {
     Divider(color = AppColors.Stroke, thickness = 1.dp)
+}
+
+/** 앱 정보: 내 버전 + Play 인앱업데이트로 스토어 새 버전(=새 문제) 안내.
+ *  주의: Play 인앱업데이트는 Play 로 설치한 앱에서만 동작(에뮬·사이드로드는 '최신'으로 표시). */
+@Composable
+private fun AppInfoSection() {
+    val context = LocalContext.current
+    val pkg = remember {
+        runCatching { context.packageManager.getPackageInfo(context.packageName, 0) }.getOrNull()
+    }
+    val versionName = pkg?.versionName ?: "1.0"
+    @Suppress("DEPRECATION") val versionCode = pkg?.versionCode ?: 0
+
+    var checked by remember { mutableStateOf(false) }
+    var updateAvailable by remember { mutableStateOf(false) }
+    var storeCode by remember { mutableIntStateOf(0) }
+
+    LaunchedEffect(Unit) {
+        runCatching {
+            val info = AppUpdateManagerFactory.create(context).requestAppUpdateInfo()
+            if (info.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE) {
+                updateAvailable = true
+                storeCode = info.availableVersionCode()
+            }
+        }
+        checked = true
+    }
+
+    Column(verticalArrangement = Arrangement.spacedBy(12.dp), modifier = Modifier.padding(top = 8.dp)) {
+        // 새 문제(스토어 새 버전) 안내 배너
+        if (updateAvailable) {
+            Row(
+                Modifier.fillMaxWidth().clip(RoundedCornerShape(14.dp))
+                    .background(AppColors.AccentGradient)
+                    .clickable { openPlayStore(context) }.padding(14.dp),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+            ) {
+                Icon(Icons.Filled.AutoAwesome, null, tint = Color.White, modifier = Modifier.size(18.dp))
+                Text(stringResource(R.string.version_new_available), color = Color.White, fontSize = 14.sp, fontWeight = FontWeight.SemiBold, modifier = Modifier.weight(1f))
+                Text(stringResource(R.string.version_update_action), color = Color.White, fontSize = 14.sp, fontWeight = FontWeight.Bold)
+            }
+        }
+
+        Column(Modifier.fillMaxWidth().card().padding(16.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+            Row(Modifier.fillMaxWidth()) {
+                Text(stringResource(R.string.my_version), color = AppColors.TextTertiary, fontSize = 13.sp, modifier = Modifier.weight(1f))
+                Text("v$versionName ($versionCode)", color = AppColors.TextSecondary, fontSize = 13.sp)
+            }
+            Row(Modifier.fillMaxWidth()) {
+                Text(stringResource(R.string.store_version), color = AppColors.TextTertiary, fontSize = 13.sp, modifier = Modifier.weight(1f))
+                Text(
+                    when {
+                        !checked -> stringResource(R.string.version_checking)
+                        updateAvailable -> "$storeCode"
+                        else -> "—"
+                    },
+                    color = if (updateAvailable) AppColors.Accent2 else AppColors.TextSecondary, fontSize = 13.sp,
+                )
+            }
+            if (checked && !updateAvailable) {
+                Text(stringResource(R.string.version_up_to_date), color = AppColors.Success, fontSize = 13.sp)
+            }
+        }
+    }
+}
+
+private fun openPlayStore(context: Context) {
+    val id = context.packageName
+    runCatching {
+        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=$id")))
+    }.onFailure {
+        runCatching {
+            context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=$id")))
+        }
+    }
 }

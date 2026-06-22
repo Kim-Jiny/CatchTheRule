@@ -82,6 +82,12 @@
     <string name="registering">Wird eingetragen...</string>
     <string name="close">Schließen</string>
     <string name="settings">Einstellungen</string>
+    <string name="my_version">Deine Version</string>
+    <string name="store_version">Store-Version</string>
+    <string name="version_up_to_date">Du hast die neueste Version 👍</string>
+    <string name="version_new_available">Neue Rätsel sind verfügbar!</string>
+    <string name="version_update_action">Aktualisieren</string>
+    <string name="version_checking">Wird geprüft…</string>
     <string name="nickname">Spitzname</string>
     <string name="not_set">Nicht gesetzt</string>
     <string name="hints_left">Verbleibende Tipps</string>
