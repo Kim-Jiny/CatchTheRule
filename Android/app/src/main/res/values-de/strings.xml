@@ -50,6 +50,9 @@
     <string name="logic_chapter_8">Zahlenrätsel</string>
     <string name="logic_chapter_9">Knobeleien</string>
     <string name="logic_chapter_10">Flussüberquerung</string>
+    <string name="logic_chapter_11">Codes &amp; Chiffren</string>
+    <string name="logic_chapter_12">Waage &amp; Wiegen</string>
+    <string name="logic_chapter_13">Mengen &amp; Zählen</string>
     <string name="select_mode">Modus wählen</string>
     <string name="mode_complete">Fertig</string>
     <string name="mode_progress">%d%% fertig</string>

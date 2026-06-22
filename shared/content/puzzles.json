@@ -17390,5 +17390,1157 @@
       "fr": "1 et 2 (2), 1 revient (1), 5 et 10 (10), 2 revient (2), 1 et 2 (2) : 2 + 1 + 10 + 2 + 2 = 17 minutes.",
       "de": "1 & 2 (2), 1 zurück (1), 5 & 10 (10), 2 zurück (2), 1 & 2 (2): 2 + 1 + 10 + 2 + 2 = 17 Minuten."
     }
+  },
+  {
+    "id": "lg11_s01",
+    "type": "logic_cipher",
+    "track": "logic",
+    "chapter": 11,
+    "order": 1,
+    "tokens": null,
+    "answer": "5",
+    "inputType": "choices",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "prompt": {
+      "en": "Letters are numbered: A=1, B=2, C=3, D=4 …\nWhat number is the letter E?",
+      "ko": "글자에 번호를 매겨요: A=1, B=2, C=3, D=4 …\n글자 E는 몇 번일까요?",
+      "ja": "文字に番号: A=1, B=2, C=3, D=4 …\n文字 E は何番?",
+      "zh": "字母编号：A=1, B=2, C=3, D=4 …\n字母 E 是几?",
+      "es": "Las letras se numeran: A=1, B=2, C=3, D=4 …\n¿Qué número es la letra E?",
+      "fr": "Les lettres sont numérotées : A=1, B=2, C=3, D=4 …\nQuel nombre est la lettre E ?",
+      "de": "Buchstaben werden nummeriert: A=1, B=2, C=3, D=4 …\nWelche Zahl ist der Buchstabe E?"
+    },
+    "hints": {
+      "en": [
+        "Count along the alphabet.",
+        "A B C D E → 1 2 3 4 5."
+      ],
+      "ko": [
+        "알파벳을 따라 세어요.",
+        "A B C D E → 1 2 3 4 5."
+      ],
+      "ja": [
+        "アルファベット順に数えよう。",
+        "A B C D E → 1 2 3 4 5。"
+      ],
+      "zh": [
+        "按字母顺序数。",
+        "A B C D E → 1 2 3 4 5。"
+      ],
+      "es": [
+        "Cuenta por el abecedario.",
+        "A B C D E → 1 2 3 4 5."
+      ],
+      "fr": [
+        "Compte le long de l'alphabet.",
+        "A B C D E → 1 2 3 4 5."
+      ],
+      "de": [
+        "Zähle das Alphabet entlang.",
+        "A B C D E → 1 2 3 4 5."
+      ]
+    },
+    "explanation": {
+      "en": "E is the 5th letter, so E = 5.",
+      "ko": "E는 다섯 번째 글자라 E = 5.",
+      "ja": "E は5番目の文字なので E = 5。",
+      "zh": "E 是第5个字母，所以 E = 5。",
+      "es": "E es la 5.ª letra, así que E = 5.",
+      "fr": "E est la 5e lettre, donc E = 5.",
+      "de": "E ist der 5. Buchstabe, also E = 5."
+    }
+  },
+  {
+    "id": "lg11_s02",
+    "type": "logic_cipher",
+    "track": "logic",
+    "chapter": 11,
+    "order": 2,
+    "tokens": null,
+    "answer": "BAG",
+    "inputType": "choices",
+    "choices": [
+      "BAG",
+      "CAT",
+      "BED",
+      "BAD"
+    ],
+    "prompt": {
+      "en": "Using A=1, B=2, C=3 … each number is a letter.\nThe code  2-1-7  spells a word.\nWhat is the word?",
+      "ko": "A=1, B=2, C=3 … 각 숫자가 글자예요.\n암호  2-1-7  은 한 단어를 나타내요.\n그 단어는?",
+      "ja": "A=1, B=2, C=3 … 各数字が文字。\n暗号  2-1-7  はある単語を表す。\nその単語は?",
+      "zh": "用 A=1, B=2, C=3 … 每个数字是一个字母。\n密码  2-1-7  拼出一个词。\n是哪个词?",
+      "es": "Con A=1, B=2, C=3 … cada número es una letra.\nEl código  2-1-7  forma una palabra.\n¿Cuál es?",
+      "fr": "Avec A=1, B=2, C=3 … chaque nombre est une lettre.\nLe code  2-1-7  forme un mot.\nLequel ?",
+      "de": "Mit A=1, B=2, C=3 … ist jede Zahl ein Buchstabe.\nDer Code  2-1-7  ergibt ein Wort.\nWelches?"
+    },
+    "hints": {
+      "en": [
+        "Turn each number back into a letter.",
+        "2=B, 1=A, 7=G."
+      ],
+      "ko": [
+        "각 숫자를 글자로 되돌려요.",
+        "2=B, 1=A, 7=G."
+      ],
+      "ja": [
+        "各数字を文字に戻す。",
+        "2=B, 1=A, 7=G。"
+      ],
+      "zh": [
+        "把每个数字变回字母。",
+        "2=B, 1=A, 7=G。"
+      ],
+      "es": [
+        "Convierte cada número en letra.",
+        "2=B, 1=A, 7=G."
+      ],
+      "fr": [
+        "Reconvertis chaque nombre en lettre.",
+        "2=B, 1=A, 7=G."
+      ],
+      "de": [
+        "Wandle jede Zahl in einen Buchstaben.",
+        "2=B, 1=A, 7=G."
+      ]
+    },
+    "explanation": {
+      "en": "2-1-7 = B-A-G, which spells BAG.",
+      "ko": "2-1-7 = B-A-G, 즉 BAG.",
+      "ja": "2-1-7 = B-A-G、つまり BAG。",
+      "zh": "2-1-7 = B-A-G，即 BAG。",
+      "es": "2-1-7 = B-A-G, que es BAG.",
+      "fr": "2-1-7 = B-A-G, soit BAG.",
+      "de": "2-1-7 = B-A-G, also BAG."
+    }
+  },
+  {
+    "id": "lg11_s03",
+    "type": "logic_cipher",
+    "track": "logic",
+    "chapter": 11,
+    "order": 3,
+    "tokens": null,
+    "answer": "CAT",
+    "inputType": "choices",
+    "choices": [
+      "CAT",
+      "DOG",
+      "BAT",
+      "CAR"
+    ],
+    "prompt": {
+      "en": "Each letter is shifted forward by 1 (A→B, B→C, C→D …).\nA secret word becomes  'DBU'.\nWhat was the original word?",
+      "ko": "각 글자를 한 칸 뒤로 밀어요 (A→B, B→C, C→D …).\n어떤 단어가  'DBU'  가 됐어요.\n원래 단어는?",
+      "ja": "各文字を1つ進める (A→B, B→C, C→D …)。\nある単語が  'DBU'  になった。\n元の単語は?",
+      "zh": "每个字母向后移1位 (A→B, B→C, C→D …)。\n某个词变成了  'DBU'。\n原来的词是?",
+      "es": "Cada letra avanza 1 (A→B, B→C, C→D …).\nUna palabra secreta se vuelve  'DBU'.\n¿Cuál era?",
+      "fr": "Chaque lettre avance de 1 (A→B, B→C, C→D …).\nUn mot secret devient  'DBU'.\nQuel était le mot ?",
+      "de": "Jeder Buchstabe rückt 1 vor (A→B, B→C, C→D …).\nEin Wort wird zu  'DBU'.\nWie hieß es?"
+    },
+    "hints": {
+      "en": [
+        "To undo a +1 shift, move each letter back by 1.",
+        "D→C, B→A, U→T."
+      ],
+      "ko": [
+        "+1 밀기를 되돌리려면 한 칸 앞으로.",
+        "D→C, B→A, U→T."
+      ],
+      "ja": [
+        "+1を戻すには1つ前へ。",
+        "D→C, B→A, U→T。"
+      ],
+      "zh": [
+        "要还原+1，每字母前移1位。",
+        "D→C, B→A, U→T。"
+      ],
+      "es": [
+        "Para deshacer +1, retrocede 1 cada letra.",
+        "D→C, B→A, U→T."
+      ],
+      "fr": [
+        "Pour annuler +1, recule chaque lettre de 1.",
+        "D→C, B→A, U→T."
+      ],
+      "de": [
+        "Um +1 rückgängig zu machen, je 1 zurück.",
+        "D→C, B→A, U→T."
+      ]
+    },
+    "explanation": {
+      "en": "Shifting DBU back by 1 gives C-A-T = CAT.",
+      "ko": "DBU를 한 칸 앞으로 되돌리면 C-A-T = CAT.",
+      "ja": "DBU を1つ戻すと C-A-T = CAT。",
+      "zh": "把 DBU 前移1位得 C-A-T = CAT。",
+      "es": "Retroceder DBU en 1 da C-A-T = CAT.",
+      "fr": "Reculer DBU de 1 donne C-A-T = CAT.",
+      "de": "DBU um 1 zurück ergibt C-A-T = CAT."
+    }
+  },
+  {
+    "id": "lg11_s04",
+    "type": "logic_cipher",
+    "track": "logic",
+    "chapter": 11,
+    "order": 4,
+    "tokens": null,
+    "answer": "SUN",
+    "inputType": "choices",
+    "choices": [
+      "SUN",
+      "RAT",
+      "TOP",
+      "SKY"
+    ],
+    "prompt": {
+      "en": "Each letter is shifted back by 1 (B→A, C→B …).\nDecode the secret word  'TVO'.",
+      "ko": "각 글자를 한 칸 앞으로 밀어요 (B→A, C→B …).\n암호 단어  'TVO'  를 풀어보세요.",
+      "ja": "各文字を1つ戻す (B→A, C→B …)。\n暗号の単語  'TVO'  を解こう。",
+      "zh": "每个字母向前移1位 (B→A, C→B …)。\n破译密码词  'TVO'。",
+      "es": "Cada letra retrocede 1 (B→A, C→B …).\nDescifra la palabra  'TVO'.",
+      "fr": "Chaque lettre recule de 1 (B→A, C→B …).\nDécode le mot  'TVO'.",
+      "de": "Jeder Buchstabe rückt 1 zurück (B→A, C→B …).\nEntschlüssle das Wort  'TVO'."
+    },
+    "hints": {
+      "en": [
+        "Move each letter back by 1.",
+        "T→S, V→U, O→N."
+      ],
+      "ko": [
+        "각 글자를 한 칸 앞으로.",
+        "T→S, V→U, O→N."
+      ],
+      "ja": [
+        "各文字を1つ戻す。",
+        "T→S, V→U, O→N。"
+      ],
+      "zh": [
+        "每字母前移1位。",
+        "T→S, V→U, O→N。"
+      ],
+      "es": [
+        "Retrocede cada letra 1.",
+        "T→S, V→U, O→N."
+      ],
+      "fr": [
+        "Recule chaque lettre de 1.",
+        "T→S, V→U, O→N."
+      ],
+      "de": [
+        "Jeden Buchstaben 1 zurück.",
+        "T→S, V→U, O→N."
+      ]
+    },
+    "explanation": {
+      "en": "T-V-O shifted back by 1 = S-U-N = SUN.",
+      "ko": "T-V-O를 한 칸 앞으로 = S-U-N = SUN.",
+      "ja": "T-V-O を1つ戻すと S-U-N = SUN。",
+      "zh": "T-V-O 前移1位 = S-U-N = SUN。",
+      "es": "T-V-O retrocedido 1 = S-U-N = SUN.",
+      "fr": "T-V-O reculé de 1 = S-U-N = SUN.",
+      "de": "T-V-O um 1 zurück = S-U-N = SUN."
+    }
+  },
+  {
+    "id": "lg11_s05",
+    "type": "logic_cipher",
+    "track": "logic",
+    "chapter": 11,
+    "order": 5,
+    "tokens": null,
+    "answer": "213",
+    "inputType": "choices",
+    "choices": [
+      "213",
+      "123",
+      "231",
+      "321"
+    ],
+    "prompt": {
+      "en": "Each shape is a digit:  🔺=1,  ⭐=2,  ⬛=3.\nWhat number does the code  ⭐🔺⬛  stand for?",
+      "ko": "각 도형은 숫자예요:  🔺=1,  ⭐=2,  ⬛=3.\n암호  ⭐🔺⬛  는 어떤 수일까요?",
+      "ja": "各図形は数字:  🔺=1,  ⭐=2,  ⬛=3。\n暗号  ⭐🔺⬛  はどの数?",
+      "zh": "每个图形是一个数字：🔺=1,  ⭐=2,  ⬛=3。\n密码  ⭐🔺⬛  代表哪个数?",
+      "es": "Cada figura es un dígito:  🔺=1,  ⭐=2,  ⬛=3.\n¿Qué número es el código  ⭐🔺⬛?",
+      "fr": "Chaque forme est un chiffre :  🔺=1,  ⭐=2,  ⬛=3.\nQuel nombre est le code  ⭐🔺⬛?",
+      "de": "Jede Form ist eine Ziffer:  🔺=1,  ⭐=2,  ⬛=3.\nWelche Zahl ist der Code  ⭐🔺⬛?"
+    },
+    "hints": {
+      "en": [
+        "Replace each shape with its digit, in order.",
+        "⭐=2, 🔺=1, ⬛=3."
+      ],
+      "ko": [
+        "각 도형을 순서대로 숫자로 바꿔요.",
+        "⭐=2, 🔺=1, ⬛=3."
+      ],
+      "ja": [
+        "各図形を順に数字へ。",
+        "⭐=2, 🔺=1, ⬛=3。"
+      ],
+      "zh": [
+        "按顺序把每个图形换成数字。",
+        "⭐=2, 🔺=1, ⬛=3。"
+      ],
+      "es": [
+        "Sustituye cada figura por su dígito, en orden.",
+        "⭐=2, 🔺=1, ⬛=3."
+      ],
+      "fr": [
+        "Remplace chaque forme par son chiffre, dans l'ordre.",
+        "⭐=2, 🔺=1, ⬛=3."
+      ],
+      "de": [
+        "Ersetze jede Form der Reihe nach durch ihre Ziffer.",
+        "⭐=2, 🔺=1, ⬛=3."
+      ]
+    },
+    "explanation": {
+      "en": "⭐🔺⬛ = 2, 1, 3 → 213.",
+      "ko": "⭐🔺⬛ = 2, 1, 3 → 213.",
+      "ja": "⭐🔺⬛ = 2, 1, 3 → 213。",
+      "zh": "⭐🔺⬛ = 2, 1, 3 → 213。",
+      "es": "⭐🔺⬛ = 2, 1, 3 → 213.",
+      "fr": "⭐🔺⬛ = 2, 1, 3 → 213.",
+      "de": "⭐🔺⬛ = 2, 1, 3 → 213."
+    }
+  },
+  {
+    "id": "lg11_s06",
+    "type": "logic_cipher",
+    "track": "logic",
+    "chapter": 11,
+    "order": 6,
+    "tokens": null,
+    "answer": "L",
+    "inputType": "choices",
+    "choices": [
+      "L",
+      "K",
+      "M",
+      "N"
+    ],
+    "prompt": {
+      "en": "Each letter equals its place in the alphabet (A=1, B=2 …).\nWhich letter equals 12?",
+      "ko": "각 글자는 알파벳에서의 순서예요 (A=1, B=2 …).\n12에 해당하는 글자는?",
+      "ja": "各文字はアルファベットの位置 (A=1, B=2 …)。\n12にあたる文字は?",
+      "zh": "每个字母等于它在字母表的位置 (A=1, B=2 …)。\n等于12的字母是?",
+      "es": "Cada letra es su posición en el abecedario (A=1, B=2 …).\n¿Qué letra es el 12?",
+      "fr": "Chaque lettre vaut sa place dans l'alphabet (A=1, B=2 …).\nQuelle lettre vaut 12 ?",
+      "de": "Jeder Buchstabe ist seine Position im Alphabet (A=1, B=2 …).\nWelcher Buchstabe ist 12?"
+    },
+    "hints": {
+      "en": [
+        "Count 12 letters from A.",
+        "A B C D E F G H I J K L → the 12th is L."
+      ],
+      "ko": [
+        "A부터 12번째까지 세어요.",
+        "A B C D E F G H I J K L → 12번째는 L."
+      ],
+      "ja": [
+        "Aから12番目まで数える。",
+        "A B C D E F G H I J K L → 12番目は L。"
+      ],
+      "zh": [
+        "从A数到第12个。",
+        "A B C D E F G H I J K L → 第12个是 L。"
+      ],
+      "es": [
+        "Cuenta 12 letras desde A.",
+        "A B C D E F G H I J K L → la 12.ª es L."
+      ],
+      "fr": [
+        "Compte 12 lettres depuis A.",
+        "A B C D E F G H I J K L → la 12e est L."
+      ],
+      "de": [
+        "Zähle 12 Buchstaben ab A.",
+        "A B C D E F G H I J K L → der 12. ist L."
+      ]
+    },
+    "explanation": {
+      "en": "Counting to the 12th letter of the alphabet gives L.",
+      "ko": "알파벳에서 12번째 글자는 L.",
+      "ja": "アルファベットの12番目は L。",
+      "zh": "字母表第12个是 L。",
+      "es": "La 12.ª letra del abecedario es L.",
+      "fr": "La 12e lettre de l'alphabet est L.",
+      "de": "Der 12. Buchstabe des Alphabets ist L."
+    }
+  },
+  {
+    "id": "lg12_s01",
+    "type": "logic_weigh",
+    "track": "logic",
+    "chapter": 12,
+    "order": 1,
+    "tokens": null,
+    "answer": "1",
+    "inputType": "choices",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "prompt": {
+      "en": "You have 3 balls; one is slightly heavier.\nUsing a balance scale (two pans), what is the fewest weighings that GUARANTEE finding the heavy one?",
+      "ko": "공 3개가 있고, 하나가 살짝 더 무거워요.\n양팔 저울로 무거운 공을 반드시 찾으려면 최소 몇 번 달아야 할까요?",
+      "ja": "ボールが3個、1つだけ少し重い。\n天秤(2皿)で必ず見つけるには最少で何回量る?",
+      "zh": "有3个球，其中一个略重。\n用天平(两盘)一定能找出来，最少称几次?",
+      "es": "Tienes 3 bolas; una pesa un poco más.\nCon una balanza (dos platos), ¿cuántas pesadas como mínimo GARANTIZAN encontrarla?",
+      "fr": "Tu as 3 boules ; une est un peu plus lourde.\nAvec une balance (deux plateaux), combien de pesées au minimum GARANTISSENT de la trouver ?",
+      "de": "Du hast 3 Kugeln; eine ist etwas schwerer.\nMit einer Waage (zwei Schalen): Wie wenige Wägungen GARANTIEREN den Fund?"
+    },
+    "hints": {
+      "en": [
+        "Put one ball on each pan and leave one aside.",
+        "If the pans balance, the heavy one is the ball left aside."
+      ],
+      "ko": [
+        "양쪽에 하나씩 올리고 하나는 빼놔요.",
+        "균형이면 무거운 건 빼놓은 공이에요."
+      ],
+      "ja": [
+        "両皿に1個ずつ、1個は外す。",
+        "釣り合えば重いのは外したボール。"
+      ],
+      "zh": [
+        "两盘各放一个，留一个在外。",
+        "若平衡，重的就是留在外面的。"
+      ],
+      "es": [
+        "Pon una bola en cada plato y deja una fuera.",
+        "Si se equilibran, la pesada es la que dejaste fuera."
+      ],
+      "fr": [
+        "Mets une boule par plateau, laisse-en une de côté.",
+        "Si ça s'équilibre, la lourde est celle laissée de côté."
+      ],
+      "de": [
+        "Lege je eine Kugel auf eine Schale, eine bleibt weg.",
+        "Bei Gleichgewicht ist die schwere die weggelegte."
+      ]
+    },
+    "explanation": {
+      "en": "Weigh 1 vs 1: if one side drops, that's the heavy ball; if it balances, the third ball is heavy. So just 1 weighing.",
+      "ko": "1 대 1로 달아 한쪽이 내려가면 그게 무거운 공, 균형이면 셋째 공이 무거워요. 그래서 1번이면 충분.",
+      "ja": "1対1で量り、傾けばそれが重い、釣り合えば3個目。だから1回で十分。",
+      "zh": "1对1称：一侧下沉就是它，平衡则第三个重。所以1次足够。",
+      "es": "Pesa 1 contra 1: si baja un lado, esa es; si equilibra, la tercera. Basta 1 pesada.",
+      "fr": "Pèse 1 contre 1 : si un côté descend, c'est elle ; sinon la 3e. Donc 1 pesée.",
+      "de": "Wäge 1 gegen 1: kippt eine Seite, ist es die; sonst die dritte. Also 1 Wägung."
+    }
+  },
+  {
+    "id": "lg12_s02",
+    "type": "logic_weigh",
+    "track": "logic",
+    "chapter": 12,
+    "order": 2,
+    "tokens": null,
+    "answer": "4",
+    "inputType": "choices",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "prompt": {
+      "en": "On a balance scale:\n🍌🍌 weighs the same as 🍎.\n🍎🍎 weighs the same as 🍉.\nHow many 🍌 equal one 🍉?",
+      "ko": "양팔 저울에서:\n🍌🍌는 🍎 하나와 무게가 같아요.\n🍎🍎는 🍉 하나와 무게가 같아요.\n🍌 몇 개가 🍉 하나와 같을까요?",
+      "ja": "天秤で:\n🍌🍌 は 🍎 1個と同じ。\n🍎🍎 は 🍉 1個と同じ。\n🍌 何本が 🍉 1個と同じ?",
+      "zh": "在天平上：\n🍌🍌 和 🍎 一样重。\n🍎🍎 和 🍉 一样重。\n几个 🍌 等于一个 🍉?",
+      "es": "En una balanza:\n🍌🍌 pesa lo mismo que 🍎.\n🍎🍎 pesa lo mismo que 🍉.\n¿Cuántos 🍌 equivalen a un 🍉?",
+      "fr": "Sur une balance :\n🍌🍌 pèse autant que 🍎.\n🍎🍎 pèse autant que 🍉.\nCombien de 🍌 valent un 🍉 ?",
+      "de": "Auf einer Waage:\n🍌🍌 wiegt so viel wie 🍎.\n🍎🍎 wiegt so viel wie 🍉.\nWie viele 🍌 ergeben ein 🍉?"
+    },
+    "hints": {
+      "en": [
+        "One 🍎 = two 🍌.",
+        "🍉 = two 🍎 = two × two 🍌."
+      ],
+      "ko": [
+        "🍎 하나 = 🍌 두 개.",
+        "🍉 = 🍎 두 개 = 2 × 🍌 두 개."
+      ],
+      "ja": [
+        "🍎 1個 = 🍌 2本。",
+        "🍉 = 🍎 2個 = 2 × 🍌 2本。"
+      ],
+      "zh": [
+        "一个 🍎 = 两个 🍌。",
+        "🍉 = 两个 🍎 = 2 × 两个 🍌。"
+      ],
+      "es": [
+        "Un 🍎 = dos 🍌.",
+        "🍉 = dos 🍎 = 2 × dos 🍌."
+      ],
+      "fr": [
+        "Un 🍎 = deux 🍌.",
+        "🍉 = deux 🍎 = 2 × deux 🍌."
+      ],
+      "de": [
+        "Ein 🍎 = zwei 🍌.",
+        "🍉 = zwei 🍎 = 2 × zwei 🍌."
+      ]
+    },
+    "explanation": {
+      "en": "🍎 = 2 🍌, and 🍉 = 2 🍎 = 4 🍌.",
+      "ko": "🍎 = 🍌 2개, 🍉 = 🍎 2개 = 🍌 4개.",
+      "ja": "🍎 = 🍌 2本、🍉 = 🍎 2個 = 🍌 4本。",
+      "zh": "🍎 = 2 个 🍌，🍉 = 2 个 🍎 = 4 个 🍌。",
+      "es": "🍎 = 2 🍌, y 🍉 = 2 🍎 = 4 🍌.",
+      "fr": "🍎 = 2 🍌, et 🍉 = 2 🍎 = 4 🍌.",
+      "de": "🍎 = 2 🍌, und 🍉 = 2 🍎 = 4 🍌."
+    }
+  },
+  {
+    "id": "lg12_s03",
+    "type": "logic_weigh",
+    "track": "logic",
+    "chapter": 12,
+    "order": 3,
+    "tokens": null,
+    "answer": "2",
+    "inputType": "choices",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "prompt": {
+      "en": "You have 8 balls; one is slightly heavier.\nUsing a balance scale, what is the fewest weighings that GUARANTEE finding it?",
+      "ko": "공 8개가 있고, 하나가 살짝 더 무거워요.\n양팔 저울로 반드시 찾으려면 최소 몇 번 달아야 할까요?",
+      "ja": "ボールが8個、1つだけ少し重い。\n天秤で必ず見つけるには最少で何回?",
+      "zh": "有8个球，其中一个略重。\n用天平一定能找出，最少称几次?",
+      "es": "Tienes 8 bolas; una pesa un poco más.\nCon una balanza, ¿cuántas pesadas como mínimo lo GARANTIZAN?",
+      "fr": "Tu as 8 boules ; une est un peu plus lourde.\nAvec une balance, combien de pesées au minimum GARANTISSENT de la trouver ?",
+      "de": "Du hast 8 Kugeln; eine ist etwas schwerer.\nMit einer Waage: Wie wenige Wägungen GARANTIEREN den Fund?"
+    },
+    "hints": {
+      "en": [
+        "Split into three groups (3, 3, 2) and weigh the two 3s.",
+        "That narrows it to a small group; one more weighing finds it."
+      ],
+      "ko": [
+        "세 무더기(3, 3, 2)로 나눠 3과 3을 달아요.",
+        "작은 무더기로 좁혀지고, 한 번 더 달면 찾아요."
+      ],
+      "ja": [
+        "3・3・2に分け、3と3を量る。",
+        "小さい組に絞られ、もう1回で見つかる。"
+      ],
+      "zh": [
+        "分成三组(3,3,2)，称两组3。",
+        "缩小到小组，再称1次即可。"
+      ],
+      "es": [
+        "Divide en grupos (3, 3, 2) y pesa los dos de 3.",
+        "Se reduce a un grupo pequeño; otra pesada lo halla."
+      ],
+      "fr": [
+        "Divise en groupes (3, 3, 2) et pèse les deux de 3.",
+        "On réduit à un petit groupe ; une pesée de plus suffit."
+      ],
+      "de": [
+        "Teile in Gruppen (3, 3, 2) und wäge die zwei Dreier.",
+        "Eingrenzen auf eine kleine Gruppe; eine Wägung mehr findet sie."
+      ]
+    },
+    "explanation": {
+      "en": "Weigh 3 vs 3: the heavier side (or the leftover 2) holds the ball; a second weighing finds it. So 2 weighings.",
+      "ko": "3 대 3을 달아 무거운 쪽(또는 남은 2개)에 공이 있고, 두 번째로 찾아요. 그래서 2번.",
+      "ja": "3対3を量り、重い側(または残り2個)に絞り、2回目で特定。よって2回。",
+      "zh": "3对3称，重的一侧(或剩下2个)含目标，第2次找出。所以2次。",
+      "es": "Pesa 3 vs 3: el lado pesado (o las 2 restantes) la contiene; una 2.ª pesada la halla. Son 2.",
+      "fr": "Pèse 3 contre 3 : le côté lourd (ou les 2 restantes) la contient ; une 2e pesée la trouve. Donc 2.",
+      "de": "Wäge 3 gegen 3: die schwerere Seite (oder die übrigen 2) enthält sie; eine 2. Wägung findet sie. Also 2."
+    }
+  },
+  {
+    "id": "lg12_s04",
+    "type": "logic_weigh",
+    "track": "logic",
+    "chapter": 12,
+    "order": 4,
+    "tokens": null,
+    "answer": "2",
+    "inputType": "choices",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "6"
+    ],
+    "prompt": {
+      "en": "On a balance scale:\n🍎🍎🍎 weighs the same as 🍉.\n🍉 weighs the same as 🍌🍌🍌🍌🍌🍌.\nHow many 🍌 equal one 🍎?",
+      "ko": "양팔 저울에서:\n🍎🍎🍎는 🍉 하나와 같아요.\n🍉은 🍌🍌🍌🍌🍌🍌 여섯 개와 같아요.\n🍌 몇 개가 🍎 하나와 같을까요?",
+      "ja": "天秤で:\n🍎🍎🍎 は 🍉 1個と同じ。\n🍉 は 🍌 6本と同じ。\n🍌 何本が 🍎 1個と同じ?",
+      "zh": "在天平上：\n🍎🍎🍎 和 🍉 一样重。\n🍉 和 6 个 🍌 一样重。\n几个 🍌 等于一个 🍎?",
+      "es": "En una balanza:\n🍎🍎🍎 pesa lo mismo que 🍉.\n🍉 pesa lo mismo que 6 🍌.\n¿Cuántos 🍌 equivalen a un 🍎?",
+      "fr": "Sur une balance :\n🍎🍎🍎 pèse autant que 🍉.\n🍉 pèse autant que 6 🍌.\nCombien de 🍌 valent un 🍎 ?",
+      "de": "Auf einer Waage:\n🍎🍎🍎 wiegt so viel wie 🍉.\n🍉 wiegt so viel wie 6 🍌.\nWie viele 🍌 ergeben ein 🍎?"
+    },
+    "hints": {
+      "en": [
+        "3 🍎 weigh the same as 6 🍌.",
+        "Divide both sides by 3."
+      ],
+      "ko": [
+        "🍎 3개 = 🍌 6개.",
+        "양쪽을 3으로 나눠요."
+      ],
+      "ja": [
+        "🍎 3個 = 🍌 6本。",
+        "両辺を3で割る。"
+      ],
+      "zh": [
+        "3 个 🍎 = 6 个 🍌。",
+        "两边都除以3。"
+      ],
+      "es": [
+        "3 🍎 = 6 🍌.",
+        "Divide ambos lados entre 3."
+      ],
+      "fr": [
+        "3 🍎 = 6 🍌.",
+        "Divise les deux côtés par 3."
+      ],
+      "de": [
+        "3 🍎 = 6 🍌.",
+        "Teile beide Seiten durch 3."
+      ]
+    },
+    "explanation": {
+      "en": "3 🍎 = 🍉 = 6 🍌, so 1 🍎 = 2 🍌.",
+      "ko": "3 🍎 = 🍉 = 6 🍌, 따라서 🍎 1개 = 🍌 2개.",
+      "ja": "3 🍎 = 🍉 = 6 🍌、よって 🍎 1個 = 🍌 2本。",
+      "zh": "3 个 🍎 = 🍉 = 6 个 🍌，所以 1 个 🍎 = 2 个 🍌。",
+      "es": "3 🍎 = 🍉 = 6 🍌, así que 1 🍎 = 2 🍌.",
+      "fr": "3 🍎 = 🍉 = 6 🍌, donc 1 🍎 = 2 🍌.",
+      "de": "3 🍎 = 🍉 = 6 🍌, also 1 🍎 = 2 🍌."
+    }
+  },
+  {
+    "id": "lg12_s05",
+    "type": "logic_weigh",
+    "track": "logic",
+    "chapter": 12,
+    "order": 5,
+    "tokens": null,
+    "answer": "3",
+    "inputType": "choices",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "prompt": {
+      "en": "You have 12 coins; one is fake and a different weight (you don't know if heavier or lighter).\nUsing a balance scale, what is the fewest weighings that GUARANTEE finding the fake?",
+      "ko": "동전 12개가 있고, 하나가 가짜로 무게가 달라요(더 무거운지 가벼운지는 몰라요).\n양팔 저울로 반드시 찾으려면 최소 몇 번 달아야 할까요?",
+      "ja": "コイン12枚、1枚が偽物で重さが違う(重いか軽いか不明)。\n天秤で必ず見つけるには最少で何回?",
+      "zh": "有12枚硬币，一枚是假的、重量不同(不知更重还是更轻)。\n用天平一定能找出，最少称几次?",
+      "es": "Tienes 12 monedas; una es falsa y pesa distinto (no sabes si más o menos).\nCon una balanza, ¿cuántas pesadas como mínimo lo GARANTIZAN?",
+      "fr": "Tu as 12 pièces ; une est fausse et d'un poids différent (sans savoir plus ou moins).\nAvec une balance, combien de pesées au minimum GARANTISSENT de la trouver ?",
+      "de": "Du hast 12 Münzen; eine ist falsch und anders schwer (ob schwerer oder leichter, unbekannt).\nMit einer Waage: Wie wenige Wägungen GARANTIEREN den Fund?"
+    },
+    "hints": {
+      "en": [
+        "Each weighing has 3 outcomes (left, right, balanced).",
+        "This is the classic 12-coin puzzle — it needs 3 weighings."
+      ],
+      "ko": [
+        "한 번 달면 결과가 3가지(왼·오·균형).",
+        "유명한 동전 12개 문제 — 3번이 필요해요."
+      ],
+      "ja": [
+        "1回の計量で結果は3通り(左・右・釣合)。",
+        "有名な12枚コイン問題 — 3回必要。"
+      ],
+      "zh": [
+        "每次称有3种结果(左、右、平衡)。",
+        "经典12硬币问题——需要3次。"
+      ],
+      "es": [
+        "Cada pesada da 3 resultados (izq., der., equilibrio).",
+        "Es el clásico de 12 monedas: hacen falta 3 pesadas."
+      ],
+      "fr": [
+        "Chaque pesée a 3 issues (gauche, droite, équilibre).",
+        "C'est le classique des 12 pièces : il faut 3 pesées."
+      ],
+      "de": [
+        "Jede Wägung hat 3 Ausgänge (links, rechts, gleich).",
+        "Das klassische 12-Münzen-Rätsel — es braucht 3 Wägungen."
+      ]
+    },
+    "explanation": {
+      "en": "Because the fake could be heavier OR lighter among 12 coins, you need 3 weighings to be certain.",
+      "ko": "12개 중 가짜가 무거울 수도 가벼울 수도 있어 확실히 하려면 3번 달아야 해요.",
+      "ja": "12枚で偽物が重いか軽いか不明なため、確実には3回必要。",
+      "zh": "12枚中假币可能更重或更轻，要确定需称3次。",
+      "es": "Como la falsa puede ser más o menos pesada entre 12, hacen falta 3 pesadas.",
+      "fr": "La fausse pouvant être plus lourde ou plus légère parmi 12, il faut 3 pesées.",
+      "de": "Da die Falsche unter 12 schwerer oder leichter sein kann, braucht es 3 Wägungen."
+    }
+  },
+  {
+    "id": "lg12_s06",
+    "type": "logic_weigh",
+    "track": "logic",
+    "chapter": 12,
+    "order": 6,
+    "tokens": null,
+    "answer": "1",
+    "inputType": "choices",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "prompt": {
+      "en": "There are 3 bags of coins. In ONE bag, every coin is fake and weighs 1 g too little.\nYou may use a digital scale (which shows exact grams) only as few times as possible.\nWhat is the fewest weighings to find the fake bag?",
+      "ko": "동전 자루가 3개 있어요. 그중 한 자루는 동전 전부가 가짜라 1 g씩 가벼워요.\n정확한 g을 보여주는 전자저울을 최소로 써서,\n가짜 자루를 찾는 최소 횟수는?",
+      "ja": "コインの袋が3つ。1つの袋はすべて偽物で1gずつ軽い。\n正確なグラムを表示するデジタル秤を使う最少回数で、\n偽物の袋を見つける最少回数は?",
+      "zh": "有3袋硬币。其中一袋全是假币、每枚轻1克。\n用能显示精确克数的电子秤，尽量少用，\n找出假袋最少称几次?",
+      "es": "Hay 3 bolsas de monedas. En UNA, todas son falsas y pesan 1 g menos.\nCon una báscula digital (muestra los gramos exactos) usándola lo menos posible,\n¿cuántas pesadas como mínimo para hallar la bolsa falsa?",
+      "fr": "Il y a 3 sacs de pièces. Dans UN sac, toutes sont fausses et pèsent 1 g de moins.\nAvec une balance numérique (grammes exacts) utilisée le moins possible,\ncombien de pesées au minimum pour trouver le sac ?",
+      "de": "Es gibt 3 Münzbeutel. In EINEM sind alle falsch und wiegen 1 g zu wenig.\nMit einer Digitalwaage (zeigt exakte Gramm) so selten wie möglich:\nWie wenige Wägungen, um den falschen Beutel zu finden?"
+    },
+    "hints": {
+      "en": [
+        "A digital scale shows an exact number — give each bag a different count.",
+        "Take 1 coin from bag 1, 2 from bag 2, 3 from bag 3, and weigh them together once."
+      ],
+      "ko": [
+        "전자저울은 정확한 수치를 보여줘요 — 자루마다 다른 개수를 꺼내요.",
+        "1번에서 1개, 2번에서 2개, 3번에서 3개를 꺼내 한 번에 달아요."
+      ],
+      "ja": [
+        "デジタル秤は正確な数値 — 袋ごとに違う枚数を取る。",
+        "袋1から1枚、袋2から2枚、袋3から3枚を取り、まとめて1回量る。"
+      ],
+      "zh": [
+        "电子秤显示精确数值——每袋取不同数量。",
+        "从1袋取1枚、2袋取2枚、3袋取3枚，一起称1次。"
+      ],
+      "es": [
+        "La báscula muestra un número exacto — saca distinta cantidad de cada bolsa.",
+        "Saca 1 de la bolsa 1, 2 de la 2, 3 de la 3, y pésalas juntas una vez."
+      ],
+      "fr": [
+        "La balance affiche un nombre exact — prends une quantité différente par sac.",
+        "Prends 1 du sac 1, 2 du 2, 3 du 3, et pèse-les ensemble une fois."
+      ],
+      "de": [
+        "Die Digitalwaage zeigt eine exakte Zahl — nimm aus jedem Beutel anders viele.",
+        "Nimm 1 aus Beutel 1, 2 aus 2, 3 aus 3 und wäge alle zusammen einmal."
+      ]
+    },
+    "explanation": {
+      "en": "Take 1, 2, 3 coins from bags 1, 2, 3 and weigh together. The missing grams (1, 2, or 3) tells you the fake bag — just 1 weighing.",
+      "ko": "1·2·3번 자루에서 1·2·3개를 꺼내 함께 달면, 모자란 g(1·2·3)이 가짜 자루를 알려줘요 — 1번이면 충분.",
+      "ja": "袋1・2・3から1・2・3枚取り一緒に量ると、不足のg(1・2・3)が偽袋を示す — 1回で十分。",
+      "zh": "从1·2·3袋取1·2·3枚一起称，缺的克数(1·2·3)即指出假袋——1次足够。",
+      "es": "Saca 1, 2, 3 de las bolsas y pésalas: los gramos que faltan (1, 2 o 3) indican la bolsa. Basta 1 pesada.",
+      "fr": "Prends 1, 2, 3 pièces et pèse-les : les grammes manquants (1, 2 ou 3) désignent le sac. 1 pesée suffit.",
+      "de": "Nimm 1, 2, 3 Münzen und wäge: die fehlenden Gramm (1, 2 oder 3) verraten den Beutel. 1 Wägung reicht."
+    }
+  },
+  {
+    "id": "lg13_s01",
+    "type": "logic_sets",
+    "track": "logic",
+    "chapter": 13,
+    "order": 1,
+    "tokens": null,
+    "answer": "15",
+    "inputType": "choices",
+    "choices": [
+      "13",
+      "15",
+      "20",
+      "5"
+    ],
+    "prompt": {
+      "en": "In a class, 12 kids like 🍎 and 8 kids like 🍌.\n5 kids like BOTH.\nHow many kids like at least one of them?",
+      "ko": "한 반에서 🍎를 좋아하는 아이가 12명, 🍌를 좋아하는 아이가 8명이에요.\n둘 다 좋아하는 아이는 5명이에요.\n둘 중 하나라도 좋아하는 아이는 몇 명일까요?",
+      "ja": "クラスで 🍎 が好きな子が12人、🍌 が好きな子が8人。\n両方好きな子は5人。\nどちらか一方でも好きな子は何人?",
+      "zh": "班里 12 个孩子喜欢 🍎，8 个喜欢 🍌。\n两者都喜欢的有 5 个。\n至少喜欢其中一个的有几个?",
+      "es": "En una clase, 12 niños gustan de 🍎 y 8 de 🍌.\n5 gustan de AMBOS.\n¿Cuántos gustan de al menos uno?",
+      "fr": "Dans une classe, 12 enfants aiment 🍎 et 8 aiment 🍌.\n5 aiment les DEUX.\nCombien en aiment au moins un ?",
+      "de": "In einer Klasse mögen 12 Kinder 🍎 und 8 mögen 🍌.\n5 mögen BEIDE.\nWie viele mögen mindestens eines?"
+    },
+    "hints": {
+      "en": [
+        "Adding 12 + 8 counts the 5 'both' kids twice.",
+        "Subtract the overlap once: 12 + 8 − 5."
+      ],
+      "ko": [
+        "12 + 8을 하면 '둘 다' 5명을 두 번 세요.",
+        "겹친 5명을 한 번 빼요: 12 + 8 − 5."
+      ],
+      "ja": [
+        "12 + 8 だと『両方』の5人を二重に数える。",
+        "重なりを1回引く: 12 + 8 − 5。"
+      ],
+      "zh": [
+        "12 + 8 把『都喜欢』的5人算了两遍。",
+        "减去重叠一次：12 + 8 − 5。"
+      ],
+      "es": [
+        "Sumar 12 + 8 cuenta a los 5 'ambos' dos veces.",
+        "Resta el solape una vez: 12 + 8 − 5."
+      ],
+      "fr": [
+        "12 + 8 compte les 5 « deux » en double.",
+        "Retire le chevauchement une fois : 12 + 8 − 5."
+      ],
+      "de": [
+        "12 + 8 zählt die 5 'beide' doppelt.",
+        "Ziehe die Überschneidung einmal ab: 12 + 8 − 5."
+      ]
+    },
+    "explanation": {
+      "en": "Add and remove the double-counted overlap: 12 + 8 − 5 = 15.",
+      "ko": "더하고 중복을 빼요: 12 + 8 − 5 = 15.",
+      "ja": "足して重複を引く: 12 + 8 − 5 = 15。",
+      "zh": "相加再减去重叠：12 + 8 − 5 = 15。",
+      "es": "Suma y quita el solape: 12 + 8 − 5 = 15.",
+      "fr": "Additionne et retire le chevauchement : 12 + 8 − 5 = 15.",
+      "de": "Addieren und Überschneidung abziehen: 12 + 8 − 5 = 15."
+    }
+  },
+  {
+    "id": "lg13_s02",
+    "type": "logic_count",
+    "track": "logic",
+    "chapter": 13,
+    "order": 2,
+    "tokens": null,
+    "answer": "6",
+    "inputType": "choices",
+    "choices": [
+      "5",
+      "6",
+      "8",
+      "9"
+    ],
+    "prompt": {
+      "en": "You have 3 different shirts and 2 different pairs of pants.\nAn outfit is one shirt with one pair of pants.\nHow many different outfits can you make?",
+      "ko": "서로 다른 셔츠 3벌과 서로 다른 바지 2벌이 있어요.\n한 벌 = 셔츠 하나 + 바지 하나예요.\n서로 다른 옷차림을 몇 가지 만들 수 있을까요?",
+      "ja": "違うシャツ3枚と違うズボン2本がある。\nコーデ = シャツ1枚 + ズボン1本。\n違うコーデは何通り?",
+      "zh": "你有3件不同的上衣和2条不同的裤子。\n一套 = 一件上衣 + 一条裤子。\n能搭出几种不同的套装?",
+      "es": "Tienes 3 camisas distintas y 2 pantalones distintos.\nUn conjunto es una camisa con un pantalón.\n¿Cuántos conjuntos distintos puedes hacer?",
+      "fr": "Tu as 3 chemises différentes et 2 pantalons différents.\nUne tenue = une chemise + un pantalon.\nCombien de tenues différentes ?",
+      "de": "Du hast 3 verschiedene Hemden und 2 verschiedene Hosen.\nEin Outfit = ein Hemd + eine Hose.\nWie viele verschiedene Outfits?"
+    },
+    "hints": {
+      "en": [
+        "Each shirt can pair with each pair of pants.",
+        "3 shirts × 2 pants."
+      ],
+      "ko": [
+        "셔츠마다 바지 두 벌과 짝지을 수 있어요.",
+        "셔츠 3 × 바지 2."
+      ],
+      "ja": [
+        "各シャツはどのズボンとも組める。",
+        "シャツ3 × ズボン2。"
+      ],
+      "zh": [
+        "每件上衣都能配每条裤子。",
+        "上衣3 × 裤子2。"
+      ],
+      "es": [
+        "Cada camisa va con cada pantalón.",
+        "3 camisas × 2 pantalones."
+      ],
+      "fr": [
+        "Chaque chemise va avec chaque pantalon.",
+        "3 chemises × 2 pantalons."
+      ],
+      "de": [
+        "Jedes Hemd passt zu jeder Hose.",
+        "3 Hemden × 2 Hosen."
+      ]
+    },
+    "explanation": {
+      "en": "Each of the 3 shirts pairs with 2 pants: 3 × 2 = 6 outfits.",
+      "ko": "셔츠 3벌 각각 바지 2벌과: 3 × 2 = 6가지.",
+      "ja": "シャツ3枚 × ズボン2本: 3 × 2 = 6通り。",
+      "zh": "3 件上衣各配2条裤子：3 × 2 = 6 套。",
+      "es": "Cada camisa con 2 pantalones: 3 × 2 = 6 conjuntos.",
+      "fr": "Chaque chemise avec 2 pantalons : 3 × 2 = 6 tenues.",
+      "de": "Jedes Hemd mit 2 Hosen: 3 × 2 = 6 Outfits."
+    }
+  },
+  {
+    "id": "lg13_s03",
+    "type": "logic_count",
+    "track": "logic",
+    "chapter": 13,
+    "order": 3,
+    "tokens": null,
+    "answer": "3",
+    "inputType": "choices",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "prompt": {
+      "en": "A drawer has red and blue socks mixed together, in the dark.\nYou grab socks without looking.\nHow many must you grab to be SURE you have a matching pair?",
+      "ko": "어두운 서랍에 빨강·파랑 양말이 섞여 있어요.\n보지 않고 양말을 집어요.\n같은 색 한 켤레를 반드시 만들려면 최소 몇 짝을 집어야 할까요?",
+      "ja": "暗い引き出しに赤と青の靴下が混ざっている。\n見ずに取る。\n同じ色のペアを確実に作るには最少で何枚取る?",
+      "zh": "黑暗中抽屉里红蓝袜子混在一起。\n你不看就抓。\n要确保有一双同色，最少抓几只?",
+      "es": "Un cajón tiene calcetines rojos y azules mezclados, a oscuras.\nCoges sin mirar.\n¿Cuántos debes coger para ASEGURAR un par igual?",
+      "fr": "Un tiroir a des chaussettes rouges et bleues mélangées, dans le noir.\nTu en prends sans regarder.\nCombien faut-il en prendre pour être SÛR d'avoir une paire ?",
+      "de": "Eine Schublade hat rote und blaue Socken gemischt, im Dunkeln.\nDu greifst ohne hinzusehen.\nWie viele musst du greifen, um SICHER ein Paar zu haben?"
+    },
+    "hints": {
+      "en": [
+        "Imagine the unluckiest grab.",
+        "With 2 colors, the first two could differ; the third must match one."
+      ],
+      "ko": [
+        "가장 운 나쁜 경우를 상상해요.",
+        "색이 2가지라 처음 둘은 다를 수 있지만, 셋째는 반드시 짝이 돼요."
+      ],
+      "ja": [
+        "一番運の悪い場合を想像。",
+        "色2種なので最初の2枚は違っても、3枚目で必ず揃う。"
+      ],
+      "zh": [
+        "想象最倒霉的情况。",
+        "只有2种颜色，前2只可能不同，第3只必成对。"
+      ],
+      "es": [
+        "Imagina el peor caso.",
+        "Con 2 colores, los 2 primeros pueden diferir; el 3.º empareja."
+      ],
+      "fr": [
+        "Imagine le pire cas.",
+        "Avec 2 couleurs, les 2 premières peuvent différer ; la 3e fait la paire."
+      ],
+      "de": [
+        "Stell dir den schlimmsten Fall vor.",
+        "Bei 2 Farben können die ersten 2 verschieden sein; die 3. passt."
+      ]
+    },
+    "explanation": {
+      "en": "With only 2 colors, the worst case is one of each in the first 2 grabs; the 3rd sock must match one. So 3.",
+      "ko": "색이 2가지뿐이라 최악은 처음 2짝이 서로 다른 경우; 3번째는 반드시 짝이 돼요. 그래서 3.",
+      "ja": "色は2種だけ、最悪でも最初の2枚が別色;3枚目で必ず揃う。よって3。",
+      "zh": "只有2色，最坏前2只各一色，第3只必配对。所以3。",
+      "es": "Con 2 colores, lo peor es uno de cada en los 2 primeros; el 3.º empareja. Son 3.",
+      "fr": "Avec 2 couleurs, au pire un de chaque sur les 2 premières ; la 3e fait la paire. Donc 3.",
+      "de": "Bei 2 Farben sind im schlimmsten Fall die ersten 2 verschieden; die 3. passt. Also 3."
+    }
+  },
+  {
+    "id": "lg13_s04",
+    "type": "logic_count",
+    "track": "logic",
+    "chapter": 13,
+    "order": 4,
+    "tokens": null,
+    "answer": "12",
+    "inputType": "choices",
+    "choices": [
+      "11",
+      "12",
+      "13",
+      "20"
+    ],
+    "prompt": {
+      "en": "Write out all the numbers from 1 to 20.\nHow many times does the digit 1 appear in total?",
+      "ko": "1부터 20까지 모든 수를 적어요.\n숫자 1은 모두 몇 번 나올까요?",
+      "ja": "1から20までの数を全部書く。\n数字の1は全部で何回出る?",
+      "zh": "写出从1到20的所有数。\n数字1一共出现几次?",
+      "es": "Escribe todos los números del 1 al 20.\n¿Cuántas veces aparece el dígito 1 en total?",
+      "fr": "Écris tous les nombres de 1 à 20.\nCombien de fois le chiffre 1 apparaît-il en tout ?",
+      "de": "Schreibe alle Zahlen von 1 bis 20.\nWie oft erscheint die Ziffer 1 insgesamt?"
+    },
+    "hints": {
+      "en": [
+        "Don't forget 11 has the digit 1 twice.",
+        "1, then 10–19 (ten more, plus an extra in 11), plus none in 20."
+      ],
+      "ko": [
+        "11에는 1이 두 번 들어가는 걸 잊지 마세요.",
+        "1, 그리고 10~19(열 번 + 11에서 하나 더), 20엔 없음."
+      ],
+      "ja": [
+        "11は1が2回入るのを忘れずに。",
+        "1、そして10〜19(10回 + 11でもう1回)、20は無し。"
+      ],
+      "zh": [
+        "别忘了11里有两个1。",
+        "1，再10~19(十次 + 11多一次)，20没有。"
+      ],
+      "es": [
+        "No olvides que 11 tiene el 1 dos veces.",
+        "1, luego 10–19 (diez más, y uno extra en 11), 20 ninguno."
+      ],
+      "fr": [
+        "N'oublie pas que 11 a deux fois le 1.",
+        "1, puis 10–19 (dix de plus, +1 dans 11), 20 aucun."
+      ],
+      "de": [
+        "Vergiss nicht: 11 hat die 1 zweimal.",
+        "1, dann 10–19 (zehn mehr, plus eine extra in 11), 20 keine."
+      ]
+    },
+    "explanation": {
+      "en": "The digit 1 appears in 1, 10, 11(×2), 12, 13, 14, 15, 16, 17, 18, 19 → 1 + 11 = 12 times.",
+      "ko": "1은 1, 10, 11(2번), 12~19에 나와요 → 1 + 11 = 12번.",
+      "ja": "1は 1, 10, 11(2回), 12〜19 に出る → 1 + 11 = 12回。",
+      "zh": "1出现在 1, 10, 11(两次), 12~19 → 1 + 11 = 12 次。",
+      "es": "El 1 aparece en 1, 10, 11(×2), 12–19 → 1 + 11 = 12 veces.",
+      "fr": "Le 1 apparaît dans 1, 10, 11(×2), 12–19 → 1 + 11 = 12 fois.",
+      "de": "Die 1 erscheint in 1, 10, 11(×2), 12–19 → 1 + 11 = 12 Mal."
+    }
+  },
+  {
+    "id": "lg13_s05",
+    "type": "logic_sets",
+    "track": "logic",
+    "chapter": 13,
+    "order": 5,
+    "tokens": null,
+    "answer": "4",
+    "inputType": "choices",
+    "choices": [
+      "4",
+      "5",
+      "7",
+      "11"
+    ],
+    "prompt": {
+      "en": "In a group of 30 kids, 18 play ⚽ and 15 play 🏀.\n7 kids play BOTH.\nHow many kids play NEITHER?",
+      "ko": "30명 중 ⚽를 하는 아이가 18명, 🏀를 하는 아이가 15명이에요.\n둘 다 하는 아이는 7명이에요.\n둘 다 안 하는 아이는 몇 명일까요?",
+      "ja": "30人のうち ⚽ をする子が18人、🏀 をする子が15人。\n両方する子は7人。\nどちらもしない子は何人?",
+      "zh": "30 个孩子里，18 个踢 ⚽，15 个打 🏀。\n两样都玩的有 7 个。\n两样都不玩的有几个?",
+      "es": "De 30 niños, 18 juegan ⚽ y 15 juegan 🏀.\n7 juegan AMBOS.\n¿Cuántos no juegan NINGUNO?",
+      "fr": "Sur 30 enfants, 18 jouent au ⚽ et 15 au 🏀.\n7 jouent aux DEUX.\nCombien n'en jouent AUCUN ?",
+      "de": "Von 30 Kindern spielen 18 ⚽ und 15 🏀.\n7 spielen BEIDES.\nWie viele spielen KEINES?"
+    },
+    "hints": {
+      "en": [
+        "First find how many play at least one: 18 + 15 − 7.",
+        "Then subtract that from 30."
+      ],
+      "ko": [
+        "먼저 하나라도 하는 수: 18 + 15 − 7.",
+        "그걸 30에서 빼요."
+      ],
+      "ja": [
+        "まず少なくとも一方をする数: 18 + 15 − 7。",
+        "それを30から引く。"
+      ],
+      "zh": [
+        "先求至少玩一种：18 + 15 − 7。",
+        "再用30减去它。"
+      ],
+      "es": [
+        "Primero los que juegan al menos uno: 18 + 15 − 7.",
+        "Réstalo de 30."
+      ],
+      "fr": [
+        "D'abord ceux qui jouent au moins un : 18 + 15 − 7.",
+        "Soustrais-le de 30."
+      ],
+      "de": [
+        "Erst die, die mindestens eines spielen: 18 + 15 − 7.",
+        "Ziehe das von 30 ab."
+      ]
+    },
+    "explanation": {
+      "en": "At least one = 18 + 15 − 7 = 26. Neither = 30 − 26 = 4.",
+      "ko": "하나라도 = 18 + 15 − 7 = 26. 둘 다 안 함 = 30 − 26 = 4.",
+      "ja": "少なくとも一方 = 18 + 15 − 7 = 26。どちらもなし = 30 − 26 = 4。",
+      "zh": "至少一种 = 18 + 15 − 7 = 26。都不玩 = 30 − 26 = 4。",
+      "es": "Al menos uno = 18 + 15 − 7 = 26. Ninguno = 30 − 26 = 4.",
+      "fr": "Au moins un = 18 + 15 − 7 = 26. Aucun = 30 − 26 = 4.",
+      "de": "Mindestens eines = 18 + 15 − 7 = 26. Keines = 30 − 26 = 4."
+    }
+  },
+  {
+    "id": "lg13_s06",
+    "type": "logic_count",
+    "track": "logic",
+    "chapter": 13,
+    "order": 6,
+    "tokens": null,
+    "answer": "13",
+    "inputType": "choices",
+    "choices": [
+      "12",
+      "13",
+      "24",
+      "2"
+    ],
+    "prompt": {
+      "en": "Everyone's birthday falls in one of the 12 months.\nAt least how many people do you need to be SURE that two of them share a birth month?",
+      "ko": "사람들의 생일은 모두 12달 중 하나에 들어요.\n그중 두 명이 같은 달 생일임을 반드시 보장하려면 최소 몇 명이 필요할까요?",
+      "ja": "誕生日は12か月のいずれか。\n2人が同じ誕生月だと必ず言えるには最少で何人必要?",
+      "zh": "每个人的生日都在12个月之一。\n要确保至少有两人同月生，最少需要多少人?",
+      "es": "El cumpleaños de cada uno cae en uno de los 12 meses.\n¿Cuántas personas como mínimo para ASEGURAR que dos comparten mes?",
+      "fr": "L'anniversaire de chacun tombe dans l'un des 12 mois.\nCombien de personnes au minimum pour être SÛR que deux partagent un mois ?",
+      "de": "Jeder Geburtstag fällt in einen der 12 Monate.\nWie viele Personen mindestens, um SICHER zu sein, dass zwei denselben Monat haben?"
+    },
+    "hints": {
+      "en": [
+        "Imagine the unluckiest case: everyone in a different month.",
+        "12 people could all differ; the 13th must repeat a month."
+      ],
+      "ko": [
+        "최악의 경우: 모두 다른 달.",
+        "12명까진 모두 다를 수 있지만, 13번째는 반드시 겹쳐요."
+      ],
+      "ja": [
+        "最悪の場合: 全員別の月。",
+        "12人までは全員違えても、13人目で必ず重なる。"
+      ],
+      "zh": [
+        "最坏情况：每人不同月。",
+        "12人可全不同，第13人必重复。"
+      ],
+      "es": [
+        "Peor caso: todos en meses distintos.",
+        "12 pueden diferir; el 13.º repite mes."
+      ],
+      "fr": [
+        "Pire cas : tous des mois différents.",
+        "12 peuvent différer ; le 13e répète un mois."
+      ],
+      "de": [
+        "Schlimmster Fall: alle in verschiedenen Monaten.",
+        "12 können verschieden sein; der 13. wiederholt einen Monat."
+      ]
+    },
+    "explanation": {
+      "en": "With 12 months, 12 people could each have a different month, but the 13th must share one. So 13.",
+      "ko": "12달이라 12명까진 다 다를 수 있지만, 13번째는 반드시 같은 달이 돼요. 그래서 13.",
+      "ja": "12か月なので12人までは全員別月でも、13人目で必ず重なる。よって13。",
+      "zh": "12个月，12人可各不同月，但第13人必同月。所以13。",
+      "es": "Con 12 meses, 12 pueden diferir, pero el 13.º coincide. Son 13.",
+      "fr": "Avec 12 mois, 12 peuvent différer, mais le 13e coïncide. Donc 13.",
+      "de": "Bei 12 Monaten können 12 verschieden sein, der 13. teilt einen. Also 13."
+    }
   }
 ]

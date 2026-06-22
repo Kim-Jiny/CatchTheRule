@@ -50,6 +50,9 @@
     <string name="logic_chapter_8">Number Riddles</string>
     <string name="logic_chapter_9">Brain Teasers</string>
     <string name="logic_chapter_10">River Crossing</string>
+    <string name="logic_chapter_11">Codes &amp; Ciphers</string>
+    <string name="logic_chapter_12">Balance &amp; Weighing</string>
+    <string name="logic_chapter_13">Sets &amp; Counting</string>
     <string name="select_mode">Select a Mode</string>
     <string name="mode_complete">Complete</string>
     <string name="mode_progress">%d%% done</string>

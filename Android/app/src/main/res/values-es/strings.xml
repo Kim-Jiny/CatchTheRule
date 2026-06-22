@@ -50,6 +50,9 @@
     <string name="logic_chapter_8">Acertijos numéricos</string>
     <string name="logic_chapter_9">Adivinanzas</string>
     <string name="logic_chapter_10">Cruzar el río</string>
+    <string name="logic_chapter_11">Códigos y claves</string>
+    <string name="logic_chapter_12">Balanza y peso</string>
+    <string name="logic_chapter_13">Conjuntos y conteo</string>
     <string name="select_mode">Elige un modo</string>
     <string name="mode_complete">Completado</string>
     <string name="mode_progress">%d%% hecho</string>

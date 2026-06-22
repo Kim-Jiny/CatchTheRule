@@ -423,6 +423,9 @@ struct CampaignTrackView: View {
             case 8: return String.loc("logic_chapter_8")
             case 9: return String.loc("logic_chapter_9")
             case 10: return String.loc("logic_chapter_10")
+            case 11: return String.loc("logic_chapter_11")
+            case 12: return String.loc("logic_chapter_12")
+            case 13: return String.loc("logic_chapter_13")
             default: return String.loc("chapter_label", chapter)
             }
         }
