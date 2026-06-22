@@ -6752,31 +6752,31 @@
     },
     "hints": {
       "en": [
-        "Sort them into a group and a leftover.",
+        "What do three of them share that the fourth doesn't?",
         "Three are fruits; one is a vegetable."
       ],
       "ko": [
-        "공통점으로 묶고 남는 하나를 찾으세요.",
+        "넷 중 셋이 공통으로 가진 것을 하나만 안 가졌어요. 그게 뭘까요?",
         "셋은 과일, 하나는 채소예요."
       ],
       "ja": [
-        "共通点でまとめ、余る1つを探そう。",
+        "3つが共通でもち、1つだけ持たないものは?",
         "3つは果物、1つは野菜。"
       ],
       "zh": [
-        "按共同点分组，找出剩下的。",
+        "三个有什么共同点，而第四个没有?",
         "三个是水果，一个是蔬菜。"
       ],
       "es": [
-        "Agrúpalos y busca el que sobra.",
+        "¿Qué comparten tres de ellos que el cuarto no?",
         "Tres son frutas; uno es verdura."
       ],
       "fr": [
-        "Regroupe-les et trouve l'intrus.",
+        "Qu'ont trois d'entre eux en commun que le quatrième n'a pas ?",
         "Trois sont des fruits ; un est un légume."
       ],
       "de": [
-        "Gruppiere sie und finde den Ausreißer.",
+        "Was haben drei gemeinsam, das der vierte nicht hat?",
         "Drei sind Obst; eines ist Gemüse."
       ]
     },
@@ -7584,32 +7584,32 @@
     },
     "hints": {
       "en": [
-        "The grid rows are 1 2 3 / 4 5 6 / 7 8 9.",
-        "Look at the cell right under 2 in the middle row."
+        "Each number is 3 more than the one directly above it (1→4→7).",
+        "So the number directly below 2 is 2 + 3."
       ],
       "ko": [
-        "격자 줄은 1 2 3 / 4 5 6 / 7 8 9.",
-        "가운데 줄에서 2 바로 아래 칸을 보세요."
+        "각 칸의 수는 바로 위 칸보다 3 커요 (1→4→7).",
+        "그래서 2 바로 아래 칸은 2 + 3."
       ],
       "ja": [
-        "格子の行は 1 2 3 / 4 5 6 / 7 8 9。",
-        "真ん中の行で2の真下のマスを見て。"
+        "各マスの数は真上より3大きい (1→4→7)。",
+        "だから2の真下は 2 + 3。"
       ],
       "zh": [
-        "格子各行是 1 2 3 / 4 5 6 / 7 8 9。",
-        "看中间行里2正下方的格子。"
+        "每个数比正上方的大3 (1→4→7)。",
+        "所以2正下方是 2 + 3。"
       ],
       "es": [
-        "Las filas son 1 2 3 / 4 5 6 / 7 8 9.",
-        "Mira la celda justo bajo el 2."
+        "Cada número es 3 más que el de arriba (1→4→7).",
+        "Así, el de debajo del 2 es 2 + 3."
       ],
       "fr": [
-        "Les lignes sont 1 2 3 / 4 5 6 / 7 8 9.",
-        "Regarde la case juste sous le 2."
+        "Chaque nombre vaut 3 de plus que celui du dessus (1→4→7).",
+        "Donc juste sous le 2, c'est 2 + 3."
       ],
       "de": [
-        "Die Reihen sind 1 2 3 / 4 5 6 / 7 8 9.",
-        "Schau die Zelle direkt unter der 2 an."
+        "Jede Zahl ist 3 größer als die direkt darüber (1→4→7).",
+        "Also ist direkt unter der 2: 2 + 3."
       ]
     },
     "explanation": {
@@ -8608,32 +8608,32 @@
     },
     "hints": {
       "en": [
-        "Seats 1 and 2 are taken, so {F} is in seat 3 or 4.",
-        "Seat 3 is next to {R} (seat 2), so {F} must be in seat 4."
+        "Seats 1 and 2 are taken, so 🦊 is in seat 3 or 4.",
+        "Seat 3 is next to 🐰 (seat 2), so 🦊 must be in seat 4."
       ],
       "ko": [
-        "1·2번은 찼으니 {F}는 3번 또는 4번.",
-        "3번은 {R}(2번) 옆이라, {F}는 4번."
+        "1·2번은 찼으니 🦊는 3번 또는 4번.",
+        "3번은 🐰(2번) 옆이라, 🦊는 4번."
       ],
       "ja": [
-        "席1・2は埋まり、{F} は席3か4。",
-        "席3は {R}(席2)の隣なので {F} は席4。"
+        "席1・2は埋まり、🦊 は席3か4。",
+        "席3は 🐰(席2)の隣なので 🦊 は席4。"
       ],
       "zh": [
-        "1、2号已占，{F} 在3或4号。",
-        "3号挨着 {R}(2号)，故 {F} 在4号。"
+        "1、2号已占，🦊 在3或4号。",
+        "3号挨着 🐰(2号)，故 🦊 在4号。"
       ],
       "es": [
-        "1 y 2 están ocupados, {F} va en 3 o 4.",
-        "El 3 está junto a {R} (2), así que {F} en el 4."
+        "1 y 2 están ocupados, 🦊 va en 3 o 4.",
+        "El 3 está junto a 🐰 (2), así que 🦊 en el 4."
       ],
       "fr": [
-        "Places 1 et 2 prises, {F} en 3 ou 4.",
-        "La 3 est à côté de {R} (2), donc {F} en 4."
+        "Places 1 et 2 prises, 🦊 en 3 ou 4.",
+        "La 3 est à côté de 🐰 (2), donc 🦊 en 4."
       ],
       "de": [
-        "Plätze 1 und 2 belegt, {F} auf 3 oder 4.",
-        "Platz 3 ist neben {R} (2), also {F} auf 4."
+        "Plätze 1 und 2 belegt, 🦊 auf 3 oder 4.",
+        "Platz 3 ist neben 🐰 (2), also 🦊 auf 4."
       ]
     },
     "explanation": {
@@ -8992,31 +8992,31 @@
     },
     "hints": {
       "en": [
-        "Track it step by step.",
+        "Turning right goes clockwise (⬆️→➡️→⬇️→⬅️); turning left goes the other way.",
         "⬆️ →right→ ➡️ →right→ ⬇️ →left→ ➡️."
       ],
       "ko": [
-        "한 단계씩 따라가세요.",
+        "오른쪽은 시계방향(⬆️→➡️→⬇️→⬅️), 왼쪽은 그 반대예요.",
         "⬆️ →오→ ➡️ →오→ ⬇️ →왼→ ➡️."
       ],
       "ja": [
-        "一歩ずつ追おう。",
+        "右回りは時計回り(⬆️→➡️→⬇️→⬅️)、左は逆。",
         "⬆️ →右→ ➡️ →右→ ⬇️ →左→ ➡️。"
       ],
       "zh": [
-        "一步步跟踪。",
+        "向右是顺时针(⬆️→➡️→⬇️→⬅️)，向左相反。",
         "⬆️ →右→ ➡️ →右→ ⬇️ →左→ ➡️。"
       ],
       "es": [
-        "Síguelo paso a paso.",
+        "Girar a la derecha es horario (⬆️→➡️→⬇️→⬅️); a la izquierda al revés.",
         "⬆️ →der→ ➡️ →der→ ⬇️ →izq→ ➡️."
       ],
       "fr": [
-        "Suis pas à pas.",
+        "À droite = sens horaire (⬆️→➡️→⬇️→⬅️) ; à gauche l'inverse.",
         "⬆️ →droite→ ➡️ →droite→ ⬇️ →gauche→ ➡️."
       ],
       "de": [
-        "Schritt für Schritt verfolgen.",
+        "Rechts = im Uhrzeigersinn (⬆️→➡️→⬇️→⬅️); links andersrum.",
         "⬆️ →re→ ➡️ →re→ ⬇️ →li→ ➡️."
       ]
     },
@@ -11104,32 +11104,32 @@
     },
     "hints": {
       "en": [
-        "Each weighing has 3 outcomes (left, right, balanced).",
-        "This is the classic 12-coin puzzle — it needs 3 weighings."
+        "Each weighing has 3 possible outcomes: left heavier, right heavier, or balanced.",
+        "Three weighings give 3×3×3 = 27 results — enough to find 1 of 12 coins and tell if it's heavy or light."
       ],
       "ko": [
-        "한 번 달면 결과가 3가지(왼·오·균형).",
-        "유명한 동전 12개 문제 — 3번이 필요해요."
+        "한 번 달면 결과는 셋: 왼쪽 무거움, 오른쪽 무거움, 균형.",
+        "세 번이면 3×3×3 = 27가지 — 동전 12개 중 하나를 찾고 무겁/가벼움까지 가릴 만큼 충분."
       ],
       "ja": [
-        "1回の計量で結果は3通り(左・右・釣合)。",
-        "有名な12枚コイン問題 — 3回必要。"
+        "1回の計量で結果は3通り: 左が重い・右が重い・釣り合い。",
+        "3回で 3×3×3 = 27通り — 12枚から1枚を特定し、重い/軽いまで分かる。"
       ],
       "zh": [
-        "每次称有3种结果(左、右、平衡)。",
-        "经典12硬币问题——需要3次。"
+        "每次称有3种结果：左重、右重、平衡。",
+        "三次得 3×3×3 = 27 种结果——足以从12枚中找出并判断轻重。"
       ],
       "es": [
-        "Cada pesada da 3 resultados (izq., der., equilibrio).",
-        "Es el clásico de 12 monedas: hacen falta 3 pesadas."
+        "Cada pesada da 3 resultados: pesa la izquierda, la derecha o equilibra.",
+        "Tres pesadas dan 3×3×3 = 27 resultados — bastan para hallar 1 de 12 y saber si pesa más o menos."
       ],
       "fr": [
-        "Chaque pesée a 3 issues (gauche, droite, équilibre).",
-        "C'est le classique des 12 pièces : il faut 3 pesées."
+        "Chaque pesée a 3 issues : gauche plus lourde, droite plus lourde ou équilibre.",
+        "Trois pesées donnent 3×3×3 = 27 résultats — assez pour trouver 1 pièce sur 12 et dire plus lourde ou légère."
       ],
       "de": [
-        "Jede Wägung hat 3 Ausgänge (links, rechts, gleich).",
-        "Das klassische 12-Münzen-Rätsel — es braucht 3 Wägungen."
+        "Jede Wägung hat 3 Ausgänge: links schwerer, rechts schwerer oder gleich.",
+        "Drei Wägungen geben 3×3×3 = 27 Ergebnisse — genug für 1 von 12 Münzen samt schwer/leicht."
       ]
     },
     "explanation": {
@@ -11232,32 +11232,32 @@
     },
     "hints": {
       "en": [
-        "Never let foxes outnumber hens on a bank, and the boat always needs a rower back.",
-        "It can be done, but it takes more than a few back-and-forth trips."
+        "The only danger is foxes outnumbering hens on a bank — keep the numbers balanced on both sides.",
+        "Move the foxes first: send two across and bring one back, so the hens are never outnumbered."
       ],
       "ko": [
-        "어느 강가에서도 여우가 닭보다 많지 않게, 배는 늘 돌아올 노잡이가 필요해요.",
-        "가능하지만 왔다 갔다가 여러 번 필요해요."
+        "위험은 오직 한쪽 강가에서 여우가 닭보다 많아지는 것 — 양쪽 수를 맞춰가며 옮겨요.",
+        "여우부터 옮겨요: 둘을 보내고 하나를 데려와 닭이 수적으로 밀리지 않게."
       ],
       "ja": [
-        "どの岸でもキツネがニワトリを上回らないように、船は戻る漕ぎ手が要る。",
-        "可能だが、何度も往復が必要。"
+        "危険はある岸でキツネがニワトリより多くなることだけ — 両岸の数を保つ。",
+        "まずキツネを動かす: 2匹送って1匹戻し、ニワトリが上回られないように。"
       ],
       "zh": [
-        "任一岸都别让狐狸多过鸡，船每次都要有人划回。",
-        "做得到，但需要来回很多趟。"
+        "唯一的危险是某岸狐狸多过鸡——让两岸数量保持平衡。",
+        "先移狐狸：送两只过去再带一只回来，使鸡不被多过。"
       ],
       "es": [
-        "Que los zorros nunca superen a las gallinas; la barca siempre necesita remero.",
-        "Se puede, pero hacen falta muchas idas y vueltas."
+        "El único peligro es que los zorros superen a las gallinas en una orilla — equilibra ambos lados.",
+        "Mueve primero los zorros: lleva dos y trae uno, para que las gallinas nunca queden en inferioridad."
       ],
       "fr": [
-        "Les renards ne doivent jamais dépasser les poules ; il faut toujours un rameur.",
-        "C'est faisable, mais il faut beaucoup d'allers-retours."
+        "Le seul danger : des renards plus nombreux que les poules sur une rive — équilibre les deux côtés.",
+        "Bouge d'abord les renards : passes-en deux, ramènes-en un, pour que les poules ne soient jamais débordées."
       ],
       "de": [
-        "Füchse dürfen Hennen nie überzahlen; das Boot braucht stets einen Ruderer.",
-        "Machbar, aber es braucht viele Hin- und Rückfahrten."
+        "Die einzige Gefahr: Füchse überzahlen Hennen an einem Ufer — halte beide Seiten im Gleichgewicht.",
+        "Bewege zuerst die Füchse: zwei rüber, einen zurück, damit Hennen nie in Unterzahl sind."
       ]
     },
     "explanation": {
