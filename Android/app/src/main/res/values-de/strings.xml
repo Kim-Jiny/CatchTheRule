@@ -45,6 +45,10 @@
     <string name="logic_chapter_3">Zuordnung &amp; Hinweise</string>
     <string name="logic_chapter_4">Wahrheit &amp; Lüge</string>
     <string name="logic_chapter_5">Meister-Deduktion</string>
+    <string name="logic_chapter_6">Analogie &amp; Außenseiter</string>
+    <string name="logic_chapter_7">Richtung &amp; Raum</string>
+    <string name="logic_chapter_8">Zahlenrätsel</string>
+    <string name="logic_chapter_9">Knobeleien</string>
     <string name="select_mode">Modus wählen</string>
     <string name="mode_complete">Fertig</string>
     <string name="mode_progress">%d%% fertig</string>

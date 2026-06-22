@@ -403,6 +403,10 @@ private fun chapterTitle(track: String, chapter: Int): String {
             3 -> stringResource(R.string.logic_chapter_3)
             4 -> stringResource(R.string.logic_chapter_4)
             5 -> stringResource(R.string.logic_chapter_5)
+            6 -> stringResource(R.string.logic_chapter_6)
+            7 -> stringResource(R.string.logic_chapter_7)
+            8 -> stringResource(R.string.logic_chapter_8)
+            9 -> stringResource(R.string.logic_chapter_9)
             else -> stringResource(R.string.chapter_label, chapter)
         }
     }

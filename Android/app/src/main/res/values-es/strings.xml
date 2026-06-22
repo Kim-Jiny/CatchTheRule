@@ -45,6 +45,10 @@
     <string name="logic_chapter_3">Emparejar y pistas</string>
     <string name="logic_chapter_4">Verdad y mentira</string>
     <string name="logic_chapter_5">Deducción maestra</string>
+    <string name="logic_chapter_6">Analogía y el intruso</string>
+    <string name="logic_chapter_7">Dirección y espacio</string>
+    <string name="logic_chapter_8">Acertijos numéricos</string>
+    <string name="logic_chapter_9">Adivinanzas</string>
     <string name="select_mode">Elige un modo</string>
     <string name="mode_complete">Completado</string>
     <string name="mode_progress">%d%% hecho</string>

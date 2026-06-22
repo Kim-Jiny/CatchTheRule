@@ -15534,5 +15534,1541 @@
       "fr": "Unités 3, dizaines 6 (double de 3), et 6 + 3 = 9. Le nombre est 63.",
       "de": "Einer 3, Zehner 6 (doppelt von 3), und 6 + 3 = 9. Die Zahl ist 63."
     }
+  },
+  {
+    "id": "lg6_s01",
+    "type": "logic_analogy",
+    "track": "logic",
+    "chapter": 6,
+    "order": 1,
+    "tokens": null,
+    "answer": "🐟",
+    "inputType": "choices",
+    "choices": [
+      "🐟",
+      "🥕",
+      "🍯",
+      "🦴"
+    ],
+    "prompt": {
+      "en": "🐶 goes with 🦴.\nIn the same way, 🐱 goes with ___ ?",
+      "ko": "🐶는 🦴와 짝이에요.\n같은 식으로, 🐱는 ___와 짝이에요?",
+      "ja": "🐶 は 🦴 とペア。\n同じように、🐱 は ___ とペア?",
+      "zh": "🐶 配 🦴。\n同样地，🐱 配 ___ ?",
+      "es": "🐶 va con 🦴.\nDel mismo modo, 🐱 va con ___ ?",
+      "fr": "🐶 va avec 🦴.\nDe la même façon, 🐱 va avec ___ ?",
+      "de": "🐶 gehört zu 🦴.\nGenauso gehört 🐱 zu ___ ?"
+    },
+    "hints": {
+      "en": [
+        "Think about each animal's favorite food.",
+        "🐶 loves a 🦴; a 🐱 loves a 🐟."
+      ],
+      "ko": [
+        "각 동물이 좋아하는 먹이를 떠올려요.",
+        "🐶는 🦴, 🐱는 🐟를 좋아해요."
+      ],
+      "ja": [
+        "各動物の好きな食べ物を考えよう。",
+        "🐶 は 🦴、🐱 は 🐟 が好き。"
+      ],
+      "zh": [
+        "想想每种动物爱吃什么。",
+        "🐶 爱 🦴，🐱 爱 🐟。"
+      ],
+      "es": [
+        "Piensa en la comida favorita de cada uno.",
+        "🐶 ama un 🦴; un 🐱 ama un 🐟."
+      ],
+      "fr": [
+        "Pense à la nourriture préférée de chacun.",
+        "🐶 aime un 🦴 ; un 🐱 aime un 🐟."
+      ],
+      "de": [
+        "Denk an das Lieblingsfutter jedes Tieres.",
+        "🐶 liebt 🦴; 🐱 liebt 🐟."
+      ]
+    },
+    "explanation": {
+      "en": "The link is favorite food: 🐶→🦴, so 🐱→🐟.",
+      "ko": "짝의 규칙은 좋아하는 먹이: 🐶→🦴, 그래서 🐱→🐟.",
+      "ja": "ペアの規則は好物: 🐶→🦴、よって 🐱→🐟。",
+      "zh": "配对规则是爱吃的：🐶→🦴，所以 🐱→🐟。",
+      "es": "El vínculo es la comida favorita: 🐶→🦴, así 🐱→🐟.",
+      "fr": "Le lien est la nourriture préférée : 🐶→🦴, donc 🐱→🐟.",
+      "de": "Die Verbindung ist das Lieblingsfutter: 🐶→🦴, also 🐱→🐟."
+    }
+  },
+  {
+    "id": "lg6_s02",
+    "type": "logic_analogy",
+    "track": "logic",
+    "chapter": 6,
+    "order": 2,
+    "tokens": null,
+    "answer": "🥛",
+    "inputType": "choices",
+    "choices": [
+      "🥛",
+      "🍯",
+      "🥚",
+      "🧀"
+    ],
+    "prompt": {
+      "en": "🐝 goes with 🍯.\nIn the same way, 🐄 goes with ___ ?",
+      "ko": "🐝는 🍯와 짝이에요.\n같은 식으로, 🐄는 ___와 짝이에요?",
+      "ja": "🐝 は 🍯 とペア。\n同じように、🐄 は ___ とペア?",
+      "zh": "🐝 配 🍯。\n同样地，🐄 配 ___ ?",
+      "es": "🐝 va con 🍯.\nDel mismo modo, 🐄 va con ___ ?",
+      "fr": "🐝 va avec 🍯.\nDe la même façon, 🐄 va avec ___ ?",
+      "de": "🐝 gehört zu 🍯.\nGenauso gehört 🐄 zu ___ ?"
+    },
+    "hints": {
+      "en": [
+        "What does each animal produce?",
+        "🐝 makes 🍯; 🐄 gives 🥛."
+      ],
+      "ko": [
+        "각 동물이 무엇을 만드는지 생각해요.",
+        "🐝는 🍯, 🐄는 🥛를 줘요."
+      ],
+      "ja": [
+        "各動物が何を作るか考えよう。",
+        "🐝 は 🍯、🐄 は 🥛。"
+      ],
+      "zh": [
+        "想想每种动物产出什么。",
+        "🐝 产 🍯，🐄 产 🥛。"
+      ],
+      "es": [
+        "¿Qué produce cada animal?",
+        "🐝 hace 🍯; 🐄 da 🥛."
+      ],
+      "fr": [
+        "Que produit chaque animal ?",
+        "🐝 fait 🍯 ; 🐄 donne 🥛."
+      ],
+      "de": [
+        "Was produziert jedes Tier?",
+        "🐝 macht 🍯; 🐄 gibt 🥛."
+      ]
+    },
+    "explanation": {
+      "en": "The link is what each one produces: 🐝→🍯, so 🐄→🥛.",
+      "ko": "짝의 규칙은 만들어내는 것: 🐝→🍯, 그래서 🐄→🥛.",
+      "ja": "規則は産み出すもの: 🐝→🍯、よって 🐄→🥛。",
+      "zh": "规则是产出物：🐝→🍯，所以 🐄→🥛。",
+      "es": "El vínculo es lo que produce: 🐝→🍯, así 🐄→🥛.",
+      "fr": "Le lien est ce qu'il produit : 🐝→🍯, donc 🐄→🥛.",
+      "de": "Die Verbindung ist das Erzeugnis: 🐝→🍯, also 🐄→🥛."
+    }
+  },
+  {
+    "id": "lg6_s03",
+    "type": "logic_odd",
+    "track": "logic",
+    "chapter": 6,
+    "order": 3,
+    "tokens": null,
+    "answer": "🥕",
+    "inputType": "choices",
+    "choices": [
+      "🍎",
+      "🍌",
+      "🍇",
+      "🥕"
+    ],
+    "prompt": {
+      "en": "Which one does NOT belong with the others?\n🍎   🍌   🍇   🥕",
+      "ko": "나머지와 어울리지 않는 하나는?\n🍎   🍌   🍇   🥕",
+      "ja": "仲間はずれはどれ?\n🍎   🍌   🍇   🥕",
+      "zh": "哪个和其他不是一类?\n🍎   🍌   🍇   🥕",
+      "es": "¿Cuál NO encaja con los demás?\n🍎   🍌   🍇   🥕",
+      "fr": "Lequel n'a rien à faire avec les autres ?\n🍎   🍌   🍇   🥕",
+      "de": "Welches passt NICHT zu den anderen?\n🍎   🍌   🍇   🥕"
+    },
+    "hints": {
+      "en": [
+        "Sort them into a group and a leftover.",
+        "Three are fruits; one is a vegetable."
+      ],
+      "ko": [
+        "공통점으로 묶고 남는 하나를 찾으세요.",
+        "셋은 과일, 하나는 채소예요."
+      ],
+      "ja": [
+        "共通点でまとめ、余る1つを探そう。",
+        "3つは果物、1つは野菜。"
+      ],
+      "zh": [
+        "按共同点分组，找出剩下的。",
+        "三个是水果，一个是蔬菜。"
+      ],
+      "es": [
+        "Agrúpalos y busca el que sobra.",
+        "Tres son frutas; uno es verdura."
+      ],
+      "fr": [
+        "Regroupe-les et trouve l'intrus.",
+        "Trois sont des fruits ; un est un légume."
+      ],
+      "de": [
+        "Gruppiere sie und finde den Ausreißer.",
+        "Drei sind Obst; eines ist Gemüse."
+      ]
+    },
+    "explanation": {
+      "en": "🍎, 🍌, 🍇 are fruits; 🥕 is a vegetable, so it doesn't belong.",
+      "ko": "🍎, 🍌, 🍇는 과일이고 🥕는 채소라 어울리지 않아요.",
+      "ja": "🍎, 🍌, 🍇 は果物、🥕 は野菜なので仲間はずれ。",
+      "zh": "🍎、🍌、🍇 是水果，🥕 是蔬菜，所以它不是一类。",
+      "es": "🍎, 🍌, 🍇 son frutas; 🥕 es verdura, así que sobra.",
+      "fr": "🍎, 🍌, 🍇 sont des fruits ; 🥕 est un légume, c'est l'intrus.",
+      "de": "🍎, 🍌, 🍇 sind Obst; 🥕 ist Gemüse — der Ausreißer."
+    }
+  },
+  {
+    "id": "lg6_s04",
+    "type": "logic_odd",
+    "track": "logic",
+    "chapter": 6,
+    "order": 4,
+    "tokens": null,
+    "answer": "🐟",
+    "inputType": "choices",
+    "choices": [
+      "🐶",
+      "🐱",
+      "🐰",
+      "🐟"
+    ],
+    "prompt": {
+      "en": "Which one does NOT belong with the others?\n🐶   🐱   🐰   🐟",
+      "ko": "나머지와 어울리지 않는 하나는?\n🐶   🐱   🐰   🐟",
+      "ja": "仲間はずれはどれ?\n🐶   🐱   🐰   🐟",
+      "zh": "哪个和其他不是一类?\n🐶   🐱   🐰   🐟",
+      "es": "¿Cuál NO encaja con los demás?\n🐶   🐱   🐰   🐟",
+      "fr": "Lequel n'a rien à faire avec les autres ?\n🐶   🐱   🐰   🐟",
+      "de": "Welches passt NICHT zu den anderen?\n🐶   🐱   🐰   🐟"
+    },
+    "hints": {
+      "en": [
+        "Where does each animal live?",
+        "Three live on land; one lives in water."
+      ],
+      "ko": [
+        "각 동물이 어디 사는지 생각해요.",
+        "셋은 땅, 하나는 물에 살아요."
+      ],
+      "ja": [
+        "各動物がどこに住むか考えよう。",
+        "3匹は陸、1匹は水。"
+      ],
+      "zh": [
+        "想想每种动物住哪里。",
+        "三个住陆地，一个住水里。"
+      ],
+      "es": [
+        "¿Dónde vive cada animal?",
+        "Tres viven en tierra; uno en el agua."
+      ],
+      "fr": [
+        "Où vit chaque animal ?",
+        "Trois vivent sur terre ; un dans l'eau."
+      ],
+      "de": [
+        "Wo lebt jedes Tier?",
+        "Drei leben an Land; eines im Wasser."
+      ]
+    },
+    "explanation": {
+      "en": "🐶, 🐱, 🐰 are land animals; 🐟 lives in water, so it's the odd one.",
+      "ko": "🐶, 🐱, 🐰는 육지 동물, 🐟는 물에 살아 다른 하나예요.",
+      "ja": "🐶, 🐱, 🐰 は陸の動物、🐟 は水中なので仲間はずれ。",
+      "zh": "🐶、🐱、🐰 是陆地动物，🐟 住水里，所以它不同。",
+      "es": "🐶, 🐱, 🐰 son terrestres; 🐟 vive en el agua, es el intruso.",
+      "fr": "🐶, 🐱, 🐰 sont terrestres ; 🐟 vit dans l'eau, c'est l'intrus.",
+      "de": "🐶, 🐱, 🐰 sind Landtiere; 🐟 lebt im Wasser — der Ausreißer."
+    }
+  },
+  {
+    "id": "lg6_s05",
+    "type": "logic_analogy",
+    "track": "logic",
+    "chapter": 6,
+    "order": 5,
+    "tokens": null,
+    "answer": "🦋",
+    "inputType": "choices",
+    "choices": [
+      "🦋",
+      "🐝",
+      "🐔",
+      "🐌"
+    ],
+    "prompt": {
+      "en": "🥚 grows into 🐔.\nIn the same way, 🐛 grows into ___ ?",
+      "ko": "🥚는 자라서 🐔가 돼요.\n같은 식으로, 🐛는 자라서 ___가 돼요?",
+      "ja": "🥚 は育つと 🐔 になる。\n同じように、🐛 は育つと ___ になる?",
+      "zh": "🥚 长大变成 🐔。\n同样地，🐛 长大变成 ___ ?",
+      "es": "🥚 crece y se vuelve 🐔.\nDel mismo modo, 🐛 se vuelve ___ ?",
+      "fr": "🥚 devient 🐔 en grandissant.\nDe la même façon, 🐛 devient ___ ?",
+      "de": "Aus 🥚 wird 🐔.\nGenauso wird aus 🐛 ___ ?"
+    },
+    "hints": {
+      "en": [
+        "The link is 'what it grows into'.",
+        "A 🐛 (caterpillar) becomes a 🦋."
+      ],
+      "ko": [
+        "규칙은 '자라서 무엇이 되는가'.",
+        "🐛(애벌레)는 🦋가 돼요."
+      ],
+      "ja": [
+        "規則は『育つと何になるか』。",
+        "🐛(いもむし)は 🦋 になる。"
+      ],
+      "zh": [
+        "规则是『长大变成什么』。",
+        "🐛(毛毛虫)变成 🦋。"
+      ],
+      "es": [
+        "El vínculo es 'en qué se convierte'.",
+        "Una 🐛 (oruga) se vuelve 🦋."
+      ],
+      "fr": [
+        "Le lien est « en quoi ça devient ».",
+        "Une 🐛 (chenille) devient 🦋."
+      ],
+      "de": [
+        "Die Verbindung ist 'was daraus wird'.",
+        "Aus 🐛 (Raupe) wird 🦋."
+      ]
+    },
+    "explanation": {
+      "en": "The link is growth: 🥚→🐔, so 🐛→🦋.",
+      "ko": "규칙은 성장: 🥚→🐔, 그래서 🐛→🦋.",
+      "ja": "規則は成長: 🥚→🐔、よって 🐛→🦋。",
+      "zh": "规则是成长：🥚→🐔，所以 🐛→🦋。",
+      "es": "El vínculo es el crecimiento: 🥚→🐔, así 🐛→🦋.",
+      "fr": "Le lien est la croissance : 🥚→🐔, donc 🐛→🦋.",
+      "de": "Die Verbindung ist Wachstum: 🥚→🐔, also 🐛→🦋."
+    }
+  },
+  {
+    "id": "lg6_s06",
+    "type": "logic_odd",
+    "track": "logic",
+    "chapter": 6,
+    "order": 6,
+    "tokens": null,
+    "answer": "🍕",
+    "inputType": "choices",
+    "choices": [
+      "⚽",
+      "🏀",
+      "🎾",
+      "🍕"
+    ],
+    "prompt": {
+      "en": "Which one does NOT belong with the others?\n⚽   🏀   🎾   🍕",
+      "ko": "나머지와 어울리지 않는 하나는?\n⚽   🏀   🎾   🍕",
+      "ja": "仲間はずれはどれ?\n⚽   🏀   🎾   🍕",
+      "zh": "哪个和其他不是一类?\n⚽   🏀   🎾   🍕",
+      "es": "¿Cuál NO encaja con los demás?\n⚽   🏀   🎾   🍕",
+      "fr": "Lequel n'a rien à faire avec les autres ?\n⚽   🏀   🎾   🍕",
+      "de": "Welches passt NICHT zu den anderen?\n⚽   🏀   🎾   🍕"
+    },
+    "hints": {
+      "en": [
+        "What are these used for?",
+        "Three are balls you play with; one is food."
+      ],
+      "ko": [
+        "이것들은 무엇에 쓰나요?",
+        "셋은 가지고 노는 공, 하나는 음식이에요."
+      ],
+      "ja": [
+        "これらは何に使う?",
+        "3つは遊ぶボール、1つは食べ物。"
+      ],
+      "zh": [
+        "它们都用来做什么?",
+        "三个是玩的球，一个是食物。"
+      ],
+      "es": [
+        "¿Para qué sirven?",
+        "Tres son pelotas; uno es comida."
+      ],
+      "fr": [
+        "À quoi servent-ils ?",
+        "Trois sont des balles ; un est de la nourriture."
+      ],
+      "de": [
+        "Wofür sind sie da?",
+        "Drei sind Bälle; eines ist Essen."
+      ]
+    },
+    "explanation": {
+      "en": "⚽, 🏀, 🎾 are balls for sport; 🍕 is food, so it doesn't belong.",
+      "ko": "⚽, 🏀, 🎾는 운동 공, 🍕는 음식이라 어울리지 않아요.",
+      "ja": "⚽, 🏀, 🎾 はスポーツのボール、🍕 は食べ物なので仲間はずれ。",
+      "zh": "⚽、🏀、🎾 是运动球，🍕 是食物，所以它不同。",
+      "es": "⚽, 🏀, 🎾 son pelotas; 🍕 es comida, así que sobra.",
+      "fr": "⚽, 🏀, 🎾 sont des balles ; 🍕 est de la nourriture, c'est l'intrus.",
+      "de": "⚽, 🏀, 🎾 sind Bälle; 🍕 ist Essen — der Ausreißer."
+    }
+  },
+  {
+    "id": "lg7_s01",
+    "type": "logic_direction",
+    "track": "logic",
+    "chapter": 7,
+    "order": 1,
+    "tokens": null,
+    "answer": "➡️",
+    "inputType": "choices",
+    "choices": [
+      "⬆️",
+      "➡️",
+      "⬇️",
+      "⬅️"
+    ],
+    "prompt": {
+      "en": "You are facing ⬆️ (north).\nYou turn right.\nWhich way are you facing now?",
+      "ko": "지금 ⬆️(북쪽)을 보고 있어요.\n오른쪽으로 돌아요.\n지금 보는 방향은?",
+      "ja": "今 ⬆️(北)を向いています。\n右に回ります。\n今向いている方向は?",
+      "zh": "你正面朝 ⬆️(北)。\n向右转。\n现在朝哪个方向?",
+      "es": "Miras hacia ⬆️ (norte).\nGiras a la derecha.\n¿Hacia dónde miras ahora?",
+      "fr": "Tu regardes vers ⬆️ (nord).\nTu tournes à droite.\nVers où regardes-tu ?",
+      "de": "Du schaust nach ⬆️ (Norden).\nDu drehst dich nach rechts.\nWohin schaust du jetzt?"
+    },
+    "hints": {
+      "en": [
+        "A right turn moves you clockwise.",
+        "From ⬆️, one step clockwise is ➡️."
+      ],
+      "ko": [
+        "오른쪽으로 돌면 시계방향이에요.",
+        "⬆️에서 시계방향 한 칸은 ➡️."
+      ],
+      "ja": [
+        "右回りは時計回り。",
+        "⬆️ から時計回りに1つは ➡️。"
+      ],
+      "zh": [
+        "向右转就是顺时针。",
+        "从 ⬆️ 顺时针一步是 ➡️。"
+      ],
+      "es": [
+        "Girar a la derecha es en sentido horario.",
+        "Desde ⬆️, un paso horario es ➡️."
+      ],
+      "fr": [
+        "Tourner à droite, c'est dans le sens horaire.",
+        "De ⬆️, un cran horaire donne ➡️."
+      ],
+      "de": [
+        "Rechtsdrehung ist im Uhrzeigersinn.",
+        "Von ⬆️ ein Schritt im Uhrzeigersinn ist ➡️."
+      ]
+    },
+    "explanation": {
+      "en": "Facing ⬆️ and turning right (clockwise) leaves you facing ➡️ (east).",
+      "ko": "⬆️을 보다 오른쪽(시계방향)으로 돌면 ➡️(동쪽)를 봐요.",
+      "ja": "⬆️ を向いて右(時計回り)に回ると ➡️(東)を向く。",
+      "zh": "面朝 ⬆️ 向右(顺时针)转后朝 ➡️(东)。",
+      "es": "Mirando ⬆️ y girando a la derecha quedas hacia ➡️ (este).",
+      "fr": "Vers ⬆️, en tournant à droite tu fais face à ➡️ (est).",
+      "de": "Von ⬆️ nach rechts gedreht schaust du nach ➡️ (Osten)."
+    }
+  },
+  {
+    "id": "lg7_s02",
+    "type": "logic_direction",
+    "track": "logic",
+    "chapter": 7,
+    "order": 2,
+    "tokens": null,
+    "answer": "⬇️",
+    "inputType": "choices",
+    "choices": [
+      "⬆️",
+      "➡️",
+      "⬇️",
+      "⬅️"
+    ],
+    "prompt": {
+      "en": "You are facing ⬆️.\nYou turn right, then right again.\nWhich way are you facing now?",
+      "ko": "지금 ⬆️을 보고 있어요.\n오른쪽으로 돌고, 또 오른쪽으로 돌아요.\n지금 보는 방향은?",
+      "ja": "今 ⬆️ を向いています。\n右に回り、もう一度右に回ります。\n今向いている方向は?",
+      "zh": "你正面朝 ⬆️。\n向右转，再向右转。\n现在朝哪个方向?",
+      "es": "Miras hacia ⬆️.\nGiras a la derecha y otra vez a la derecha.\n¿Hacia dónde miras?",
+      "fr": "Tu regardes vers ⬆️.\nTu tournes à droite, puis encore à droite.\nVers où regardes-tu ?",
+      "de": "Du schaust nach ⬆️.\nDu drehst rechts, dann nochmal rechts.\nWohin schaust du?"
+    },
+    "hints": {
+      "en": [
+        "Two right turns is a half-turn.",
+        "⬆️ → ➡️ → ⬇️."
+      ],
+      "ko": [
+        "오른쪽으로 두 번은 반 바퀴예요.",
+        "⬆️ → ➡️ → ⬇️."
+      ],
+      "ja": [
+        "右に2回は半回転。",
+        "⬆️ → ➡️ → ⬇️。"
+      ],
+      "zh": [
+        "向右两次就是转半圈。",
+        "⬆️ → ➡️ → ⬇️。"
+      ],
+      "es": [
+        "Dos giros a la derecha es media vuelta.",
+        "⬆️ → ➡️ → ⬇️."
+      ],
+      "fr": [
+        "Deux fois à droite, c'est un demi-tour.",
+        "⬆️ → ➡️ → ⬇️."
+      ],
+      "de": [
+        "Zweimal rechts ist eine halbe Drehung.",
+        "⬆️ → ➡️ → ⬇️."
+      ]
+    },
+    "explanation": {
+      "en": "Two right turns from ⬆️: ⬆️→➡️→⬇️. You now face ⬇️ (south).",
+      "ko": "⬆️에서 오른쪽 두 번: ⬆️→➡️→⬇️. 지금은 ⬇️(남쪽).",
+      "ja": "⬆️ から右2回: ⬆️→➡️→⬇️。今は ⬇️(南)。",
+      "zh": "从 ⬆️ 向右两次：⬆️→➡️→⬇️。现在朝 ⬇️(南)。",
+      "es": "Dos giros desde ⬆️: ⬆️→➡️→⬇️. Miras ⬇️ (sur).",
+      "fr": "Deux tours depuis ⬆️ : ⬆️→➡️→⬇️. Tu fais face à ⬇️ (sud).",
+      "de": "Zwei Drehungen von ⬆️: ⬆️→➡️→⬇️. Du schaust nach ⬇️ (Süden)."
+    }
+  },
+  {
+    "id": "lg7_s03",
+    "type": "logic_clock",
+    "track": "logic",
+    "chapter": 7,
+    "order": 3,
+    "tokens": null,
+    "answer": "3",
+    "inputType": "choices",
+    "choices": [
+      "3",
+      "6",
+      "9",
+      "12"
+    ],
+    "prompt": {
+      "en": "A clock hand points straight up to 12.\nTurn it a quarter-turn clockwise.\nWhich number does it point to now?",
+      "ko": "시계 바늘이 위쪽 12를 가리켜요.\n시계방향으로 4분의 1바퀴 돌려요.\n이제 어떤 숫자를 가리킬까요?",
+      "ja": "時計の針が真上の12を指す。\n時計回りに4分の1回転させる。\nどの数字を指す?",
+      "zh": "钟的指针指向正上方的12。\n顺时针转四分之一圈。\n现在指向哪个数字?",
+      "es": "Una manecilla apunta arriba, al 12.\nGírala un cuarto de vuelta en sentido horario.\n¿Qué número señala ahora?",
+      "fr": "Une aiguille pointe en haut vers 12.\nFais-lui faire un quart de tour horaire.\nQuel chiffre indique-t-elle ?",
+      "de": "Ein Zeiger zeigt nach oben auf 12.\nDreh ihn eine Vierteldrehung im Uhrzeigersinn.\nAuf welche Zahl zeigt er jetzt?"
+    },
+    "hints": {
+      "en": [
+        "A full clock is 12 numbers around.",
+        "A quarter of 12 is 3 numbers clockwise from 12."
+      ],
+      "ko": [
+        "시계 한 바퀴는 숫자 12개예요.",
+        "12의 4분의 1은 12에서 시계방향 3칸."
+      ],
+      "ja": [
+        "時計1周は数字12個。",
+        "12の4分の1は12から時計回り3つ。"
+      ],
+      "zh": [
+        "整个钟一圈是12个数字。",
+        "12的四分之一是从12顺时针3格。"
+      ],
+      "es": [
+        "Un reloj completo son 12 números.",
+        "Un cuarto de 12 son 3 números desde el 12."
+      ],
+      "fr": [
+        "Un tour complet, c'est 12 chiffres.",
+        "Un quart de 12, c'est 3 chiffres après 12."
+      ],
+      "de": [
+        "Eine volle Uhr sind 12 Zahlen.",
+        "Ein Viertel von 12 sind 3 Zahlen ab der 12."
+      ]
+    },
+    "explanation": {
+      "en": "A quarter-turn clockwise is 3 hours, so the hand moves from 12 to 3.",
+      "ko": "시계방향 4분의 1바퀴는 3시간이라, 바늘은 12에서 3으로 가요.",
+      "ja": "時計回り4分の1回転は3時間、よって針は12から3へ。",
+      "zh": "顺时针四分之一圈是3小时，所以指针从12转到3。",
+      "es": "Un cuarto de vuelta son 3 horas, así que va del 12 al 3.",
+      "fr": "Un quart de tour, c'est 3 heures, donc de 12 à 3.",
+      "de": "Eine Vierteldrehung sind 3 Stunden, also von 12 zur 3."
+    }
+  },
+  {
+    "id": "lg7_s04",
+    "type": "logic_clock",
+    "track": "logic",
+    "chapter": 7,
+    "order": 4,
+    "tokens": null,
+    "answer": "9:00",
+    "inputType": "choices",
+    "choices": [
+      "3:00",
+      "6:00",
+      "9:00",
+      "12:00"
+    ],
+    "prompt": {
+      "en": "You look at a clock in a mirror.\nIn the mirror it shows 3:00.\nWhat is the real time?",
+      "ko": "거울에 비친 시계를 봐요.\n거울 속에서는 3:00로 보여요.\n진짜 시각은?",
+      "ja": "鏡に映った時計を見ます。\n鏡では3:00に見える。\n本当の時刻は?",
+      "zh": "你看镜子里的钟。\n镜中显示3:00。\n真正的时间是?",
+      "es": "Miras un reloj en un espejo.\nEn el espejo marca 3:00.\n¿Qué hora es en realidad?",
+      "fr": "Tu regardes une horloge dans un miroir.\nDans le miroir, elle indique 3:00.\nQuelle est la vraie heure ?",
+      "de": "Du siehst eine Uhr im Spiegel.\nIm Spiegel zeigt sie 3:00.\nWie spät ist es wirklich?"
+    },
+    "hints": {
+      "en": [
+        "A mirror flips left and right.",
+        "On a clock face, the mirror of 3 is 9."
+      ],
+      "ko": [
+        "거울은 좌우를 뒤집어요.",
+        "시계에서 3의 거울상은 9."
+      ],
+      "ja": [
+        "鏡は左右を反転する。",
+        "時計の文字盤で3の鏡像は9。"
+      ],
+      "zh": [
+        "镜子会左右翻转。",
+        "在钟面上，3的镜像是9。"
+      ],
+      "es": [
+        "Un espejo invierte izquierda y derecha.",
+        "En el reloj, el espejo del 3 es el 9."
+      ],
+      "fr": [
+        "Un miroir inverse gauche et droite.",
+        "Sur le cadran, le miroir de 3 est 9."
+      ],
+      "de": [
+        "Ein Spiegel vertauscht links und rechts.",
+        "Auf dem Zifferblatt ist das Spiegelbild der 3 die 9."
+      ]
+    },
+    "explanation": {
+      "en": "A mirror flips the clock left-right, turning 3:00 into 9:00. So the real time is 9:00.",
+      "ko": "거울이 시계를 좌우로 뒤집어 3:00가 9:00로 보여요. 진짜 시각은 9:00.",
+      "ja": "鏡が時計を左右反転し、3:00 が 9:00 に見える。本当は 9:00。",
+      "zh": "镜子左右翻转，3:00 变成 9:00。真正时间是 9:00。",
+      "es": "El espejo invierte el reloj: 3:00 se ve como 9:00. La hora real es 9:00.",
+      "fr": "Le miroir inverse l'horloge : 3:00 devient 9:00. La vraie heure est 9:00.",
+      "de": "Der Spiegel kehrt die Uhr um: 3:00 wird zu 9:00. Echte Zeit: 9:00."
+    }
+  },
+  {
+    "id": "lg7_s05",
+    "type": "logic_grid",
+    "track": "logic",
+    "chapter": 7,
+    "order": 5,
+    "tokens": null,
+    "answer": "5",
+    "inputType": "choices",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "prompt": {
+      "en": "Numbers 1–9 fill a 3×3 grid, left to right, top to bottom.\n(So the top row is 1 2 3.)\nWhich number is directly below the 2?",
+      "ko": "1~9가 3×3 격자에 왼쪽→오른쪽, 위→아래로 채워져요.\n(맨 윗줄은 1 2 3.)\n2 바로 아래 숫자는?",
+      "ja": "1〜9を3×3の格子に左から右、上から下へ並べる。\n(一番上の行は 1 2 3。)\n2 の真下の数字は?",
+      "zh": "1~9 按从左到右、从上到下填入 3×3 格子。\n(第一行是 1 2 3。)\n2 正下方的数字是?",
+      "es": "Los números 1–9 llenan una cuadrícula 3×3, de izq. a der., de arriba abajo.\n(La fila de arriba es 1 2 3.)\n¿Qué número está justo debajo del 2?",
+      "fr": "Les nombres 1–9 remplissent une grille 3×3, de gauche à droite, de haut en bas.\n(La ligne du haut est 1 2 3.)\nQuel nombre est juste sous le 2 ?",
+      "de": "Die Zahlen 1–9 füllen ein 3×3-Gitter, links nach rechts, oben nach unten.\n(Obere Reihe: 1 2 3.)\nWelche Zahl steht direkt unter der 2?"
+    },
+    "hints": {
+      "en": [
+        "The grid rows are 1 2 3 / 4 5 6 / 7 8 9.",
+        "Look at the cell right under 2 in the middle row."
+      ],
+      "ko": [
+        "격자 줄은 1 2 3 / 4 5 6 / 7 8 9.",
+        "가운데 줄에서 2 바로 아래 칸을 보세요."
+      ],
+      "ja": [
+        "格子の行は 1 2 3 / 4 5 6 / 7 8 9。",
+        "真ん中の行で2の真下のマスを見て。"
+      ],
+      "zh": [
+        "格子各行是 1 2 3 / 4 5 6 / 7 8 9。",
+        "看中间行里2正下方的格子。"
+      ],
+      "es": [
+        "Las filas son 1 2 3 / 4 5 6 / 7 8 9.",
+        "Mira la celda justo bajo el 2."
+      ],
+      "fr": [
+        "Les lignes sont 1 2 3 / 4 5 6 / 7 8 9.",
+        "Regarde la case juste sous le 2."
+      ],
+      "de": [
+        "Die Reihen sind 1 2 3 / 4 5 6 / 7 8 9.",
+        "Schau die Zelle direkt unter der 2 an."
+      ]
+    },
+    "explanation": {
+      "en": "Rows are 1 2 3 / 4 5 6 / 7 8 9. Directly below 2 is 5.",
+      "ko": "줄은 1 2 3 / 4 5 6 / 7 8 9. 2 바로 아래는 5.",
+      "ja": "行は 1 2 3 / 4 5 6 / 7 8 9。2 の真下は 5。",
+      "zh": "各行是 1 2 3 / 4 5 6 / 7 8 9。2 正下方是 5。",
+      "es": "Filas: 1 2 3 / 4 5 6 / 7 8 9. Justo bajo el 2 está el 5.",
+      "fr": "Lignes : 1 2 3 / 4 5 6 / 7 8 9. Juste sous 2, c'est 5.",
+      "de": "Reihen: 1 2 3 / 4 5 6 / 7 8 9. Direkt unter 2 ist 5."
+    }
+  },
+  {
+    "id": "lg7_s06",
+    "type": "logic_direction",
+    "track": "logic",
+    "chapter": 7,
+    "order": 6,
+    "tokens": null,
+    "answer": "➡️",
+    "inputType": "choices",
+    "choices": [
+      "⬆️",
+      "➡️",
+      "⬇️",
+      "⬅️"
+    ],
+    "prompt": {
+      "en": "You start facing ⬆️ (north).\nTurn right, then right again, then left.\nWhich way are you facing now?",
+      "ko": "⬆️(북쪽)을 보고 시작해요.\n오른쪽, 또 오른쪽, 그다음 왼쪽으로 돌아요.\n지금 보는 방향은?",
+      "ja": "⬆️(北)を向いて始める。\n右、もう一度右、そして左に回る。\n今向いている方向は?",
+      "zh": "开始时面朝 ⬆️(北)。\n向右、再向右、然后向左转。\n现在朝哪个方向?",
+      "es": "Empiezas mirando ⬆️ (norte).\nGiras derecha, derecha otra vez, luego izquierda.\n¿Hacia dónde miras?",
+      "fr": "Tu commences vers ⬆️ (nord).\nDroite, encore droite, puis gauche.\nVers où regardes-tu ?",
+      "de": "Du beginnst nach ⬆️ (Norden).\nRechts, nochmal rechts, dann links.\nWohin schaust du?"
+    },
+    "hints": {
+      "en": [
+        "Track it step by step.",
+        "⬆️ →right→ ➡️ →right→ ⬇️ →left→ ➡️."
+      ],
+      "ko": [
+        "한 단계씩 따라가세요.",
+        "⬆️ →오→ ➡️ →오→ ⬇️ →왼→ ➡️."
+      ],
+      "ja": [
+        "一歩ずつ追おう。",
+        "⬆️ →右→ ➡️ →右→ ⬇️ →左→ ➡️。"
+      ],
+      "zh": [
+        "一步步跟踪。",
+        "⬆️ →右→ ➡️ →右→ ⬇️ →左→ ➡️。"
+      ],
+      "es": [
+        "Síguelo paso a paso.",
+        "⬆️ →der→ ➡️ →der→ ⬇️ →izq→ ➡️."
+      ],
+      "fr": [
+        "Suis pas à pas.",
+        "⬆️ →droite→ ➡️ →droite→ ⬇️ →gauche→ ➡️."
+      ],
+      "de": [
+        "Schritt für Schritt verfolgen.",
+        "⬆️ →re→ ➡️ →re→ ⬇️ →li→ ➡️."
+      ]
+    },
+    "explanation": {
+      "en": "⬆️→right→➡️→right→⬇️→left→➡️. You end up facing ➡️ (east).",
+      "ko": "⬆️→오→➡️→오→⬇️→왼→➡️. 결국 ➡️(동쪽)를 봐요.",
+      "ja": "⬆️→右→➡️→右→⬇️→左→➡️。最後は ➡️(東)。",
+      "zh": "⬆️→右→➡️→右→⬇️→左→➡️。最后朝 ➡️(东)。",
+      "es": "⬆️→der→➡️→der→⬇️→izq→➡️. Acabas mirando ➡️ (este).",
+      "fr": "⬆️→droite→➡️→droite→⬇️→gauche→➡️. Tu finis vers ➡️ (est).",
+      "de": "⬆️→re→➡️→re→⬇️→li→➡️. Du schaust am Ende nach ➡️ (Osten)."
+    }
+  },
+  {
+    "id": "lg8_s01",
+    "type": "logic_count",
+    "track": "logic",
+    "chapter": 8,
+    "order": 1,
+    "tokens": null,
+    "answer": "6",
+    "inputType": "choices",
+    "choices": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "prompt": {
+      "en": "4 friends meet, and every pair shakes hands exactly once.\nHow many handshakes are there in total?",
+      "ko": "친구 4명이 만나, 모든 짝이 정확히 한 번씩 악수해요.\n악수는 모두 몇 번일까요?",
+      "ja": "友達4人が会い、すべてのペアがちょうど1回ずつ握手する。\n握手は全部で何回?",
+      "zh": "4个朋友相聚，每两人恰好握手一次。\n一共握手几次?",
+      "es": "4 amigos se reúnen y cada par se da la mano una vez.\n¿Cuántos apretones de manos hay?",
+      "fr": "4 amis se rencontrent, chaque paire se serre la main une fois.\nCombien de poignées de main ?",
+      "de": "4 Freunde treffen sich, jedes Paar gibt sich einmal die Hand.\nWie viele Handschläge gibt es?"
+    },
+    "hints": {
+      "en": [
+        "Each person shakes with 3 others.",
+        "4×3 = 12, but each handshake is counted twice → 12÷2."
+      ],
+      "ko": [
+        "각자 다른 3명과 악수해요.",
+        "4×3 = 12, 그런데 한 번을 두 번 세니 → 12÷2."
+      ],
+      "ja": [
+        "各人は他の3人と握手。",
+        "4×3 = 12、でも1回を2回数えるので → 12÷2。"
+      ],
+      "zh": [
+        "每人与其他3人握手。",
+        "4×3 = 12，但每次被算两遍 → 12÷2。"
+      ],
+      "es": [
+        "Cada uno saluda a otros 3.",
+        "4×3 = 12, pero cada apretón se cuenta dos veces → 12÷2."
+      ],
+      "fr": [
+        "Chacun salue 3 autres.",
+        "4×3 = 12, mais chaque poignée comptée deux fois → 12÷2."
+      ],
+      "de": [
+        "Jeder gibt 3 anderen die Hand.",
+        "4×3 = 12, aber jeder Handschlag doppelt gezählt → 12÷2."
+      ]
+    },
+    "explanation": {
+      "en": "Each of 4 shakes with 3 others = 12, but every handshake is shared by 2 people, so 12÷2 = 6.",
+      "ko": "4명이 각각 3명과 = 12, 그런데 악수는 두 사람이 공유하니 12÷2 = 6.",
+      "ja": "4人が各3人と = 12、でも握手は2人で共有なので 12÷2 = 6。",
+      "zh": "4人各与3人 = 12，但每次握手由两人共享，所以 12÷2 = 6。",
+      "es": "4 por 3 = 12, pero cada apretón lo comparten 2, así 12÷2 = 6.",
+      "fr": "4 fois 3 = 12, mais chaque poignée partagée par 2, donc 12÷2 = 6.",
+      "de": "4 mal 3 = 12, aber jeder Handschlag von 2 geteilt, also 12÷2 = 6."
+    }
+  },
+  {
+    "id": "lg8_s02",
+    "type": "logic_age",
+    "track": "logic",
+    "chapter": 8,
+    "order": 2,
+    "tokens": null,
+    "answer": "6",
+    "inputType": "choices",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "prompt": {
+      "en": "Two friends' ages add up to 10.\nOne is 2 years older than the other.\nHow old is the older one?",
+      "ko": "두 친구의 나이를 더하면 10이에요.\n한 명이 다른 한 명보다 2살 많아요.\n나이 많은 쪽은 몇 살일까요?",
+      "ja": "2人の年齢を足すと10。\n一方が他方より2歳年上。\n年上は何歳?",
+      "zh": "两个朋友的年龄加起来是10。\n一个比另一个大2岁。\n年长的几岁?",
+      "es": "Las edades de dos amigos suman 10.\nUno tiene 2 años más que el otro.\n¿Cuántos años tiene el mayor?",
+      "fr": "Les âges de deux amis font 10.\nL'un a 2 ans de plus que l'autre.\nQuel âge a le plus âgé ?",
+      "de": "Die Alter zweier Freunde ergeben 10.\nEiner ist 2 Jahre älter.\nWie alt ist der Ältere?"
+    },
+    "hints": {
+      "en": [
+        "If they were equal, each would be 5.",
+        "Give the extra 2 by adding 1 to one and removing 1 from the other → 6 and 4."
+      ],
+      "ko": [
+        "같다면 각각 5살이에요.",
+        "차이 2를 한쪽 +1, 다른쪽 −1로 나누면 → 6과 4."
+      ],
+      "ja": [
+        "同じなら各5歳。",
+        "差2を片方+1、もう片方−1にすると → 6と4。"
+      ],
+      "zh": [
+        "若相等则各5岁。",
+        "把差2分配：一方+1，一方−1 → 6和4。"
+      ],
+      "es": [
+        "Si fueran iguales, 5 cada uno.",
+        "Reparte el 2: +1 a uno, −1 al otro → 6 y 4."
+      ],
+      "fr": [
+        "Égaux, ce serait 5 chacun.",
+        "Répartis le 2 : +1 et −1 → 6 et 4."
+      ],
+      "de": [
+        "Gleich wären es je 5.",
+        "Verteile die 2: +1 und −1 → 6 und 4."
+      ]
+    },
+    "explanation": {
+      "en": "Half of 10 is 5; the older is 5+1=6 and the younger 5−1=4 (sum 10, diff 2).",
+      "ko": "10의 절반은 5; 많은 쪽은 5+1=6, 어린 쪽은 5−1=4 (합 10, 차 2).",
+      "ja": "10の半分は5; 年上は5+1=6、年下は5−1=4(和10、差2)。",
+      "zh": "10的一半是5；年长5+1=6，年幼5−1=4(和10，差2)。",
+      "es": "La mitad de 10 es 5; el mayor 5+1=6, el menor 5−1=4 (suma 10, dif. 2).",
+      "fr": "La moitié de 10 est 5 ; l'aîné 5+1=6, le cadet 5−1=4 (somme 10, écart 2).",
+      "de": "Die Hälfte von 10 ist 5; älter 5+1=6, jünger 5−1=4 (Summe 10, Differenz 2)."
+    }
+  },
+  {
+    "id": "lg8_s03",
+    "type": "logic_share",
+    "track": "logic",
+    "chapter": 8,
+    "order": 3,
+    "tokens": null,
+    "answer": "2",
+    "inputType": "choices",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "prompt": {
+      "en": "12 cookies are shared equally among 4 friends.\nThen each friend gives 1 cookie back.\nHow many cookies does each friend keep?",
+      "ko": "쿠키 12개를 친구 4명이 똑같이 나눠요.\n그다음 각자 쿠키 1개를 돌려줘요.\n각자 가지는 쿠키는 몇 개일까요?",
+      "ja": "クッキー12個を友達4人で等しく分ける。\nそのあと各自1個ずつ返す。\n各自が持つのは何個?",
+      "zh": "12块饼干平分给4个朋友。\n然后每人退还1块。\n每人留下几块?",
+      "es": "Se reparten 12 galletas entre 4 amigos por igual.\nLuego cada uno devuelve 1.\n¿Cuántas se queda cada uno?",
+      "fr": "12 biscuits partagés également entre 4 amis.\nPuis chacun en rend 1.\nCombien en garde chacun ?",
+      "de": "12 Kekse werden gleich auf 4 Freunde verteilt.\nDann gibt jeder 1 zurück.\nWie viele behält jeder?"
+    },
+    "hints": {
+      "en": [
+        "First split 12 by 4.",
+        "Each gets 3, then gives 1 back → 2."
+      ],
+      "ko": [
+        "먼저 12를 4로 나눠요.",
+        "각자 3개, 그다음 1개 반납 → 2."
+      ],
+      "ja": [
+        "まず12を4で割る。",
+        "各3個、そして1個返す → 2。"
+      ],
+      "zh": [
+        "先把12除以4。",
+        "每人3块，再退1块 → 2。"
+      ],
+      "es": [
+        "Primero divide 12 entre 4.",
+        "Cada uno 3, devuelve 1 → 2."
+      ],
+      "fr": [
+        "D'abord 12 divisé par 4.",
+        "Chacun 3, puis rend 1 → 2."
+      ],
+      "de": [
+        "Erst 12 durch 4.",
+        "Jeder 3, gibt 1 zurück → 2."
+      ]
+    },
+    "explanation": {
+      "en": "12÷4 = 3 each; after giving 1 back, each keeps 3−1 = 2.",
+      "ko": "12÷4 = 각 3개; 1개 돌려주면 각자 3−1 = 2개.",
+      "ja": "12÷4 = 各3個; 1個返すと各 3−1 = 2個。",
+      "zh": "12÷4 = 各3块；退1块后各留 3−1 = 2块。",
+      "es": "12÷4 = 3 cada uno; tras devolver 1, quedan 3−1 = 2.",
+      "fr": "12÷4 = 3 chacun ; après en rendre 1, il reste 3−1 = 2.",
+      "de": "12÷4 = je 3; nach Rückgabe von 1 bleiben 3−1 = 2."
+    }
+  },
+  {
+    "id": "lg8_s04",
+    "type": "logic_balance",
+    "track": "logic",
+    "chapter": 8,
+    "order": 4,
+    "tokens": null,
+    "answer": "3",
+    "inputType": "choices",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "prompt": {
+      "en": "On a balance scale:\n🍎 + 🍎 weighs the same as 🍌.\n🍌 + 🍎 weighs 9 kg.\nHow heavy is one 🍎?",
+      "ko": "양팔 저울에서:\n🍎 + 🍎는 🍌 하나와 무게가 같아요.\n🍌 + 🍎는 9 kg이에요.\n🍎 하나의 무게는?",
+      "ja": "天秤で:\n🍎 + 🍎 は 🍌 1個と同じ重さ。\n🍌 + 🍎 は 9 kg。\n🍎 1個の重さは?",
+      "zh": "在天平上：\n🍎 + 🍎 和 🍌 一样重。\n🍌 + 🍎 重 9 kg。\n一个 🍎 多重?",
+      "es": "En una balanza:\n🍎 + 🍎 pesa lo mismo que 🍌.\n🍌 + 🍎 pesa 9 kg.\n¿Cuánto pesa un 🍎?",
+      "fr": "Sur une balance :\n🍎 + 🍎 pèse autant que 🍌.\n🍌 + 🍎 pèse 9 kg.\nCombien pèse un 🍎 ?",
+      "de": "Auf einer Waage:\n🍎 + 🍎 wiegt so viel wie 🍌.\n🍌 + 🍎 wiegt 9 kg.\nWie schwer ist ein 🍎?"
+    },
+    "hints": {
+      "en": [
+        "Replace 🍌 with two 🍎.",
+        "🍌+🍎 = three 🍎 = 9 kg, so one 🍎 = 3."
+      ],
+      "ko": [
+        "🍌를 🍎 두 개로 바꿔요.",
+        "🍌+🍎 = 🍎 세 개 = 9 kg, 그래서 🍎 하나 = 3."
+      ],
+      "ja": [
+        "🍌 を 🍎 2個に置き換える。",
+        "🍌+🍎 = 🍎 3個 = 9 kg、よって 🍎 1個 = 3。"
+      ],
+      "zh": [
+        "把 🍌 换成两个 🍎。",
+        "🍌+🍎 = 三个 🍎 = 9 kg，所以一个 🍎 = 3。"
+      ],
+      "es": [
+        "Cambia 🍌 por dos 🍎.",
+        "🍌+🍎 = tres 🍎 = 9 kg, así un 🍎 = 3."
+      ],
+      "fr": [
+        "Remplace 🍌 par deux 🍎.",
+        "🍌+🍎 = trois 🍎 = 9 kg, donc un 🍎 = 3."
+      ],
+      "de": [
+        "Ersetze 🍌 durch zwei 🍎.",
+        "🍌+🍎 = drei 🍎 = 9 kg, also ein 🍎 = 3."
+      ]
+    },
+    "explanation": {
+      "en": "Since 🍌 = two 🍎, 🍌+🍎 = three 🍎 = 9 kg. So one 🍎 = 3 kg.",
+      "ko": "🍌 = 🍎 두 개라, 🍌+🍎 = 🍎 세 개 = 9 kg. 따라서 🍎 하나 = 3 kg.",
+      "ja": "🍌 = 🍎 2個なので、🍌+🍎 = 🍎 3個 = 9 kg。よって 🍎 1個 = 3 kg。",
+      "zh": "因 🍌 = 两个 🍎，🍌+🍎 = 三个 🍎 = 9 kg。所以一个 🍎 = 3 kg。",
+      "es": "Como 🍌 = dos 🍎, 🍌+🍎 = tres 🍎 = 9 kg. Un 🍎 = 3 kg.",
+      "fr": "Comme 🍌 = deux 🍎, 🍌+🍎 = trois 🍎 = 9 kg. Un 🍎 = 3 kg.",
+      "de": "Da 🍌 = zwei 🍎, ist 🍌+🍎 = drei 🍎 = 9 kg. Ein 🍎 = 3 kg."
+    }
+  },
+  {
+    "id": "lg8_s05",
+    "type": "logic_coins",
+    "track": "logic",
+    "chapter": 8,
+    "order": 5,
+    "tokens": null,
+    "answer": "3",
+    "inputType": "choices",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "prompt": {
+      "en": "You have coins worth 1, 2, and 5 (as many as you like).\nWhat is the fewest coins needed to make exactly 8?",
+      "ko": "1, 2, 5짜리 동전이 (원하는 만큼) 있어요.\n정확히 8을 만들려면 최소 몇 개가 필요할까요?",
+      "ja": "1・2・5の硬貨が(好きなだけ)ある。\nちょうど8を作るのに最少で何枚?",
+      "zh": "你有面值 1、2、5 的硬币(任意多)。\n凑出正好 8 最少需要几枚?",
+      "es": "Tienes monedas de 1, 2 y 5 (las que quieras).\n¿Cuántas monedas como mínimo para hacer exactamente 8?",
+      "fr": "Tu as des pièces de 1, 2 et 5 (autant que tu veux).\nCombien de pièces au minimum pour faire exactement 8 ?",
+      "de": "Du hast Münzen zu 1, 2 und 5 (beliebig viele).\nWie wenige Münzen ergeben genau 8?"
+    },
+    "hints": {
+      "en": [
+        "Use the biggest coin first.",
+        "5 + 2 + 1 = 8, that's 3 coins."
+      ],
+      "ko": [
+        "가장 큰 동전부터 써요.",
+        "5 + 2 + 1 = 8, 3개예요."
+      ],
+      "ja": [
+        "一番大きい硬貨から使う。",
+        "5 + 2 + 1 = 8、3枚。"
+      ],
+      "zh": [
+        "先用最大的硬币。",
+        "5 + 2 + 1 = 8，共3枚。"
+      ],
+      "es": [
+        "Usa primero la moneda mayor.",
+        "5 + 2 + 1 = 8, son 3 monedas."
+      ],
+      "fr": [
+        "Commence par la plus grosse pièce.",
+        "5 + 2 + 1 = 8, soit 3 pièces."
+      ],
+      "de": [
+        "Nimm zuerst die größte Münze.",
+        "5 + 2 + 1 = 8, das sind 3 Münzen."
+      ]
+    },
+    "explanation": {
+      "en": "5 + 2 + 1 = 8 uses 3 coins, and no combination makes 8 with fewer.",
+      "ko": "5 + 2 + 1 = 8은 3개; 더 적게는 8을 못 만들어요.",
+      "ja": "5 + 2 + 1 = 8 は3枚; これより少なくは作れない。",
+      "zh": "5 + 2 + 1 = 8 用3枚；更少凑不出8。",
+      "es": "5 + 2 + 1 = 8 usa 3 monedas; con menos no se logra.",
+      "fr": "5 + 2 + 1 = 8 fait 3 pièces ; impossible avec moins.",
+      "de": "5 + 2 + 1 = 8 sind 3 Münzen; mit weniger geht es nicht."
+    }
+  },
+  {
+    "id": "lg8_s06",
+    "type": "logic_puzzle",
+    "track": "logic",
+    "chapter": 8,
+    "order": 6,
+    "tokens": null,
+    "answer": "3",
+    "inputType": "choices",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "prompt": {
+      "en": "A 🐌 climbs a 5 m well.\nEach day it climbs up 3 m, but each night it slips down 2 m.\nOn which day does it reach the top?",
+      "ko": "🐌가 5 m 우물을 올라가요.\n낮에는 3 m 오르고, 밤에는 2 m 미끄러져요.\n며칠째에 꼭대기에 닿을까요?",
+      "ja": "🐌 が5mの井戸を登る。\n昼に3m登り、夜に2m滑り落ちる。\n何日目に頂上に着く?",
+      "zh": "一只 🐌 爬5米深的井。\n白天爬3米，夜里滑下2米。\n第几天能到顶?",
+      "es": "Un 🐌 sube un pozo de 5 m.\nDe día sube 3 m, de noche resbala 2 m.\n¿En qué día llega arriba?",
+      "fr": "Un 🐌 grimpe un puits de 5 m.\nLe jour il monte de 3 m, la nuit il glisse de 2 m.\nQuel jour atteint-il le sommet ?",
+      "de": "Eine 🐌 klettert einen 5-m-Brunnen.\nTags 3 m hoch, nachts 2 m runter.\nAn welchem Tag erreicht sie oben?"
+    },
+    "hints": {
+      "en": [
+        "Net gain is 1 m per full day, but the daytime climb counts before slipping.",
+        "Day1 ends at 1, Day2 at 2, Day3 climbs 2→5 and escapes."
+      ],
+      "ko": [
+        "하루 순이동은 1 m지만, 미끄러지기 전 낮에 오르는 게 먼저예요.",
+        "1일끝 1, 2일끝 2, 3일에 2→5로 탈출."
+      ],
+      "ja": [
+        "1日の正味は1mだが、滑る前の昼の上りが先。",
+        "1日目終わり1、2日目2、3日目2→5で脱出。"
+      ],
+      "zh": [
+        "每天净升1米，但白天先爬再滑。",
+        "第1天末1，第2天末2，第3天从2爬到5逃出。"
+      ],
+      "es": [
+        "La ganancia neta es 1 m/día, pero sube antes de resbalar.",
+        "Día1 termina en 1, Día2 en 2, Día3 sube 2→5 y sale."
+      ],
+      "fr": [
+        "Le gain net est 1 m/jour, mais il monte avant de glisser.",
+        "Jour1 finit à 1, Jour2 à 2, Jour3 monte de 2→5 et sort."
+      ],
+      "de": [
+        "Netto 1 m/Tag, aber der Aufstieg kommt vor dem Rutschen.",
+        "Tag1 endet bei 1, Tag2 bei 2, Tag3 klettert 2→5 und entkommt."
+      ]
+    },
+    "explanation": {
+      "en": "Heights at day's end: Day1 = 1, Day2 = 2. On Day3 it climbs from 2 to 5 and is out before slipping. Answer: day 3.",
+      "ko": "하루 끝 높이: 1일 = 1, 2일 = 2. 3일째 2에서 5로 올라 미끄러지기 전에 탈출. 정답: 3일.",
+      "ja": "1日終わりの高さ: 1日=1、2日=2。3日目に2から5へ登り、滑る前に脱出。答え: 3日。",
+      "zh": "每天结束高度：第1天=1，第2天=2。第3天从2爬到5，滑前已出。答案：第3天。",
+      "es": "Altura al final: Día1=1, Día2=2. El Día3 sube de 2 a 5 y sale antes de resbalar. Respuesta: día 3.",
+      "fr": "Hauteur en fin de jour : J1=1, J2=2. Au J3 il monte de 2 à 5 et sort avant de glisser. Réponse : jour 3.",
+      "de": "Höhe am Tagesende: Tag1=1, Tag2=2. An Tag3 klettert sie von 2 auf 5 und ist raus. Antwort: Tag 3."
+    }
+  },
+  {
+    "id": "lg9_s01",
+    "type": "logic_riddle",
+    "track": "logic",
+    "chapter": 9,
+    "order": 1,
+    "tokens": null,
+    "answer": "⏰",
+    "inputType": "choices",
+    "choices": [
+      "⏰",
+      "🧤",
+      "🪞",
+      "📚"
+    ],
+    "prompt": {
+      "en": "I have hands but cannot clap.\nI have a face but never smile.\nWhat am I?",
+      "ko": "손(바늘)은 있지만 박수를 못 쳐요.\n얼굴(판)은 있지만 웃지 않아요.\n나는 무엇일까요?",
+      "ja": "手(針)はあるが拍手できない。\n顔(文字盤)はあるが笑わない。\n私は何?",
+      "zh": "我有手(针)却不能拍手。\n我有脸(表盘)却从不笑。\n我是什么?",
+      "es": "Tengo manos (agujas) pero no aplaudo.\nTengo cara pero nunca sonrío.\n¿Qué soy?",
+      "fr": "J'ai des aiguilles mais ne peux applaudir.\nJ'ai un visage mais ne souris jamais.\nQui suis-je ?",
+      "de": "Ich habe Zeiger, kann aber nicht klatschen.\nIch habe ein Gesicht, lächle aber nie.\nWas bin ich?"
+    },
+    "hints": {
+      "en": [
+        "It hangs on a wall and ticks.",
+        "Its 'hands' and 'face' tell the time."
+      ],
+      "ko": [
+        "벽에 걸려 똑딱여요.",
+        "'손'과 '얼굴'로 시간을 알려줘요."
+      ],
+      "ja": [
+        "壁にかかってカチカチ鳴る。",
+        "『手』と『顔』で時間を示す。"
+      ],
+      "zh": [
+        "挂在墙上滴答响。",
+        "用『手』和『脸』报时。"
+      ],
+      "es": [
+        "Cuelga de la pared y hace tic-tac.",
+        "Sus 'manos' y 'cara' dan la hora."
+      ],
+      "fr": [
+        "Accroché au mur, il fait tic-tac.",
+        "Ses « aiguilles » et son « visage » donnent l'heure."
+      ],
+      "de": [
+        "Hängt an der Wand und tickt.",
+        "Seine 'Zeiger' und sein 'Gesicht' zeigen die Zeit."
+      ]
+    },
+    "explanation": {
+      "en": "A clock has hands and a face, and tells the time. The answer is the clock.",
+      "ko": "시계는 바늘(손)과 판(얼굴)이 있고 시간을 알려줘요. 정답은 시계.",
+      "ja": "時計は針(手)と文字盤(顔)を持ち時間を示す。答えは時計。",
+      "zh": "钟有指针(手)和表盘(脸)，能报时。答案是钟。",
+      "es": "El reloj tiene manecillas (manos) y esfera (cara) y da la hora. Es el reloj.",
+      "fr": "L'horloge a des aiguilles (mains) et un cadran (visage) et donne l'heure. C'est l'horloge.",
+      "de": "Die Uhr hat Zeiger (Hände) und ein Zifferblatt (Gesicht). Antwort: die Uhr."
+    }
+  },
+  {
+    "id": "lg9_s02",
+    "type": "logic_riddle",
+    "track": "logic",
+    "chapter": 9,
+    "order": 2,
+    "tokens": null,
+    "answer": "👣",
+    "inputType": "choices",
+    "choices": [
+      "👣",
+      "🍞",
+      "💰",
+      "🌊"
+    ],
+    "prompt": {
+      "en": "The more you take, the more you leave behind.\nWhat are they?",
+      "ko": "가져갈수록 더 많이 남기게 돼요.\n그것은 무엇일까요?",
+      "ja": "取れば取るほど、後ろに多く残る。\nそれは何?",
+      "zh": "你拿得越多，留下的越多。\n它们是什么?",
+      "es": "Cuantos más das, más dejas atrás.\n¿Qué son?",
+      "fr": "Plus tu en prends, plus tu en laisses derrière toi.\nQuoi ?",
+      "de": "Je mehr du nimmst, desto mehr lässt du zurück.\nWas sind sie?"
+    },
+    "hints": {
+      "en": [
+        "Think about walking somewhere.",
+        "Each one you 'take' leaves a mark behind you."
+      ],
+      "ko": [
+        "어딘가로 걷는 걸 떠올려요.",
+        "하나 '내디딜' 때마다 뒤에 자국이 남아요."
+      ],
+      "ja": [
+        "どこかへ歩くことを考えよう。",
+        "1つ『進む』ごとに後ろに跡が残る。"
+      ],
+      "zh": [
+        "想想走路去某处。",
+        "每『迈』一步，身后就留下一个印。"
+      ],
+      "es": [
+        "Piensa en caminar.",
+        "Cada uno que 'das' deja una marca detrás."
+      ],
+      "fr": [
+        "Pense à marcher quelque part.",
+        "Chaque pas que tu « prends » laisse une trace."
+      ],
+      "de": [
+        "Denk ans Gehen.",
+        "Jeder, den du 'machst', hinterlässt eine Spur."
+      ]
+    },
+    "explanation": {
+      "en": "The more steps you take, the more footsteps you leave behind. The answer is footsteps.",
+      "ko": "걸음을 더 많이 내디딜수록 발자국이 더 많이 남아요. 정답은 발자국.",
+      "ja": "歩くほど足跡が後ろに残る。答えは足跡。",
+      "zh": "走的步数越多，留下的脚印越多。答案是脚印。",
+      "es": "Cuantos más pasos das, más huellas dejas. La respuesta es las huellas.",
+      "fr": "Plus tu fais de pas, plus tu laisses d'empreintes. La réponse : les empreintes.",
+      "de": "Je mehr Schritte, desto mehr Fußspuren bleiben. Antwort: Fußspuren."
+    }
+  },
+  {
+    "id": "lg9_s03",
+    "type": "logic_riddle",
+    "track": "logic",
+    "chapter": 9,
+    "order": 3,
+    "tokens": null,
+    "answer": "🎹",
+    "inputType": "choices",
+    "choices": [
+      "🎹",
+      "🔑",
+      "🚪",
+      "🗝️"
+    ],
+    "prompt": {
+      "en": "I am full of keys but open no locks.\nPress me and I sing.\nWhat am I?",
+      "ko": "나는 건반(키)이 가득하지만 자물쇠는 못 열어요.\n누르면 노래해요.\n나는 무엇일까요?",
+      "ja": "私はキーだらけだが鍵は開けない。\n押すと歌う。\n私は何?",
+      "zh": "我满是键却开不了锁。\n按下我就唱歌。\n我是什么?",
+      "es": "Estoy lleno de teclas pero no abro cerraduras.\nSi me pulsas, canto.\n¿Qué soy?",
+      "fr": "Je suis plein de touches mais n'ouvre aucune serrure.\nAppuie sur moi et je chante.\nQui suis-je ?",
+      "de": "Ich bin voller Tasten, öffne aber kein Schloss.\nDrück mich, und ich singe.\nWas bin ich?"
+    },
+    "hints": {
+      "en": [
+        "'Keys' can mean piano keys, not door keys.",
+        "It makes music when you press it."
+      ],
+      "ko": [
+        "'키'는 문 열쇠가 아니라 건반일 수 있어요.",
+        "누르면 음악이 나와요."
+      ],
+      "ja": [
+        " 『キー』はドアの鍵でなく鍵盤かも。",
+        "押すと音楽が出る。"
+      ],
+      "zh": [
+        " 『键』可以是琴键，不是钥匙。",
+        "按下会发出音乐。"
+      ],
+      "es": [
+        "'Teclas' pueden ser de piano, no de puerta.",
+        "Hace música al pulsarla."
+      ],
+      "fr": [
+        "« Touches » peut être un piano, pas une clé.",
+        "Elle fait de la musique quand on appuie."
+      ],
+      "de": [
+        " 'Tasten' können Klaviertasten sein, kein Schlüssel.",
+        "Es macht Musik beim Drücken."
+      ]
+    },
+    "explanation": {
+      "en": "A piano is full of keys and makes music, but opens no locks. The answer is the piano.",
+      "ko": "피아노는 건반(키)이 가득하고 음악을 내지만 자물쇠는 못 열어요. 정답은 피아노.",
+      "ja": "ピアノは鍵盤だらけで音楽を出すが鍵は開けない。答えはピアノ。",
+      "zh": "钢琴满是键、能奏乐，却开不了锁。答案是钢琴。",
+      "es": "El piano está lleno de teclas y hace música, pero no abre cerraduras. Es el piano.",
+      "fr": "Le piano est plein de touches et fait de la musique, mais n'ouvre rien. C'est le piano.",
+      "de": "Das Klavier ist voller Tasten und macht Musik, öffnet aber nichts. Antwort: das Klavier."
+    }
+  },
+  {
+    "id": "lg9_s04",
+    "type": "logic_riddle",
+    "track": "logic",
+    "chapter": 9,
+    "order": 4,
+    "tokens": null,
+    "answer": "🪡",
+    "inputType": "choices",
+    "choices": [
+      "🪡",
+      "👁️",
+      "📷",
+      "🔭"
+    ],
+    "prompt": {
+      "en": "I have an eye but cannot see.\nI help to sew.\nWhat am I?",
+      "ko": "나는 눈(구멍)이 있지만 볼 수 없어요.\n바느질을 도와줘요.\n나는 무엇일까요?",
+      "ja": "私は目(穴)があるが見えない。\n縫い物を手伝う。\n私は何?",
+      "zh": "我有眼(孔)却看不见。\n我帮忙缝东西。\n我是什么?",
+      "es": "Tengo un ojo pero no veo.\nAyudo a coser.\n¿Qué soy?",
+      "fr": "J'ai un œil mais ne vois pas.\nJ'aide à coudre.\nQui suis-je ?",
+      "de": "Ich habe ein Öhr, kann aber nicht sehen.\nIch helfe beim Nähen.\nWas bin ich?"
+    },
+    "hints": {
+      "en": [
+        "The 'eye' is a tiny hole.",
+        "Thread passes through it to sew."
+      ],
+      "ko": [
+        "'눈'은 아주 작은 구멍이에요.",
+        "그 구멍에 실을 꿰어 바느질해요."
+      ],
+      "ja": [
+        "『目』は小さな穴。",
+        "そこに糸を通して縫う。"
+      ],
+      "zh": [
+        "『眼』是个小孔。",
+        "线穿过它来缝纫。"
+      ],
+      "es": [
+        "El 'ojo' es un agujerito.",
+        "El hilo pasa por él para coser."
+      ],
+      "fr": [
+        "L'« œil » est un petit trou.",
+        "Le fil y passe pour coudre."
+      ],
+      "de": [
+        "Das 'Öhr' ist ein kleines Loch.",
+        "Der Faden geht hindurch zum Nähen."
+      ]
+    },
+    "explanation": {
+      "en": "A needle has an eye (the hole for thread) but cannot see, and is used to sew. The answer is the needle.",
+      "ko": "바늘은 눈(실 꿰는 구멍)이 있지만 볼 수 없고 바느질에 써요. 정답은 바늘.",
+      "ja": "針は目(糸を通す穴)があるが見えず、縫い物に使う。答えは針。",
+      "zh": "针有眼(穿线的孔)却看不见，用于缝纫。答案是针。",
+      "es": "La aguja tiene ojo (el agujero del hilo) pero no ve, y sirve para coser. Es la aguja.",
+      "fr": "L'aiguille a un œil (le trou du fil) mais ne voit pas, et sert à coudre. C'est l'aiguille.",
+      "de": "Die Nadel hat ein Öhr (das Fadenloch), sieht aber nicht und näht. Antwort: die Nadel."
+    }
+  },
+  {
+    "id": "lg9_s05",
+    "type": "logic_riddle",
+    "track": "logic",
+    "chapter": 9,
+    "order": 5,
+    "tokens": null,
+    "answer": "😷",
+    "inputType": "choices",
+    "choices": [
+      "😷",
+      "⚾",
+      "🦋",
+      "🐟"
+    ],
+    "prompt": {
+      "en": "You can catch me, but you can never throw me.\nPeople try not to share me.\nWhat am I?",
+      "ko": "잡을(걸릴) 수는 있지만 던질 수는 없어요.\n사람들은 나를 옮기지 않으려 해요.\n나는 무엇일까요?",
+      "ja": "つかまえる(かかる)ことはできるが、投げられない。\nみんな私をうつさないようにする。\n私は何?",
+      "zh": "你能『得』我，却永远扔不出去。\n人们尽量不把我传给别人。\n我是什么?",
+      "es": "Me puedes pillar, pero nunca lanzarme.\nLa gente intenta no contagiarme.\n¿Qué soy?",
+      "fr": "On peut m'attraper, mais jamais me lancer.\nLes gens évitent de me transmettre.\nQui suis-je ?",
+      "de": "Du kannst mich fangen (bekommen), aber nie werfen.\nLeute wollen mich nicht weitergeben.\nWas bin ich?"
+    },
+    "hints": {
+      "en": [
+        "'Catch' doesn't always mean with your hands.",
+        "You 'catch' it when you get sick."
+      ],
+      "ko": [
+        "'잡다(걸리다)'가 늘 손으로는 아니에요.",
+        "아프면 그것에 '걸려요'."
+      ],
+      "ja": [
+        "『つかまえる』は手とは限らない。",
+        "病気になると『かかる』。"
+      ],
+      "zh": [
+        "『得』不一定是用手。",
+        "生病时你就『得』了它。"
+      ],
+      "es": [
+        "'Pillar' no siempre es con las manos.",
+        "Lo 'pillas' cuando te enfermas."
+      ],
+      "fr": [
+        "« Attraper » n'est pas toujours avec les mains.",
+        "On l'« attrape » en tombant malade."
+      ],
+      "de": [
+        "'Fangen' heißt nicht immer mit den Händen.",
+        "Du 'fängst' es dir, wenn du krank wirst."
+      ]
+    },
+    "explanation": {
+      "en": "You can catch a cold but can't throw it, and people avoid spreading it. The answer is a cold (being sick).",
+      "ko": "감기는 걸릴 수 있어도 던질 수 없고, 옮기지 않으려 해요. 정답은 감기(병).",
+      "ja": "風邪はひく(かかる)が投げられず、うつさないようにする。答えは風邪(病気)。",
+      "zh": "你会得感冒却扔不出去，人们也避免传染。答案是感冒(生病)。",
+      "es": "Puedes pillar un resfriado pero no lanzarlo, y se evita contagiar. Es un resfriado.",
+      "fr": "On attrape un rhume mais on ne le lance pas, et on évite de le transmettre. C'est un rhume.",
+      "de": "Eine Erkältung fängt man sich, kann sie aber nicht werfen, und meidet Ansteckung. Antwort: eine Erkältung."
+    }
+  },
+  {
+    "id": "lg9_s06",
+    "type": "logic_riddle",
+    "track": "logic",
+    "chapter": 9,
+    "order": 6,
+    "tokens": null,
+    "answer": "🧤",
+    "inputType": "choices",
+    "choices": [
+      "🧤",
+      "✋",
+      "🧦",
+      "⚾"
+    ],
+    "prompt": {
+      "en": "I have a thumb and four fingers, but I am not alive.\nYou wear me to keep warm.\nWhat am I?",
+      "ko": "나는 엄지와 네 손가락이 있지만 살아있지 않아요.\n따뜻하라고 나를 껴요.\n나는 무엇일까요?",
+      "ja": "私は親指と4本の指があるが、生きていない。\n暖かくするために身につける。\n私は何?",
+      "zh": "我有一个拇指和四根手指，但我没有生命。\n你戴上我取暖。\n我是什么?",
+      "es": "Tengo un pulgar y cuatro dedos, pero no estoy vivo.\nMe pones para abrigarte.\n¿Qué soy?",
+      "fr": "J'ai un pouce et quatre doigts, mais je ne suis pas vivant.\nOn me porte pour avoir chaud.\nQui suis-je ?",
+      "de": "Ich habe einen Daumen und vier Finger, lebe aber nicht.\nMan trägt mich, um warm zu bleiben.\nWas bin ich?"
+    },
+    "hints": {
+      "en": [
+        "It has the shape of a hand but isn't one.",
+        "You slip it on in cold weather."
+      ],
+      "ko": [
+        "손 모양이지만 손은 아니에요.",
+        "추울 때 손에 껴요."
+      ],
+      "ja": [
+        "手の形だが手ではない。",
+        "寒いとき手にはめる。"
+      ],
+      "zh": [
+        "它有手的形状但不是手。",
+        "天冷时戴在手上。"
+      ],
+      "es": [
+        "Tiene forma de mano pero no lo es.",
+        "Te lo pones cuando hace frío."
+      ],
+      "fr": [
+        "Il a la forme d'une main mais n'en est pas une.",
+        "On l'enfile quand il fait froid."
+      ],
+      "de": [
+        "Es hat die Form einer Hand, ist aber keine.",
+        "Man zieht es bei Kälte an."
+      ]
+    },
+    "explanation": {
+      "en": "A glove has a thumb and four fingers, isn't alive, and keeps your hand warm. The answer is the glove.",
+      "ko": "장갑은 엄지와 네 손가락이 있고 살아있지 않으며 손을 따뜻하게 해요. 정답은 장갑.",
+      "ja": "手袋は親指と4本指があり、生きておらず手を暖める。答えは手袋。",
+      "zh": "手套有拇指和四指、没有生命、能保暖。答案是手套。",
+      "es": "El guante tiene pulgar y cuatro dedos, no está vivo y abriga la mano. Es el guante.",
+      "fr": "Le gant a un pouce et quatre doigts, n'est pas vivant et réchauffe la main. C'est le gant.",
+      "de": "Der Handschuh hat Daumen und vier Finger, lebt nicht und wärmt die Hand. Antwort: der Handschuh."
+    }
   }
 ]

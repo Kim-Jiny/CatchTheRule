@@ -45,6 +45,10 @@
     <string name="logic_chapter_3">対応と条件</string>
     <string name="logic_chapter_4">真実と嘘</string>
     <string name="logic_chapter_5">総合推理</string>
+    <string name="logic_chapter_6">アナロジーと仲間はずれ</string>
+    <string name="logic_chapter_7">方向と空間</string>
+    <string name="logic_chapter_8">数の推理</string>
+    <string name="logic_chapter_9">なぞなぞ</string>
     <string name="select_mode">モード選択</string>
     <string name="mode_complete">クリア</string>
     <string name="mode_progress">%d%% 完了</string>

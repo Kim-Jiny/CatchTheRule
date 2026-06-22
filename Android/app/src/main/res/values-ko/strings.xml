@@ -45,6 +45,10 @@
     <string name="logic_chapter_3">짝과 조건</string>
     <string name="logic_chapter_4">참과 거짓</string>
     <string name="logic_chapter_5">종합 추리</string>
+    <string name="logic_chapter_6">유추와 무리찾기</string>
+    <string name="logic_chapter_7">방향과 공간</string>
+    <string name="logic_chapter_8">수 추리</string>
+    <string name="logic_chapter_9">수수께끼</string>
     <string name="select_mode">모드 선택</string>
     <string name="mode_complete">완료</string>
     <string name="mode_progress">%d%% 완료</string>
