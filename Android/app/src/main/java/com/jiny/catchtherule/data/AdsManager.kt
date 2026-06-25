@@ -15,7 +15,11 @@ import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.google.android.gms.ads.rewarded.RewardedAd
 import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback
+import com.google.android.ump.ConsentInformation
+import com.google.android.ump.ConsentRequestParameters
+import com.google.android.ump.UserMessagingPlatform
 import com.jiny.catchtherule.BuildConfig
+import java.util.concurrent.atomic.AtomicBoolean
 import kotlin.random.Random
 
 /**
@@ -39,7 +43,36 @@ class AdsManager(context: Context) {
     private var interstitialLoading = false
     private var lastInterstitialAt = 0L
 
-    fun start() {
+    private lateinit var consentInformation: ConsentInformation
+    private val adsSdkStarted = AtomicBoolean(false)
+
+    /**
+     * EEA/UK 동의(UMP)를 먼저 수집한 뒤 광고 SDK를 시작한다.
+     * 동의가 필요 없는 지역이거나 이미 처리된 경우 즉시 시작한다.
+     */
+    fun start(activity: Activity) {
+        consentInformation = UserMessagingPlatform.getConsentInformation(appContext)
+        val params = ConsentRequestParameters.Builder().build()
+        consentInformation.requestConsentInfoUpdate(
+            activity,
+            params,
+            {
+                UserMessagingPlatform.loadAndShowConsentFormIfRequired(activity) {
+                    // 폼을 닫았거나 표시가 필요 없음 — 가능하면 광고 시작
+                    if (consentInformation.canRequestAds()) initializeAds()
+                }
+            },
+            {
+                // 동의 정보 갱신 실패 — 직전 동의 상태로 가능한 만큼 진행
+                if (consentInformation.canRequestAds()) initializeAds()
+            },
+        )
+        // 이전 실행에서 이미 동의가 끝났다면 폼을 기다리지 않고 바로 시작
+        if (consentInformation.canRequestAds()) initializeAds()
+    }
+
+    private fun initializeAds() {
+        if (adsSdkStarted.getAndSet(true)) return   // 중복 시작 방지
         MobileAds.initialize(appContext) {
             load()
             loadInterstitial()

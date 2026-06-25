@@ -12,7 +12,7 @@ struct BannerAd: View {
     var body: some View {
         if !store.removeAdsPurchased {
             let width = UIScreen.main.bounds.width - horizontalInset
-            let size = GADCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(width)
+            let size = currentOrientationAnchoredAdaptiveBanner(width: width)
             BannerRepresentable(unitID: unitID, adSize: size)
                 .frame(width: width, height: size.size.height)
         }
@@ -21,17 +21,17 @@ struct BannerAd: View {
 
 private struct BannerRepresentable: UIViewRepresentable {
     let unitID: String
-    let adSize: GADAdSize
+    let adSize: AdSize
 
-    func makeUIView(context: Context) -> GADBannerView {
-        let banner = GADBannerView(adSize: adSize)
+    func makeUIView(context: Context) -> BannerView {
+        let banner = BannerView(adSize: adSize)
         banner.adUnitID = unitID
         banner.rootViewController = Self.topViewController
-        banner.load(GADRequest())
+        banner.load(Request())
         return banner
     }
 
-    func updateUIView(_ uiView: GADBannerView, context: Context) {}
+    func updateUIView(_ uiView: BannerView, context: Context) {}
 
     private static var topViewController: UIViewController? {
         let scene = UIApplication.shared.connectedScenes

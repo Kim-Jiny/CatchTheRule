@@ -2,6 +2,7 @@ import AppTrackingTransparency
 import Foundation
 import GoogleMobileAds
 import UIKit
+import UserMessagingPlatform
 
 /// 광고 매니저.
 ///  - 리워드("광고 보고 힌트"): 시청 완료 시 onReward 호출
@@ -13,12 +14,14 @@ final class AdsManager: NSObject {
     /// 표시 가능한 리워드 광고가 준비됐는지(버튼 활성/로딩 표시용).
     private(set) var isReady = false
 
-    private var rewardedAd: GADRewardedAd?
+    private var rewardedAd: RewardedAd?
     private var loading = false
 
-    private var interstitialAd: GADInterstitialAd?
+    private var interstitialAd: InterstitialAd?
     private var interstitialLoading = false
     private var lastInterstitialAt: Date = .distantPast
+
+    private var adsSDKStarted = false
 
     // 전면광고 노출 규칙(상수로 조정 가능)
     private static let interstitialMinChapter = 2          // 챕터 2부터
@@ -43,19 +46,35 @@ final class AdsManager: NSObject {
         #endif
     }
 
-    /// ATT(추적 권한) 프롬프트를 먼저 띄운 뒤 광고 SDK를 시작한다.
-    /// 권한 결과와 무관하게 SDK는 시작하며, 허용 시 맞춤형 광고에 IDFA가 사용된다.
+    /// ATT(추적 권한) 프롬프트를 띄우고, EEA/UK 동의(UMP)를 수집한 뒤 광고 SDK를 시작한다.
+    /// 권한·동의 결과와 무관하게 가능한 광고는 로드하며, ATT 허용 시 맞춤형 광고에 IDFA가 쓰인다.
     func start() {
         // ATT 프롬프트는 앱이 active 상태여야 표시되므로 살짝 지연 후 요청.
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
             ATTrackingManager.requestTrackingAuthorization { _ in
-                DispatchQueue.main.async { self?.startAdSDK() }
+                DispatchQueue.main.async { self?.requestConsentThenStart() }
             }
         }
     }
 
-    private func startAdSDK() {
-        GADMobileAds.sharedInstance().start { [weak self] _ in
+    /// UMP 동의 정보를 갱신하고, 필요하면 동의 폼을 띄운 뒤 광고 SDK를 시작한다.
+    private func requestConsentThenStart() {
+        let params = UMPRequestParameters()
+        let consent = UMPConsentInformation.sharedInstance
+        consent.requestConsentInfoUpdate(with: params) { [weak self] _ in
+            guard let self else { return }
+            UMPConsentForm.loadAndPresentIfRequired(from: Self.rootViewController) { [weak self] _ in
+                self?.startAdSDKIfAllowed(consent)
+            }
+        }
+        // 이전 실행에서 이미 동의가 끝났다면 폼을 기다리지 않고 바로 시작.
+        startAdSDKIfAllowed(consent)
+    }
+
+    private func startAdSDKIfAllowed(_ consent: UMPConsentInformation) {
+        guard consent.canRequestAds, !adsSDKStarted else { return }
+        adsSDKStarted = true
+        MobileAds.shared.start { [weak self] _ in
             self?.load()
             self?.loadInterstitial()
         }
@@ -65,7 +84,7 @@ final class AdsManager: NSObject {
     func load() {
         guard !loading, rewardedAd == nil else { return }
         loading = true
-        GADRewardedAd.load(withAdUnitID: adUnitID, request: GADRequest()) { [weak self] ad, _ in
+        RewardedAd.load(with: adUnitID, request: Request()) { [weak self] ad, _ in
             guard let self else { return }
             self.loading = false
             if let ad {
@@ -89,7 +108,7 @@ final class AdsManager: NSObject {
         }
         rewardedAd = nil
         isReady = false
-        ad.present(fromRootViewController: root) { onReward() }
+        ad.present(from: root) { onReward() }
         return true
     }
 
@@ -99,7 +118,7 @@ final class AdsManager: NSObject {
     func loadInterstitial() {
         guard !interstitialLoading, interstitialAd == nil else { return }
         interstitialLoading = true
-        GADInterstitialAd.load(withAdUnitID: interstitialUnitID, request: GADRequest()) { [weak self] ad, _ in
+        InterstitialAd.load(with: interstitialUnitID, request: Request()) { [weak self] ad, _ in
             guard let self else { return }
             self.interstitialLoading = false
             if let ad {
@@ -130,7 +149,7 @@ final class AdsManager: NSObject {
         }
         lastInterstitialAt = Date()
         interstitialAd = nil
-        ad.present(fromRootViewController: root)
+        ad.present(from: root)
         return true
     }
 
@@ -146,16 +165,16 @@ final class AdsManager: NSObject {
     }
 }
 
-extension AdsManager: GADFullScreenContentDelegate {
-    func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+extension AdsManager: FullScreenContentDelegate {
+    func adDidDismissFullScreenContent(_ ad: FullScreenPresentingAd) {
         reload(after: ad)   // 닫힌 종류의 광고를 다시 로드
     }
 
-    func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
+    func ad(_ ad: FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
         reload(after: ad)
     }
 
-    private func reload(after ad: GADFullScreenPresentingAd) {
-        if ad is GADInterstitialAd { loadInterstitial() } else { load() }
+    private func reload(after ad: FullScreenPresentingAd) {
+        if ad is InterstitialAd { loadInterstitial() } else { load() }
     }
 }

@@ -96,7 +96,9 @@ dependencies {
     implementation("com.android.billingclient:billing-ktx:7.1.1")
 
     // 리워드 광고 (광고 보고 힌트 받기)
-    implementation("com.google.android.gms:play-services-ads:23.6.0")
+    implementation("com.google.android.gms:play-services-ads:25.0.0")
+    // EEA/UK 동의 수집(UMP/CMP) — 광고 SDK 시작 전 동의 게이트
+    implementation("com.google.android.ump:user-messaging-platform:4.0.0")
 
     // 인앱 업데이트 확인 (설정 > 앱 정보: 새 버전/새 문제 안내)
     implementation("com.google.android.play:app-update:2.1.0")

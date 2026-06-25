@@ -28,7 +28,7 @@ class MainActivity : ComponentActivity() {
         com.jiny.catchtherule.core.PuzzleStore.refreshFromServer(this)  // 추가 스테이지 캐시 갱신
         val progress = ProgressStore(this)
         billing = BillingManager(this, progress).also { it.start() }
-        ads = AdsManager(this).also { it.start() }
+        ads = AdsManager(this).also { it.start(this) }
         setContent {
             CatchTheRuleTheme {
                 CompositionLocalProvider(
