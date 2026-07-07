@@ -57,6 +57,7 @@ fun SequenceDisplay(
     reveal: Boolean = false,
     feedback: AnswerFeedback? = null,
     modifier: Modifier = Modifier,
+    onPickStatement: ((Int) -> Unit)? = null,
 ) {
     val blankText = when {
         reveal -> puzzle.answer
@@ -74,7 +75,10 @@ fun SequenceDisplay(
     }
     val popScale = pop.value
     val grid = puzzle.grid
-    if (puzzle.isPrompt) {
+    if (puzzle.isContradiction) {
+        // 모순찾기: 번호 매긴 문장 카드 목록. 각 카드를 탭하면 그 번호(1-based)를 제출.
+        ContradictionList(puzzle, typed, reveal, feedback, onPickStatement)
+    } else if (puzzle.isPrompt) {
         // 논리형: 질문 문단을 카드로(줄바꿈 보존, 왼쪽 정렬).
         Box(
             modifier.fillMaxWidth().card().padding(20.dp),
@@ -146,6 +150,60 @@ fun SequenceDisplay(
             verticalAlignment = Alignment.CenterVertically,
         ) {
             tokens.forEach { value -> SeqCell(value, blankText, fontSize, cellHeight, feedback, popScale) }
+        }
+    }
+}
+
+private val CIRCLED_NUMBERS = listOf("①","②","③","④","⑤","⑥","⑦","⑧","⑨","⑩","⑪","⑫","⑬","⑭","⑮","⑯","⑰","⑱","⑲","⑳")
+
+/** 모순찾기 문장 카드 목록. reveal 이면 정답(모순) 문장을 초록, 오답 탭은 빨강으로 강조. */
+@Composable
+private fun ContradictionList(
+    puzzle: Puzzle,
+    typed: String,
+    reveal: Boolean,
+    feedback: AnswerFeedback?,
+    onPickStatement: ((Int) -> Unit)?,
+) {
+    androidx.compose.foundation.layout.Column(
+        Modifier.fillMaxWidth(),
+        verticalArrangement = Arrangement.spacedBy(10.dp),
+    ) {
+        puzzle.localizedStatements.forEachIndexed { i, text ->
+            val number = i + 1
+            val isAnswer = number.toString() == puzzle.answer
+            val isPicked = typed == number.toString()
+            val showCorrect = reveal && isAnswer
+            val showWrong = feedback == AnswerFeedback.Wrong && isPicked
+            val badge = if (number <= CIRCLED_NUMBERS.size) CIRCLED_NUMBERS[number - 1] else number.toString()
+            val strokeColor = when {
+                showCorrect -> AppColors.Success
+                showWrong -> AppColors.Danger
+                else -> AppColors.Stroke
+            }
+            Row(
+                Modifier
+                    .fillMaxWidth()
+                    .clip(RoundedCornerShape(16.dp))
+                    .background(if (showCorrect) AppColors.Success.copy(alpha = 0.12f) else AppColors.Card)
+                    .border(if (showCorrect || showWrong) 2.dp else 1.dp, strokeColor, RoundedCornerShape(16.dp))
+                    .clickable(enabled = !reveal) { onPickStatement?.invoke(number) }
+                    .padding(16.dp),
+                horizontalArrangement = Arrangement.spacedBy(12.dp),
+            ) {
+                Text(
+                    badge,
+                    color = when { showCorrect -> AppColors.Success; showWrong -> AppColors.Danger; else -> AppColors.Accent2 },
+                    fontSize = 20.sp, fontWeight = FontWeight.Bold,
+                )
+                Text(
+                    text,
+                    color = AppColors.TextPrimary,
+                    fontSize = 16.sp,
+                    lineHeight = 22.sp,
+                    modifier = Modifier.weight(1f),
+                )
+            }
         }
     }
 }

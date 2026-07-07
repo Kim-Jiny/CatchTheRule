@@ -72,14 +72,23 @@ struct CampaignSessionView: View {
             GeometryReader { geo in
                 ScrollView {
                     VStack(spacing: 28) {
-                        if !puzzle.isPrompt {
+                        if puzzle.isContradiction {
+                            Text(String.loc("contradiction_prompt"))
+                                .font(.system(size: 15, weight: .semibold))
+                                .foregroundStyle(Theme.textSecondary)
+                                .multilineTextAlignment(.center)
+                        } else if !puzzle.isPrompt {
                             Text(String.loc("play_prompt"))
                                 .font(.system(size: 15))
                                 .foregroundStyle(Theme.textSecondary)
                         }
 
-                        SequenceDisplay(puzzle: puzzle, typed: typed, reveal: reveal, feedback: feedback)
-                            .modifier(Shake(animatableData: shake))
+                        SequenceDisplay(puzzle: puzzle, typed: typed, reveal: reveal, feedback: feedback) { picked in
+                            guard !solved else { return }
+                            typed = "\(picked)"
+                            submit(puzzle: puzzle, value: "\(picked)")
+                        }
+                        .modifier(Shake(animatableData: shake))
 
                         if !shownHints.isEmpty {
                             hintBox
@@ -206,7 +215,10 @@ struct CampaignSessionView: View {
 
     @ViewBuilder
     private func inputArea(for puzzle: Puzzle) -> some View {
-        if puzzle.isFigureSequence {
+        if puzzle.isContradiction {
+            // 모순찾기는 문장 카드를 직접 탭 — 하단 입력 영역 없음.
+            EmptyView()
+        } else if puzzle.isFigureSequence {
             // 시각형(도형 시퀀스)은 도형 보기로 고른다.
             FigureChoicesView(choices: puzzle.figureChoices ?? [], disabled: solved) { picked in
                 typed = picked
@@ -264,6 +276,10 @@ struct CampaignSessionView: View {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.45) {
                 typed = ""
                 feedback = nil
+                // 오답 시 50% 확률 전면광고(광고제거 구매 시 제외).
+                if !store.removeAdsPurchased {
+                    ads.maybeShowInterstitialOnWrong()
+                }
             }
         }
     }

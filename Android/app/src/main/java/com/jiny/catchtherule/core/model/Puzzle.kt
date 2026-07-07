@@ -22,6 +22,7 @@ data class Puzzle(
     val figureTokens: List<Figure?>? = null,  // 시각형 시퀀스. null = 빈칸 셀.
     val figureChoices: List<Figure>? = null,  // 시각형 보기(도형 보기)
     val prompt: Map<String, String>? = null,   // 논리형 질문 문단(로케일코드 → 문장). 있으면 수열 대신 질문 표시.
+    val statements: Map<String, List<String>>? = null,  // 모순찾기 문장 목록(로케일코드 → 문장 배열). answer=모순 문장 번호(1-based).
     val answer: String,
     val inputType: String,      // "keypad" | "choices"
     val choices: List<String>? = null,
@@ -41,6 +42,16 @@ data class Puzzle(
 
     /** 논리형(질문 문단) 퍼즐 여부. */
     val isPrompt: Boolean get() = prompt?.isNotEmpty() == true
+
+    /** 모순찾기(문장 목록) 퍼즐 여부. */
+    val isContradiction: Boolean get() = statements?.isNotEmpty() == true
+
+    /** 현재 언어의 문장 목록(없으면 영어 → 임의 폴백). */
+    val localizedStatements: List<String>
+        get() {
+            val code = java.util.Locale.getDefault().language
+            return statements?.get(code) ?: statements?.get("en") ?: statements?.values?.firstOrNull() ?: emptyList()
+        }
 
     /** 현재 언어의 질문 문단(없으면 영어 → 임의 폴백). */
     val localizedPrompt: String

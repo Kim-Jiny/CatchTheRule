@@ -16,12 +16,15 @@ struct SequenceDisplay: View {
     var typed: String = ""
     var reveal: Bool = false
     var feedback: AnswerFeedback? = nil
+    var onPickStatement: ((Int) -> Void)? = nil   // 모순찾기: 문장 번호(1-based) 탭
 
     @State private var popScale: CGFloat = 1   // 정답 칸 팝 애니메이션
 
     var body: some View {
         Group {
-            if puzzle.isPrompt {
+            if puzzle.isContradiction {
+                contradictionList(puzzle.localizedStatements)
+            } else if puzzle.isPrompt {
                 promptCard(puzzle.localizedPrompt)
             } else if puzzle.isFigure, let figures = puzzle.figures {
                 FigureNumberRow(figures: figures, blankText: blankText(), feedback: feedback)
@@ -38,6 +41,64 @@ struct SequenceDisplay: View {
         .onChange(of: feedback) { _, newValue in
             if newValue == .correct { triggerPop() }
         }
+    }
+
+    // MARK: - 모순찾기(문장 목록)
+
+    private static let circledNumbers = ["①","②","③","④","⑤","⑥","⑦","⑧","⑨","⑩","⑪","⑫","⑬","⑭","⑮","⑯","⑰","⑱","⑲","⑳"]
+
+    /// 번호 매긴 문장 카드 목록. 각 카드를 탭하면 그 번호를 제출.
+    /// reveal 이면 정답(모순) 문장을 초록, 오답 탭은 빨강으로 강조.
+    private func contradictionList(_ statements: [String]) -> some View {
+        VStack(spacing: 10) {
+            ForEach(Array(statements.enumerated()), id: \.offset) { i, text in
+                statementCard(number: i + 1, text: text)
+            }
+        }
+        .frame(maxWidth: .infinity)
+    }
+
+    @ViewBuilder
+    private func statementCard(number: Int, text: String) -> some View {
+        let isAnswer = String(number) == puzzle.answer
+        let isPicked = typed == String(number)
+        let showCorrect = reveal && isAnswer
+        let showWrong = feedback == .wrong && isPicked
+        let badge = number <= Self.circledNumbers.count ? Self.circledNumbers[number - 1] : "\(number)"
+        Button {
+            guard !reveal else { return }
+            onPickStatement?(number)
+        } label: {
+            HStack(alignment: .top, spacing: 12) {
+                Text(badge)
+                    .font(.system(size: 20, weight: .bold, design: .rounded))
+                    .foregroundStyle(showCorrect ? Theme.success : (showWrong ? Theme.danger : Theme.accent2))
+                Text(text)
+                    .font(.system(size: 16))
+                    .foregroundStyle(Theme.textPrimary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .fixedSize(horizontal: false, vertical: true)
+                if showCorrect {
+                    Image(systemName: "exclamationmark.triangle.fill")
+                        .font(.system(size: 15))
+                        .foregroundStyle(Theme.success)
+                }
+            }
+            .padding(16)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(
+                RoundedRectangle(cornerRadius: 16, style: .continuous)
+                    .fill(showCorrect ? Theme.success.opacity(0.12) : Theme.card)
+            )
+            .overlay(
+                RoundedRectangle(cornerRadius: 16, style: .continuous)
+                    .stroke(showCorrect ? AnyShapeStyle(Theme.success)
+                            : (showWrong ? AnyShapeStyle(Theme.danger) : AnyShapeStyle(Theme.stroke)),
+                            lineWidth: (showCorrect || showWrong) ? 2 : 1)
+            )
+        }
+        .buttonStyle(.plain)
+        .disabled(reveal)
     }
 
     // MARK: - 논리형(질문 문단)

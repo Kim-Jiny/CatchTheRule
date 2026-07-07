@@ -25,6 +25,7 @@ import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.filled.Verified
+import androidx.compose.material.icons.filled.Warning
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -385,17 +386,34 @@ private fun StageReplayRow(stage: Int, stars: Int, onClick: () -> Unit) {
 private fun modeTitleRes(track: String): Int = when (track) {
     "shapes" -> R.string.mode_shapes
     "logic" -> R.string.mode_logic
+    "contradiction" -> R.string.mode_contradiction
     else -> R.string.mode_numbers
 }
 
 private fun modeIcon(track: String) = when (track) {
     "shapes" -> Icons.Filled.ChangeHistory
     "logic" -> Icons.Filled.Lightbulb
+    "contradiction" -> Icons.Filled.Warning
     else -> Icons.Filled.Numbers
 }
 
 @Composable
 private fun chapterTitle(track: String, chapter: Int): String {
+    if (track == "contradiction") {
+        return when (chapter) {
+            1 -> stringResource(R.string.contradiction_chapter_1)
+            2 -> stringResource(R.string.contradiction_chapter_2)
+            3 -> stringResource(R.string.contradiction_chapter_3)
+            4 -> stringResource(R.string.contradiction_chapter_4)
+            5 -> stringResource(R.string.contradiction_chapter_5)
+            6 -> stringResource(R.string.contradiction_chapter_6)
+            7 -> stringResource(R.string.contradiction_chapter_7)
+            8 -> stringResource(R.string.contradiction_chapter_8)
+            9 -> stringResource(R.string.contradiction_chapter_9)
+            10 -> stringResource(R.string.contradiction_chapter_10)
+            else -> stringResource(R.string.chapter_label, chapter)
+        }
+    }
     if (track == "logic") {
         return when (chapter) {
             1 -> stringResource(R.string.logic_chapter_1)

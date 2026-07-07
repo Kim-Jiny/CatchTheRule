@@ -45,7 +45,7 @@ class PuzzleStore private constructor(private val allPuzzles: List<Puzzle>) {
     companion object {
         const val DEFAULT_TRACK = "numbers"
         /** 모드 표시 순서(고정). 목록에 없는 트랙은 뒤에 등장 순으로 붙는다. */
-        private val TRACK_ORDER = listOf("numbers", "shapes", "logic")
+        private val TRACK_ORDER = listOf("numbers", "shapes", "logic", "contradiction")
         @Volatile private var instance: PuzzleStore? = null
         private val json = Json { ignoreUnknownKeys = true }
         private const val CACHE = "ctr_server_puzzles.json"

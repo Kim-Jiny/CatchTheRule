@@ -28,6 +28,7 @@ final class AdsManager: NSObject {
     private static let interstitialBaseProbability = 0.10  // 챕터 2 기준 10%
     private static let interstitialStepPerChapter = 0.05   // 챕터 1 증가마다 +5%p
     private static let interstitialCooldown: TimeInterval = 180   // 3분 쿨다운
+    private static let interstitialWrongProbability = 0.50 // 오답 시 50%
 
     // DEBUG 빌드는 구글 테스트 광고 단위, 릴리스는 실제 단위.
     private var adUnitID: String {
@@ -140,6 +141,25 @@ final class AdsManager: NSObject {
         // 챕터가 높을수록 확률 상승: 챕터2=10%, 챕터당 +5%p (최대 100%).
         let prob = min(1.0, Self.interstitialBaseProbability + Self.interstitialStepPerChapter * Double(chapter - Self.interstitialMinChapter))
         guard Double.random(in: 0..<1) < prob else {
+            loadInterstitial()   // 이번엔 미당첨 — 다음을 위해 준비
+            return false
+        }
+        guard let ad = interstitialAd, let root = Self.rootViewController else {
+            loadInterstitial()
+            return false
+        }
+        lastInterstitialAt = Date()
+        interstitialAd = nil
+        ad.present(from: root)
+        return true
+    }
+
+    /// 오답 시 50% 확률로 전면광고를 노출한다(스테이지 클리어 전면과 3분 쿨다운·준비된 광고를 공유).
+    /// 노출했으면 true. (광고 제거 구매 여부는 호출부에서 먼저 거른다.)
+    @discardableResult
+    func maybeShowInterstitialOnWrong() -> Bool {
+        guard Date().timeIntervalSince(lastInterstitialAt) >= Self.interstitialCooldown else { return false }
+        guard Double.random(in: 0..<1) < Self.interstitialWrongProbability else {
             loadInterstitial()   // 이번엔 미당첨 — 다음을 위해 준비
             return false
         }

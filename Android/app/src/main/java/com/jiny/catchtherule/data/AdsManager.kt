@@ -185,12 +185,42 @@ class AdsManager(context: Context) {
         return true
     }
 
+    /**
+     * 오답 시 50% 확률로 전면광고를 노출한다(스테이지 클리어 전면과 3분 쿨다운·준비된 광고를 공유).
+     * 노출했으면 true. (광고 제거 구매 여부는 호출부에서 먼저 거른다.)
+     */
+    fun maybeShowInterstitialOnWrong(activity: Activity): Boolean {
+        val now = System.currentTimeMillis()
+        if (now - lastInterstitialAt < INTERSTITIAL_COOLDOWN_MS) return false
+        if (Random.nextFloat() >= INTERSTITIAL_WRONG_PROB) {
+            loadInterstitial()   // 이번엔 미당첨 — 다음을 위해 준비
+            return false
+        }
+        val ad = interstitial ?: run { loadInterstitial(); return false }
+        ad.fullScreenContentCallback = object : FullScreenContentCallback() {
+            override fun onAdDismissedFullScreenContent() {
+                interstitial = null
+                loadInterstitial()
+            }
+
+            override fun onAdFailedToShowFullScreenContent(error: AdError) {
+                interstitial = null
+                loadInterstitial()
+            }
+        }
+        lastInterstitialAt = now
+        interstitial = null
+        ad.show(activity)
+        return true
+    }
+
     companion object {
         // 전면광고 노출 규칙(상수로 조정 가능)
         private const val INTERSTITIAL_MIN_CHAPTER = 2          // 챕터 2부터
         private const val INTERSTITIAL_BASE_PROB = 0.10f        // 챕터 2 기준 10%
         private const val INTERSTITIAL_STEP_PROB = 0.05f        // 챕터 1 증가마다 +5%p
         private const val INTERSTITIAL_COOLDOWN_MS = 3 * 60 * 1000L  // 3분 쿨다운
+        private const val INTERSTITIAL_WRONG_PROB = 0.50f       // 오답 시 50%
 
         // DEBUG 빌드는 구글 테스트 광고 단위, 릴리스는 실제 단위.
         private val REWARDED_HINT_ID: String
