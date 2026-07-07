@@ -6,7 +6,7 @@ import UserMessagingPlatform
 
 /// 광고 매니저.
 ///  - 리워드("광고 보고 힌트"): 시청 완료 시 onReward 호출
-///  - 전면(스테이지 클리어): 챕터 2+ / 10% 확률 / 3분 쿨다운일 때만 노출
+///  - 전면(스테이지 클리어): 챕터 2+ / 10% 확률 / 1분 쿨다운일 때만 노출
 /// 둘 다 미리 로드(prefetch)해두고, 닫히면 다음 것을 재로드한다.
 @Observable
 final class AdsManager: NSObject {
@@ -27,7 +27,7 @@ final class AdsManager: NSObject {
     private static let interstitialMinChapter = 2          // 챕터 2부터
     private static let interstitialBaseProbability = 0.10  // 챕터 2 기준 10%
     private static let interstitialStepPerChapter = 0.05   // 챕터 1 증가마다 +5%p
-    private static let interstitialCooldown: TimeInterval = 180   // 3분 쿨다운
+    private static let interstitialCooldown: TimeInterval = 60   // 1분 쿨다운
     private static let interstitialWrongProbability = 0.50 // 오답 시 50%
 
     // DEBUG 빌드는 구글 테스트 광고 단위, 릴리스는 실제 단위.
@@ -131,7 +131,7 @@ final class AdsManager: NSObject {
         }
     }
 
-    /// 조건(챕터 >= 2 && 10% 당첨 && 마지막 노출 후 3분 경과 && 준비된 광고 존재)을
+    /// 조건(챕터 >= 2 && 10% 당첨 && 마지막 노출 후 1분 경과 && 준비된 광고 존재)을
     /// 모두 만족할 때만 전면광고를 노출한다. 노출했으면 true.
     /// (광고 제거 구매 여부는 호출부에서 먼저 거른다.)
     @discardableResult
@@ -154,7 +154,7 @@ final class AdsManager: NSObject {
         return true
     }
 
-    /// 오답 시 50% 확률로 전면광고를 노출한다(스테이지 클리어 전면과 3분 쿨다운·준비된 광고를 공유).
+    /// 오답 시 50% 확률로 전면광고를 노출한다(스테이지 클리어 전면과 1분 쿨다운·준비된 광고를 공유).
     /// 노출했으면 true. (광고 제거 구매 여부는 호출부에서 먼저 거른다.)
     @discardableResult
     func maybeShowInterstitialOnWrong() -> Bool {

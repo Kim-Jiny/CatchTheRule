@@ -90,7 +90,7 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
     LaunchedEffect(solved) {
         if (solved) {
             delay(900)
-            // 스테이지 클리어 전면광고(챕터 2+ / 챕터별 확률 / 3분 쿨다운). 광고제거 구매 시 제외.
+            // 스테이지 클리어 전면광고(챕터 2+ / 챕터별 확률 / 1분 쿨다운). 광고제거 구매 시 제외.
             val ch = puzzle?.chapter ?: 0
             if (!billing.removeAdsPurchased && activity != null) {
                 ads.maybeShowInterstitial(activity, ch)
