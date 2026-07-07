@@ -411,6 +411,9 @@ private fun chapterTitle(track: String, chapter: Int): String {
             8 -> stringResource(R.string.contradiction_chapter_8)
             9 -> stringResource(R.string.contradiction_chapter_9)
             10 -> stringResource(R.string.contradiction_chapter_10)
+            11 -> stringResource(R.string.contradiction_chapter_11)
+            12 -> stringResource(R.string.contradiction_chapter_12)
+            13 -> stringResource(R.string.contradiction_chapter_13)
             else -> stringResource(R.string.chapter_label, chapter)
         }
     }

@@ -65,6 +65,9 @@
     <string name="contradiction_chapter_8">Hard</string>
     <string name="contradiction_chapter_9">Challenge</string>
     <string name="contradiction_chapter_10">Master</string>
+    <string name="contradiction_chapter_11">Elite</string>
+    <string name="contradiction_chapter_12">Mensa</string>
+    <string name="contradiction_chapter_13">Olympiad</string>
     <string name="contradiction_prompt">Find the sentence that doesn\'t fit</string>
     <string name="select_mode">Select a Mode</string>
     <string name="mode_complete">Complete</string>

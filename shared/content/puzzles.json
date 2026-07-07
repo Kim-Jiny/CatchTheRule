@@ -26352,5 +26352,2831 @@
       "fr": "Les phrases ⑤ et ⑥ additionnent 200 dollars de tentes et 40 de bois, soit 240, donc les 200 de ⑦ sont faux.",
       "de": "Die Sätze ⑤ und ⑥ addieren 200 Dollar für Zelte und 40 für Brennholz, also 240, sodass die 200 in ⑦ falsch sind."
     }
+  },
+  {
+    "id": "co11_s01",
+    "type": "contradiction",
+    "track": "contradiction",
+    "chapter": 11,
+    "order": 1,
+    "tokens": null,
+    "answer": "7",
+    "inputType": "choices",
+    "choices": null,
+    "statements": {
+      "en": [
+        "Four flatmates each vacuum the hallway on one weekday, Monday to Thursday.",
+        "No two flatmates vacuum on the same day.",
+        "Sam vacuums on Thursday.",
+        "Leo vacuums earlier in the week than Mia.",
+        "Noah vacuums the day immediately after Leo.",
+        "Mia does not vacuum on Monday.",
+        "Leo vacuums on Wednesday.",
+        "So Leo, Mia and Noah must cover Monday, Tuesday and Wednesday.",
+        "The pair of Leo then Noah must land on two back-to-back days.",
+        "That leaves Wednesday as the only day Mia can take.",
+        "Each flatmate vacuums exactly once during the week.",
+        "They stuck the finished chart on the fridge door."
+      ],
+      "ko": [
+        "네 명의 룸메이트가 월요일부터 목요일까지 각자 하루씩 복도를 청소기로 민다.",
+        "두 사람이 같은 날에 청소하지 않는다.",
+        "샘은 목요일에 청소한다.",
+        "레오는 미아보다 이번 주에서 더 이른 날에 청소한다.",
+        "노아는 레오 바로 다음 날에 청소한다.",
+        "미아는 월요일에 청소하지 않는다.",
+        "레오는 수요일에 청소한다.",
+        "그래서 레오, 미아, 노아가 월요일, 화요일, 수요일을 맡아야 한다.",
+        "레오 다음에 노아라는 순서는 이어진 이틀에 놓여야 한다.",
+        "그러면 미아가 맡을 수 있는 날은 수요일뿐이다.",
+        "각 룸메이트는 그 주에 정확히 한 번 청소한다.",
+        "그들은 완성된 표를 냉장고 문에 붙였다."
+      ],
+      "ja": [
+        "四人のルームメイトが月曜から木曜まで、それぞれ一日ずつ廊下に掃除機をかける。",
+        "二人が同じ日に掃除することはない。",
+        "サムは木曜に掃除する。",
+        "レオはミアより今週の早い日に掃除する。",
+        "ノアはレオのすぐ翌日に掃除する。",
+        "ミアは月曜には掃除しない。",
+        "レオは水曜に掃除する。",
+        "だからレオ、ミア、ノアが月曜・火曜・水曜を担当することになる。",
+        "レオの次にノアという並びは、連続した二日に入らなければならない。",
+        "すると、ミアが取れる日は水曜だけになる。",
+        "各ルームメイトはその週にちょうど一度だけ掃除する。",
+        "彼らは完成した表を冷蔵庫の扉に貼った。"
+      ],
+      "zh": [
+        "四位室友在周一到周四之间，各自负责一天用吸尘器清扫走廊。",
+        "没有两个人在同一天打扫。",
+        "山姆在周四打扫。",
+        "里奥打扫的日子比米娅早。",
+        "诺亚在里奥的第二天打扫。",
+        "米娅不在周一打扫。",
+        "里奥在周三打扫。",
+        "所以里奥、米娅和诺亚要分担周一、周二和周三。",
+        "里奥然后诺亚这个顺序必须落在连续的两天。",
+        "这样一来，米娅只能选周三。",
+        "每位室友那一周正好打扫一次。",
+        "他们把排好的表贴在冰箱门上。"
+      ],
+      "es": [
+        "Cuatro compañeros de piso pasan la aspiradora por el pasillo, cada uno un día entre lunes y jueves.",
+        "No hay dos que limpien el mismo día.",
+        "Sam limpia el jueves.",
+        "Leo limpia un día más temprano en la semana que Mia.",
+        "Noah limpia justo el día siguiente a Leo.",
+        "Mia no limpia el lunes.",
+        "Leo limpia el miércoles.",
+        "Así que Leo, Mia y Noah deben cubrir lunes, martes y miércoles.",
+        "La pareja Leo y luego Noah debe caer en dos días seguidos.",
+        "Eso deja el miércoles como el único día que Mia puede tomar.",
+        "Cada compañero limpia exactamente una vez esa semana.",
+        "Pegaron el cuadro terminado en la puerta de la nevera."
+      ],
+      "fr": [
+        "Quatre colocataires passent l'aspirateur dans le couloir, chacun un jour du lundi au jeudi.",
+        "Deux colocataires ne nettoient jamais le même jour.",
+        "Sam nettoie le jeudi.",
+        "Leo nettoie plus tôt dans la semaine que Mia.",
+        "Noah nettoie juste le lendemain de Leo.",
+        "Mia ne nettoie pas le lundi.",
+        "Leo nettoie le mercredi.",
+        "Donc Leo, Mia et Noah doivent couvrir lundi, mardi et mercredi.",
+        "La paire Leo puis Noah doit tomber sur deux jours consécutifs.",
+        "Il ne reste alors que le mercredi comme jour possible pour Mia.",
+        "Chaque colocataire nettoie exactement une fois dans la semaine.",
+        "Ils ont collé le tableau terminé sur la porte du frigo."
+      ],
+      "de": [
+        "Vier Mitbewohner saugen den Flur, jeder an einem Wochentag von Montag bis Donnerstag.",
+        "Keine zwei Mitbewohner saugen am selben Tag.",
+        "Sam saugt am Donnerstag.",
+        "Leo saugt früher in der Woche als Mia.",
+        "Noah saugt genau am Tag nach Leo.",
+        "Mia saugt nicht am Montag.",
+        "Leo saugt am Mittwoch.",
+        "Also müssen Leo, Mia und Noah Montag, Dienstag und Mittwoch abdecken.",
+        "Das Paar Leo und dann Noah muss auf zwei aufeinanderfolgende Tage fallen.",
+        "Damit bleibt nur der Mittwoch als Tag für Mia.",
+        "Jeder Mitbewohner saugt genau einmal in der Woche.",
+        "Sie hefteten den fertigen Plan an die Kühlschranktür."
+      ]
+    },
+    "hints": {
+      "en": [
+        "Pin Sam to Thursday, then chain Leo and Noah onto back-to-back days.",
+        "Leo has to be Monday with Noah on Tuesday, so he cannot be on Wednesday."
+      ],
+      "ko": [
+        "샘을 목요일로 고정한 뒤 레오와 노아를 이어진 이틀에 놓아 보라.",
+        "레오는 노아를 화요일에 두고 월요일이어야 하므로 수요일일 수 없다."
+      ],
+      "ja": [
+        "サムを木曜に固定し、レオとノアを連続した二日に並べてみよう。",
+        "レオはノアを火曜にして月曜のはずなので、水曜にはなれない。"
+      ],
+      "zh": [
+        "先把山姆定在周四，再把里奥和诺亚排到连续的两天。",
+        "里奥必须是周一、诺亚在周二，所以他不可能在周三。"
+      ],
+      "es": [
+        "Fija a Sam en el jueves y luego encadena a Leo y Noah en días seguidos.",
+        "Leo tiene que ser el lunes con Noah el martes, así que no puede ser el miércoles."
+      ],
+      "fr": [
+        "Place Sam le jeudi, puis enchaîne Leo et Noah sur deux jours consécutifs.",
+        "Leo doit être le lundi avec Noah le mardi, donc il ne peut pas être le mercredi."
+      ],
+      "de": [
+        "Setze Sam auf Donnerstag und ordne Leo und Noah dann auf zwei aufeinanderfolgende Tage.",
+        "Leo muss der Montag sein, mit Noah am Dienstag, also kann er nicht am Mittwoch sein."
+      ]
+    },
+    "explanation": {
+      "en": "Clues ③④⑤ and ⑩ force Leo onto Monday — Noah right after him, Sam on Thursday and Mia on Wednesday — so ⑦ placing Leo on Wednesday is impossible.",
+      "ko": "단서 ③④⑤와 ⑩은 레오를 월요일로 강제한다 — 노아는 바로 다음 날, 샘은 목요일, 미아는 수요일 — 따라서 레오를 수요일에 두는 ⑦은 불가능하다.",
+      "ja": "手がかり③④⑤と⑩はレオを月曜に固定する — ノアはその翌日、サムは木曜、ミアは水曜 — だからレオを水曜に置く⑦は成り立たない。",
+      "zh": "线索③④⑤和⑩把里奥固定在周一——诺亚紧随其后，山姆在周四，米娅在周三——所以把里奥放在周三的⑦不可能成立。",
+      "es": "Las pistas ③④⑤ y ⑩ obligan a Leo al lunes —Noah justo después, Sam el jueves y Mia el miércoles—, así que ⑦, que pone a Leo el miércoles, es imposible.",
+      "fr": "Les indices ③④⑤ et ⑩ forcent Leo au lundi — Noah juste après, Sam le jeudi et Mia le mercredi — donc ⑦, qui met Leo le mercredi, est impossible.",
+      "de": "Die Hinweise ③④⑤ und ⑩ zwingen Leo auf Montag — Noah direkt danach, Sam am Donnerstag und Mia am Mittwoch —, also ist ⑦, das Leo auf Mittwoch setzt, unmöglich."
+    }
+  },
+  {
+    "id": "co11_s02",
+    "type": "contradiction",
+    "track": "contradiction",
+    "chapter": 11,
+    "order": 2,
+    "tokens": null,
+    "answer": "10",
+    "inputType": "choices",
+    "choices": null,
+    "statements": {
+      "en": [
+        "Four teams — Reds, Blues, Greens, Golds — play a single-elimination cup.",
+        "In semifinal one, Reds face Blues.",
+        "In semifinal two, Greens face Golds.",
+        "The two semifinal winners meet in the final.",
+        "Any team that loses a match is out of the cup.",
+        "Reds beat Blues in semifinal one.",
+        "Golds beat Greens in semifinal two.",
+        "So the final is Reds against Golds.",
+        "Golds win the final and lift the trophy.",
+        "Blues reach the final.",
+        "Only one team finishes the cup unbeaten.",
+        "The runner-up is whichever team loses the final."
+      ],
+      "ko": [
+        "네 팀 — 레드, 블루, 그린, 골드 — 이 단판 토너먼트 컵을 치른다.",
+        "준결승 1경기에서 레드가 블루와 맞붙는다.",
+        "준결승 2경기에서 그린이 골드와 맞붙는다.",
+        "두 준결승 승자가 결승에서 만난다.",
+        "한 경기라도 지는 팀은 컵에서 탈락한다.",
+        "준결승 1경기에서 레드가 블루를 이긴다.",
+        "준결승 2경기에서 골드가 그린을 이긴다.",
+        "그래서 결승은 레드 대 골드다.",
+        "골드가 결승에서 이기고 트로피를 든다.",
+        "블루가 결승에 오른다.",
+        "오직 한 팀만 무패로 컵을 마친다.",
+        "준우승 팀은 결승에서 지는 팀이다."
+      ],
+      "ja": [
+        "四つのチーム — レッド、ブルー、グリーン、ゴールド — が一発勝負のカップ戦を行う。",
+        "準決勝第一試合で、レッドがブルーと対戦する。",
+        "準決勝第二試合で、グリーンがゴールドと対戦する。",
+        "二つの準決勝の勝者が決勝で顔を合わせる。",
+        "一試合でも負けたチームはカップ戦から敗退する。",
+        "準決勝第一試合でレッドがブルーに勝つ。",
+        "準決勝第二試合でゴールドがグリーンに勝つ。",
+        "だから決勝はレッド対ゴールドだ。",
+        "ゴールドが決勝に勝ち、トロフィーを掲げる。",
+        "ブルーが決勝に進む。",
+        "無敗でカップ戦を終えるチームはただ一つだけだ。",
+        "準優勝は決勝で負けたチームだ。"
+      ],
+      "zh": [
+        "四支球队——红队、蓝队、绿队、金队——进行一场单败淘汰杯赛。",
+        "半决赛第一场，红队对阵蓝队。",
+        "半决赛第二场，绿队对阵金队。",
+        "两场半决赛的胜者在决赛相遇。",
+        "任何输掉一场比赛的球队都被淘汰出局。",
+        "半决赛第一场，红队击败蓝队。",
+        "半决赛第二场，金队击败绿队。",
+        "所以决赛是红队对金队。",
+        "金队赢得决赛，捧起奖杯。",
+        "蓝队打进决赛。",
+        "只有一支球队全胜结束杯赛。",
+        "亚军就是在决赛中落败的那支球队。"
+      ],
+      "es": [
+        "Cuatro equipos —Rojos, Azules, Verdes, Dorados— juegan una copa de eliminación directa.",
+        "En la semifinal uno, los Rojos se enfrentan a los Azules.",
+        "En la semifinal dos, los Verdes se enfrentan a los Dorados.",
+        "Los dos ganadores de semifinal se ven en la final.",
+        "Todo equipo que pierde un partido queda fuera de la copa.",
+        "Los Rojos ganan a los Azules en la semifinal uno.",
+        "Los Dorados ganan a los Verdes en la semifinal dos.",
+        "Así que la final es Rojos contra Dorados.",
+        "Los Dorados ganan la final y levantan el trofeo.",
+        "Los Azules llegan a la final.",
+        "Solo un equipo termina la copa sin perder.",
+        "El subcampeón es el equipo que pierde la final."
+      ],
+      "fr": [
+        "Quatre équipes — Rouges, Bleus, Verts, Dorés — disputent une coupe à élimination directe.",
+        "En demi-finale un, les Rouges affrontent les Bleus.",
+        "En demi-finale deux, les Verts affrontent les Dorés.",
+        "Les deux vainqueurs des demi-finales se retrouvent en finale.",
+        "Toute équipe qui perd un match est éliminée de la coupe.",
+        "Les Rouges battent les Bleus en demi-finale un.",
+        "Les Dorés battent les Verts en demi-finale deux.",
+        "Donc la finale oppose les Rouges aux Dorés.",
+        "Les Dorés gagnent la finale et soulèvent le trophée.",
+        "Les Bleus atteignent la finale.",
+        "Une seule équipe termine la coupe invaincue.",
+        "Le finaliste malheureux est l'équipe qui perd la finale."
+      ],
+      "de": [
+        "Vier Mannschaften — Rote, Blaue, Grüne, Goldene — spielen einen K.-o.-Pokal.",
+        "Im ersten Halbfinale treffen die Roten auf die Blauen.",
+        "Im zweiten Halbfinale treffen die Grünen auf die Goldenen.",
+        "Die beiden Halbfinalsieger treffen sich im Finale.",
+        "Jede Mannschaft, die ein Spiel verliert, scheidet aus dem Pokal aus.",
+        "Die Roten schlagen die Blauen im ersten Halbfinale.",
+        "Die Goldenen schlagen die Grünen im zweiten Halbfinale.",
+        "Also ist das Finale Rote gegen Goldene.",
+        "Die Goldenen gewinnen das Finale und heben den Pokal.",
+        "Die Blauen erreichen das Finale.",
+        "Nur eine Mannschaft beendet den Pokal ungeschlagen.",
+        "Der Zweitplatzierte ist die Mannschaft, die das Finale verliert."
+      ]
+    },
+    "hints": {
+      "en": [
+        "Follow who survives each semifinal before you look at the final.",
+        "Blues lose to Reds in semifinal one, so they can't be in the final."
+      ],
+      "ko": [
+        "결승을 보기 전에 각 준결승에서 누가 살아남는지 따라가 보라.",
+        "블루는 준결승 1에서 레드에게 지므로 결승에 있을 수 없다."
+      ],
+      "ja": [
+        "決勝を見る前に、各準決勝で誰が勝ち残るかを追ってみよう。",
+        "ブルーは準決勝第一試合でレッドに負けるので、決勝には出られない。"
+      ],
+      "zh": [
+        "先看清每场半决赛谁晋级，再看决赛。",
+        "蓝队在半决赛第一场输给红队，所以不可能进决赛。"
+      ],
+      "es": [
+        "Sigue quién sobrevive a cada semifinal antes de mirar la final.",
+        "Los Azules pierden con los Rojos en la semifinal uno, así que no pueden estar en la final."
+      ],
+      "fr": [
+        "Suis qui survit à chaque demi-finale avant de regarder la finale.",
+        "Les Bleus perdent contre les Rouges en demi-finale un, donc ils ne peuvent pas être en finale."
+      ],
+      "de": [
+        "Verfolge, wer jedes Halbfinale übersteht, bevor du auf das Finale schaust.",
+        "Die Blauen verlieren im ersten Halbfinale gegen die Roten, also können sie nicht im Finale sein."
+      ]
+    },
+    "explanation": {
+      "en": "Clues ②, ⑥ and ⑤ knock Blues out in semifinal one and ⑧ makes the final Reds versus Golds, so ⑩ saying Blues reach the final is impossible.",
+      "ko": "단서 ②, ⑥, ⑤가 블루를 준결승 1에서 탈락시키고 ⑧이 결승을 레드 대 골드로 만들므로, 블루가 결승에 오른다는 ⑩은 불가능하다.",
+      "ja": "手がかり②・⑥・⑤がブルーを準決勝第一試合で敗退させ、⑧が決勝をレッド対ゴールドにするので、ブルーが決勝に進むという⑩は成り立たない。",
+      "zh": "线索②、⑥和⑤让蓝队在半决赛第一场出局，⑧使决赛成为红队对金队，所以说蓝队打进决赛的⑩不可能成立。",
+      "es": "Las pistas ②, ⑥ y ⑤ eliminan a los Azules en la semifinal uno y ⑧ hace que la final sea Rojos contra Dorados, así que ⑩, que dice que los Azules llegan a la final, es imposible.",
+      "fr": "Les indices ②, ⑥ et ⑤ éliminent les Bleus en demi-finale un et ⑧ fait de la finale Rouges contre Dorés, donc ⑩, qui dit que les Bleus atteignent la finale, est impossible.",
+      "de": "Die Hinweise ②, ⑥ und ⑤ scheiden die Blauen im ersten Halbfinale aus und ⑧ macht das Finale zu Rote gegen Goldene, also ist ⑩, das sagt, die Blauen erreichen das Finale, unmöglich."
+    }
+  },
+  {
+    "id": "co11_s03",
+    "type": "contradiction",
+    "track": "contradiction",
+    "chapter": 11,
+    "order": 3,
+    "tokens": null,
+    "answer": "5",
+    "inputType": "choices",
+    "choices": null,
+    "statements": {
+      "en": [
+        "Four friends sit in one row of seats numbered 1 to 4, from left to right.",
+        "Each seat is taken by exactly one friend.",
+        "Ada sits in seat 1.",
+        "Ben sits in the seat right next to Ada.",
+        "Cody sits in seat 4.",
+        "Dana sits somewhere to the right of Cody.",
+        "Since Ada takes seat 1, Ben must sit in seat 2.",
+        "That leaves seats 3 and 4 for Cody and Dana to share.",
+        "Dana does not sit in seat 3.",
+        "No one swaps seats once the show begins.",
+        "Ada is the only friend on the far-left end.",
+        "They booked the four seats together online the night before."
+      ],
+      "ko": [
+        "네 친구가 왼쪽에서 오른쪽으로 1번부터 4번까지 번호가 매겨진 한 줄에 앉는다.",
+        "각 좌석에는 정확히 한 친구가 앉는다.",
+        "에이다는 1번 좌석에 앉는다.",
+        "벤은 에이다 바로 옆 좌석에 앉는다.",
+        "코디는 4번 좌석에 앉는다.",
+        "다나는 코디보다 오른쪽 어딘가에 앉는다.",
+        "에이다가 1번을 차지하므로 벤은 2번에 앉아야 한다.",
+        "그러면 3번과 4번이 코디와 다나 몫으로 남는다.",
+        "다나는 3번 좌석에 앉지 않는다.",
+        "공연이 시작되면 아무도 자리를 바꾸지 않는다.",
+        "맨 왼쪽 끝에 앉은 친구는 에이다뿐이다.",
+        "그들은 전날 밤 네 좌석을 함께 온라인으로 예매했다."
+      ],
+      "ja": [
+        "四人の友人が、左から右へ1番から4番まで番号のついた一列の席に座る。",
+        "各席にはちょうど一人の友人が座る。",
+        "エイダは1番の席に座る。",
+        "ベンはエイダのすぐ隣の席に座る。",
+        "コディは4番の席に座る。",
+        "ダナはコディより右のどこかに座る。",
+        "エイダが1番を取るので、ベンは2番に座らなければならない。",
+        "すると3番と4番がコディとダナに残る。",
+        "ダナは3番の席には座らない。",
+        "公演が始まると誰も席を替えない。",
+        "いちばん左端に座る友人はエイダだけだ。",
+        "彼らは前の晩に四席をまとめてオンラインで予約した。"
+      ],
+      "zh": [
+        "四位朋友坐在一排从左到右编号为1到4的座位上。",
+        "每个座位正好坐一位朋友。",
+        "艾达坐在1号座位。",
+        "本坐在紧挨着艾达的座位。",
+        "科迪坐在4号座位。",
+        "达娜坐在科迪右边的某个座位。",
+        "既然艾达占了1号，本就必须坐2号。",
+        "这样3号和4号就留给科迪和达娜。",
+        "达娜不坐3号座位。",
+        "演出一开始谁都不换座。",
+        "坐在最左端的朋友只有艾达。",
+        "他们前一晚一起在网上订了这四个座位。"
+      ],
+      "es": [
+        "Cuatro amigos se sientan en una fila de asientos numerados del 1 al 4, de izquierda a derecha.",
+        "Cada asiento lo ocupa exactamente un amigo.",
+        "Ada se sienta en el asiento 1.",
+        "Ben se sienta en el asiento justo al lado de Ada.",
+        "Cody se sienta en el asiento 4.",
+        "Dana se sienta en algún lugar a la derecha de Cody.",
+        "Como Ada toma el asiento 1, Ben debe sentarse en el asiento 2.",
+        "Eso deja los asientos 3 y 4 para Cody y Dana.",
+        "Dana no se sienta en el asiento 3.",
+        "Nadie cambia de asiento una vez que empieza la función.",
+        "Ada es la única amiga en el extremo izquierdo.",
+        "Reservaron los cuatro asientos juntos por internet la noche anterior."
+      ],
+      "fr": [
+        "Quatre amis s'assoient sur une rangée de sièges numérotés de 1 à 4, de gauche à droite.",
+        "Chaque siège est occupé par exactement un ami.",
+        "Ada s'assoit au siège 1.",
+        "Ben s'assoit au siège juste à côté d'Ada.",
+        "Cody s'assoit au siège 4.",
+        "Dana s'assoit quelque part à droite de Cody.",
+        "Comme Ada prend le siège 1, Ben doit s'asseoir au siège 2.",
+        "Il reste alors les sièges 3 et 4 pour Cody et Dana.",
+        "Dana ne s'assoit pas au siège 3.",
+        "Personne ne change de siège une fois le spectacle commencé.",
+        "Ada est la seule amie tout à gauche.",
+        "Ils ont réservé les quatre sièges ensemble en ligne la veille au soir."
+      ],
+      "de": [
+        "Vier Freunde sitzen in einer Reihe auf Sitzen, die von links nach rechts mit 1 bis 4 nummeriert sind.",
+        "Jeder Sitz wird von genau einem Freund belegt.",
+        "Ada sitzt auf Sitz 1.",
+        "Ben sitzt auf dem Sitz direkt neben Ada.",
+        "Cody sitzt auf Sitz 4.",
+        "Dana sitzt irgendwo rechts von Cody.",
+        "Da Ada Sitz 1 nimmt, muss Ben auf Sitz 2 sitzen.",
+        "Damit bleiben Sitz 3 und 4 für Cody und Dana.",
+        "Dana sitzt nicht auf Sitz 3.",
+        "Niemand tauscht die Plätze, sobald die Vorstellung beginnt.",
+        "Ada ist die einzige Freundin ganz links außen.",
+        "Sie buchten die vier Plätze am Abend zuvor gemeinsam online."
+      ]
+    },
+    "hints": {
+      "en": [
+        "Place Ada and Ben on the left, then fit Cody and Dana into seats 3 and 4.",
+        "Dana must be right of Cody and not in seat 3, so Cody is in seat 3, not seat 4."
+      ],
+      "ko": [
+        "에이다와 벤을 왼쪽에 두고 코디와 다나를 3번과 4번에 넣어 보라.",
+        "다나는 코디의 오른쪽이면서 3번이 아니므로, 코디는 4번이 아니라 3번이다."
+      ],
+      "ja": [
+        "エイダとベンを左に置き、コディとダナを3番と4番に入れてみよう。",
+        "ダナはコディの右で、しかも3番ではないので、コディは4番ではなく3番になる。"
+      ],
+      "zh": [
+        "先把艾达和本安排在左边，再把科迪和达娜放进3号和4号。",
+        "达娜必须在科迪右边且不坐3号，所以科迪坐3号，而不是4号。"
+      ],
+      "es": [
+        "Coloca a Ada y Ben a la izquierda y luego encaja a Cody y Dana en los asientos 3 y 4.",
+        "Dana debe estar a la derecha de Cody y no en el asiento 3, así que Cody está en el 3, no en el 4."
+      ],
+      "fr": [
+        "Place Ada et Ben à gauche, puis case Cody et Dana aux sièges 3 et 4.",
+        "Dana doit être à droite de Cody et pas au siège 3, donc Cody est au siège 3, pas au 4."
+      ],
+      "de": [
+        "Setze Ada und Ben nach links und passe dann Cody und Dana auf Sitz 3 und 4 ein.",
+        "Dana muss rechts von Cody und nicht auf Sitz 3 sein, also ist Cody auf Sitz 3, nicht auf Sitz 4."
+      ]
+    },
+    "explanation": {
+      "en": "Clues ③④ put Ben in seat 2, and ⑥⑧⑨ force Cody into seat 3 with Dana in seat 4, so ⑤ placing Cody in seat 4 is impossible.",
+      "ko": "단서 ③④는 벤을 2번에 두고, ⑥⑧⑨는 코디를 3번, 다나를 4번으로 강제하므로, 코디를 4번에 두는 ⑤는 불가능하다.",
+      "ja": "手がかり③④はベンを2番に置き、⑥⑧⑨はコディを3番、ダナを4番に固定するので、コディを4番に置く⑤は成り立たない。",
+      "zh": "线索③④把本放在2号，⑥⑧⑨迫使科迪坐3号、达娜坐4号，所以把科迪放在4号的⑤不可能成立。",
+      "es": "Las pistas ③④ ponen a Ben en el asiento 2, y ⑥⑧⑨ obligan a Cody al asiento 3 con Dana en el 4, así que ⑤, que pone a Cody en el asiento 4, es imposible.",
+      "fr": "Les indices ③④ placent Ben au siège 2, et ⑥⑧⑨ forcent Cody au siège 3 avec Dana au siège 4, donc ⑤, qui met Cody au siège 4, est impossible.",
+      "de": "Die Hinweise ③④ setzen Ben auf Sitz 2, und ⑥⑧⑨ zwingen Cody auf Sitz 3 mit Dana auf Sitz 4, also ist ⑤, das Cody auf Sitz 4 setzt, unmöglich."
+    }
+  },
+  {
+    "id": "co11_s04",
+    "type": "contradiction",
+    "track": "contradiction",
+    "chapter": 11,
+    "order": 4,
+    "tokens": null,
+    "answer": "11",
+    "inputType": "choices",
+    "choices": null,
+    "statements": {
+      "en": [
+        "Four members each hold one club role: President, Secretary, Treasurer or Organizer.",
+        "Each member holds exactly one role, and each role goes to one member.",
+        "Tom is the Treasurer.",
+        "Rosa is not the President.",
+        "Uma is either President or Secretary.",
+        "Vik is not the Organizer.",
+        "Vik is not the President.",
+        "Since Uma and Vik must both take President or Secretary, Rosa becomes the Organizer.",
+        "Vik, barred from the presidency, takes the Secretary role.",
+        "The new roles were announced at Monday's meeting.",
+        "Rosa is the Secretary.",
+        "The four signed the club charter once the roles were settled."
+      ],
+      "ko": [
+        "네 회원이 각자 하나의 동아리 역할을 맡는다: 회장, 총무, 회계, 기획.",
+        "각 회원은 정확히 하나의 역할을 맡고, 각 역할은 한 회원에게 돌아간다.",
+        "톰은 회계다.",
+        "로사는 회장이 아니다.",
+        "우마는 회장 아니면 총무다.",
+        "빅은 기획이 아니다.",
+        "빅은 회장이 아니다.",
+        "우마와 빅이 둘 다 회장이나 총무를 맡아야 하므로 로사는 기획이 된다.",
+        "회장에서 배제된 빅은 총무 역할을 맡는다.",
+        "새 역할은 월요일 모임에서 발표되었다.",
+        "로사는 총무다.",
+        "네 사람은 역할이 정해지자 동아리 헌장에 서명했다."
+      ],
+      "ja": [
+        "四人の会員がそれぞれクラブの役職を一つ担う：会長、書記、会計、幹事。",
+        "各会員はちょうど一つの役職に就き、各役職は一人の会員に割り当てられる。",
+        "トムは会計だ。",
+        "ローザは会長ではない。",
+        "ウマは会長か書記のどちらかだ。",
+        "ヴィクは幹事ではない。",
+        "ヴィクは会長ではない。",
+        "ウマとヴィクが二人とも会長か書記に就くので、ローザは幹事になる。",
+        "会長から外れたヴィクは書記の役を担う。",
+        "新しい役職は月曜の集まりで発表された。",
+        "ローザは書記だ。",
+        "四人は役職が決まると、クラブの規約に署名した。"
+      ],
+      "zh": [
+        "四名成员各担任一个社团职务：会长、秘书、财务、干事。",
+        "每名成员正好担任一个职务，每个职务归一名成员。",
+        "汤姆是财务。",
+        "罗莎不是会长。",
+        "乌玛是会长或秘书之一。",
+        "维克不是干事。",
+        "维克不是会长。",
+        "既然乌玛和维克都必须担任会长或秘书，罗莎就成了干事。",
+        "被排除在会长之外的维克，担任秘书一职。",
+        "新职务在周一的会议上公布。",
+        "罗莎是秘书。",
+        "职务定下后，四人在社团章程上签了字。"
+      ],
+      "es": [
+        "Cuatro miembros ocupan cada uno un cargo del club: Presidente, Secretario, Tesorero u Organizador.",
+        "Cada miembro ocupa exactamente un cargo, y cada cargo recae en un miembro.",
+        "Tom es el Tesorero.",
+        "Rosa no es la Presidenta.",
+        "Uma es Presidenta o Secretaria.",
+        "Vik no es el Organizador.",
+        "Vik no es el Presidente.",
+        "Como Uma y Vik deben ocupar Presidencia o Secretaría, Rosa pasa a ser la Organizadora.",
+        "Vik, excluido de la presidencia, ocupa el cargo de Secretario.",
+        "Los nuevos cargos se anunciaron en la reunión del lunes.",
+        "Rosa es la Secretaria.",
+        "Los cuatro firmaron los estatutos del club una vez fijados los cargos."
+      ],
+      "fr": [
+        "Quatre membres occupent chacun un rôle du club : Président, Secrétaire, Trésorier ou Organisateur.",
+        "Chaque membre occupe exactement un rôle, et chaque rôle revient à un membre.",
+        "Tom est le Trésorier.",
+        "Rosa n'est pas la Présidente.",
+        "Uma est soit Présidente, soit Secrétaire.",
+        "Vik n'est pas l'Organisateur.",
+        "Vik n'est pas le Président.",
+        "Comme Uma et Vik doivent prendre la présidence ou le secrétariat, Rosa devient l'Organisatrice.",
+        "Vik, écarté de la présidence, prend le rôle de Secrétaire.",
+        "Les nouveaux rôles ont été annoncés à la réunion du lundi.",
+        "Rosa est la Secrétaire.",
+        "Les quatre ont signé les statuts du club une fois les rôles fixés."
+      ],
+      "de": [
+        "Vier Mitglieder übernehmen je eine Vereinsrolle: Vorsitzender, Schriftführer, Kassenwart oder Organisator.",
+        "Jedes Mitglied hat genau eine Rolle, und jede Rolle geht an ein Mitglied.",
+        "Tom ist der Kassenwart.",
+        "Rosa ist nicht die Vorsitzende.",
+        "Uma ist entweder Vorsitzende oder Schriftführerin.",
+        "Vik ist nicht der Organisator.",
+        "Vik ist nicht der Vorsitzende.",
+        "Da Uma und Vik beide Vorsitz oder Schriftführung übernehmen müssen, wird Rosa die Organisatorin.",
+        "Vik, vom Vorsitz ausgeschlossen, übernimmt die Rolle des Schriftführers.",
+        "Die neuen Rollen wurden beim Treffen am Montag bekannt gegeben.",
+        "Rosa ist die Schriftführerin.",
+        "Die vier unterzeichneten die Vereinssatzung, sobald die Rollen feststanden."
+      ]
+    },
+    "hints": {
+      "en": [
+        "Work out who is left once Uma and Vik claim the top two roles.",
+        "Rosa is pushed into Organizer and Vik into Secretary, so Rosa can't be Secretary."
+      ],
+      "ko": [
+        "우마와 빅이 상위 두 역할을 차지하면 누가 남는지 따져 보라.",
+        "로사는 기획으로, 빅은 총무로 밀려나므로 로사는 총무일 수 없다."
+      ],
+      "ja": [
+        "ウマとヴィクが上位二つの役職を取ると誰が残るかを考えてみよう。",
+        "ローザは幹事、ヴィクは書記に押し込まれるので、ローザは書記になれない。"
+      ],
+      "zh": [
+        "想清楚乌玛和维克拿走前两个职务后，还剩谁。",
+        "罗莎被挤成干事、维克被挤成秘书，所以罗莎不可能是秘书。"
+      ],
+      "es": [
+        "Averigua quién queda una vez que Uma y Vik toman los dos primeros cargos.",
+        "Rosa queda como Organizadora y Vik como Secretario, así que Rosa no puede ser Secretaria."
+      ],
+      "fr": [
+        "Détermine qui reste une fois qu'Uma et Vik prennent les deux premiers rôles.",
+        "Rosa est poussée vers Organisatrice et Vik vers Secrétaire, donc Rosa ne peut pas être Secrétaire."
+      ],
+      "de": [
+        "Finde heraus, wer übrig bleibt, sobald Uma und Vik die beiden ersten Rollen nehmen.",
+        "Rosa wird zur Organisatorin und Vik zum Schriftführer gedrängt, also kann Rosa nicht Schriftführerin sein."
+      ]
+    },
+    "explanation": {
+      "en": "Clues ③④⑤⑥⑦ force Rosa to be the Organizer and Vik the Secretary, so ⑪ calling Rosa the Secretary is impossible.",
+      "ko": "단서 ③④⑤⑥⑦은 로사를 기획으로, 빅을 총무로 강제하므로, 로사를 총무라고 하는 ⑪은 불가능하다.",
+      "ja": "手がかり③④⑤⑥⑦はローザを幹事、ヴィクを書記に固定するので、ローザを書記とする⑪は成り立たない。",
+      "zh": "线索③④⑤⑥⑦迫使罗莎当干事、维克当秘书，所以说罗莎是秘书的⑪不可能成立。",
+      "es": "Las pistas ③④⑤⑥⑦ obligan a Rosa a ser la Organizadora y a Vik el Secretario, así que ⑪, que llama Secretaria a Rosa, es imposible.",
+      "fr": "Les indices ③④⑤⑥⑦ forcent Rosa à être l'Organisatrice et Vik le Secrétaire, donc ⑪, qui dit que Rosa est Secrétaire, est impossible.",
+      "de": "Die Hinweise ③④⑤⑥⑦ zwingen Rosa zur Organisatorin und Vik zum Schriftführer, also ist ⑪, das Rosa zur Schriftführerin macht, unmöglich."
+    }
+  },
+  {
+    "id": "co11_s05",
+    "type": "contradiction",
+    "track": "contradiction",
+    "chapter": 11,
+    "order": 5,
+    "tokens": null,
+    "answer": "8",
+    "inputType": "choices",
+    "choices": null,
+    "statements": {
+      "en": [
+        "A courier delivers to four districts — North, East, South and West — one each day, Monday to Thursday.",
+        "Each district gets exactly one delivery day.",
+        "North is delivered before East in the week.",
+        "South is the Thursday delivery.",
+        "West is delivered on Monday.",
+        "East is not delivered on Tuesday.",
+        "So North and East must fall on Tuesday and Wednesday in some order.",
+        "North is the Wednesday delivery.",
+        "Because East cannot be Tuesday, East takes Wednesday.",
+        "The van returns to the depot before noon each day.",
+        "Every stop is scanned on arrival.",
+        "The whole route was logged in the delivery app."
+      ],
+      "ko": [
+        "택배 기사가 네 지역 — 북부, 동부, 남부, 서부 — 에 월요일부터 목요일까지 하루에 한 곳씩 배달한다.",
+        "각 지역은 정확히 하루의 배달일을 받는다.",
+        "북부는 이번 주에 동부보다 먼저 배달된다.",
+        "남부는 목요일 배달이다.",
+        "서부는 월요일에 배달된다.",
+        "동부는 화요일에 배달되지 않는다.",
+        "그래서 북부와 동부는 어떤 순서로든 화요일과 수요일에 놓인다.",
+        "북부는 수요일 배달이다.",
+        "동부는 화요일일 수 없으므로 동부가 수요일을 차지한다.",
+        "승합차는 매일 정오 전에 물류센터로 돌아온다.",
+        "모든 배달지는 도착 시 스캔된다.",
+        "전체 경로가 배달 앱에 기록되었다."
+      ],
+      "ja": [
+        "配達員が四つの地区 — 北区、東区、南区、西区 — に、月曜から木曜まで一日に一か所ずつ配達する。",
+        "各地区はちょうど一日の配達日を受け持つ。",
+        "北区は今週、東区より先に配達される。",
+        "南区は木曜の配達だ。",
+        "西区は月曜に配達される。",
+        "東区は火曜には配達されない。",
+        "だから北区と東区は、どちらかの順で火曜と水曜に入る。",
+        "北区は水曜の配達だ。",
+        "東区は火曜になれないので、東区が水曜を取る。",
+        "バンは毎日正午前に営業所へ戻る。",
+        "どの配達先も到着時にスキャンされる。",
+        "全ルートが配達アプリに記録された。"
+      ],
+      "zh": [
+        "一名快递员在周一到周四之间，向四个片区——北区、东区、南区、西区——每天各送一处。",
+        "每个片区正好分到一天的送货日。",
+        "北区这一周比东区先送。",
+        "南区是周四送。",
+        "西区在周一送。",
+        "东区不在周二送。",
+        "所以北区和东区要按某种顺序落在周二和周三。",
+        "北区是周三送。",
+        "因为东区不能是周二，东区就占了周三。",
+        "货车每天中午前返回站点。",
+        "每一站到达时都要扫码。",
+        "整条路线都记录在派送应用里。"
+      ],
+      "es": [
+        "Un repartidor entrega en cuatro distritos —Norte, Este, Sur y Oeste—, uno cada día, de lunes a jueves.",
+        "Cada distrito recibe exactamente un día de entrega.",
+        "El Norte se entrega antes que el Este en la semana.",
+        "El Sur es la entrega del jueves.",
+        "El Oeste se entrega el lunes.",
+        "El Este no se entrega el martes.",
+        "Así que el Norte y el Este deben caer el martes y el miércoles en algún orden.",
+        "El Norte es la entrega del miércoles.",
+        "Como el Este no puede ser el martes, el Este toma el miércoles.",
+        "La furgoneta vuelve al almacén antes del mediodía cada día.",
+        "Cada parada se escanea al llegar.",
+        "Toda la ruta quedó registrada en la aplicación de reparto."
+      ],
+      "fr": [
+        "Un livreur livre dans quatre quartiers — Nord, Est, Sud et Ouest — un chaque jour, du lundi au jeudi.",
+        "Chaque quartier reçoit exactement un jour de livraison.",
+        "Le Nord est livré avant l'Est dans la semaine.",
+        "Le Sud est la livraison du jeudi.",
+        "L'Ouest est livré le lundi.",
+        "L'Est n'est pas livré le mardi.",
+        "Donc le Nord et l'Est tombent le mardi et le mercredi, dans un ordre ou l'autre.",
+        "Le Nord est la livraison du mercredi.",
+        "Comme l'Est ne peut pas être le mardi, l'Est prend le mercredi.",
+        "La camionnette rentre au dépôt avant midi chaque jour.",
+        "Chaque arrêt est scanné à l'arrivée.",
+        "Toute la tournée a été enregistrée dans l'application de livraison."
+      ],
+      "de": [
+        "Ein Bote liefert in vier Bezirke — Nord, Ost, Süd und West — je einen pro Tag, von Montag bis Donnerstag.",
+        "Jeder Bezirk bekommt genau einen Liefertag.",
+        "Nord wird in der Woche vor Ost geliefert.",
+        "Süd ist die Lieferung am Donnerstag.",
+        "West wird am Montag geliefert.",
+        "Ost wird nicht am Dienstag geliefert.",
+        "Also fallen Nord und Ost in irgendeiner Reihenfolge auf Dienstag und Mittwoch.",
+        "Nord ist die Lieferung am Mittwoch.",
+        "Da Ost nicht Dienstag sein kann, nimmt Ost den Mittwoch.",
+        "Der Transporter kehrt jeden Tag vor Mittag zum Depot zurück.",
+        "Jeder Halt wird bei der Ankunft gescannt.",
+        "Die ganze Route wurde in der Liefer-App protokolliert."
+      ]
+    },
+    "hints": {
+      "en": [
+        "Lock West and South first, then order North and East on the two middle days.",
+        "East has to be Wednesday, so North falls on Tuesday, not Wednesday."
+      ],
+      "ko": [
+        "서부와 남부를 먼저 고정한 뒤 북부와 동부를 가운데 두 날에 배치해 보라.",
+        "동부는 수요일이어야 하므로 북부는 수요일이 아니라 화요일이다."
+      ],
+      "ja": [
+        "先に西区と南区を固定し、北区と東区を真ん中の二日に並べてみよう。",
+        "東区は水曜のはずなので、北区は水曜ではなく火曜になる。"
+      ],
+      "zh": [
+        "先锁定西区和南区，再把北区和东区排到中间两天。",
+        "东区必须是周三，所以北区落在周二，而不是周三。"
+      ],
+      "es": [
+        "Fija primero Oeste y Sur, luego ordena Norte y Este en los dos días del medio.",
+        "El Este tiene que ser el miércoles, así que el Norte cae el martes, no el miércoles."
+      ],
+      "fr": [
+        "Verrouille d'abord Ouest et Sud, puis ordonne Nord et Est sur les deux jours du milieu.",
+        "L'Est doit être le mercredi, donc le Nord tombe le mardi, pas le mercredi."
+      ],
+      "de": [
+        "Lege zuerst West und Süd fest, ordne dann Nord und Ost auf die beiden mittleren Tage.",
+        "Ost muss der Mittwoch sein, also fällt Nord auf Dienstag, nicht auf Mittwoch."
+      ]
+    },
+    "explanation": {
+      "en": "Clues ③④⑥ and ⑨ put East on Wednesday and leave North on Tuesday, so ⑧ placing North on Wednesday is impossible.",
+      "ko": "단서 ③④⑥과 ⑨는 동부를 수요일에, 북부를 화요일에 두므로, 북부를 수요일에 두는 ⑧은 불가능하다.",
+      "ja": "手がかり③④⑥と⑨は東区を水曜に、北区を火曜に置くので、北区を水曜に置く⑧は成り立たない。",
+      "zh": "线索③④⑥和⑨把东区放在周三、北区留在周二，所以把北区放在周三的⑧不可能成立。",
+      "es": "Las pistas ③④⑥ y ⑨ ponen el Este el miércoles y dejan el Norte el martes, así que ⑧, que pone el Norte el miércoles, es imposible.",
+      "fr": "Les indices ③④⑥ et ⑨ placent l'Est le mercredi et laissent le Nord le mardi, donc ⑧, qui met le Nord le mercredi, est impossible.",
+      "de": "Die Hinweise ③④⑥ und ⑨ setzen Ost auf Mittwoch und lassen Nord auf Dienstag, also ist ⑧, das Nord auf Mittwoch setzt, unmöglich."
+    }
+  },
+  {
+    "id": "co11_s06",
+    "type": "contradiction",
+    "track": "contradiction",
+    "chapter": 11,
+    "order": 6,
+    "tokens": null,
+    "answer": "6",
+    "inputType": "choices",
+    "choices": null,
+    "statements": {
+      "en": [
+        "Four teams each book the meeting room for one hour: 9, 10, 11 or 12 o'clock.",
+        "Each hour is booked by exactly one team.",
+        "Alpha books an earlier hour than Bravo.",
+        "Cobra books the 9 o'clock slot.",
+        "Delta books the 12 o'clock slot.",
+        "Alpha books the 11 o'clock slot.",
+        "With 9 and 12 taken, Alpha and Bravo share the 10 and 11 slots.",
+        "Since Alpha is earlier than Bravo, Alpha takes 10 and Bravo takes 11.",
+        "No team may book two different hours.",
+        "The room seats up to eight people.",
+        "Each booking was confirmed by email.",
+        "The final schedule was pinned to the office door."
+      ],
+      "ko": [
+        "네 팀이 각자 회의실을 한 시간씩 예약한다: 9시, 10시, 11시 또는 12시.",
+        "각 시간대는 정확히 한 팀이 예약한다.",
+        "알파는 브라보보다 이른 시간을 예약한다.",
+        "코브라는 9시 시간대를 예약한다.",
+        "델타는 12시 시간대를 예약한다.",
+        "알파는 11시 시간대를 예약한다.",
+        "9시와 12시가 찼으므로 알파와 브라보가 10시와 11시를 나눠 갖는다.",
+        "알파가 브라보보다 이르므로 알파는 10시, 브라보는 11시를 차지한다.",
+        "어떤 팀도 서로 다른 두 시간을 예약할 수 없다.",
+        "그 회의실은 최대 여덟 명까지 앉을 수 있다.",
+        "각 예약은 이메일로 확정되었다.",
+        "최종 일정표가 사무실 문에 붙었다."
+      ],
+      "ja": [
+        "四つのチームがそれぞれ会議室を一時間ずつ予約する：9時、10時、11時、または12時。",
+        "各時間帯はちょうど一つのチームが予約する。",
+        "アルファはブラボーより早い時間を予約する。",
+        "コブラは9時の枠を予約する。",
+        "デルタは12時の枠を予約する。",
+        "アルファは11時の枠を予約する。",
+        "9時と12時が埋まっているので、アルファとブラボーが10時と11時を分け合う。",
+        "アルファはブラボーより早いので、アルファが10時、ブラボーが11時を取る。",
+        "どのチームも異なる二つの時間を予約することはできない。",
+        "その部屋は最大八人まで座れる。",
+        "各予約はメールで確定された。",
+        "最終スケジュールがオフィスのドアに貼られた。"
+      ],
+      "zh": [
+        "四支团队各预订会议室一个小时：9点、10点、11点或12点。",
+        "每个时段正好由一支团队预订。",
+        "阿尔法预订的时间比布拉沃早。",
+        "科布拉预订9点的时段。",
+        "德尔塔预订12点的时段。",
+        "阿尔法预订11点的时段。",
+        "9点和12点已被占用，阿尔法和布拉沃分享10点和11点。",
+        "既然阿尔法比布拉沃早，阿尔法占10点，布拉沃占11点。",
+        "任何团队都不能预订两个不同的时段。",
+        "这间会议室最多能坐八人。",
+        "每份预订都通过邮件确认。",
+        "最终的日程表被贴在办公室门上。"
+      ],
+      "es": [
+        "Cuatro equipos reservan la sala de reuniones una hora cada uno: a las 9, 10, 11 o 12.",
+        "Cada hora la reserva exactamente un equipo.",
+        "Alpha reserva una hora más temprana que Bravo.",
+        "Cobra reserva la franja de las 9.",
+        "Delta reserva la franja de las 12.",
+        "Alpha reserva la franja de las 11.",
+        "Con las 9 y las 12 ocupadas, Alpha y Bravo se reparten las franjas de las 10 y las 11.",
+        "Como Alpha es más temprano que Bravo, Alpha toma las 10 y Bravo las 11.",
+        "Ningún equipo puede reservar dos horas distintas.",
+        "La sala tiene capacidad para ocho personas.",
+        "Cada reserva se confirmó por correo electrónico.",
+        "El horario final quedó fijado en la puerta de la oficina."
+      ],
+      "fr": [
+        "Quatre équipes réservent la salle de réunion une heure chacune : à 9 h, 10 h, 11 h ou 12 h.",
+        "Chaque heure est réservée par exactement une équipe.",
+        "Alpha réserve une heure plus tôt que Bravo.",
+        "Cobra réserve le créneau de 9 h.",
+        "Delta réserve le créneau de 12 h.",
+        "Alpha réserve le créneau de 11 h.",
+        "9 h et 12 h étant pris, Alpha et Bravo se partagent les créneaux de 10 h et 11 h.",
+        "Comme Alpha est plus tôt que Bravo, Alpha prend 10 h et Bravo 11 h.",
+        "Aucune équipe ne peut réserver deux heures différentes.",
+        "La salle peut accueillir jusqu'à huit personnes.",
+        "Chaque réservation a été confirmée par courriel.",
+        "L'horaire final a été affiché sur la porte du bureau."
+      ],
+      "de": [
+        "Vier Teams buchen den Besprechungsraum für je eine Stunde: 9, 10, 11 oder 12 Uhr.",
+        "Jede Stunde wird von genau einem Team gebucht.",
+        "Alpha bucht eine frühere Stunde als Bravo.",
+        "Cobra bucht den Slot um 9 Uhr.",
+        "Delta bucht den Slot um 12 Uhr.",
+        "Alpha bucht den Slot um 11 Uhr.",
+        "Da 9 und 12 Uhr belegt sind, teilen sich Alpha und Bravo die Slots um 10 und 11 Uhr.",
+        "Da Alpha früher als Bravo ist, nimmt Alpha 10 Uhr und Bravo 11 Uhr.",
+        "Kein Team darf zwei verschiedene Stunden buchen.",
+        "Der Raum bietet Platz für bis zu acht Personen.",
+        "Jede Buchung wurde per E-Mail bestätigt.",
+        "Der endgültige Plan wurde an die Bürotür geheftet."
+      ]
+    },
+    "hints": {
+      "en": [
+        "Slot Cobra and Delta first, then order Alpha and Bravo in what's left.",
+        "Alpha is earlier than Bravo and only 10 and 11 remain, so Alpha takes 10, not 11."
+      ],
+      "ko": [
+        "코브라와 델타를 먼저 배치한 뒤 남은 시간에 알파와 브라보를 순서대로 놓아 보라.",
+        "알파는 브라보보다 이르고 10시와 11시만 남았으므로 알파는 11시가 아니라 10시다."
+      ],
+      "ja": [
+        "先にコブラとデルタを入れ、残りにアルファとブラボーを順に置いてみよう。",
+        "アルファはブラボーより早く、残りは10時と11時だけなので、アルファは11時ではなく10時になる。"
+      ],
+      "zh": [
+        "先安排科布拉和德尔塔，再把阿尔法和布拉沃排进剩下的时段。",
+        "阿尔法比布拉沃早，且只剩10点和11点，所以阿尔法占10点，而不是11点。"
+      ],
+      "es": [
+        "Coloca primero a Cobra y Delta, luego ordena a Alpha y Bravo en lo que queda.",
+        "Alpha es más temprano que Bravo y solo quedan las 10 y las 11, así que Alpha toma las 10, no las 11."
+      ],
+      "fr": [
+        "Place d'abord Cobra et Delta, puis ordonne Alpha et Bravo dans ce qui reste.",
+        "Alpha est plus tôt que Bravo et il ne reste que 10 h et 11 h, donc Alpha prend 10 h, pas 11 h."
+      ],
+      "de": [
+        "Setze zuerst Cobra und Delta, ordne dann Alpha und Bravo in das Übrige ein.",
+        "Alpha ist früher als Bravo und es bleiben nur 10 und 11 Uhr, also nimmt Alpha 10 Uhr, nicht 11 Uhr."
+      ]
+    },
+    "explanation": {
+      "en": "Clues ③④⑤ and ⑧ leave Alpha with the 10 o'clock slot and Bravo with 11, so ⑥ giving Alpha the 11 o'clock slot is impossible.",
+      "ko": "단서 ③④⑤와 ⑧은 알파에게 10시, 브라보에게 11시를 남기므로, 알파에게 11시를 주는 ⑥은 불가능하다.",
+      "ja": "手がかり③④⑤と⑧はアルファに10時、ブラボーに11時を残すので、アルファに11時を与える⑥は成り立たない。",
+      "zh": "线索③④⑤和⑧把10点留给阿尔法、11点留给布拉沃，所以把11点给阿尔法的⑥不可能成立。",
+      "es": "Las pistas ③④⑤ y ⑧ dejan a Alpha la franja de las 10 y a Bravo la de las 11, así que ⑥, que da a Alpha la franja de las 11, es imposible.",
+      "fr": "Les indices ③④⑤ et ⑧ laissent à Alpha le créneau de 10 h et à Bravo celui de 11 h, donc ⑥, qui donne à Alpha le créneau de 11 h, est impossible.",
+      "de": "Die Hinweise ③④⑤ und ⑧ lassen Alpha den Slot um 10 Uhr und Bravo den um 11 Uhr, also ist ⑥, das Alpha den Slot um 11 Uhr gibt, unmöglich."
+    }
+  },
+  {
+    "id": "co12_s01",
+    "type": "contradiction",
+    "track": "contradiction",
+    "chapter": 12,
+    "order": 1,
+    "tokens": null,
+    "answer": "10",
+    "inputType": "choices",
+    "choices": null,
+    "statements": {
+      "en": [
+        "Ms. Park's class has 25 students.",
+        "They all sat the same math test.",
+        "The class averaged 72 points overall.",
+        "So the total of all scores is 25 × 72 = 1800 points.",
+        "There are 10 girls in the class.",
+        "The girls averaged 78 points.",
+        "So the girls scored 780 points together.",
+        "That leaves 1800 − 780 = 1020 points for the boys.",
+        "There are 15 boys in the class.",
+        "So the boys averaged 60 points each.",
+        "The top score in the class was 95 points.",
+        "No student scored below 50 points.",
+        "Ms. Park wrote every score in her notebook."
+      ],
+      "ko": [
+        "박 선생님 반에는 학생이 25명 있다.",
+        "모두 같은 수학 시험을 봤다.",
+        "반 전체 평균은 72점이었다.",
+        "그래서 모든 점수의 합은 25 × 72 = 1800점이다.",
+        "반에는 여학생이 10명 있다.",
+        "여학생들의 평균은 78점이었다.",
+        "그래서 여학생들의 점수 합은 780점이다.",
+        "그러면 남학생들에게는 1800 − 780 = 1020점이 남는다.",
+        "반에는 남학생이 15명 있다.",
+        "그래서 남학생들의 평균은 각각 60점이었다.",
+        "반 최고 점수는 95점이었다.",
+        "50점 아래로 받은 학생은 없었다.",
+        "박 선생님은 모든 점수를 공책에 적었다."
+      ],
+      "ja": [
+        "パク先生のクラスには生徒が25人いる。",
+        "全員が同じ数学のテストを受けた。",
+        "クラス全体の平均は72点だった。",
+        "だから全員の点数の合計は25×72＝1800点だ。",
+        "クラスには女子が10人いる。",
+        "女子の平均は78点だった。",
+        "だから女子の点数の合計は780点だ。",
+        "すると男子には1800−780＝1020点が残る。",
+        "クラスには男子が15人いる。",
+        "だから男子の平均はそれぞれ60点だった。",
+        "クラスの最高点は95点だった。",
+        "50点を下回った生徒はいなかった。",
+        "パク先生はすべての点数をノートに書いた。"
+      ],
+      "zh": [
+        "朴老师的班上有25名学生。",
+        "他们都参加了同一场数学考试。",
+        "全班平均分是72分。",
+        "所以所有分数的总和是25×72＝1800分。",
+        "班上有10名女生。",
+        "女生的平均分是78分。",
+        "所以女生的总分是780分。",
+        "那么男生就剩下1800−780＝1020分。",
+        "班上有15名男生。",
+        "所以男生的平均分各是60分。",
+        "全班最高分是95分。",
+        "没有学生低于50分。",
+        "朴老师把每个分数都记在了本子上。"
+      ],
+      "es": [
+        "La clase de la señora Park tiene 25 estudiantes.",
+        "Todos hicieron el mismo examen de matemáticas.",
+        "La clase tuvo un promedio de 72 puntos en total.",
+        "Así que la suma de todas las notas es 25 × 72 = 1800 puntos.",
+        "Hay 10 chicas en la clase.",
+        "Las chicas tuvieron un promedio de 78 puntos.",
+        "Así que las chicas sumaron 780 puntos juntas.",
+        "Eso deja 1800 − 780 = 1020 puntos para los chicos.",
+        "Hay 15 chicos en la clase.",
+        "Así que los chicos tuvieron un promedio de 60 puntos cada uno.",
+        "La nota más alta de la clase fue 95 puntos.",
+        "Ningún estudiante sacó menos de 50 puntos.",
+        "La señora Park anotó cada nota en su cuaderno."
+      ],
+      "fr": [
+        "La classe de Mme Park compte 25 élèves.",
+        "Ils ont tous passé le même test de mathématiques.",
+        "La classe a obtenu une moyenne de 72 points au total.",
+        "Donc la somme de toutes les notes est 25 × 72 = 1800 points.",
+        "Il y a 10 filles dans la classe.",
+        "Les filles ont obtenu une moyenne de 78 points.",
+        "Donc les filles ont totalisé 780 points ensemble.",
+        "Il reste donc 1800 − 780 = 1020 points pour les garçons.",
+        "Il y a 15 garçons dans la classe.",
+        "Donc les garçons ont obtenu une moyenne de 60 points chacun.",
+        "La meilleure note de la classe était 95 points.",
+        "Aucun élève n'a eu moins de 50 points.",
+        "Mme Park a noté chaque résultat dans son cahier."
+      ],
+      "de": [
+        "Die Klasse von Frau Park hat 25 Schüler.",
+        "Alle schrieben denselben Mathetest.",
+        "Die Klasse hatte insgesamt einen Durchschnitt von 72 Punkten.",
+        "Also ist die Summe aller Noten 25 × 72 = 1800 Punkte.",
+        "In der Klasse sind 10 Mädchen.",
+        "Die Mädchen hatten einen Durchschnitt von 78 Punkten.",
+        "Also erzielten die Mädchen zusammen 780 Punkte.",
+        "Damit bleiben 1800 − 780 = 1020 Punkte für die Jungen.",
+        "In der Klasse sind 15 Jungen.",
+        "Also hatten die Jungen einen Durchschnitt von je 60 Punkten.",
+        "Die beste Note der Klasse war 95 Punkte.",
+        "Kein Schüler hatte weniger als 50 Punkte.",
+        "Frau Park schrieb jede Note in ihr Heft."
+      ]
+    },
+    "hints": {
+      "en": [
+        "Find the boys' total, then divide by the number of boys.",
+        "1020 ÷ 15 = 68, not 60."
+      ],
+      "ko": [
+        "남학생 점수 합을 구한 뒤 남학생 수로 나눠 보라.",
+        "1020 ÷ 15 = 68이지 60이 아니다."
+      ],
+      "ja": [
+        "男子の合計を求め、人数で割ってみよう。",
+        "1020÷15＝68であって60ではない。"
+      ],
+      "zh": [
+        "先求男生的总分，再除以男生人数。",
+        "1020÷15＝68，不是60。"
+      ],
+      "es": [
+        "Halla el total de los chicos y divídelo entre su número.",
+        "1020 ÷ 15 = 68, no 60."
+      ],
+      "fr": [
+        "Trouve le total des garçons, puis divise par leur nombre.",
+        "1020 ÷ 15 = 68, pas 60."
+      ],
+      "de": [
+        "Bilde die Summe der Jungen und teile durch ihre Anzahl.",
+        "1020 ÷ 15 = 68, nicht 60."
+      ]
+    },
+    "explanation": {
+      "en": "The boys' 1020 points over 15 boys give an average of 68, so ⑩ saying 60 contradicts ④–⑨.",
+      "ko": "남학생 1020점을 15명으로 나누면 평균 68점이므로, 60점이라는 ⑩은 ④~⑨와 모순된다.",
+      "ja": "男子の1020点を15人で割ると平均68点なので、60点だという⑩は④〜⑨と矛盾する。",
+      "zh": "男生1020分除以15人平均是68分，所以说60分的⑩与④～⑨矛盾。",
+      "es": "Los 1020 puntos de los chicos entre 15 dan un promedio de 68, así que ⑩ al decir 60 contradice ④–⑨.",
+      "fr": "Les 1020 points des garçons divisés par 15 donnent une moyenne de 68, donc ⑩ qui dit 60 contredit ④–⑨.",
+      "de": "Die 1020 Punkte der Jungen durch 15 ergeben einen Durchschnitt von 68, daher widerspricht ⑩ mit 60 den Sätzen ④–⑨."
+    }
+  },
+  {
+    "id": "co12_s02",
+    "type": "contradiction",
+    "track": "contradiction",
+    "chapter": 12,
+    "order": 2,
+    "tokens": null,
+    "answer": "8",
+    "inputType": "choices",
+    "choices": null,
+    "statements": {
+      "en": [
+        "Leo's cookie recipe serves 4 people.",
+        "It uses 200 grams of flour and 120 grams of sugar for 4 people.",
+        "Today Leo bakes for 10 people.",
+        "The scale factor is 10 ÷ 4 = 2.5.",
+        "So he needs 200 × 2.5 = 500 grams of flour.",
+        "He also needs 120 × 2.5 = 300 grams of sugar.",
+        "The recipe uses 2 eggs for 4 people.",
+        "So for 10 people he uses 6 eggs.",
+        "The flour and sugar together weigh 500 + 300 = 800 grams.",
+        "Leo bakes everything in one batch.",
+        "The oven is set to 180 degrees.",
+        "The batch bakes for 15 minutes.",
+        "The cookies come out golden brown."
+      ],
+      "ko": [
+        "레오의 쿠키 요리법은 4인분이다.",
+        "4인분에 밀가루 200그램과 설탕 120그램이 들어간다.",
+        "오늘 레오는 10인분을 굽는다.",
+        "배율은 10 ÷ 4 = 2.5이다.",
+        "그래서 밀가루는 200 × 2.5 = 500그램이 필요하다.",
+        "설탕도 120 × 2.5 = 300그램이 필요하다.",
+        "요리법에는 4인분에 달걀 2개가 들어간다.",
+        "그래서 10인분에는 달걀 6개를 쓴다.",
+        "밀가루와 설탕을 합치면 500 + 300 = 800그램이다.",
+        "레오는 모두 한 번에 굽는다.",
+        "오븐은 180도로 맞춰져 있다.",
+        "한 판을 15분 동안 굽는다.",
+        "쿠키가 노릇노릇하게 구워져 나온다."
+      ],
+      "ja": [
+        "レオのクッキーのレシピは4人分だ。",
+        "4人分に小麦粉200グラムと砂糖120グラムを使う。",
+        "今日レオは10人分を焼く。",
+        "倍率は10÷4＝2.5だ。",
+        "だから小麦粉は200×2.5＝500グラム必要だ。",
+        "砂糖も120×2.5＝300グラム必要だ。",
+        "レシピでは4人分に卵を2個使う。",
+        "だから10人分には卵を6個使う。",
+        "小麦粉と砂糖を合わせると500＋300＝800グラムだ。",
+        "レオは全部を一度に焼く。",
+        "オーブンは180度に設定されている。",
+        "一回の焼き時間は15分だ。",
+        "クッキーはこんがりと焼き上がる。"
+      ],
+      "zh": [
+        "里奥的饼干食谱是4人份。",
+        "4人份要用200克面粉和120克糖。",
+        "今天里奥要做10人份。",
+        "放大倍数是10÷4＝2.5。",
+        "所以需要面粉200×2.5＝500克。",
+        "也需要糖120×2.5＝300克。",
+        "食谱里4人份用2个鸡蛋。",
+        "所以10人份用6个鸡蛋。",
+        "面粉和糖加起来是500＋300＝800克。",
+        "里奥把所有材料一次烤完。",
+        "烤箱设为180度。",
+        "一炉烤15分钟。",
+        "饼干烤得金黄。"
+      ],
+      "es": [
+        "La receta de galletas de Leo es para 4 personas.",
+        "Usa 200 gramos de harina y 120 gramos de azúcar para 4 personas.",
+        "Hoy Leo hornea para 10 personas.",
+        "El factor de escala es 10 ÷ 4 = 2,5.",
+        "Así que necesita 200 × 2,5 = 500 gramos de harina.",
+        "También necesita 120 × 2,5 = 300 gramos de azúcar.",
+        "La receta usa 2 huevos para 4 personas.",
+        "Así que para 10 personas usa 6 huevos.",
+        "La harina y el azúcar juntos pesan 500 + 300 = 800 gramos.",
+        "Leo hornea todo de una vez.",
+        "El horno está a 180 grados.",
+        "La tanda se hornea 15 minutos.",
+        "Las galletas salen doradas."
+      ],
+      "fr": [
+        "La recette de biscuits de Léo est pour 4 personnes.",
+        "Elle utilise 200 grammes de farine et 120 grammes de sucre pour 4 personnes.",
+        "Aujourd'hui Léo cuisine pour 10 personnes.",
+        "Le facteur d'échelle est 10 ÷ 4 = 2,5.",
+        "Il lui faut donc 200 × 2,5 = 500 grammes de farine.",
+        "Il lui faut aussi 120 × 2,5 = 300 grammes de sucre.",
+        "La recette utilise 2 œufs pour 4 personnes.",
+        "Donc pour 10 personnes il utilise 6 œufs.",
+        "La farine et le sucre pèsent ensemble 500 + 300 = 800 grammes.",
+        "Léo cuit tout en une seule fournée.",
+        "Le four est réglé à 180 degrés.",
+        "La fournée cuit pendant 15 minutes.",
+        "Les biscuits sortent bien dorés."
+      ],
+      "de": [
+        "Leos Keksrezept ist für 4 Personen.",
+        "Es braucht 200 Gramm Mehl und 120 Gramm Zucker für 4 Personen.",
+        "Heute backt Leo für 10 Personen.",
+        "Der Skalierungsfaktor ist 10 ÷ 4 = 2,5.",
+        "Also braucht er 200 × 2,5 = 500 Gramm Mehl.",
+        "Er braucht auch 120 × 2,5 = 300 Gramm Zucker.",
+        "Das Rezept nutzt 2 Eier für 4 Personen.",
+        "Also nutzt er für 10 Personen 6 Eier.",
+        "Mehl und Zucker wiegen zusammen 500 + 300 = 800 Gramm.",
+        "Leo backt alles in einem Durchgang.",
+        "Der Ofen ist auf 180 Grad eingestellt.",
+        "Der Durchgang backt 15 Minuten.",
+        "Die Kekse kommen goldbraun heraus."
+      ]
+    },
+    "hints": {
+      "en": [
+        "Find the scale factor, then multiply each ingredient.",
+        "2 eggs × 2.5 = 5 eggs, not 6."
+      ],
+      "ko": [
+        "배율을 구한 뒤 각 재료에 곱해 보라.",
+        "달걀 2개 × 2.5 = 5개이지 6개가 아니다."
+      ],
+      "ja": [
+        "倍率を求めてから各材料に掛けてみよう。",
+        "卵2個×2.5＝5個であって6個ではない。"
+      ],
+      "zh": [
+        "先求放大倍数，再乘以每种材料。",
+        "2个鸡蛋×2.5＝5个，不是6个。"
+      ],
+      "es": [
+        "Halla el factor de escala y multiplica cada ingrediente.",
+        "2 huevos × 2,5 = 5 huevos, no 6."
+      ],
+      "fr": [
+        "Trouve le facteur d'échelle, puis multiplie chaque ingrédient.",
+        "2 œufs × 2,5 = 5 œufs, pas 6."
+      ],
+      "de": [
+        "Finde den Skalierungsfaktor und multipliziere jede Zutat.",
+        "2 Eier × 2,5 = 5 Eier, nicht 6."
+      ]
+    },
+    "explanation": {
+      "en": "Scaling by 2.5 turns the 2 eggs into 5, so ⑧ saying 6 eggs contradicts ④ and ⑦.",
+      "ko": "2.5배로 늘리면 달걀 2개가 5개가 되므로, 6개라는 ⑧은 ④와 ⑦과 모순된다.",
+      "ja": "2.5倍にすると卵2個は5個になるので、6個だという⑧は④と⑦に矛盾する。",
+      "zh": "放大2.5倍后2个鸡蛋变成5个，所以说6个的⑧与④和⑦矛盾。",
+      "es": "Al escalar por 2,5 los 2 huevos se vuelven 5, así que ⑧ al decir 6 contradice ④ y ⑦.",
+      "fr": "En multipliant par 2,5, les 2 œufs deviennent 5, donc ⑧ qui dit 6 contredit ④ et ⑦.",
+      "de": "Mit dem Faktor 2,5 werden aus 2 Eiern 5, daher widerspricht ⑧ mit 6 den Sätzen ④ und ⑦."
+    }
+  },
+  {
+    "id": "co12_s03",
+    "type": "contradiction",
+    "track": "contradiction",
+    "chapter": 12,
+    "order": 3,
+    "tokens": null,
+    "answer": "12",
+    "inputType": "choices",
+    "choices": null,
+    "statements": {
+      "en": [
+        "Mia puts money into a savings account.",
+        "She deposits 2000 dollars at the start.",
+        "The account pays 5% interest each year.",
+        "After one year she earns 2000 × 5% = 100 dollars.",
+        "So her balance becomes 2000 + 100 = 2100 dollars.",
+        "In the second year the interest is 5% of 2100 dollars.",
+        "That is 2100 × 5% = 105 dollars.",
+        "So after two years her balance is 2100 + 105 = 2205 dollars.",
+        "She adds no other money during this time.",
+        "Over the two years she earned 100 + 105 = 205 dollars in interest.",
+        "Her balance grew from 2000 to 2205 dollars.",
+        "So after two years she had 2250 dollars in total.",
+        "Mia was happy with her savings."
+      ],
+      "ko": [
+        "미아는 저축 계좌에 돈을 넣는다.",
+        "처음에 2000달러를 예금한다.",
+        "그 계좌는 해마다 5%의 이자를 준다.",
+        "1년 뒤 그녀는 2000 × 5% = 100달러를 번다.",
+        "그래서 잔액은 2000 + 100 = 2100달러가 된다.",
+        "둘째 해의 이자는 2100달러의 5%이다.",
+        "그것은 2100 × 5% = 105달러이다.",
+        "그래서 2년 뒤 잔액은 2100 + 105 = 2205달러이다.",
+        "이 기간에 그녀는 다른 돈을 넣지 않는다.",
+        "2년 동안 그녀는 이자로 100 + 105 = 205달러를 벌었다.",
+        "잔액은 2000달러에서 2205달러로 늘었다.",
+        "그래서 2년 뒤 그녀는 모두 2250달러를 가졌다.",
+        "미아는 자신의 저축에 만족했다."
+      ],
+      "ja": [
+        "ミアは貯金口座にお金を入れる。",
+        "最初に2000ドルを預ける。",
+        "その口座は毎年5%の利息がつく。",
+        "1年後、彼女は2000×5%＝100ドルを得る。",
+        "だから残高は2000＋100＝2100ドルになる。",
+        "2年目の利息は2100ドルの5%だ。",
+        "それは2100×5%＝105ドルだ。",
+        "だから2年後の残高は2100＋105＝2205ドルだ。",
+        "この間、彼女は他のお金を入れない。",
+        "2年間で彼女は利息として100＋105＝205ドルを得た。",
+        "残高は2000ドルから2205ドルに増えた。",
+        "だから2年後、彼女は合計2250ドルを持っていた。",
+        "ミアは自分の貯金に満足した。"
+      ],
+      "zh": [
+        "米娅把钱存进储蓄账户。",
+        "她一开始存了2000美元。",
+        "这个账户每年付5%的利息。",
+        "一年后她得到2000×5%＝100美元。",
+        "所以余额变成2000＋100＝2100美元。",
+        "第二年的利息是2100美元的5%。",
+        "也就是2100×5%＝105美元。",
+        "所以两年后余额是2100＋105＝2205美元。",
+        "这段时间她没有再存别的钱。",
+        "两年里她一共得到利息100＋105＝205美元。",
+        "余额从2000美元涨到2205美元。",
+        "所以两年后她一共有2250美元。",
+        "米娅对自己的储蓄很满意。"
+      ],
+      "es": [
+        "Mia mete dinero en una cuenta de ahorros.",
+        "Al principio deposita 2000 dólares.",
+        "La cuenta paga un 5% de interés cada año.",
+        "Tras un año gana 2000 × 5% = 100 dólares.",
+        "Así que su saldo pasa a 2000 + 100 = 2100 dólares.",
+        "En el segundo año el interés es el 5% de 2100 dólares.",
+        "Eso es 2100 × 5% = 105 dólares.",
+        "Así que tras dos años su saldo es 2100 + 105 = 2205 dólares.",
+        "Durante este tiempo no añade más dinero.",
+        "En los dos años ganó 100 + 105 = 205 dólares de interés.",
+        "Su saldo creció de 2000 a 2205 dólares.",
+        "Así que tras dos años tenía 2250 dólares en total.",
+        "Mia estaba contenta con sus ahorros."
+      ],
+      "fr": [
+        "Mia place de l'argent sur un compte d'épargne.",
+        "Au départ elle dépose 2000 dollars.",
+        "Le compte rapporte 5% d'intérêt chaque année.",
+        "Après un an elle gagne 2000 × 5% = 100 dollars.",
+        "Son solde devient donc 2000 + 100 = 2100 dollars.",
+        "La deuxième année, l'intérêt est de 5% de 2100 dollars.",
+        "Cela fait 2100 × 5% = 105 dollars.",
+        "Donc après deux ans son solde est 2100 + 105 = 2205 dollars.",
+        "Pendant ce temps elle n'ajoute pas d'autre argent.",
+        "Sur les deux ans elle a gagné 100 + 105 = 205 dollars d'intérêts.",
+        "Son solde est passé de 2000 à 2205 dollars.",
+        "Donc après deux ans elle avait 2250 dollars en tout.",
+        "Mia était contente de son épargne."
+      ],
+      "de": [
+        "Mia legt Geld auf ein Sparkonto.",
+        "Zu Beginn zahlt sie 2000 Dollar ein.",
+        "Das Konto zahlt jedes Jahr 5% Zinsen.",
+        "Nach einem Jahr erhält sie 2000 × 5% = 100 Dollar.",
+        "Ihr Guthaben wird also 2000 + 100 = 2100 Dollar.",
+        "Im zweiten Jahr sind die Zinsen 5% von 2100 Dollar.",
+        "Das sind 2100 × 5% = 105 Dollar.",
+        "Also ist ihr Guthaben nach zwei Jahren 2100 + 105 = 2205 Dollar.",
+        "In dieser Zeit zahlt sie kein weiteres Geld ein.",
+        "In den zwei Jahren erhielt sie 100 + 105 = 205 Dollar Zinsen.",
+        "Ihr Guthaben wuchs von 2000 auf 2205 Dollar.",
+        "Also hatte sie nach zwei Jahren insgesamt 2250 Dollar.",
+        "Mia war mit ihren Ersparnissen zufrieden."
+      ]
+    },
+    "hints": {
+      "en": [
+        "Add each year's interest to the balance in turn.",
+        "2000 + 100 + 105 = 2205, not 2250."
+      ],
+      "ko": [
+        "해마다의 이자를 잔액에 차례로 더해 보라.",
+        "2000 + 100 + 105 = 2205이지 2250이 아니다."
+      ],
+      "ja": [
+        "毎年の利息を残高に順に足してみよう。",
+        "2000＋100＋105＝2205であって2250ではない。"
+      ],
+      "zh": [
+        "把每年的利息依次加到余额上。",
+        "2000＋100＋105＝2205，不是2250。"
+      ],
+      "es": [
+        "Suma el interés de cada año al saldo por turnos.",
+        "2000 + 100 + 105 = 2205, no 2250."
+      ],
+      "fr": [
+        "Ajoute au solde l'intérêt de chaque année tour à tour.",
+        "2000 + 100 + 105 = 2205, pas 2250."
+      ],
+      "de": [
+        "Addiere die Zinsen jedes Jahres nacheinander zum Guthaben.",
+        "2000 + 100 + 105 = 2205, nicht 2250."
+      ]
+    },
+    "explanation": {
+      "en": "After two years the balance is 2205, so ⑫ saying 2250 contradicts ⑧ and ⑪.",
+      "ko": "2년 뒤 잔액은 2205달러이므로, 2250달러라는 ⑫는 ⑧과 ⑪과 모순된다.",
+      "ja": "2年後の残高は2205ドルなので、2250ドルだという⑫は⑧と⑪に矛盾する。",
+      "zh": "两年后余额是2205美元，所以说2250美元的⑫与⑧和⑪矛盾。",
+      "es": "Tras dos años el saldo es 2205, así que ⑫ al decir 2250 contradice ⑧ y ⑪.",
+      "fr": "Après deux ans le solde est 2205, donc ⑫ qui dit 2250 contredit ⑧ et ⑪.",
+      "de": "Nach zwei Jahren beträgt das Guthaben 2205, daher widerspricht ⑫ mit 2250 den Sätzen ⑧ und ⑪."
+    }
+  },
+  {
+    "id": "co12_s04",
+    "type": "contradiction",
+    "track": "contradiction",
+    "chapter": 12,
+    "order": 4,
+    "tokens": null,
+    "answer": "6",
+    "inputType": "choices",
+    "choices": null,
+    "statements": {
+      "en": [
+        "Sam played 20 basketball games this season.",
+        "He scored 300 points in total.",
+        "So he averaged 300 ÷ 20 = 15 points per game.",
+        "In his first 12 games he scored 180 points.",
+        "So in those games he averaged 180 ÷ 12 = 15 points.",
+        "That means in his last 8 games he scored 150 points.",
+        "In those last 8 games he scored 300 − 180 = 120 points.",
+        "His best single game was 28 points.",
+        "He never scored fewer than 5 points in a game.",
+        "He also made 40 assists over the season.",
+        "That is an average of 40 ÷ 20 = 2 assists per game.",
+        "His team won 14 of the 20 games.",
+        "Sam was the team's top scorer."
+      ],
+      "ko": [
+        "샘은 이번 시즌에 농구 경기를 20번 했다.",
+        "그는 모두 300점을 넣었다.",
+        "그래서 경기당 평균은 300 ÷ 20 = 15점이다.",
+        "처음 12경기에서 그는 180점을 넣었다.",
+        "그래서 그 경기들의 평균은 180 ÷ 12 = 15점이다.",
+        "그러면 마지막 8경기에서 그는 150점을 넣은 것이다.",
+        "마지막 8경기에서 그는 300 − 180 = 120점을 넣었다.",
+        "한 경기 최고 기록은 28점이었다.",
+        "그는 한 경기에서 5점보다 적게 넣은 적이 없다.",
+        "그는 시즌 동안 어시스트도 40개를 했다.",
+        "그것은 경기당 40 ÷ 20 = 2개의 어시스트다.",
+        "그의 팀은 20경기 중 14경기를 이겼다.",
+        "샘은 팀 최고 득점자였다."
+      ],
+      "ja": [
+        "サムは今シーズン、バスケの試合を20回した。",
+        "彼は合計300点を決めた。",
+        "だから1試合平均は300÷20＝15点だ。",
+        "最初の12試合で彼は180点を決めた。",
+        "だからその試合の平均は180÷12＝15点だ。",
+        "すると最後の8試合で彼は150点を決めたことになる。",
+        "最後の8試合で彼は300−180＝120点を決めた。",
+        "1試合の最高記録は28点だった。",
+        "彼は1試合で5点より少なく決めたことはない。",
+        "彼はシーズン中にアシストも40回した。",
+        "それは1試合平均40÷20＝2アシストだ。",
+        "彼のチームは20試合中14試合に勝った。",
+        "サムはチームの最多得点者だった。"
+      ],
+      "zh": [
+        "山姆这个赛季打了20场篮球比赛。",
+        "他一共得了300分。",
+        "所以每场平均是300÷20＝15分。",
+        "前12场他得了180分。",
+        "所以那些比赛的平均是180÷12＝15分。",
+        "那么最后8场他就得了150分。",
+        "最后8场他得了300−180＝120分。",
+        "他单场最高纪录是28分。",
+        "他从没有一场少于5分。",
+        "整个赛季他还送出40次助攻。",
+        "那是每场40÷20＝2次助攻。",
+        "他的球队20场里赢了14场。",
+        "山姆是球队的头号得分手。"
+      ],
+      "es": [
+        "Sam jugó 20 partidos de baloncesto esta temporada.",
+        "Anotó 300 puntos en total.",
+        "Así que promedió 300 ÷ 20 = 15 puntos por partido.",
+        "En sus primeros 12 partidos anotó 180 puntos.",
+        "Así que en esos partidos promedió 180 ÷ 12 = 15 puntos.",
+        "Eso significa que en sus últimos 8 partidos anotó 150 puntos.",
+        "En esos últimos 8 partidos anotó 300 − 180 = 120 puntos.",
+        "Su mejor partido fue de 28 puntos.",
+        "Nunca anotó menos de 5 puntos en un partido.",
+        "También dio 40 asistencias en la temporada.",
+        "Eso es un promedio de 40 ÷ 20 = 2 asistencias por partido.",
+        "Su equipo ganó 14 de los 20 partidos.",
+        "Sam fue el máximo anotador del equipo."
+      ],
+      "fr": [
+        "Sam a joué 20 matchs de basket cette saison.",
+        "Il a marqué 300 points au total.",
+        "Il a donc une moyenne de 300 ÷ 20 = 15 points par match.",
+        "Lors de ses 12 premiers matchs, il a marqué 180 points.",
+        "Sur ces matchs, il a donc une moyenne de 180 ÷ 12 = 15 points.",
+        "Cela veut dire que sur ses 8 derniers matchs il a marqué 150 points.",
+        "Sur ces 8 derniers matchs il a marqué 300 − 180 = 120 points.",
+        "Son meilleur match a été de 28 points.",
+        "Il n'a jamais marqué moins de 5 points dans un match.",
+        "Il a aussi fait 40 passes décisives dans la saison.",
+        "Cela fait une moyenne de 40 ÷ 20 = 2 passes par match.",
+        "Son équipe a gagné 14 des 20 matchs.",
+        "Sam était le meilleur marqueur de l'équipe."
+      ],
+      "de": [
+        "Sam spielte diese Saison 20 Basketballspiele.",
+        "Er erzielte insgesamt 300 Punkte.",
+        "Also erzielte er im Schnitt 300 ÷ 20 = 15 Punkte pro Spiel.",
+        "In seinen ersten 12 Spielen erzielte er 180 Punkte.",
+        "In diesen Spielen erzielte er also im Schnitt 180 ÷ 12 = 15 Punkte.",
+        "Das heißt, in seinen letzten 8 Spielen erzielte er 150 Punkte.",
+        "In diesen letzten 8 Spielen erzielte er 300 − 180 = 120 Punkte.",
+        "Sein bestes einzelnes Spiel waren 28 Punkte.",
+        "Er erzielte in keinem Spiel weniger als 5 Punkte.",
+        "Er gab in der Saison auch 40 Vorlagen.",
+        "Das ist ein Schnitt von 40 ÷ 20 = 2 Vorlagen pro Spiel.",
+        "Sein Team gewann 14 der 20 Spiele.",
+        "Sam war der beste Werfer des Teams."
+      ]
+    },
+    "hints": {
+      "en": [
+        "Subtract the first 12 games' points from the season total.",
+        "300 − 180 = 120, not 150."
+      ],
+      "ko": [
+        "시즌 총점에서 처음 12경기 점수를 빼 보라.",
+        "300 − 180 = 120이지 150이 아니다."
+      ],
+      "ja": [
+        "シーズン合計から最初の12試合の点を引いてみよう。",
+        "300−180＝120であって150ではない。"
+      ],
+      "zh": [
+        "用赛季总分减去前12场的得分。",
+        "300−180＝120，不是150。"
+      ],
+      "es": [
+        "Resta los puntos de los primeros 12 partidos del total.",
+        "300 − 180 = 120, no 150."
+      ],
+      "fr": [
+        "Soustrais les points des 12 premiers matchs du total.",
+        "300 − 180 = 120, pas 150."
+      ],
+      "de": [
+        "Ziehe die Punkte der ersten 12 Spiele vom Saisontotal ab.",
+        "300 − 180 = 120, nicht 150."
+      ]
+    },
+    "explanation": {
+      "en": "The last 8 games hold 300 − 180 = 120 points, so ⑥ saying 150 contradicts ②, ④ and ⑦.",
+      "ko": "마지막 8경기는 300 − 180 = 120점이므로, 150점이라는 ⑥은 ②, ④, ⑦과 모순된다.",
+      "ja": "最後の8試合は300−180＝120点なので、150点だという⑥は②・④・⑦に矛盾する。",
+      "zh": "最后8场是300−180＝120分，所以说150分的⑥与②、④和⑦矛盾。",
+      "es": "Los últimos 8 partidos suman 300 − 180 = 120 puntos, así que ⑥ al decir 150 contradice ②, ④ y ⑦.",
+      "fr": "Les 8 derniers matchs totalisent 300 − 180 = 120 points, donc ⑥ qui dit 150 contredit ②, ④ et ⑦.",
+      "de": "Die letzten 8 Spiele ergeben 300 − 180 = 120 Punkte, daher widerspricht ⑥ mit 150 den Sätzen ②, ④ und ⑦."
+    }
+  },
+  {
+    "id": "co12_s05",
+    "type": "contradiction",
+    "track": "contradiction",
+    "chapter": 12,
+    "order": 5,
+    "tokens": null,
+    "answer": "13",
+    "inputType": "choices",
+    "choices": null,
+    "statements": {
+      "en": [
+        "Nora mixes blue and yellow paint to make green.",
+        "She mixes blue and yellow in a 3 : 1 ratio.",
+        "She wants 12 liters of green paint in total.",
+        "The mixture has 3 + 1 = 4 equal parts.",
+        "Each part is 12 ÷ 4 = 3 liters.",
+        "So she uses 3 × 3 = 9 liters of blue paint.",
+        "And she uses 1 × 3 = 3 liters of yellow paint.",
+        "Blue and yellow together make 9 + 3 = 12 liters.",
+        "Blue makes up 9 ÷ 12 = 75% of the mixture.",
+        "Yellow makes up the remaining 25%.",
+        "She stirs the paint for five minutes.",
+        "The green paint fills three 4-liter buckets.",
+        "She used 5 liters of yellow paint in the mix."
+      ],
+      "ko": [
+        "노라는 파란색과 노란색 물감을 섞어 초록색을 만든다.",
+        "그녀는 파란색과 노란색을 3 : 1 비율로 섞는다.",
+        "그녀는 초록색 물감을 모두 12리터 만들고 싶다.",
+        "혼합물은 3 + 1 = 4개의 같은 부분으로 나뉜다.",
+        "한 부분은 12 ÷ 4 = 3리터이다.",
+        "그래서 파란색 물감은 3 × 3 = 9리터를 쓴다.",
+        "그리고 노란색 물감은 1 × 3 = 3리터를 쓴다.",
+        "파란색과 노란색을 합치면 9 + 3 = 12리터이다.",
+        "파란색은 혼합물의 9 ÷ 12 = 75%를 차지한다.",
+        "노란색은 나머지 25%를 차지한다.",
+        "그녀는 물감을 5분 동안 젓는다.",
+        "초록색 물감은 4리터짜리 양동이 세 개를 채운다.",
+        "그녀는 이 혼합에 노란색 물감을 5리터 썼다."
+      ],
+      "ja": [
+        "ノラは青と黄色の絵の具を混ぜて緑を作る。",
+        "彼女は青と黄色を3：1の割合で混ぜる。",
+        "彼女は緑の絵の具を全部で12リットル作りたい。",
+        "混合物は3＋1＝4つの等しい部分に分かれる。",
+        "1つの部分は12÷4＝3リットルだ。",
+        "だから青の絵の具は3×3＝9リットル使う。",
+        "そして黄色の絵の具は1×3＝3リットル使う。",
+        "青と黄色を合わせると9＋3＝12リットルだ。",
+        "青は混合物の9÷12＝75%を占める。",
+        "黄色は残りの25%を占める。",
+        "彼女は絵の具を5分間かき混ぜる。",
+        "緑の絵の具は4リットルのバケツ3つを満たす。",
+        "彼女はこの混合に黄色の絵の具を5リットル使った。"
+      ],
+      "zh": [
+        "诺拉把蓝色和黄色颜料混成绿色。",
+        "她按3：1的比例混合蓝色和黄色。",
+        "她想一共调出12升绿色颜料。",
+        "混合物分成3＋1＝4个相等的份。",
+        "每一份是12÷4＝3升。",
+        "所以蓝色颜料用3×3＝9升。",
+        "黄色颜料用1×3＝3升。",
+        "蓝色和黄色加起来是9＋3＝12升。",
+        "蓝色占混合物的9÷12＝75%。",
+        "黄色占剩下的25%。",
+        "她把颜料搅拌了五分钟。",
+        "绿色颜料装满三个4升的桶。",
+        "她在这次混合里用了5升黄色颜料。"
+      ],
+      "es": [
+        "Nora mezcla pintura azul y amarilla para hacer verde.",
+        "Mezcla azul y amarillo en una proporción de 3 : 1.",
+        "Quiere 12 litros de pintura verde en total.",
+        "La mezcla tiene 3 + 1 = 4 partes iguales.",
+        "Cada parte es 12 ÷ 4 = 3 litros.",
+        "Así que usa 3 × 3 = 9 litros de pintura azul.",
+        "Y usa 1 × 3 = 3 litros de pintura amarilla.",
+        "El azul y el amarillo juntos dan 9 + 3 = 12 litros.",
+        "El azul forma el 9 ÷ 12 = 75% de la mezcla.",
+        "El amarillo forma el 25% restante.",
+        "Ella remueve la pintura durante cinco minutos.",
+        "La pintura verde llena tres cubos de 4 litros.",
+        "Usó 5 litros de pintura amarilla en la mezcla."
+      ],
+      "fr": [
+        "Nora mélange de la peinture bleue et jaune pour faire du vert.",
+        "Elle mélange le bleu et le jaune dans un rapport de 3 : 1.",
+        "Elle veut 12 litres de peinture verte au total.",
+        "Le mélange a 3 + 1 = 4 parts égales.",
+        "Chaque part fait 12 ÷ 4 = 3 litres.",
+        "Elle utilise donc 3 × 3 = 9 litres de peinture bleue.",
+        "Et elle utilise 1 × 3 = 3 litres de peinture jaune.",
+        "Le bleu et le jaune font ensemble 9 + 3 = 12 litres.",
+        "Le bleu représente 9 ÷ 12 = 75% du mélange.",
+        "Le jaune représente les 25% restants.",
+        "Elle remue la peinture pendant cinq minutes.",
+        "La peinture verte remplit trois seaux de 4 litres.",
+        "Elle a utilisé 5 litres de peinture jaune dans le mélange."
+      ],
+      "de": [
+        "Nora mischt blaue und gelbe Farbe zu Grün.",
+        "Sie mischt Blau und Gelb im Verhältnis 3 : 1.",
+        "Sie will insgesamt 12 Liter grüne Farbe.",
+        "Die Mischung hat 3 + 1 = 4 gleiche Teile.",
+        "Jeder Teil ist 12 ÷ 4 = 3 Liter.",
+        "Also nutzt sie 3 × 3 = 9 Liter blaue Farbe.",
+        "Und sie nutzt 1 × 3 = 3 Liter gelbe Farbe.",
+        "Blau und Gelb ergeben zusammen 9 + 3 = 12 Liter.",
+        "Blau macht 9 ÷ 12 = 75% der Mischung aus.",
+        "Gelb macht die restlichen 25% aus.",
+        "Sie rührt die Farbe fünf Minuten lang.",
+        "Die grüne Farbe füllt drei 4-Liter-Eimer.",
+        "Sie nutzte 5 Liter gelbe Farbe in der Mischung."
+      ]
+    },
+    "hints": {
+      "en": [
+        "Split the 12 liters into equal parts by the ratio.",
+        "Yellow is one 3-liter part, not 5 liters."
+      ],
+      "ko": [
+        "12리터를 비율에 따라 같은 부분으로 나눠 보라.",
+        "노란색은 3리터짜리 한 부분이지 5리터가 아니다."
+      ],
+      "ja": [
+        "12リットルを割合に従って等分してみよう。",
+        "黄色は3リットルの1部分であって5リットルではない。"
+      ],
+      "zh": [
+        "把12升按比例分成相等的份。",
+        "黄色是一份3升，不是5升。"
+      ],
+      "es": [
+        "Divide los 12 litros en partes iguales según la proporción.",
+        "El amarillo es una parte de 3 litros, no 5."
+      ],
+      "fr": [
+        "Partage les 12 litres en parts égales selon le rapport.",
+        "Le jaune est une part de 3 litres, pas 5."
+      ],
+      "de": [
+        "Teile die 12 Liter nach dem Verhältnis in gleiche Teile.",
+        "Gelb ist ein 3-Liter-Teil, nicht 5 Liter."
+      ]
+    },
+    "explanation": {
+      "en": "Each part is 3 liters and yellow is one part, so ⑬ saying 5 liters contradicts ⑤ and ⑦.",
+      "ko": "한 부분은 3리터이고 노란색은 한 부분이므로, 5리터라는 ⑬은 ⑤와 ⑦과 모순된다.",
+      "ja": "1部分は3リットルで黄色は1部分なので、5リットルだという⑬は⑤と⑦に矛盾する。",
+      "zh": "每份是3升而黄色是一份，所以说5升的⑬与⑤和⑦矛盾。",
+      "es": "Cada parte es 3 litros y el amarillo es una parte, así que ⑬ al decir 5 litros contradice ⑤ y ⑦.",
+      "fr": "Chaque part fait 3 litres et le jaune est une part, donc ⑬ qui dit 5 litres contredit ⑤ et ⑦.",
+      "de": "Jeder Teil ist 3 Liter und Gelb ist ein Teil, daher widerspricht ⑬ mit 5 Litern den Sätzen ⑤ und ⑦."
+    }
+  },
+  {
+    "id": "co12_s06",
+    "type": "contradiction",
+    "track": "contradiction",
+    "chapter": 12,
+    "order": 6,
+    "tokens": null,
+    "answer": "9",
+    "inputType": "choices",
+    "choices": null,
+    "statements": {
+      "en": [
+        "Tom writes a sequence of numbers following a rule.",
+        "The first number is 4.",
+        "The rule is that each number is double the one before it.",
+        "So the second number is 4 × 2 = 8.",
+        "The third number is 8 × 2 = 16.",
+        "The fourth number is 16 × 2 = 32.",
+        "The fifth number is 32 × 2 = 64.",
+        "The sixth number is 64 × 2 = 128.",
+        "So the seventh number is 250.",
+        "The eighth number is 256 × 2 = 512.",
+        "Each step simply doubles the number before it.",
+        "The numbers grow larger and larger.",
+        "Tom checks his sequence carefully."
+      ],
+      "ko": [
+        "톰은 규칙에 따라 숫자 수열을 쓴다.",
+        "첫 번째 숫자는 4이다.",
+        "규칙은 각 숫자가 바로 앞 숫자의 두 배라는 것이다.",
+        "그래서 두 번째 숫자는 4 × 2 = 8이다.",
+        "세 번째 숫자는 8 × 2 = 16이다.",
+        "네 번째 숫자는 16 × 2 = 32이다.",
+        "다섯 번째 숫자는 32 × 2 = 64이다.",
+        "여섯 번째 숫자는 64 × 2 = 128이다.",
+        "그래서 일곱 번째 숫자는 250이다.",
+        "여덟 번째 숫자는 256 × 2 = 512이다.",
+        "각 단계는 그저 앞 숫자를 두 배로 만든다.",
+        "숫자들은 점점 더 커진다.",
+        "톰은 자신의 수열을 꼼꼼히 확인한다."
+      ],
+      "ja": [
+        "トムは規則に従って数の列を書く。",
+        "最初の数は4だ。",
+        "規則は、各数が一つ前の数の2倍だということだ。",
+        "だから2番目の数は4×2＝8だ。",
+        "3番目の数は8×2＝16だ。",
+        "4番目の数は16×2＝32だ。",
+        "5番目の数は32×2＝64だ。",
+        "6番目の数は64×2＝128だ。",
+        "だから7番目の数は250だ。",
+        "8番目の数は256×2＝512だ。",
+        "各段階は前の数をただ2倍にするだけだ。",
+        "数はどんどん大きくなる。",
+        "トムは自分の数列を丁寧に確かめる。"
+      ],
+      "zh": [
+        "汤姆按一个规则写一串数字。",
+        "第一个数是4。",
+        "规则是每个数都是前一个数的两倍。",
+        "所以第二个数是4×2＝8。",
+        "第三个数是8×2＝16。",
+        "第四个数是16×2＝32。",
+        "第五个数是32×2＝64。",
+        "第六个数是64×2＝128。",
+        "所以第七个数是250。",
+        "第八个数是256×2＝512。",
+        "每一步只是把前一个数翻倍。",
+        "这些数越来越大。",
+        "汤姆仔细检查他的数列。"
+      ],
+      "es": [
+        "Tom escribe una secuencia de números siguiendo una regla.",
+        "El primer número es 4.",
+        "La regla es que cada número es el doble del anterior.",
+        "Así que el segundo número es 4 × 2 = 8.",
+        "El tercer número es 8 × 2 = 16.",
+        "El cuarto número es 16 × 2 = 32.",
+        "El quinto número es 32 × 2 = 64.",
+        "El sexto número es 64 × 2 = 128.",
+        "Así que el séptimo número es 250.",
+        "El octavo número es 256 × 2 = 512.",
+        "Cada paso simplemente duplica el número anterior.",
+        "Los números se hacen cada vez más grandes.",
+        "Tom revisa su secuencia con cuidado."
+      ],
+      "fr": [
+        "Tom écrit une suite de nombres en suivant une règle.",
+        "Le premier nombre est 4.",
+        "La règle est que chaque nombre est le double du précédent.",
+        "Donc le deuxième nombre est 4 × 2 = 8.",
+        "Le troisième nombre est 8 × 2 = 16.",
+        "Le quatrième nombre est 16 × 2 = 32.",
+        "Le cinquième nombre est 32 × 2 = 64.",
+        "Le sixième nombre est 64 × 2 = 128.",
+        "Donc le septième nombre est 250.",
+        "Le huitième nombre est 256 × 2 = 512.",
+        "Chaque étape double simplement le nombre précédent.",
+        "Les nombres deviennent de plus en plus grands.",
+        "Tom vérifie sa suite avec soin."
+      ],
+      "de": [
+        "Tom schreibt eine Zahlenfolge nach einer Regel.",
+        "Die erste Zahl ist 4.",
+        "Die Regel ist, dass jede Zahl das Doppelte der vorherigen ist.",
+        "Also ist die zweite Zahl 4 × 2 = 8.",
+        "Die dritte Zahl ist 8 × 2 = 16.",
+        "Die vierte Zahl ist 16 × 2 = 32.",
+        "Die fünfte Zahl ist 32 × 2 = 64.",
+        "Die sechste Zahl ist 64 × 2 = 128.",
+        "Also ist die siebte Zahl 250.",
+        "Die achte Zahl ist 256 × 2 = 512.",
+        "Jeder Schritt verdoppelt einfach die vorherige Zahl.",
+        "Die Zahlen werden immer größer.",
+        "Tom prüft seine Folge sorgfältig."
+      ]
+    },
+    "hints": {
+      "en": [
+        "Keep doubling until you reach the seventh number.",
+        "128 × 2 = 256, not 250."
+      ],
+      "ko": [
+        "일곱 번째 숫자에 이를 때까지 계속 두 배로 해 보라.",
+        "128 × 2 = 256이지 250이 아니다."
+      ],
+      "ja": [
+        "7番目の数になるまで2倍を続けよう。",
+        "128×2＝256であって250ではない。"
+      ],
+      "zh": [
+        "一直翻倍直到第七个数。",
+        "128×2＝256，不是250。"
+      ],
+      "es": [
+        "Sigue duplicando hasta llegar al séptimo número.",
+        "128 × 2 = 256, no 250."
+      ],
+      "fr": [
+        "Continue de doubler jusqu'au septième nombre.",
+        "128 × 2 = 256, pas 250."
+      ],
+      "de": [
+        "Verdopple weiter, bis du die siebte Zahl erreichst.",
+        "128 × 2 = 256, nicht 250."
+      ]
+    },
+    "explanation": {
+      "en": "Doubling 128 gives 256, so ⑨ saying 250 contradicts ③, ⑧ and ⑩.",
+      "ko": "128을 두 배로 하면 256이므로, 250이라는 ⑨는 ③, ⑧, ⑩과 모순된다.",
+      "ja": "128を2倍すると256なので、250だという⑨は③・⑧・⑩に矛盾する。",
+      "zh": "128翻倍是256，所以说250的⑨与③、⑧和⑩矛盾。",
+      "es": "Duplicar 128 da 256, así que ⑨ al decir 250 contradice ③, ⑧ y ⑩.",
+      "fr": "Doubler 128 donne 256, donc ⑨ qui dit 250 contredit ③, ⑧ et ⑩.",
+      "de": "Das Verdoppeln von 128 ergibt 256, daher widerspricht ⑨ mit 250 den Sätzen ③, ⑧ und ⑩."
+    }
+  },
+  {
+    "id": "co13_s01",
+    "type": "contradiction",
+    "track": "contradiction",
+    "chapter": 13,
+    "order": 1,
+    "tokens": null,
+    "answer": "14",
+    "inputType": "choices",
+    "choices": null,
+    "statements": {
+      "en": [
+        "On Saturday, four friends — Anna, Ben, Clara, and Dan — each placed one order at the Corner Bakery.",
+        "Each person ordered only one kind of item: croissants, muffins, tarts, or bagels.",
+        "The four pickup times were 9:00, 10:00, 11:00, and 12:00, with one person at each time.",
+        "Ben arrived first of the four, at 9:00.",
+        "Anna picked up her order exactly one hour after Ben.",
+        "Clara's pickup time was one hour before Dan's.",
+        "Dan was the last to arrive, at 12:00, so Clara came at 11:00.",
+        "Ben ordered croissants, and Anna ordered muffins.",
+        "The person who came at 11:00 ordered tarts.",
+        "Dan's order was bagels.",
+        "Ben bought 6 croissants, and each later arrival bought two more items than the person just before them.",
+        "So the tart order was 10 and the bagel order was 12.",
+        "Altogether the bakery handed over 36 items that morning.",
+        "Dan's bagel order was smaller than Clara's tart order."
+      ],
+      "ko": [
+        "토요일에 네 친구 안나, 벤, 클라라, 댄이 코너 베이커리에서 각각 하나씩 주문했다.",
+        "각자 크루아상, 머핀, 타르트, 베이글 중 오직 한 종류만 주문했다.",
+        "네 번의 찾는 시간은 9시, 10시, 11시, 12시였고, 각 시간에 한 명씩이었다.",
+        "벤이 네 명 중 가장 먼저, 9시에 도착했다.",
+        "안나는 벤보다 정확히 한 시간 뒤에 자기 주문을 찾아갔다.",
+        "클라라가 찾은 시간은 댄보다 한 시간 빨랐다.",
+        "댄이 12시에 가장 마지막으로 도착했으므로 클라라는 11시에 왔다.",
+        "벤은 크루아상을, 안나는 머핀을 주문했다.",
+        "11시에 온 사람은 타르트를 주문했다.",
+        "댄의 주문은 베이글이었다.",
+        "벤은 크루아상 6개를 샀고, 이후 도착한 사람은 바로 앞 사람보다 2개씩 더 샀다.",
+        "그래서 타르트 주문은 10개, 베이글 주문은 12개였다.",
+        "그날 아침 베이커리는 모두 36개를 건넸다.",
+        "댄의 베이글 주문은 클라라의 타르트 주문보다 적었다."
+      ],
+      "ja": [
+        "土曜日、四人の友だち――アンナ、ベン、クララ、ダン――がコーナーベーカリーでそれぞれ一つずつ注文した。",
+        "各自クロワッサン、マフィン、タルト、ベーグルのうち一種類だけを注文した。",
+        "受け取り時刻は9時、10時、11時、12時の四つで、各時刻に一人ずつだった。",
+        "ベンが四人の中で最初に、9時に着いた。",
+        "アンナはベンのちょうど一時間後に自分の注文を受け取った。",
+        "クララの受け取り時刻はダンより一時間早かった。",
+        "ダンが12時に最後に着いたので、クララは11時に来た。",
+        "ベンはクロワッサンを、アンナはマフィンを注文した。",
+        "11時に来た人はタルトを注文した。",
+        "ダンの注文はベーグルだった。",
+        "ベンはクロワッサンを6個買い、後から着いた人はすぐ前の人より2個多く買った。",
+        "そのためタルトの注文は10個、ベーグルの注文は12個だった。",
+        "その朝、ベーカリーは全部で36個を渡した。",
+        "ダンのベーグルの注文はクララのタルトの注文より少なかった。"
+      ],
+      "zh": [
+        "星期六，四位朋友——安娜、本、克拉拉和丹——各自在街角面包店点了一份。",
+        "每人只点一种：牛角包、松饼、水果塔或贝果。",
+        "四个取货时间是9点、10点、11点和12点，每个时间各一人。",
+        "本最先到，在9点。",
+        "安娜正好在本之后一小时取走了她的订单。",
+        "克拉拉的取货时间比丹早一小时。",
+        "丹在12点最后到达，所以克拉拉在11点来。",
+        "本点了牛角包，安娜点了松饼。",
+        "11点来的人点了水果塔。",
+        "丹点的是贝果。",
+        "本买了6个牛角包，之后每个到店的人都比紧挨着他前面的人多买两个。",
+        "所以水果塔的订单是10个，贝果的订单是12个。",
+        "那天早上面包店一共交出了36个。",
+        "丹的贝果订单比克拉拉的水果塔订单少。"
+      ],
+      "es": [
+        "El sábado, cuatro amigos —Anna, Ben, Clara y Dan— hicieron cada uno un pedido en la Panadería de la Esquina.",
+        "Cada persona pidió un solo tipo: cruasanes, magdalenas, tartaletas o bagels.",
+        "Las cuatro horas de recogida fueron las 9:00, 10:00, 11:00 y 12:00, con una persona en cada hora.",
+        "Ben llegó primero de los cuatro, a las 9:00.",
+        "Anna recogió su pedido exactamente una hora después que Ben.",
+        "La hora de Clara fue una hora antes que la de Dan.",
+        "Dan fue el último en llegar, a las 12:00, así que Clara vino a las 11:00.",
+        "Ben pidió cruasanes y Anna pidió magdalenas.",
+        "La persona que vino a las 11:00 pidió tartaletas.",
+        "El pedido de Dan fue de bagels.",
+        "Ben compró 6 cruasanes, y cada persona posterior compró dos unidades más que la anterior.",
+        "Así que el pedido de tartaletas fue de 10 y el de bagels de 12.",
+        "En total, la panadería entregó 36 unidades esa mañana.",
+        "El pedido de bagels de Dan fue menor que el de tartaletas de Clara."
+      ],
+      "fr": [
+        "Samedi, quatre amis — Anna, Ben, Clara et Dan — ont chacun passé une commande à la Boulangerie du Coin.",
+        "Chaque personne n'a commandé qu'une seule sorte : croissants, muffins, tartelettes ou bagels.",
+        "Les quatre heures de retrait étaient 9h00, 10h00, 11h00 et 12h00, une personne à chaque heure.",
+        "Ben est arrivé le premier des quatre, à 9h00.",
+        "Anna a retiré sa commande exactement une heure après Ben.",
+        "L'heure de Clara était une heure avant celle de Dan.",
+        "Dan est arrivé le dernier, à 12h00, donc Clara est venue à 11h00.",
+        "Ben a commandé des croissants et Anna des muffins.",
+        "La personne venue à 11h00 a commandé des tartelettes.",
+        "La commande de Dan était des bagels.",
+        "Ben a acheté 6 croissants, et chaque personne suivante en a acheté deux de plus que celle juste avant.",
+        "Ainsi la commande de tartelettes était de 10 et celle de bagels de 12.",
+        "Au total, la boulangerie a remis 36 pièces ce matin-là.",
+        "La commande de bagels de Dan était plus petite que celle de tartelettes de Clara."
+      ],
+      "de": [
+        "Am Samstag gaben vier Freunde – Anna, Ben, Clara und Dan – je eine Bestellung in der Eckbäckerei auf.",
+        "Jede Person bestellte nur eine Sorte: Croissants, Muffins, Törtchen oder Bagels.",
+        "Die vier Abholzeiten waren 9:00, 10:00, 11:00 und 12:00 Uhr, mit einer Person zu jeder Zeit.",
+        "Ben kam als Erster der vier, um 9:00 Uhr.",
+        "Anna holte ihre Bestellung genau eine Stunde nach Ben ab.",
+        "Claras Abholzeit war eine Stunde vor der von Dan.",
+        "Dan kam als Letzter, um 12:00 Uhr, also kam Clara um 11:00 Uhr.",
+        "Ben bestellte Croissants und Anna Muffins.",
+        "Die Person, die um 11:00 Uhr kam, bestellte Törtchen.",
+        "Dans Bestellung waren Bagels.",
+        "Ben kaufte 6 Croissants, und jede spätere Person kaufte zwei Stück mehr als die direkt vor ihr.",
+        "So betrug die Törtchen-Bestellung 10 und die Bagel-Bestellung 12.",
+        "Insgesamt gab die Bäckerei an diesem Morgen 36 Stück heraus.",
+        "Dans Bagel-Bestellung war kleiner als Claras Törtchen-Bestellung."
+      ]
+    },
+    "hints": {
+      "en": [
+        "Fix each person's time and pastry first, then use Ben's 6 and the +2 rule to size every order.",
+        "Work out how many bagels Dan got and how many tarts Clara got, then compare the two."
+      ],
+      "ko": [
+        "먼저 각자의 시간과 빵 종류를 정한 뒤, 벤의 6개와 2개씩 늘어나는 규칙으로 모든 주문 수를 구하라.",
+        "댄의 베이글 개수와 클라라의 타르트 개수를 구해 둘을 비교해 보라."
+      ],
+      "ja": [
+        "まず各自の時刻とパンの種類を決め、ベンの6個と2個ずつ増える規則で全部の個数を出そう。",
+        "ダンのベーグルの数とクララのタルトの数を求めて、二つを比べてみよう。"
+      ],
+      "zh": [
+        "先确定每人的时间和面包种类，再用本的6个和每次多2个的规则算出所有数量。",
+        "算出丹的贝果数量和克拉拉的水果塔数量，再比较两者。"
+      ],
+      "es": [
+        "Fija primero la hora y el pan de cada uno; luego usa los 6 de Ben y la regla de dos más para calcular cada pedido.",
+        "Calcula cuántos bagels llevó Dan y cuántas tartaletas Clara, y compara ambos."
+      ],
+      "fr": [
+        "Fixe d'abord l'heure et le type de pain de chacun, puis utilise les 6 de Ben et la règle des deux de plus pour chiffrer chaque commande.",
+        "Calcule combien de bagels a pris Dan et combien de tartelettes Clara, puis compare les deux."
+      ],
+      "de": [
+        "Lege zuerst Zeit und Gebäck jeder Person fest, dann berechne mit Bens 6 und der Plus-zwei-Regel jede Bestellung.",
+        "Berechne, wie viele Bagels Dan und wie viele Törtchen Clara bekam, und vergleiche beide."
+      ]
+    },
+    "explanation": {
+      "en": "Dan picks up at 12:00 as the fourth arrival, so his bagel order is 12 while Clara's tart order is 10, making Dan's order larger, not smaller.",
+      "ko": "댄은 네 번째로 12시에 도착하므로 베이글 주문은 12개이고 클라라의 타르트는 10개여서, 댄의 주문이 더 적은 게 아니라 더 많다.",
+      "ja": "ダンは四番目に12時に着くのでベーグルは12個、クララのタルトは10個であり、ダンの注文は少ないどころか多い。",
+      "zh": "丹第四个到、在12点，所以贝果订单是12个，而克拉拉的水果塔是10个，丹的订单不是更少而是更多。",
+      "es": "Dan recoge a las 12:00 como cuarto en llegar, así que su pedido de bagels es 12 y el de tartaletas de Clara es 10, por lo que el de Dan es mayor, no menor.",
+      "fr": "Dan retire à 12h00 comme quatrième arrivé, donc sa commande de bagels est de 12 et celle de tartelettes de Clara de 10, ce qui rend celle de Dan plus grande, et non plus petite.",
+      "de": "Dan holt um 12:00 Uhr als Vierter ab, also ist seine Bagel-Bestellung 12 und Claras Törtchen 10, wodurch Dans Bestellung größer ist, nicht kleiner."
+    }
+  },
+  {
+    "id": "co13_s02",
+    "type": "contradiction",
+    "track": "contradiction",
+    "chapter": 13,
+    "order": 2,
+    "tokens": null,
+    "answer": "11",
+    "inputType": "choices",
+    "choices": null,
+    "statements": {
+      "en": [
+        "At the science club showcase, four members — Mia, Noah, Omar, and Priya — each presented one project.",
+        "The projects were a robot, a volcano, a solar panel, and a plant experiment, one per member.",
+        "They presented one after another in a single room, in some order.",
+        "Noah presented first, and Omar presented last.",
+        "Mia presented immediately before Priya.",
+        "So the order was Noah, then Mia, then Priya, then Omar.",
+        "Noah showed the volcano, and Mia showed the robot.",
+        "Priya's project was the plant experiment, so Omar showed the solar panel.",
+        "The first presenter earned 40 points, and each following presenter earned 15 points more than the one before.",
+        "This gave 40, 55, 70, and 85 points in presentation order.",
+        "The two middle presenters together earned more points than the first and last combined.",
+        "Omar, the solar-panel presenter, earned the highest score, 85 points.",
+        "The four scores added up to 250 points.",
+        "Mia's robot earned 15 points fewer than Priya's plant experiment."
+      ],
+      "ko": [
+        "과학 동아리 발표회에서 네 회원 미아, 노아, 오마르, 프리야가 각각 하나씩 발표했다.",
+        "과제는 로봇, 화산, 태양광 패널, 식물 실험이었고, 회원당 하나씩이었다.",
+        "그들은 한 방에서 어떤 순서로 차례차례 발표했다.",
+        "노아가 가장 먼저, 오마르가 가장 마지막에 발표했다.",
+        "미아는 프리야 바로 앞에 발표했다.",
+        "그래서 순서는 노아, 미아, 프리야, 오마르였다.",
+        "노아는 화산을, 미아는 로봇을 선보였다.",
+        "프리야의 과제는 식물 실험이었으므로 오마르는 태양광 패널을 선보였다.",
+        "첫 발표자는 40점을 받았고, 뒤의 발표자는 저마다 앞사람보다 15점씩 더 받았다.",
+        "그리하여 발표 순서대로 40, 55, 70, 85점이 되었다.",
+        "가운데 두 발표자의 점수 합은 첫 번째와 마지막 발표자의 합보다 많았다.",
+        "태양광 패널을 발표한 오마르가 85점으로 가장 높은 점수를 받았다.",
+        "네 점수를 더하면 250점이었다.",
+        "미아의 로봇은 프리야의 식물 실험보다 15점 적게 받았다."
+      ],
+      "ja": [
+        "科学クラブの発表会で、四人の部員――ミア、ノア、オマル、プリヤ――がそれぞれ一つずつ発表した。",
+        "作品はロボット、火山、ソーラーパネル、植物の実験で、部員一人につき一つだった。",
+        "彼らは一つの部屋である順番で次々に発表した。",
+        "ノアが最初に、オマルが最後に発表した。",
+        "ミアはプリヤのすぐ前に発表した。",
+        "そのため順番はノア、ミア、プリヤ、オマルだった。",
+        "ノアは火山を、ミアはロボットを見せた。",
+        "プリヤの作品は植物の実験だったので、オマルはソーラーパネルを見せた。",
+        "最初の発表者は40点を得て、後の発表者はそれぞれ前の人より15点多く得た。",
+        "こうして発表順に40、55、70、85点となった。",
+        "真ん中の二人の発表者の合計点は、最初と最後の発表者の合計より多かった。",
+        "ソーラーパネルを発表したオマルが85点で最高点を得た。",
+        "四つの点を合わせると250点だった。",
+        "ミアのロボットはプリヤの植物の実験より15点少なかった。"
+      ],
+      "zh": [
+        "在科学社展示会上，四名成员——米娅、诺亚、奥马尔和普里娅——各自展示了一个项目。",
+        "项目分别是机器人、火山、太阳能板和植物实验，每人一个。",
+        "他们在一个房间里按某种顺序一个接一个地展示。",
+        "诺亚第一个展示，奥马尔最后一个展示。",
+        "米娅紧接在普里娅之前展示。",
+        "所以顺序是诺亚、米娅、普里娅、奥马尔。",
+        "诺亚展示火山，米娅展示机器人。",
+        "普里娅的项目是植物实验，所以奥马尔展示太阳能板。",
+        "第一位展示者得40分，之后每位都比前一位多得15分。",
+        "于是按展示顺序得分为40、55、70和85分。",
+        "中间两位展示者的得分之和比第一位和最后一位之和多。",
+        "展示太阳能板的奥马尔以85分获得最高分。",
+        "四个分数加起来是250分。",
+        "米娅的机器人比普里娅的植物实验少得15分。"
+      ],
+      "es": [
+        "En la muestra del club de ciencias, cuatro miembros —Mia, Noah, Omar y Priya— presentaron cada uno un proyecto.",
+        "Los proyectos eran un robot, un volcán, un panel solar y un experimento con plantas, uno por miembro.",
+        "Presentaron uno tras otro en una sola sala, en cierto orden.",
+        "Noah presentó primero y Omar presentó último.",
+        "Mia presentó justo antes de Priya.",
+        "Así que el orden fue Noah, luego Mia, luego Priya y luego Omar.",
+        "Noah mostró el volcán y Mia mostró el robot.",
+        "El proyecto de Priya era el experimento con plantas, así que Omar mostró el panel solar.",
+        "El primer presentador ganó 40 puntos, y cada siguiente ganó 15 puntos más que el anterior.",
+        "Esto dio 40, 55, 70 y 85 puntos en orden de presentación.",
+        "Los dos presentadores del medio juntos ganaron más puntos que el primero y el último juntos.",
+        "Omar, el del panel solar, obtuvo la puntuación más alta, 85 puntos.",
+        "Las cuatro puntuaciones sumaron 250 puntos.",
+        "El robot de Mia ganó 15 puntos menos que el experimento con plantas de Priya."
+      ],
+      "fr": [
+        "À la présentation du club de sciences, quatre membres — Mia, Noah, Omar et Priya — ont chacun présenté un projet.",
+        "Les projets étaient un robot, un volcan, un panneau solaire et une expérience sur les plantes, un par membre.",
+        "Ils ont présenté l'un après l'autre dans une seule salle, dans un certain ordre.",
+        "Noah a présenté en premier et Omar en dernier.",
+        "Mia a présenté juste avant Priya.",
+        "L'ordre était donc Noah, puis Mia, puis Priya, puis Omar.",
+        "Noah a montré le volcan et Mia a montré le robot.",
+        "Le projet de Priya était l'expérience sur les plantes, donc Omar a montré le panneau solaire.",
+        "Le premier présentateur a obtenu 40 points, et chaque suivant a obtenu 15 points de plus que le précédent.",
+        "Cela a donné 40, 55, 70 et 85 points dans l'ordre de présentation.",
+        "Les deux présentateurs du milieu ont ensemble obtenu plus de points que le premier et le dernier réunis.",
+        "Omar, celui du panneau solaire, a obtenu le meilleur score, 85 points.",
+        "Les quatre scores totalisaient 250 points.",
+        "Le robot de Mia a obtenu 15 points de moins que l'expérience sur les plantes de Priya."
+      ],
+      "de": [
+        "Bei der Präsentation des Wissenschaftsklubs stellte jedes der vier Mitglieder – Mia, Noah, Omar und Priya – ein Projekt vor.",
+        "Die Projekte waren ein Roboter, ein Vulkan, ein Solarpanel und ein Pflanzenexperiment, eins pro Mitglied.",
+        "Sie präsentierten nacheinander in einem einzigen Raum, in einer bestimmten Reihenfolge.",
+        "Noah präsentierte als Erster und Omar als Letzter.",
+        "Mia präsentierte direkt vor Priya.",
+        "Die Reihenfolge war also Noah, dann Mia, dann Priya, dann Omar.",
+        "Noah zeigte den Vulkan und Mia zeigte den Roboter.",
+        "Priyas Projekt war das Pflanzenexperiment, also zeigte Omar das Solarpanel.",
+        "Der erste Vortragende erhielt 40 Punkte, und jeder folgende erhielt 15 Punkte mehr als der davor.",
+        "Das ergab 40, 55, 70 und 85 Punkte in der Reihenfolge der Präsentation.",
+        "Die beiden mittleren Vortragenden erhielten zusammen mehr Punkte als der erste und der letzte zusammen.",
+        "Omar, der mit dem Solarpanel, erhielt mit 85 Punkten die höchste Punktzahl.",
+        "Die vier Punktzahlen ergaben zusammen 250 Punkte.",
+        "Mias Roboter erhielt 15 Punkte weniger als Priyas Pflanzenexperiment."
+      ]
+    },
+    "hints": {
+      "en": [
+        "Nail down the order and who built what, then turn 40 and the +15 rule into each person's score.",
+        "Add the two middle scores and the first-plus-last scores separately, then see how the totals compare."
+      ],
+      "ko": [
+        "순서와 누가 무엇을 만들었는지 정한 뒤, 40점과 15점씩 늘어나는 규칙으로 각자의 점수를 구하라.",
+        "가운데 두 점수의 합과 첫 번째·마지막 점수의 합을 따로 더해 서로 비교해 보라."
+      ],
+      "ja": [
+        "順番と誰が何を作ったかを決め、40点と15点ずつ増える規則で各自の点を出そう。",
+        "真ん中二人の合計と、最初と最後の合計を別々に足して、比べてみよう。"
+      ],
+      "zh": [
+        "先确定顺序和谁做了什么，再用40分和每次多15分的规则算出各人的分数。",
+        "把中间两个分数之和与第一和最后之和分别相加，再比较两者。"
+      ],
+      "es": [
+        "Fija el orden y quién hizo cada cosa; luego convierte los 40 y la regla de +15 en la puntuación de cada uno.",
+        "Suma por separado las dos puntuaciones del medio y las del primero y el último, y compara los totales."
+      ],
+      "fr": [
+        "Fixe l'ordre et qui a fait quoi, puis transforme les 40 et la règle des +15 en score de chacun.",
+        "Additionne séparément les deux scores du milieu et ceux du premier et du dernier, puis compare les totaux."
+      ],
+      "de": [
+        "Lege die Reihenfolge und wer was gebaut hat fest, dann mache aus den 40 und der Plus-15-Regel jede Punktzahl.",
+        "Addiere die beiden mittleren Punktzahlen und die von Erstem und Letztem getrennt und vergleiche die Summen."
+      ]
+    },
+    "explanation": {
+      "en": "The two middle presenters earn 55 and 70 for 125, exactly equal to the first and last presenters' 40 and 85, so the middle pair does not earn more.",
+      "ko": "가운데 두 발표자는 55점과 70점으로 합이 125점이고, 첫 번째와 마지막의 40점과 85점 합도 정확히 125점이라 가운데 쪽이 더 많지 않다.",
+      "ja": "真ん中の二人は55点と70点で合計125点、最初と最後の40点と85点の合計もちょうど125点なので、真ん中の方が多いわけではない。",
+      "zh": "中间两位得55分和70分共125分，恰好等于第一位和最后一位的40分与85分之和125分，所以中间两位并没有更多。",
+      "es": "Los dos del medio ganan 55 y 70, que suman 125, exactamente igual que los 40 y 85 del primero y el último, así que el par del medio no gana más.",
+      "fr": "Les deux du milieu obtiennent 55 et 70, soit 125, exactement égal aux 40 et 85 du premier et du dernier, donc la paire du milieu n'obtient pas plus.",
+      "de": "Die beiden mittleren erhalten 55 und 70, zusammen 125, genau gleich den 40 und 85 des ersten und letzten, also erhält das mittlere Paar nicht mehr."
+    }
+  },
+  {
+    "id": "co13_s03",
+    "type": "contradiction",
+    "track": "contradiction",
+    "chapter": 13,
+    "order": 3,
+    "tokens": null,
+    "answer": "13",
+    "inputType": "choices",
+    "choices": null,
+    "statements": {
+      "en": [
+        "Four travelers — Rosa, Sam, Tom, and Uma — rode the same train, each seated in a different car.",
+        "The cars were numbered 1, 2, 3, and 4, and each traveler headed to a different town: Denport, Elmford, Fairlake, or Granby.",
+        "Sam sat in car 1, and Tom sat in the last car, car 4.",
+        "Rosa's car number was exactly one less than Uma's.",
+        "So Rosa sat in car 2 and Uma sat in car 3.",
+        "Sam was bound for Denport, and Rosa for Elmford.",
+        "Uma was going to Fairlake, and Tom to Granby.",
+        "Each traveler's fare in dollars equaled their car number times ten.",
+        "So Sam paid $10, Rosa paid $20, Uma paid $30, and Tom paid $40.",
+        "Sam carried 2 bags, Rosa carried 3 bags, Uma carried 1 bag, and Tom carried 4 bags.",
+        "Altogether the four travelers carried 10 bags.",
+        "The four fares added up to $100.",
+        "The traveler heading to Fairlake paid the highest fare of all.",
+        "Tom, in car 4, both paid the most and carried the most bags."
+      ],
+      "ko": [
+        "네 여행자 로사, 샘, 톰, 우마가 같은 기차를 탔고, 각자 다른 칸에 앉았다.",
+        "칸은 1, 2, 3, 4번이었고, 각 여행자는 서로 다른 마을 덴포트, 엘름포드, 페어레이크, 그랜비로 향했다.",
+        "샘은 1번 칸에, 톰은 마지막 칸인 4번 칸에 앉았다.",
+        "로사의 칸 번호는 우마보다 정확히 1 작았다.",
+        "그래서 로사는 2번 칸, 우마는 3번 칸에 앉았다.",
+        "샘은 덴포트로, 로사는 엘름포드로 가는 길이었다.",
+        "우마는 페어레이크로, 톰은 그랜비로 가고 있었다.",
+        "각 여행자의 요금은 달러로 자기 칸 번호에 10을 곱한 값이었다.",
+        "그래서 샘은 10달러, 로사는 20달러, 우마는 30달러, 톰은 40달러를 냈다.",
+        "샘은 가방 2개, 로사는 3개, 우마는 1개, 톰은 4개를 들고 있었다.",
+        "네 여행자는 모두 합쳐 가방 10개를 들고 있었다.",
+        "네 요금을 더하면 100달러였다.",
+        "페어레이크로 향하는 여행자가 모두 중 가장 높은 요금을 냈다.",
+        "4번 칸의 톰이 가장 많은 요금을 냈고 가장 많은 가방을 들었다."
+      ],
+      "ja": [
+        "四人の旅行者――ローザ、サム、トム、ウマ――が同じ列車に乗り、それぞれ別の車両に座った。",
+        "車両は1、2、3、4号車で、各旅行者は別々の町――デンポート、エルムフォード、フェアレイク、グランビー――へ向かった。",
+        "サムは1号車に、トムは最後尾の4号車に座った。",
+        "ローザの車両番号はウマよりちょうど1小さかった。",
+        "そのためローザは2号車、ウマは3号車に座った。",
+        "サムはデンポートへ、ローザはエルムフォードへ向かっていた。",
+        "ウマはフェアレイクへ、トムはグランビーへ向かっていた。",
+        "各旅行者の運賃はドルで自分の車両番号に10を掛けた額だった。",
+        "そのためサムは10ドル、ローザは20ドル、ウマは30ドル、トムは40ドルを払った。",
+        "サムは荷物2個、ローザは3個、ウマは1個、トムは4個を持っていた。",
+        "四人の旅行者は合わせて荷物10個を持っていた。",
+        "四つの運賃を合わせると100ドルだった。",
+        "フェアレイクへ向かう旅行者が全員の中で最も高い運賃を払った。",
+        "4号車のトムが最も高い運賃を払い、最も多くの荷物を持っていた。"
+      ],
+      "zh": [
+        "四位旅客——罗莎、山姆、汤姆和乌玛——乘坐同一列火车，各自坐在不同的车厢。",
+        "车厢编号为1、2、3、4，每位旅客前往不同的城镇：登波特、埃尔姆福德、费尔莱克或格兰比。",
+        "山姆坐在1号车厢，汤姆坐在最后一节，即4号车厢。",
+        "罗莎的车厢号正好比乌玛小1。",
+        "所以罗莎坐2号车厢，乌玛坐3号车厢。",
+        "山姆前往登波特，罗莎前往埃尔姆福德。",
+        "乌玛前往费尔莱克，汤姆前往格兰比。",
+        "每位旅客的票价（美元）等于其车厢号乘以十。",
+        "所以山姆付10美元，罗莎付20美元，乌玛付30美元，汤姆付40美元。",
+        "山姆带2件行李，罗莎带3件，乌玛带1件，汤姆带4件。",
+        "四位旅客一共带了10件行李。",
+        "四份票价加起来是100美元。",
+        "前往费尔莱克的旅客付了所有人中最高的票价。",
+        "4号车厢的汤姆付得最多，也带了最多的行李。"
+      ],
+      "es": [
+        "Cuatro viajeros —Rosa, Sam, Tom y Uma— iban en el mismo tren, cada uno en un vagón distinto.",
+        "Los vagones tenían los números 1, 2, 3 y 4, y cada viajero iba a un pueblo distinto: Denport, Elmford, Fairlake o Granby.",
+        "Sam iba en el vagón 1, y Tom en el último vagón, el 4.",
+        "El número de vagón de Rosa era exactamente uno menos que el de Uma.",
+        "Así que Rosa iba en el vagón 2 y Uma en el vagón 3.",
+        "Sam se dirigía a Denport y Rosa a Elmford.",
+        "Uma iba a Fairlake y Tom a Granby.",
+        "La tarifa de cada viajero en dólares era su número de vagón multiplicado por diez.",
+        "Así que Sam pagó $10, Rosa $20, Uma $30 y Tom $40.",
+        "Sam llevaba 2 maletas, Rosa 3, Uma 1 y Tom 4.",
+        "En total, los cuatro viajeros llevaban 10 maletas.",
+        "Las cuatro tarifas sumaban $100.",
+        "El viajero que iba a Fairlake pagó la tarifa más alta de todos.",
+        "Tom, en el vagón 4, pagó lo máximo y llevó más maletas que nadie."
+      ],
+      "fr": [
+        "Quatre voyageurs — Rosa, Sam, Tom et Uma — voyageaient dans le même train, chacun dans une voiture différente.",
+        "Les voitures portaient les numéros 1, 2, 3 et 4, et chaque voyageur allait dans une ville différente : Denport, Elmford, Fairlake ou Granby.",
+        "Sam était dans la voiture 1, et Tom dans la dernière voiture, la 4.",
+        "Le numéro de voiture de Rosa était exactement inférieur d'un à celui d'Uma.",
+        "Donc Rosa était dans la voiture 2 et Uma dans la voiture 3.",
+        "Sam se rendait à Denport et Rosa à Elmford.",
+        "Uma allait à Fairlake et Tom à Granby.",
+        "Le tarif de chaque voyageur en dollars valait son numéro de voiture multiplié par dix.",
+        "Donc Sam a payé 10 $, Rosa 20 $, Uma 30 $ et Tom 40 $.",
+        "Sam avait 2 bagages, Rosa 3, Uma 1 et Tom 4.",
+        "Au total, les quatre voyageurs avaient 10 bagages.",
+        "Les quatre tarifs totalisaient 100 $.",
+        "Le voyageur allant à Fairlake a payé le tarif le plus élevé de tous.",
+        "Tom, dans la voiture 4, a payé le plus et portait le plus de bagages."
+      ],
+      "de": [
+        "Vier Reisende – Rosa, Sam, Tom und Uma – fuhren im selben Zug, jeder in einem anderen Wagen.",
+        "Die Wagen trugen die Nummern 1, 2, 3 und 4, und jeder Reisende fuhr in eine andere Stadt: Denport, Elmford, Fairlake oder Granby.",
+        "Sam saß in Wagen 1 und Tom im letzten Wagen, Wagen 4.",
+        "Rosas Wagennummer war genau um eins kleiner als die von Uma.",
+        "Also saß Rosa in Wagen 2 und Uma in Wagen 3.",
+        "Sam fuhr nach Denport und Rosa nach Elmford.",
+        "Uma fuhr nach Fairlake und Tom nach Granby.",
+        "Der Fahrpreis jedes Reisenden in Dollar war seine Wagennummer mal zehn.",
+        "Also zahlte Sam 10 $, Rosa 20 $, Uma 30 $ und Tom 40 $.",
+        "Sam hatte 2 Taschen, Rosa 3, Uma 1 und Tom 4.",
+        "Insgesamt trugen die vier Reisenden 10 Taschen.",
+        "Die vier Fahrpreise ergaben zusammen 100 $.",
+        "Der Reisende nach Fairlake zahlte den höchsten Fahrpreis von allen.",
+        "Tom in Wagen 4 zahlte am meisten und trug die meisten Taschen."
+      ]
+    },
+    "hints": {
+      "en": [
+        "Place everyone in a car, match each to a town, then use the car-times-ten rule for the fares.",
+        "Find which car the Fairlake traveler is in and their fare, then check whether anyone paid more."
+      ],
+      "ko": [
+        "먼저 각자를 칸에 배치하고 마을과 짝지은 뒤, 칸 번호 곱하기 10 규칙으로 요금을 구하라.",
+        "페어레이크로 가는 여행자가 몇 번 칸인지와 요금을 찾고, 더 많이 낸 사람이 있는지 확인하라."
+      ],
+      "ja": [
+        "まず各自を車両に配置し町と結び付け、車両番号×10の規則で運賃を求めよう。",
+        "フェアレイクへ行く旅行者が何号車で運賃がいくらかを調べ、もっと払った人がいないか確かめよう。"
+      ],
+      "zh": [
+        "先把每人安排到车厢并与城镇配对，再用车厢号乘十的规则算票价。",
+        "找出去费尔莱克的旅客在几号车厢、票价多少，再看有没有人付得更多。"
+      ],
+      "es": [
+        "Coloca a cada uno en un vagón, asígnale un pueblo y usa la regla del número de vagón por diez para las tarifas.",
+        "Averigua en qué vagón va el viajero de Fairlake y su tarifa, y comprueba si alguien pagó más."
+      ],
+      "fr": [
+        "Place chacun dans une voiture, associe-le à une ville, puis applique la règle du numéro de voiture fois dix pour les tarifs.",
+        "Trouve dans quelle voiture est le voyageur de Fairlake et son tarif, puis vérifie si quelqu'un a payé plus."
+      ],
+      "de": [
+        "Setze jeden in einen Wagen, ordne ihm eine Stadt zu und nutze die Regel Wagennummer mal zehn für die Fahrpreise.",
+        "Finde heraus, in welchem Wagen der Fairlake-Reisende sitzt und was er zahlte, und prüfe, ob jemand mehr zahlte."
+      ]
+    },
+    "explanation": {
+      "en": "The Fairlake traveler is Uma in car 3, who paid $30, while Tom in car 4 paid $40, so the Fairlake fare is not the highest.",
+      "ko": "페어레이크로 가는 사람은 3번 칸의 우마로 30달러를 냈고, 4번 칸의 톰은 40달러를 내서 페어레이크 요금이 가장 높지 않다.",
+      "ja": "フェアレイクへ行くのは3号車のウマで30ドルを払い、4号車のトムは40ドルを払ったので、フェアレイクの運賃は最も高くない。",
+      "zh": "去费尔莱克的是3号车厢的乌玛，付了30美元，而4号车厢的汤姆付了40美元，所以费尔莱克的票价并非最高。",
+      "es": "El viajero de Fairlake es Uma, en el vagón 3, que pagó $30, mientras que Tom en el vagón 4 pagó $40, así que la tarifa de Fairlake no es la más alta.",
+      "fr": "Le voyageur de Fairlake est Uma, dans la voiture 3, qui a payé 30 $, tandis que Tom dans la voiture 4 a payé 40 $, donc le tarif de Fairlake n'est pas le plus élevé.",
+      "de": "Der Fairlake-Reisende ist Uma in Wagen 3, die 30 $ zahlte, während Tom in Wagen 4 40 $ zahlte, also ist der Fairlake-Fahrpreis nicht der höchste."
+    }
+  },
+  {
+    "id": "co13_s04",
+    "type": "contradiction",
+    "track": "contradiction",
+    "chapter": 13,
+    "order": 4,
+    "tokens": null,
+    "answer": "8",
+    "inputType": "choices",
+    "choices": null,
+    "statements": {
+      "en": [
+        "At the office party, four coworkers — Grace, Henry, Ivan, and Julia — each brought one dish.",
+        "The dishes were a salad, pasta, soup, and bread, one per person.",
+        "Grace was the first to arrive, at 6:00 in the evening.",
+        "Each coworker after her arrived exactly 20 minutes after the one before, and Julia arrived last.",
+        "Henry arrived immediately after Grace, and Ivan arrived immediately before Julia.",
+        "So the arrivals were at 6:00, 6:20, 6:40, and 7:00, ending with Julia.",
+        "Grace brought the salad, Henry the pasta, Ivan the soup, and Julia the bread.",
+        "The coworker who brought the soup gave $25 to the gift fund.",
+        "Everyone chipped in for a gift: the first to arrive gave $10, and each later arrival gave $5 more than the person before.",
+        "So the four gifts were $10, $15, $20, and $25 in arrival order.",
+        "Julia, arriving last, gave the largest amount, $25.",
+        "Grace, arriving first, gave the smallest amount, $10.",
+        "The gift fund collected $70 in total.",
+        "Henry, who brought the pasta, gave $15."
+      ],
+      "ko": [
+        "회사 파티에서 네 동료 그레이스, 헨리, 이반, 줄리아가 각각 음식 하나씩 가져왔다.",
+        "음식은 샐러드, 파스타, 수프, 빵이었고, 한 사람당 하나씩이었다.",
+        "그레이스가 저녁 6시에 가장 먼저 도착했다.",
+        "그 뒤 동료들은 저마다 앞사람보다 정확히 20분 뒤에 도착했고, 줄리아가 가장 마지막에 왔다.",
+        "헨리는 그레이스 바로 다음에, 이반은 줄리아 바로 앞에 도착했다.",
+        "그래서 도착 시각은 6시, 6시 20분, 6시 40분, 7시였고 줄리아가 마지막이었다.",
+        "그레이스는 샐러드, 헨리는 파스타, 이반은 수프, 줄리아는 빵을 가져왔다.",
+        "수프를 가져온 동료는 선물 기금에 25달러를 냈다.",
+        "모두 선물을 위해 돈을 모았다. 가장 먼저 온 사람이 10달러를 냈고, 이후 온 사람은 앞사람보다 5달러씩 더 냈다.",
+        "그래서 도착 순서대로 네 사람의 기부금은 10, 15, 20, 25달러였다.",
+        "가장 마지막에 온 줄리아가 가장 많은 25달러를 냈다.",
+        "가장 먼저 온 그레이스가 가장 적은 10달러를 냈다.",
+        "선물 기금은 모두 70달러가 모였다.",
+        "파스타를 가져온 헨리는 15달러를 냈다."
+      ],
+      "ja": [
+        "会社のパーティーで、四人の同僚――グレース、ヘンリー、イワン、ジュリア――がそれぞれ一品ずつ持ってきた。",
+        "料理はサラダ、パスタ、スープ、パンで、一人につき一品だった。",
+        "グレースが夕方6時に最初に着いた。",
+        "その後の同僚はそれぞれ前の人のちょうど20分後に着き、ジュリアが最後に来た。",
+        "ヘンリーはグレースのすぐ後に、イワンはジュリアのすぐ前に着いた。",
+        "そのため到着時刻は6時、6時20分、6時40分、7時で、ジュリアが最後だった。",
+        "グレースはサラダ、ヘンリーはパスタ、イワンはスープ、ジュリアはパンを持ってきた。",
+        "スープを持ってきた同僚は贈り物の積立金に25ドルを出した。",
+        "全員で贈り物のためにお金を出し合った。最初に来た人が10ドルを出し、後から来た人は前の人より5ドル多く出した。",
+        "そのため到着順に四人の寄付は10、15、20、25ドルだった。",
+        "最後に来たジュリアが最も多い25ドルを出した。",
+        "最初に来たグレースが最も少ない10ドルを出した。",
+        "贈り物の積立金は合わせて70ドル集まった。",
+        "パスタを持ってきたヘンリーは15ドルを出した。"
+      ],
+      "zh": [
+        "在公司聚会上，四位同事——格蕾丝、亨利、伊万和朱莉娅——各自带了一道菜。",
+        "菜品是沙拉、意面、汤和面包，每人一道。",
+        "格蕾丝最先到，在晚上6点。",
+        "她之后的同事每人都比前一位正好晚20分钟到，朱莉娅最后到。",
+        "亨利紧接在格蕾丝之后到，伊万紧接在朱莉娅之前到。",
+        "所以到达时间是6点、6点20分、6点40分和7点，朱莉娅最后。",
+        "格蕾丝带了沙拉，亨利带了意面，伊万带了汤，朱莉娅带了面包。",
+        "带汤的同事往礼物基金里出了25美元。",
+        "大家凑钱买礼物：最先到的人出10美元，之后每位都比前一位多出5美元。",
+        "所以按到达顺序，四人各出10、15、20和25美元。",
+        "最后到的朱莉娅出得最多，25美元。",
+        "最先到的格蕾丝出得最少，10美元。",
+        "礼物基金一共凑了70美元。",
+        "带意面的亨利出了15美元。"
+      ],
+      "es": [
+        "En la fiesta de la oficina, cuatro compañeros —Grace, Henry, Ivan y Julia— trajeron cada uno un plato.",
+        "Los platos eran una ensalada, pasta, sopa y pan, uno por persona.",
+        "Grace fue la primera en llegar, a las 6:00 de la tarde.",
+        "Cada compañero después de ella llegó exactamente 20 minutos después que el anterior, y Julia llegó la última.",
+        "Henry llegó justo después de Grace, e Ivan justo antes de Julia.",
+        "Así que las llegadas fueron a las 6:00, 6:20, 6:40 y 7:00, terminando con Julia.",
+        "Grace trajo la ensalada, Henry la pasta, Ivan la sopa y Julia el pan.",
+        "El compañero que trajo la sopa dio $25 al fondo del regalo.",
+        "Todos pusieron dinero para un regalo: el primero en llegar dio $10, y cada siguiente dio $5 más que el anterior.",
+        "Así que los cuatro aportes fueron $10, $15, $20 y $25 en orden de llegada.",
+        "Julia, la última en llegar, dio la mayor cantidad, $25.",
+        "Grace, la primera en llegar, dio la menor cantidad, $10.",
+        "El fondo del regalo reunió $70 en total.",
+        "Henry, que trajo la pasta, dio $15."
+      ],
+      "fr": [
+        "À la fête du bureau, quatre collègues — Grace, Henry, Ivan et Julia — ont chacun apporté un plat.",
+        "Les plats étaient une salade, des pâtes, une soupe et du pain, un par personne.",
+        "Grace est arrivée la première, à 18h00.",
+        "Chaque collègue après elle est arrivé exactement 20 minutes après le précédent, et Julia est arrivée la dernière.",
+        "Henry est arrivé juste après Grace, et Ivan juste avant Julia.",
+        "Les arrivées ont donc eu lieu à 18h00, 18h20, 18h40 et 19h00, en terminant par Julia.",
+        "Grace a apporté la salade, Henry les pâtes, Ivan la soupe et Julia le pain.",
+        "Le collègue qui a apporté la soupe a donné 25 $ à la cagnotte du cadeau.",
+        "Tout le monde a cotisé pour un cadeau : le premier arrivé a donné 10 $, et chaque suivant a donné 5 $ de plus que le précédent.",
+        "Les quatre dons étaient donc de 10 $, 15 $, 20 $ et 25 $ dans l'ordre d'arrivée.",
+        "Julia, arrivée la dernière, a donné le plus, 25 $.",
+        "Grace, arrivée la première, a donné le moins, 10 $.",
+        "La cagnotte du cadeau a réuni 70 $ au total.",
+        "Henry, qui a apporté les pâtes, a donné 15 $."
+      ],
+      "de": [
+        "Auf der Bürofeier brachte jeder der vier Kollegen – Grace, Henry, Ivan und Julia – ein Gericht mit.",
+        "Die Gerichte waren ein Salat, Pasta, Suppe und Brot, eins pro Person.",
+        "Grace kam als Erste, um 18:00 Uhr abends.",
+        "Jeder Kollege nach ihr kam genau 20 Minuten nach dem davor, und Julia kam als Letzte.",
+        "Henry kam direkt nach Grace und Ivan direkt vor Julia.",
+        "Die Ankünfte waren also um 18:00, 18:20, 18:40 und 19:00 Uhr, zuletzt Julia.",
+        "Grace brachte den Salat, Henry die Pasta, Ivan die Suppe und Julia das Brot.",
+        "Der Kollege, der die Suppe mitbrachte, gab 25 $ in die Geschenkkasse.",
+        "Alle steuerten für ein Geschenk bei: Der Erste gab 10 $, und jeder Spätere gab 5 $ mehr als der davor.",
+        "So waren die vier Beiträge in Ankunftsreihenfolge 10 $, 15 $, 20 $ und 25 $.",
+        "Julia, als Letzte angekommen, gab den größten Betrag, 25 $.",
+        "Grace, als Erste angekommen, gab den kleinsten Betrag, 10 $.",
+        "Die Geschenkkasse sammelte insgesamt 70 $.",
+        "Henry, der die Pasta mitbrachte, gab 15 $."
+      ]
+    },
+    "hints": {
+      "en": [
+        "Order the arrivals and match each dish, then use the $10 start and +$5 rule to find what each gave.",
+        "Figure out who brought the soup and what that person gave, then compare it with $25."
+      ],
+      "ko": [
+        "도착 순서를 정하고 음식을 짝지은 뒤, 10달러 시작과 5달러씩 늘어나는 규칙으로 각자 낸 돈을 구하라.",
+        "수프를 가져온 사람이 누구이며 얼마를 냈는지 알아내 25달러와 비교하라."
+      ],
+      "ja": [
+        "到着順を決めて料理を結び付け、10ドル始まりと5ドルずつ増える規則で各自の額を求めよう。",
+        "スープを持ってきたのが誰でいくら出したかを調べ、25ドルと比べよう。"
+      ],
+      "zh": [
+        "先排出到达顺序并配对菜品，再用10美元起、每次多5美元的规则算出各人所出。",
+        "弄清带汤的是谁、出了多少钱，再与25美元比较。"
+      ],
+      "es": [
+        "Ordena las llegadas y empareja cada plato; luego usa el inicio de $10 y la regla de +$5 para saber qué dio cada uno.",
+        "Averigua quién trajo la sopa y cuánto dio esa persona, y compáralo con $25."
+      ],
+      "fr": [
+        "Ordonne les arrivées et associe chaque plat, puis applique le début à 10 $ et la règle des +5 $ pour trouver ce que chacun a donné.",
+        "Trouve qui a apporté la soupe et ce que cette personne a donné, puis compare avec 25 $."
+      ],
+      "de": [
+        "Ordne die Ankünfte und verknüpfe jedes Gericht, dann finde mit dem Start bei 10 $ und der Plus-5-$-Regel, was jeder gab.",
+        "Finde heraus, wer die Suppe mitbrachte und was diese Person gab, und vergleiche es mit 25 $."
+      ]
+    },
+    "explanation": {
+      "en": "The soup was brought by Ivan, the third to arrive, who gave $20, not $25, since $25 belongs to Julia, the last arrival.",
+      "ko": "수프는 세 번째로 온 이반이 가져왔고 그는 25달러가 아니라 20달러를 냈으며, 25달러는 마지막에 온 줄리아의 몫이다.",
+      "ja": "スープを持ってきたのは三番目に着いたイワンで、25ドルではなく20ドルを出しており、25ドルは最後に来たジュリアの分である。",
+      "zh": "汤是第三个到的伊万带的，他出的是20美元而非25美元，25美元是最后到的朱莉娅所出。",
+      "es": "La sopa la trajo Ivan, el tercero en llegar, que dio $20 y no $25, ya que los $25 corresponden a Julia, la última en llegar.",
+      "fr": "La soupe a été apportée par Ivan, le troisième arrivé, qui a donné 20 $ et non 25 $, car les 25 $ reviennent à Julia, la dernière arrivée.",
+      "de": "Die Suppe brachte Ivan mit, der Dritte, der 20 $ und nicht 25 $ gab, denn die 25 $ gehören zu Julia, der Letzten."
+    }
+  },
+  {
+    "id": "co13_s05",
+    "type": "contradiction",
+    "track": "contradiction",
+    "chapter": 13,
+    "order": 5,
+    "tokens": null,
+    "answer": "12",
+    "inputType": "choices",
+    "choices": null,
+    "statements": {
+      "en": [
+        "The school fair had four booths run by Kate, Leo, Mona, and Nate.",
+        "The booths were a ring toss, a quiz, a lemonade stand, and face painting, one person each.",
+        "Each person worked a one-hour shift, and the four shifts started at 10:00, 11:00, 12:00, and 1:00.",
+        "Kate worked the earliest shift, at 10:00, and Nate worked the last, at 1:00.",
+        "Leo's shift started right after Kate's.",
+        "Mona's shift started right before Nate's.",
+        "So the shifts were Kate at 10:00, Leo at 11:00, Mona at 12:00, and Nate at 1:00.",
+        "Kate ran the ring toss, and Leo ran the quiz.",
+        "Mona ran the lemonade stand, and Nate did the face painting.",
+        "The 10:00 booth earned $30, and each later booth earned $10 more than the one before.",
+        "So the earnings were $30, $40, $50, and $60 in shift order.",
+        "The lemonade stand earned more than the face-painting booth.",
+        "Nate's booth, the last of the day, earned the most at $60.",
+        "The four booths earned $180 in total."
+      ],
+      "ko": [
+        "학교 축제에는 케이트, 레오, 모나, 네이트가 운영하는 네 부스가 있었다.",
+        "부스는 고리 던지기, 퀴즈, 레모네이드 가판, 페이스 페인팅이었고, 한 사람이 하나씩 맡았다.",
+        "각자 한 시간씩 근무했고, 네 근무는 10시, 11시, 12시, 1시에 시작했다.",
+        "케이트가 가장 이른 10시 근무를, 네이트가 마지막 1시 근무를 맡았다.",
+        "레오의 근무는 케이트 바로 다음에 시작했다.",
+        "모나의 근무는 네이트 바로 앞에 시작했다.",
+        "그래서 근무는 케이트 10시, 레오 11시, 모나 12시, 네이트 1시였다.",
+        "케이트는 고리 던지기를, 레오는 퀴즈를 운영했다.",
+        "모나는 레모네이드 가판을, 네이트는 페이스 페인팅을 맡았다.",
+        "10시 부스는 30달러를 벌었고, 이후 부스는 저마다 앞 부스보다 10달러씩 더 벌었다.",
+        "그래서 근무 순서대로 수익은 30, 40, 50, 60달러였다.",
+        "레모네이드 가판이 페이스 페인팅 부스보다 더 많이 벌었다.",
+        "그날 마지막인 네이트의 부스가 60달러로 가장 많이 벌었다.",
+        "네 부스는 모두 합쳐 180달러를 벌었다."
+      ],
+      "ja": [
+        "学校の祭りには、ケイト、レオ、モナ、ネイトが運営する四つの屋台があった。",
+        "屋台は輪投げ、クイズ、レモネードの売店、フェイスペインティングで、一人が一つずつ担当した。",
+        "各自1時間ずつ担当し、四つの担当は10時、11時、12時、1時に始まった。",
+        "ケイトが最も早い10時の担当を、ネイトが最後の1時の担当をした。",
+        "レオの担当はケイトのすぐ後に始まった。",
+        "モナの担当はネイトのすぐ前に始まった。",
+        "そのため担当はケイトが10時、レオが11時、モナが12時、ネイトが1時だった。",
+        "ケイトは輪投げを、レオはクイズを運営した。",
+        "モナはレモネードの売店を、ネイトはフェイスペインティングを担当した。",
+        "10時の屋台は30ドルを稼ぎ、後の屋台はそれぞれ前の屋台より10ドル多く稼いだ。",
+        "そのため担当順に売上は30、40、50、60ドルだった。",
+        "レモネードの売店はフェイスペインティングの屋台より多く稼いだ。",
+        "その日の最後、ネイトの屋台が60ドルで最も多く稼いだ。",
+        "四つの屋台は合わせて180ドルを稼いだ。"
+      ],
+      "zh": [
+        "学校游园会有四个摊位，分别由凯特、利奥、莫娜和内特负责。",
+        "摊位是套圈、问答、柠檬水摊和脸部彩绘，每人负责一个。",
+        "每人值班一小时，四个班次在10点、11点、12点和1点开始。",
+        "凯特值最早的10点班，内特值最后的1点班。",
+        "利奥的班紧接在凯特之后开始。",
+        "莫娜的班紧接在内特之前开始。",
+        "所以班次是凯特10点、利奥11点、莫娜12点、内特1点。",
+        "凯特负责套圈，利奥负责问答。",
+        "莫娜负责柠檬水摊，内特负责脸部彩绘。",
+        "10点的摊位挣了30美元，之后每个摊位都比前一个多挣10美元。",
+        "所以按班次顺序收入为30、40、50和60美元。",
+        "柠檬水摊挣得比脸部彩绘摊多。",
+        "当天最后的内特的摊位挣得最多，60美元。",
+        "四个摊位一共挣了180美元。"
+      ],
+      "es": [
+        "La feria escolar tenía cuatro puestos atendidos por Kate, Leo, Mona y Nate.",
+        "Los puestos eran de lanzar aros, de preguntas, de limonada y de pintacaras, uno por persona.",
+        "Cada persona trabajó un turno de una hora, y los cuatro turnos empezaron a las 10:00, 11:00, 12:00 y 1:00.",
+        "Kate trabajó el turno más temprano, a las 10:00, y Nate el último, a la 1:00.",
+        "El turno de Leo empezó justo después del de Kate.",
+        "El turno de Mona empezó justo antes del de Nate.",
+        "Así que los turnos fueron Kate a las 10:00, Leo a las 11:00, Mona a las 12:00 y Nate a la 1:00.",
+        "Kate atendió el de lanzar aros y Leo el de preguntas.",
+        "Mona atendió el de limonada y Nate el de pintacaras.",
+        "El puesto de las 10:00 ganó $30, y cada puesto posterior ganó $10 más que el anterior.",
+        "Así que las ganancias fueron $30, $40, $50 y $60 en orden de turno.",
+        "El puesto de limonada ganó más que el de pintacaras.",
+        "El puesto de Nate, el último del día, ganó lo máximo, $60.",
+        "Los cuatro puestos ganaron $180 en total."
+      ],
+      "fr": [
+        "La fête de l'école avait quatre stands tenus par Kate, Leo, Mona et Nate.",
+        "Les stands étaient un jeu d'anneaux, un quiz, une buvette de limonade et du maquillage, un par personne.",
+        "Chaque personne a fait un créneau d'une heure, et les quatre créneaux commençaient à 10h00, 11h00, 12h00 et 13h00.",
+        "Kate a fait le créneau le plus tôt, à 10h00, et Nate le dernier, à 13h00.",
+        "Le créneau de Leo a commencé juste après celui de Kate.",
+        "Le créneau de Mona a commencé juste avant celui de Nate.",
+        "Les créneaux étaient donc Kate à 10h00, Leo à 11h00, Mona à 12h00 et Nate à 13h00.",
+        "Kate tenait le jeu d'anneaux et Leo le quiz.",
+        "Mona tenait la buvette de limonade et Nate le maquillage.",
+        "Le stand de 10h00 a gagné 30 $, et chaque stand suivant a gagné 10 $ de plus que le précédent.",
+        "Les gains étaient donc de 30 $, 40 $, 50 $ et 60 $ dans l'ordre des créneaux.",
+        "La buvette de limonade a gagné plus que le stand de maquillage.",
+        "Le stand de Nate, le dernier de la journée, a gagné le plus, 60 $.",
+        "Les quatre stands ont gagné 180 $ au total."
+      ],
+      "de": [
+        "Das Schulfest hatte vier Stände, betreut von Kate, Leo, Mona und Nate.",
+        "Die Stände waren Ringewerfen, ein Quiz, ein Limonadenstand und Kinderschminken, einer pro Person.",
+        "Jede Person arbeitete eine einstündige Schicht, und die vier Schichten begannen um 10:00, 11:00, 12:00 und 13:00 Uhr.",
+        "Kate hatte die früheste Schicht, um 10:00 Uhr, und Nate die letzte, um 13:00 Uhr.",
+        "Leos Schicht begann direkt nach der von Kate.",
+        "Monas Schicht begann direkt vor der von Nate.",
+        "Die Schichten waren also Kate um 10:00, Leo um 11:00, Mona um 12:00 und Nate um 13:00 Uhr.",
+        "Kate betreute das Ringewerfen und Leo das Quiz.",
+        "Mona betreute den Limonadenstand und Nate das Kinderschminken.",
+        "Der 10:00-Uhr-Stand nahm 30 $ ein, und jeder spätere Stand nahm 10 $ mehr ein als der davor.",
+        "Die Einnahmen waren also 30 $, 40 $, 50 $ und 60 $ in Schichtreihenfolge.",
+        "Der Limonadenstand nahm mehr ein als der Kinderschmink-Stand.",
+        "Nates Stand, der letzte des Tages, nahm mit 60 $ am meisten ein.",
+        "Die vier Stände nahmen insgesamt 180 $ ein."
+      ]
+    },
+    "hints": {
+      "en": [
+        "Match each person to a shift time and a booth, then use the $30 start and +$10 rule for the earnings.",
+        "Work out what the lemonade stand and the face-painting booth each earned, then compare them."
+      ],
+      "ko": [
+        "각자를 근무 시간과 부스에 짝지은 뒤, 30달러 시작과 10달러씩 늘어나는 규칙으로 수익을 구하라.",
+        "레모네이드 가판과 페이스 페인팅 부스가 각각 얼마를 벌었는지 구해 비교하라."
+      ],
+      "ja": [
+        "各自を担当時刻と屋台に結び付け、30ドル始まりと10ドルずつ増える規則で売上を求めよう。",
+        "レモネードの売店とフェイスペインティングの屋台がそれぞれいくら稼いだかを求めて比べよう。"
+      ],
+      "zh": [
+        "把每人与班次时间和摊位配对，再用30美元起、每次多10美元的规则算收入。",
+        "算出柠檬水摊和脸部彩绘摊各挣了多少，再比较两者。"
+      ],
+      "es": [
+        "Empareja a cada persona con una hora de turno y un puesto, luego usa el inicio de $30 y la regla de +$10 para las ganancias.",
+        "Calcula cuánto ganó el puesto de limonada y el de pintacaras, y compáralos."
+      ],
+      "fr": [
+        "Associe chaque personne à une heure de créneau et à un stand, puis applique le début à 30 $ et la règle des +10 $ pour les gains.",
+        "Calcule ce que la buvette de limonade et le stand de maquillage ont gagné, puis compare-les."
+      ],
+      "de": [
+        "Ordne jede Person einer Schichtzeit und einem Stand zu, dann nutze den Start bei 30 $ und die Plus-10-$-Regel für die Einnahmen.",
+        "Berechne, was der Limonadenstand und der Kinderschmink-Stand einnahmen, und vergleiche sie."
+      ]
+    },
+    "explanation": {
+      "en": "The lemonade stand is Mona's 12:00 booth earning $50, while face painting is Nate's 1:00 booth earning $60, so lemonade earned less, not more.",
+      "ko": "레모네이드 가판은 모나의 12시 부스로 50달러를 벌었고 페이스 페인팅은 네이트의 1시 부스로 60달러를 벌어서, 레모네이드가 더 많이가 아니라 더 적게 벌었다.",
+      "ja": "レモネードの売店はモナの12時の屋台で50ドル、フェイスペインティングはネイトの1時の屋台で60ドルなので、レモネードは多くではなく少なく稼いだ。",
+      "zh": "柠檬水摊是莫娜的12点摊位，挣了50美元，而脸部彩绘是内特的1点摊位，挣了60美元，所以柠檬水挣得更少而非更多。",
+      "es": "El puesto de limonada es el de Mona a las 12:00, que ganó $50, mientras que el de pintacaras es el de Nate a la 1:00, que ganó $60, así que la limonada ganó menos, no más.",
+      "fr": "La buvette de limonade est celle de Mona à 12h00, qui a gagné 50 $, tandis que le maquillage est celui de Nate à 13h00, qui a gagné 60 $, donc la limonade a gagné moins, et non plus.",
+      "de": "Der Limonadenstand ist Monas 12:00-Uhr-Stand mit 50 $, während das Kinderschminken Nates 13:00-Uhr-Stand mit 60 $ ist, also nahm die Limonade weniger ein, nicht mehr."
+    }
+  },
+  {
+    "id": "co13_s06",
+    "type": "contradiction",
+    "track": "contradiction",
+    "chapter": 13,
+    "order": 6,
+    "tokens": null,
+    "answer": "10",
+    "inputType": "choices",
+    "choices": null,
+    "statements": {
+      "en": [
+        "On stargazing night, four club members — Ella, Finn, Gus, and Hana — each observed one object.",
+        "The objects were the Moon, Saturn, Mars, and a comet, one per member.",
+        "They took turns at the telescope, starting at 8:00, 8:20, 8:40, and 9:00.",
+        "Ella observed first at 8:00, and Hana observed last at 9:00.",
+        "Finn took his turn immediately after Ella.",
+        "Gus took his turn immediately before Hana.",
+        "So the turns ran Ella at 8:00, Finn at 8:20, Gus at 8:40, and Hana at 9:00.",
+        "Ella looked at the Moon, and Finn looked at Saturn.",
+        "Gus looked at Mars, and Hana looked at the comet.",
+        "The member who observed Mars watched for 15 minutes.",
+        "The first turn lasted 10 minutes, and each later turn lasted 5 minutes longer than the one before.",
+        "So the four turns lasted 10, 15, 20, and 25 minutes in order.",
+        "Hana, taking the last turn, watched the longest, for 25 minutes.",
+        "Altogether the members spent 70 minutes at the telescope."
+      ],
+      "ko": [
+        "별 보는 밤에 네 동아리 회원 엘라, 핀, 거스, 하나가 각각 하나씩 관측했다.",
+        "관측 대상은 달, 토성, 화성, 혜성이었고, 회원당 하나씩이었다.",
+        "그들은 망원경 앞에서 8시, 8시 20분, 8시 40분, 9시에 차례를 가졌다.",
+        "엘라가 8시에 가장 먼저, 하나가 9시에 가장 마지막에 관측했다.",
+        "핀은 엘라 바로 다음에 차례를 가졌다.",
+        "거스는 하나 바로 앞에 차례를 가졌다.",
+        "그래서 차례는 엘라 8시, 핀 8시 20분, 거스 8시 40분, 하나 9시였다.",
+        "엘라는 달을, 핀은 토성을 보았다.",
+        "거스는 화성을, 하나는 혜성을 보았다.",
+        "화성을 관측한 회원은 15분 동안 보았다.",
+        "첫 차례는 10분 걸렸고, 이후 차례는 저마다 앞 차례보다 5분씩 더 걸렸다.",
+        "그래서 네 차례는 순서대로 10, 15, 20, 25분이었다.",
+        "마지막 차례를 가진 하나가 25분으로 가장 오래 보았다.",
+        "회원들은 모두 합쳐 망원경 앞에서 70분을 보냈다."
+      ],
+      "ja": [
+        "星を見る夜に、四人のクラブ員――エラ、フィン、ガス、ハナ――がそれぞれ一つずつ観測した。",
+        "観測対象は月、土星、火星、彗星で、一人につき一つだった。",
+        "彼らは望遠鏡の前で8時、8時20分、8時40分、9時に順番を取った。",
+        "エラが8時に最初、ハナが9時に最後に観測した。",
+        "フィンはエラのすぐ後に順番を取った。",
+        "ガスはハナのすぐ前に順番を取った。",
+        "そのため順番はエラが8時、フィンが8時20分、ガスが8時40分、ハナが9時だった。",
+        "エラは月を、フィンは土星を見た。",
+        "ガスは火星を、ハナは彗星を見た。",
+        "火星を観測した部員は15分間見た。",
+        "最初の順番は10分かかり、後の順番はそれぞれ前より5分長くかかった。",
+        "そのため四つの順番は順に10、15、20、25分だった。",
+        "最後の順番を取ったハナが25分で最も長く見た。",
+        "部員たちは合わせて望遠鏡の前で70分を過ごした。"
+      ],
+      "zh": [
+        "在观星之夜，四名社团成员——埃拉、芬恩、加斯和哈娜——各自观测了一个天体。",
+        "观测对象是月亮、土星、火星和一颗彗星，每人一个。",
+        "他们轮流用望远镜，分别在8点、8点20分、8点40分和9点开始。",
+        "埃拉8点最先观测，哈娜9点最后观测。",
+        "芬恩紧接在埃拉之后轮到。",
+        "加斯紧接在哈娜之前轮到。",
+        "所以轮次是埃拉8点、芬恩8点20分、加斯8点40分、哈娜9点。",
+        "埃拉看月亮，芬恩看土星。",
+        "加斯看火星，哈娜看彗星。",
+        "观测火星的成员看了15分钟。",
+        "第一轮持续10分钟，之后每轮都比前一轮长5分钟。",
+        "所以四轮依次持续10、15、20和25分钟。",
+        "轮到最后的哈娜看得最久，25分钟。",
+        "成员们一共在望远镜前花了70分钟。"
+      ],
+      "es": [
+        "En la noche de observación de estrellas, cuatro miembros del club —Ella, Finn, Gus y Hana— observaron cada uno un objeto.",
+        "Los objetos eran la Luna, Saturno, Marte y un cometa, uno por miembro.",
+        "Se turnaron en el telescopio, empezando a las 8:00, 8:20, 8:40 y 9:00.",
+        "Ella observó primero a las 8:00, y Hana observó última a las 9:00.",
+        "Finn tomó su turno justo después de Ella.",
+        "Gus tomó su turno justo antes de Hana.",
+        "Así que los turnos fueron Ella a las 8:00, Finn a las 8:20, Gus a las 8:40 y Hana a las 9:00.",
+        "Ella miró la Luna y Finn miró Saturno.",
+        "Gus miró Marte y Hana miró el cometa.",
+        "El miembro que observó Marte miró durante 15 minutos.",
+        "El primer turno duró 10 minutos, y cada turno posterior duró 5 minutos más que el anterior.",
+        "Así que los cuatro turnos duraron 10, 15, 20 y 25 minutos en orden.",
+        "Hana, en el último turno, miró durante más tiempo, 25 minutos.",
+        "En total, los miembros pasaron 70 minutos en el telescopio."
+      ],
+      "fr": [
+        "Lors de la nuit d'observation des étoiles, quatre membres du club — Ella, Finn, Gus et Hana — ont chacun observé un objet.",
+        "Les objets étaient la Lune, Saturne, Mars et une comète, un par membre.",
+        "Ils se sont relayés au télescope, en commençant à 20h00, 20h20, 20h40 et 21h00.",
+        "Ella a observé la première à 20h00, et Hana la dernière à 21h00.",
+        "Finn a pris son tour juste après Ella.",
+        "Gus a pris son tour juste avant Hana.",
+        "Les tours étaient donc Ella à 20h00, Finn à 20h20, Gus à 20h40 et Hana à 21h00.",
+        "Ella a regardé la Lune et Finn a regardé Saturne.",
+        "Gus a regardé Mars et Hana a regardé la comète.",
+        "Le membre qui a observé Mars a regardé pendant 15 minutes.",
+        "Le premier tour a duré 10 minutes, et chaque tour suivant a duré 5 minutes de plus que le précédent.",
+        "Les quatre tours ont donc duré 10, 15, 20 et 25 minutes dans l'ordre.",
+        "Hana, au dernier tour, a regardé le plus longtemps, 25 minutes.",
+        "Au total, les membres ont passé 70 minutes au télescope."
+      ],
+      "de": [
+        "In der Sternenbeobachtungsnacht beobachtete jedes der vier Klubmitglieder – Ella, Finn, Gus und Hana – ein Objekt.",
+        "Die Objekte waren der Mond, Saturn, Mars und ein Komet, eins pro Mitglied.",
+        "Sie wechselten sich am Teleskop ab und begannen um 20:00, 20:20, 20:40 und 21:00 Uhr.",
+        "Ella beobachtete als Erste um 20:00 Uhr und Hana als Letzte um 21:00 Uhr.",
+        "Finn war direkt nach Ella an der Reihe.",
+        "Gus war direkt vor Hana an der Reihe.",
+        "Die Reihenfolge war also Ella um 20:00, Finn um 20:20, Gus um 20:40 und Hana um 21:00 Uhr.",
+        "Ella betrachtete den Mond und Finn betrachtete den Saturn.",
+        "Gus betrachtete den Mars und Hana betrachtete den Kometen.",
+        "Das Mitglied, das den Mars beobachtete, schaute 15 Minuten lang.",
+        "Der erste Durchgang dauerte 10 Minuten, und jeder spätere dauerte 5 Minuten länger als der davor.",
+        "Die vier Durchgänge dauerten also der Reihe nach 10, 15, 20 und 25 Minuten.",
+        "Hana, im letzten Durchgang, schaute am längsten, 25 Minuten.",
+        "Insgesamt verbrachten die Mitglieder 70 Minuten am Teleskop."
+      ]
+    },
+    "hints": {
+      "en": [
+        "Fix each member's turn time and object, then use the 10-minute start and +5-minute rule for the durations.",
+        "Find who observed Mars and how long that turn lasted, then check it against 15 minutes."
+      ],
+      "ko": [
+        "각 회원의 차례 시각과 관측 대상을 정한 뒤, 10분 시작과 5분씩 늘어나는 규칙으로 시간을 구하라.",
+        "화성을 관측한 사람이 누구이며 그 차례가 몇 분이었는지 찾아 15분과 견주어 보라."
+      ],
+      "ja": [
+        "各部員の順番の時刻と対象を決め、10分始まりと5分ずつ増える規則で時間を求めよう。",
+        "火星を観測したのが誰で、その順番が何分だったかを調べ、15分と照らし合わせよう。"
+      ],
+      "zh": [
+        "确定每位成员的轮次时间和观测对象，再用10分钟起、每轮多5分钟的规则算出时长。",
+        "找出观测火星的是谁、那一轮多长，再与15分钟对照。"
+      ],
+      "es": [
+        "Fija la hora del turno y el objeto de cada miembro, luego usa el inicio de 10 minutos y la regla de +5 minutos para las duraciones.",
+        "Averigua quién observó Marte y cuánto duró ese turno, y compáralo con 15 minutos."
+      ],
+      "fr": [
+        "Fixe l'heure du tour et l'objet de chaque membre, puis applique le début à 10 minutes et la règle des +5 minutes pour les durées.",
+        "Trouve qui a observé Mars et combien de temps ce tour a duré, puis compare avec 15 minutes."
+      ],
+      "de": [
+        "Lege Uhrzeit des Durchgangs und Objekt jedes Mitglieds fest, dann nutze den Start bei 10 Minuten und die Plus-5-Minuten-Regel für die Dauern.",
+        "Finde heraus, wer den Mars beobachtete und wie lange dieser Durchgang dauerte, und vergleiche ihn mit 15 Minuten."
+      ]
+    },
+    "explanation": {
+      "en": "Mars was observed by Gus on the third turn, which lasted 20 minutes, not 15, since the 15-minute turn was the second one, Finn's Saturn.",
+      "ko": "화성은 세 번째 차례의 거스가 관측했고 그 차례는 15분이 아니라 20분이었으며, 15분 차례는 두 번째인 핀의 토성이었다.",
+      "ja": "火星を観測したのは三番目の順番のガスで、その順番は15分ではなく20分であり、15分の順番は二番目のフィンの土星だった。",
+      "zh": "火星是第三轮的加斯观测的，那一轮是20分钟而非15分钟，15分钟的那轮是第二轮芬恩的土星。",
+      "es": "Marte lo observó Gus en el tercer turno, que duró 20 minutos y no 15, ya que el turno de 15 minutos fue el segundo, el Saturno de Finn.",
+      "fr": "Mars a été observée par Gus au troisième tour, qui a duré 20 minutes et non 15, car le tour de 15 minutes était le deuxième, le Saturne de Finn.",
+      "de": "Den Mars beobachtete Gus im dritten Durchgang, der 20 Minuten dauerte und nicht 15, denn der 15-Minuten-Durchgang war der zweite, Finns Saturn."
+    }
   }
 ]

@@ -65,6 +65,9 @@
     <string name="contradiction_chapter_8">難しい</string>
     <string name="contradiction_chapter_9">挑戦</string>
     <string name="contradiction_chapter_10">マスター</string>
+    <string name="contradiction_chapter_11">最上級</string>
+    <string name="contradiction_chapter_12">メンサ</string>
+    <string name="contradiction_chapter_13">オリンピアード</string>
     <string name="contradiction_prompt">つじつまの合わない文を見つけよう</string>
     <string name="select_mode">モード選択</string>
     <string name="mode_complete">クリア</string>

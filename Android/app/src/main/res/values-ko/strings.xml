@@ -65,6 +65,9 @@
     <string name="contradiction_chapter_8">어려움</string>
     <string name="contradiction_chapter_9">도전</string>
     <string name="contradiction_chapter_10">마스터</string>
+    <string name="contradiction_chapter_11">최상급</string>
+    <string name="contradiction_chapter_12">멘사</string>
+    <string name="contradiction_chapter_13">올림피아드</string>
     <string name="contradiction_prompt">앞뒤가 맞지 않는 문장을 찾으세요</string>
     <string name="select_mode">모드 선택</string>
     <string name="mode_complete">완료</string>

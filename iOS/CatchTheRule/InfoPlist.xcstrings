@@ -1,77 +1,53 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "CFBundleDisplayName" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Finde die Regel"
+  "sourceLanguage": "en",
+  "strings": {
+    "CFBundleDisplayName": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catch the Rule"
           }
         },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Catch the Rule"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "규칙찾기"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Encuentra la Regla"
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ルールを探せ"
           }
         },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Trouve le Motif"
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "发现规律"
           }
         },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ルールを探せ"
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Encuentra la Regla"
           }
         },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "규칙찾기"
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trouve le Motif"
           }
         },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "发现规律"
-          }
-        }
-      }
-    },
-    "CFBundleName" : {
-      "comment" : "Bundle name",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "CatchTheRule"
-          }
-        }
-      }
-    },
-    "NSUserTrackingUsageDescription" : {
-      "comment" : "Privacy - Tracking Usage Description",
-      "extractionState" : "extracted_with_value",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "new",
-            "value" : "Allow tracking to show ads more relevant to you and keep the game free."
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finde die Regel"
           }
         }
       }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }

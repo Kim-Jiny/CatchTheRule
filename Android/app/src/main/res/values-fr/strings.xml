@@ -65,6 +65,9 @@
     <string name="contradiction_chapter_8">Difficile</string>
     <string name="contradiction_chapter_9">Défi</string>
     <string name="contradiction_chapter_10">Maître</string>
+    <string name="contradiction_chapter_11">Élite</string>
+    <string name="contradiction_chapter_12">Mensa</string>
+    <string name="contradiction_chapter_13">Olympiade</string>
     <string name="contradiction_prompt">Trouve la phrase qui ne colle pas</string>
     <string name="select_mode">Choisir un mode</string>
     <string name="mode_complete">Terminé</string>
