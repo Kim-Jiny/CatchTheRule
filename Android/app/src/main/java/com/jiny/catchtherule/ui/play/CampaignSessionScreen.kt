@@ -81,17 +81,30 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
 
     val puzzle: Puzzle? = puzzles.getOrNull(index)
 
+    // 오답 시 50% 확률 전면광고(광고제거 구매 시 제외).
+    val showWrongAd = {
+        if (!billing.removeAdsPurchased && activity != null) ads.maybeShowInterstitialOnWrong(activity)
+    }
+
     // 정답 후 자동 진행
     LaunchedEffect(solved) {
         if (solved) {
             delay(900)
-            // 스테이지 클리어 전면광고(챕터 2+ / 챕터별 확률 / 3분 쿨다운). 광고제거 구매 시 제외.
+            // 스테이지 클리어 전면광고(챕터 2+ / 챕터별 확률 / 1분 쿨다운). 광고제거 구매 시 제외.
             val ch = puzzle?.chapter ?: 0
             if (!billing.removeAdsPurchased && activity != null) {
                 ads.maybeShowInterstitial(activity, ch)
             }
             index += 1
             typed = ""; hintsShown = 0; feedback = null; reveal = false; solved = false
+        }
+    }
+
+    LaunchedEffect(feedback, index) {
+        if (feedback == AnswerFeedback.Wrong) {
+            delay(450)
+            typed = ""
+            feedback = null
         }
     }
 
@@ -145,10 +158,20 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.spacedBy(28.dp, Alignment.CenterVertically),
                 ) {
-                    if (!puzzle.isPrompt) {
+                    if (puzzle.isContradiction) {
+                        Text(stringResource(R.string.contradiction_prompt), color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
+                    } else if (!puzzle.isPrompt) {
                         Text(stringResource(R.string.play_prompt), color = AppColors.TextSecondary, fontSize = 15.sp)
                     }
-                    SequenceDisplay(puzzle = puzzle, typed = typed, reveal = reveal, feedback = feedback)
+                    SequenceDisplay(puzzle = puzzle, typed = typed, reveal = reveal, feedback = feedback,
+                        onPickStatement = { picked ->
+                            if (!solved) {
+                                typed = picked.toString()
+                                submitCampaign(puzzle, index, picked.toString(), progress, hintsShown,
+                                    onCorrect = { feedback = AnswerFeedback.Correct; reveal = true; solved = true },
+                                    onWrong = { feedback = AnswerFeedback.Wrong; showWrongAd() })
+                            }
+                        })
                     if (hintsShown > 0) {
                         Column(
                             Modifier.fillMaxWidth().card().padding(16.dp),
@@ -165,14 +188,16 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
                 }
             }
 
-            // 입력 영역
+            // 입력 영역 (모순찾기는 문장 카드를 직접 탭하므로 하단 입력 없음)
             Box(Modifier.padding(horizontal = 20.dp, vertical = 12.dp)) {
-                if (puzzle.isFigureSequence) {
+                if (puzzle.isContradiction) {
+                    // no bottom input
+                } else if (puzzle.isFigureSequence) {
                     // 시각형(도형 시퀀스)은 도형 보기로 고른다.
                     FigureChoicesGrid(puzzle.figureChoices ?: emptyList(), enabled = !solved) { picked ->
                         submitCampaign(puzzle, index, picked, progress, hintsShown,
                             onCorrect = { feedback = AnswerFeedback.Correct; reveal = true; solved = true },
-                            onWrong = { feedback = AnswerFeedback.Wrong })
+                            onWrong = { feedback = AnswerFeedback.Wrong; showWrongAd() })
                     }
                 } else when (InputType.from(puzzle.inputType)) {
                     InputType.Keypad -> Keypad(
@@ -181,12 +206,12 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
                         onDelete = { if (!solved && typed.isNotEmpty()) typed = typed.dropLast(1) },
                         onSubmit = { submitCampaign(puzzle, index, typed, progress, hintsShown,
                             onCorrect = { feedback = AnswerFeedback.Correct; reveal = true; solved = true },
-                            onWrong = { feedback = AnswerFeedback.Wrong; typed = "" }) },
+                            onWrong = { feedback = AnswerFeedback.Wrong; typed = ""; showWrongAd() }) },
                     )
                     InputType.Choices -> ChoicesGrid(puzzle.choices ?: emptyList(), enabled = !solved) { picked ->
                         submitCampaign(puzzle, index, picked, progress, hintsShown,
                             onCorrect = { feedback = AnswerFeedback.Correct; reveal = true; solved = true },
-                            onWrong = { feedback = AnswerFeedback.Wrong })
+                            onWrong = { feedback = AnswerFeedback.Wrong; showWrongAd() })
                     }
                 }
             }

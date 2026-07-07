@@ -21,6 +21,7 @@ struct Puzzle: Codable, Identifiable, Equatable {
     let figureTokens: [Figure?]?     // 시각형 시퀀스. nil = 빈칸 셀.
     let figureChoices: [Figure]?     // 시각형 보기(도형 보기)
     let prompt: [String: String]?    // 논리형 질문 문단(로케일코드 → 문장). 있으면 수열 대신 질문을 표시.
+    let statements: [String: [String]]?  // 모순찾기 문장 목록(로케일코드 → 문장 배열). 번호 매긴 카드로 표시, answer=모순 문장 번호(1-based).
     let answer: String
     let inputType: InputType
     let choices: [String]?
@@ -41,6 +42,15 @@ struct Puzzle: Codable, Identifiable, Equatable {
 
     /// 논리형(질문 문단) 퍼즐 여부.
     var isPrompt: Bool { (prompt?.isEmpty == false) }
+
+    /// 모순찾기(문장 목록) 퍼즐 여부.
+    var isContradiction: Bool { (statements?.isEmpty == false) }
+
+    /// 현재 언어의 문장 목록(없으면 영어 → 임의 폴백).
+    var localizedStatements: [String] {
+        let code = Locale.current.language.languageCode?.identifier ?? "en"
+        return statements?[code] ?? statements?["en"] ?? statements?.values.first ?? []
+    }
 
     /// 현재 언어의 질문 문단(없으면 영어 → 임의 폴백).
     var localizedPrompt: String {

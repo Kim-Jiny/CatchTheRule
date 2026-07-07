@@ -130,17 +130,19 @@ private struct ModeCard: View {
 
 private func modeTitle(_ track: String) -> String {
     switch track {
-    case "shapes": return String.loc("mode_shapes")
-    case "logic":  return String.loc("mode_logic")
-    default:       return String.loc("mode_numbers")
+    case "shapes":        return String.loc("mode_shapes")
+    case "logic":         return String.loc("mode_logic")
+    case "contradiction": return String.loc("mode_contradiction")
+    default:              return String.loc("mode_numbers")
     }
 }
 
 private func modeIcon(_ track: String) -> String {
     switch track {
-    case "shapes": return "triangle.fill"
-    case "logic":  return "brain.head.profile"
-    default:       return "number"
+    case "shapes":        return "triangle.fill"
+    case "logic":         return "brain.head.profile"
+    case "contradiction": return "exclamationmark.triangle.fill"
+    default:              return "number"
     }
 }
 
@@ -411,6 +413,24 @@ struct CampaignTrackView: View {
     }
 
     private func chapterTitle(_ chapter: Int) -> String {
+        if track == "contradiction" {
+            switch chapter {
+            case 1: return String.loc("contradiction_chapter_1")
+            case 2: return String.loc("contradiction_chapter_2")
+            case 3: return String.loc("contradiction_chapter_3")
+            case 4: return String.loc("contradiction_chapter_4")
+            case 5: return String.loc("contradiction_chapter_5")
+            case 6: return String.loc("contradiction_chapter_6")
+            case 7: return String.loc("contradiction_chapter_7")
+            case 8: return String.loc("contradiction_chapter_8")
+            case 9: return String.loc("contradiction_chapter_9")
+            case 10: return String.loc("contradiction_chapter_10")
+            case 11: return String.loc("contradiction_chapter_11")
+            case 12: return String.loc("contradiction_chapter_12")
+            case 13: return String.loc("contradiction_chapter_13")
+            default: return String.loc("chapter_label", chapter)
+            }
+        }
         if track == "logic" {
             switch chapter {
             case 1: return String.loc("logic_chapter_1")

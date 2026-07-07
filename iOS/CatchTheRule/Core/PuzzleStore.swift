@@ -76,7 +76,7 @@ final class PuzzleStore {
     }
 
     /// 모드 표시 순서(고정). 목록에 없는 트랙은 뒤에 등장 순으로 붙는다.
-    static let trackOrder = ["numbers", "shapes", "logic"]
+    static let trackOrder = ["numbers", "shapes", "logic", "contradiction"]
 
     /// 존재하는 트랙 목록(고정 순서 우선, 그 외는 등장 순).
     var tracks: [String] {
