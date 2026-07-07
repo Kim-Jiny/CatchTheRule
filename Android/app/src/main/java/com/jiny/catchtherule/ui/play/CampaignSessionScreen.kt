@@ -100,6 +100,14 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
         }
     }
 
+    LaunchedEffect(feedback, index) {
+        if (feedback == AnswerFeedback.Wrong) {
+            delay(450)
+            typed = ""
+            feedback = null
+        }
+    }
+
     ScreenBackground {
         if (puzzle == null) {
             CampaignComplete(track, onClose)
