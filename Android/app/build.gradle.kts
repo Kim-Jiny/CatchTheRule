@@ -79,6 +79,9 @@ dependencies {
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.activity:activity-compose:1.9.3")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
+    // Compose 라이프사이클 연동: LocalLifecycleOwner / repeatOnLifecycle
+    // (배너 광고 pause·resume·destroy, 타임어택 타이머 백그라운드 일시정지)
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
     // 전이 의존성으로 끌려오는 구버전 androidx.fragment(1.1.0) 강제 업그레이드
     // — Play Console "오래된 SDK 버전(androidx.fragment)" 경고 해소.
     implementation("androidx.fragment:fragment:1.8.5")

@@ -2,9 +2,15 @@ package com.jiny.catchtherule.ui
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.viewinterop.AndroidView
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleEventObserver
+import androidx.lifecycle.compose.LocalLifecycleOwner
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
@@ -17,17 +23,38 @@ fun BannerAd(unitId: String, modifier: Modifier = Modifier) {
     val billing = LocalBilling.current
     if (billing.removeAdsPurchased) return
 
+    val context = LocalContext.current
     val widthDp = LocalConfiguration.current.screenWidthDp
+
+    // AdView 를 remember 로 보관해 재구성마다 새로 만들지 않는다. 단위/폭이 바뀌면 새로 생성.
+    val adView = remember(unitId, widthDp) {
+        AdView(context).apply {
+            setAdSize(AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(context, widthDp))
+            adUnitId = unitId
+            loadAd(AdRequest.Builder().build())
+        }
+    }
+
+    // 라이프사이클에 맞춰 pause/resume, 화면에서 사라지면 destroy() 로 누수(내부 WebView 포함) 방지.
+    val lifecycleOwner = LocalLifecycleOwner.current
+    DisposableEffect(lifecycleOwner, adView) {
+        val observer = LifecycleEventObserver { _, event ->
+            when (event) {
+                Lifecycle.Event.ON_PAUSE -> adView.pause()
+                Lifecycle.Event.ON_RESUME -> adView.resume()
+                else -> Unit
+            }
+        }
+        lifecycleOwner.lifecycle.addObserver(observer)
+        onDispose {
+            lifecycleOwner.lifecycle.removeObserver(observer)
+            adView.destroy()
+        }
+    }
 
     AndroidView(
         modifier = modifier.fillMaxWidth(),
-        factory = { ctx ->
-            AdView(ctx).apply {
-                setAdSize(AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(ctx, widthDp))
-                adUnitId = unitId
-                loadAd(AdRequest.Builder().build())
-            }
-        },
+        factory = { adView },
     )
 }
 

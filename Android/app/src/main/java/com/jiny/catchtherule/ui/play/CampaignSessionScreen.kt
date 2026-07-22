@@ -36,6 +36,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import android.app.Activity
 import androidx.compose.ui.Alignment
@@ -70,9 +71,10 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
     val store = PuzzleStore.get(LocalContext.current)
     val puzzles = store.puzzles(track)
 
-    var index by remember { mutableIntStateOf(startIndex) }
-    var typed by remember { mutableStateOf("") }
-    var hintsShown by remember { mutableIntStateOf(0) }
+    // 진행 상태는 rememberSaveable — 저메모리로 프로세스가 죽어도 현재 위치/입력/힌트가 복원된다.
+    var index by rememberSaveable { mutableIntStateOf(startIndex) }
+    var typed by rememberSaveable { mutableStateOf("") }
+    var hintsShown by rememberSaveable { mutableIntStateOf(0) }
     var feedback by remember { mutableStateOf<AnswerFeedback?>(null) }
     var reveal by remember { mutableStateOf(false) }
     var solved by remember { mutableStateOf(false) }
@@ -80,11 +82,6 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
     var showCalc by remember { mutableStateOf(false) }
 
     val puzzle: Puzzle? = puzzles.getOrNull(index)
-
-    // 오답 시 50% 확률 전면광고(광고제거 구매 시 제외).
-    val showWrongAd = {
-        if (!billing.removeAdsPurchased && activity != null) ads.maybeShowInterstitialOnWrong(activity)
-    }
 
     // 정답 후 자동 진행
     LaunchedEffect(solved) {
@@ -105,6 +102,10 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
             delay(450)
             typed = ""
             feedback = null
+            // 오답 피드백을 확인한 뒤(손을 뗀 뒤) 전면광고 — 오답 탭과 겹치는 실수 클릭 방지.
+            if (!billing.removeAdsPurchased && activity != null) {
+                ads.maybeShowInterstitialOnWrong(activity)
+            }
         }
     }
 
@@ -169,7 +170,7 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
                                 typed = picked.toString()
                                 submitCampaign(puzzle, index, picked.toString(), progress, hintsShown,
                                     onCorrect = { feedback = AnswerFeedback.Correct; reveal = true; solved = true },
-                                    onWrong = { feedback = AnswerFeedback.Wrong; showWrongAd() })
+                                    onWrong = { feedback = AnswerFeedback.Wrong })
                             }
                         })
                     if (hintsShown > 0) {
@@ -197,7 +198,7 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
                     FigureChoicesGrid(puzzle.figureChoices ?: emptyList(), enabled = !solved) { picked ->
                         submitCampaign(puzzle, index, picked, progress, hintsShown,
                             onCorrect = { feedback = AnswerFeedback.Correct; reveal = true; solved = true },
-                            onWrong = { feedback = AnswerFeedback.Wrong; showWrongAd() })
+                            onWrong = { feedback = AnswerFeedback.Wrong })
                     }
                 } else when (InputType.from(puzzle.inputType)) {
                     InputType.Keypad -> Keypad(
@@ -206,12 +207,12 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
                         onDelete = { if (!solved && typed.isNotEmpty()) typed = typed.dropLast(1) },
                         onSubmit = { submitCampaign(puzzle, index, typed, progress, hintsShown,
                             onCorrect = { feedback = AnswerFeedback.Correct; reveal = true; solved = true },
-                            onWrong = { feedback = AnswerFeedback.Wrong; typed = ""; showWrongAd() }) },
+                            onWrong = { feedback = AnswerFeedback.Wrong; typed = "" }) },
                     )
                     InputType.Choices -> ChoicesGrid(puzzle.choices ?: emptyList(), enabled = !solved) { picked ->
                         submitCampaign(puzzle, index, picked, progress, hintsShown,
                             onCorrect = { feedback = AnswerFeedback.Correct; reveal = true; solved = true },
-                            onWrong = { feedback = AnswerFeedback.Wrong; showWrongAd() })
+                            onWrong = { feedback = AnswerFeedback.Wrong })
                     }
                 }
             }
