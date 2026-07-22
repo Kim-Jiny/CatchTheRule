@@ -3,7 +3,10 @@ package com.jiny.catchtherule.ui.theme
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.safeDrawing
+import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
@@ -58,6 +61,29 @@ fun ScreenBackground(content: @Composable () -> Unit) {
             .background(Brush.verticalGradient(listOf(AppColors.Bg, AppColors.BgElevated)))
     ) {
         content()
+    }
+}
+
+/**
+ * 전체화면(캠페인 세션 / 타임어택) 전용 배경.
+ *
+ * 탭 화면들은 RootScreen 의 Scaffold 가 주는 padding 으로 시스템 바를 피하지만,
+ * 이 두 화면은 Scaffold 바깥에서 렌더링되므로 인셋을 직접 적용해야 한다.
+ * (미적용 시 상단 닫기·힌트 버튼이 상태바와 겹치고, 하단 배너 광고가
+ *  3버튼 내비게이션 바 아래로 깔려 오클릭 위험이 있었다.)
+ *
+ * 그라데이션 배경은 화면 끝까지 그리고 콘텐츠만 안쪽으로 민다.
+ */
+@Composable
+fun FullScreenBackground(content: @Composable () -> Unit) {
+    ScreenBackground {
+        Box(
+            Modifier
+                .fillMaxSize()
+                .windowInsetsPadding(WindowInsets.safeDrawing)
+        ) {
+            content()
+        }
     }
 }
 
