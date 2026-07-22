@@ -92,8 +92,8 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
 
-    // 인앱결제 (광고 제거)
-    implementation("com.android.billingclient:billing-ktx:7.1.1")
+    // 인앱결제 (광고 제거) — Play 정책: 2026-08-31부터 8.0.0+ 필수(9.x 권장)
+    implementation("com.android.billingclient:billing-ktx:9.1.0")
 
     // 리워드 광고 (광고 보고 힌트 받기)
     implementation("com.google.android.gms:play-services-ads:25.0.0")

@@ -83,9 +83,10 @@ class BillingManager(context: Context, private val progress: ProgressStore) {
                         .build()
                 }
             ).build()
-        client.queryProductDetailsAsync(params) { result, list ->
+        // PBL 8.0.0+: 콜백 2번째 인자가 List<ProductDetails> → QueryProductDetailsResult 로 변경됨.
+        client.queryProductDetailsAsync(params) { result, queryResult ->
             if (result.responseCode == BillingClient.BillingResponseCode.OK) {
-                list.forEach { productDetails[it.productId] = it }
+                queryResult.productDetailsList.forEach { productDetails[it.productId] = it }
                 removeAdsPrice = productDetails[REMOVE_ADS_ID]?.oneTimePurchaseOfferDetails?.formattedPrice ?: ""
                 hintsPrices = HINT_TIERS.associateWith { n ->
                     productDetails[hintsId(n)]?.oneTimePurchaseOfferDetails?.formattedPrice ?: ""
@@ -187,9 +188,13 @@ class BillingManager(context: Context, private val progress: ProgressStore) {
                     connectTimeout = 10000
                     readTimeout = 10000
                 }
-                OutputStreamWriter(conn.outputStream).use { it.write(body) }
-                conn.responseCode
-                conn.disconnect()
+                try {
+                    OutputStreamWriter(conn.outputStream).use { it.write(body) }
+                    val code = conn.responseCode
+                    (if (code in 200..299) conn.inputStream else conn.errorStream)?.use { it.readBytes() }
+                } finally {
+                    conn.disconnect()
+                }
             }
         }.start()
     }
