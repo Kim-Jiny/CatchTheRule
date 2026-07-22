@@ -19,6 +19,7 @@ struct CampaignSessionView: View {
     @State private var solved = false       // 현재 퍼즐 정답 처리 완료
     @State private var showHintShop = false // 힌트 0개일 때 광고/구매 팝업
     @State private var showCalc = false      // 플로팅 계산기
+    @State private var advanceTask: Task<Void, Never>?  // 정답 후 지연 진행/광고 — 이탈 시 취소
 
     init(startIndex: Int, track: String = PuzzleStore.defaultTrack) {
         self.track = track
@@ -59,6 +60,7 @@ struct CampaignSessionView: View {
             HintShopSheet()
                 .preferredColorScheme(.dark)
         }
+        .onDisappear { advanceTask?.cancel() }   // 세션 이탈 시 대기 중인 진행/광고 취소
     }
 
     // MARK: - Content
@@ -261,9 +263,10 @@ struct CampaignSessionView: View {
             progress.recordCampaignClear(puzzle: puzzle, atIndex: index, earnedStars: earned)
             if progress.soundOn { /* 효과음 자리 */ }
             if progress.hapticsOn { Haptics.success() }
-            Task {
+            advanceTask = Task {
                 try? await Task.sleep(nanoseconds: 900_000_000)
-                // 스테이지 클리어 전면광고(챕터 2+ / 10% / 3분 쿨다운). 광고제거 구매 시 제외.
+                if Task.isCancelled { return }   // 세션을 떠났으면 광고·진행 모두 취소
+                // 스테이지 클리어 전면광고(챕터 2+ / 챕터별 확률 / 1분 쿨다운). 광고제거 구매 시 제외.
                 if !store.removeAdsPurchased {
                     ads.maybeShowInterstitial(chapter: puzzle.chapter)
                 }
