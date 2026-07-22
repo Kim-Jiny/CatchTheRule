@@ -16,14 +16,14 @@ val keystoreProperties = Properties().apply {
 
 android {
     namespace = "com.jiny.catchtherule"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.jiny.catchtherule"
         minSdk = 24
-        targetSdk = 35
-        versionCode = 10
-        versionName = "1.0.6"
+        targetSdk = 36
+        versionCode = 11
+        versionName = "1.0.7"
     }
 
     signingConfigs {

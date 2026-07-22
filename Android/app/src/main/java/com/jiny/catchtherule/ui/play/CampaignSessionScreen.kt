@@ -58,7 +58,7 @@ import com.jiny.catchtherule.core.model.Puzzle
 import com.jiny.catchtherule.data.LocalProgress
 import com.jiny.catchtherule.ui.PrimaryButton
 import com.jiny.catchtherule.ui.theme.AppColors
-import com.jiny.catchtherule.ui.theme.ScreenBackground
+import com.jiny.catchtherule.ui.theme.FullScreenBackground
 import com.jiny.catchtherule.ui.theme.card
 import kotlinx.coroutines.delay
 
@@ -109,10 +109,10 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
         }
     }
 
-    ScreenBackground {
+    FullScreenBackground {
         if (puzzle == null) {
             CampaignComplete(track, onClose)
-            return@ScreenBackground
+            return@FullScreenBackground
         }
 
         val position = store.position(index, track)

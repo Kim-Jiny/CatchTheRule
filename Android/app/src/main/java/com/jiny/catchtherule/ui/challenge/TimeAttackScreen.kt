@@ -60,7 +60,7 @@ import com.jiny.catchtherule.ui.play.ChoicesGrid
 import com.jiny.catchtherule.ui.play.Keypad
 import com.jiny.catchtherule.ui.play.SequenceDisplay
 import com.jiny.catchtherule.ui.theme.AppColors
-import com.jiny.catchtherule.ui.theme.ScreenBackground
+import com.jiny.catchtherule.ui.theme.FullScreenBackground
 import com.jiny.catchtherule.ui.theme.card
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -124,7 +124,7 @@ fun TimeAttackScreen(onClose: () -> Unit) {
         }
     }
 
-    ScreenBackground {
+    FullScreenBackground {
         if (finished) {
             TimeAttackResult(score = score, onClose = onClose)
         } else {
