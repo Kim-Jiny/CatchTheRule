@@ -29,6 +29,7 @@ import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -42,6 +43,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.compose.LocalLifecycleOwner
+import androidx.lifecycle.repeatOnLifecycle
 import com.jiny.catchtherule.R
 import com.jiny.catchtherule.core.PuzzleStore
 import com.jiny.catchtherule.core.model.GameMode
@@ -72,21 +76,26 @@ fun TimeAttackScreen(onClose: () -> Unit) {
     var deck by remember { mutableStateOf(store.puzzles("numbers").shuffled()) }
     var deckIndex by remember { mutableIntStateOf(0) }
     var typed by remember { mutableStateOf("") }
-    var score by remember { mutableIntStateOf(0) }
-    var timeLeft by remember { mutableIntStateOf(DURATION) }
+    // 점수·남은시간·종료여부는 rememberSaveable — 저메모리 프로세스 사망에도 진행 중 기록이 유지된다.
+    var score by rememberSaveable { mutableIntStateOf(0) }
+    var timeLeft by rememberSaveable { mutableIntStateOf(DURATION) }
     var feedback by remember { mutableStateOf<AnswerFeedback?>(null) }
-    var finished by remember { mutableStateOf(false) }
+    var finished by rememberSaveable { mutableStateOf(false) }
     // 카드 전환 중 재제출(같은 프레임 더블탭) 방지. deckIndex 가 바뀌면(=다음 카드) 해제.
     var advancing by remember { mutableStateOf(false) }
 
-    // 타이머
+    // 타이머 — 앱이 RESUMED 일 때만 진행(백그라운드에선 멈춤). 실제 플레이 시간만 소진.
+    val lifecycleOwner = LocalLifecycleOwner.current
     LaunchedEffect(Unit) {
-        while (timeLeft > 0) {
-            delay(1000)
-            timeLeft -= 1
+        lifecycleOwner.repeatOnLifecycle(Lifecycle.State.RESUMED) {
+            if (finished) return@repeatOnLifecycle
+            while (timeLeft > 0) {
+                delay(1000)
+                timeLeft -= 1
+            }
+            progress.updateBestTimeAttack(score)
+            finished = true
         }
-        progress.updateBestTimeAttack(score)
-        finished = true
     }
 
     LaunchedEffect(deckIndex) { advancing = false }
