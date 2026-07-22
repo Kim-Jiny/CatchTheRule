@@ -87,12 +87,17 @@ class PuzzleStore private constructor(private val allPuzzles: List<Puzzle>) {
                     val conn = (URL(URL_STR).openConnection() as HttpURLConnection).apply {
                         connectTimeout = 10000; readTimeout = 10000
                     }
-                    if (conn.responseCode == 200) {
-                        val text = conn.inputStream.bufferedReader().use { it.readText() }
-                        val parsed = json.decodeFromString<ServerPuzzles>(text)   // 디코드=검증
-                        File(app.filesDir, CACHE).writeText(json.encodeToString(parsed.puzzles))
+                    try {
+                        if (conn.responseCode == 200) {
+                            val text = conn.inputStream.bufferedReader().use { it.readText() }
+                            val parsed = json.decodeFromString<ServerPuzzles>(text)   // 디코드=검증
+                            File(app.filesDir, CACHE).writeText(json.encodeToString(parsed.puzzles))
+                        } else {
+                            conn.errorStream?.use { it.readBytes() }
+                        }
+                    } finally {
+                        conn.disconnect()
                     }
-                    conn.disconnect()
                 }
             }.start()
         }

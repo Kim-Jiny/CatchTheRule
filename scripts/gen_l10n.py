@@ -211,7 +211,12 @@ def xml_escape(s):
 for i, lang in enumerate(LANGS):
     d = os.path.join(ROOT, "Android/app/src/main/res", AND_DIR[lang])
     os.makedirs(d, exist_ok=True)
-    lines = ['<?xml version="1.0" encoding="utf-8"?>', '<resources>']
+    lines = [
+        '<?xml version="1.0" encoding="utf-8"?>',
+        '<!-- 자동 생성: scripts/gen_l10n.py — 직접 편집하지 마세요. '
+        '문자열은 gen_l10n.py 의 T 테이블에서 고친 뒤 재생성하면 됩니다(직접 추가분은 재생성 시 삭제됨). -->',
+        '<resources>',
+    ]
     for key, vals in T.items():
         lines.append(f'    <string name="{key}">{xml_escape(vals[i])}</string>')
     lines.append('</resources>')

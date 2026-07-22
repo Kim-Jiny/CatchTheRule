@@ -20,7 +20,13 @@ struct Inquiry: Identifiable, Decodable, Equatable {
 
 /// 랭킹·문의가 공유하는 기기 식별자(영속 UUID). 개인정보 비식별.
 enum CTRDevice {
+    private static let lock = NSLock()
+
+    // 최초 실행 시 analytics·ranking·IAP 검증이 동시에 id 를 읽으면 서로 다른 UUID 를
+    // 생성·저장할 수 있다(중복 기기 행). 락으로 read-then-write 를 원자화한다.
     static var id: String {
+        lock.lock()
+        defer { lock.unlock() }
         let key = "ctr_device_id"
         let defaults = UserDefaults.standard
         if let existing = defaults.string(forKey: key) { return existing }

@@ -28,8 +28,7 @@ struct RootView: View {
         }
         .tint(Theme.accent)
         .task {
-            // 소비형(힌트) 지급을 ProgressStore 에 연결 — 구매/복원/백그라운드 경로 모두 durable.
-            store.onHintsPurchased = { n in progress.hintsRemaining += n }
+            // 힌트 지급 콜백은 앱 init 에서 이미 연결됨(CatchTheRuleApp) — 여기선 광고/네트워크 초기화만.
             ads.start()   // 리워드 광고 SDK 초기화 + 미리 로드
             AnalyticsService.ping()
             await PuzzleStore.refreshFromServer()   // 추가 스테이지 캐시 갱신(다음 실행 반영)

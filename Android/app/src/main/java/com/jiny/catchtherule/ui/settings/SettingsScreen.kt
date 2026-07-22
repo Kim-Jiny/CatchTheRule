@@ -31,7 +31,7 @@ import androidx.compose.material.icons.filled.Restore
 import androidx.compose.material.icons.filled.VolumeUp
 import androidx.compose.material.icons.filled.Vibration
 import androidx.compose.material3.AlertDialog
-import androidx.compose.material3.Divider
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Switch
@@ -270,7 +270,7 @@ private fun ToggleRow(icon: ImageVector, title: String, checked: Boolean, onChan
 
 @Composable
 private fun RowDivider() {
-    Divider(color = AppColors.Stroke, thickness = 1.dp)
+    HorizontalDivider(color = AppColors.Stroke, thickness = 1.dp)
 }
 
 /** 앱 정보: 내 버전 + Play 인앱업데이트로 스토어 새 버전(=새 문제) 안내.

@@ -159,14 +159,34 @@ class AdsManager(context: Context) {
      */
     fun maybeShowInterstitial(activity: Activity, chapter: Int): Boolean {
         if (chapter < INTERSTITIAL_MIN_CHAPTER) return false
-        val now = System.currentTimeMillis()
-        if (now - lastInterstitialAt < INTERSTITIAL_COOLDOWN_MS) return false
+        if (onCooldown()) return false
         // 챕터가 높을수록 확률 상승: 챕터2=10%, 챕터당 +5%p (최대 100%).
         val prob = (INTERSTITIAL_BASE_PROB + INTERSTITIAL_STEP_PROB * (chapter - INTERSTITIAL_MIN_CHAPTER)).coerceIn(0f, 1f)
         if (Random.nextFloat() >= prob) {
             loadInterstitial()   // 이번엔 미당첨 — 다음을 위해 준비
             return false
         }
+        return showInterstitialNow(activity)
+    }
+
+    /**
+     * 오답 시 50% 확률로 전면광고를 노출한다(스테이지 클리어 전면과 1분 쿨다운·준비된 광고를 공유).
+     * 노출했으면 true. (광고 제거 구매 여부는 호출부에서 먼저 거른다.)
+     */
+    fun maybeShowInterstitialOnWrong(activity: Activity): Boolean {
+        if (onCooldown()) return false
+        if (Random.nextFloat() >= INTERSTITIAL_WRONG_PROB) {
+            loadInterstitial()   // 이번엔 미당첨 — 다음을 위해 준비
+            return false
+        }
+        return showInterstitialNow(activity)
+    }
+
+    private fun onCooldown(): Boolean =
+        System.currentTimeMillis() - lastInterstitialAt < INTERSTITIAL_COOLDOWN_MS
+
+    /** 준비된 전면광고를 실제로 노출하고 재로드를 예약한다(쿨다운·확률 게이트는 호출부에서 통과 후 진입). */
+    private fun showInterstitialNow(activity: Activity): Boolean {
         val ad = interstitial ?: run { loadInterstitial(); return false }
         ad.fullScreenContentCallback = object : FullScreenContentCallback() {
             override fun onAdDismissedFullScreenContent() {
@@ -179,36 +199,7 @@ class AdsManager(context: Context) {
                 loadInterstitial()
             }
         }
-        lastInterstitialAt = now
-        interstitial = null
-        ad.show(activity)
-        return true
-    }
-
-    /**
-     * 오답 시 50% 확률로 전면광고를 노출한다(스테이지 클리어 전면과 1분 쿨다운·준비된 광고를 공유).
-     * 노출했으면 true. (광고 제거 구매 여부는 호출부에서 먼저 거른다.)
-     */
-    fun maybeShowInterstitialOnWrong(activity: Activity): Boolean {
-        val now = System.currentTimeMillis()
-        if (now - lastInterstitialAt < INTERSTITIAL_COOLDOWN_MS) return false
-        if (Random.nextFloat() >= INTERSTITIAL_WRONG_PROB) {
-            loadInterstitial()   // 이번엔 미당첨 — 다음을 위해 준비
-            return false
-        }
-        val ad = interstitial ?: run { loadInterstitial(); return false }
-        ad.fullScreenContentCallback = object : FullScreenContentCallback() {
-            override fun onAdDismissedFullScreenContent() {
-                interstitial = null
-                loadInterstitial()
-            }
-
-            override fun onAdFailedToShowFullScreenContent(error: AdError) {
-                interstitial = null
-                loadInterstitial()
-            }
-        }
-        lastInterstitialAt = now
+        lastInterstitialAt = System.currentTimeMillis()
         interstitial = null
         ad.show(activity)
         return true

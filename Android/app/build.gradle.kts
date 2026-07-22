@@ -22,8 +22,8 @@ android {
         applicationId = "com.jiny.catchtherule"
         minSdk = 24
         targetSdk = 35
-        versionCode = 9
-        versionName = "1.0.5"
+        versionCode = 10
+        versionName = "1.0.6"
     }
 
     signingConfigs {
@@ -79,6 +79,9 @@ dependencies {
     implementation("androidx.core:core-ktx:1.13.1")
     implementation("androidx.activity:activity-compose:1.9.3")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
+    // Compose 라이프사이클 연동: LocalLifecycleOwner / repeatOnLifecycle
+    // (배너 광고 pause·resume·destroy, 타임어택 타이머 백그라운드 일시정지)
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
     // 전이 의존성으로 끌려오는 구버전 androidx.fragment(1.1.0) 강제 업그레이드
     // — Play Console "오래된 SDK 버전(androidx.fragment)" 경고 해소.
     implementation("androidx.fragment:fragment:1.8.5")
@@ -92,8 +95,8 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
 
-    // 인앱결제 (광고 제거)
-    implementation("com.android.billingclient:billing-ktx:7.1.1")
+    // 인앱결제 (광고 제거) — Play 정책: 2026-08-31부터 8.0.0+ 필수(9.x 권장)
+    implementation("com.android.billingclient:billing-ktx:9.1.0")
 
     // 리워드 광고 (광고 보고 힌트 받기)
     implementation("com.google.android.gms:play-services-ads:25.0.0")

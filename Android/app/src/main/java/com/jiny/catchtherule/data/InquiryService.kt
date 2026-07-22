@@ -27,10 +27,15 @@ data class Inquiry(
 
 /** 랭킹·문의가 공유하는 기기 식별자(영속 UUID). 개인정보 비식별. */
 object CtrDevice {
+    // 최초 실행 시 analytics·ranking·IAP 검증이 동시에 id() 를 호출하면 서로 다른 UUID 를
+    // 생성·저장(last-writer-wins)해 기기 행이 중복될 수 있다. 생성+저장을 원자화한다.
+    @Synchronized
     fun id(context: Context): String {
         val prefs = context.applicationContext.getSharedPreferences("ctr_device", Context.MODE_PRIVATE)
-        return prefs.getString("id", null) ?: UUID.randomUUID().toString()
-            .also { prefs.edit().putString("id", it).apply() }
+        prefs.getString("id", null)?.let { return it }
+        val fresh = UUID.randomUUID().toString()
+        prefs.edit().putString("id", fresh).apply()
+        return fresh
     }
 }
 
