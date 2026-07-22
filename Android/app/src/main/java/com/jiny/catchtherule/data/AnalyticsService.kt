@@ -35,9 +35,14 @@ object AnalyticsService {
                     doOutput = true
                     setRequestProperty("Content-Type", "application/json")
                 }
-                conn.outputStream.use { it.write(body.toByteArray(Charsets.UTF_8)) }
-                conn.responseCode
-                conn.disconnect()
+                try {
+                    conn.outputStream.use { it.write(body.toByteArray(Charsets.UTF_8)) }
+                    val code = conn.responseCode
+                    // 응답 본문을 끝까지 읽어 소켓 keep-alive 재사용을 돕는다(성공/에러 모두).
+                    (if (code in 200..299) conn.inputStream else conn.errorStream)?.use { it.readBytes() }
+                } finally {
+                    conn.disconnect()
+                }
             }
         }.start()
     }
