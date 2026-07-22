@@ -100,9 +100,14 @@ final class StoreManager {
             switch result {
             case .success(let verification):
                 guard case .verified(let transaction) = verification else { return nil }
-                await verifyWithServer(jws: verification.jwsRepresentation,
-                                       productID: transaction.productID,
-                                       transactionID: String(transaction.id))
+                // 서버 검증은 기록용 — 지급(redeem)을 막지 않도록 비차단으로 분리.
+                // (Android 와 동일: 네트워크 지연 시에도 힌트/광고제거 지급과 loading 해제가 즉시 진행)
+                let jws = verification.jwsRepresentation
+                Task { [weak self] in
+                    await self?.verifyWithServer(jws: jws,
+                                                 productID: transaction.productID,
+                                                 transactionID: String(transaction.id))
+                }
                 await redeem(transaction)
                 return transaction
             case .userCancelled, .pending:
@@ -143,6 +148,7 @@ final class StoreManager {
     private func verifyWithServer(jws: String, productID: String, transactionID: String) async {
         var request = URLRequest(url: verifyURL)
         request.httpMethod = "POST"
+        request.timeoutInterval = 10
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         let body: [String: Any] = [
             "platform": "ios",
@@ -159,9 +165,13 @@ final class StoreManager {
         Task.detached { [weak self] in
             for await update in Transaction.updates {
                 if case .verified(let transaction) = update {
-                    await self?.verifyWithServer(jws: update.jwsRepresentation,
-                                                 productID: transaction.productID,
-                                                 transactionID: String(transaction.id))
+                    // 서버 검증은 기록용 — 지급을 막지 않도록 비차단으로 분리.
+                    let jws = update.jwsRepresentation
+                    Task { [weak self] in
+                        await self?.verifyWithServer(jws: jws,
+                                                     productID: transaction.productID,
+                                                     transactionID: String(transaction.id))
+                    }
                     await self?.redeem(transaction)
                     await self?.refreshEntitlements()
                 }
