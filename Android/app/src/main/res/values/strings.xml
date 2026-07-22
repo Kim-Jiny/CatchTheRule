@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 자동 생성: scripts/gen_l10n.py — 직접 편집하지 마세요. 문자열은 gen_l10n.py 의 T 테이블에서 고친 뒤 재생성하면 됩니다(직접 추가분은 재생성 시 삭제됨). -->
 <resources>
     <string name="app_name">Catch the Rule</string>
     <string name="tab_home">Home</string>
