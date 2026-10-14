@@ -25,6 +25,8 @@ data class Puzzle(
     val statements: Map<String, List<String>>? = null,  // 모순찾기 문장 목록(로케일코드 → 문장 배열). answer=모순 문장 번호(1-based).
     val numbers: List<Int>? = null,            // 숫자 만들기 재료 숫자들
     val target: Int? = null,                   // 숫자 만들기 목표 숫자
+    val equation: List<String>? = null,        // 성냥개비 퍼즐 초기 식(셀 배열)
+    val moves: Int? = null,                    // 성냥개비 퍼즐 허용 이동 수(순변위)
     val answer: String,
     val inputType: String,      // "keypad" | "choices"
     val choices: List<String>? = null,
@@ -50,6 +52,9 @@ data class Puzzle(
 
     /** 숫자 만들기(재료+목표) 퍼즐 여부. */
     val isTarget: Boolean get() = numbers?.isNotEmpty() == true
+
+    /** 성냥개비 퍼즐 여부. */
+    val isMatch: Boolean get() = equation?.isNotEmpty() == true
 
     /** 현재 언어의 문장 목록(없으면 영어 → 임의 폴백). */
     val localizedStatements: List<String>

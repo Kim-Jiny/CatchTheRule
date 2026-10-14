@@ -20,6 +20,7 @@ import androidx.compose.material.icons.filled.Calculate
 import androidx.compose.material.icons.filled.ChangeHistory
 import androidx.compose.material.icons.filled.ExpandMore
 import androidx.compose.material.icons.filled.Lightbulb
+import androidx.compose.material.icons.filled.LocalFireDepartment
 import androidx.compose.material.icons.filled.LockOpen
 import androidx.compose.material.icons.filled.Numbers
 import androidx.compose.material.icons.filled.PlayArrow
@@ -389,6 +390,7 @@ private fun modeTitleRes(track: String): Int = when (track) {
     "logic" -> R.string.mode_logic
     "contradiction" -> R.string.mode_contradiction
     "target" -> R.string.mode_target
+    "match" -> R.string.mode_match
     else -> R.string.mode_numbers
 }
 
@@ -397,11 +399,31 @@ private fun modeIcon(track: String) = when (track) {
     "logic" -> Icons.Filled.Lightbulb
     "contradiction" -> Icons.Filled.Warning
     "target" -> Icons.Filled.Calculate
+    "match" -> Icons.Filled.LocalFireDepartment
     else -> Icons.Filled.Numbers
 }
 
 @Composable
 private fun chapterTitle(track: String, chapter: Int): String {
+    if (track == "match") {
+        return when (chapter) {
+            1 -> stringResource(R.string.match_chapter_1)
+            2 -> stringResource(R.string.match_chapter_2)
+            3 -> stringResource(R.string.match_chapter_3)
+            4 -> stringResource(R.string.match_chapter_4)
+            5 -> stringResource(R.string.match_chapter_5)
+            6 -> stringResource(R.string.match_chapter_6)
+            7 -> stringResource(R.string.match_chapter_7)
+            8 -> stringResource(R.string.match_chapter_8)
+            9 -> stringResource(R.string.match_chapter_9)
+            10 -> stringResource(R.string.match_chapter_10)
+            11 -> stringResource(R.string.match_chapter_11)
+            12 -> stringResource(R.string.match_chapter_12)
+            13 -> stringResource(R.string.match_chapter_13)
+            14 -> stringResource(R.string.match_chapter_14)
+            else -> stringResource(R.string.chapter_label, chapter)
+        }
+    }
     if (track == "target") {
         return when (chapter) {
             1 -> stringResource(R.string.target_chapter_1)

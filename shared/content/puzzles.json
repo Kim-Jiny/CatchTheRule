@@ -34562,5 +34562,5525 @@
       "fr": "75 − 5 = 70 → 70 × 50 = 3500 → 3500 ÷ 4 = 875 → 6 × 3 = 18 → 875 − 18 = 857",
       "de": "75 − 5 = 70 → 70 × 50 = 3500 → 3500 ÷ 4 = 875 → 6 × 3 = 18 → 875 − 18 = 857"
     }
+  },
+  {
+    "id": "mt1_s01",
+    "type": "match",
+    "track": "match",
+    "chapter": 1,
+    "order": 1,
+    "equation": [
+      "0",
+      "+",
+      "0",
+      "=",
+      "6"
+    ],
+    "moves": 1,
+    "answer": "0+0=0",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "5번째 기호에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "정답 식: 0+0=0"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 5.",
+        "Move that matchstick within the same symbol.",
+        "Answer: 0+0=0"
+      ],
+      "ja": [
+        "5番目の記号から棒を取り除きます。",
+        "取った棒は同じ記号の中で動かします。",
+        "正解の式：0+0=0"
+      ],
+      "zh": [
+        "需要从第5个符号上拿走火柴棒。",
+        "把拿走的火柴棒在同一个符号内移动。",
+        "正确算式：0+0=0"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 5.",
+        "Mueve la cerilla dentro del mismo símbolo.",
+        "Ecuación correcta: 0+0=0"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 5.",
+        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Équation correcte : 0+0=0"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 5 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Richtige Gleichung: 0+0=0"
+      ]
+    },
+    "explanation": {
+      "ko": "0+0=6 → 0+0=0",
+      "en": "0+0=6 → 0+0=0",
+      "ja": "0+0=6 → 0+0=0",
+      "zh": "0+0=6 → 0+0=0",
+      "es": "0+0=6 → 0+0=0",
+      "fr": "0+0=6 → 0+0=0",
+      "de": "0+0=6 → 0+0=0"
+    }
+  },
+  {
+    "id": "mt1_s02",
+    "type": "match",
+    "track": "match",
+    "chapter": 1,
+    "order": 2,
+    "equation": [
+      "3",
+      "+",
+      "0",
+      "=",
+      "5"
+    ],
+    "moves": 1,
+    "answer": "3+0=3",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "5번째 기호에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "정답 식: 3+0=3"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 5.",
+        "Move that matchstick within the same symbol.",
+        "Answer: 3+0=3"
+      ],
+      "ja": [
+        "5番目の記号から棒を取り除きます。",
+        "取った棒は同じ記号の中で動かします。",
+        "正解の式：3+0=3"
+      ],
+      "zh": [
+        "需要从第5个符号上拿走火柴棒。",
+        "把拿走的火柴棒在同一个符号内移动。",
+        "正确算式：3+0=3"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 5.",
+        "Mueve la cerilla dentro del mismo símbolo.",
+        "Ecuación correcta: 3+0=3"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 5.",
+        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Équation correcte : 3+0=3"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 5 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Richtige Gleichung: 3+0=3"
+      ]
+    },
+    "explanation": {
+      "ko": "3+0=5 → 3+0=3",
+      "en": "3+0=5 → 3+0=3",
+      "ja": "3+0=5 → 3+0=3",
+      "zh": "3+0=5 → 3+0=3",
+      "es": "3+0=5 → 3+0=3",
+      "fr": "3+0=5 → 3+0=3",
+      "de": "3+0=5 → 3+0=3"
+    }
+  },
+  {
+    "id": "mt1_s03",
+    "type": "match",
+    "track": "match",
+    "chapter": 1,
+    "order": 3,
+    "equation": [
+      "9",
+      "+",
+      "8",
+      "=",
+      "8"
+    ],
+    "moves": 1,
+    "answer": "0+8=8",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1번째 기호에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "정답 식: 0+8=8"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 1.",
+        "Move that matchstick within the same symbol.",
+        "Answer: 0+8=8"
+      ],
+      "ja": [
+        "1番目の記号から棒を取り除きます。",
+        "取った棒は同じ記号の中で動かします。",
+        "正解の式：0+8=8"
+      ],
+      "zh": [
+        "需要从第1个符号上拿走火柴棒。",
+        "把拿走的火柴棒在同一个符号内移动。",
+        "正确算式：0+8=8"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 1.",
+        "Mueve la cerilla dentro del mismo símbolo.",
+        "Ecuación correcta: 0+8=8"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 1.",
+        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Équation correcte : 0+8=8"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 1 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Richtige Gleichung: 0+8=8"
+      ]
+    },
+    "explanation": {
+      "ko": "9+8=8 → 0+8=8",
+      "en": "9+8=8 → 0+8=8",
+      "ja": "9+8=8 → 0+8=8",
+      "zh": "9+8=8 → 0+8=8",
+      "es": "9+8=8 → 0+8=8",
+      "fr": "9+8=8 → 0+8=8",
+      "de": "9+8=8 → 0+8=8"
+    }
+  },
+  {
+    "id": "mt1_s04",
+    "type": "match",
+    "track": "match",
+    "chapter": 1,
+    "order": 4,
+    "equation": [
+      "2",
+      "+",
+      "2",
+      "=",
+      "5"
+    ],
+    "moves": 1,
+    "answer": "2+3=5",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "3번째 기호에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "정답 식: 2+3=5"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 3.",
+        "Move that matchstick within the same symbol.",
+        "Answer: 2+3=5"
+      ],
+      "ja": [
+        "3番目の記号から棒を取り除きます。",
+        "取った棒は同じ記号の中で動かします。",
+        "正解の式：2+3=5"
+      ],
+      "zh": [
+        "需要从第3个符号上拿走火柴棒。",
+        "把拿走的火柴棒在同一个符号内移动。",
+        "正确算式：2+3=5"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 3.",
+        "Mueve la cerilla dentro del mismo símbolo.",
+        "Ecuación correcta: 2+3=5"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 3.",
+        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Équation correcte : 2+3=5"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 3 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Richtige Gleichung: 2+3=5"
+      ]
+    },
+    "explanation": {
+      "ko": "2+2=5 → 2+3=5",
+      "en": "2+2=5 → 2+3=5",
+      "ja": "2+2=5 → 2+3=5",
+      "zh": "2+2=5 → 2+3=5",
+      "es": "2+2=5 → 2+3=5",
+      "fr": "2+2=5 → 2+3=5",
+      "de": "2+2=5 → 2+3=5"
+    }
+  },
+  {
+    "id": "mt1_s05",
+    "type": "match",
+    "track": "match",
+    "chapter": 1,
+    "order": 5,
+    "equation": [
+      "9",
+      "+",
+      "5",
+      "=",
+      "9"
+    ],
+    "moves": 1,
+    "answer": "3+5=8",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1번째 기호에서 막대를 빼야 해요.",
+        "막대를 5번째 기호에 놓아야 해요.",
+        "정답 식: 3+5=8"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 1.",
+        "Place matchsticks on symbol 5.",
+        "Answer: 3+5=8"
+      ],
+      "ja": [
+        "1番目の記号から棒を取り除きます。",
+        "5番目の記号に棒を置きます。",
+        "正解の式：3+5=8"
+      ],
+      "zh": [
+        "需要从第1个符号上拿走火柴棒。",
+        "需要把火柴棒放到第5个符号上。",
+        "正确算式：3+5=8"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 1.",
+        "Coloca cerillas en el símbolo 5.",
+        "Ecuación correcta: 3+5=8"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 1.",
+        "Placez des allumettes sur le symbole 5.",
+        "Équation correcte : 3+5=8"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 1 weg.",
+        "Lege Streichhölzer auf das Symbol 5.",
+        "Richtige Gleichung: 3+5=8"
+      ]
+    },
+    "explanation": {
+      "ko": "9+5=9 → 3+5=8",
+      "en": "9+5=9 → 3+5=8",
+      "ja": "9+5=9 → 3+5=8",
+      "zh": "9+5=9 → 3+5=8",
+      "es": "9+5=9 → 3+5=8",
+      "fr": "9+5=9 → 3+5=8",
+      "de": "9+5=9 → 3+5=8"
+    }
+  },
+  {
+    "id": "mt1_s06",
+    "type": "match",
+    "track": "match",
+    "chapter": 1,
+    "order": 6,
+    "equation": [
+      "6",
+      "-",
+      "8",
+      "=",
+      "2"
+    ],
+    "moves": 1,
+    "answer": "8-6=2",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "3번째 기호에서 막대를 빼야 해요.",
+        "막대를 1번째 기호에 놓아야 해요.",
+        "정답 식: 8−6=2"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 3.",
+        "Place matchsticks on symbol 1.",
+        "Answer: 8−6=2"
+      ],
+      "ja": [
+        "3番目の記号から棒を取り除きます。",
+        "1番目の記号に棒を置きます。",
+        "正解の式：8−6=2"
+      ],
+      "zh": [
+        "需要从第3个符号上拿走火柴棒。",
+        "需要把火柴棒放到第1个符号上。",
+        "正确算式：8−6=2"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 3.",
+        "Coloca cerillas en el símbolo 1.",
+        "Ecuación correcta: 8−6=2"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 3.",
+        "Placez des allumettes sur le symbole 1.",
+        "Équation correcte : 8−6=2"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 3 weg.",
+        "Lege Streichhölzer auf das Symbol 1.",
+        "Richtige Gleichung: 8−6=2"
+      ]
+    },
+    "explanation": {
+      "ko": "6−8=2 → 8−6=2",
+      "en": "6−8=2 → 8−6=2",
+      "ja": "6−8=2 → 8−6=2",
+      "zh": "6−8=2 → 8−6=2",
+      "es": "6−8=2 → 8−6=2",
+      "fr": "6−8=2 → 8−6=2",
+      "de": "6−8=2 → 8−6=2"
+    }
+  },
+  {
+    "id": "mt2_s01",
+    "type": "match",
+    "track": "match",
+    "chapter": 2,
+    "order": 1,
+    "equation": [
+      "8",
+      "-",
+      "3",
+      "=",
+      "3"
+    ],
+    "moves": 1,
+    "answer": "8-3=5",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "5번째 기호에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "정답 식: 8−3=5"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 5.",
+        "Move that matchstick within the same symbol.",
+        "Answer: 8−3=5"
+      ],
+      "ja": [
+        "5番目の記号から棒を取り除きます。",
+        "取った棒は同じ記号の中で動かします。",
+        "正解の式：8−3=5"
+      ],
+      "zh": [
+        "需要从第5个符号上拿走火柴棒。",
+        "把拿走的火柴棒在同一个符号内移动。",
+        "正确算式：8−3=5"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 5.",
+        "Mueve la cerilla dentro del mismo símbolo.",
+        "Ecuación correcta: 8−3=5"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 5.",
+        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Équation correcte : 8−3=5"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 5 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Richtige Gleichung: 8−3=5"
+      ]
+    },
+    "explanation": {
+      "ko": "8−3=3 → 8−3=5",
+      "en": "8−3=3 → 8−3=5",
+      "ja": "8−3=3 → 8−3=5",
+      "zh": "8−3=3 → 8−3=5",
+      "es": "8−3=3 → 8−3=5",
+      "fr": "8−3=3 → 8−3=5",
+      "de": "8−3=3 → 8−3=5"
+    }
+  },
+  {
+    "id": "mt2_s02",
+    "type": "match",
+    "track": "match",
+    "chapter": 2,
+    "order": 2,
+    "equation": [
+      "5",
+      "-",
+      "5",
+      "=",
+      "2"
+    ],
+    "moves": 1,
+    "answer": "5-3=2",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "3번째 기호에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "정답 식: 5−3=2"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 3.",
+        "Move that matchstick within the same symbol.",
+        "Answer: 5−3=2"
+      ],
+      "ja": [
+        "3番目の記号から棒を取り除きます。",
+        "取った棒は同じ記号の中で動かします。",
+        "正解の式：5−3=2"
+      ],
+      "zh": [
+        "需要从第3个符号上拿走火柴棒。",
+        "把拿走的火柴棒在同一个符号内移动。",
+        "正确算式：5−3=2"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 3.",
+        "Mueve la cerilla dentro del mismo símbolo.",
+        "Ecuación correcta: 5−3=2"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 3.",
+        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Équation correcte : 5−3=2"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 3 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Richtige Gleichung: 5−3=2"
+      ]
+    },
+    "explanation": {
+      "ko": "5−5=2 → 5−3=2",
+      "en": "5−5=2 → 5−3=2",
+      "ja": "5−5=2 → 5−3=2",
+      "zh": "5−5=2 → 5−3=2",
+      "es": "5−5=2 → 5−3=2",
+      "fr": "5−5=2 → 5−3=2",
+      "de": "5−5=2 → 5−3=2"
+    }
+  },
+  {
+    "id": "mt2_s03",
+    "type": "match",
+    "track": "match",
+    "chapter": 2,
+    "order": 3,
+    "equation": [
+      "3",
+      "+",
+      "4",
+      "=",
+      "9"
+    ],
+    "moves": 1,
+    "answer": "5+4=9",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1번째 기호에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "정답 식: 5+4=9"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 1.",
+        "Move that matchstick within the same symbol.",
+        "Answer: 5+4=9"
+      ],
+      "ja": [
+        "1番目の記号から棒を取り除きます。",
+        "取った棒は同じ記号の中で動かします。",
+        "正解の式：5+4=9"
+      ],
+      "zh": [
+        "需要从第1个符号上拿走火柴棒。",
+        "把拿走的火柴棒在同一个符号内移动。",
+        "正确算式：5+4=9"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 1.",
+        "Mueve la cerilla dentro del mismo símbolo.",
+        "Ecuación correcta: 5+4=9"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 1.",
+        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Équation correcte : 5+4=9"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 1 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Richtige Gleichung: 5+4=9"
+      ]
+    },
+    "explanation": {
+      "ko": "3+4=9 → 5+4=9",
+      "en": "3+4=9 → 5+4=9",
+      "ja": "3+4=9 → 5+4=9",
+      "zh": "3+4=9 → 5+4=9",
+      "es": "3+4=9 → 5+4=9",
+      "fr": "3+4=9 → 5+4=9",
+      "de": "3+4=9 → 5+4=9"
+    }
+  },
+  {
+    "id": "mt2_s04",
+    "type": "match",
+    "track": "match",
+    "chapter": 2,
+    "order": 4,
+    "equation": [
+      "9",
+      "+",
+      "3",
+      "=",
+      "0"
+    ],
+    "moves": 1,
+    "answer": "5+3=8",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1번째 기호에서 막대를 빼야 해요.",
+        "막대를 5번째 기호에 놓아야 해요.",
+        "정답 식: 5+3=8"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 1.",
+        "Place matchsticks on symbol 5.",
+        "Answer: 5+3=8"
+      ],
+      "ja": [
+        "1番目の記号から棒を取り除きます。",
+        "5番目の記号に棒を置きます。",
+        "正解の式：5+3=8"
+      ],
+      "zh": [
+        "需要从第1个符号上拿走火柴棒。",
+        "需要把火柴棒放到第5个符号上。",
+        "正确算式：5+3=8"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 1.",
+        "Coloca cerillas en el símbolo 5.",
+        "Ecuación correcta: 5+3=8"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 1.",
+        "Placez des allumettes sur le symbole 5.",
+        "Équation correcte : 5+3=8"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 1 weg.",
+        "Lege Streichhölzer auf das Symbol 5.",
+        "Richtige Gleichung: 5+3=8"
+      ]
+    },
+    "explanation": {
+      "ko": "9+3=0 → 5+3=8",
+      "en": "9+3=0 → 5+3=8",
+      "ja": "9+3=0 → 5+3=8",
+      "zh": "9+3=0 → 5+3=8",
+      "es": "9+3=0 → 5+3=8",
+      "fr": "9+3=0 → 5+3=8",
+      "de": "9+3=0 → 5+3=8"
+    }
+  },
+  {
+    "id": "mt2_s05",
+    "type": "match",
+    "track": "match",
+    "chapter": 2,
+    "order": 5,
+    "equation": [
+      "6",
+      "+",
+      "2",
+      "=",
+      "1"
+    ],
+    "moves": 1,
+    "answer": "5+2=7",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1번째 기호에서 막대를 빼야 해요.",
+        "막대를 5번째 기호에 놓아야 해요.",
+        "정답 식: 5+2=7"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 1.",
+        "Place matchsticks on symbol 5.",
+        "Answer: 5+2=7"
+      ],
+      "ja": [
+        "1番目の記号から棒を取り除きます。",
+        "5番目の記号に棒を置きます。",
+        "正解の式：5+2=7"
+      ],
+      "zh": [
+        "需要从第1个符号上拿走火柴棒。",
+        "需要把火柴棒放到第5个符号上。",
+        "正确算式：5+2=7"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 1.",
+        "Coloca cerillas en el símbolo 5.",
+        "Ecuación correcta: 5+2=7"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 1.",
+        "Placez des allumettes sur le symbole 5.",
+        "Équation correcte : 5+2=7"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 1 weg.",
+        "Lege Streichhölzer auf das Symbol 5.",
+        "Richtige Gleichung: 5+2=7"
+      ]
+    },
+    "explanation": {
+      "ko": "6+2=1 → 5+2=7",
+      "en": "6+2=1 → 5+2=7",
+      "ja": "6+2=1 → 5+2=7",
+      "zh": "6+2=1 → 5+2=7",
+      "es": "6+2=1 → 5+2=7",
+      "fr": "6+2=1 → 5+2=7",
+      "de": "6+2=1 → 5+2=7"
+    }
+  },
+  {
+    "id": "mt2_s06",
+    "type": "match",
+    "track": "match",
+    "chapter": 2,
+    "order": 6,
+    "equation": [
+      "0",
+      "+",
+      "8",
+      "=",
+      "0"
+    ],
+    "moves": 1,
+    "answer": "8-8=0",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "2번째 기호에서 막대를 빼야 해요.",
+        "막대를 1번째 기호에 놓아야 해요.",
+        "정답 식: 8−8=0"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 2.",
+        "Place matchsticks on symbol 1.",
+        "Answer: 8−8=0"
+      ],
+      "ja": [
+        "2番目の記号から棒を取り除きます。",
+        "1番目の記号に棒を置きます。",
+        "正解の式：8−8=0"
+      ],
+      "zh": [
+        "需要从第2个符号上拿走火柴棒。",
+        "需要把火柴棒放到第1个符号上。",
+        "正确算式：8−8=0"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 2.",
+        "Coloca cerillas en el símbolo 1.",
+        "Ecuación correcta: 8−8=0"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 2.",
+        "Placez des allumettes sur le symbole 1.",
+        "Équation correcte : 8−8=0"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 2 weg.",
+        "Lege Streichhölzer auf das Symbol 1.",
+        "Richtige Gleichung: 8−8=0"
+      ]
+    },
+    "explanation": {
+      "ko": "0+8=0 → 8−8=0",
+      "en": "0+8=0 → 8−8=0",
+      "ja": "0+8=0 → 8−8=0",
+      "zh": "0+8=0 → 8−8=0",
+      "es": "0+8=0 → 8−8=0",
+      "fr": "0+8=0 → 8−8=0",
+      "de": "0+8=0 → 8−8=0"
+    }
+  },
+  {
+    "id": "mt3_s01",
+    "type": "match",
+    "track": "match",
+    "chapter": 3,
+    "order": 1,
+    "equation": [
+      "0",
+      "-",
+      "7",
+      "=",
+      "7"
+    ],
+    "moves": 1,
+    "answer": "8-1=7",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "3번째 기호에서 막대를 빼야 해요.",
+        "막대를 1번째 기호에 놓아야 해요.",
+        "정답 식: 8−1=7"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 3.",
+        "Place matchsticks on symbol 1.",
+        "Answer: 8−1=7"
+      ],
+      "ja": [
+        "3番目の記号から棒を取り除きます。",
+        "1番目の記号に棒を置きます。",
+        "正解の式：8−1=7"
+      ],
+      "zh": [
+        "需要从第3个符号上拿走火柴棒。",
+        "需要把火柴棒放到第1个符号上。",
+        "正确算式：8−1=7"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 3.",
+        "Coloca cerillas en el símbolo 1.",
+        "Ecuación correcta: 8−1=7"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 3.",
+        "Placez des allumettes sur le symbole 1.",
+        "Équation correcte : 8−1=7"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 3 weg.",
+        "Lege Streichhölzer auf das Symbol 1.",
+        "Richtige Gleichung: 8−1=7"
+      ]
+    },
+    "explanation": {
+      "ko": "0−7=7 → 8−1=7",
+      "en": "0−7=7 → 8−1=7",
+      "ja": "0−7=7 → 8−1=7",
+      "zh": "0−7=7 → 8−1=7",
+      "es": "0−7=7 → 8−1=7",
+      "fr": "0−7=7 → 8−1=7",
+      "de": "0−7=7 → 8−1=7"
+    }
+  },
+  {
+    "id": "mt3_s02",
+    "type": "match",
+    "track": "match",
+    "chapter": 3,
+    "order": 2,
+    "equation": [
+      "3",
+      "-",
+      "3",
+      "=",
+      "8"
+    ],
+    "moves": 1,
+    "answer": "9-3=6",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "5번째 기호에서 막대를 빼야 해요.",
+        "막대를 1번째 기호에 놓아야 해요.",
+        "정답 식: 9−3=6"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 5.",
+        "Place matchsticks on symbol 1.",
+        "Answer: 9−3=6"
+      ],
+      "ja": [
+        "5番目の記号から棒を取り除きます。",
+        "1番目の記号に棒を置きます。",
+        "正解の式：9−3=6"
+      ],
+      "zh": [
+        "需要从第5个符号上拿走火柴棒。",
+        "需要把火柴棒放到第1个符号上。",
+        "正确算式：9−3=6"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 5.",
+        "Coloca cerillas en el símbolo 1.",
+        "Ecuación correcta: 9−3=6"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 5.",
+        "Placez des allumettes sur le symbole 1.",
+        "Équation correcte : 9−3=6"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 5 weg.",
+        "Lege Streichhölzer auf das Symbol 1.",
+        "Richtige Gleichung: 9−3=6"
+      ]
+    },
+    "explanation": {
+      "ko": "3−3=8 → 9−3=6",
+      "en": "3−3=8 → 9−3=6",
+      "ja": "3−3=8 → 9−3=6",
+      "zh": "3−3=8 → 9−3=6",
+      "es": "3−3=8 → 9−3=6",
+      "fr": "3−3=8 → 9−3=6",
+      "de": "3−3=8 → 9−3=6"
+    }
+  },
+  {
+    "id": "mt3_s03",
+    "type": "match",
+    "track": "match",
+    "chapter": 3,
+    "order": 3,
+    "equation": [
+      "9",
+      "-",
+      "3",
+      "=",
+      "8"
+    ],
+    "moves": 1,
+    "answer": "9-9=0",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "5번째 기호에서 막대를 빼야 해요.",
+        "막대를 3번째 기호에 놓아야 해요.",
+        "정답 식: 9−9=0"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 5.",
+        "Place matchsticks on symbol 3.",
+        "Answer: 9−9=0"
+      ],
+      "ja": [
+        "5番目の記号から棒を取り除きます。",
+        "3番目の記号に棒を置きます。",
+        "正解の式：9−9=0"
+      ],
+      "zh": [
+        "需要从第5个符号上拿走火柴棒。",
+        "需要把火柴棒放到第3个符号上。",
+        "正确算式：9−9=0"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 5.",
+        "Coloca cerillas en el símbolo 3.",
+        "Ecuación correcta: 9−9=0"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 5.",
+        "Placez des allumettes sur le symbole 3.",
+        "Équation correcte : 9−9=0"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 5 weg.",
+        "Lege Streichhölzer auf das Symbol 3.",
+        "Richtige Gleichung: 9−9=0"
+      ]
+    },
+    "explanation": {
+      "ko": "9−3=8 → 9−9=0",
+      "en": "9−3=8 → 9−9=0",
+      "ja": "9−3=8 → 9−9=0",
+      "zh": "9−3=8 → 9−9=0",
+      "es": "9−3=8 → 9−9=0",
+      "fr": "9−3=8 → 9−9=0",
+      "de": "9−3=8 → 9−9=0"
+    }
+  },
+  {
+    "id": "mt3_s04",
+    "type": "match",
+    "track": "match",
+    "chapter": 3,
+    "order": 4,
+    "equation": [
+      "1",
+      "+",
+      "3",
+      "=",
+      "1",
+      "8"
+    ],
+    "moves": 1,
+    "answer": "1+9=10",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "6번째 기호에서 막대를 빼야 해요.",
+        "막대를 3번째 기호에 놓아야 해요.",
+        "정답 식: 1+9=10"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 6.",
+        "Place matchsticks on symbol 3.",
+        "Answer: 1+9=10"
+      ],
+      "ja": [
+        "6番目の記号から棒を取り除きます。",
+        "3番目の記号に棒を置きます。",
+        "正解の式：1+9=10"
+      ],
+      "zh": [
+        "需要从第6个符号上拿走火柴棒。",
+        "需要把火柴棒放到第3个符号上。",
+        "正确算式：1+9=10"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 6.",
+        "Coloca cerillas en el símbolo 3.",
+        "Ecuación correcta: 1+9=10"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 6.",
+        "Placez des allumettes sur le symbole 3.",
+        "Équation correcte : 1+9=10"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 6 weg.",
+        "Lege Streichhölzer auf das Symbol 3.",
+        "Richtige Gleichung: 1+9=10"
+      ]
+    },
+    "explanation": {
+      "ko": "1+3=18 → 1+9=10",
+      "en": "1+3=18 → 1+9=10",
+      "ja": "1+3=18 → 1+9=10",
+      "zh": "1+3=18 → 1+9=10",
+      "es": "1+3=18 → 1+9=10",
+      "fr": "1+3=18 → 1+9=10",
+      "de": "1+3=18 → 1+9=10"
+    }
+  },
+  {
+    "id": "mt3_s05",
+    "type": "match",
+    "track": "match",
+    "chapter": 3,
+    "order": 5,
+    "equation": [
+      "9",
+      "+",
+      "5",
+      "=",
+      "1",
+      "9"
+    ],
+    "moves": 1,
+    "answer": "8+5=13",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "6번째 기호에서 막대를 빼야 해요.",
+        "막대를 1번째 기호에 놓아야 해요.",
+        "정답 식: 8+5=13"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 6.",
+        "Place matchsticks on symbol 1.",
+        "Answer: 8+5=13"
+      ],
+      "ja": [
+        "6番目の記号から棒を取り除きます。",
+        "1番目の記号に棒を置きます。",
+        "正解の式：8+5=13"
+      ],
+      "zh": [
+        "需要从第6个符号上拿走火柴棒。",
+        "需要把火柴棒放到第1个符号上。",
+        "正确算式：8+5=13"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 6.",
+        "Coloca cerillas en el símbolo 1.",
+        "Ecuación correcta: 8+5=13"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 6.",
+        "Placez des allumettes sur le symbole 1.",
+        "Équation correcte : 8+5=13"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 6 weg.",
+        "Lege Streichhölzer auf das Symbol 1.",
+        "Richtige Gleichung: 8+5=13"
+      ]
+    },
+    "explanation": {
+      "ko": "9+5=19 → 8+5=13",
+      "en": "9+5=19 → 8+5=13",
+      "ja": "9+5=19 → 8+5=13",
+      "zh": "9+5=19 → 8+5=13",
+      "es": "9+5=19 → 8+5=13",
+      "fr": "9+5=19 → 8+5=13",
+      "de": "9+5=19 → 8+5=13"
+    }
+  },
+  {
+    "id": "mt3_s06",
+    "type": "match",
+    "track": "match",
+    "chapter": 3,
+    "order": 6,
+    "equation": [
+      "8",
+      "-",
+      "7",
+      "=",
+      "1",
+      "6"
+    ],
+    "moves": 1,
+    "answer": "8+7=15",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "6번째 기호에서 막대를 빼야 해요.",
+        "막대를 2번째 기호에 놓아야 해요.",
+        "정답 식: 8+7=15"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 6.",
+        "Place matchsticks on symbol 2.",
+        "Answer: 8+7=15"
+      ],
+      "ja": [
+        "6番目の記号から棒を取り除きます。",
+        "2番目の記号に棒を置きます。",
+        "正解の式：8+7=15"
+      ],
+      "zh": [
+        "需要从第6个符号上拿走火柴棒。",
+        "需要把火柴棒放到第2个符号上。",
+        "正确算式：8+7=15"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 6.",
+        "Coloca cerillas en el símbolo 2.",
+        "Ecuación correcta: 8+7=15"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 6.",
+        "Placez des allumettes sur le symbole 2.",
+        "Équation correcte : 8+7=15"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 6 weg.",
+        "Lege Streichhölzer auf das Symbol 2.",
+        "Richtige Gleichung: 8+7=15"
+      ]
+    },
+    "explanation": {
+      "ko": "8−7=16 → 8+7=15",
+      "en": "8−7=16 → 8+7=15",
+      "ja": "8−7=16 → 8+7=15",
+      "zh": "8−7=16 → 8+7=15",
+      "es": "8−7=16 → 8+7=15",
+      "fr": "8−7=16 → 8+7=15",
+      "de": "8−7=16 → 8+7=15"
+    }
+  },
+  {
+    "id": "mt4_s01",
+    "type": "match",
+    "track": "match",
+    "chapter": 4,
+    "order": 1,
+    "equation": [
+      "5",
+      "+",
+      "9",
+      "=",
+      "0"
+    ],
+    "moves": 1,
+    "answer": "5+3=8",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "3번째 기호에서 막대를 빼야 해요.",
+        "막대를 5번째 기호에 놓아야 해요.",
+        "정답 식: 5+3=8"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 3.",
+        "Place matchsticks on symbol 5.",
+        "Answer: 5+3=8"
+      ],
+      "ja": [
+        "3番目の記号から棒を取り除きます。",
+        "5番目の記号に棒を置きます。",
+        "正解の式：5+3=8"
+      ],
+      "zh": [
+        "需要从第3个符号上拿走火柴棒。",
+        "需要把火柴棒放到第5个符号上。",
+        "正确算式：5+3=8"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 3.",
+        "Coloca cerillas en el símbolo 5.",
+        "Ecuación correcta: 5+3=8"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 3.",
+        "Placez des allumettes sur le symbole 5.",
+        "Équation correcte : 5+3=8"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 3 weg.",
+        "Lege Streichhölzer auf das Symbol 5.",
+        "Richtige Gleichung: 5+3=8"
+      ]
+    },
+    "explanation": {
+      "ko": "5+9=0 → 5+3=8",
+      "en": "5+9=0 → 5+3=8",
+      "ja": "5+9=0 → 5+3=8",
+      "zh": "5+9=0 → 5+3=8",
+      "es": "5+9=0 → 5+3=8",
+      "fr": "5+9=0 → 5+3=8",
+      "de": "5+9=0 → 5+3=8"
+    }
+  },
+  {
+    "id": "mt4_s02",
+    "type": "match",
+    "track": "match",
+    "chapter": 4,
+    "order": 2,
+    "equation": [
+      "3",
+      "+",
+      "2",
+      "=",
+      "7",
+      "1"
+    ],
+    "moves": 1,
+    "answer": "9+2=11",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "5번째 기호에서 막대를 빼야 해요.",
+        "막대를 1번째 기호에 놓아야 해요.",
+        "정답 식: 9+2=11"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 5.",
+        "Place matchsticks on symbol 1.",
+        "Answer: 9+2=11"
+      ],
+      "ja": [
+        "5番目の記号から棒を取り除きます。",
+        "1番目の記号に棒を置きます。",
+        "正解の式：9+2=11"
+      ],
+      "zh": [
+        "需要从第5个符号上拿走火柴棒。",
+        "需要把火柴棒放到第1个符号上。",
+        "正确算式：9+2=11"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 5.",
+        "Coloca cerillas en el símbolo 1.",
+        "Ecuación correcta: 9+2=11"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 5.",
+        "Placez des allumettes sur le symbole 1.",
+        "Équation correcte : 9+2=11"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 5 weg.",
+        "Lege Streichhölzer auf das Symbol 1.",
+        "Richtige Gleichung: 9+2=11"
+      ]
+    },
+    "explanation": {
+      "ko": "3+2=71 → 9+2=11",
+      "en": "3+2=71 → 9+2=11",
+      "ja": "3+2=71 → 9+2=11",
+      "zh": "3+2=71 → 9+2=11",
+      "es": "3+2=71 → 9+2=11",
+      "fr": "3+2=71 → 9+2=11",
+      "de": "3+2=71 → 9+2=11"
+    }
+  },
+  {
+    "id": "mt4_s03",
+    "type": "match",
+    "track": "match",
+    "chapter": 4,
+    "order": 3,
+    "equation": [
+      "3",
+      "+",
+      "0",
+      "=",
+      "1",
+      "7"
+    ],
+    "moves": 1,
+    "answer": "3+8=11",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "6번째 기호에서 막대를 빼야 해요.",
+        "막대를 3번째 기호에 놓아야 해요.",
+        "정답 식: 3+8=11"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 6.",
+        "Place matchsticks on symbol 3.",
+        "Answer: 3+8=11"
+      ],
+      "ja": [
+        "6番目の記号から棒を取り除きます。",
+        "3番目の記号に棒を置きます。",
+        "正解の式：3+8=11"
+      ],
+      "zh": [
+        "需要从第6个符号上拿走火柴棒。",
+        "需要把火柴棒放到第3个符号上。",
+        "正确算式：3+8=11"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 6.",
+        "Coloca cerillas en el símbolo 3.",
+        "Ecuación correcta: 3+8=11"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 6.",
+        "Placez des allumettes sur le symbole 3.",
+        "Équation correcte : 3+8=11"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 6 weg.",
+        "Lege Streichhölzer auf das Symbol 3.",
+        "Richtige Gleichung: 3+8=11"
+      ]
+    },
+    "explanation": {
+      "ko": "3+0=17 → 3+8=11",
+      "en": "3+0=17 → 3+8=11",
+      "ja": "3+0=17 → 3+8=11",
+      "zh": "3+0=17 → 3+8=11",
+      "es": "3+0=17 → 3+8=11",
+      "fr": "3+0=17 → 3+8=11",
+      "de": "3+0=17 → 3+8=11"
+    }
+  },
+  {
+    "id": "mt4_s04",
+    "type": "match",
+    "track": "match",
+    "chapter": 4,
+    "order": 4,
+    "equation": [
+      "5",
+      "+",
+      "6",
+      "=",
+      "1",
+      "6"
+    ],
+    "moves": 1,
+    "answer": "9+6=15",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "6번째 기호에서 막대를 빼야 해요.",
+        "막대를 1번째 기호에 놓아야 해요.",
+        "정답 식: 9+6=15"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 6.",
+        "Place matchsticks on symbol 1.",
+        "Answer: 9+6=15"
+      ],
+      "ja": [
+        "6番目の記号から棒を取り除きます。",
+        "1番目の記号に棒を置きます。",
+        "正解の式：9+6=15"
+      ],
+      "zh": [
+        "需要从第6个符号上拿走火柴棒。",
+        "需要把火柴棒放到第1个符号上。",
+        "正确算式：9+6=15"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 6.",
+        "Coloca cerillas en el símbolo 1.",
+        "Ecuación correcta: 9+6=15"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 6.",
+        "Placez des allumettes sur le symbole 1.",
+        "Équation correcte : 9+6=15"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 6 weg.",
+        "Lege Streichhölzer auf das Symbol 1.",
+        "Richtige Gleichung: 9+6=15"
+      ]
+    },
+    "explanation": {
+      "ko": "5+6=16 → 9+6=15",
+      "en": "5+6=16 → 9+6=15",
+      "ja": "5+6=16 → 9+6=15",
+      "zh": "5+6=16 → 9+6=15",
+      "es": "5+6=16 → 9+6=15",
+      "fr": "5+6=16 → 9+6=15",
+      "de": "5+6=16 → 9+6=15"
+    }
+  },
+  {
+    "id": "mt4_s05",
+    "type": "match",
+    "track": "match",
+    "chapter": 4,
+    "order": 5,
+    "equation": [
+      "6",
+      "+",
+      "6",
+      "=",
+      "2"
+    ],
+    "moves": 1,
+    "answer": "8-6=2",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "2번째 기호에서 막대를 빼야 해요.",
+        "막대를 1번째 기호에 놓아야 해요.",
+        "정답 식: 8−6=2"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 2.",
+        "Place matchsticks on symbol 1.",
+        "Answer: 8−6=2"
+      ],
+      "ja": [
+        "2番目の記号から棒を取り除きます。",
+        "1番目の記号に棒を置きます。",
+        "正解の式：8−6=2"
+      ],
+      "zh": [
+        "需要从第2个符号上拿走火柴棒。",
+        "需要把火柴棒放到第1个符号上。",
+        "正确算式：8−6=2"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 2.",
+        "Coloca cerillas en el símbolo 1.",
+        "Ecuación correcta: 8−6=2"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 2.",
+        "Placez des allumettes sur le symbole 1.",
+        "Équation correcte : 8−6=2"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 2 weg.",
+        "Lege Streichhölzer auf das Symbol 1.",
+        "Richtige Gleichung: 8−6=2"
+      ]
+    },
+    "explanation": {
+      "ko": "6+6=2 → 8−6=2",
+      "en": "6+6=2 → 8−6=2",
+      "ja": "6+6=2 → 8−6=2",
+      "zh": "6+6=2 → 8−6=2",
+      "es": "6+6=2 → 8−6=2",
+      "fr": "6+6=2 → 8−6=2",
+      "de": "6+6=2 → 8−6=2"
+    }
+  },
+  {
+    "id": "mt4_s06",
+    "type": "match",
+    "track": "match",
+    "chapter": 4,
+    "order": 6,
+    "equation": [
+      "1",
+      "4",
+      "+",
+      "5",
+      "=",
+      "8"
+    ],
+    "moves": 1,
+    "answer": "14-6=8",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "3번째 기호에서 막대를 빼야 해요.",
+        "막대를 4번째 기호에 놓아야 해요.",
+        "정답 식: 14−6=8"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 3.",
+        "Place matchsticks on symbol 4.",
+        "Answer: 14−6=8"
+      ],
+      "ja": [
+        "3番目の記号から棒を取り除きます。",
+        "4番目の記号に棒を置きます。",
+        "正解の式：14−6=8"
+      ],
+      "zh": [
+        "需要从第3个符号上拿走火柴棒。",
+        "需要把火柴棒放到第4个符号上。",
+        "正确算式：14−6=8"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 3.",
+        "Coloca cerillas en el símbolo 4.",
+        "Ecuación correcta: 14−6=8"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 3.",
+        "Placez des allumettes sur le symbole 4.",
+        "Équation correcte : 14−6=8"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 3 weg.",
+        "Lege Streichhölzer auf das Symbol 4.",
+        "Richtige Gleichung: 14−6=8"
+      ]
+    },
+    "explanation": {
+      "ko": "14+5=8 → 14−6=8",
+      "en": "14+5=8 → 14−6=8",
+      "ja": "14+5=8 → 14−6=8",
+      "zh": "14+5=8 → 14−6=8",
+      "es": "14+5=8 → 14−6=8",
+      "fr": "14+5=8 → 14−6=8",
+      "de": "14+5=8 → 14−6=8"
+    }
+  },
+  {
+    "id": "mt5_s01",
+    "type": "match",
+    "track": "match",
+    "chapter": 5,
+    "order": 1,
+    "equation": [
+      "5",
+      "+",
+      "8",
+      "=",
+      "1",
+      "5"
+    ],
+    "moves": 1,
+    "answer": "5+8=13",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "6번째 기호에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "정답 식: 5+8=13"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 6.",
+        "Move that matchstick within the same symbol.",
+        "Answer: 5+8=13"
+      ],
+      "ja": [
+        "6番目の記号から棒を取り除きます。",
+        "取った棒は同じ記号の中で動かします。",
+        "正解の式：5+8=13"
+      ],
+      "zh": [
+        "需要从第6个符号上拿走火柴棒。",
+        "把拿走的火柴棒在同一个符号内移动。",
+        "正确算式：5+8=13"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 6.",
+        "Mueve la cerilla dentro del mismo símbolo.",
+        "Ecuación correcta: 5+8=13"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 6.",
+        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Équation correcte : 5+8=13"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 6 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Richtige Gleichung: 5+8=13"
+      ]
+    },
+    "explanation": {
+      "ko": "5+8=15 → 5+8=13",
+      "en": "5+8=15 → 5+8=13",
+      "ja": "5+8=15 → 5+8=13",
+      "zh": "5+8=15 → 5+8=13",
+      "es": "5+8=15 → 5+8=13",
+      "fr": "5+8=15 → 5+8=13",
+      "de": "5+8=15 → 5+8=13"
+    }
+  },
+  {
+    "id": "mt5_s02",
+    "type": "match",
+    "track": "match",
+    "chapter": 5,
+    "order": 2,
+    "equation": [
+      "9",
+      "+",
+      "3",
+      "2",
+      "=",
+      "3",
+      "1"
+    ],
+    "moves": 1,
+    "answer": "9+22=31",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "3번째 기호에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "정답 식: 9+22=31"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 3.",
+        "Move that matchstick within the same symbol.",
+        "Answer: 9+22=31"
+      ],
+      "ja": [
+        "3番目の記号から棒を取り除きます。",
+        "取った棒は同じ記号の中で動かします。",
+        "正解の式：9+22=31"
+      ],
+      "zh": [
+        "需要从第3个符号上拿走火柴棒。",
+        "把拿走的火柴棒在同一个符号内移动。",
+        "正确算式：9+22=31"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 3.",
+        "Mueve la cerilla dentro del mismo símbolo.",
+        "Ecuación correcta: 9+22=31"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 3.",
+        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Équation correcte : 9+22=31"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 3 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Richtige Gleichung: 9+22=31"
+      ]
+    },
+    "explanation": {
+      "ko": "9+32=31 → 9+22=31",
+      "en": "9+32=31 → 9+22=31",
+      "ja": "9+32=31 → 9+22=31",
+      "zh": "9+32=31 → 9+22=31",
+      "es": "9+32=31 → 9+22=31",
+      "fr": "9+32=31 → 9+22=31",
+      "de": "9+32=31 → 9+22=31"
+    }
+  },
+  {
+    "id": "mt5_s03",
+    "type": "match",
+    "track": "match",
+    "chapter": 5,
+    "order": 3,
+    "equation": [
+      "5",
+      "+",
+      "3",
+      "1",
+      "=",
+      "5",
+      "6"
+    ],
+    "moves": 1,
+    "answer": "5+31=36",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "6번째 기호에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "정답 식: 5+31=36"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 6.",
+        "Move that matchstick within the same symbol.",
+        "Answer: 5+31=36"
+      ],
+      "ja": [
+        "6番目の記号から棒を取り除きます。",
+        "取った棒は同じ記号の中で動かします。",
+        "正解の式：5+31=36"
+      ],
+      "zh": [
+        "需要从第6个符号上拿走火柴棒。",
+        "把拿走的火柴棒在同一个符号内移动。",
+        "正确算式：5+31=36"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 6.",
+        "Mueve la cerilla dentro del mismo símbolo.",
+        "Ecuación correcta: 5+31=36"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 6.",
+        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Équation correcte : 5+31=36"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 6 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Richtige Gleichung: 5+31=36"
+      ]
+    },
+    "explanation": {
+      "ko": "5+31=56 → 5+31=36",
+      "en": "5+31=56 → 5+31=36",
+      "ja": "5+31=56 → 5+31=36",
+      "zh": "5+31=56 → 5+31=36",
+      "es": "5+31=56 → 5+31=36",
+      "fr": "5+31=56 → 5+31=36",
+      "de": "5+31=56 → 5+31=36"
+    }
+  },
+  {
+    "id": "mt5_s04",
+    "type": "match",
+    "track": "match",
+    "chapter": 5,
+    "order": 4,
+    "equation": [
+      "9",
+      "+",
+      "9",
+      "=",
+      "7",
+      "7"
+    ],
+    "moves": 1,
+    "answer": "8+9=17",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "5번째 기호에서 막대를 빼야 해요.",
+        "막대를 1번째 기호에 놓아야 해요.",
+        "정답 식: 8+9=17"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 5.",
+        "Place matchsticks on symbol 1.",
+        "Answer: 8+9=17"
+      ],
+      "ja": [
+        "5番目の記号から棒を取り除きます。",
+        "1番目の記号に棒を置きます。",
+        "正解の式：8+9=17"
+      ],
+      "zh": [
+        "需要从第5个符号上拿走火柴棒。",
+        "需要把火柴棒放到第1个符号上。",
+        "正确算式：8+9=17"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 5.",
+        "Coloca cerillas en el símbolo 1.",
+        "Ecuación correcta: 8+9=17"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 5.",
+        "Placez des allumettes sur le symbole 1.",
+        "Équation correcte : 8+9=17"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 5 weg.",
+        "Lege Streichhölzer auf das Symbol 1.",
+        "Richtige Gleichung: 8+9=17"
+      ]
+    },
+    "explanation": {
+      "ko": "9+9=77 → 8+9=17",
+      "en": "9+9=77 → 8+9=17",
+      "ja": "9+9=77 → 8+9=17",
+      "zh": "9+9=77 → 8+9=17",
+      "es": "9+9=77 → 8+9=17",
+      "fr": "9+9=77 → 8+9=17",
+      "de": "9+9=77 → 8+9=17"
+    }
+  },
+  {
+    "id": "mt5_s05",
+    "type": "match",
+    "track": "match",
+    "chapter": 5,
+    "order": 5,
+    "equation": [
+      "5",
+      "7",
+      "+",
+      "3",
+      "=",
+      "6",
+      "4"
+    ],
+    "moves": 1,
+    "answer": "61+3=64",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "2번째 기호에서 막대를 빼야 해요.",
+        "막대를 1번째 기호에 놓아야 해요.",
+        "정답 식: 61+3=64"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 2.",
+        "Place matchsticks on symbol 1.",
+        "Answer: 61+3=64"
+      ],
+      "ja": [
+        "2番目の記号から棒を取り除きます。",
+        "1番目の記号に棒を置きます。",
+        "正解の式：61+3=64"
+      ],
+      "zh": [
+        "需要从第2个符号上拿走火柴棒。",
+        "需要把火柴棒放到第1个符号上。",
+        "正确算式：61+3=64"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 2.",
+        "Coloca cerillas en el símbolo 1.",
+        "Ecuación correcta: 61+3=64"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 2.",
+        "Placez des allumettes sur le symbole 1.",
+        "Équation correcte : 61+3=64"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 2 weg.",
+        "Lege Streichhölzer auf das Symbol 1.",
+        "Richtige Gleichung: 61+3=64"
+      ]
+    },
+    "explanation": {
+      "ko": "57+3=64 → 61+3=64",
+      "en": "57+3=64 → 61+3=64",
+      "ja": "57+3=64 → 61+3=64",
+      "zh": "57+3=64 → 61+3=64",
+      "es": "57+3=64 → 61+3=64",
+      "fr": "57+3=64 → 61+3=64",
+      "de": "57+3=64 → 61+3=64"
+    }
+  },
+  {
+    "id": "mt5_s06",
+    "type": "match",
+    "track": "match",
+    "chapter": 5,
+    "order": 6,
+    "equation": [
+      "8",
+      "8",
+      "+",
+      "1",
+      "=",
+      "6",
+      "7"
+    ],
+    "moves": 1,
+    "answer": "86+1=87",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "2번째 기호에서 막대를 빼야 해요.",
+        "막대를 6번째 기호에 놓아야 해요.",
+        "정답 식: 86+1=87"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 2.",
+        "Place matchsticks on symbol 6.",
+        "Answer: 86+1=87"
+      ],
+      "ja": [
+        "2番目の記号から棒を取り除きます。",
+        "6番目の記号に棒を置きます。",
+        "正解の式：86+1=87"
+      ],
+      "zh": [
+        "需要从第2个符号上拿走火柴棒。",
+        "需要把火柴棒放到第6个符号上。",
+        "正确算式：86+1=87"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 2.",
+        "Coloca cerillas en el símbolo 6.",
+        "Ecuación correcta: 86+1=87"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 2.",
+        "Placez des allumettes sur le symbole 6.",
+        "Équation correcte : 86+1=87"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 2 weg.",
+        "Lege Streichhölzer auf das Symbol 6.",
+        "Richtige Gleichung: 86+1=87"
+      ]
+    },
+    "explanation": {
+      "ko": "88+1=67 → 86+1=87",
+      "en": "88+1=67 → 86+1=87",
+      "ja": "88+1=67 → 86+1=87",
+      "zh": "88+1=67 → 86+1=87",
+      "es": "88+1=67 → 86+1=87",
+      "fr": "88+1=67 → 86+1=87",
+      "de": "88+1=67 → 86+1=87"
+    }
+  },
+  {
+    "id": "mt6_s01",
+    "type": "match",
+    "track": "match",
+    "chapter": 6,
+    "order": 1,
+    "equation": [
+      "5",
+      "+",
+      "5",
+      "=",
+      "1",
+      "7"
+    ],
+    "moves": 1,
+    "answer": "5+6=11",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "6번째 기호에서 막대를 빼야 해요.",
+        "막대를 3번째 기호에 놓아야 해요.",
+        "정답 식: 5+6=11"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 6.",
+        "Place matchsticks on symbol 3.",
+        "Answer: 5+6=11"
+      ],
+      "ja": [
+        "6番目の記号から棒を取り除きます。",
+        "3番目の記号に棒を置きます。",
+        "正解の式：5+6=11"
+      ],
+      "zh": [
+        "需要从第6个符号上拿走火柴棒。",
+        "需要把火柴棒放到第3个符号上。",
+        "正确算式：5+6=11"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 6.",
+        "Coloca cerillas en el símbolo 3.",
+        "Ecuación correcta: 5+6=11"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 6.",
+        "Placez des allumettes sur le symbole 3.",
+        "Équation correcte : 5+6=11"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 6 weg.",
+        "Lege Streichhölzer auf das Symbol 3.",
+        "Richtige Gleichung: 5+6=11"
+      ]
+    },
+    "explanation": {
+      "ko": "5+5=17 → 5+6=11",
+      "en": "5+5=17 → 5+6=11",
+      "ja": "5+5=17 → 5+6=11",
+      "zh": "5+5=17 → 5+6=11",
+      "es": "5+5=17 → 5+6=11",
+      "fr": "5+5=17 → 5+6=11",
+      "de": "5+5=17 → 5+6=11"
+    }
+  },
+  {
+    "id": "mt6_s02",
+    "type": "match",
+    "track": "match",
+    "chapter": 6,
+    "order": 2,
+    "equation": [
+      "1",
+      "4",
+      "-",
+      "3",
+      "=",
+      "6"
+    ],
+    "moves": 1,
+    "answer": "14-9=5",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "6번째 기호에서 막대를 빼야 해요.",
+        "막대를 4번째 기호에 놓아야 해요.",
+        "정답 식: 14−9=5"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 6.",
+        "Place matchsticks on symbol 4.",
+        "Answer: 14−9=5"
+      ],
+      "ja": [
+        "6番目の記号から棒を取り除きます。",
+        "4番目の記号に棒を置きます。",
+        "正解の式：14−9=5"
+      ],
+      "zh": [
+        "需要从第6个符号上拿走火柴棒。",
+        "需要把火柴棒放到第4个符号上。",
+        "正确算式：14−9=5"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 6.",
+        "Coloca cerillas en el símbolo 4.",
+        "Ecuación correcta: 14−9=5"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 6.",
+        "Placez des allumettes sur le symbole 4.",
+        "Équation correcte : 14−9=5"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 6 weg.",
+        "Lege Streichhölzer auf das Symbol 4.",
+        "Richtige Gleichung: 14−9=5"
+      ]
+    },
+    "explanation": {
+      "ko": "14−3=6 → 14−9=5",
+      "en": "14−3=6 → 14−9=5",
+      "ja": "14−3=6 → 14−9=5",
+      "zh": "14−3=6 → 14−9=5",
+      "es": "14−3=6 → 14−9=5",
+      "fr": "14−3=6 → 14−9=5",
+      "de": "14−3=6 → 14−9=5"
+    }
+  },
+  {
+    "id": "mt6_s03",
+    "type": "match",
+    "track": "match",
+    "chapter": 6,
+    "order": 3,
+    "equation": [
+      "7",
+      "1",
+      "-",
+      "4",
+      "=",
+      "1"
+    ],
+    "moves": 1,
+    "answer": "11-4=7",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1번째 기호에서 막대를 빼야 해요.",
+        "막대를 6번째 기호에 놓아야 해요.",
+        "정답 식: 11−4=7"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 1.",
+        "Place matchsticks on symbol 6.",
+        "Answer: 11−4=7"
+      ],
+      "ja": [
+        "1番目の記号から棒を取り除きます。",
+        "6番目の記号に棒を置きます。",
+        "正解の式：11−4=7"
+      ],
+      "zh": [
+        "需要从第1个符号上拿走火柴棒。",
+        "需要把火柴棒放到第6个符号上。",
+        "正确算式：11−4=7"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 1.",
+        "Coloca cerillas en el símbolo 6.",
+        "Ecuación correcta: 11−4=7"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 1.",
+        "Placez des allumettes sur le symbole 6.",
+        "Équation correcte : 11−4=7"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 1 weg.",
+        "Lege Streichhölzer auf das Symbol 6.",
+        "Richtige Gleichung: 11−4=7"
+      ]
+    },
+    "explanation": {
+      "ko": "71−4=1 → 11−4=7",
+      "en": "71−4=1 → 11−4=7",
+      "ja": "71−4=1 → 11−4=7",
+      "zh": "71−4=1 → 11−4=7",
+      "es": "71−4=1 → 11−4=7",
+      "fr": "71−4=1 → 11−4=7",
+      "de": "71−4=1 → 11−4=7"
+    }
+  },
+  {
+    "id": "mt6_s04",
+    "type": "match",
+    "track": "match",
+    "chapter": 6,
+    "order": 4,
+    "equation": [
+      "8",
+      "+",
+      "3",
+      "1",
+      "=",
+      "3",
+      "1"
+    ],
+    "moves": 1,
+    "answer": "6+31=37",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1번째 기호에서 막대를 빼야 해요.",
+        "막대를 7번째 기호에 놓아야 해요.",
+        "정답 식: 6+31=37"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 1.",
+        "Place matchsticks on symbol 7.",
+        "Answer: 6+31=37"
+      ],
+      "ja": [
+        "1番目の記号から棒を取り除きます。",
+        "7番目の記号に棒を置きます。",
+        "正解の式：6+31=37"
+      ],
+      "zh": [
+        "需要从第1个符号上拿走火柴棒。",
+        "需要把火柴棒放到第7个符号上。",
+        "正确算式：6+31=37"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 1.",
+        "Coloca cerillas en el símbolo 7.",
+        "Ecuación correcta: 6+31=37"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 1.",
+        "Placez des allumettes sur le symbole 7.",
+        "Équation correcte : 6+31=37"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 1 weg.",
+        "Lege Streichhölzer auf das Symbol 7.",
+        "Richtige Gleichung: 6+31=37"
+      ]
+    },
+    "explanation": {
+      "ko": "8+31=31 → 6+31=37",
+      "en": "8+31=31 → 6+31=37",
+      "ja": "8+31=31 → 6+31=37",
+      "zh": "8+31=31 → 6+31=37",
+      "es": "8+31=31 → 6+31=37",
+      "fr": "8+31=31 → 6+31=37",
+      "de": "8+31=31 → 6+31=37"
+    }
+  },
+  {
+    "id": "mt6_s05",
+    "type": "match",
+    "track": "match",
+    "chapter": 6,
+    "order": 5,
+    "equation": [
+      "9",
+      "0",
+      "-",
+      "6",
+      "8",
+      "=",
+      "4"
+    ],
+    "moves": 1,
+    "answer": "90-86=4",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "5번째 기호에서 막대를 빼야 해요.",
+        "막대를 4번째 기호에 놓아야 해요.",
+        "정답 식: 90−86=4"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 5.",
+        "Place matchsticks on symbol 4.",
+        "Answer: 90−86=4"
+      ],
+      "ja": [
+        "5番目の記号から棒を取り除きます。",
+        "4番目の記号に棒を置きます。",
+        "正解の式：90−86=4"
+      ],
+      "zh": [
+        "需要从第5个符号上拿走火柴棒。",
+        "需要把火柴棒放到第4个符号上。",
+        "正确算式：90−86=4"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 5.",
+        "Coloca cerillas en el símbolo 4.",
+        "Ecuación correcta: 90−86=4"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 5.",
+        "Placez des allumettes sur le symbole 4.",
+        "Équation correcte : 90−86=4"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 5 weg.",
+        "Lege Streichhölzer auf das Symbol 4.",
+        "Richtige Gleichung: 90−86=4"
+      ]
+    },
+    "explanation": {
+      "ko": "90−68=4 → 90−86=4",
+      "en": "90−68=4 → 90−86=4",
+      "ja": "90−68=4 → 90−86=4",
+      "zh": "90−68=4 → 90−86=4",
+      "es": "90−68=4 → 90−86=4",
+      "fr": "90−68=4 → 90−86=4",
+      "de": "90−68=4 → 90−86=4"
+    }
+  },
+  {
+    "id": "mt6_s06",
+    "type": "match",
+    "track": "match",
+    "chapter": 6,
+    "order": 6,
+    "equation": [
+      "3",
+      "4",
+      "-",
+      "7",
+      "=",
+      "3",
+      "5"
+    ],
+    "moves": 1,
+    "answer": "34+1=35",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "4번째 기호에서 막대를 빼야 해요.",
+        "막대를 3번째 기호에 놓아야 해요.",
+        "정답 식: 34+1=35"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 4.",
+        "Place matchsticks on symbol 3.",
+        "Answer: 34+1=35"
+      ],
+      "ja": [
+        "4番目の記号から棒を取り除きます。",
+        "3番目の記号に棒を置きます。",
+        "正解の式：34+1=35"
+      ],
+      "zh": [
+        "需要从第4个符号上拿走火柴棒。",
+        "需要把火柴棒放到第3个符号上。",
+        "正确算式：34+1=35"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 4.",
+        "Coloca cerillas en el símbolo 3.",
+        "Ecuación correcta: 34+1=35"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 4.",
+        "Placez des allumettes sur le symbole 3.",
+        "Équation correcte : 34+1=35"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 4 weg.",
+        "Lege Streichhölzer auf das Symbol 3.",
+        "Richtige Gleichung: 34+1=35"
+      ]
+    },
+    "explanation": {
+      "ko": "34−7=35 → 34+1=35",
+      "en": "34−7=35 → 34+1=35",
+      "ja": "34−7=35 → 34+1=35",
+      "zh": "34−7=35 → 34+1=35",
+      "es": "34−7=35 → 34+1=35",
+      "fr": "34−7=35 → 34+1=35",
+      "de": "34−7=35 → 34+1=35"
+    }
+  },
+  {
+    "id": "mt7_s01",
+    "type": "match",
+    "track": "match",
+    "chapter": 7,
+    "order": 1,
+    "equation": [
+      "8",
+      "-",
+      "8",
+      "+",
+      "6",
+      "=",
+      "0"
+    ],
+    "moves": 1,
+    "answer": "8-8+0=0",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "5번째 기호에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "정답 식: 8−8+0=0"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 5.",
+        "Move that matchstick within the same symbol.",
+        "Answer: 8−8+0=0"
+      ],
+      "ja": [
+        "5番目の記号から棒を取り除きます。",
+        "取った棒は同じ記号の中で動かします。",
+        "正解の式：8−8+0=0"
+      ],
+      "zh": [
+        "需要从第5个符号上拿走火柴棒。",
+        "把拿走的火柴棒在同一个符号内移动。",
+        "正确算式：8−8+0=0"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 5.",
+        "Mueve la cerilla dentro del mismo símbolo.",
+        "Ecuación correcta: 8−8+0=0"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 5.",
+        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Équation correcte : 8−8+0=0"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 5 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Richtige Gleichung: 8−8+0=0"
+      ]
+    },
+    "explanation": {
+      "ko": "8−8+6=0 → 8−8+0=0",
+      "en": "8−8+6=0 → 8−8+0=0",
+      "ja": "8−8+6=0 → 8−8+0=0",
+      "zh": "8−8+6=0 → 8−8+0=0",
+      "es": "8−8+6=0 → 8−8+0=0",
+      "fr": "8−8+6=0 → 8−8+0=0",
+      "de": "8−8+6=0 → 8−8+0=0"
+    }
+  },
+  {
+    "id": "mt7_s02",
+    "type": "match",
+    "track": "match",
+    "chapter": 7,
+    "order": 2,
+    "equation": [
+      "5",
+      "-",
+      "5",
+      "+",
+      "3",
+      "=",
+      "1"
+    ],
+    "moves": 1,
+    "answer": "3-5+3=1",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1번째 기호에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "정답 식: 3−5+3=1"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 1.",
+        "Move that matchstick within the same symbol.",
+        "Answer: 3−5+3=1"
+      ],
+      "ja": [
+        "1番目の記号から棒を取り除きます。",
+        "取った棒は同じ記号の中で動かします。",
+        "正解の式：3−5+3=1"
+      ],
+      "zh": [
+        "需要从第1个符号上拿走火柴棒。",
+        "把拿走的火柴棒在同一个符号内移动。",
+        "正确算式：3−5+3=1"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 1.",
+        "Mueve la cerilla dentro del mismo símbolo.",
+        "Ecuación correcta: 3−5+3=1"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 1.",
+        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Équation correcte : 3−5+3=1"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 1 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Richtige Gleichung: 3−5+3=1"
+      ]
+    },
+    "explanation": {
+      "ko": "5−5+3=1 → 3−5+3=1",
+      "en": "5−5+3=1 → 3−5+3=1",
+      "ja": "5−5+3=1 → 3−5+3=1",
+      "zh": "5−5+3=1 → 3−5+3=1",
+      "es": "5−5+3=1 → 3−5+3=1",
+      "fr": "5−5+3=1 → 3−5+3=1",
+      "de": "5−5+3=1 → 3−5+3=1"
+    }
+  },
+  {
+    "id": "mt7_s03",
+    "type": "match",
+    "track": "match",
+    "chapter": 7,
+    "order": 3,
+    "equation": [
+      "2",
+      "-",
+      "9",
+      "+",
+      "1",
+      "0",
+      "=",
+      "5"
+    ],
+    "moves": 1,
+    "answer": "2-9+10=3",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "8번째 기호에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "정답 식: 2−9+10=3"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 8.",
+        "Move that matchstick within the same symbol.",
+        "Answer: 2−9+10=3"
+      ],
+      "ja": [
+        "8番目の記号から棒を取り除きます。",
+        "取った棒は同じ記号の中で動かします。",
+        "正解の式：2−9+10=3"
+      ],
+      "zh": [
+        "需要从第8个符号上拿走火柴棒。",
+        "把拿走的火柴棒在同一个符号内移动。",
+        "正确算式：2−9+10=3"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 8.",
+        "Mueve la cerilla dentro del mismo símbolo.",
+        "Ecuación correcta: 2−9+10=3"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 8.",
+        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Équation correcte : 2−9+10=3"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 8 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Richtige Gleichung: 2−9+10=3"
+      ]
+    },
+    "explanation": {
+      "ko": "2−9+10=5 → 2−9+10=3",
+      "en": "2−9+10=5 → 2−9+10=3",
+      "ja": "2−9+10=5 → 2−9+10=3",
+      "zh": "2−9+10=5 → 2−9+10=3",
+      "es": "2−9+10=5 → 2−9+10=3",
+      "fr": "2−9+10=5 → 2−9+10=3",
+      "de": "2−9+10=5 → 2−9+10=3"
+    }
+  },
+  {
+    "id": "mt7_s04",
+    "type": "match",
+    "track": "match",
+    "chapter": 7,
+    "order": 4,
+    "equation": [
+      "1",
+      "-",
+      "8",
+      "+",
+      "6",
+      "=",
+      "9"
+    ],
+    "moves": 1,
+    "answer": "1-0+8=9",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "3번째 기호에서 막대를 빼야 해요.",
+        "막대를 5번째 기호에 놓아야 해요.",
+        "정답 식: 1−0+8=9"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 3.",
+        "Place matchsticks on symbol 5.",
+        "Answer: 1−0+8=9"
+      ],
+      "ja": [
+        "3番目の記号から棒を取り除きます。",
+        "5番目の記号に棒を置きます。",
+        "正解の式：1−0+8=9"
+      ],
+      "zh": [
+        "需要从第3个符号上拿走火柴棒。",
+        "需要把火柴棒放到第5个符号上。",
+        "正确算式：1−0+8=9"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 3.",
+        "Coloca cerillas en el símbolo 5.",
+        "Ecuación correcta: 1−0+8=9"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 3.",
+        "Placez des allumettes sur le symbole 5.",
+        "Équation correcte : 1−0+8=9"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 3 weg.",
+        "Lege Streichhölzer auf das Symbol 5.",
+        "Richtige Gleichung: 1−0+8=9"
+      ]
+    },
+    "explanation": {
+      "ko": "1−8+6=9 → 1−0+8=9",
+      "en": "1−8+6=9 → 1−0+8=9",
+      "ja": "1−8+6=9 → 1−0+8=9",
+      "zh": "1−8+6=9 → 1−0+8=9",
+      "es": "1−8+6=9 → 1−0+8=9",
+      "fr": "1−8+6=9 → 1−0+8=9",
+      "de": "1−8+6=9 → 1−0+8=9"
+    }
+  },
+  {
+    "id": "mt7_s05",
+    "type": "match",
+    "track": "match",
+    "chapter": 7,
+    "order": 5,
+    "equation": [
+      "1",
+      "9",
+      "-",
+      "3",
+      "-",
+      "1",
+      "=",
+      "8"
+    ],
+    "moves": 1,
+    "answer": "19-3-7=9",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "8번째 기호에서 막대를 빼야 해요.",
+        "막대를 6번째 기호에 놓아야 해요.",
+        "정답 식: 19−3−7=9"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 8.",
+        "Place matchsticks on symbol 6.",
+        "Answer: 19−3−7=9"
+      ],
+      "ja": [
+        "8番目の記号から棒を取り除きます。",
+        "6番目の記号に棒を置きます。",
+        "正解の式：19−3−7=9"
+      ],
+      "zh": [
+        "需要从第8个符号上拿走火柴棒。",
+        "需要把火柴棒放到第6个符号上。",
+        "正确算式：19−3−7=9"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 8.",
+        "Coloca cerillas en el símbolo 6.",
+        "Ecuación correcta: 19−3−7=9"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 8.",
+        "Placez des allumettes sur le symbole 6.",
+        "Équation correcte : 19−3−7=9"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 8 weg.",
+        "Lege Streichhölzer auf das Symbol 6.",
+        "Richtige Gleichung: 19−3−7=9"
+      ]
+    },
+    "explanation": {
+      "ko": "19−3−1=8 → 19−3−7=9",
+      "en": "19−3−1=8 → 19−3−7=9",
+      "ja": "19−3−1=8 → 19−3−7=9",
+      "zh": "19−3−1=8 → 19−3−7=9",
+      "es": "19−3−1=8 → 19−3−7=9",
+      "fr": "19−3−1=8 → 19−3−7=9",
+      "de": "19−3−1=8 → 19−3−7=9"
+    }
+  },
+  {
+    "id": "mt7_s06",
+    "type": "match",
+    "track": "match",
+    "chapter": 7,
+    "order": 6,
+    "equation": [
+      "6",
+      "-",
+      "1",
+      "1",
+      "-",
+      "6",
+      "=",
+      "0"
+    ],
+    "moves": 1,
+    "answer": "5-11+6=0",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1번째 기호에서 막대를 빼야 해요.",
+        "막대를 5번째 기호에 놓아야 해요.",
+        "정답 식: 5−11+6=0"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 1.",
+        "Place matchsticks on symbol 5.",
+        "Answer: 5−11+6=0"
+      ],
+      "ja": [
+        "1番目の記号から棒を取り除きます。",
+        "5番目の記号に棒を置きます。",
+        "正解の式：5−11+6=0"
+      ],
+      "zh": [
+        "需要从第1个符号上拿走火柴棒。",
+        "需要把火柴棒放到第5个符号上。",
+        "正确算式：5−11+6=0"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 1.",
+        "Coloca cerillas en el símbolo 5.",
+        "Ecuación correcta: 5−11+6=0"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 1.",
+        "Placez des allumettes sur le symbole 5.",
+        "Équation correcte : 5−11+6=0"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 1 weg.",
+        "Lege Streichhölzer auf das Symbol 5.",
+        "Richtige Gleichung: 5−11+6=0"
+      ]
+    },
+    "explanation": {
+      "ko": "6−11−6=0 → 5−11+6=0",
+      "en": "6−11−6=0 → 5−11+6=0",
+      "ja": "6−11−6=0 → 5−11+6=0",
+      "zh": "6−11−6=0 → 5−11+6=0",
+      "es": "6−11−6=0 → 5−11+6=0",
+      "fr": "6−11−6=0 → 5−11+6=0",
+      "de": "6−11−6=0 → 5−11+6=0"
+    }
+  },
+  {
+    "id": "mt8_s01",
+    "type": "match",
+    "track": "match",
+    "chapter": 8,
+    "order": 1,
+    "equation": [
+      "2",
+      "+",
+      "8",
+      "4",
+      "=",
+      "3",
+      "6"
+    ],
+    "moves": 1,
+    "answer": "2+94=96",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "3번째 기호에서 막대를 빼야 해요.",
+        "막대를 6번째 기호에 놓아야 해요.",
+        "정답 식: 2+94=96"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 3.",
+        "Place matchsticks on symbol 6.",
+        "Answer: 2+94=96"
+      ],
+      "ja": [
+        "3番目の記号から棒を取り除きます。",
+        "6番目の記号に棒を置きます。",
+        "正解の式：2+94=96"
+      ],
+      "zh": [
+        "需要从第3个符号上拿走火柴棒。",
+        "需要把火柴棒放到第6个符号上。",
+        "正确算式：2+94=96"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 3.",
+        "Coloca cerillas en el símbolo 6.",
+        "Ecuación correcta: 2+94=96"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 3.",
+        "Placez des allumettes sur le symbole 6.",
+        "Équation correcte : 2+94=96"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 3 weg.",
+        "Lege Streichhölzer auf das Symbol 6.",
+        "Richtige Gleichung: 2+94=96"
+      ]
+    },
+    "explanation": {
+      "ko": "2+84=36 → 2+94=96",
+      "en": "2+84=36 → 2+94=96",
+      "ja": "2+84=36 → 2+94=96",
+      "zh": "2+84=36 → 2+94=96",
+      "es": "2+84=36 → 2+94=96",
+      "fr": "2+84=36 → 2+94=96",
+      "de": "2+84=36 → 2+94=96"
+    }
+  },
+  {
+    "id": "mt8_s02",
+    "type": "match",
+    "track": "match",
+    "chapter": 8,
+    "order": 2,
+    "equation": [
+      "1",
+      "7",
+      "+",
+      "9",
+      "4",
+      "=",
+      "1",
+      "1"
+    ],
+    "moves": 1,
+    "answer": "17+54=71",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "4번째 기호에서 막대를 빼야 해요.",
+        "막대를 7번째 기호에 놓아야 해요.",
+        "정답 식: 17+54=71"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 4.",
+        "Place matchsticks on symbol 7.",
+        "Answer: 17+54=71"
+      ],
+      "ja": [
+        "4番目の記号から棒を取り除きます。",
+        "7番目の記号に棒を置きます。",
+        "正解の式：17+54=71"
+      ],
+      "zh": [
+        "需要从第4个符号上拿走火柴棒。",
+        "需要把火柴棒放到第7个符号上。",
+        "正确算式：17+54=71"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 4.",
+        "Coloca cerillas en el símbolo 7.",
+        "Ecuación correcta: 17+54=71"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 4.",
+        "Placez des allumettes sur le symbole 7.",
+        "Équation correcte : 17+54=71"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 4 weg.",
+        "Lege Streichhölzer auf das Symbol 7.",
+        "Richtige Gleichung: 17+54=71"
+      ]
+    },
+    "explanation": {
+      "ko": "17+94=11 → 17+54=71",
+      "en": "17+94=11 → 17+54=71",
+      "ja": "17+94=11 → 17+54=71",
+      "zh": "17+94=11 → 17+54=71",
+      "es": "17+94=11 → 17+54=71",
+      "fr": "17+94=11 → 17+54=71",
+      "de": "17+94=11 → 17+54=71"
+    }
+  },
+  {
+    "id": "mt8_s03",
+    "type": "match",
+    "track": "match",
+    "chapter": 8,
+    "order": 3,
+    "equation": [
+      "3",
+      "0",
+      "+",
+      "7",
+      "1",
+      "=",
+      "4",
+      "7"
+    ],
+    "moves": 1,
+    "answer": "30+17=47",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "4번째 기호에서 막대를 빼야 해요.",
+        "막대를 5번째 기호에 놓아야 해요.",
+        "정답 식: 30+17=47"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 4.",
+        "Place matchsticks on symbol 5.",
+        "Answer: 30+17=47"
+      ],
+      "ja": [
+        "4番目の記号から棒を取り除きます。",
+        "5番目の記号に棒を置きます。",
+        "正解の式：30+17=47"
+      ],
+      "zh": [
+        "需要从第4个符号上拿走火柴棒。",
+        "需要把火柴棒放到第5个符号上。",
+        "正确算式：30+17=47"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 4.",
+        "Coloca cerillas en el símbolo 5.",
+        "Ecuación correcta: 30+17=47"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 4.",
+        "Placez des allumettes sur le symbole 5.",
+        "Équation correcte : 30+17=47"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 4 weg.",
+        "Lege Streichhölzer auf das Symbol 5.",
+        "Richtige Gleichung: 30+17=47"
+      ]
+    },
+    "explanation": {
+      "ko": "30+71=47 → 30+17=47",
+      "en": "30+71=47 → 30+17=47",
+      "ja": "30+71=47 → 30+17=47",
+      "zh": "30+71=47 → 30+17=47",
+      "es": "30+71=47 → 30+17=47",
+      "fr": "30+71=47 → 30+17=47",
+      "de": "30+71=47 → 30+17=47"
+    }
+  },
+  {
+    "id": "mt8_s04",
+    "type": "match",
+    "track": "match",
+    "chapter": 8,
+    "order": 4,
+    "equation": [
+      "8",
+      "+",
+      "6",
+      "+",
+      "4",
+      "=",
+      "5"
+    ],
+    "moves": 1,
+    "answer": "8-6+4=6",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "2번째 기호에서 막대를 빼야 해요.",
+        "막대를 7번째 기호에 놓아야 해요.",
+        "정답 식: 8−6+4=6"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 2.",
+        "Place matchsticks on symbol 7.",
+        "Answer: 8−6+4=6"
+      ],
+      "ja": [
+        "2番目の記号から棒を取り除きます。",
+        "7番目の記号に棒を置きます。",
+        "正解の式：8−6+4=6"
+      ],
+      "zh": [
+        "需要从第2个符号上拿走火柴棒。",
+        "需要把火柴棒放到第7个符号上。",
+        "正确算式：8−6+4=6"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 2.",
+        "Coloca cerillas en el símbolo 7.",
+        "Ecuación correcta: 8−6+4=6"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 2.",
+        "Placez des allumettes sur le symbole 7.",
+        "Équation correcte : 8−6+4=6"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 2 weg.",
+        "Lege Streichhölzer auf das Symbol 7.",
+        "Richtige Gleichung: 8−6+4=6"
+      ]
+    },
+    "explanation": {
+      "ko": "8+6+4=5 → 8−6+4=6",
+      "en": "8+6+4=5 → 8−6+4=6",
+      "ja": "8+6+4=5 → 8−6+4=6",
+      "zh": "8+6+4=5 → 8−6+4=6",
+      "es": "8+6+4=5 → 8−6+4=6",
+      "fr": "8+6+4=5 → 8−6+4=6",
+      "de": "8+6+4=5 → 8−6+4=6"
+    }
+  },
+  {
+    "id": "mt8_s05",
+    "type": "match",
+    "track": "match",
+    "chapter": 8,
+    "order": 5,
+    "equation": [
+      "9",
+      "8",
+      "+",
+      "8",
+      "7",
+      "=",
+      "1"
+    ],
+    "moves": 1,
+    "answer": "88-87=1",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "3번째 기호에서 막대를 빼야 해요.",
+        "막대를 1번째 기호에 놓아야 해요.",
+        "정답 식: 88−87=1"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 3.",
+        "Place matchsticks on symbol 1.",
+        "Answer: 88−87=1"
+      ],
+      "ja": [
+        "3番目の記号から棒を取り除きます。",
+        "1番目の記号に棒を置きます。",
+        "正解の式：88−87=1"
+      ],
+      "zh": [
+        "需要从第3个符号上拿走火柴棒。",
+        "需要把火柴棒放到第1个符号上。",
+        "正确算式：88−87=1"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 3.",
+        "Coloca cerillas en el símbolo 1.",
+        "Ecuación correcta: 88−87=1"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 3.",
+        "Placez des allumettes sur le symbole 1.",
+        "Équation correcte : 88−87=1"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 3 weg.",
+        "Lege Streichhölzer auf das Symbol 1.",
+        "Richtige Gleichung: 88−87=1"
+      ]
+    },
+    "explanation": {
+      "ko": "98+87=1 → 88−87=1",
+      "en": "98+87=1 → 88−87=1",
+      "ja": "98+87=1 → 88−87=1",
+      "zh": "98+87=1 → 88−87=1",
+      "es": "98+87=1 → 88−87=1",
+      "fr": "98+87=1 → 88−87=1",
+      "de": "98+87=1 → 88−87=1"
+    }
+  },
+  {
+    "id": "mt8_s06",
+    "type": "match",
+    "track": "match",
+    "chapter": 8,
+    "order": 6,
+    "equation": [
+      "8",
+      "-",
+      "7",
+      "+",
+      "1",
+      "1",
+      "=",
+      "4"
+    ],
+    "moves": 1,
+    "answer": "8+7-11=4",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "4번째 기호에서 막대를 빼야 해요.",
+        "막대를 2번째 기호에 놓아야 해요.",
+        "정답 식: 8+7−11=4"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 4.",
+        "Place matchsticks on symbol 2.",
+        "Answer: 8+7−11=4"
+      ],
+      "ja": [
+        "4番目の記号から棒を取り除きます。",
+        "2番目の記号に棒を置きます。",
+        "正解の式：8+7−11=4"
+      ],
+      "zh": [
+        "需要从第4个符号上拿走火柴棒。",
+        "需要把火柴棒放到第2个符号上。",
+        "正确算式：8+7−11=4"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 4.",
+        "Coloca cerillas en el símbolo 2.",
+        "Ecuación correcta: 8+7−11=4"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 4.",
+        "Placez des allumettes sur le symbole 2.",
+        "Équation correcte : 8+7−11=4"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 4 weg.",
+        "Lege Streichhölzer auf das Symbol 2.",
+        "Richtige Gleichung: 8+7−11=4"
+      ]
+    },
+    "explanation": {
+      "ko": "8−7+11=4 → 8+7−11=4",
+      "en": "8−7+11=4 → 8+7−11=4",
+      "ja": "8−7+11=4 → 8+7−11=4",
+      "zh": "8−7+11=4 → 8+7−11=4",
+      "es": "8−7+11=4 → 8+7−11=4",
+      "fr": "8−7+11=4 → 8+7−11=4",
+      "de": "8−7+11=4 → 8+7−11=4"
+    }
+  },
+  {
+    "id": "mt9_s01",
+    "type": "match",
+    "track": "match",
+    "chapter": 9,
+    "order": 1,
+    "equation": [
+      "2",
+      "9",
+      "+",
+      "3",
+      "=",
+      "3",
+      "5"
+    ],
+    "moves": 2,
+    "answer": "29+3=32",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "7번째 기호에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "정답 식: 29+3=32"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 7.",
+        "Move that matchstick within the same symbol.",
+        "Answer: 29+3=32"
+      ],
+      "ja": [
+        "7番目の記号から棒を取り除きます。",
+        "取った棒は同じ記号の中で動かします。",
+        "正解の式：29+3=32"
+      ],
+      "zh": [
+        "需要从第7个符号上拿走火柴棒。",
+        "把拿走的火柴棒在同一个符号内移动。",
+        "正确算式：29+3=32"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 7.",
+        "Mueve la cerilla dentro del mismo símbolo.",
+        "Ecuación correcta: 29+3=32"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 7.",
+        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Équation correcte : 29+3=32"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 7 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Richtige Gleichung: 29+3=32"
+      ]
+    },
+    "explanation": {
+      "ko": "29+3=35 → 29+3=32",
+      "en": "29+3=35 → 29+3=32",
+      "ja": "29+3=35 → 29+3=32",
+      "zh": "29+3=35 → 29+3=32",
+      "es": "29+3=35 → 29+3=32",
+      "fr": "29+3=35 → 29+3=32",
+      "de": "29+3=35 → 29+3=32"
+    }
+  },
+  {
+    "id": "mt9_s02",
+    "type": "match",
+    "track": "match",
+    "chapter": 9,
+    "order": 2,
+    "equation": [
+      "6",
+      "+",
+      "5",
+      "=",
+      "1",
+      "2"
+    ],
+    "moves": 2,
+    "answer": "3+9=12",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1번째 기호에서 막대를 빼야 해요.",
+        "막대를 1, 3번째 기호에 놓아야 해요. (1번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 3+9=12"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 1.",
+        "Place matchsticks on symbols 1, 3. (Symbol 1: move within the same symbol)",
+        "Answer: 3+9=12"
+      ],
+      "ja": [
+        "1番目の記号から棒を取り除きます。",
+        "1、3番目の記号に棒を置きます。（1番目は同じ記号の中で動かします）",
+        "正解の式：3+9=12"
+      ],
+      "zh": [
+        "需要从第1个符号上拿走火柴棒。",
+        "需要把火柴棒放到第1、3个符号上。（第1个符号在自身内部移动）",
+        "正确算式：3+9=12"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 1.",
+        "Coloca cerillas en los símbolos 1, 3. (Símbolo 1: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 3+9=12"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 1.",
+        "Placez des allumettes sur les symboles 1, 3. (Symbole 1 : déplacement dans le même symbole)",
+        "Équation correcte : 3+9=12"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 1 weg.",
+        "Lege Streichhölzer auf die Symbole 1, 3. (Symbol 1: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 3+9=12"
+      ]
+    },
+    "explanation": {
+      "ko": "6+5=12 → 3+9=12",
+      "en": "6+5=12 → 3+9=12",
+      "ja": "6+5=12 → 3+9=12",
+      "zh": "6+5=12 → 3+9=12",
+      "es": "6+5=12 → 3+9=12",
+      "fr": "6+5=12 → 3+9=12",
+      "de": "6+5=12 → 3+9=12"
+    }
+  },
+  {
+    "id": "mt9_s03",
+    "type": "match",
+    "track": "match",
+    "chapter": 9,
+    "order": 3,
+    "equation": [
+      "1",
+      "1",
+      "-",
+      "7",
+      "-",
+      "3",
+      "=",
+      "8"
+    ],
+    "moves": 2,
+    "answer": "11-3-3=5",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "8번째 기호에서 막대를 빼야 해요.",
+        "막대를 4번째 기호에 놓아야 해요.",
+        "정답 식: 11−3−3=5"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 8.",
+        "Place matchsticks on symbol 4.",
+        "Answer: 11−3−3=5"
+      ],
+      "ja": [
+        "8番目の記号から棒を取り除きます。",
+        "4番目の記号に棒を置きます。",
+        "正解の式：11−3−3=5"
+      ],
+      "zh": [
+        "需要从第8个符号上拿走火柴棒。",
+        "需要把火柴棒放到第4个符号上。",
+        "正确算式：11−3−3=5"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 8.",
+        "Coloca cerillas en el símbolo 4.",
+        "Ecuación correcta: 11−3−3=5"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 8.",
+        "Placez des allumettes sur le symbole 4.",
+        "Équation correcte : 11−3−3=5"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 8 weg.",
+        "Lege Streichhölzer auf das Symbol 4.",
+        "Richtige Gleichung: 11−3−3=5"
+      ]
+    },
+    "explanation": {
+      "ko": "11−7−3=8 → 11−3−3=5",
+      "en": "11−7−3=8 → 11−3−3=5",
+      "ja": "11−7−3=8 → 11−3−3=5",
+      "zh": "11−7−3=8 → 11−3−3=5",
+      "es": "11−7−3=8 → 11−3−3=5",
+      "fr": "11−7−3=8 → 11−3−3=5",
+      "de": "11−7−3=8 → 11−3−3=5"
+    }
+  },
+  {
+    "id": "mt9_s04",
+    "type": "match",
+    "track": "match",
+    "chapter": 9,
+    "order": 4,
+    "equation": [
+      "2",
+      "+",
+      "1",
+      "2",
+      "-",
+      "8",
+      "=",
+      "8"
+    ],
+    "moves": 2,
+    "answer": "3+13-8=8",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1, 4번째 기호에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "정답 식: 3+13−8=8"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 1, 4.",
+        "Move that matchstick within the same symbol.",
+        "Answer: 3+13−8=8"
+      ],
+      "ja": [
+        "1、4番目の記号から棒を取り除きます。",
+        "取った棒は同じ記号の中で動かします。",
+        "正解の式：3+13−8=8"
+      ],
+      "zh": [
+        "需要从第1、4个符号上拿走火柴棒。",
+        "把拿走的火柴棒在同一个符号内移动。",
+        "正确算式：3+13−8=8"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 1, 4.",
+        "Mueve la cerilla dentro del mismo símbolo.",
+        "Ecuación correcta: 3+13−8=8"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 1, 4.",
+        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Équation correcte : 3+13−8=8"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 1, 4 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Richtige Gleichung: 3+13−8=8"
+      ]
+    },
+    "explanation": {
+      "ko": "2+12−8=8 → 3+13−8=8",
+      "en": "2+12−8=8 → 3+13−8=8",
+      "ja": "2+12−8=8 → 3+13−8=8",
+      "zh": "2+12−8=8 → 3+13−8=8",
+      "es": "2+12−8=8 → 3+13−8=8",
+      "fr": "2+12−8=8 → 3+13−8=8",
+      "de": "2+12−8=8 → 3+13−8=8"
+    }
+  },
+  {
+    "id": "mt9_s05",
+    "type": "match",
+    "track": "match",
+    "chapter": 9,
+    "order": 5,
+    "equation": [
+      "5",
+      "-",
+      "7",
+      "0",
+      "+",
+      "0",
+      "=",
+      "5"
+    ],
+    "moves": 2,
+    "answer": "5-10+8=3",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "3, 8번째 기호에서 막대를 빼야 해요.",
+        "막대를 6, 8번째 기호에 놓아야 해요. (8번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 5−10+8=3"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 3, 8.",
+        "Place matchsticks on symbols 6, 8. (Symbol 8: move within the same symbol)",
+        "Answer: 5−10+8=3"
+      ],
+      "ja": [
+        "3、8番目の記号から棒を取り除きます。",
+        "6、8番目の記号に棒を置きます。（8番目は同じ記号の中で動かします）",
+        "正解の式：5−10+8=3"
+      ],
+      "zh": [
+        "需要从第3、8个符号上拿走火柴棒。",
+        "需要把火柴棒放到第6、8个符号上。（第8个符号在自身内部移动）",
+        "正确算式：5−10+8=3"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 3, 8.",
+        "Coloca cerillas en los símbolos 6, 8. (Símbolo 8: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 5−10+8=3"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 3, 8.",
+        "Placez des allumettes sur les symboles 6, 8. (Symbole 8 : déplacement dans le même symbole)",
+        "Équation correcte : 5−10+8=3"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 3, 8 weg.",
+        "Lege Streichhölzer auf die Symbole 6, 8. (Symbol 8: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 5−10+8=3"
+      ]
+    },
+    "explanation": {
+      "ko": "5−70+0=5 → 5−10+8=3",
+      "en": "5−70+0=5 → 5−10+8=3",
+      "ja": "5−70+0=5 → 5−10+8=3",
+      "zh": "5−70+0=5 → 5−10+8=3",
+      "es": "5−70+0=5 → 5−10+8=3",
+      "fr": "5−70+0=5 → 5−10+8=3",
+      "de": "5−70+0=5 → 5−10+8=3"
+    }
+  },
+  {
+    "id": "mt9_s06",
+    "type": "match",
+    "track": "match",
+    "chapter": 9,
+    "order": 6,
+    "equation": [
+      "2",
+      "-",
+      "9",
+      "5",
+      "=",
+      "9",
+      "1"
+    ],
+    "moves": 2,
+    "answer": "2=93-91",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "4, 5번째 기호에서 막대를 빼야 해요.",
+        "막대를 2, 4번째 기호에 놓아야 해요. (4번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 2=93−91"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 4, 5.",
+        "Place matchsticks on symbols 2, 4. (Symbol 4: move within the same symbol)",
+        "Answer: 2=93−91"
+      ],
+      "ja": [
+        "4、5番目の記号から棒を取り除きます。",
+        "2、4番目の記号に棒を置きます。（4番目は同じ記号の中で動かします）",
+        "正解の式：2=93−91"
+      ],
+      "zh": [
+        "需要从第4、5个符号上拿走火柴棒。",
+        "需要把火柴棒放到第2、4个符号上。（第4个符号在自身内部移动）",
+        "正确算式：2=93−91"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 4, 5.",
+        "Coloca cerillas en los símbolos 2, 4. (Símbolo 4: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 2=93−91"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 4, 5.",
+        "Placez des allumettes sur les symboles 2, 4. (Symbole 4 : déplacement dans le même symbole)",
+        "Équation correcte : 2=93−91"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 4, 5 weg.",
+        "Lege Streichhölzer auf die Symbole 2, 4. (Symbol 4: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 2=93−91"
+      ]
+    },
+    "explanation": {
+      "ko": "2−95=91 → 2=93−91",
+      "en": "2−95=91 → 2=93−91",
+      "ja": "2−95=91 → 2=93−91",
+      "zh": "2−95=91 → 2=93−91",
+      "es": "2−95=91 → 2=93−91",
+      "fr": "2−95=91 → 2=93−91",
+      "de": "2−95=91 → 2=93−91"
+    }
+  },
+  {
+    "id": "mt10_s01",
+    "type": "match",
+    "track": "match",
+    "chapter": 10,
+    "order": 1,
+    "equation": [
+      "5",
+      "+",
+      "1",
+      "1",
+      "-",
+      "5",
+      "=",
+      "8"
+    ],
+    "moves": 2,
+    "answer": "2+11-5=8",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1번째 기호에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "정답 식: 2+11−5=8"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 1.",
+        "Move that matchstick within the same symbol.",
+        "Answer: 2+11−5=8"
+      ],
+      "ja": [
+        "1番目の記号から棒を取り除きます。",
+        "取った棒は同じ記号の中で動かします。",
+        "正解の式：2+11−5=8"
+      ],
+      "zh": [
+        "需要从第1个符号上拿走火柴棒。",
+        "把拿走的火柴棒在同一个符号内移动。",
+        "正确算式：2+11−5=8"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 1.",
+        "Mueve la cerilla dentro del mismo símbolo.",
+        "Ecuación correcta: 2+11−5=8"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 1.",
+        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Équation correcte : 2+11−5=8"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 1 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Richtige Gleichung: 2+11−5=8"
+      ]
+    },
+    "explanation": {
+      "ko": "5+11−5=8 → 2+11−5=8",
+      "en": "5+11−5=8 → 2+11−5=8",
+      "ja": "5+11−5=8 → 2+11−5=8",
+      "zh": "5+11−5=8 → 2+11−5=8",
+      "es": "5+11−5=8 → 2+11−5=8",
+      "fr": "5+11−5=8 → 2+11−5=8",
+      "de": "5+11−5=8 → 2+11−5=8"
+    }
+  },
+  {
+    "id": "mt10_s02",
+    "type": "match",
+    "track": "match",
+    "chapter": 10,
+    "order": 2,
+    "equation": [
+      "6",
+      "5",
+      "+",
+      "2",
+      "=",
+      "5",
+      "2"
+    ],
+    "moves": 2,
+    "answer": "50+2=52",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1, 2번째 기호에서 막대를 빼야 해요.",
+        "막대를 2번째 기호에 놓아야 해요. (2번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 50+2=52"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 1, 2.",
+        "Place matchsticks on symbol 2. (Symbol 2: move within the same symbol)",
+        "Answer: 50+2=52"
+      ],
+      "ja": [
+        "1、2番目の記号から棒を取り除きます。",
+        "2番目の記号に棒を置きます。（2番目は同じ記号の中で動かします）",
+        "正解の式：50+2=52"
+      ],
+      "zh": [
+        "需要从第1、2个符号上拿走火柴棒。",
+        "需要把火柴棒放到第2个符号上。（第2个符号在自身内部移动）",
+        "正确算式：50+2=52"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 1, 2.",
+        "Coloca cerillas en el símbolo 2. (Símbolo 2: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 50+2=52"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 1, 2.",
+        "Placez des allumettes sur le symbole 2. (Symbole 2 : déplacement dans le même symbole)",
+        "Équation correcte : 50+2=52"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 1, 2 weg.",
+        "Lege Streichhölzer auf das Symbol 2. (Symbol 2: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 50+2=52"
+      ]
+    },
+    "explanation": {
+      "ko": "65+2=52 → 50+2=52",
+      "en": "65+2=52 → 50+2=52",
+      "ja": "65+2=52 → 50+2=52",
+      "zh": "65+2=52 → 50+2=52",
+      "es": "65+2=52 → 50+2=52",
+      "fr": "65+2=52 → 50+2=52",
+      "de": "65+2=52 → 50+2=52"
+    }
+  },
+  {
+    "id": "mt10_s03",
+    "type": "match",
+    "track": "match",
+    "chapter": 10,
+    "order": 3,
+    "equation": [
+      "5",
+      "+",
+      "5",
+      "-",
+      "7",
+      "1",
+      "=",
+      "7"
+    ],
+    "moves": 2,
+    "answer": "6+6-11=1",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "5, 8번째 기호에서 막대를 빼야 해요.",
+        "막대를 1, 3번째 기호에 놓아야 해요.",
+        "정답 식: 6+6−11=1"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 5, 8.",
+        "Place matchsticks on symbols 1, 3.",
+        "Answer: 6+6−11=1"
+      ],
+      "ja": [
+        "5、8番目の記号から棒を取り除きます。",
+        "1、3番目の記号に棒を置きます。",
+        "正解の式：6+6−11=1"
+      ],
+      "zh": [
+        "需要从第5、8个符号上拿走火柴棒。",
+        "需要把火柴棒放到第1、3个符号上。",
+        "正确算式：6+6−11=1"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 5, 8.",
+        "Coloca cerillas en los símbolos 1, 3.",
+        "Ecuación correcta: 6+6−11=1"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 5, 8.",
+        "Placez des allumettes sur les symboles 1, 3.",
+        "Équation correcte : 6+6−11=1"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 5, 8 weg.",
+        "Lege Streichhölzer auf die Symbole 1, 3.",
+        "Richtige Gleichung: 6+6−11=1"
+      ]
+    },
+    "explanation": {
+      "ko": "5+5−71=7 → 6+6−11=1",
+      "en": "5+5−71=7 → 6+6−11=1",
+      "ja": "5+5−71=7 → 6+6−11=1",
+      "zh": "5+5−71=7 → 6+6−11=1",
+      "es": "5+5−71=7 → 6+6−11=1",
+      "fr": "5+5−71=7 → 6+6−11=1",
+      "de": "5+5−71=7 → 6+6−11=1"
+    }
+  },
+  {
+    "id": "mt10_s04",
+    "type": "match",
+    "track": "match",
+    "chapter": 10,
+    "order": 4,
+    "equation": [
+      "1",
+      "5",
+      "+",
+      "5",
+      "-",
+      "4",
+      "=",
+      "3"
+    ],
+    "moves": 2,
+    "answer": "15-5-4=6",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "3, 8번째 기호에서 막대를 빼야 해요.",
+        "막대를 8번째 기호에 놓아야 해요. (8번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 15−5−4=6"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 3, 8.",
+        "Place matchsticks on symbol 8. (Symbol 8: move within the same symbol)",
+        "Answer: 15−5−4=6"
+      ],
+      "ja": [
+        "3、8番目の記号から棒を取り除きます。",
+        "8番目の記号に棒を置きます。（8番目は同じ記号の中で動かします）",
+        "正解の式：15−5−4=6"
+      ],
+      "zh": [
+        "需要从第3、8个符号上拿走火柴棒。",
+        "需要把火柴棒放到第8个符号上。（第8个符号在自身内部移动）",
+        "正确算式：15−5−4=6"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 3, 8.",
+        "Coloca cerillas en el símbolo 8. (Símbolo 8: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 15−5−4=6"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 3, 8.",
+        "Placez des allumettes sur le symbole 8. (Symbole 8 : déplacement dans le même symbole)",
+        "Équation correcte : 15−5−4=6"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 3, 8 weg.",
+        "Lege Streichhölzer auf das Symbol 8. (Symbol 8: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 15−5−4=6"
+      ]
+    },
+    "explanation": {
+      "ko": "15+5−4=3 → 15−5−4=6",
+      "en": "15+5−4=3 → 15−5−4=6",
+      "ja": "15+5−4=3 → 15−5−4=6",
+      "zh": "15+5−4=3 → 15−5−4=6",
+      "es": "15+5−4=3 → 15−5−4=6",
+      "fr": "15+5−4=3 → 15−5−4=6",
+      "de": "15+5−4=3 → 15−5−4=6"
+    }
+  },
+  {
+    "id": "mt10_s05",
+    "type": "match",
+    "track": "match",
+    "chapter": 10,
+    "order": 5,
+    "equation": [
+      "1",
+      "6",
+      "-",
+      "2",
+      "-",
+      "2",
+      "=",
+      "4"
+    ],
+    "moves": 2,
+    "answer": "15-2-9=4",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "2, 6번째 기호에서 막대를 빼야 해요.",
+        "막대를 6번째 기호에 놓아야 해요. (6번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 15−2−9=4"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 2, 6.",
+        "Place matchsticks on symbol 6. (Symbol 6: move within the same symbol)",
+        "Answer: 15−2−9=4"
+      ],
+      "ja": [
+        "2、6番目の記号から棒を取り除きます。",
+        "6番目の記号に棒を置きます。（6番目は同じ記号の中で動かします）",
+        "正解の式：15−2−9=4"
+      ],
+      "zh": [
+        "需要从第2、6个符号上拿走火柴棒。",
+        "需要把火柴棒放到第6个符号上。（第6个符号在自身内部移动）",
+        "正确算式：15−2−9=4"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 2, 6.",
+        "Coloca cerillas en el símbolo 6. (Símbolo 6: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 15−2−9=4"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 2, 6.",
+        "Placez des allumettes sur le symbole 6. (Symbole 6 : déplacement dans le même symbole)",
+        "Équation correcte : 15−2−9=4"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 2, 6 weg.",
+        "Lege Streichhölzer auf das Symbol 6. (Symbol 6: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 15−2−9=4"
+      ]
+    },
+    "explanation": {
+      "ko": "16−2−2=4 → 15−2−9=4",
+      "en": "16−2−2=4 → 15−2−9=4",
+      "ja": "16−2−2=4 → 15−2−9=4",
+      "zh": "16−2−2=4 → 15−2−9=4",
+      "es": "16−2−2=4 → 15−2−9=4",
+      "fr": "16−2−2=4 → 15−2−9=4",
+      "de": "16−2−2=4 → 15−2−9=4"
+    }
+  },
+  {
+    "id": "mt10_s06",
+    "type": "match",
+    "track": "match",
+    "chapter": 10,
+    "order": 6,
+    "equation": [
+      "7",
+      "+",
+      "1",
+      "+",
+      "1",
+      "4",
+      "=",
+      "6"
+    ],
+    "moves": 2,
+    "answer": "7+7-14=0",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "4, 8번째 기호에서 막대를 빼야 해요.",
+        "막대를 3, 8번째 기호에 놓아야 해요. (8번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 7+7−14=0"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 4, 8.",
+        "Place matchsticks on symbols 3, 8. (Symbol 8: move within the same symbol)",
+        "Answer: 7+7−14=0"
+      ],
+      "ja": [
+        "4、8番目の記号から棒を取り除きます。",
+        "3、8番目の記号に棒を置きます。（8番目は同じ記号の中で動かします）",
+        "正解の式：7+7−14=0"
+      ],
+      "zh": [
+        "需要从第4、8个符号上拿走火柴棒。",
+        "需要把火柴棒放到第3、8个符号上。（第8个符号在自身内部移动）",
+        "正确算式：7+7−14=0"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 4, 8.",
+        "Coloca cerillas en los símbolos 3, 8. (Símbolo 8: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 7+7−14=0"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 4, 8.",
+        "Placez des allumettes sur les symboles 3, 8. (Symbole 8 : déplacement dans le même symbole)",
+        "Équation correcte : 7+7−14=0"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 4, 8 weg.",
+        "Lege Streichhölzer auf die Symbole 3, 8. (Symbol 8: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 7+7−14=0"
+      ]
+    },
+    "explanation": {
+      "ko": "7+1+14=6 → 7+7−14=0",
+      "en": "7+1+14=6 → 7+7−14=0",
+      "ja": "7+1+14=6 → 7+7−14=0",
+      "zh": "7+1+14=6 → 7+7−14=0",
+      "es": "7+1+14=6 → 7+7−14=0",
+      "fr": "7+1+14=6 → 7+7−14=0",
+      "de": "7+1+14=6 → 7+7−14=0"
+    }
+  },
+  {
+    "id": "mt11_s01",
+    "type": "match",
+    "track": "match",
+    "chapter": 11,
+    "order": 1,
+    "equation": [
+      "1",
+      "5",
+      "-",
+      "5",
+      "=",
+      "3"
+    ],
+    "moves": 2,
+    "answer": "14-5=9",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "2번째 기호에서 막대를 빼야 해요.",
+        "막대를 2, 6번째 기호에 놓아야 해요. (2번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 14−5=9"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 2.",
+        "Place matchsticks on symbols 2, 6. (Symbol 2: move within the same symbol)",
+        "Answer: 14−5=9"
+      ],
+      "ja": [
+        "2番目の記号から棒を取り除きます。",
+        "2、6番目の記号に棒を置きます。（2番目は同じ記号の中で動かします）",
+        "正解の式：14−5=9"
+      ],
+      "zh": [
+        "需要从第2个符号上拿走火柴棒。",
+        "需要把火柴棒放到第2、6个符号上。（第2个符号在自身内部移动）",
+        "正确算式：14−5=9"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 2.",
+        "Coloca cerillas en los símbolos 2, 6. (Símbolo 2: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 14−5=9"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 2.",
+        "Placez des allumettes sur les symboles 2, 6. (Symbole 2 : déplacement dans le même symbole)",
+        "Équation correcte : 14−5=9"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 2 weg.",
+        "Lege Streichhölzer auf die Symbole 2, 6. (Symbol 2: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 14−5=9"
+      ]
+    },
+    "explanation": {
+      "ko": "15−5=3 → 14−5=9",
+      "en": "15−5=3 → 14−5=9",
+      "ja": "15−5=3 → 14−5=9",
+      "zh": "15−5=3 → 14−5=9",
+      "es": "15−5=3 → 14−5=9",
+      "fr": "15−5=3 → 14−5=9",
+      "de": "15−5=3 → 14−5=9"
+    }
+  },
+  {
+    "id": "mt11_s02",
+    "type": "match",
+    "track": "match",
+    "chapter": 11,
+    "order": 2,
+    "equation": [
+      "9",
+      "1",
+      "-",
+      "5",
+      "=",
+      "8",
+      "4"
+    ],
+    "moves": 2,
+    "answer": "97-3=94",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "4, 6번째 기호에서 막대를 빼야 해요.",
+        "막대를 2, 4번째 기호에 놓아야 해요. (4번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 97−3=94"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 4, 6.",
+        "Place matchsticks on symbols 2, 4. (Symbol 4: move within the same symbol)",
+        "Answer: 97−3=94"
+      ],
+      "ja": [
+        "4、6番目の記号から棒を取り除きます。",
+        "2、4番目の記号に棒を置きます。（4番目は同じ記号の中で動かします）",
+        "正解の式：97−3=94"
+      ],
+      "zh": [
+        "需要从第4、6个符号上拿走火柴棒。",
+        "需要把火柴棒放到第2、4个符号上。（第4个符号在自身内部移动）",
+        "正确算式：97−3=94"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 4, 6.",
+        "Coloca cerillas en los símbolos 2, 4. (Símbolo 4: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 97−3=94"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 4, 6.",
+        "Placez des allumettes sur les symboles 2, 4. (Symbole 4 : déplacement dans le même symbole)",
+        "Équation correcte : 97−3=94"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 4, 6 weg.",
+        "Lege Streichhölzer auf die Symbole 2, 4. (Symbol 4: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 97−3=94"
+      ]
+    },
+    "explanation": {
+      "ko": "91−5=84 → 97−3=94",
+      "en": "91−5=84 → 97−3=94",
+      "ja": "91−5=84 → 97−3=94",
+      "zh": "91−5=84 → 97−3=94",
+      "es": "91−5=84 → 97−3=94",
+      "fr": "91−5=84 → 97−3=94",
+      "de": "91−5=84 → 97−3=94"
+    }
+  },
+  {
+    "id": "mt11_s03",
+    "type": "match",
+    "track": "match",
+    "chapter": 11,
+    "order": 3,
+    "equation": [
+      "1",
+      "0",
+      "-",
+      "1",
+      "=",
+      "5"
+    ],
+    "moves": 2,
+    "answer": "12-7=5",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "2번째 기호에서 막대를 빼야 해요.",
+        "막대를 2, 4번째 기호에 놓아야 해요. (2번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 12−7=5"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 2.",
+        "Place matchsticks on symbols 2, 4. (Symbol 2: move within the same symbol)",
+        "Answer: 12−7=5"
+      ],
+      "ja": [
+        "2番目の記号から棒を取り除きます。",
+        "2、4番目の記号に棒を置きます。（2番目は同じ記号の中で動かします）",
+        "正解の式：12−7=5"
+      ],
+      "zh": [
+        "需要从第2个符号上拿走火柴棒。",
+        "需要把火柴棒放到第2、4个符号上。（第2个符号在自身内部移动）",
+        "正确算式：12−7=5"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 2.",
+        "Coloca cerillas en los símbolos 2, 4. (Símbolo 2: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 12−7=5"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 2.",
+        "Placez des allumettes sur les symboles 2, 4. (Symbole 2 : déplacement dans le même symbole)",
+        "Équation correcte : 12−7=5"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 2 weg.",
+        "Lege Streichhölzer auf die Symbole 2, 4. (Symbol 2: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 12−7=5"
+      ]
+    },
+    "explanation": {
+      "ko": "10−1=5 → 12−7=5",
+      "en": "10−1=5 → 12−7=5",
+      "ja": "10−1=5 → 12−7=5",
+      "zh": "10−1=5 → 12−7=5",
+      "es": "10−1=5 → 12−7=5",
+      "fr": "10−1=5 → 12−7=5",
+      "de": "10−1=5 → 12−7=5"
+    }
+  },
+  {
+    "id": "mt11_s04",
+    "type": "match",
+    "track": "match",
+    "chapter": 11,
+    "order": 4,
+    "equation": [
+      "1",
+      "2",
+      "-",
+      "0",
+      "-",
+      "4",
+      "=",
+      "7"
+    ],
+    "moves": 2,
+    "answer": "13-8-4=1",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "2, 8번째 기호에서 막대를 빼야 해요.",
+        "막대를 2, 4번째 기호에 놓아야 해요. (2번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 13−8−4=1"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 2, 8.",
+        "Place matchsticks on symbols 2, 4. (Symbol 2: move within the same symbol)",
+        "Answer: 13−8−4=1"
+      ],
+      "ja": [
+        "2、8番目の記号から棒を取り除きます。",
+        "2、4番目の記号に棒を置きます。（2番目は同じ記号の中で動かします）",
+        "正解の式：13−8−4=1"
+      ],
+      "zh": [
+        "需要从第2、8个符号上拿走火柴棒。",
+        "需要把火柴棒放到第2、4个符号上。（第2个符号在自身内部移动）",
+        "正确算式：13−8−4=1"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 2, 8.",
+        "Coloca cerillas en los símbolos 2, 4. (Símbolo 2: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 13−8−4=1"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 2, 8.",
+        "Placez des allumettes sur les symboles 2, 4. (Symbole 2 : déplacement dans le même symbole)",
+        "Équation correcte : 13−8−4=1"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 2, 8 weg.",
+        "Lege Streichhölzer auf die Symbole 2, 4. (Symbol 2: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 13−8−4=1"
+      ]
+    },
+    "explanation": {
+      "ko": "12−0−4=7 → 13−8−4=1",
+      "en": "12−0−4=7 → 13−8−4=1",
+      "ja": "12−0−4=7 → 13−8−4=1",
+      "zh": "12−0−4=7 → 13−8−4=1",
+      "es": "12−0−4=7 → 13−8−4=1",
+      "fr": "12−0−4=7 → 13−8−4=1",
+      "de": "12−0−4=7 → 13−8−4=1"
+    }
+  },
+  {
+    "id": "mt11_s05",
+    "type": "match",
+    "track": "match",
+    "chapter": 11,
+    "order": 5,
+    "equation": [
+      "2",
+      "-",
+      "9",
+      "-",
+      "1",
+      "1",
+      "=",
+      "5"
+    ],
+    "moves": 2,
+    "answer": "2-9+11=4",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "8번째 기호에서 막대를 빼야 해요.",
+        "막대를 4, 8번째 기호에 놓아야 해요. (8번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 2−9+11=4"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 8.",
+        "Place matchsticks on symbols 4, 8. (Symbol 8: move within the same symbol)",
+        "Answer: 2−9+11=4"
+      ],
+      "ja": [
+        "8番目の記号から棒を取り除きます。",
+        "4、8番目の記号に棒を置きます。（8番目は同じ記号の中で動かします）",
+        "正解の式：2−9+11=4"
+      ],
+      "zh": [
+        "需要从第8个符号上拿走火柴棒。",
+        "需要把火柴棒放到第4、8个符号上。（第8个符号在自身内部移动）",
+        "正确算式：2−9+11=4"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 8.",
+        "Coloca cerillas en los símbolos 4, 8. (Símbolo 8: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 2−9+11=4"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 8.",
+        "Placez des allumettes sur les symboles 4, 8. (Symbole 8 : déplacement dans le même symbole)",
+        "Équation correcte : 2−9+11=4"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 8 weg.",
+        "Lege Streichhölzer auf die Symbole 4, 8. (Symbol 8: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 2−9+11=4"
+      ]
+    },
+    "explanation": {
+      "ko": "2−9−11=5 → 2−9+11=4",
+      "en": "2−9−11=5 → 2−9+11=4",
+      "ja": "2−9−11=5 → 2−9+11=4",
+      "zh": "2−9−11=5 → 2−9+11=4",
+      "es": "2−9−11=5 → 2−9+11=4",
+      "fr": "2−9−11=5 → 2−9+11=4",
+      "de": "2−9−11=5 → 2−9+11=4"
+    }
+  },
+  {
+    "id": "mt11_s06",
+    "type": "match",
+    "track": "match",
+    "chapter": 11,
+    "order": 6,
+    "equation": [
+      "7",
+      "-",
+      "7",
+      "0",
+      "=",
+      "1",
+      "3"
+    ],
+    "moves": 2,
+    "answer": "7+70=77",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "7번째 기호에서 막대를 빼야 해요.",
+        "막대를 2, 6번째 기호에 놓아야 해요.",
+        "정답 식: 7+70=77"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 7.",
+        "Place matchsticks on symbols 2, 6.",
+        "Answer: 7+70=77"
+      ],
+      "ja": [
+        "7番目の記号から棒を取り除きます。",
+        "2、6番目の記号に棒を置きます。",
+        "正解の式：7+70=77"
+      ],
+      "zh": [
+        "需要从第7个符号上拿走火柴棒。",
+        "需要把火柴棒放到第2、6个符号上。",
+        "正确算式：7+70=77"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 7.",
+        "Coloca cerillas en los símbolos 2, 6.",
+        "Ecuación correcta: 7+70=77"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 7.",
+        "Placez des allumettes sur les symboles 2, 6.",
+        "Équation correcte : 7+70=77"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 7 weg.",
+        "Lege Streichhölzer auf die Symbole 2, 6.",
+        "Richtige Gleichung: 7+70=77"
+      ]
+    },
+    "explanation": {
+      "ko": "7−70=13 → 7+70=77",
+      "en": "7−70=13 → 7+70=77",
+      "ja": "7−70=13 → 7+70=77",
+      "zh": "7−70=13 → 7+70=77",
+      "es": "7−70=13 → 7+70=77",
+      "fr": "7−70=13 → 7+70=77",
+      "de": "7−70=13 → 7+70=77"
+    }
+  },
+  {
+    "id": "mt12_s01",
+    "type": "match",
+    "track": "match",
+    "chapter": 12,
+    "order": 1,
+    "equation": [
+      "8",
+      "+",
+      "6",
+      "7",
+      "=",
+      "1",
+      "5"
+    ],
+    "moves": 2,
+    "answer": "6+67=73",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1, 7번째 기호에서 막대를 빼야 해요.",
+        "막대를 6, 7번째 기호에 놓아야 해요. (7번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 6+67=73"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 1, 7.",
+        "Place matchsticks on symbols 6, 7. (Symbol 7: move within the same symbol)",
+        "Answer: 6+67=73"
+      ],
+      "ja": [
+        "1、7番目の記号から棒を取り除きます。",
+        "6、7番目の記号に棒を置きます。（7番目は同じ記号の中で動かします）",
+        "正解の式：6+67=73"
+      ],
+      "zh": [
+        "需要从第1、7个符号上拿走火柴棒。",
+        "需要把火柴棒放到第6、7个符号上。（第7个符号在自身内部移动）",
+        "正确算式：6+67=73"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 1, 7.",
+        "Coloca cerillas en los símbolos 6, 7. (Símbolo 7: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 6+67=73"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 1, 7.",
+        "Placez des allumettes sur les symboles 6, 7. (Symbole 7 : déplacement dans le même symbole)",
+        "Équation correcte : 6+67=73"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 1, 7 weg.",
+        "Lege Streichhölzer auf die Symbole 6, 7. (Symbol 7: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 6+67=73"
+      ]
+    },
+    "explanation": {
+      "ko": "8+67=15 → 6+67=73",
+      "en": "8+67=15 → 6+67=73",
+      "ja": "8+67=15 → 6+67=73",
+      "zh": "8+67=15 → 6+67=73",
+      "es": "8+67=15 → 6+67=73",
+      "fr": "8+67=15 → 6+67=73",
+      "de": "8+67=15 → 6+67=73"
+    }
+  },
+  {
+    "id": "mt12_s02",
+    "type": "match",
+    "track": "match",
+    "chapter": 12,
+    "order": 2,
+    "equation": [
+      "6",
+      "-",
+      "7",
+      "+",
+      "7",
+      "2",
+      "=",
+      "9"
+    ],
+    "moves": 2,
+    "answer": "6-7+10=9",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "5, 6번째 기호에서 막대를 빼야 해요.",
+        "막대를 6번째 기호에 놓아야 해요. (6번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 6−7+10=9"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 5, 6.",
+        "Place matchsticks on symbol 6. (Symbol 6: move within the same symbol)",
+        "Answer: 6−7+10=9"
+      ],
+      "ja": [
+        "5、6番目の記号から棒を取り除きます。",
+        "6番目の記号に棒を置きます。（6番目は同じ記号の中で動かします）",
+        "正解の式：6−7+10=9"
+      ],
+      "zh": [
+        "需要从第5、6个符号上拿走火柴棒。",
+        "需要把火柴棒放到第6个符号上。（第6个符号在自身内部移动）",
+        "正确算式：6−7+10=9"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 5, 6.",
+        "Coloca cerillas en el símbolo 6. (Símbolo 6: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 6−7+10=9"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 5, 6.",
+        "Placez des allumettes sur le symbole 6. (Symbole 6 : déplacement dans le même symbole)",
+        "Équation correcte : 6−7+10=9"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 5, 6 weg.",
+        "Lege Streichhölzer auf das Symbol 6. (Symbol 6: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 6−7+10=9"
+      ]
+    },
+    "explanation": {
+      "ko": "6−7+72=9 → 6−7+10=9",
+      "en": "6−7+72=9 → 6−7+10=9",
+      "ja": "6−7+72=9 → 6−7+10=9",
+      "zh": "6−7+72=9 → 6−7+10=9",
+      "es": "6−7+72=9 → 6−7+10=9",
+      "fr": "6−7+72=9 → 6−7+10=9",
+      "de": "6−7+72=9 → 6−7+10=9"
+    }
+  },
+  {
+    "id": "mt12_s03",
+    "type": "match",
+    "track": "match",
+    "chapter": 12,
+    "order": 3,
+    "equation": [
+      "7",
+      "8",
+      "-",
+      "6",
+      "-",
+      "2",
+      "=",
+      "1"
+    ],
+    "moves": 2,
+    "answer": "18-9-2=7",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1, 4번째 기호에서 막대를 빼야 해요.",
+        "막대를 4, 8번째 기호에 놓아야 해요. (4번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 18−9−2=7"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 1, 4.",
+        "Place matchsticks on symbols 4, 8. (Symbol 4: move within the same symbol)",
+        "Answer: 18−9−2=7"
+      ],
+      "ja": [
+        "1、4番目の記号から棒を取り除きます。",
+        "4、8番目の記号に棒を置きます。（4番目は同じ記号の中で動かします）",
+        "正解の式：18−9−2=7"
+      ],
+      "zh": [
+        "需要从第1、4个符号上拿走火柴棒。",
+        "需要把火柴棒放到第4、8个符号上。（第4个符号在自身内部移动）",
+        "正确算式：18−9−2=7"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 1, 4.",
+        "Coloca cerillas en los símbolos 4, 8. (Símbolo 4: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 18−9−2=7"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 1, 4.",
+        "Placez des allumettes sur les symboles 4, 8. (Symbole 4 : déplacement dans le même symbole)",
+        "Équation correcte : 18−9−2=7"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 1, 4 weg.",
+        "Lege Streichhölzer auf die Symbole 4, 8. (Symbol 4: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 18−9−2=7"
+      ]
+    },
+    "explanation": {
+      "ko": "78−6−2=1 → 18−9−2=7",
+      "en": "78−6−2=1 → 18−9−2=7",
+      "ja": "78−6−2=1 → 18−9−2=7",
+      "zh": "78−6−2=1 → 18−9−2=7",
+      "es": "78−6−2=1 → 18−9−2=7",
+      "fr": "78−6−2=1 → 18−9−2=7",
+      "de": "78−6−2=1 → 18−9−2=7"
+    }
+  },
+  {
+    "id": "mt12_s04",
+    "type": "match",
+    "track": "match",
+    "chapter": 12,
+    "order": 4,
+    "equation": [
+      "0",
+      "-",
+      "6",
+      "2",
+      "=",
+      "6",
+      "5"
+    ],
+    "moves": 2,
+    "answer": "3+62=65",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1번째 기호에서 막대를 빼야 해요.",
+        "막대를 1, 2번째 기호에 놓아야 해요. (1번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 3+62=65"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 1.",
+        "Place matchsticks on symbols 1, 2. (Symbol 1: move within the same symbol)",
+        "Answer: 3+62=65"
+      ],
+      "ja": [
+        "1番目の記号から棒を取り除きます。",
+        "1、2番目の記号に棒を置きます。（1番目は同じ記号の中で動かします）",
+        "正解の式：3+62=65"
+      ],
+      "zh": [
+        "需要从第1个符号上拿走火柴棒。",
+        "需要把火柴棒放到第1、2个符号上。（第1个符号在自身内部移动）",
+        "正确算式：3+62=65"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 1.",
+        "Coloca cerillas en los símbolos 1, 2. (Símbolo 1: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 3+62=65"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 1.",
+        "Placez des allumettes sur les symboles 1, 2. (Symbole 1 : déplacement dans le même symbole)",
+        "Équation correcte : 3+62=65"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 1 weg.",
+        "Lege Streichhölzer auf die Symbole 1, 2. (Symbol 1: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 3+62=65"
+      ]
+    },
+    "explanation": {
+      "ko": "0−62=65 → 3+62=65",
+      "en": "0−62=65 → 3+62=65",
+      "ja": "0−62=65 → 3+62=65",
+      "zh": "0−62=65 → 3+62=65",
+      "es": "0−62=65 → 3+62=65",
+      "fr": "0−62=65 → 3+62=65",
+      "de": "0−62=65 → 3+62=65"
+    }
+  },
+  {
+    "id": "mt12_s05",
+    "type": "match",
+    "track": "match",
+    "chapter": 12,
+    "order": 5,
+    "equation": [
+      "3",
+      "1",
+      "+",
+      "2",
+      "=",
+      "1",
+      "3"
+    ],
+    "moves": 2,
+    "answer": "21-2=19",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1, 3번째 기호에서 막대를 빼야 해요.",
+        "막대를 1, 7번째 기호에 놓아야 해요. (1번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 21−2=19"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 1, 3.",
+        "Place matchsticks on symbols 1, 7. (Symbol 1: move within the same symbol)",
+        "Answer: 21−2=19"
+      ],
+      "ja": [
+        "1、3番目の記号から棒を取り除きます。",
+        "1、7番目の記号に棒を置きます。（1番目は同じ記号の中で動かします）",
+        "正解の式：21−2=19"
+      ],
+      "zh": [
+        "需要从第1、3个符号上拿走火柴棒。",
+        "需要把火柴棒放到第1、7个符号上。（第1个符号在自身内部移动）",
+        "正确算式：21−2=19"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 1, 3.",
+        "Coloca cerillas en los símbolos 1, 7. (Símbolo 1: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 21−2=19"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 1, 3.",
+        "Placez des allumettes sur les symboles 1, 7. (Symbole 1 : déplacement dans le même symbole)",
+        "Équation correcte : 21−2=19"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 1, 3 weg.",
+        "Lege Streichhölzer auf die Symbole 1, 7. (Symbol 1: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 21−2=19"
+      ]
+    },
+    "explanation": {
+      "ko": "31+2=13 → 21−2=19",
+      "en": "31+2=13 → 21−2=19",
+      "ja": "31+2=13 → 21−2=19",
+      "zh": "31+2=13 → 21−2=19",
+      "es": "31+2=13 → 21−2=19",
+      "fr": "31+2=13 → 21−2=19",
+      "de": "31+2=13 → 21−2=19"
+    }
+  },
+  {
+    "id": "mt12_s06",
+    "type": "match",
+    "track": "match",
+    "chapter": 12,
+    "order": 6,
+    "equation": [
+      "5",
+      "5",
+      "+",
+      "5",
+      "3",
+      "=",
+      "2",
+      "3"
+    ],
+    "moves": 2,
+    "answer": "56-33=23",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "3, 4번째 기호에서 막대를 빼야 해요.",
+        "막대를 2, 4번째 기호에 놓아야 해요. (4번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 56−33=23"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 3, 4.",
+        "Place matchsticks on symbols 2, 4. (Symbol 4: move within the same symbol)",
+        "Answer: 56−33=23"
+      ],
+      "ja": [
+        "3、4番目の記号から棒を取り除きます。",
+        "2、4番目の記号に棒を置きます。（4番目は同じ記号の中で動かします）",
+        "正解の式：56−33=23"
+      ],
+      "zh": [
+        "需要从第3、4个符号上拿走火柴棒。",
+        "需要把火柴棒放到第2、4个符号上。（第4个符号在自身内部移动）",
+        "正确算式：56−33=23"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 3, 4.",
+        "Coloca cerillas en los símbolos 2, 4. (Símbolo 4: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 56−33=23"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 3, 4.",
+        "Placez des allumettes sur les symboles 2, 4. (Symbole 4 : déplacement dans le même symbole)",
+        "Équation correcte : 56−33=23"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 3, 4 weg.",
+        "Lege Streichhölzer auf die Symbole 2, 4. (Symbol 4: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 56−33=23"
+      ]
+    },
+    "explanation": {
+      "ko": "55+53=23 → 56−33=23",
+      "en": "55+53=23 → 56−33=23",
+      "ja": "55+53=23 → 56−33=23",
+      "zh": "55+53=23 → 56−33=23",
+      "es": "55+53=23 → 56−33=23",
+      "fr": "55+53=23 → 56−33=23",
+      "de": "55+53=23 → 56−33=23"
+    }
+  },
+  {
+    "id": "mt13_s01",
+    "type": "match",
+    "track": "match",
+    "chapter": 13,
+    "order": 1,
+    "equation": [
+      "2",
+      "3",
+      "+",
+      "8",
+      "6",
+      "=",
+      "7"
+    ],
+    "moves": 2,
+    "answer": "93-86=7",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1, 3번째 기호에서 막대를 빼야 해요.",
+        "막대를 1번째 기호에 놓아야 해요. (1번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 93−86=7"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 1, 3.",
+        "Place matchsticks on symbol 1. (Symbol 1: move within the same symbol)",
+        "Answer: 93−86=7"
+      ],
+      "ja": [
+        "1、3番目の記号から棒を取り除きます。",
+        "1番目の記号に棒を置きます。（1番目は同じ記号の中で動かします）",
+        "正解の式：93−86=7"
+      ],
+      "zh": [
+        "需要从第1、3个符号上拿走火柴棒。",
+        "需要把火柴棒放到第1个符号上。（第1个符号在自身内部移动）",
+        "正确算式：93−86=7"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 1, 3.",
+        "Coloca cerillas en el símbolo 1. (Símbolo 1: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 93−86=7"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 1, 3.",
+        "Placez des allumettes sur le symbole 1. (Symbole 1 : déplacement dans le même symbole)",
+        "Équation correcte : 93−86=7"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 1, 3 weg.",
+        "Lege Streichhölzer auf das Symbol 1. (Symbol 1: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 93−86=7"
+      ]
+    },
+    "explanation": {
+      "ko": "23+86=7 → 93−86=7",
+      "en": "23+86=7 → 93−86=7",
+      "ja": "23+86=7 → 93−86=7",
+      "zh": "23+86=7 → 93−86=7",
+      "es": "23+86=7 → 93−86=7",
+      "fr": "23+86=7 → 93−86=7",
+      "de": "23+86=7 → 93−86=7"
+    }
+  },
+  {
+    "id": "mt13_s02",
+    "type": "match",
+    "track": "match",
+    "chapter": 13,
+    "order": 2,
+    "equation": [
+      "8",
+      "-",
+      "7",
+      "5",
+      "=",
+      "7",
+      "1"
+    ],
+    "moves": 2,
+    "answer": "2+75=77",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1번째 기호에서 막대를 빼야 해요.",
+        "막대를 2, 7번째 기호에 놓아야 해요.",
+        "정답 식: 2+75=77"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 1.",
+        "Place matchsticks on symbols 2, 7.",
+        "Answer: 2+75=77"
+      ],
+      "ja": [
+        "1番目の記号から棒を取り除きます。",
+        "2、7番目の記号に棒を置きます。",
+        "正解の式：2+75=77"
+      ],
+      "zh": [
+        "需要从第1个符号上拿走火柴棒。",
+        "需要把火柴棒放到第2、7个符号上。",
+        "正确算式：2+75=77"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 1.",
+        "Coloca cerillas en los símbolos 2, 7.",
+        "Ecuación correcta: 2+75=77"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 1.",
+        "Placez des allumettes sur les symboles 2, 7.",
+        "Équation correcte : 2+75=77"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 1 weg.",
+        "Lege Streichhölzer auf die Symbole 2, 7.",
+        "Richtige Gleichung: 2+75=77"
+      ]
+    },
+    "explanation": {
+      "ko": "8−75=71 → 2+75=77",
+      "en": "8−75=71 → 2+75=77",
+      "ja": "8−75=71 → 2+75=77",
+      "zh": "8−75=71 → 2+75=77",
+      "es": "8−75=71 → 2+75=77",
+      "fr": "8−75=71 → 2+75=77",
+      "de": "8−75=71 → 2+75=77"
+    }
+  },
+  {
+    "id": "mt13_s03",
+    "type": "match",
+    "track": "match",
+    "chapter": 13,
+    "order": 3,
+    "equation": [
+      "7",
+      "9",
+      "+",
+      "5",
+      "8",
+      "=",
+      "2"
+    ],
+    "moves": 2,
+    "answer": "70-68=2",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "2, 3번째 기호에서 막대를 빼야 해요.",
+        "막대를 2, 4번째 기호에 놓아야 해요. (2번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 70−68=2"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 2, 3.",
+        "Place matchsticks on symbols 2, 4. (Symbol 2: move within the same symbol)",
+        "Answer: 70−68=2"
+      ],
+      "ja": [
+        "2、3番目の記号から棒を取り除きます。",
+        "2、4番目の記号に棒を置きます。（2番目は同じ記号の中で動かします）",
+        "正解の式：70−68=2"
+      ],
+      "zh": [
+        "需要从第2、3个符号上拿走火柴棒。",
+        "需要把火柴棒放到第2、4个符号上。（第2个符号在自身内部移动）",
+        "正确算式：70−68=2"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 2, 3.",
+        "Coloca cerillas en los símbolos 2, 4. (Símbolo 2: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 70−68=2"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 2, 3.",
+        "Placez des allumettes sur les symboles 2, 4. (Symbole 2 : déplacement dans le même symbole)",
+        "Équation correcte : 70−68=2"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 2, 3 weg.",
+        "Lege Streichhölzer auf die Symbole 2, 4. (Symbol 2: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 70−68=2"
+      ]
+    },
+    "explanation": {
+      "ko": "79+58=2 → 70−68=2",
+      "en": "79+58=2 → 70−68=2",
+      "ja": "79+58=2 → 70−68=2",
+      "zh": "79+58=2 → 70−68=2",
+      "es": "79+58=2 → 70−68=2",
+      "fr": "79+58=2 → 70−68=2",
+      "de": "79+58=2 → 70−68=2"
+    }
+  },
+  {
+    "id": "mt13_s04",
+    "type": "match",
+    "track": "match",
+    "chapter": 13,
+    "order": 4,
+    "equation": [
+      "6",
+      "-",
+      "3",
+      "-",
+      "7",
+      "0",
+      "=",
+      "4"
+    ],
+    "moves": 2,
+    "answer": "5+9-10=4",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1, 5번째 기호에서 막대를 빼야 해요.",
+        "막대를 2, 3번째 기호에 놓아야 해요.",
+        "정답 식: 5+9−10=4"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 1, 5.",
+        "Place matchsticks on symbols 2, 3.",
+        "Answer: 5+9−10=4"
+      ],
+      "ja": [
+        "1、5番目の記号から棒を取り除きます。",
+        "2、3番目の記号に棒を置きます。",
+        "正解の式：5+9−10=4"
+      ],
+      "zh": [
+        "需要从第1、5个符号上拿走火柴棒。",
+        "需要把火柴棒放到第2、3个符号上。",
+        "正确算式：5+9−10=4"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 1, 5.",
+        "Coloca cerillas en los símbolos 2, 3.",
+        "Ecuación correcta: 5+9−10=4"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 1, 5.",
+        "Placez des allumettes sur les symboles 2, 3.",
+        "Équation correcte : 5+9−10=4"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 1, 5 weg.",
+        "Lege Streichhölzer auf die Symbole 2, 3.",
+        "Richtige Gleichung: 5+9−10=4"
+      ]
+    },
+    "explanation": {
+      "ko": "6−3−70=4 → 5+9−10=4",
+      "en": "6−3−70=4 → 5+9−10=4",
+      "ja": "6−3−70=4 → 5+9−10=4",
+      "zh": "6−3−70=4 → 5+9−10=4",
+      "es": "6−3−70=4 → 5+9−10=4",
+      "fr": "6−3−70=4 → 5+9−10=4",
+      "de": "6−3−70=4 → 5+9−10=4"
+    }
+  },
+  {
+    "id": "mt13_s05",
+    "type": "match",
+    "track": "match",
+    "chapter": 13,
+    "order": 5,
+    "equation": [
+      "4",
+      "+",
+      "3",
+      "-",
+      "4",
+      "=",
+      "4",
+      "7"
+    ],
+    "moves": 2,
+    "answer": "4+9+4=17",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "7번째 기호에서 막대를 빼야 해요.",
+        "막대를 3, 4번째 기호에 놓아야 해요.",
+        "정답 식: 4+9+4=17"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 7.",
+        "Place matchsticks on symbols 3, 4.",
+        "Answer: 4+9+4=17"
+      ],
+      "ja": [
+        "7番目の記号から棒を取り除きます。",
+        "3、4番目の記号に棒を置きます。",
+        "正解の式：4+9+4=17"
+      ],
+      "zh": [
+        "需要从第7个符号上拿走火柴棒。",
+        "需要把火柴棒放到第3、4个符号上。",
+        "正确算式：4+9+4=17"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 7.",
+        "Coloca cerillas en los símbolos 3, 4.",
+        "Ecuación correcta: 4+9+4=17"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 7.",
+        "Placez des allumettes sur les symboles 3, 4.",
+        "Équation correcte : 4+9+4=17"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 7 weg.",
+        "Lege Streichhölzer auf die Symbole 3, 4.",
+        "Richtige Gleichung: 4+9+4=17"
+      ]
+    },
+    "explanation": {
+      "ko": "4+3−4=47 → 4+9+4=17",
+      "en": "4+3−4=47 → 4+9+4=17",
+      "ja": "4+3−4=47 → 4+9+4=17",
+      "zh": "4+3−4=47 → 4+9+4=17",
+      "es": "4+3−4=47 → 4+9+4=17",
+      "fr": "4+3−4=47 → 4+9+4=17",
+      "de": "4+3−4=47 → 4+9+4=17"
+    }
+  },
+  {
+    "id": "mt13_s06",
+    "type": "match",
+    "track": "match",
+    "chapter": 13,
+    "order": 6,
+    "equation": [
+      "5",
+      "-",
+      "6",
+      "-",
+      "1",
+      "=",
+      "7",
+      "9"
+    ],
+    "moves": 2,
+    "answer": "5+6-1=10",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "7, 8번째 기호에서 막대를 빼야 해요.",
+        "막대를 2, 8번째 기호에 놓아야 해요. (8번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 5+6−1=10"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 7, 8.",
+        "Place matchsticks on symbols 2, 8. (Symbol 8: move within the same symbol)",
+        "Answer: 5+6−1=10"
+      ],
+      "ja": [
+        "7、8番目の記号から棒を取り除きます。",
+        "2、8番目の記号に棒を置きます。（8番目は同じ記号の中で動かします）",
+        "正解の式：5+6−1=10"
+      ],
+      "zh": [
+        "需要从第7、8个符号上拿走火柴棒。",
+        "需要把火柴棒放到第2、8个符号上。（第8个符号在自身内部移动）",
+        "正确算式：5+6−1=10"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 7, 8.",
+        "Coloca cerillas en los símbolos 2, 8. (Símbolo 8: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 5+6−1=10"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 7, 8.",
+        "Placez des allumettes sur les symboles 2, 8. (Symbole 8 : déplacement dans le même symbole)",
+        "Équation correcte : 5+6−1=10"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 7, 8 weg.",
+        "Lege Streichhölzer auf die Symbole 2, 8. (Symbol 8: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 5+6−1=10"
+      ]
+    },
+    "explanation": {
+      "ko": "5−6−1=79 → 5+6−1=10",
+      "en": "5−6−1=79 → 5+6−1=10",
+      "ja": "5−6−1=79 → 5+6−1=10",
+      "zh": "5−6−1=79 → 5+6−1=10",
+      "es": "5−6−1=79 → 5+6−1=10",
+      "fr": "5−6−1=79 → 5+6−1=10",
+      "de": "5−6−1=79 → 5+6−1=10"
+    }
+  },
+  {
+    "id": "mt14_s01",
+    "type": "match",
+    "track": "match",
+    "chapter": 14,
+    "order": 1,
+    "equation": [
+      "2",
+      "9",
+      "+",
+      "9",
+      "5",
+      "=",
+      "4"
+    ],
+    "moves": 2,
+    "answer": "99-95=4",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1, 3번째 기호에서 막대를 빼야 해요.",
+        "막대를 1번째 기호에 놓아야 해요. (1번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 99−95=4"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 1, 3.",
+        "Place matchsticks on symbol 1. (Symbol 1: move within the same symbol)",
+        "Answer: 99−95=4"
+      ],
+      "ja": [
+        "1、3番目の記号から棒を取り除きます。",
+        "1番目の記号に棒を置きます。（1番目は同じ記号の中で動かします）",
+        "正解の式：99−95=4"
+      ],
+      "zh": [
+        "需要从第1、3个符号上拿走火柴棒。",
+        "需要把火柴棒放到第1个符号上。（第1个符号在自身内部移动）",
+        "正确算式：99−95=4"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 1, 3.",
+        "Coloca cerillas en el símbolo 1. (Símbolo 1: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 99−95=4"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 1, 3.",
+        "Placez des allumettes sur le symbole 1. (Symbole 1 : déplacement dans le même symbole)",
+        "Équation correcte : 99−95=4"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 1, 3 weg.",
+        "Lege Streichhölzer auf das Symbol 1. (Symbol 1: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 99−95=4"
+      ]
+    },
+    "explanation": {
+      "ko": "29+95=4 → 99−95=4",
+      "en": "29+95=4 → 99−95=4",
+      "ja": "29+95=4 → 99−95=4",
+      "zh": "29+95=4 → 99−95=4",
+      "es": "29+95=4 → 99−95=4",
+      "fr": "29+95=4 → 99−95=4",
+      "de": "29+95=4 → 99−95=4"
+    }
+  },
+  {
+    "id": "mt14_s02",
+    "type": "match",
+    "track": "match",
+    "chapter": 14,
+    "order": 2,
+    "equation": [
+      "9",
+      "-",
+      "3",
+      "1",
+      "=",
+      "9",
+      "7"
+    ],
+    "moves": 2,
+    "answer": "6+31=37",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1, 6번째 기호에서 막대를 빼야 해요.",
+        "막대를 1, 2번째 기호에 놓아야 해요. (1번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 6+31=37"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 1, 6.",
+        "Place matchsticks on symbols 1, 2. (Symbol 1: move within the same symbol)",
+        "Answer: 6+31=37"
+      ],
+      "ja": [
+        "1、6番目の記号から棒を取り除きます。",
+        "1、2番目の記号に棒を置きます。（1番目は同じ記号の中で動かします）",
+        "正解の式：6+31=37"
+      ],
+      "zh": [
+        "需要从第1、6个符号上拿走火柴棒。",
+        "需要把火柴棒放到第1、2个符号上。（第1个符号在自身内部移动）",
+        "正确算式：6+31=37"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 1, 6.",
+        "Coloca cerillas en los símbolos 1, 2. (Símbolo 1: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 6+31=37"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 1, 6.",
+        "Placez des allumettes sur les symboles 1, 2. (Symbole 1 : déplacement dans le même symbole)",
+        "Équation correcte : 6+31=37"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 1, 6 weg.",
+        "Lege Streichhölzer auf die Symbole 1, 2. (Symbol 1: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 6+31=37"
+      ]
+    },
+    "explanation": {
+      "ko": "9−31=97 → 6+31=37",
+      "en": "9−31=97 → 6+31=37",
+      "ja": "9−31=97 → 6+31=37",
+      "zh": "9−31=97 → 6+31=37",
+      "es": "9−31=97 → 6+31=37",
+      "fr": "9−31=97 → 6+31=37",
+      "de": "9−31=97 → 6+31=37"
+    }
+  },
+  {
+    "id": "mt14_s03",
+    "type": "match",
+    "track": "match",
+    "chapter": 14,
+    "order": 3,
+    "equation": [
+      "8",
+      "5",
+      "+",
+      "5",
+      "3",
+      "=",
+      "5"
+    ],
+    "moves": 2,
+    "answer": "65-59=6",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "1, 3번째 기호에서 막대를 빼야 해요.",
+        "막대를 5, 7번째 기호에 놓아야 해요.",
+        "정답 식: 65−59=6"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 1, 3.",
+        "Place matchsticks on symbols 5, 7.",
+        "Answer: 65−59=6"
+      ],
+      "ja": [
+        "1、3番目の記号から棒を取り除きます。",
+        "5、7番目の記号に棒を置きます。",
+        "正解の式：65−59=6"
+      ],
+      "zh": [
+        "需要从第1、3个符号上拿走火柴棒。",
+        "需要把火柴棒放到第5、7个符号上。",
+        "正确算式：65−59=6"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 1, 3.",
+        "Coloca cerillas en los símbolos 5, 7.",
+        "Ecuación correcta: 65−59=6"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 1, 3.",
+        "Placez des allumettes sur les symboles 5, 7.",
+        "Équation correcte : 65−59=6"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 1, 3 weg.",
+        "Lege Streichhölzer auf die Symbole 5, 7.",
+        "Richtige Gleichung: 65−59=6"
+      ]
+    },
+    "explanation": {
+      "ko": "85+53=5 → 65−59=6",
+      "en": "85+53=5 → 65−59=6",
+      "ja": "85+53=5 → 65−59=6",
+      "zh": "85+53=5 → 65−59=6",
+      "es": "85+53=5 → 65−59=6",
+      "fr": "85+53=5 → 65−59=6",
+      "de": "85+53=5 → 65−59=6"
+    }
+  },
+  {
+    "id": "mt14_s04",
+    "type": "match",
+    "track": "match",
+    "chapter": 14,
+    "order": 4,
+    "equation": [
+      "2",
+      "6",
+      "-",
+      "8",
+      "2",
+      "=",
+      "4",
+      "9"
+    ],
+    "moves": 2,
+    "answer": "26+22=48",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "4번째 기호에서 막대를 빼야 해요.",
+        "막대를 3, 8번째 기호에 놓아야 해요.",
+        "정답 식: 26+22=48"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 4.",
+        "Place matchsticks on symbols 3, 8.",
+        "Answer: 26+22=48"
+      ],
+      "ja": [
+        "4番目の記号から棒を取り除きます。",
+        "3、8番目の記号に棒を置きます。",
+        "正解の式：26+22=48"
+      ],
+      "zh": [
+        "需要从第4个符号上拿走火柴棒。",
+        "需要把火柴棒放到第3、8个符号上。",
+        "正确算式：26+22=48"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 4.",
+        "Coloca cerillas en los símbolos 3, 8.",
+        "Ecuación correcta: 26+22=48"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 4.",
+        "Placez des allumettes sur les symboles 3, 8.",
+        "Équation correcte : 26+22=48"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 4 weg.",
+        "Lege Streichhölzer auf die Symbole 3, 8.",
+        "Richtige Gleichung: 26+22=48"
+      ]
+    },
+    "explanation": {
+      "ko": "26−82=49 → 26+22=48",
+      "en": "26−82=49 → 26+22=48",
+      "ja": "26−82=49 → 26+22=48",
+      "zh": "26−82=49 → 26+22=48",
+      "es": "26−82=49 → 26+22=48",
+      "fr": "26−82=49 → 26+22=48",
+      "de": "26−82=49 → 26+22=48"
+    }
+  },
+  {
+    "id": "mt14_s05",
+    "type": "match",
+    "track": "match",
+    "chapter": 14,
+    "order": 5,
+    "equation": [
+      "7",
+      "-",
+      "7",
+      "+",
+      "1",
+      "1",
+      "=",
+      "5"
+    ],
+    "moves": 2,
+    "answer": "7+7-11=3",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "4, 8번째 기호에서 막대를 빼야 해요.",
+        "막대를 2, 8번째 기호에 놓아야 해요. (8번째 기호는 같은 기호 안에서 옮겨요)",
+        "정답 식: 7+7−11=3"
+      ],
+      "en": [
+        "Take matchsticks away from symbols 4, 8.",
+        "Place matchsticks on symbols 2, 8. (Symbol 8: move within the same symbol)",
+        "Answer: 7+7−11=3"
+      ],
+      "ja": [
+        "4、8番目の記号から棒を取り除きます。",
+        "2、8番目の記号に棒を置きます。（8番目は同じ記号の中で動かします）",
+        "正解の式：7+7−11=3"
+      ],
+      "zh": [
+        "需要从第4、8个符号上拿走火柴棒。",
+        "需要把火柴棒放到第2、8个符号上。（第8个符号在自身内部移动）",
+        "正确算式：7+7−11=3"
+      ],
+      "es": [
+        "Quita cerillas de los símbolos 4, 8.",
+        "Coloca cerillas en los símbolos 2, 8. (Símbolo 8: se mueve dentro del mismo símbolo)",
+        "Ecuación correcta: 7+7−11=3"
+      ],
+      "fr": [
+        "Retirez des allumettes des symboles 4, 8.",
+        "Placez des allumettes sur les symboles 2, 8. (Symbole 8 : déplacement dans le même symbole)",
+        "Équation correcte : 7+7−11=3"
+      ],
+      "de": [
+        "Nimm Streichhölzer von den Symbolen 4, 8 weg.",
+        "Lege Streichhölzer auf die Symbole 2, 8. (Symbol 8: innerhalb desselben Symbols verschieben)",
+        "Richtige Gleichung: 7+7−11=3"
+      ]
+    },
+    "explanation": {
+      "ko": "7−7+11=5 → 7+7−11=3",
+      "en": "7−7+11=5 → 7+7−11=3",
+      "ja": "7−7+11=5 → 7+7−11=3",
+      "zh": "7−7+11=5 → 7+7−11=3",
+      "es": "7−7+11=5 → 7+7−11=3",
+      "fr": "7−7+11=5 → 7+7−11=3",
+      "de": "7−7+11=5 → 7+7−11=3"
+    }
+  },
+  {
+    "id": "mt14_s06",
+    "type": "match",
+    "track": "match",
+    "chapter": 14,
+    "order": 6,
+    "equation": [
+      "4",
+      "-",
+      "8",
+      "+",
+      "6",
+      "=",
+      "4",
+      "6"
+    ],
+    "moves": 2,
+    "answer": "4+8+6=18",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "7번째 기호에서 막대를 빼야 해요.",
+        "막대를 2, 8번째 기호에 놓아야 해요.",
+        "정답 식: 4+8+6=18"
+      ],
+      "en": [
+        "Take matchsticks away from symbol 7.",
+        "Place matchsticks on symbols 2, 8.",
+        "Answer: 4+8+6=18"
+      ],
+      "ja": [
+        "7番目の記号から棒を取り除きます。",
+        "2、8番目の記号に棒を置きます。",
+        "正解の式：4+8+6=18"
+      ],
+      "zh": [
+        "需要从第7个符号上拿走火柴棒。",
+        "需要把火柴棒放到第2、8个符号上。",
+        "正确算式：4+8+6=18"
+      ],
+      "es": [
+        "Quita cerillas del símbolo 7.",
+        "Coloca cerillas en los símbolos 2, 8.",
+        "Ecuación correcta: 4+8+6=18"
+      ],
+      "fr": [
+        "Retirez des allumettes du symbole 7.",
+        "Placez des allumettes sur les symboles 2, 8.",
+        "Équation correcte : 4+8+6=18"
+      ],
+      "de": [
+        "Nimm Streichhölzer vom Symbol 7 weg.",
+        "Lege Streichhölzer auf die Symbole 2, 8.",
+        "Richtige Gleichung: 4+8+6=18"
+      ]
+    },
+    "explanation": {
+      "ko": "4−8+6=46 → 4+8+6=18",
+      "en": "4−8+6=46 → 4+8+6=18",
+      "ja": "4−8+6=46 → 4+8+6=18",
+      "zh": "4−8+6=46 → 4+8+6=18",
+      "es": "4−8+6=46 → 4+8+6=18",
+      "fr": "4−8+6=46 → 4+8+6=18",
+      "de": "4−8+6=46 → 4+8+6=18"
+    }
   }
 ]

@@ -39,3 +39,6 @@ Minigame 서버 `server/public/ctr/{privacy,terms,support}.html` 에 7개국어�
 
 ## 숫자 만들기(target) 퍼즐 생성
 `python3 scripts/gen_target_puzzles.py` — 카운트다운식 브루트포스 솔버(부분집합 DP)로 14챕터×6문제(84개)를 시드 고정으로 생성해 `shared/content/puzzles.json` 에 병합합니다(track=="target" 항목만 지우고 다시 추가하므로 재실행 안전, 기존 퍼즐은 변경 없음). `--dry` 는 파일 쓰기 없이 챕터별 난이도 표만 출력. 생성 후 `python3 scripts/verify_target_puzzles.py` 로 설명 문자열을 실제 실행해 해법·힌트·언어 개수·id/order 를 독립 검증합니다.
+
+## 성냥개비(match) 퍼즐 생성
+`python3 scripts/gen_match_puzzles.py` — 명세 `docs/match-mode-spec.md` 대로 셀/슬롯 비트마스크 모델에서 순변위 ≤ moves 인 모든 도달 상태를 열거하는 솔버로 14챕터×6문제(84개, id `mt{N}_s{01..06}`)를 시드 고정으로 생성해 `shared/content/puzzles.json` 에 병합합니다(track=="match" 항목만 지우고 다시 추가하므로 재실행 안전). 참인 식에서 역방향으로 막대를 옮겨 "모든 셀이 유효 글리프인 거짓 식"을 만들고, 해 개수·이동 유형(같은 셀/다른 셀/연산자 연루)·최소 이동 수로 챕터 조건을 필터하며 moves=2 챕터는 1이동으로 풀리면 제외합니다. 같은 실행에서 플랫폼 단위 검증용 `scripts/match_test_vectors.json`(글리프 해석·식 판정·순변위·샘플 퍼즐)도 만듭니다. `--dry` 는 파일 쓰기 없이 챕터별 지표만 출력(약 2분). 생성 후 `python3 scripts/verify_match_puzzles.py` 가 생성기와 독립된 BFS(막대를 실제로 한 개씩 옮겨 탐색)로 초기 거짓·해 존재·1이동 불가·힌트 셀 번호·7개 언어·id/order·테스트 벡터를 재검증합니다.

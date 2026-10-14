@@ -24,6 +24,8 @@ struct Puzzle: Codable, Identifiable, Equatable {
     let statements: [String: [String]]?  // 모순찾기 문장 목록(로케일코드 → 문장 배열). 번호 매긴 카드로 표시, answer=모순 문장 번호(1-based).
     let numbers: [Int]?      // 숫자 만들기 재료
     let target: Int?         // 숫자 만들기 목표
+    let equation: [String]?  // 성냥개비 퍼즐 초기 식(셀 배열)
+    let moves: Int?          // 성냥개비 퍼즐 허용 이동(순변위 상한)
     let answer: String
     let inputType: InputType
     let choices: [String]?
@@ -50,6 +52,9 @@ struct Puzzle: Codable, Identifiable, Equatable {
 
     /// 숫자 만들기(재료+목표) 퍼즐 여부.
     var isTarget: Bool { (numbers?.isEmpty == false) }
+
+    /// 성냥개비 퍼즐(식 셀 배열) 여부.
+    var isMatch: Bool { (equation?.isEmpty == false) }
 
     /// 현재 언어의 문장 목록(없으면 영어 → 임의 폴백).
     var localizedStatements: [String] {
