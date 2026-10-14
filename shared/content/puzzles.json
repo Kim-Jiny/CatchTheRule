@@ -29180,5 +29180,5387 @@
       "fr": "Mars a été observée par Gus au troisième tour, qui a duré 20 minutes et non 15, car le tour de 15 minutes était le deuxième, le Saturne de Finn.",
       "de": "Den Mars beobachtete Gus im dritten Durchgang, der 20 Minuten dauerte und nicht 15, denn der 15-Minuten-Durchgang war der zweite, Finns Saturn."
     }
+  },
+  {
+    "id": "tg1_s01",
+    "type": "target",
+    "track": "target",
+    "chapter": 1,
+    "order": 1,
+    "numbers": [
+      1,
+      6,
+      3
+    ],
+    "target": 10,
+    "answer": "10",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 1, 3 타일을 골라 보세요.",
+        "1 + 3 = 4 부터 계산해 보세요.",
+        "전체 풀이: 1 + 3 = 4 → 4 + 6 = 10"
+      ],
+      "en": [
+        "Start by picking the 1 and 3 tiles.",
+        "Make 1 + 3 = 4 first.",
+        "Full solution: 1 + 3 = 4 → 4 + 6 = 10"
+      ],
+      "ja": [
+        "まず 1 と 3 のタイルを選んでみましょう。",
+        "まず 1 + 3 = 4 を作ってみましょう。",
+        "解法の全体: 1 + 3 = 4 → 4 + 6 = 10"
+      ],
+      "zh": [
+        "先选择 1 和 3 这两个数字。",
+        "先算出 1 + 3 = 4。",
+        "完整解法：1 + 3 = 4 → 4 + 6 = 10"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 1 y 3.",
+        "Primero haz 1 + 3 = 4.",
+        "Solución completa: 1 + 3 = 4 → 4 + 6 = 10"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 1 et 3.",
+        "Calculez d'abord 1 + 3 = 4.",
+        "Solution complète : 1 + 3 = 4 → 4 + 6 = 10"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 1 und 3.",
+        "Rechne zuerst 1 + 3 = 4.",
+        "Gesamte Lösung: 1 + 3 = 4 → 4 + 6 = 10"
+      ]
+    },
+    "explanation": {
+      "ko": "1 + 3 = 4 → 4 + 6 = 10",
+      "en": "1 + 3 = 4 → 4 + 6 = 10",
+      "ja": "1 + 3 = 4 → 4 + 6 = 10",
+      "zh": "1 + 3 = 4 → 4 + 6 = 10",
+      "es": "1 + 3 = 4 → 4 + 6 = 10",
+      "fr": "1 + 3 = 4 → 4 + 6 = 10",
+      "de": "1 + 3 = 4 → 4 + 6 = 10"
+    }
+  },
+  {
+    "id": "tg1_s02",
+    "type": "target",
+    "track": "target",
+    "chapter": 1,
+    "order": 2,
+    "numbers": [
+      1,
+      9,
+      4
+    ],
+    "target": 14,
+    "answer": "14",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 1, 4 타일을 골라 보세요.",
+        "1 + 4 = 5 부터 계산해 보세요.",
+        "전체 풀이: 1 + 4 = 5 → 5 + 9 = 14"
+      ],
+      "en": [
+        "Start by picking the 1 and 4 tiles.",
+        "Make 1 + 4 = 5 first.",
+        "Full solution: 1 + 4 = 5 → 5 + 9 = 14"
+      ],
+      "ja": [
+        "まず 1 と 4 のタイルを選んでみましょう。",
+        "まず 1 + 4 = 5 を作ってみましょう。",
+        "解法の全体: 1 + 4 = 5 → 5 + 9 = 14"
+      ],
+      "zh": [
+        "先选择 1 和 4 这两个数字。",
+        "先算出 1 + 4 = 5。",
+        "完整解法：1 + 4 = 5 → 5 + 9 = 14"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 1 y 4.",
+        "Primero haz 1 + 4 = 5.",
+        "Solución completa: 1 + 4 = 5 → 5 + 9 = 14"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 1 et 4.",
+        "Calculez d'abord 1 + 4 = 5.",
+        "Solution complète : 1 + 4 = 5 → 5 + 9 = 14"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 1 und 4.",
+        "Rechne zuerst 1 + 4 = 5.",
+        "Gesamte Lösung: 1 + 4 = 5 → 5 + 9 = 14"
+      ]
+    },
+    "explanation": {
+      "ko": "1 + 4 = 5 → 5 + 9 = 14",
+      "en": "1 + 4 = 5 → 5 + 9 = 14",
+      "ja": "1 + 4 = 5 → 5 + 9 = 14",
+      "zh": "1 + 4 = 5 → 5 + 9 = 14",
+      "es": "1 + 4 = 5 → 5 + 9 = 14",
+      "fr": "1 + 4 = 5 → 5 + 9 = 14",
+      "de": "1 + 4 = 5 → 5 + 9 = 14"
+    }
+  },
+  {
+    "id": "tg1_s03",
+    "type": "target",
+    "track": "target",
+    "chapter": 1,
+    "order": 3,
+    "numbers": [
+      1,
+      8,
+      9
+    ],
+    "target": 18,
+    "answer": "18",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 1, 8 타일을 골라 보세요.",
+        "1 + 8 = 9 부터 계산해 보세요.",
+        "전체 풀이: 1 + 8 = 9 → 9 + 9 = 18"
+      ],
+      "en": [
+        "Start by picking the 1 and 8 tiles.",
+        "Make 1 + 8 = 9 first.",
+        "Full solution: 1 + 8 = 9 → 9 + 9 = 18"
+      ],
+      "ja": [
+        "まず 1 と 8 のタイルを選んでみましょう。",
+        "まず 1 + 8 = 9 を作ってみましょう。",
+        "解法の全体: 1 + 8 = 9 → 9 + 9 = 18"
+      ],
+      "zh": [
+        "先选择 1 和 8 这两个数字。",
+        "先算出 1 + 8 = 9。",
+        "完整解法：1 + 8 = 9 → 9 + 9 = 18"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 1 y 8.",
+        "Primero haz 1 + 8 = 9.",
+        "Solución completa: 1 + 8 = 9 → 9 + 9 = 18"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 1 et 8.",
+        "Calculez d'abord 1 + 8 = 9.",
+        "Solution complète : 1 + 8 = 9 → 9 + 9 = 18"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 1 und 8.",
+        "Rechne zuerst 1 + 8 = 9.",
+        "Gesamte Lösung: 1 + 8 = 9 → 9 + 9 = 18"
+      ]
+    },
+    "explanation": {
+      "ko": "1 + 8 = 9 → 9 + 9 = 18",
+      "en": "1 + 8 = 9 → 9 + 9 = 18",
+      "ja": "1 + 8 = 9 → 9 + 9 = 18",
+      "zh": "1 + 8 = 9 → 9 + 9 = 18",
+      "es": "1 + 8 = 9 → 9 + 9 = 18",
+      "fr": "1 + 8 = 9 → 9 + 9 = 18",
+      "de": "1 + 8 = 9 → 9 + 9 = 18"
+    }
+  },
+  {
+    "id": "tg1_s04",
+    "type": "target",
+    "track": "target",
+    "chapter": 1,
+    "order": 4,
+    "numbers": [
+      2,
+      4,
+      3
+    ],
+    "target": 24,
+    "answer": "24",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 2, 3 타일을 골라 보세요.",
+        "2 × 3 = 6 부터 계산해 보세요.",
+        "전체 풀이: 2 × 3 = 6 → 6 × 4 = 24"
+      ],
+      "en": [
+        "Start by picking the 2 and 3 tiles.",
+        "Make 2 × 3 = 6 first.",
+        "Full solution: 2 × 3 = 6 → 6 × 4 = 24"
+      ],
+      "ja": [
+        "まず 2 と 3 のタイルを選んでみましょう。",
+        "まず 2 × 3 = 6 を作ってみましょう。",
+        "解法の全体: 2 × 3 = 6 → 6 × 4 = 24"
+      ],
+      "zh": [
+        "先选择 2 和 3 这两个数字。",
+        "先算出 2 × 3 = 6。",
+        "完整解法：2 × 3 = 6 → 6 × 4 = 24"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 2 y 3.",
+        "Primero haz 2 × 3 = 6.",
+        "Solución completa: 2 × 3 = 6 → 6 × 4 = 24"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 2 et 3.",
+        "Calculez d'abord 2 × 3 = 6.",
+        "Solution complète : 2 × 3 = 6 → 6 × 4 = 24"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 2 und 3.",
+        "Rechne zuerst 2 × 3 = 6.",
+        "Gesamte Lösung: 2 × 3 = 6 → 6 × 4 = 24"
+      ]
+    },
+    "explanation": {
+      "ko": "2 × 3 = 6 → 6 × 4 = 24",
+      "en": "2 × 3 = 6 → 6 × 4 = 24",
+      "ja": "2 × 3 = 6 → 6 × 4 = 24",
+      "zh": "2 × 3 = 6 → 6 × 4 = 24",
+      "es": "2 × 3 = 6 → 6 × 4 = 24",
+      "fr": "2 × 3 = 6 → 6 × 4 = 24",
+      "de": "2 × 3 = 6 → 6 × 4 = 24"
+    }
+  },
+  {
+    "id": "tg1_s05",
+    "type": "target",
+    "track": "target",
+    "chapter": 1,
+    "order": 5,
+    "numbers": [
+      3,
+      2,
+      5
+    ],
+    "target": 13,
+    "answer": "13",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 2, 5 타일을 골라 보세요.",
+        "2 × 5 = 10 부터 계산해 보세요.",
+        "전체 풀이: 2 × 5 = 10 → 3 + 10 = 13"
+      ],
+      "en": [
+        "Start by picking the 2 and 5 tiles.",
+        "Make 2 × 5 = 10 first.",
+        "Full solution: 2 × 5 = 10 → 3 + 10 = 13"
+      ],
+      "ja": [
+        "まず 2 と 5 のタイルを選んでみましょう。",
+        "まず 2 × 5 = 10 を作ってみましょう。",
+        "解法の全体: 2 × 5 = 10 → 3 + 10 = 13"
+      ],
+      "zh": [
+        "先选择 2 和 5 这两个数字。",
+        "先算出 2 × 5 = 10。",
+        "完整解法：2 × 5 = 10 → 3 + 10 = 13"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 2 y 5.",
+        "Primero haz 2 × 5 = 10.",
+        "Solución completa: 2 × 5 = 10 → 3 + 10 = 13"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 2 et 5.",
+        "Calculez d'abord 2 × 5 = 10.",
+        "Solution complète : 2 × 5 = 10 → 3 + 10 = 13"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 2 und 5.",
+        "Rechne zuerst 2 × 5 = 10.",
+        "Gesamte Lösung: 2 × 5 = 10 → 3 + 10 = 13"
+      ]
+    },
+    "explanation": {
+      "ko": "2 × 5 = 10 → 3 + 10 = 13",
+      "en": "2 × 5 = 10 → 3 + 10 = 13",
+      "ja": "2 × 5 = 10 → 3 + 10 = 13",
+      "zh": "2 × 5 = 10 → 3 + 10 = 13",
+      "es": "2 × 5 = 10 → 3 + 10 = 13",
+      "fr": "2 × 5 = 10 → 3 + 10 = 13",
+      "de": "2 × 5 = 10 → 3 + 10 = 13"
+    }
+  },
+  {
+    "id": "tg1_s06",
+    "type": "target",
+    "track": "target",
+    "chapter": 1,
+    "order": 6,
+    "numbers": [
+      2,
+      5,
+      4
+    ],
+    "target": 18,
+    "answer": "18",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 5, 4 타일을 골라 보세요.",
+        "5 + 4 = 9 부터 계산해 보세요.",
+        "전체 풀이: 5 + 4 = 9 → 2 × 9 = 18"
+      ],
+      "en": [
+        "Start by picking the 5 and 4 tiles.",
+        "Make 5 + 4 = 9 first.",
+        "Full solution: 5 + 4 = 9 → 2 × 9 = 18"
+      ],
+      "ja": [
+        "まず 5 と 4 のタイルを選んでみましょう。",
+        "まず 5 + 4 = 9 を作ってみましょう。",
+        "解法の全体: 5 + 4 = 9 → 2 × 9 = 18"
+      ],
+      "zh": [
+        "先选择 5 和 4 这两个数字。",
+        "先算出 5 + 4 = 9。",
+        "完整解法：5 + 4 = 9 → 2 × 9 = 18"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 5 y 4.",
+        "Primero haz 5 + 4 = 9.",
+        "Solución completa: 5 + 4 = 9 → 2 × 9 = 18"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 5 et 4.",
+        "Calculez d'abord 5 + 4 = 9.",
+        "Solution complète : 5 + 4 = 9 → 2 × 9 = 18"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 5 und 4.",
+        "Rechne zuerst 5 + 4 = 9.",
+        "Gesamte Lösung: 5 + 4 = 9 → 2 × 9 = 18"
+      ]
+    },
+    "explanation": {
+      "ko": "5 + 4 = 9 → 2 × 9 = 18",
+      "en": "5 + 4 = 9 → 2 × 9 = 18",
+      "ja": "5 + 4 = 9 → 2 × 9 = 18",
+      "zh": "5 + 4 = 9 → 2 × 9 = 18",
+      "es": "5 + 4 = 9 → 2 × 9 = 18",
+      "fr": "5 + 4 = 9 → 2 × 9 = 18",
+      "de": "5 + 4 = 9 → 2 × 9 = 18"
+    }
+  },
+  {
+    "id": "tg2_s01",
+    "type": "target",
+    "track": "target",
+    "chapter": 2,
+    "order": 1,
+    "numbers": [
+      4,
+      12,
+      3
+    ],
+    "target": 24,
+    "answer": "24",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 4, 3 타일을 골라 보세요.",
+        "4 × 3 = 12 부터 계산해 보세요.",
+        "전체 풀이: 4 × 3 = 12 → 12 + 12 = 24"
+      ],
+      "en": [
+        "Start by picking the 4 and 3 tiles.",
+        "Make 4 × 3 = 12 first.",
+        "Full solution: 4 × 3 = 12 → 12 + 12 = 24"
+      ],
+      "ja": [
+        "まず 4 と 3 のタイルを選んでみましょう。",
+        "まず 4 × 3 = 12 を作ってみましょう。",
+        "解法の全体: 4 × 3 = 12 → 12 + 12 = 24"
+      ],
+      "zh": [
+        "先选择 4 和 3 这两个数字。",
+        "先算出 4 × 3 = 12。",
+        "完整解法：4 × 3 = 12 → 12 + 12 = 24"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 4 y 3.",
+        "Primero haz 4 × 3 = 12.",
+        "Solución completa: 4 × 3 = 12 → 12 + 12 = 24"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 4 et 3.",
+        "Calculez d'abord 4 × 3 = 12.",
+        "Solution complète : 4 × 3 = 12 → 12 + 12 = 24"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 4 und 3.",
+        "Rechne zuerst 4 × 3 = 12.",
+        "Gesamte Lösung: 4 × 3 = 12 → 12 + 12 = 24"
+      ]
+    },
+    "explanation": {
+      "ko": "4 × 3 = 12 → 12 + 12 = 24",
+      "en": "4 × 3 = 12 → 12 + 12 = 24",
+      "ja": "4 × 3 = 12 → 12 + 12 = 24",
+      "zh": "4 × 3 = 12 → 12 + 12 = 24",
+      "es": "4 × 3 = 12 → 12 + 12 = 24",
+      "fr": "4 × 3 = 12 → 12 + 12 = 24",
+      "de": "4 × 3 = 12 → 12 + 12 = 24"
+    }
+  },
+  {
+    "id": "tg2_s02",
+    "type": "target",
+    "track": "target",
+    "chapter": 2,
+    "order": 2,
+    "numbers": [
+      6,
+      5,
+      3
+    ],
+    "target": 33,
+    "answer": "33",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 6, 5 타일을 골라 보세요.",
+        "6 + 5 = 11 부터 계산해 보세요.",
+        "전체 풀이: 6 + 5 = 11 → 11 × 3 = 33"
+      ],
+      "en": [
+        "Start by picking the 6 and 5 tiles.",
+        "Make 6 + 5 = 11 first.",
+        "Full solution: 6 + 5 = 11 → 11 × 3 = 33"
+      ],
+      "ja": [
+        "まず 6 と 5 のタイルを選んでみましょう。",
+        "まず 6 + 5 = 11 を作ってみましょう。",
+        "解法の全体: 6 + 5 = 11 → 11 × 3 = 33"
+      ],
+      "zh": [
+        "先选择 6 和 5 这两个数字。",
+        "先算出 6 + 5 = 11。",
+        "完整解法：6 + 5 = 11 → 11 × 3 = 33"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 6 y 5.",
+        "Primero haz 6 + 5 = 11.",
+        "Solución completa: 6 + 5 = 11 → 11 × 3 = 33"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 6 et 5.",
+        "Calculez d'abord 6 + 5 = 11.",
+        "Solution complète : 6 + 5 = 11 → 11 × 3 = 33"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 6 und 5.",
+        "Rechne zuerst 6 + 5 = 11.",
+        "Gesamte Lösung: 6 + 5 = 11 → 11 × 3 = 33"
+      ]
+    },
+    "explanation": {
+      "ko": "6 + 5 = 11 → 11 × 3 = 33",
+      "en": "6 + 5 = 11 → 11 × 3 = 33",
+      "ja": "6 + 5 = 11 → 11 × 3 = 33",
+      "zh": "6 + 5 = 11 → 11 × 3 = 33",
+      "es": "6 + 5 = 11 → 11 × 3 = 33",
+      "fr": "6 + 5 = 11 → 11 × 3 = 33",
+      "de": "6 + 5 = 11 → 11 × 3 = 33"
+    }
+  },
+  {
+    "id": "tg2_s03",
+    "type": "target",
+    "track": "target",
+    "chapter": 2,
+    "order": 3,
+    "numbers": [
+      3,
+      5,
+      9
+    ],
+    "target": 42,
+    "answer": "42",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 5, 9 타일을 골라 보세요.",
+        "5 + 9 = 14 부터 계산해 보세요.",
+        "전체 풀이: 5 + 9 = 14 → 3 × 14 = 42"
+      ],
+      "en": [
+        "Start by picking the 5 and 9 tiles.",
+        "Make 5 + 9 = 14 first.",
+        "Full solution: 5 + 9 = 14 → 3 × 14 = 42"
+      ],
+      "ja": [
+        "まず 5 と 9 のタイルを選んでみましょう。",
+        "まず 5 + 9 = 14 を作ってみましょう。",
+        "解法の全体: 5 + 9 = 14 → 3 × 14 = 42"
+      ],
+      "zh": [
+        "先选择 5 和 9 这两个数字。",
+        "先算出 5 + 9 = 14。",
+        "完整解法：5 + 9 = 14 → 3 × 14 = 42"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 5 y 9.",
+        "Primero haz 5 + 9 = 14.",
+        "Solución completa: 5 + 9 = 14 → 3 × 14 = 42"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 5 et 9.",
+        "Calculez d'abord 5 + 9 = 14.",
+        "Solution complète : 5 + 9 = 14 → 3 × 14 = 42"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 5 und 9.",
+        "Rechne zuerst 5 + 9 = 14.",
+        "Gesamte Lösung: 5 + 9 = 14 → 3 × 14 = 42"
+      ]
+    },
+    "explanation": {
+      "ko": "5 + 9 = 14 → 3 × 14 = 42",
+      "en": "5 + 9 = 14 → 3 × 14 = 42",
+      "ja": "5 + 9 = 14 → 3 × 14 = 42",
+      "zh": "5 + 9 = 14 → 3 × 14 = 42",
+      "es": "5 + 9 = 14 → 3 × 14 = 42",
+      "fr": "5 + 9 = 14 → 3 × 14 = 42",
+      "de": "5 + 9 = 14 → 3 × 14 = 42"
+    }
+  },
+  {
+    "id": "tg2_s04",
+    "type": "target",
+    "track": "target",
+    "chapter": 2,
+    "order": 4,
+    "numbers": [
+      8,
+      7,
+      4
+    ],
+    "target": 60,
+    "answer": "60",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 8, 7 타일을 골라 보세요.",
+        "8 + 7 = 15 부터 계산해 보세요.",
+        "전체 풀이: 8 + 7 = 15 → 15 × 4 = 60"
+      ],
+      "en": [
+        "Start by picking the 8 and 7 tiles.",
+        "Make 8 + 7 = 15 first.",
+        "Full solution: 8 + 7 = 15 → 15 × 4 = 60"
+      ],
+      "ja": [
+        "まず 8 と 7 のタイルを選んでみましょう。",
+        "まず 8 + 7 = 15 を作ってみましょう。",
+        "解法の全体: 8 + 7 = 15 → 15 × 4 = 60"
+      ],
+      "zh": [
+        "先选择 8 和 7 这两个数字。",
+        "先算出 8 + 7 = 15。",
+        "完整解法：8 + 7 = 15 → 15 × 4 = 60"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 8 y 7.",
+        "Primero haz 8 + 7 = 15.",
+        "Solución completa: 8 + 7 = 15 → 15 × 4 = 60"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 8 et 7.",
+        "Calculez d'abord 8 + 7 = 15.",
+        "Solution complète : 8 + 7 = 15 → 15 × 4 = 60"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 8 und 7.",
+        "Rechne zuerst 8 + 7 = 15.",
+        "Gesamte Lösung: 8 + 7 = 15 → 15 × 4 = 60"
+      ]
+    },
+    "explanation": {
+      "ko": "8 + 7 = 15 → 15 × 4 = 60",
+      "en": "8 + 7 = 15 → 15 × 4 = 60",
+      "ja": "8 + 7 = 15 → 15 × 4 = 60",
+      "zh": "8 + 7 = 15 → 15 × 4 = 60",
+      "es": "8 + 7 = 15 → 15 × 4 = 60",
+      "fr": "8 + 7 = 15 → 15 × 4 = 60",
+      "de": "8 + 7 = 15 → 15 × 4 = 60"
+    }
+  },
+  {
+    "id": "tg2_s05",
+    "type": "target",
+    "track": "target",
+    "chapter": 2,
+    "order": 5,
+    "numbers": [
+      2,
+      5,
+      8
+    ],
+    "target": 21,
+    "answer": "21",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 2, 8 타일을 골라 보세요.",
+        "2 × 8 = 16 부터 계산해 보세요.",
+        "전체 풀이: 2 × 8 = 16 → 16 + 5 = 21"
+      ],
+      "en": [
+        "Start by picking the 2 and 8 tiles.",
+        "Make 2 × 8 = 16 first.",
+        "Full solution: 2 × 8 = 16 → 16 + 5 = 21"
+      ],
+      "ja": [
+        "まず 2 と 8 のタイルを選んでみましょう。",
+        "まず 2 × 8 = 16 を作ってみましょう。",
+        "解法の全体: 2 × 8 = 16 → 16 + 5 = 21"
+      ],
+      "zh": [
+        "先选择 2 和 8 这两个数字。",
+        "先算出 2 × 8 = 16。",
+        "完整解法：2 × 8 = 16 → 16 + 5 = 21"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 2 y 8.",
+        "Primero haz 2 × 8 = 16.",
+        "Solución completa: 2 × 8 = 16 → 16 + 5 = 21"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 2 et 8.",
+        "Calculez d'abord 2 × 8 = 16.",
+        "Solution complète : 2 × 8 = 16 → 16 + 5 = 21"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 2 und 8.",
+        "Rechne zuerst 2 × 8 = 16.",
+        "Gesamte Lösung: 2 × 8 = 16 → 16 + 5 = 21"
+      ]
+    },
+    "explanation": {
+      "ko": "2 × 8 = 16 → 16 + 5 = 21",
+      "en": "2 × 8 = 16 → 16 + 5 = 21",
+      "ja": "2 × 8 = 16 → 16 + 5 = 21",
+      "zh": "2 × 8 = 16 → 16 + 5 = 21",
+      "es": "2 × 8 = 16 → 16 + 5 = 21",
+      "fr": "2 × 8 = 16 → 16 + 5 = 21",
+      "de": "2 × 8 = 16 → 16 + 5 = 21"
+    }
+  },
+  {
+    "id": "tg2_s06",
+    "type": "target",
+    "track": "target",
+    "chapter": 2,
+    "order": 6,
+    "numbers": [
+      2,
+      5,
+      9
+    ],
+    "target": 28,
+    "answer": "28",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 5, 9 타일을 골라 보세요.",
+        "5 + 9 = 14 부터 계산해 보세요.",
+        "전체 풀이: 5 + 9 = 14 → 2 × 14 = 28"
+      ],
+      "en": [
+        "Start by picking the 5 and 9 tiles.",
+        "Make 5 + 9 = 14 first.",
+        "Full solution: 5 + 9 = 14 → 2 × 14 = 28"
+      ],
+      "ja": [
+        "まず 5 と 9 のタイルを選んでみましょう。",
+        "まず 5 + 9 = 14 を作ってみましょう。",
+        "解法の全体: 5 + 9 = 14 → 2 × 14 = 28"
+      ],
+      "zh": [
+        "先选择 5 和 9 这两个数字。",
+        "先算出 5 + 9 = 14。",
+        "完整解法：5 + 9 = 14 → 2 × 14 = 28"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 5 y 9.",
+        "Primero haz 5 + 9 = 14.",
+        "Solución completa: 5 + 9 = 14 → 2 × 14 = 28"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 5 et 9.",
+        "Calculez d'abord 5 + 9 = 14.",
+        "Solution complète : 5 + 9 = 14 → 2 × 14 = 28"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 5 und 9.",
+        "Rechne zuerst 5 + 9 = 14.",
+        "Gesamte Lösung: 5 + 9 = 14 → 2 × 14 = 28"
+      ]
+    },
+    "explanation": {
+      "ko": "5 + 9 = 14 → 2 × 14 = 28",
+      "en": "5 + 9 = 14 → 2 × 14 = 28",
+      "ja": "5 + 9 = 14 → 2 × 14 = 28",
+      "zh": "5 + 9 = 14 → 2 × 14 = 28",
+      "es": "5 + 9 = 14 → 2 × 14 = 28",
+      "fr": "5 + 9 = 14 → 2 × 14 = 28",
+      "de": "5 + 9 = 14 → 2 × 14 = 28"
+    }
+  },
+  {
+    "id": "tg3_s01",
+    "type": "target",
+    "track": "target",
+    "chapter": 3,
+    "order": 1,
+    "numbers": [
+      1,
+      5,
+      7,
+      9
+    ],
+    "target": 38,
+    "answer": "38",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 5, 9 타일을 골라 보세요.",
+        "5 × 9 = 45 부터 계산해 보세요.",
+        "전체 풀이: 5 × 9 = 45 → 45 − 7 = 38"
+      ],
+      "en": [
+        "Start by picking the 5 and 9 tiles.",
+        "Make 5 × 9 = 45 first.",
+        "Full solution: 5 × 9 = 45 → 45 − 7 = 38"
+      ],
+      "ja": [
+        "まず 5 と 9 のタイルを選んでみましょう。",
+        "まず 5 × 9 = 45 を作ってみましょう。",
+        "解法の全体: 5 × 9 = 45 → 45 − 7 = 38"
+      ],
+      "zh": [
+        "先选择 5 和 9 这两个数字。",
+        "先算出 5 × 9 = 45。",
+        "完整解法：5 × 9 = 45 → 45 − 7 = 38"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 5 y 9.",
+        "Primero haz 5 × 9 = 45.",
+        "Solución completa: 5 × 9 = 45 → 45 − 7 = 38"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 5 et 9.",
+        "Calculez d'abord 5 × 9 = 45.",
+        "Solution complète : 5 × 9 = 45 → 45 − 7 = 38"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 5 und 9.",
+        "Rechne zuerst 5 × 9 = 45.",
+        "Gesamte Lösung: 5 × 9 = 45 → 45 − 7 = 38"
+      ]
+    },
+    "explanation": {
+      "ko": "5 × 9 = 45 → 45 − 7 = 38",
+      "en": "5 × 9 = 45 → 45 − 7 = 38",
+      "ja": "5 × 9 = 45 → 45 − 7 = 38",
+      "zh": "5 × 9 = 45 → 45 − 7 = 38",
+      "es": "5 × 9 = 45 → 45 − 7 = 38",
+      "fr": "5 × 9 = 45 → 45 − 7 = 38",
+      "de": "5 × 9 = 45 → 45 − 7 = 38"
+    }
+  },
+  {
+    "id": "tg3_s02",
+    "type": "target",
+    "track": "target",
+    "chapter": 3,
+    "order": 2,
+    "numbers": [
+      3,
+      6,
+      2,
+      9
+    ],
+    "target": 52,
+    "answer": "52",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 6, 9 타일을 골라 보세요.",
+        "6 × 9 = 54 부터 계산해 보세요.",
+        "전체 풀이: 6 × 9 = 54 → 54 − 2 = 52"
+      ],
+      "en": [
+        "Start by picking the 6 and 9 tiles.",
+        "Make 6 × 9 = 54 first.",
+        "Full solution: 6 × 9 = 54 → 54 − 2 = 52"
+      ],
+      "ja": [
+        "まず 6 と 9 のタイルを選んでみましょう。",
+        "まず 6 × 9 = 54 を作ってみましょう。",
+        "解法の全体: 6 × 9 = 54 → 54 − 2 = 52"
+      ],
+      "zh": [
+        "先选择 6 和 9 这两个数字。",
+        "先算出 6 × 9 = 54。",
+        "完整解法：6 × 9 = 54 → 54 − 2 = 52"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 6 y 9.",
+        "Primero haz 6 × 9 = 54.",
+        "Solución completa: 6 × 9 = 54 → 54 − 2 = 52"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 6 et 9.",
+        "Calculez d'abord 6 × 9 = 54.",
+        "Solution complète : 6 × 9 = 54 → 54 − 2 = 52"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 6 und 9.",
+        "Rechne zuerst 6 × 9 = 54.",
+        "Gesamte Lösung: 6 × 9 = 54 → 54 − 2 = 52"
+      ]
+    },
+    "explanation": {
+      "ko": "6 × 9 = 54 → 54 − 2 = 52",
+      "en": "6 × 9 = 54 → 54 − 2 = 52",
+      "ja": "6 × 9 = 54 → 54 − 2 = 52",
+      "zh": "6 × 9 = 54 → 54 − 2 = 52",
+      "es": "6 × 9 = 54 → 54 − 2 = 52",
+      "fr": "6 × 9 = 54 → 54 − 2 = 52",
+      "de": "6 × 9 = 54 → 54 − 2 = 52"
+    }
+  },
+  {
+    "id": "tg3_s03",
+    "type": "target",
+    "track": "target",
+    "chapter": 3,
+    "order": 3,
+    "numbers": [
+      4,
+      7,
+      9,
+      5
+    ],
+    "target": 22,
+    "answer": "22",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 4, 5 타일을 골라 보세요.",
+        "4 × 5 = 20 부터 계산해 보세요.",
+        "전체 풀이: 4 × 5 = 20 → 20 + 9 = 29 → 29 − 7 = 22"
+      ],
+      "en": [
+        "Start by picking the 4 and 5 tiles.",
+        "Make 4 × 5 = 20 first.",
+        "Full solution: 4 × 5 = 20 → 20 + 9 = 29 → 29 − 7 = 22"
+      ],
+      "ja": [
+        "まず 4 と 5 のタイルを選んでみましょう。",
+        "まず 4 × 5 = 20 を作ってみましょう。",
+        "解法の全体: 4 × 5 = 20 → 20 + 9 = 29 → 29 − 7 = 22"
+      ],
+      "zh": [
+        "先选择 4 和 5 这两个数字。",
+        "先算出 4 × 5 = 20。",
+        "完整解法：4 × 5 = 20 → 20 + 9 = 29 → 29 − 7 = 22"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 4 y 5.",
+        "Primero haz 4 × 5 = 20.",
+        "Solución completa: 4 × 5 = 20 → 20 + 9 = 29 → 29 − 7 = 22"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 4 et 5.",
+        "Calculez d'abord 4 × 5 = 20.",
+        "Solution complète : 4 × 5 = 20 → 20 + 9 = 29 → 29 − 7 = 22"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 4 und 5.",
+        "Rechne zuerst 4 × 5 = 20.",
+        "Gesamte Lösung: 4 × 5 = 20 → 20 + 9 = 29 → 29 − 7 = 22"
+      ]
+    },
+    "explanation": {
+      "ko": "4 × 5 = 20 → 20 + 9 = 29 → 29 − 7 = 22",
+      "en": "4 × 5 = 20 → 20 + 9 = 29 → 29 − 7 = 22",
+      "ja": "4 × 5 = 20 → 20 + 9 = 29 → 29 − 7 = 22",
+      "zh": "4 × 5 = 20 → 20 + 9 = 29 → 29 − 7 = 22",
+      "es": "4 × 5 = 20 → 20 + 9 = 29 → 29 − 7 = 22",
+      "fr": "4 × 5 = 20 → 20 + 9 = 29 → 29 − 7 = 22",
+      "de": "4 × 5 = 20 → 20 + 9 = 29 → 29 − 7 = 22"
+    }
+  },
+  {
+    "id": "tg3_s04",
+    "type": "target",
+    "track": "target",
+    "chapter": 3,
+    "order": 4,
+    "numbers": [
+      8,
+      9,
+      7,
+      5
+    ],
+    "target": 42,
+    "answer": "42",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 8, 5 타일을 골라 보세요.",
+        "8 × 5 = 40 부터 계산해 보세요.",
+        "전체 풀이: 8 × 5 = 40 → 40 + 9 = 49 → 49 − 7 = 42"
+      ],
+      "en": [
+        "Start by picking the 8 and 5 tiles.",
+        "Make 8 × 5 = 40 first.",
+        "Full solution: 8 × 5 = 40 → 40 + 9 = 49 → 49 − 7 = 42"
+      ],
+      "ja": [
+        "まず 8 と 5 のタイルを選んでみましょう。",
+        "まず 8 × 5 = 40 を作ってみましょう。",
+        "解法の全体: 8 × 5 = 40 → 40 + 9 = 49 → 49 − 7 = 42"
+      ],
+      "zh": [
+        "先选择 8 和 5 这两个数字。",
+        "先算出 8 × 5 = 40。",
+        "完整解法：8 × 5 = 40 → 40 + 9 = 49 → 49 − 7 = 42"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 8 y 5.",
+        "Primero haz 8 × 5 = 40.",
+        "Solución completa: 8 × 5 = 40 → 40 + 9 = 49 → 49 − 7 = 42"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 8 et 5.",
+        "Calculez d'abord 8 × 5 = 40.",
+        "Solution complète : 8 × 5 = 40 → 40 + 9 = 49 → 49 − 7 = 42"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 8 und 5.",
+        "Rechne zuerst 8 × 5 = 40.",
+        "Gesamte Lösung: 8 × 5 = 40 → 40 + 9 = 49 → 49 − 7 = 42"
+      ]
+    },
+    "explanation": {
+      "ko": "8 × 5 = 40 → 40 + 9 = 49 → 49 − 7 = 42",
+      "en": "8 × 5 = 40 → 40 + 9 = 49 → 49 − 7 = 42",
+      "ja": "8 × 5 = 40 → 40 + 9 = 49 → 49 − 7 = 42",
+      "zh": "8 × 5 = 40 → 40 + 9 = 49 → 49 − 7 = 42",
+      "es": "8 × 5 = 40 → 40 + 9 = 49 → 49 − 7 = 42",
+      "fr": "8 × 5 = 40 → 40 + 9 = 49 → 49 − 7 = 42",
+      "de": "8 × 5 = 40 → 40 + 9 = 49 → 49 − 7 = 42"
+    }
+  },
+  {
+    "id": "tg3_s05",
+    "type": "target",
+    "track": "target",
+    "chapter": 3,
+    "order": 5,
+    "numbers": [
+      9,
+      3,
+      5,
+      7
+    ],
+    "target": 41,
+    "answer": "41",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 3, 7 타일을 골라 보세요.",
+        "3 + 7 = 10 부터 계산해 보세요.",
+        "전체 풀이: 3 + 7 = 10 → 10 × 5 = 50 → 50 − 9 = 41"
+      ],
+      "en": [
+        "Start by picking the 3 and 7 tiles.",
+        "Make 3 + 7 = 10 first.",
+        "Full solution: 3 + 7 = 10 → 10 × 5 = 50 → 50 − 9 = 41"
+      ],
+      "ja": [
+        "まず 3 と 7 のタイルを選んでみましょう。",
+        "まず 3 + 7 = 10 を作ってみましょう。",
+        "解法の全体: 3 + 7 = 10 → 10 × 5 = 50 → 50 − 9 = 41"
+      ],
+      "zh": [
+        "先选择 3 和 7 这两个数字。",
+        "先算出 3 + 7 = 10。",
+        "完整解法：3 + 7 = 10 → 10 × 5 = 50 → 50 − 9 = 41"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 3 y 7.",
+        "Primero haz 3 + 7 = 10.",
+        "Solución completa: 3 + 7 = 10 → 10 × 5 = 50 → 50 − 9 = 41"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 3 et 7.",
+        "Calculez d'abord 3 + 7 = 10.",
+        "Solution complète : 3 + 7 = 10 → 10 × 5 = 50 → 50 − 9 = 41"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 3 und 7.",
+        "Rechne zuerst 3 + 7 = 10.",
+        "Gesamte Lösung: 3 + 7 = 10 → 10 × 5 = 50 → 50 − 9 = 41"
+      ]
+    },
+    "explanation": {
+      "ko": "3 + 7 = 10 → 10 × 5 = 50 → 50 − 9 = 41",
+      "en": "3 + 7 = 10 → 10 × 5 = 50 → 50 − 9 = 41",
+      "ja": "3 + 7 = 10 → 10 × 5 = 50 → 50 − 9 = 41",
+      "zh": "3 + 7 = 10 → 10 × 5 = 50 → 50 − 9 = 41",
+      "es": "3 + 7 = 10 → 10 × 5 = 50 → 50 − 9 = 41",
+      "fr": "3 + 7 = 10 → 10 × 5 = 50 → 50 − 9 = 41",
+      "de": "3 + 7 = 10 → 10 × 5 = 50 → 50 − 9 = 41"
+    }
+  },
+  {
+    "id": "tg3_s06",
+    "type": "target",
+    "track": "target",
+    "chapter": 3,
+    "order": 6,
+    "numbers": [
+      5,
+      9,
+      2,
+      6
+    ],
+    "target": 37,
+    "answer": "37",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 5, 6 타일을 골라 보세요.",
+        "5 × 6 = 30 부터 계산해 보세요.",
+        "전체 풀이: 5 × 6 = 30 → 30 + 9 = 39 → 39 − 2 = 37"
+      ],
+      "en": [
+        "Start by picking the 5 and 6 tiles.",
+        "Make 5 × 6 = 30 first.",
+        "Full solution: 5 × 6 = 30 → 30 + 9 = 39 → 39 − 2 = 37"
+      ],
+      "ja": [
+        "まず 5 と 6 のタイルを選んでみましょう。",
+        "まず 5 × 6 = 30 を作ってみましょう。",
+        "解法の全体: 5 × 6 = 30 → 30 + 9 = 39 → 39 − 2 = 37"
+      ],
+      "zh": [
+        "先选择 5 和 6 这两个数字。",
+        "先算出 5 × 6 = 30。",
+        "完整解法：5 × 6 = 30 → 30 + 9 = 39 → 39 − 2 = 37"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 5 y 6.",
+        "Primero haz 5 × 6 = 30.",
+        "Solución completa: 5 × 6 = 30 → 30 + 9 = 39 → 39 − 2 = 37"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 5 et 6.",
+        "Calculez d'abord 5 × 6 = 30.",
+        "Solution complète : 5 × 6 = 30 → 30 + 9 = 39 → 39 − 2 = 37"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 5 und 6.",
+        "Rechne zuerst 5 × 6 = 30.",
+        "Gesamte Lösung: 5 × 6 = 30 → 30 + 9 = 39 → 39 − 2 = 37"
+      ]
+    },
+    "explanation": {
+      "ko": "5 × 6 = 30 → 30 + 9 = 39 → 39 − 2 = 37",
+      "en": "5 × 6 = 30 → 30 + 9 = 39 → 39 − 2 = 37",
+      "ja": "5 × 6 = 30 → 30 + 9 = 39 → 39 − 2 = 37",
+      "zh": "5 × 6 = 30 → 30 + 9 = 39 → 39 − 2 = 37",
+      "es": "5 × 6 = 30 → 30 + 9 = 39 → 39 − 2 = 37",
+      "fr": "5 × 6 = 30 → 30 + 9 = 39 → 39 − 2 = 37",
+      "de": "5 × 6 = 30 → 30 + 9 = 39 → 39 − 2 = 37"
+    }
+  },
+  {
+    "id": "tg4_s01",
+    "type": "target",
+    "track": "target",
+    "chapter": 4,
+    "order": 1,
+    "numbers": [
+      8,
+      11,
+      3,
+      2
+    ],
+    "target": 32,
+    "answer": "32",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 11, 3 타일을 골라 보세요.",
+        "11 − 3 = 8 부터 계산해 보세요.",
+        "전체 풀이: 11 − 3 = 8 → 8 + 8 = 16 → 16 × 2 = 32"
+      ],
+      "en": [
+        "Start by picking the 11 and 3 tiles.",
+        "Make 11 − 3 = 8 first.",
+        "Full solution: 11 − 3 = 8 → 8 + 8 = 16 → 16 × 2 = 32"
+      ],
+      "ja": [
+        "まず 11 と 3 のタイルを選んでみましょう。",
+        "まず 11 − 3 = 8 を作ってみましょう。",
+        "解法の全体: 11 − 3 = 8 → 8 + 8 = 16 → 16 × 2 = 32"
+      ],
+      "zh": [
+        "先选择 11 和 3 这两个数字。",
+        "先算出 11 − 3 = 8。",
+        "完整解法：11 − 3 = 8 → 8 + 8 = 16 → 16 × 2 = 32"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 11 y 3.",
+        "Primero haz 11 − 3 = 8.",
+        "Solución completa: 11 − 3 = 8 → 8 + 8 = 16 → 16 × 2 = 32"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 11 et 3.",
+        "Calculez d'abord 11 − 3 = 8.",
+        "Solution complète : 11 − 3 = 8 → 8 + 8 = 16 → 16 × 2 = 32"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 11 und 3.",
+        "Rechne zuerst 11 − 3 = 8.",
+        "Gesamte Lösung: 11 − 3 = 8 → 8 + 8 = 16 → 16 × 2 = 32"
+      ]
+    },
+    "explanation": {
+      "ko": "11 − 3 = 8 → 8 + 8 = 16 → 16 × 2 = 32",
+      "en": "11 − 3 = 8 → 8 + 8 = 16 → 16 × 2 = 32",
+      "ja": "11 − 3 = 8 → 8 + 8 = 16 → 16 × 2 = 32",
+      "zh": "11 − 3 = 8 → 8 + 8 = 16 → 16 × 2 = 32",
+      "es": "11 − 3 = 8 → 8 + 8 = 16 → 16 × 2 = 32",
+      "fr": "11 − 3 = 8 → 8 + 8 = 16 → 16 × 2 = 32",
+      "de": "11 − 3 = 8 → 8 + 8 = 16 → 16 × 2 = 32"
+    }
+  },
+  {
+    "id": "tg4_s02",
+    "type": "target",
+    "track": "target",
+    "chapter": 4,
+    "order": 2,
+    "numbers": [
+      9,
+      7,
+      11,
+      8
+    ],
+    "target": 44,
+    "answer": "44",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 11, 8 타일을 골라 보세요.",
+        "11 × 8 = 88 부터 계산해 보세요.",
+        "전체 풀이: 11 × 8 = 88 → 9 − 7 = 2 → 88 ÷ 2 = 44"
+      ],
+      "en": [
+        "Start by picking the 11 and 8 tiles.",
+        "Make 11 × 8 = 88 first.",
+        "Full solution: 11 × 8 = 88 → 9 − 7 = 2 → 88 ÷ 2 = 44"
+      ],
+      "ja": [
+        "まず 11 と 8 のタイルを選んでみましょう。",
+        "まず 11 × 8 = 88 を作ってみましょう。",
+        "解法の全体: 11 × 8 = 88 → 9 − 7 = 2 → 88 ÷ 2 = 44"
+      ],
+      "zh": [
+        "先选择 11 和 8 这两个数字。",
+        "先算出 11 × 8 = 88。",
+        "完整解法：11 × 8 = 88 → 9 − 7 = 2 → 88 ÷ 2 = 44"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 11 y 8.",
+        "Primero haz 11 × 8 = 88.",
+        "Solución completa: 11 × 8 = 88 → 9 − 7 = 2 → 88 ÷ 2 = 44"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 11 et 8.",
+        "Calculez d'abord 11 × 8 = 88.",
+        "Solution complète : 11 × 8 = 88 → 9 − 7 = 2 → 88 ÷ 2 = 44"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 11 und 8.",
+        "Rechne zuerst 11 × 8 = 88.",
+        "Gesamte Lösung: 11 × 8 = 88 → 9 − 7 = 2 → 88 ÷ 2 = 44"
+      ]
+    },
+    "explanation": {
+      "ko": "11 × 8 = 88 → 9 − 7 = 2 → 88 ÷ 2 = 44",
+      "en": "11 × 8 = 88 → 9 − 7 = 2 → 88 ÷ 2 = 44",
+      "ja": "11 × 8 = 88 → 9 − 7 = 2 → 88 ÷ 2 = 44",
+      "zh": "11 × 8 = 88 → 9 − 7 = 2 → 88 ÷ 2 = 44",
+      "es": "11 × 8 = 88 → 9 − 7 = 2 → 88 ÷ 2 = 44",
+      "fr": "11 × 8 = 88 → 9 − 7 = 2 → 88 ÷ 2 = 44",
+      "de": "11 × 8 = 88 → 9 − 7 = 2 → 88 ÷ 2 = 44"
+    }
+  },
+  {
+    "id": "tg4_s03",
+    "type": "target",
+    "track": "target",
+    "chapter": 4,
+    "order": 3,
+    "numbers": [
+      6,
+      3,
+      4,
+      11
+    ],
+    "target": 60,
+    "answer": "60",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 11, 4 타일을 골라 보세요.",
+        "11 − 4 = 7 부터 계산해 보세요.",
+        "전체 풀이: 11 − 4 = 7 → 3 + 7 = 10 → 6 × 10 = 60"
+      ],
+      "en": [
+        "Start by picking the 11 and 4 tiles.",
+        "Make 11 − 4 = 7 first.",
+        "Full solution: 11 − 4 = 7 → 3 + 7 = 10 → 6 × 10 = 60"
+      ],
+      "ja": [
+        "まず 11 と 4 のタイルを選んでみましょう。",
+        "まず 11 − 4 = 7 を作ってみましょう。",
+        "解法の全体: 11 − 4 = 7 → 3 + 7 = 10 → 6 × 10 = 60"
+      ],
+      "zh": [
+        "先选择 11 和 4 这两个数字。",
+        "先算出 11 − 4 = 7。",
+        "完整解法：11 − 4 = 7 → 3 + 7 = 10 → 6 × 10 = 60"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 11 y 4.",
+        "Primero haz 11 − 4 = 7.",
+        "Solución completa: 11 − 4 = 7 → 3 + 7 = 10 → 6 × 10 = 60"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 11 et 4.",
+        "Calculez d'abord 11 − 4 = 7.",
+        "Solution complète : 11 − 4 = 7 → 3 + 7 = 10 → 6 × 10 = 60"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 11 und 4.",
+        "Rechne zuerst 11 − 4 = 7.",
+        "Gesamte Lösung: 11 − 4 = 7 → 3 + 7 = 10 → 6 × 10 = 60"
+      ]
+    },
+    "explanation": {
+      "ko": "11 − 4 = 7 → 3 + 7 = 10 → 6 × 10 = 60",
+      "en": "11 − 4 = 7 → 3 + 7 = 10 → 6 × 10 = 60",
+      "ja": "11 − 4 = 7 → 3 + 7 = 10 → 6 × 10 = 60",
+      "zh": "11 − 4 = 7 → 3 + 7 = 10 → 6 × 10 = 60",
+      "es": "11 − 4 = 7 → 3 + 7 = 10 → 6 × 10 = 60",
+      "fr": "11 − 4 = 7 → 3 + 7 = 10 → 6 × 10 = 60",
+      "de": "11 − 4 = 7 → 3 + 7 = 10 → 6 × 10 = 60"
+    }
+  },
+  {
+    "id": "tg4_s04",
+    "type": "target",
+    "track": "target",
+    "chapter": 4,
+    "order": 4,
+    "numbers": [
+      3,
+      12,
+      15,
+      5
+    ],
+    "target": 48,
+    "answer": "48",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 12, 5 타일을 골라 보세요.",
+        "12 × 5 = 60 부터 계산해 보세요.",
+        "전체 풀이: 12 × 5 = 60 → 15 − 3 = 12 → 60 − 12 = 48"
+      ],
+      "en": [
+        "Start by picking the 12 and 5 tiles.",
+        "Make 12 × 5 = 60 first.",
+        "Full solution: 12 × 5 = 60 → 15 − 3 = 12 → 60 − 12 = 48"
+      ],
+      "ja": [
+        "まず 12 と 5 のタイルを選んでみましょう。",
+        "まず 12 × 5 = 60 を作ってみましょう。",
+        "解法の全体: 12 × 5 = 60 → 15 − 3 = 12 → 60 − 12 = 48"
+      ],
+      "zh": [
+        "先选择 12 和 5 这两个数字。",
+        "先算出 12 × 5 = 60。",
+        "完整解法：12 × 5 = 60 → 15 − 3 = 12 → 60 − 12 = 48"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 12 y 5.",
+        "Primero haz 12 × 5 = 60.",
+        "Solución completa: 12 × 5 = 60 → 15 − 3 = 12 → 60 − 12 = 48"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 12 et 5.",
+        "Calculez d'abord 12 × 5 = 60.",
+        "Solution complète : 12 × 5 = 60 → 15 − 3 = 12 → 60 − 12 = 48"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 12 und 5.",
+        "Rechne zuerst 12 × 5 = 60.",
+        "Gesamte Lösung: 12 × 5 = 60 → 15 − 3 = 12 → 60 − 12 = 48"
+      ]
+    },
+    "explanation": {
+      "ko": "12 × 5 = 60 → 15 − 3 = 12 → 60 − 12 = 48",
+      "en": "12 × 5 = 60 → 15 − 3 = 12 → 60 − 12 = 48",
+      "ja": "12 × 5 = 60 → 15 − 3 = 12 → 60 − 12 = 48",
+      "zh": "12 × 5 = 60 → 15 − 3 = 12 → 60 − 12 = 48",
+      "es": "12 × 5 = 60 → 15 − 3 = 12 → 60 − 12 = 48",
+      "fr": "12 × 5 = 60 → 15 − 3 = 12 → 60 − 12 = 48",
+      "de": "12 × 5 = 60 → 15 − 3 = 12 → 60 − 12 = 48"
+    }
+  },
+  {
+    "id": "tg4_s05",
+    "type": "target",
+    "track": "target",
+    "chapter": 4,
+    "order": 5,
+    "numbers": [
+      9,
+      13,
+      7,
+      15
+    ],
+    "target": 109,
+    "answer": "109",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 13, 9 타일을 골라 보세요.",
+        "13 − 9 = 4 부터 계산해 보세요.",
+        "전체 풀이: 13 − 9 = 4 → 7 × 15 = 105 → 4 + 105 = 109"
+      ],
+      "en": [
+        "Start by picking the 13 and 9 tiles.",
+        "Make 13 − 9 = 4 first.",
+        "Full solution: 13 − 9 = 4 → 7 × 15 = 105 → 4 + 105 = 109"
+      ],
+      "ja": [
+        "まず 13 と 9 のタイルを選んでみましょう。",
+        "まず 13 − 9 = 4 を作ってみましょう。",
+        "解法の全体: 13 − 9 = 4 → 7 × 15 = 105 → 4 + 105 = 109"
+      ],
+      "zh": [
+        "先选择 13 和 9 这两个数字。",
+        "先算出 13 − 9 = 4。",
+        "完整解法：13 − 9 = 4 → 7 × 15 = 105 → 4 + 105 = 109"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 13 y 9.",
+        "Primero haz 13 − 9 = 4.",
+        "Solución completa: 13 − 9 = 4 → 7 × 15 = 105 → 4 + 105 = 109"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 13 et 9.",
+        "Calculez d'abord 13 − 9 = 4.",
+        "Solution complète : 13 − 9 = 4 → 7 × 15 = 105 → 4 + 105 = 109"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 13 und 9.",
+        "Rechne zuerst 13 − 9 = 4.",
+        "Gesamte Lösung: 13 − 9 = 4 → 7 × 15 = 105 → 4 + 105 = 109"
+      ]
+    },
+    "explanation": {
+      "ko": "13 − 9 = 4 → 7 × 15 = 105 → 4 + 105 = 109",
+      "en": "13 − 9 = 4 → 7 × 15 = 105 → 4 + 105 = 109",
+      "ja": "13 − 9 = 4 → 7 × 15 = 105 → 4 + 105 = 109",
+      "zh": "13 − 9 = 4 → 7 × 15 = 105 → 4 + 105 = 109",
+      "es": "13 − 9 = 4 → 7 × 15 = 105 → 4 + 105 = 109",
+      "fr": "13 − 9 = 4 → 7 × 15 = 105 → 4 + 105 = 109",
+      "de": "13 − 9 = 4 → 7 × 15 = 105 → 4 + 105 = 109"
+    }
+  },
+  {
+    "id": "tg4_s06",
+    "type": "target",
+    "track": "target",
+    "chapter": 4,
+    "order": 6,
+    "numbers": [
+      3,
+      8,
+      10,
+      7
+    ],
+    "target": 48,
+    "answer": "48",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 10, 7 타일을 골라 보세요.",
+        "10 − 7 = 3 부터 계산해 보세요.",
+        "전체 풀이: 10 − 7 = 3 → 3 + 3 = 6 → 6 × 8 = 48"
+      ],
+      "en": [
+        "Start by picking the 10 and 7 tiles.",
+        "Make 10 − 7 = 3 first.",
+        "Full solution: 10 − 7 = 3 → 3 + 3 = 6 → 6 × 8 = 48"
+      ],
+      "ja": [
+        "まず 10 と 7 のタイルを選んでみましょう。",
+        "まず 10 − 7 = 3 を作ってみましょう。",
+        "解法の全体: 10 − 7 = 3 → 3 + 3 = 6 → 6 × 8 = 48"
+      ],
+      "zh": [
+        "先选择 10 和 7 这两个数字。",
+        "先算出 10 − 7 = 3。",
+        "完整解法：10 − 7 = 3 → 3 + 3 = 6 → 6 × 8 = 48"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 10 y 7.",
+        "Primero haz 10 − 7 = 3.",
+        "Solución completa: 10 − 7 = 3 → 3 + 3 = 6 → 6 × 8 = 48"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 10 et 7.",
+        "Calculez d'abord 10 − 7 = 3.",
+        "Solution complète : 10 − 7 = 3 → 3 + 3 = 6 → 6 × 8 = 48"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 10 und 7.",
+        "Rechne zuerst 10 − 7 = 3.",
+        "Gesamte Lösung: 10 − 7 = 3 → 3 + 3 = 6 → 6 × 8 = 48"
+      ]
+    },
+    "explanation": {
+      "ko": "10 − 7 = 3 → 3 + 3 = 6 → 6 × 8 = 48",
+      "en": "10 − 7 = 3 → 3 + 3 = 6 → 6 × 8 = 48",
+      "ja": "10 − 7 = 3 → 3 + 3 = 6 → 6 × 8 = 48",
+      "zh": "10 − 7 = 3 → 3 + 3 = 6 → 6 × 8 = 48",
+      "es": "10 − 7 = 3 → 3 + 3 = 6 → 6 × 8 = 48",
+      "fr": "10 − 7 = 3 → 3 + 3 = 6 → 6 × 8 = 48",
+      "de": "10 − 7 = 3 → 3 + 3 = 6 → 6 × 8 = 48"
+    }
+  },
+  {
+    "id": "tg5_s01",
+    "type": "target",
+    "track": "target",
+    "chapter": 5,
+    "order": 1,
+    "numbers": [
+      4,
+      9,
+      1,
+      10,
+      5
+    ],
+    "target": 134,
+    "answer": "134",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 10, 5 타일을 골라 보세요.",
+        "10 + 5 = 15 부터 계산해 보세요.",
+        "전체 풀이: 10 + 5 = 15 → 9 × 15 = 135 → 135 − 1 = 134"
+      ],
+      "en": [
+        "Start by picking the 10 and 5 tiles.",
+        "Make 10 + 5 = 15 first.",
+        "Full solution: 10 + 5 = 15 → 9 × 15 = 135 → 135 − 1 = 134"
+      ],
+      "ja": [
+        "まず 10 と 5 のタイルを選んでみましょう。",
+        "まず 10 + 5 = 15 を作ってみましょう。",
+        "解法の全体: 10 + 5 = 15 → 9 × 15 = 135 → 135 − 1 = 134"
+      ],
+      "zh": [
+        "先选择 10 和 5 这两个数字。",
+        "先算出 10 + 5 = 15。",
+        "完整解法：10 + 5 = 15 → 9 × 15 = 135 → 135 − 1 = 134"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 10 y 5.",
+        "Primero haz 10 + 5 = 15.",
+        "Solución completa: 10 + 5 = 15 → 9 × 15 = 135 → 135 − 1 = 134"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 10 et 5.",
+        "Calculez d'abord 10 + 5 = 15.",
+        "Solution complète : 10 + 5 = 15 → 9 × 15 = 135 → 135 − 1 = 134"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 10 und 5.",
+        "Rechne zuerst 10 + 5 = 15.",
+        "Gesamte Lösung: 10 + 5 = 15 → 9 × 15 = 135 → 135 − 1 = 134"
+      ]
+    },
+    "explanation": {
+      "ko": "10 + 5 = 15 → 9 × 15 = 135 → 135 − 1 = 134",
+      "en": "10 + 5 = 15 → 9 × 15 = 135 → 135 − 1 = 134",
+      "ja": "10 + 5 = 15 → 9 × 15 = 135 → 135 − 1 = 134",
+      "zh": "10 + 5 = 15 → 9 × 15 = 135 → 135 − 1 = 134",
+      "es": "10 + 5 = 15 → 9 × 15 = 135 → 135 − 1 = 134",
+      "fr": "10 + 5 = 15 → 9 × 15 = 135 → 135 − 1 = 134",
+      "de": "10 + 5 = 15 → 9 × 15 = 135 → 135 − 1 = 134"
+    }
+  },
+  {
+    "id": "tg5_s02",
+    "type": "target",
+    "track": "target",
+    "chapter": 5,
+    "order": 2,
+    "numbers": [
+      3,
+      1,
+      9,
+      8,
+      5
+    ],
+    "target": 91,
+    "answer": "91",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 3, 9 타일을 골라 보세요.",
+        "3 + 9 = 12 부터 계산해 보세요.",
+        "전체 풀이: 3 + 9 = 12 → 12 × 8 = 96 → 96 − 5 = 91"
+      ],
+      "en": [
+        "Start by picking the 3 and 9 tiles.",
+        "Make 3 + 9 = 12 first.",
+        "Full solution: 3 + 9 = 12 → 12 × 8 = 96 → 96 − 5 = 91"
+      ],
+      "ja": [
+        "まず 3 と 9 のタイルを選んでみましょう。",
+        "まず 3 + 9 = 12 を作ってみましょう。",
+        "解法の全体: 3 + 9 = 12 → 12 × 8 = 96 → 96 − 5 = 91"
+      ],
+      "zh": [
+        "先选择 3 和 9 这两个数字。",
+        "先算出 3 + 9 = 12。",
+        "完整解法：3 + 9 = 12 → 12 × 8 = 96 → 96 − 5 = 91"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 3 y 9.",
+        "Primero haz 3 + 9 = 12.",
+        "Solución completa: 3 + 9 = 12 → 12 × 8 = 96 → 96 − 5 = 91"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 3 et 9.",
+        "Calculez d'abord 3 + 9 = 12.",
+        "Solution complète : 3 + 9 = 12 → 12 × 8 = 96 → 96 − 5 = 91"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 3 und 9.",
+        "Rechne zuerst 3 + 9 = 12.",
+        "Gesamte Lösung: 3 + 9 = 12 → 12 × 8 = 96 → 96 − 5 = 91"
+      ]
+    },
+    "explanation": {
+      "ko": "3 + 9 = 12 → 12 × 8 = 96 → 96 − 5 = 91",
+      "en": "3 + 9 = 12 → 12 × 8 = 96 → 96 − 5 = 91",
+      "ja": "3 + 9 = 12 → 12 × 8 = 96 → 96 − 5 = 91",
+      "zh": "3 + 9 = 12 → 12 × 8 = 96 → 96 − 5 = 91",
+      "es": "3 + 9 = 12 → 12 × 8 = 96 → 96 − 5 = 91",
+      "fr": "3 + 9 = 12 → 12 × 8 = 96 → 96 − 5 = 91",
+      "de": "3 + 9 = 12 → 12 × 8 = 96 → 96 − 5 = 91"
+    }
+  },
+  {
+    "id": "tg5_s03",
+    "type": "target",
+    "track": "target",
+    "chapter": 5,
+    "order": 3,
+    "numbers": [
+      10,
+      3,
+      7,
+      8,
+      1
+    ],
+    "target": 103,
+    "answer": "103",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 10, 3 타일을 골라 보세요.",
+        "10 + 3 = 13 부터 계산해 보세요.",
+        "전체 풀이: 10 + 3 = 13 → 13 × 8 = 104 → 104 − 1 = 103"
+      ],
+      "en": [
+        "Start by picking the 10 and 3 tiles.",
+        "Make 10 + 3 = 13 first.",
+        "Full solution: 10 + 3 = 13 → 13 × 8 = 104 → 104 − 1 = 103"
+      ],
+      "ja": [
+        "まず 10 と 3 のタイルを選んでみましょう。",
+        "まず 10 + 3 = 13 を作ってみましょう。",
+        "解法の全体: 10 + 3 = 13 → 13 × 8 = 104 → 104 − 1 = 103"
+      ],
+      "zh": [
+        "先选择 10 和 3 这两个数字。",
+        "先算出 10 + 3 = 13。",
+        "完整解法：10 + 3 = 13 → 13 × 8 = 104 → 104 − 1 = 103"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 10 y 3.",
+        "Primero haz 10 + 3 = 13.",
+        "Solución completa: 10 + 3 = 13 → 13 × 8 = 104 → 104 − 1 = 103"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 10 et 3.",
+        "Calculez d'abord 10 + 3 = 13.",
+        "Solution complète : 10 + 3 = 13 → 13 × 8 = 104 → 104 − 1 = 103"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 10 und 3.",
+        "Rechne zuerst 10 + 3 = 13.",
+        "Gesamte Lösung: 10 + 3 = 13 → 13 × 8 = 104 → 104 − 1 = 103"
+      ]
+    },
+    "explanation": {
+      "ko": "10 + 3 = 13 → 13 × 8 = 104 → 104 − 1 = 103",
+      "en": "10 + 3 = 13 → 13 × 8 = 104 → 104 − 1 = 103",
+      "ja": "10 + 3 = 13 → 13 × 8 = 104 → 104 − 1 = 103",
+      "zh": "10 + 3 = 13 → 13 × 8 = 104 → 104 − 1 = 103",
+      "es": "10 + 3 = 13 → 13 × 8 = 104 → 104 − 1 = 103",
+      "fr": "10 + 3 = 13 → 13 × 8 = 104 → 104 − 1 = 103",
+      "de": "10 + 3 = 13 → 13 × 8 = 104 → 104 − 1 = 103"
+    }
+  },
+  {
+    "id": "tg5_s04",
+    "type": "target",
+    "track": "target",
+    "chapter": 5,
+    "order": 4,
+    "numbers": [
+      2,
+      10,
+      5,
+      8,
+      6
+    ],
+    "target": 124,
+    "answer": "124",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 5, 8 타일을 골라 보세요.",
+        "5 + 8 = 13 부터 계산해 보세요.",
+        "전체 풀이: 5 + 8 = 13 → 10 × 13 = 130 → 130 − 6 = 124"
+      ],
+      "en": [
+        "Start by picking the 5 and 8 tiles.",
+        "Make 5 + 8 = 13 first.",
+        "Full solution: 5 + 8 = 13 → 10 × 13 = 130 → 130 − 6 = 124"
+      ],
+      "ja": [
+        "まず 5 と 8 のタイルを選んでみましょう。",
+        "まず 5 + 8 = 13 を作ってみましょう。",
+        "解法の全体: 5 + 8 = 13 → 10 × 13 = 130 → 130 − 6 = 124"
+      ],
+      "zh": [
+        "先选择 5 和 8 这两个数字。",
+        "先算出 5 + 8 = 13。",
+        "完整解法：5 + 8 = 13 → 10 × 13 = 130 → 130 − 6 = 124"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 5 y 8.",
+        "Primero haz 5 + 8 = 13.",
+        "Solución completa: 5 + 8 = 13 → 10 × 13 = 130 → 130 − 6 = 124"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 5 et 8.",
+        "Calculez d'abord 5 + 8 = 13.",
+        "Solution complète : 5 + 8 = 13 → 10 × 13 = 130 → 130 − 6 = 124"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 5 und 8.",
+        "Rechne zuerst 5 + 8 = 13.",
+        "Gesamte Lösung: 5 + 8 = 13 → 10 × 13 = 130 → 130 − 6 = 124"
+      ]
+    },
+    "explanation": {
+      "ko": "5 + 8 = 13 → 10 × 13 = 130 → 130 − 6 = 124",
+      "en": "5 + 8 = 13 → 10 × 13 = 130 → 130 − 6 = 124",
+      "ja": "5 + 8 = 13 → 10 × 13 = 130 → 130 − 6 = 124",
+      "zh": "5 + 8 = 13 → 10 × 13 = 130 → 130 − 6 = 124",
+      "es": "5 + 8 = 13 → 10 × 13 = 130 → 130 − 6 = 124",
+      "fr": "5 + 8 = 13 → 10 × 13 = 130 → 130 − 6 = 124",
+      "de": "5 + 8 = 13 → 10 × 13 = 130 → 130 − 6 = 124"
+    }
+  },
+  {
+    "id": "tg5_s05",
+    "type": "target",
+    "track": "target",
+    "chapter": 5,
+    "order": 5,
+    "numbers": [
+      3,
+      5,
+      1,
+      7,
+      6
+    ],
+    "target": 119,
+    "answer": "119",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 3, 6 타일을 골라 보세요.",
+        "3 × 6 = 18 부터 계산해 보세요.",
+        "전체 풀이: 3 × 6 = 18 → 18 − 1 = 17 → 17 × 7 = 119"
+      ],
+      "en": [
+        "Start by picking the 3 and 6 tiles.",
+        "Make 3 × 6 = 18 first.",
+        "Full solution: 3 × 6 = 18 → 18 − 1 = 17 → 17 × 7 = 119"
+      ],
+      "ja": [
+        "まず 3 と 6 のタイルを選んでみましょう。",
+        "まず 3 × 6 = 18 を作ってみましょう。",
+        "解法の全体: 3 × 6 = 18 → 18 − 1 = 17 → 17 × 7 = 119"
+      ],
+      "zh": [
+        "先选择 3 和 6 这两个数字。",
+        "先算出 3 × 6 = 18。",
+        "完整解法：3 × 6 = 18 → 18 − 1 = 17 → 17 × 7 = 119"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 3 y 6.",
+        "Primero haz 3 × 6 = 18.",
+        "Solución completa: 3 × 6 = 18 → 18 − 1 = 17 → 17 × 7 = 119"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 3 et 6.",
+        "Calculez d'abord 3 × 6 = 18.",
+        "Solution complète : 3 × 6 = 18 → 18 − 1 = 17 → 17 × 7 = 119"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 3 und 6.",
+        "Rechne zuerst 3 × 6 = 18.",
+        "Gesamte Lösung: 3 × 6 = 18 → 18 − 1 = 17 → 17 × 7 = 119"
+      ]
+    },
+    "explanation": {
+      "ko": "3 × 6 = 18 → 18 − 1 = 17 → 17 × 7 = 119",
+      "en": "3 × 6 = 18 → 18 − 1 = 17 → 17 × 7 = 119",
+      "ja": "3 × 6 = 18 → 18 − 1 = 17 → 17 × 7 = 119",
+      "zh": "3 × 6 = 18 → 18 − 1 = 17 → 17 × 7 = 119",
+      "es": "3 × 6 = 18 → 18 − 1 = 17 → 17 × 7 = 119",
+      "fr": "3 × 6 = 18 → 18 − 1 = 17 → 17 × 7 = 119",
+      "de": "3 × 6 = 18 → 18 − 1 = 17 → 17 × 7 = 119"
+    }
+  },
+  {
+    "id": "tg5_s06",
+    "type": "target",
+    "track": "target",
+    "chapter": 5,
+    "order": 6,
+    "numbers": [
+      10,
+      3,
+      8,
+      5,
+      1
+    ],
+    "target": 142,
+    "answer": "142",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 10, 3 타일을 골라 보세요.",
+        "10 × 3 = 30 부터 계산해 보세요.",
+        "전체 풀이: 10 × 3 = 30 → 30 × 5 = 150 → 150 − 8 = 142"
+      ],
+      "en": [
+        "Start by picking the 10 and 3 tiles.",
+        "Make 10 × 3 = 30 first.",
+        "Full solution: 10 × 3 = 30 → 30 × 5 = 150 → 150 − 8 = 142"
+      ],
+      "ja": [
+        "まず 10 と 3 のタイルを選んでみましょう。",
+        "まず 10 × 3 = 30 を作ってみましょう。",
+        "解法の全体: 10 × 3 = 30 → 30 × 5 = 150 → 150 − 8 = 142"
+      ],
+      "zh": [
+        "先选择 10 和 3 这两个数字。",
+        "先算出 10 × 3 = 30。",
+        "完整解法：10 × 3 = 30 → 30 × 5 = 150 → 150 − 8 = 142"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 10 y 3.",
+        "Primero haz 10 × 3 = 30.",
+        "Solución completa: 10 × 3 = 30 → 30 × 5 = 150 → 150 − 8 = 142"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 10 et 3.",
+        "Calculez d'abord 10 × 3 = 30.",
+        "Solution complète : 10 × 3 = 30 → 30 × 5 = 150 → 150 − 8 = 142"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 10 und 3.",
+        "Rechne zuerst 10 × 3 = 30.",
+        "Gesamte Lösung: 10 × 3 = 30 → 30 × 5 = 150 → 150 − 8 = 142"
+      ]
+    },
+    "explanation": {
+      "ko": "10 × 3 = 30 → 30 × 5 = 150 → 150 − 8 = 142",
+      "en": "10 × 3 = 30 → 30 × 5 = 150 → 150 − 8 = 142",
+      "ja": "10 × 3 = 30 → 30 × 5 = 150 → 150 − 8 = 142",
+      "zh": "10 × 3 = 30 → 30 × 5 = 150 → 150 − 8 = 142",
+      "es": "10 × 3 = 30 → 30 × 5 = 150 → 150 − 8 = 142",
+      "fr": "10 × 3 = 30 → 30 × 5 = 150 → 150 − 8 = 142",
+      "de": "10 × 3 = 30 → 30 × 5 = 150 → 150 − 8 = 142"
+    }
+  },
+  {
+    "id": "tg6_s01",
+    "type": "target",
+    "track": "target",
+    "chapter": 6,
+    "order": 1,
+    "numbers": [
+      15,
+      20,
+      9,
+      2,
+      18
+    ],
+    "target": 230,
+    "answer": "230",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 15, 18 타일을 골라 보세요.",
+        "15 × 18 = 270 부터 계산해 보세요.",
+        "전체 풀이: 15 × 18 = 270 → 20 × 2 = 40 → 270 − 40 = 230"
+      ],
+      "en": [
+        "Start by picking the 15 and 18 tiles.",
+        "Make 15 × 18 = 270 first.",
+        "Full solution: 15 × 18 = 270 → 20 × 2 = 40 → 270 − 40 = 230"
+      ],
+      "ja": [
+        "まず 15 と 18 のタイルを選んでみましょう。",
+        "まず 15 × 18 = 270 を作ってみましょう。",
+        "解法の全体: 15 × 18 = 270 → 20 × 2 = 40 → 270 − 40 = 230"
+      ],
+      "zh": [
+        "先选择 15 和 18 这两个数字。",
+        "先算出 15 × 18 = 270。",
+        "完整解法：15 × 18 = 270 → 20 × 2 = 40 → 270 − 40 = 230"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 15 y 18.",
+        "Primero haz 15 × 18 = 270.",
+        "Solución completa: 15 × 18 = 270 → 20 × 2 = 40 → 270 − 40 = 230"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 15 et 18.",
+        "Calculez d'abord 15 × 18 = 270.",
+        "Solution complète : 15 × 18 = 270 → 20 × 2 = 40 → 270 − 40 = 230"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 15 und 18.",
+        "Rechne zuerst 15 × 18 = 270.",
+        "Gesamte Lösung: 15 × 18 = 270 → 20 × 2 = 40 → 270 − 40 = 230"
+      ]
+    },
+    "explanation": {
+      "ko": "15 × 18 = 270 → 20 × 2 = 40 → 270 − 40 = 230",
+      "en": "15 × 18 = 270 → 20 × 2 = 40 → 270 − 40 = 230",
+      "ja": "15 × 18 = 270 → 20 × 2 = 40 → 270 − 40 = 230",
+      "zh": "15 × 18 = 270 → 20 × 2 = 40 → 270 − 40 = 230",
+      "es": "15 × 18 = 270 → 20 × 2 = 40 → 270 − 40 = 230",
+      "fr": "15 × 18 = 270 → 20 × 2 = 40 → 270 − 40 = 230",
+      "de": "15 × 18 = 270 → 20 × 2 = 40 → 270 − 40 = 230"
+    }
+  },
+  {
+    "id": "tg6_s02",
+    "type": "target",
+    "track": "target",
+    "chapter": 6,
+    "order": 2,
+    "numbers": [
+      19,
+      10,
+      16,
+      3,
+      9
+    ],
+    "target": 118,
+    "answer": "118",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 16, 9 타일을 골라 보세요.",
+        "16 × 9 = 144 부터 계산해 보세요.",
+        "이어지는 계산: 10 − 3 = 7 → 144 − 7 = 137. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 16 and 9 tiles.",
+        "Make 16 × 9 = 144 first.",
+        "Next steps: 10 − 3 = 7 → 144 − 7 = 137. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 16 と 9 のタイルを選んでみましょう。",
+        "まず 16 × 9 = 144 を作ってみましょう。",
+        "続きの計算: 10 − 3 = 7 → 144 − 7 = 137。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 16 和 9 这两个数字。",
+        "先算出 16 × 9 = 144。",
+        "接下来：10 − 3 = 7 → 144 − 7 = 137。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 16 y 9.",
+        "Primero haz 16 × 9 = 144.",
+        "Siguientes pasos: 10 − 3 = 7 → 144 − 7 = 137. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 16 et 9.",
+        "Calculez d'abord 16 × 9 = 144.",
+        "Étapes suivantes : 10 − 3 = 7 → 144 − 7 = 137. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 16 und 9.",
+        "Rechne zuerst 16 × 9 = 144.",
+        "Nächste Schritte: 10 − 3 = 7 → 144 − 7 = 137. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "16 × 9 = 144 → 10 − 3 = 7 → 144 − 7 = 137 → 137 − 19 = 118",
+      "en": "16 × 9 = 144 → 10 − 3 = 7 → 144 − 7 = 137 → 137 − 19 = 118",
+      "ja": "16 × 9 = 144 → 10 − 3 = 7 → 144 − 7 = 137 → 137 − 19 = 118",
+      "zh": "16 × 9 = 144 → 10 − 3 = 7 → 144 − 7 = 137 → 137 − 19 = 118",
+      "es": "16 × 9 = 144 → 10 − 3 = 7 → 144 − 7 = 137 → 137 − 19 = 118",
+      "fr": "16 × 9 = 144 → 10 − 3 = 7 → 144 − 7 = 137 → 137 − 19 = 118",
+      "de": "16 × 9 = 144 → 10 − 3 = 7 → 144 − 7 = 137 → 137 − 19 = 118"
+    }
+  },
+  {
+    "id": "tg6_s03",
+    "type": "target",
+    "track": "target",
+    "chapter": 6,
+    "order": 3,
+    "numbers": [
+      8,
+      4,
+      20,
+      14,
+      17
+    ],
+    "target": 187,
+    "answer": "187",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 14, 8 타일을 골라 보세요.",
+        "14 − 8 = 6 부터 계산해 보세요.",
+        "이어지는 계산: 20 ÷ 4 = 5 → 6 + 5 = 11. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 14 and 8 tiles.",
+        "Make 14 − 8 = 6 first.",
+        "Next steps: 20 ÷ 4 = 5 → 6 + 5 = 11. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 14 と 8 のタイルを選んでみましょう。",
+        "まず 14 − 8 = 6 を作ってみましょう。",
+        "続きの計算: 20 ÷ 4 = 5 → 6 + 5 = 11。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 14 和 8 这两个数字。",
+        "先算出 14 − 8 = 6。",
+        "接下来：20 ÷ 4 = 5 → 6 + 5 = 11。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 14 y 8.",
+        "Primero haz 14 − 8 = 6.",
+        "Siguientes pasos: 20 ÷ 4 = 5 → 6 + 5 = 11. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 14 et 8.",
+        "Calculez d'abord 14 − 8 = 6.",
+        "Étapes suivantes : 20 ÷ 4 = 5 → 6 + 5 = 11. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 14 und 8.",
+        "Rechne zuerst 14 − 8 = 6.",
+        "Nächste Schritte: 20 ÷ 4 = 5 → 6 + 5 = 11. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "14 − 8 = 6 → 20 ÷ 4 = 5 → 6 + 5 = 11 → 11 × 17 = 187",
+      "en": "14 − 8 = 6 → 20 ÷ 4 = 5 → 6 + 5 = 11 → 11 × 17 = 187",
+      "ja": "14 − 8 = 6 → 20 ÷ 4 = 5 → 6 + 5 = 11 → 11 × 17 = 187",
+      "zh": "14 − 8 = 6 → 20 ÷ 4 = 5 → 6 + 5 = 11 → 11 × 17 = 187",
+      "es": "14 − 8 = 6 → 20 ÷ 4 = 5 → 6 + 5 = 11 → 11 × 17 = 187",
+      "fr": "14 − 8 = 6 → 20 ÷ 4 = 5 → 6 + 5 = 11 → 11 × 17 = 187",
+      "de": "14 − 8 = 6 → 20 ÷ 4 = 5 → 6 + 5 = 11 → 11 × 17 = 187"
+    }
+  },
+  {
+    "id": "tg6_s04",
+    "type": "target",
+    "track": "target",
+    "chapter": 6,
+    "order": 4,
+    "numbers": [
+      15,
+      11,
+      5,
+      10,
+      19
+    ],
+    "target": 88,
+    "answer": "88",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 11, 19 타일을 골라 보세요.",
+        "11 + 19 = 30 부터 계산해 보세요.",
+        "이어지는 계산: 15 × 30 = 450 → 450 − 10 = 440. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 11 and 19 tiles.",
+        "Make 11 + 19 = 30 first.",
+        "Next steps: 15 × 30 = 450 → 450 − 10 = 440. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 11 と 19 のタイルを選んでみましょう。",
+        "まず 11 + 19 = 30 を作ってみましょう。",
+        "続きの計算: 15 × 30 = 450 → 450 − 10 = 440。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 11 和 19 这两个数字。",
+        "先算出 11 + 19 = 30。",
+        "接下来：15 × 30 = 450 → 450 − 10 = 440。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 11 y 19.",
+        "Primero haz 11 + 19 = 30.",
+        "Siguientes pasos: 15 × 30 = 450 → 450 − 10 = 440. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 11 et 19.",
+        "Calculez d'abord 11 + 19 = 30.",
+        "Étapes suivantes : 15 × 30 = 450 → 450 − 10 = 440. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 11 und 19.",
+        "Rechne zuerst 11 + 19 = 30.",
+        "Nächste Schritte: 15 × 30 = 450 → 450 − 10 = 440. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "11 + 19 = 30 → 15 × 30 = 450 → 450 − 10 = 440 → 440 ÷ 5 = 88",
+      "en": "11 + 19 = 30 → 15 × 30 = 450 → 450 − 10 = 440 → 440 ÷ 5 = 88",
+      "ja": "11 + 19 = 30 → 15 × 30 = 450 → 450 − 10 = 440 → 440 ÷ 5 = 88",
+      "zh": "11 + 19 = 30 → 15 × 30 = 450 → 450 − 10 = 440 → 440 ÷ 5 = 88",
+      "es": "11 + 19 = 30 → 15 × 30 = 450 → 450 − 10 = 440 → 440 ÷ 5 = 88",
+      "fr": "11 + 19 = 30 → 15 × 30 = 450 → 450 − 10 = 440 → 440 ÷ 5 = 88",
+      "de": "11 + 19 = 30 → 15 × 30 = 450 → 450 − 10 = 440 → 440 ÷ 5 = 88"
+    }
+  },
+  {
+    "id": "tg6_s05",
+    "type": "target",
+    "track": "target",
+    "chapter": 6,
+    "order": 5,
+    "numbers": [
+      6,
+      19,
+      3,
+      9,
+      12
+    ],
+    "target": 167,
+    "answer": "167",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 19, 9 타일을 골라 보세요.",
+        "19 × 9 = 171 부터 계산해 보세요.",
+        "전체 풀이: 19 × 9 = 171 → 12 ÷ 3 = 4 → 171 − 4 = 167"
+      ],
+      "en": [
+        "Start by picking the 19 and 9 tiles.",
+        "Make 19 × 9 = 171 first.",
+        "Full solution: 19 × 9 = 171 → 12 ÷ 3 = 4 → 171 − 4 = 167"
+      ],
+      "ja": [
+        "まず 19 と 9 のタイルを選んでみましょう。",
+        "まず 19 × 9 = 171 を作ってみましょう。",
+        "解法の全体: 19 × 9 = 171 → 12 ÷ 3 = 4 → 171 − 4 = 167"
+      ],
+      "zh": [
+        "先选择 19 和 9 这两个数字。",
+        "先算出 19 × 9 = 171。",
+        "完整解法：19 × 9 = 171 → 12 ÷ 3 = 4 → 171 − 4 = 167"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 19 y 9.",
+        "Primero haz 19 × 9 = 171.",
+        "Solución completa: 19 × 9 = 171 → 12 ÷ 3 = 4 → 171 − 4 = 167"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 19 et 9.",
+        "Calculez d'abord 19 × 9 = 171.",
+        "Solution complète : 19 × 9 = 171 → 12 ÷ 3 = 4 → 171 − 4 = 167"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 19 und 9.",
+        "Rechne zuerst 19 × 9 = 171.",
+        "Gesamte Lösung: 19 × 9 = 171 → 12 ÷ 3 = 4 → 171 − 4 = 167"
+      ]
+    },
+    "explanation": {
+      "ko": "19 × 9 = 171 → 12 ÷ 3 = 4 → 171 − 4 = 167",
+      "en": "19 × 9 = 171 → 12 ÷ 3 = 4 → 171 − 4 = 167",
+      "ja": "19 × 9 = 171 → 12 ÷ 3 = 4 → 171 − 4 = 167",
+      "zh": "19 × 9 = 171 → 12 ÷ 3 = 4 → 171 − 4 = 167",
+      "es": "19 × 9 = 171 → 12 ÷ 3 = 4 → 171 − 4 = 167",
+      "fr": "19 × 9 = 171 → 12 ÷ 3 = 4 → 171 − 4 = 167",
+      "de": "19 × 9 = 171 → 12 ÷ 3 = 4 → 171 − 4 = 167"
+    }
+  },
+  {
+    "id": "tg6_s06",
+    "type": "target",
+    "track": "target",
+    "chapter": 6,
+    "order": 6,
+    "numbers": [
+      15,
+      6,
+      18,
+      9,
+      19
+    ],
+    "target": 247,
+    "answer": "247",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 18, 9 타일을 골라 보세요.",
+        "18 ÷ 9 = 2 부터 계산해 보세요.",
+        "전체 풀이: 18 ÷ 9 = 2 → 15 − 2 = 13 → 13 × 19 = 247"
+      ],
+      "en": [
+        "Start by picking the 18 and 9 tiles.",
+        "Make 18 ÷ 9 = 2 first.",
+        "Full solution: 18 ÷ 9 = 2 → 15 − 2 = 13 → 13 × 19 = 247"
+      ],
+      "ja": [
+        "まず 18 と 9 のタイルを選んでみましょう。",
+        "まず 18 ÷ 9 = 2 を作ってみましょう。",
+        "解法の全体: 18 ÷ 9 = 2 → 15 − 2 = 13 → 13 × 19 = 247"
+      ],
+      "zh": [
+        "先选择 18 和 9 这两个数字。",
+        "先算出 18 ÷ 9 = 2。",
+        "完整解法：18 ÷ 9 = 2 → 15 − 2 = 13 → 13 × 19 = 247"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 18 y 9.",
+        "Primero haz 18 ÷ 9 = 2.",
+        "Solución completa: 18 ÷ 9 = 2 → 15 − 2 = 13 → 13 × 19 = 247"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 18 et 9.",
+        "Calculez d'abord 18 ÷ 9 = 2.",
+        "Solution complète : 18 ÷ 9 = 2 → 15 − 2 = 13 → 13 × 19 = 247"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 18 und 9.",
+        "Rechne zuerst 18 ÷ 9 = 2.",
+        "Gesamte Lösung: 18 ÷ 9 = 2 → 15 − 2 = 13 → 13 × 19 = 247"
+      ]
+    },
+    "explanation": {
+      "ko": "18 ÷ 9 = 2 → 15 − 2 = 13 → 13 × 19 = 247",
+      "en": "18 ÷ 9 = 2 → 15 − 2 = 13 → 13 × 19 = 247",
+      "ja": "18 ÷ 9 = 2 → 15 − 2 = 13 → 13 × 19 = 247",
+      "zh": "18 ÷ 9 = 2 → 15 − 2 = 13 → 13 × 19 = 247",
+      "es": "18 ÷ 9 = 2 → 15 − 2 = 13 → 13 × 19 = 247",
+      "fr": "18 ÷ 9 = 2 → 15 − 2 = 13 → 13 × 19 = 247",
+      "de": "18 ÷ 9 = 2 → 15 − 2 = 13 → 13 × 19 = 247"
+    }
+  },
+  {
+    "id": "tg7_s01",
+    "type": "target",
+    "track": "target",
+    "chapter": 7,
+    "order": 1,
+    "numbers": [
+      7,
+      3,
+      25,
+      5,
+      8
+    ],
+    "target": 292,
+    "answer": "292",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 7, 5 타일을 골라 보세요.",
+        "7 + 5 = 12 부터 계산해 보세요.",
+        "전체 풀이: 7 + 5 = 12 → 12 × 25 = 300 → 300 − 8 = 292"
+      ],
+      "en": [
+        "Start by picking the 7 and 5 tiles.",
+        "Make 7 + 5 = 12 first.",
+        "Full solution: 7 + 5 = 12 → 12 × 25 = 300 → 300 − 8 = 292"
+      ],
+      "ja": [
+        "まず 7 と 5 のタイルを選んでみましょう。",
+        "まず 7 + 5 = 12 を作ってみましょう。",
+        "解法の全体: 7 + 5 = 12 → 12 × 25 = 300 → 300 − 8 = 292"
+      ],
+      "zh": [
+        "先选择 7 和 5 这两个数字。",
+        "先算出 7 + 5 = 12。",
+        "完整解法：7 + 5 = 12 → 12 × 25 = 300 → 300 − 8 = 292"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 7 y 5.",
+        "Primero haz 7 + 5 = 12.",
+        "Solución completa: 7 + 5 = 12 → 12 × 25 = 300 → 300 − 8 = 292"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 7 et 5.",
+        "Calculez d'abord 7 + 5 = 12.",
+        "Solution complète : 7 + 5 = 12 → 12 × 25 = 300 → 300 − 8 = 292"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 7 und 5.",
+        "Rechne zuerst 7 + 5 = 12.",
+        "Gesamte Lösung: 7 + 5 = 12 → 12 × 25 = 300 → 300 − 8 = 292"
+      ]
+    },
+    "explanation": {
+      "ko": "7 + 5 = 12 → 12 × 25 = 300 → 300 − 8 = 292",
+      "en": "7 + 5 = 12 → 12 × 25 = 300 → 300 − 8 = 292",
+      "ja": "7 + 5 = 12 → 12 × 25 = 300 → 300 − 8 = 292",
+      "zh": "7 + 5 = 12 → 12 × 25 = 300 → 300 − 8 = 292",
+      "es": "7 + 5 = 12 → 12 × 25 = 300 → 300 − 8 = 292",
+      "fr": "7 + 5 = 12 → 12 × 25 = 300 → 300 − 8 = 292",
+      "de": "7 + 5 = 12 → 12 × 25 = 300 → 300 − 8 = 292"
+    }
+  },
+  {
+    "id": "tg7_s02",
+    "type": "target",
+    "track": "target",
+    "chapter": 7,
+    "order": 2,
+    "numbers": [
+      5,
+      10,
+      50,
+      3,
+      6
+    ],
+    "target": 347,
+    "answer": "347",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 10, 50 타일을 골라 보세요.",
+        "10 + 50 = 60 부터 계산해 보세요.",
+        "이어지는 계산: 60 − 3 = 57 → 57 × 6 = 342. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 10 and 50 tiles.",
+        "Make 10 + 50 = 60 first.",
+        "Next steps: 60 − 3 = 57 → 57 × 6 = 342. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 10 と 50 のタイルを選んでみましょう。",
+        "まず 10 + 50 = 60 を作ってみましょう。",
+        "続きの計算: 60 − 3 = 57 → 57 × 6 = 342。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 10 和 50 这两个数字。",
+        "先算出 10 + 50 = 60。",
+        "接下来：60 − 3 = 57 → 57 × 6 = 342。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 10 y 50.",
+        "Primero haz 10 + 50 = 60.",
+        "Siguientes pasos: 60 − 3 = 57 → 57 × 6 = 342. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 10 et 50.",
+        "Calculez d'abord 10 + 50 = 60.",
+        "Étapes suivantes : 60 − 3 = 57 → 57 × 6 = 342. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 10 und 50.",
+        "Rechne zuerst 10 + 50 = 60.",
+        "Nächste Schritte: 60 − 3 = 57 → 57 × 6 = 342. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "10 + 50 = 60 → 60 − 3 = 57 → 57 × 6 = 342 → 5 + 342 = 347",
+      "en": "10 + 50 = 60 → 60 − 3 = 57 → 57 × 6 = 342 → 5 + 342 = 347",
+      "ja": "10 + 50 = 60 → 60 − 3 = 57 → 57 × 6 = 342 → 5 + 342 = 347",
+      "zh": "10 + 50 = 60 → 60 − 3 = 57 → 57 × 6 = 342 → 5 + 342 = 347",
+      "es": "10 + 50 = 60 → 60 − 3 = 57 → 57 × 6 = 342 → 5 + 342 = 347",
+      "fr": "10 + 50 = 60 → 60 − 3 = 57 → 57 × 6 = 342 → 5 + 342 = 347",
+      "de": "10 + 50 = 60 → 60 − 3 = 57 → 57 × 6 = 342 → 5 + 342 = 347"
+    }
+  },
+  {
+    "id": "tg7_s03",
+    "type": "target",
+    "track": "target",
+    "chapter": 7,
+    "order": 3,
+    "numbers": [
+      2,
+      10,
+      8,
+      50,
+      5
+    ],
+    "target": 237,
+    "answer": "237",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 10, 50 타일을 골라 보세요.",
+        "10 × 50 = 500 부터 계산해 보세요.",
+        "이어지는 계산: 500 ÷ 2 = 250 → 250 − 5 = 245. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 10 and 50 tiles.",
+        "Make 10 × 50 = 500 first.",
+        "Next steps: 500 ÷ 2 = 250 → 250 − 5 = 245. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 10 と 50 のタイルを選んでみましょう。",
+        "まず 10 × 50 = 500 を作ってみましょう。",
+        "続きの計算: 500 ÷ 2 = 250 → 250 − 5 = 245。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 10 和 50 这两个数字。",
+        "先算出 10 × 50 = 500。",
+        "接下来：500 ÷ 2 = 250 → 250 − 5 = 245。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 10 y 50.",
+        "Primero haz 10 × 50 = 500.",
+        "Siguientes pasos: 500 ÷ 2 = 250 → 250 − 5 = 245. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 10 et 50.",
+        "Calculez d'abord 10 × 50 = 500.",
+        "Étapes suivantes : 500 ÷ 2 = 250 → 250 − 5 = 245. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 10 und 50.",
+        "Rechne zuerst 10 × 50 = 500.",
+        "Nächste Schritte: 500 ÷ 2 = 250 → 250 − 5 = 245. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "10 × 50 = 500 → 500 ÷ 2 = 250 → 250 − 5 = 245 → 245 − 8 = 237",
+      "en": "10 × 50 = 500 → 500 ÷ 2 = 250 → 250 − 5 = 245 → 245 − 8 = 237",
+      "ja": "10 × 50 = 500 → 500 ÷ 2 = 250 → 250 − 5 = 245 → 245 − 8 = 237",
+      "zh": "10 × 50 = 500 → 500 ÷ 2 = 250 → 250 − 5 = 245 → 245 − 8 = 237",
+      "es": "10 × 50 = 500 → 500 ÷ 2 = 250 → 250 − 5 = 245 → 245 − 8 = 237",
+      "fr": "10 × 50 = 500 → 500 ÷ 2 = 250 → 250 − 5 = 245 → 245 − 8 = 237",
+      "de": "10 × 50 = 500 → 500 ÷ 2 = 250 → 250 − 5 = 245 → 245 − 8 = 237"
+    }
+  },
+  {
+    "id": "tg7_s04",
+    "type": "target",
+    "track": "target",
+    "chapter": 7,
+    "order": 4,
+    "numbers": [
+      6,
+      8,
+      2,
+      50,
+      10
+    ],
+    "target": 295,
+    "answer": "295",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 6, 50 타일을 골라 보세요.",
+        "6 × 50 = 300 부터 계산해 보세요.",
+        "전체 풀이: 6 × 50 = 300 → 10 ÷ 2 = 5 → 300 − 5 = 295"
+      ],
+      "en": [
+        "Start by picking the 6 and 50 tiles.",
+        "Make 6 × 50 = 300 first.",
+        "Full solution: 6 × 50 = 300 → 10 ÷ 2 = 5 → 300 − 5 = 295"
+      ],
+      "ja": [
+        "まず 6 と 50 のタイルを選んでみましょう。",
+        "まず 6 × 50 = 300 を作ってみましょう。",
+        "解法の全体: 6 × 50 = 300 → 10 ÷ 2 = 5 → 300 − 5 = 295"
+      ],
+      "zh": [
+        "先选择 6 和 50 这两个数字。",
+        "先算出 6 × 50 = 300。",
+        "完整解法：6 × 50 = 300 → 10 ÷ 2 = 5 → 300 − 5 = 295"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 6 y 50.",
+        "Primero haz 6 × 50 = 300.",
+        "Solución completa: 6 × 50 = 300 → 10 ÷ 2 = 5 → 300 − 5 = 295"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 6 et 50.",
+        "Calculez d'abord 6 × 50 = 300.",
+        "Solution complète : 6 × 50 = 300 → 10 ÷ 2 = 5 → 300 − 5 = 295"
+      ],
+      "de": [
+        "Beginne mit den Kacheln 6 und 50.",
+        "Rechne zuerst 6 × 50 = 300.",
+        "Gesamte Lösung: 6 × 50 = 300 → 10 ÷ 2 = 5 → 300 − 5 = 295"
+      ]
+    },
+    "explanation": {
+      "ko": "6 × 50 = 300 → 10 ÷ 2 = 5 → 300 − 5 = 295",
+      "en": "6 × 50 = 300 → 10 ÷ 2 = 5 → 300 − 5 = 295",
+      "ja": "6 × 50 = 300 → 10 ÷ 2 = 5 → 300 − 5 = 295",
+      "zh": "6 × 50 = 300 → 10 ÷ 2 = 5 → 300 − 5 = 295",
+      "es": "6 × 50 = 300 → 10 ÷ 2 = 5 → 300 − 5 = 295",
+      "fr": "6 × 50 = 300 → 10 ÷ 2 = 5 → 300 − 5 = 295",
+      "de": "6 × 50 = 300 → 10 ÷ 2 = 5 → 300 − 5 = 295"
+    }
+  },
+  {
+    "id": "tg7_s05",
+    "type": "target",
+    "track": "target",
+    "chapter": 7,
+    "order": 5,
+    "numbers": [
+      4,
+      3,
+      2,
+      10,
+      50
+    ],
+    "target": 249,
+    "answer": "249",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 10, 50 타일을 골라 보세요.",
+        "10 × 50 = 500 부터 계산해 보세요.",
+        "이어지는 계산: 4 + 500 = 504 → 504 ÷ 2 = 252. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 10 and 50 tiles.",
+        "Make 10 × 50 = 500 first.",
+        "Next steps: 4 + 500 = 504 → 504 ÷ 2 = 252. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 10 と 50 のタイルを選んでみましょう。",
+        "まず 10 × 50 = 500 を作ってみましょう。",
+        "続きの計算: 4 + 500 = 504 → 504 ÷ 2 = 252。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 10 和 50 这两个数字。",
+        "先算出 10 × 50 = 500。",
+        "接下来：4 + 500 = 504 → 504 ÷ 2 = 252。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 10 y 50.",
+        "Primero haz 10 × 50 = 500.",
+        "Siguientes pasos: 4 + 500 = 504 → 504 ÷ 2 = 252. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 10 et 50.",
+        "Calculez d'abord 10 × 50 = 500.",
+        "Étapes suivantes : 4 + 500 = 504 → 504 ÷ 2 = 252. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 10 und 50.",
+        "Rechne zuerst 10 × 50 = 500.",
+        "Nächste Schritte: 4 + 500 = 504 → 504 ÷ 2 = 252. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "10 × 50 = 500 → 4 + 500 = 504 → 504 ÷ 2 = 252 → 252 − 3 = 249",
+      "en": "10 × 50 = 500 → 4 + 500 = 504 → 504 ÷ 2 = 252 → 252 − 3 = 249",
+      "ja": "10 × 50 = 500 → 4 + 500 = 504 → 504 ÷ 2 = 252 → 252 − 3 = 249",
+      "zh": "10 × 50 = 500 → 4 + 500 = 504 → 504 ÷ 2 = 252 → 252 − 3 = 249",
+      "es": "10 × 50 = 500 → 4 + 500 = 504 → 504 ÷ 2 = 252 → 252 − 3 = 249",
+      "fr": "10 × 50 = 500 → 4 + 500 = 504 → 504 ÷ 2 = 252 → 252 − 3 = 249",
+      "de": "10 × 50 = 500 → 4 + 500 = 504 → 504 ÷ 2 = 252 → 252 − 3 = 249"
+    }
+  },
+  {
+    "id": "tg7_s06",
+    "type": "target",
+    "track": "target",
+    "chapter": 7,
+    "order": 6,
+    "numbers": [
+      7,
+      6,
+      50,
+      3,
+      8
+    ],
+    "target": 172,
+    "answer": "172",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 50, 7 타일을 골라 보세요.",
+        "50 − 7 = 43 부터 계산해 보세요.",
+        "이어지는 계산: 3 × 8 = 24 → 24 ÷ 6 = 4. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 50 and 7 tiles.",
+        "Make 50 − 7 = 43 first.",
+        "Next steps: 3 × 8 = 24 → 24 ÷ 6 = 4. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 50 と 7 のタイルを選んでみましょう。",
+        "まず 50 − 7 = 43 を作ってみましょう。",
+        "続きの計算: 3 × 8 = 24 → 24 ÷ 6 = 4。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 50 和 7 这两个数字。",
+        "先算出 50 − 7 = 43。",
+        "接下来：3 × 8 = 24 → 24 ÷ 6 = 4。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 50 y 7.",
+        "Primero haz 50 − 7 = 43.",
+        "Siguientes pasos: 3 × 8 = 24 → 24 ÷ 6 = 4. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 50 et 7.",
+        "Calculez d'abord 50 − 7 = 43.",
+        "Étapes suivantes : 3 × 8 = 24 → 24 ÷ 6 = 4. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 50 und 7.",
+        "Rechne zuerst 50 − 7 = 43.",
+        "Nächste Schritte: 3 × 8 = 24 → 24 ÷ 6 = 4. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "50 − 7 = 43 → 3 × 8 = 24 → 24 ÷ 6 = 4 → 43 × 4 = 172",
+      "en": "50 − 7 = 43 → 3 × 8 = 24 → 24 ÷ 6 = 4 → 43 × 4 = 172",
+      "ja": "50 − 7 = 43 → 3 × 8 = 24 → 24 ÷ 6 = 4 → 43 × 4 = 172",
+      "zh": "50 − 7 = 43 → 3 × 8 = 24 → 24 ÷ 6 = 4 → 43 × 4 = 172",
+      "es": "50 − 7 = 43 → 3 × 8 = 24 → 24 ÷ 6 = 4 → 43 × 4 = 172",
+      "fr": "50 − 7 = 43 → 3 × 8 = 24 → 24 ÷ 6 = 4 → 43 × 4 = 172",
+      "de": "50 − 7 = 43 → 3 × 8 = 24 → 24 ÷ 6 = 4 → 43 × 4 = 172"
+    }
+  },
+  {
+    "id": "tg8_s01",
+    "type": "target",
+    "track": "target",
+    "chapter": 8,
+    "order": 1,
+    "numbers": [
+      3,
+      2,
+      8,
+      1,
+      9,
+      100
+    ],
+    "target": 395,
+    "answer": "395",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 1, 100 타일을 골라 보세요.",
+        "1 + 100 = 101 부터 계산해 보세요.",
+        "이어지는 계산: 8 × 101 = 808 → 808 ÷ 2 = 404. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 1 and 100 tiles.",
+        "Make 1 + 100 = 101 first.",
+        "Next steps: 8 × 101 = 808 → 808 ÷ 2 = 404. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 1 と 100 のタイルを選んでみましょう。",
+        "まず 1 + 100 = 101 を作ってみましょう。",
+        "続きの計算: 8 × 101 = 808 → 808 ÷ 2 = 404。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 1 和 100 这两个数字。",
+        "先算出 1 + 100 = 101。",
+        "接下来：8 × 101 = 808 → 808 ÷ 2 = 404。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 1 y 100.",
+        "Primero haz 1 + 100 = 101.",
+        "Siguientes pasos: 8 × 101 = 808 → 808 ÷ 2 = 404. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 1 et 100.",
+        "Calculez d'abord 1 + 100 = 101.",
+        "Étapes suivantes : 8 × 101 = 808 → 808 ÷ 2 = 404. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 1 und 100.",
+        "Rechne zuerst 1 + 100 = 101.",
+        "Nächste Schritte: 8 × 101 = 808 → 808 ÷ 2 = 404. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "1 + 100 = 101 → 8 × 101 = 808 → 808 ÷ 2 = 404 → 404 − 9 = 395",
+      "en": "1 + 100 = 101 → 8 × 101 = 808 → 808 ÷ 2 = 404 → 404 − 9 = 395",
+      "ja": "1 + 100 = 101 → 8 × 101 = 808 → 808 ÷ 2 = 404 → 404 − 9 = 395",
+      "zh": "1 + 100 = 101 → 8 × 101 = 808 → 808 ÷ 2 = 404 → 404 − 9 = 395",
+      "es": "1 + 100 = 101 → 8 × 101 = 808 → 808 ÷ 2 = 404 → 404 − 9 = 395",
+      "fr": "1 + 100 = 101 → 8 × 101 = 808 → 808 ÷ 2 = 404 → 404 − 9 = 395",
+      "de": "1 + 100 = 101 → 8 × 101 = 808 → 808 ÷ 2 = 404 → 404 − 9 = 395"
+    }
+  },
+  {
+    "id": "tg8_s02",
+    "type": "target",
+    "track": "target",
+    "chapter": 8,
+    "order": 2,
+    "numbers": [
+      2,
+      10,
+      100,
+      7,
+      6,
+      4
+    ],
+    "target": 489,
+    "answer": "489",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 10, 100 타일을 골라 보세요.",
+        "10 × 100 = 1000 부터 계산해 보세요.",
+        "이어지는 계산: 1000 ÷ 2 = 500 → 500 − 4 = 496. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 10 and 100 tiles.",
+        "Make 10 × 100 = 1000 first.",
+        "Next steps: 1000 ÷ 2 = 500 → 500 − 4 = 496. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 10 と 100 のタイルを選んでみましょう。",
+        "まず 10 × 100 = 1000 を作ってみましょう。",
+        "続きの計算: 1000 ÷ 2 = 500 → 500 − 4 = 496。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 10 和 100 这两个数字。",
+        "先算出 10 × 100 = 1000。",
+        "接下来：1000 ÷ 2 = 500 → 500 − 4 = 496。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 10 y 100.",
+        "Primero haz 10 × 100 = 1000.",
+        "Siguientes pasos: 1000 ÷ 2 = 500 → 500 − 4 = 496. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 10 et 100.",
+        "Calculez d'abord 10 × 100 = 1000.",
+        "Étapes suivantes : 1000 ÷ 2 = 500 → 500 − 4 = 496. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 10 und 100.",
+        "Rechne zuerst 10 × 100 = 1000.",
+        "Nächste Schritte: 1000 ÷ 2 = 500 → 500 − 4 = 496. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "10 × 100 = 1000 → 1000 ÷ 2 = 500 → 500 − 4 = 496 → 496 − 7 = 489",
+      "en": "10 × 100 = 1000 → 1000 ÷ 2 = 500 → 500 − 4 = 496 → 496 − 7 = 489",
+      "ja": "10 × 100 = 1000 → 1000 ÷ 2 = 500 → 500 − 4 = 496 → 496 − 7 = 489",
+      "zh": "10 × 100 = 1000 → 1000 ÷ 2 = 500 → 500 − 4 = 496 → 496 − 7 = 489",
+      "es": "10 × 100 = 1000 → 1000 ÷ 2 = 500 → 500 − 4 = 496 → 496 − 7 = 489",
+      "fr": "10 × 100 = 1000 → 1000 ÷ 2 = 500 → 500 − 4 = 496 → 496 − 7 = 489",
+      "de": "10 × 100 = 1000 → 1000 ÷ 2 = 500 → 500 − 4 = 496 → 496 − 7 = 489"
+    }
+  },
+  {
+    "id": "tg8_s03",
+    "type": "target",
+    "track": "target",
+    "chapter": 8,
+    "order": 3,
+    "numbers": [
+      6,
+      2,
+      10,
+      4,
+      25,
+      3
+    ],
+    "target": 463,
+    "answer": "463",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 2, 25 타일을 골라 보세요.",
+        "2 × 25 = 50 부터 계산해 보세요.",
+        "이어지는 계산: 50 − 4 = 46 → 46 × 10 = 460. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 2 and 25 tiles.",
+        "Make 2 × 25 = 50 first.",
+        "Next steps: 50 − 4 = 46 → 46 × 10 = 460. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 2 と 25 のタイルを選んでみましょう。",
+        "まず 2 × 25 = 50 を作ってみましょう。",
+        "続きの計算: 50 − 4 = 46 → 46 × 10 = 460。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 2 和 25 这两个数字。",
+        "先算出 2 × 25 = 50。",
+        "接下来：50 − 4 = 46 → 46 × 10 = 460。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 2 y 25.",
+        "Primero haz 2 × 25 = 50.",
+        "Siguientes pasos: 50 − 4 = 46 → 46 × 10 = 460. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 2 et 25.",
+        "Calculez d'abord 2 × 25 = 50.",
+        "Étapes suivantes : 50 − 4 = 46 → 46 × 10 = 460. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 2 und 25.",
+        "Rechne zuerst 2 × 25 = 50.",
+        "Nächste Schritte: 50 − 4 = 46 → 46 × 10 = 460. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "2 × 25 = 50 → 50 − 4 = 46 → 46 × 10 = 460 → 460 + 3 = 463",
+      "en": "2 × 25 = 50 → 50 − 4 = 46 → 46 × 10 = 460 → 460 + 3 = 463",
+      "ja": "2 × 25 = 50 → 50 − 4 = 46 → 46 × 10 = 460 → 460 + 3 = 463",
+      "zh": "2 × 25 = 50 → 50 − 4 = 46 → 46 × 10 = 460 → 460 + 3 = 463",
+      "es": "2 × 25 = 50 → 50 − 4 = 46 → 46 × 10 = 460 → 460 + 3 = 463",
+      "fr": "2 × 25 = 50 → 50 − 4 = 46 → 46 × 10 = 460 → 460 + 3 = 463",
+      "de": "2 × 25 = 50 → 50 − 4 = 46 → 46 × 10 = 460 → 460 + 3 = 463"
+    }
+  },
+  {
+    "id": "tg8_s04",
+    "type": "target",
+    "track": "target",
+    "chapter": 8,
+    "order": 4,
+    "numbers": [
+      100,
+      4,
+      10,
+      9,
+      5,
+      1
+    ],
+    "target": 278,
+    "answer": "278",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 100, 9 타일을 골라 보세요.",
+        "100 − 9 = 91 부터 계산해 보세요.",
+        "이어지는 계산: 4 − 1 = 3 → 91 × 3 = 273. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 100 and 9 tiles.",
+        "Make 100 − 9 = 91 first.",
+        "Next steps: 4 − 1 = 3 → 91 × 3 = 273. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 100 と 9 のタイルを選んでみましょう。",
+        "まず 100 − 9 = 91 を作ってみましょう。",
+        "続きの計算: 4 − 1 = 3 → 91 × 3 = 273。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 100 和 9 这两个数字。",
+        "先算出 100 − 9 = 91。",
+        "接下来：4 − 1 = 3 → 91 × 3 = 273。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 100 y 9.",
+        "Primero haz 100 − 9 = 91.",
+        "Siguientes pasos: 4 − 1 = 3 → 91 × 3 = 273. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 100 et 9.",
+        "Calculez d'abord 100 − 9 = 91.",
+        "Étapes suivantes : 4 − 1 = 3 → 91 × 3 = 273. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 100 und 9.",
+        "Rechne zuerst 100 − 9 = 91.",
+        "Nächste Schritte: 4 − 1 = 3 → 91 × 3 = 273. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "100 − 9 = 91 → 4 − 1 = 3 → 91 × 3 = 273 → 273 + 5 = 278",
+      "en": "100 − 9 = 91 → 4 − 1 = 3 → 91 × 3 = 273 → 273 + 5 = 278",
+      "ja": "100 − 9 = 91 → 4 − 1 = 3 → 91 × 3 = 273 → 273 + 5 = 278",
+      "zh": "100 − 9 = 91 → 4 − 1 = 3 → 91 × 3 = 273 → 273 + 5 = 278",
+      "es": "100 − 9 = 91 → 4 − 1 = 3 → 91 × 3 = 273 → 273 + 5 = 278",
+      "fr": "100 − 9 = 91 → 4 − 1 = 3 → 91 × 3 = 273 → 273 + 5 = 278",
+      "de": "100 − 9 = 91 → 4 − 1 = 3 → 91 × 3 = 273 → 273 + 5 = 278"
+    }
+  },
+  {
+    "id": "tg8_s05",
+    "type": "target",
+    "track": "target",
+    "chapter": 8,
+    "order": 5,
+    "numbers": [
+      3,
+      5,
+      1,
+      6,
+      10,
+      50
+    ],
+    "target": 478,
+    "answer": "478",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 10, 50 타일을 골라 보세요.",
+        "10 × 50 = 500 부터 계산해 보세요.",
+        "이어지는 계산: 1 + 500 = 501 → 3 × 6 = 18 → 18 + 5 = 23. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 10 and 50 tiles.",
+        "Make 10 × 50 = 500 first.",
+        "Next steps: 1 + 500 = 501 → 3 × 6 = 18 → 18 + 5 = 23. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 10 と 50 のタイルを選んでみましょう。",
+        "まず 10 × 50 = 500 を作ってみましょう。",
+        "続きの計算: 1 + 500 = 501 → 3 × 6 = 18 → 18 + 5 = 23。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 10 和 50 这两个数字。",
+        "先算出 10 × 50 = 500。",
+        "接下来：1 + 500 = 501 → 3 × 6 = 18 → 18 + 5 = 23。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 10 y 50.",
+        "Primero haz 10 × 50 = 500.",
+        "Siguientes pasos: 1 + 500 = 501 → 3 × 6 = 18 → 18 + 5 = 23. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 10 et 50.",
+        "Calculez d'abord 10 × 50 = 500.",
+        "Étapes suivantes : 1 + 500 = 501 → 3 × 6 = 18 → 18 + 5 = 23. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 10 und 50.",
+        "Rechne zuerst 10 × 50 = 500.",
+        "Nächste Schritte: 1 + 500 = 501 → 3 × 6 = 18 → 18 + 5 = 23. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "10 × 50 = 500 → 1 + 500 = 501 → 3 × 6 = 18 → 18 + 5 = 23 → 501 − 23 = 478",
+      "en": "10 × 50 = 500 → 1 + 500 = 501 → 3 × 6 = 18 → 18 + 5 = 23 → 501 − 23 = 478",
+      "ja": "10 × 50 = 500 → 1 + 500 = 501 → 3 × 6 = 18 → 18 + 5 = 23 → 501 − 23 = 478",
+      "zh": "10 × 50 = 500 → 1 + 500 = 501 → 3 × 6 = 18 → 18 + 5 = 23 → 501 − 23 = 478",
+      "es": "10 × 50 = 500 → 1 + 500 = 501 → 3 × 6 = 18 → 18 + 5 = 23 → 501 − 23 = 478",
+      "fr": "10 × 50 = 500 → 1 + 500 = 501 → 3 × 6 = 18 → 18 + 5 = 23 → 501 − 23 = 478",
+      "de": "10 × 50 = 500 → 1 + 500 = 501 → 3 × 6 = 18 → 18 + 5 = 23 → 501 − 23 = 478"
+    }
+  },
+  {
+    "id": "tg8_s06",
+    "type": "target",
+    "track": "target",
+    "chapter": 8,
+    "order": 6,
+    "numbers": [
+      2,
+      100,
+      8,
+      7,
+      10,
+      1
+    ],
+    "target": 377,
+    "answer": "377",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 100, 10 타일을 골라 보세요.",
+        "100 + 10 = 110 부터 계산해 보세요.",
+        "이어지는 계산: 110 × 7 = 770 → 770 ÷ 2 = 385. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 100 and 10 tiles.",
+        "Make 100 + 10 = 110 first.",
+        "Next steps: 110 × 7 = 770 → 770 ÷ 2 = 385. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 100 と 10 のタイルを選んでみましょう。",
+        "まず 100 + 10 = 110 を作ってみましょう。",
+        "続きの計算: 110 × 7 = 770 → 770 ÷ 2 = 385。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 100 和 10 这两个数字。",
+        "先算出 100 + 10 = 110。",
+        "接下来：110 × 7 = 770 → 770 ÷ 2 = 385。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 100 y 10.",
+        "Primero haz 100 + 10 = 110.",
+        "Siguientes pasos: 110 × 7 = 770 → 770 ÷ 2 = 385. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 100 et 10.",
+        "Calculez d'abord 100 + 10 = 110.",
+        "Étapes suivantes : 110 × 7 = 770 → 770 ÷ 2 = 385. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 100 und 10.",
+        "Rechne zuerst 100 + 10 = 110.",
+        "Nächste Schritte: 110 × 7 = 770 → 770 ÷ 2 = 385. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "100 + 10 = 110 → 110 × 7 = 770 → 770 ÷ 2 = 385 → 385 − 8 = 377",
+      "en": "100 + 10 = 110 → 110 × 7 = 770 → 770 ÷ 2 = 385 → 385 − 8 = 377",
+      "ja": "100 + 10 = 110 → 110 × 7 = 770 → 770 ÷ 2 = 385 → 385 − 8 = 377",
+      "zh": "100 + 10 = 110 → 110 × 7 = 770 → 770 ÷ 2 = 385 → 385 − 8 = 377",
+      "es": "100 + 10 = 110 → 110 × 7 = 770 → 770 ÷ 2 = 385 → 385 − 8 = 377",
+      "fr": "100 + 10 = 110 → 110 × 7 = 770 → 770 ÷ 2 = 385 → 385 − 8 = 377",
+      "de": "100 + 10 = 110 → 110 × 7 = 770 → 770 ÷ 2 = 385 → 385 − 8 = 377"
+    }
+  },
+  {
+    "id": "tg9_s01",
+    "type": "target",
+    "track": "target",
+    "chapter": 9,
+    "order": 1,
+    "numbers": [
+      4,
+      1,
+      5,
+      75,
+      6,
+      100
+    ],
+    "target": 562,
+    "answer": "562",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 1, 5 타일을 골라 보세요.",
+        "1 + 5 = 6 부터 계산해 보세요.",
+        "이어지는 계산: 6 + 75 = 81 → 81 − 4 = 77 → 77 × 6 = 462. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 1 and 5 tiles.",
+        "Make 1 + 5 = 6 first.",
+        "Next steps: 6 + 75 = 81 → 81 − 4 = 77 → 77 × 6 = 462. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 1 と 5 のタイルを選んでみましょう。",
+        "まず 1 + 5 = 6 を作ってみましょう。",
+        "続きの計算: 6 + 75 = 81 → 81 − 4 = 77 → 77 × 6 = 462。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 1 和 5 这两个数字。",
+        "先算出 1 + 5 = 6。",
+        "接下来：6 + 75 = 81 → 81 − 4 = 77 → 77 × 6 = 462。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 1 y 5.",
+        "Primero haz 1 + 5 = 6.",
+        "Siguientes pasos: 6 + 75 = 81 → 81 − 4 = 77 → 77 × 6 = 462. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 1 et 5.",
+        "Calculez d'abord 1 + 5 = 6.",
+        "Étapes suivantes : 6 + 75 = 81 → 81 − 4 = 77 → 77 × 6 = 462. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 1 und 5.",
+        "Rechne zuerst 1 + 5 = 6.",
+        "Nächste Schritte: 6 + 75 = 81 → 81 − 4 = 77 → 77 × 6 = 462. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "1 + 5 = 6 → 6 + 75 = 81 → 81 − 4 = 77 → 77 × 6 = 462 → 462 + 100 = 562",
+      "en": "1 + 5 = 6 → 6 + 75 = 81 → 81 − 4 = 77 → 77 × 6 = 462 → 462 + 100 = 562",
+      "ja": "1 + 5 = 6 → 6 + 75 = 81 → 81 − 4 = 77 → 77 × 6 = 462 → 462 + 100 = 562",
+      "zh": "1 + 5 = 6 → 6 + 75 = 81 → 81 − 4 = 77 → 77 × 6 = 462 → 462 + 100 = 562",
+      "es": "1 + 5 = 6 → 6 + 75 = 81 → 81 − 4 = 77 → 77 × 6 = 462 → 462 + 100 = 562",
+      "fr": "1 + 5 = 6 → 6 + 75 = 81 → 81 − 4 = 77 → 77 × 6 = 462 → 462 + 100 = 562",
+      "de": "1 + 5 = 6 → 6 + 75 = 81 → 81 − 4 = 77 → 77 × 6 = 462 → 462 + 100 = 562"
+    }
+  },
+  {
+    "id": "tg9_s02",
+    "type": "target",
+    "track": "target",
+    "chapter": 9,
+    "order": 2,
+    "numbers": [
+      9,
+      8,
+      1,
+      50,
+      10,
+      100
+    ],
+    "target": 614,
+    "answer": "614",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 50, 100 타일을 골라 보세요.",
+        "50 × 100 = 5000 부터 계산해 보세요.",
+        "이어지는 계산: 5000 ÷ 8 = 625 → 1 + 10 = 11. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 50 and 100 tiles.",
+        "Make 50 × 100 = 5000 first.",
+        "Next steps: 5000 ÷ 8 = 625 → 1 + 10 = 11. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 50 と 100 のタイルを選んでみましょう。",
+        "まず 50 × 100 = 5000 を作ってみましょう。",
+        "続きの計算: 5000 ÷ 8 = 625 → 1 + 10 = 11。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 50 和 100 这两个数字。",
+        "先算出 50 × 100 = 5000。",
+        "接下来：5000 ÷ 8 = 625 → 1 + 10 = 11。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 50 y 100.",
+        "Primero haz 50 × 100 = 5000.",
+        "Siguientes pasos: 5000 ÷ 8 = 625 → 1 + 10 = 11. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 50 et 100.",
+        "Calculez d'abord 50 × 100 = 5000.",
+        "Étapes suivantes : 5000 ÷ 8 = 625 → 1 + 10 = 11. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 50 und 100.",
+        "Rechne zuerst 50 × 100 = 5000.",
+        "Nächste Schritte: 5000 ÷ 8 = 625 → 1 + 10 = 11. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "50 × 100 = 5000 → 5000 ÷ 8 = 625 → 1 + 10 = 11 → 625 − 11 = 614",
+      "en": "50 × 100 = 5000 → 5000 ÷ 8 = 625 → 1 + 10 = 11 → 625 − 11 = 614",
+      "ja": "50 × 100 = 5000 → 5000 ÷ 8 = 625 → 1 + 10 = 11 → 625 − 11 = 614",
+      "zh": "50 × 100 = 5000 → 5000 ÷ 8 = 625 → 1 + 10 = 11 → 625 − 11 = 614",
+      "es": "50 × 100 = 5000 → 5000 ÷ 8 = 625 → 1 + 10 = 11 → 625 − 11 = 614",
+      "fr": "50 × 100 = 5000 → 5000 ÷ 8 = 625 → 1 + 10 = 11 → 625 − 11 = 614",
+      "de": "50 × 100 = 5000 → 5000 ÷ 8 = 625 → 1 + 10 = 11 → 625 − 11 = 614"
+    }
+  },
+  {
+    "id": "tg9_s03",
+    "type": "target",
+    "track": "target",
+    "chapter": 9,
+    "order": 3,
+    "numbers": [
+      5,
+      10,
+      50,
+      8,
+      4,
+      100
+    ],
+    "target": 619,
+    "answer": "619",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 50, 100 타일을 골라 보세요.",
+        "50 × 100 = 5000 부터 계산해 보세요.",
+        "이어지는 계산: 5000 ÷ 8 = 625 → 10 − 4 = 6. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 50 and 100 tiles.",
+        "Make 50 × 100 = 5000 first.",
+        "Next steps: 5000 ÷ 8 = 625 → 10 − 4 = 6. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 50 と 100 のタイルを選んでみましょう。",
+        "まず 50 × 100 = 5000 を作ってみましょう。",
+        "続きの計算: 5000 ÷ 8 = 625 → 10 − 4 = 6。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 50 和 100 这两个数字。",
+        "先算出 50 × 100 = 5000。",
+        "接下来：5000 ÷ 8 = 625 → 10 − 4 = 6。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 50 y 100.",
+        "Primero haz 50 × 100 = 5000.",
+        "Siguientes pasos: 5000 ÷ 8 = 625 → 10 − 4 = 6. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 50 et 100.",
+        "Calculez d'abord 50 × 100 = 5000.",
+        "Étapes suivantes : 5000 ÷ 8 = 625 → 10 − 4 = 6. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 50 und 100.",
+        "Rechne zuerst 50 × 100 = 5000.",
+        "Nächste Schritte: 5000 ÷ 8 = 625 → 10 − 4 = 6. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "50 × 100 = 5000 → 5000 ÷ 8 = 625 → 10 − 4 = 6 → 625 − 6 = 619",
+      "en": "50 × 100 = 5000 → 5000 ÷ 8 = 625 → 10 − 4 = 6 → 625 − 6 = 619",
+      "ja": "50 × 100 = 5000 → 5000 ÷ 8 = 625 → 10 − 4 = 6 → 625 − 6 = 619",
+      "zh": "50 × 100 = 5000 → 5000 ÷ 8 = 625 → 10 − 4 = 6 → 625 − 6 = 619",
+      "es": "50 × 100 = 5000 → 5000 ÷ 8 = 625 → 10 − 4 = 6 → 625 − 6 = 619",
+      "fr": "50 × 100 = 5000 → 5000 ÷ 8 = 625 → 10 − 4 = 6 → 625 − 6 = 619",
+      "de": "50 × 100 = 5000 → 5000 ÷ 8 = 625 → 10 − 4 = 6 → 625 − 6 = 619"
+    }
+  },
+  {
+    "id": "tg9_s04",
+    "type": "target",
+    "track": "target",
+    "chapter": 9,
+    "order": 4,
+    "numbers": [
+      4,
+      2,
+      100,
+      8,
+      6,
+      50
+    ],
+    "target": 293,
+    "answer": "293",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 100, 50 타일을 골라 보세요.",
+        "100 + 50 = 150 부터 계산해 보세요.",
+        "이어지는 계산: 4 × 150 = 600 → 600 − 6 = 594 → 594 − 8 = 586. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 100 and 50 tiles.",
+        "Make 100 + 50 = 150 first.",
+        "Next steps: 4 × 150 = 600 → 600 − 6 = 594 → 594 − 8 = 586. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 100 と 50 のタイルを選んでみましょう。",
+        "まず 100 + 50 = 150 を作ってみましょう。",
+        "続きの計算: 4 × 150 = 600 → 600 − 6 = 594 → 594 − 8 = 586。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 100 和 50 这两个数字。",
+        "先算出 100 + 50 = 150。",
+        "接下来：4 × 150 = 600 → 600 − 6 = 594 → 594 − 8 = 586。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 100 y 50.",
+        "Primero haz 100 + 50 = 150.",
+        "Siguientes pasos: 4 × 150 = 600 → 600 − 6 = 594 → 594 − 8 = 586. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 100 et 50.",
+        "Calculez d'abord 100 + 50 = 150.",
+        "Étapes suivantes : 4 × 150 = 600 → 600 − 6 = 594 → 594 − 8 = 586. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 100 und 50.",
+        "Rechne zuerst 100 + 50 = 150.",
+        "Nächste Schritte: 4 × 150 = 600 → 600 − 6 = 594 → 594 − 8 = 586. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "100 + 50 = 150 → 4 × 150 = 600 → 600 − 6 = 594 → 594 − 8 = 586 → 586 ÷ 2 = 293",
+      "en": "100 + 50 = 150 → 4 × 150 = 600 → 600 − 6 = 594 → 594 − 8 = 586 → 586 ÷ 2 = 293",
+      "ja": "100 + 50 = 150 → 4 × 150 = 600 → 600 − 6 = 594 → 594 − 8 = 586 → 586 ÷ 2 = 293",
+      "zh": "100 + 50 = 150 → 4 × 150 = 600 → 600 − 6 = 594 → 594 − 8 = 586 → 586 ÷ 2 = 293",
+      "es": "100 + 50 = 150 → 4 × 150 = 600 → 600 − 6 = 594 → 594 − 8 = 586 → 586 ÷ 2 = 293",
+      "fr": "100 + 50 = 150 → 4 × 150 = 600 → 600 − 6 = 594 → 594 − 8 = 586 → 586 ÷ 2 = 293",
+      "de": "100 + 50 = 150 → 4 × 150 = 600 → 600 − 6 = 594 → 594 − 8 = 586 → 586 ÷ 2 = 293"
+    }
+  },
+  {
+    "id": "tg9_s05",
+    "type": "target",
+    "track": "target",
+    "chapter": 9,
+    "order": 5,
+    "numbers": [
+      100,
+      6,
+      5,
+      1,
+      10,
+      50
+    ],
+    "target": 592,
+    "answer": "592",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 100, 6 타일을 골라 보세요.",
+        "100 × 6 = 600 부터 계산해 보세요.",
+        "이어지는 계산: 50 − 10 = 40 → 40 ÷ 5 = 8. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 100 and 6 tiles.",
+        "Make 100 × 6 = 600 first.",
+        "Next steps: 50 − 10 = 40 → 40 ÷ 5 = 8. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 100 と 6 のタイルを選んでみましょう。",
+        "まず 100 × 6 = 600 を作ってみましょう。",
+        "続きの計算: 50 − 10 = 40 → 40 ÷ 5 = 8。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 100 和 6 这两个数字。",
+        "先算出 100 × 6 = 600。",
+        "接下来：50 − 10 = 40 → 40 ÷ 5 = 8。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 100 y 6.",
+        "Primero haz 100 × 6 = 600.",
+        "Siguientes pasos: 50 − 10 = 40 → 40 ÷ 5 = 8. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 100 et 6.",
+        "Calculez d'abord 100 × 6 = 600.",
+        "Étapes suivantes : 50 − 10 = 40 → 40 ÷ 5 = 8. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 100 und 6.",
+        "Rechne zuerst 100 × 6 = 600.",
+        "Nächste Schritte: 50 − 10 = 40 → 40 ÷ 5 = 8. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "100 × 6 = 600 → 50 − 10 = 40 → 40 ÷ 5 = 8 → 600 − 8 = 592",
+      "en": "100 × 6 = 600 → 50 − 10 = 40 → 40 ÷ 5 = 8 → 600 − 8 = 592",
+      "ja": "100 × 6 = 600 → 50 − 10 = 40 → 40 ÷ 5 = 8 → 600 − 8 = 592",
+      "zh": "100 × 6 = 600 → 50 − 10 = 40 → 40 ÷ 5 = 8 → 600 − 8 = 592",
+      "es": "100 × 6 = 600 → 50 − 10 = 40 → 40 ÷ 5 = 8 → 600 − 8 = 592",
+      "fr": "100 × 6 = 600 → 50 − 10 = 40 → 40 ÷ 5 = 8 → 600 − 8 = 592",
+      "de": "100 × 6 = 600 → 50 − 10 = 40 → 40 ÷ 5 = 8 → 600 − 8 = 592"
+    }
+  },
+  {
+    "id": "tg9_s06",
+    "type": "target",
+    "track": "target",
+    "chapter": 9,
+    "order": 6,
+    "numbers": [
+      75,
+      50,
+      9,
+      5,
+      10,
+      1
+    ],
+    "target": 447,
+    "answer": "447",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 50, 9 타일을 골라 보세요.",
+        "50 × 9 = 450 부터 계산해 보세요.",
+        "이어지는 계산: 10 ÷ 5 = 2 → 2 + 1 = 3. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 50 and 9 tiles.",
+        "Make 50 × 9 = 450 first.",
+        "Next steps: 10 ÷ 5 = 2 → 2 + 1 = 3. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 50 と 9 のタイルを選んでみましょう。",
+        "まず 50 × 9 = 450 を作ってみましょう。",
+        "続きの計算: 10 ÷ 5 = 2 → 2 + 1 = 3。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 50 和 9 这两个数字。",
+        "先算出 50 × 9 = 450。",
+        "接下来：10 ÷ 5 = 2 → 2 + 1 = 3。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 50 y 9.",
+        "Primero haz 50 × 9 = 450.",
+        "Siguientes pasos: 10 ÷ 5 = 2 → 2 + 1 = 3. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 50 et 9.",
+        "Calculez d'abord 50 × 9 = 450.",
+        "Étapes suivantes : 10 ÷ 5 = 2 → 2 + 1 = 3. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 50 und 9.",
+        "Rechne zuerst 50 × 9 = 450.",
+        "Nächste Schritte: 10 ÷ 5 = 2 → 2 + 1 = 3. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "50 × 9 = 450 → 10 ÷ 5 = 2 → 2 + 1 = 3 → 450 − 3 = 447",
+      "en": "50 × 9 = 450 → 10 ÷ 5 = 2 → 2 + 1 = 3 → 450 − 3 = 447",
+      "ja": "50 × 9 = 450 → 10 ÷ 5 = 2 → 2 + 1 = 3 → 450 − 3 = 447",
+      "zh": "50 × 9 = 450 → 10 ÷ 5 = 2 → 2 + 1 = 3 → 450 − 3 = 447",
+      "es": "50 × 9 = 450 → 10 ÷ 5 = 2 → 2 + 1 = 3 → 450 − 3 = 447",
+      "fr": "50 × 9 = 450 → 10 ÷ 5 = 2 → 2 + 1 = 3 → 450 − 3 = 447",
+      "de": "50 × 9 = 450 → 10 ÷ 5 = 2 → 2 + 1 = 3 → 450 − 3 = 447"
+    }
+  },
+  {
+    "id": "tg10_s01",
+    "type": "target",
+    "track": "target",
+    "chapter": 10,
+    "order": 1,
+    "numbers": [
+      50,
+      9,
+      10,
+      100,
+      6,
+      5
+    ],
+    "target": 607,
+    "answer": "607",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 10, 5 타일을 골라 보세요.",
+        "10 ÷ 5 = 2 부터 계산해 보세요.",
+        "이어지는 계산: 9 − 2 = 7 → 100 × 6 = 600. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 10 and 5 tiles.",
+        "Make 10 ÷ 5 = 2 first.",
+        "Next steps: 9 − 2 = 7 → 100 × 6 = 600. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 10 と 5 のタイルを選んでみましょう。",
+        "まず 10 ÷ 5 = 2 を作ってみましょう。",
+        "続きの計算: 9 − 2 = 7 → 100 × 6 = 600。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 10 和 5 这两个数字。",
+        "先算出 10 ÷ 5 = 2。",
+        "接下来：9 − 2 = 7 → 100 × 6 = 600。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 10 y 5.",
+        "Primero haz 10 ÷ 5 = 2.",
+        "Siguientes pasos: 9 − 2 = 7 → 100 × 6 = 600. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 10 et 5.",
+        "Calculez d'abord 10 ÷ 5 = 2.",
+        "Étapes suivantes : 9 − 2 = 7 → 100 × 6 = 600. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 10 und 5.",
+        "Rechne zuerst 10 ÷ 5 = 2.",
+        "Nächste Schritte: 9 − 2 = 7 → 100 × 6 = 600. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "10 ÷ 5 = 2 → 9 − 2 = 7 → 100 × 6 = 600 → 7 + 600 = 607",
+      "en": "10 ÷ 5 = 2 → 9 − 2 = 7 → 100 × 6 = 600 → 7 + 600 = 607",
+      "ja": "10 ÷ 5 = 2 → 9 − 2 = 7 → 100 × 6 = 600 → 7 + 600 = 607",
+      "zh": "10 ÷ 5 = 2 → 9 − 2 = 7 → 100 × 6 = 600 → 7 + 600 = 607",
+      "es": "10 ÷ 5 = 2 → 9 − 2 = 7 → 100 × 6 = 600 → 7 + 600 = 607",
+      "fr": "10 ÷ 5 = 2 → 9 − 2 = 7 → 100 × 6 = 600 → 7 + 600 = 607",
+      "de": "10 ÷ 5 = 2 → 9 − 2 = 7 → 100 × 6 = 600 → 7 + 600 = 607"
+    }
+  },
+  {
+    "id": "tg10_s02",
+    "type": "target",
+    "track": "target",
+    "chapter": 10,
+    "order": 2,
+    "numbers": [
+      3,
+      100,
+      4,
+      50,
+      9,
+      5
+    ],
+    "target": 974,
+    "answer": "974",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 100, 3 타일을 골라 보세요.",
+        "100 − 3 = 97 부터 계산해 보세요.",
+        "이어지는 계산: 50 ÷ 5 = 10 → 97 × 10 = 970. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 100 and 3 tiles.",
+        "Make 100 − 3 = 97 first.",
+        "Next steps: 50 ÷ 5 = 10 → 97 × 10 = 970. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 100 と 3 のタイルを選んでみましょう。",
+        "まず 100 − 3 = 97 を作ってみましょう。",
+        "続きの計算: 50 ÷ 5 = 10 → 97 × 10 = 970。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 100 和 3 这两个数字。",
+        "先算出 100 − 3 = 97。",
+        "接下来：50 ÷ 5 = 10 → 97 × 10 = 970。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 100 y 3.",
+        "Primero haz 100 − 3 = 97.",
+        "Siguientes pasos: 50 ÷ 5 = 10 → 97 × 10 = 970. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 100 et 3.",
+        "Calculez d'abord 100 − 3 = 97.",
+        "Étapes suivantes : 50 ÷ 5 = 10 → 97 × 10 = 970. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 100 und 3.",
+        "Rechne zuerst 100 − 3 = 97.",
+        "Nächste Schritte: 50 ÷ 5 = 10 → 97 × 10 = 970. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "100 − 3 = 97 → 50 ÷ 5 = 10 → 97 × 10 = 970 → 970 + 4 = 974",
+      "en": "100 − 3 = 97 → 50 ÷ 5 = 10 → 97 × 10 = 970 → 970 + 4 = 974",
+      "ja": "100 − 3 = 97 → 50 ÷ 5 = 10 → 97 × 10 = 970 → 970 + 4 = 974",
+      "zh": "100 − 3 = 97 → 50 ÷ 5 = 10 → 97 × 10 = 970 → 970 + 4 = 974",
+      "es": "100 − 3 = 97 → 50 ÷ 5 = 10 → 97 × 10 = 970 → 970 + 4 = 974",
+      "fr": "100 − 3 = 97 → 50 ÷ 5 = 10 → 97 × 10 = 970 → 970 + 4 = 974",
+      "de": "100 − 3 = 97 → 50 ÷ 5 = 10 → 97 × 10 = 970 → 970 + 4 = 974"
+    }
+  },
+  {
+    "id": "tg10_s03",
+    "type": "target",
+    "track": "target",
+    "chapter": 10,
+    "order": 3,
+    "numbers": [
+      6,
+      10,
+      75,
+      1,
+      50,
+      5
+    ],
+    "target": 497,
+    "answer": "497",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 10, 50 타일을 골라 보세요.",
+        "10 × 50 = 500 부터 계산해 보세요.",
+        "이어지는 계산: 6 − 1 = 5 → 5 × 5 = 25 → 75 ÷ 25 = 3. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 10 and 50 tiles.",
+        "Make 10 × 50 = 500 first.",
+        "Next steps: 6 − 1 = 5 → 5 × 5 = 25 → 75 ÷ 25 = 3. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 10 と 50 のタイルを選んでみましょう。",
+        "まず 10 × 50 = 500 を作ってみましょう。",
+        "続きの計算: 6 − 1 = 5 → 5 × 5 = 25 → 75 ÷ 25 = 3。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 10 和 50 这两个数字。",
+        "先算出 10 × 50 = 500。",
+        "接下来：6 − 1 = 5 → 5 × 5 = 25 → 75 ÷ 25 = 3。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 10 y 50.",
+        "Primero haz 10 × 50 = 500.",
+        "Siguientes pasos: 6 − 1 = 5 → 5 × 5 = 25 → 75 ÷ 25 = 3. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 10 et 50.",
+        "Calculez d'abord 10 × 50 = 500.",
+        "Étapes suivantes : 6 − 1 = 5 → 5 × 5 = 25 → 75 ÷ 25 = 3. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 10 und 50.",
+        "Rechne zuerst 10 × 50 = 500.",
+        "Nächste Schritte: 6 − 1 = 5 → 5 × 5 = 25 → 75 ÷ 25 = 3. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "10 × 50 = 500 → 6 − 1 = 5 → 5 × 5 = 25 → 75 ÷ 25 = 3 → 500 − 3 = 497",
+      "en": "10 × 50 = 500 → 6 − 1 = 5 → 5 × 5 = 25 → 75 ÷ 25 = 3 → 500 − 3 = 497",
+      "ja": "10 × 50 = 500 → 6 − 1 = 5 → 5 × 5 = 25 → 75 ÷ 25 = 3 → 500 − 3 = 497",
+      "zh": "10 × 50 = 500 → 6 − 1 = 5 → 5 × 5 = 25 → 75 ÷ 25 = 3 → 500 − 3 = 497",
+      "es": "10 × 50 = 500 → 6 − 1 = 5 → 5 × 5 = 25 → 75 ÷ 25 = 3 → 500 − 3 = 497",
+      "fr": "10 × 50 = 500 → 6 − 1 = 5 → 5 × 5 = 25 → 75 ÷ 25 = 3 → 500 − 3 = 497",
+      "de": "10 × 50 = 500 → 6 − 1 = 5 → 5 × 5 = 25 → 75 ÷ 25 = 3 → 500 − 3 = 497"
+    }
+  },
+  {
+    "id": "tg10_s04",
+    "type": "target",
+    "track": "target",
+    "chapter": 10,
+    "order": 4,
+    "numbers": [
+      10,
+      1,
+      100,
+      50,
+      6,
+      4
+    ],
+    "target": 571,
+    "answer": "571",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 100, 4 타일을 골라 보세요.",
+        "100 − 4 = 96 부터 계산해 보세요.",
+        "이어지는 계산: 96 × 6 = 576 → 50 ÷ 10 = 5. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 100 and 4 tiles.",
+        "Make 100 − 4 = 96 first.",
+        "Next steps: 96 × 6 = 576 → 50 ÷ 10 = 5. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 100 と 4 のタイルを選んでみましょう。",
+        "まず 100 − 4 = 96 を作ってみましょう。",
+        "続きの計算: 96 × 6 = 576 → 50 ÷ 10 = 5。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 100 和 4 这两个数字。",
+        "先算出 100 − 4 = 96。",
+        "接下来：96 × 6 = 576 → 50 ÷ 10 = 5。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 100 y 4.",
+        "Primero haz 100 − 4 = 96.",
+        "Siguientes pasos: 96 × 6 = 576 → 50 ÷ 10 = 5. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 100 et 4.",
+        "Calculez d'abord 100 − 4 = 96.",
+        "Étapes suivantes : 96 × 6 = 576 → 50 ÷ 10 = 5. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 100 und 4.",
+        "Rechne zuerst 100 − 4 = 96.",
+        "Nächste Schritte: 96 × 6 = 576 → 50 ÷ 10 = 5. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "100 − 4 = 96 → 96 × 6 = 576 → 50 ÷ 10 = 5 → 576 − 5 = 571",
+      "en": "100 − 4 = 96 → 96 × 6 = 576 → 50 ÷ 10 = 5 → 576 − 5 = 571",
+      "ja": "100 − 4 = 96 → 96 × 6 = 576 → 50 ÷ 10 = 5 → 576 − 5 = 571",
+      "zh": "100 − 4 = 96 → 96 × 6 = 576 → 50 ÷ 10 = 5 → 576 − 5 = 571",
+      "es": "100 − 4 = 96 → 96 × 6 = 576 → 50 ÷ 10 = 5 → 576 − 5 = 571",
+      "fr": "100 − 4 = 96 → 96 × 6 = 576 → 50 ÷ 10 = 5 → 576 − 5 = 571",
+      "de": "100 − 4 = 96 → 96 × 6 = 576 → 50 ÷ 10 = 5 → 576 − 5 = 571"
+    }
+  },
+  {
+    "id": "tg10_s05",
+    "type": "target",
+    "track": "target",
+    "chapter": 10,
+    "order": 5,
+    "numbers": [
+      75,
+      9,
+      1,
+      25,
+      7,
+      3
+    ],
+    "target": 941,
+    "answer": "941",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 75, 25 타일을 골라 보세요.",
+        "75 × 25 = 1875 부터 계산해 보세요.",
+        "이어지는 계산: 1875 + 7 = 1882 → 3 − 1 = 2. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 75 and 25 tiles.",
+        "Make 75 × 25 = 1875 first.",
+        "Next steps: 1875 + 7 = 1882 → 3 − 1 = 2. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 75 と 25 のタイルを選んでみましょう。",
+        "まず 75 × 25 = 1875 を作ってみましょう。",
+        "続きの計算: 1875 + 7 = 1882 → 3 − 1 = 2。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 75 和 25 这两个数字。",
+        "先算出 75 × 25 = 1875。",
+        "接下来：1875 + 7 = 1882 → 3 − 1 = 2。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 75 y 25.",
+        "Primero haz 75 × 25 = 1875.",
+        "Siguientes pasos: 1875 + 7 = 1882 → 3 − 1 = 2. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 75 et 25.",
+        "Calculez d'abord 75 × 25 = 1875.",
+        "Étapes suivantes : 1875 + 7 = 1882 → 3 − 1 = 2. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 75 und 25.",
+        "Rechne zuerst 75 × 25 = 1875.",
+        "Nächste Schritte: 1875 + 7 = 1882 → 3 − 1 = 2. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "75 × 25 = 1875 → 1875 + 7 = 1882 → 3 − 1 = 2 → 1882 ÷ 2 = 941",
+      "en": "75 × 25 = 1875 → 1875 + 7 = 1882 → 3 − 1 = 2 → 1882 ÷ 2 = 941",
+      "ja": "75 × 25 = 1875 → 1875 + 7 = 1882 → 3 − 1 = 2 → 1882 ÷ 2 = 941",
+      "zh": "75 × 25 = 1875 → 1875 + 7 = 1882 → 3 − 1 = 2 → 1882 ÷ 2 = 941",
+      "es": "75 × 25 = 1875 → 1875 + 7 = 1882 → 3 − 1 = 2 → 1882 ÷ 2 = 941",
+      "fr": "75 × 25 = 1875 → 1875 + 7 = 1882 → 3 − 1 = 2 → 1882 ÷ 2 = 941",
+      "de": "75 × 25 = 1875 → 1875 + 7 = 1882 → 3 − 1 = 2 → 1882 ÷ 2 = 941"
+    }
+  },
+  {
+    "id": "tg10_s06",
+    "type": "target",
+    "track": "target",
+    "chapter": 10,
+    "order": 6,
+    "numbers": [
+      4,
+      5,
+      10,
+      25,
+      9,
+      100
+    ],
+    "target": 303,
+    "answer": "303",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 10, 9 타일을 골라 보세요.",
+        "10 × 9 = 90 부터 계산해 보세요.",
+        "이어지는 계산: 90 ÷ 5 = 18 → 100 − 18 = 82 → 4 × 82 = 328. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 10 and 9 tiles.",
+        "Make 10 × 9 = 90 first.",
+        "Next steps: 90 ÷ 5 = 18 → 100 − 18 = 82 → 4 × 82 = 328. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 10 と 9 のタイルを選んでみましょう。",
+        "まず 10 × 9 = 90 を作ってみましょう。",
+        "続きの計算: 90 ÷ 5 = 18 → 100 − 18 = 82 → 4 × 82 = 328。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 10 和 9 这两个数字。",
+        "先算出 10 × 9 = 90。",
+        "接下来：90 ÷ 5 = 18 → 100 − 18 = 82 → 4 × 82 = 328。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 10 y 9.",
+        "Primero haz 10 × 9 = 90.",
+        "Siguientes pasos: 90 ÷ 5 = 18 → 100 − 18 = 82 → 4 × 82 = 328. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 10 et 9.",
+        "Calculez d'abord 10 × 9 = 90.",
+        "Étapes suivantes : 90 ÷ 5 = 18 → 100 − 18 = 82 → 4 × 82 = 328. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 10 und 9.",
+        "Rechne zuerst 10 × 9 = 90.",
+        "Nächste Schritte: 90 ÷ 5 = 18 → 100 − 18 = 82 → 4 × 82 = 328. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "10 × 9 = 90 → 90 ÷ 5 = 18 → 100 − 18 = 82 → 4 × 82 = 328 → 328 − 25 = 303",
+      "en": "10 × 9 = 90 → 90 ÷ 5 = 18 → 100 − 18 = 82 → 4 × 82 = 328 → 328 − 25 = 303",
+      "ja": "10 × 9 = 90 → 90 ÷ 5 = 18 → 100 − 18 = 82 → 4 × 82 = 328 → 328 − 25 = 303",
+      "zh": "10 × 9 = 90 → 90 ÷ 5 = 18 → 100 − 18 = 82 → 4 × 82 = 328 → 328 − 25 = 303",
+      "es": "10 × 9 = 90 → 90 ÷ 5 = 18 → 100 − 18 = 82 → 4 × 82 = 328 → 328 − 25 = 303",
+      "fr": "10 × 9 = 90 → 90 ÷ 5 = 18 → 100 − 18 = 82 → 4 × 82 = 328 → 328 − 25 = 303",
+      "de": "10 × 9 = 90 → 90 ÷ 5 = 18 → 100 − 18 = 82 → 4 × 82 = 328 → 328 − 25 = 303"
+    }
+  },
+  {
+    "id": "tg11_s01",
+    "type": "target",
+    "track": "target",
+    "chapter": 11,
+    "order": 1,
+    "numbers": [
+      75,
+      2,
+      100,
+      25,
+      5,
+      10
+    ],
+    "target": 514,
+    "answer": "514",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 10, 2 타일을 골라 보세요.",
+        "10 ÷ 2 = 5 부터 계산해 보세요.",
+        "이어지는 계산: 75 − 5 = 70 → 100 × 25 = 2500 → 70 + 2500 = 2570. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 10 and 2 tiles.",
+        "Make 10 ÷ 2 = 5 first.",
+        "Next steps: 75 − 5 = 70 → 100 × 25 = 2500 → 70 + 2500 = 2570. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 10 と 2 のタイルを選んでみましょう。",
+        "まず 10 ÷ 2 = 5 を作ってみましょう。",
+        "続きの計算: 75 − 5 = 70 → 100 × 25 = 2500 → 70 + 2500 = 2570。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 10 和 2 这两个数字。",
+        "先算出 10 ÷ 2 = 5。",
+        "接下来：75 − 5 = 70 → 100 × 25 = 2500 → 70 + 2500 = 2570。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 10 y 2.",
+        "Primero haz 10 ÷ 2 = 5.",
+        "Siguientes pasos: 75 − 5 = 70 → 100 × 25 = 2500 → 70 + 2500 = 2570. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 10 et 2.",
+        "Calculez d'abord 10 ÷ 2 = 5.",
+        "Étapes suivantes : 75 − 5 = 70 → 100 × 25 = 2500 → 70 + 2500 = 2570. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 10 und 2.",
+        "Rechne zuerst 10 ÷ 2 = 5.",
+        "Nächste Schritte: 75 − 5 = 70 → 100 × 25 = 2500 → 70 + 2500 = 2570. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "10 ÷ 2 = 5 → 75 − 5 = 70 → 100 × 25 = 2500 → 70 + 2500 = 2570 → 2570 ÷ 5 = 514",
+      "en": "10 ÷ 2 = 5 → 75 − 5 = 70 → 100 × 25 = 2500 → 70 + 2500 = 2570 → 2570 ÷ 5 = 514",
+      "ja": "10 ÷ 2 = 5 → 75 − 5 = 70 → 100 × 25 = 2500 → 70 + 2500 = 2570 → 2570 ÷ 5 = 514",
+      "zh": "10 ÷ 2 = 5 → 75 − 5 = 70 → 100 × 25 = 2500 → 70 + 2500 = 2570 → 2570 ÷ 5 = 514",
+      "es": "10 ÷ 2 = 5 → 75 − 5 = 70 → 100 × 25 = 2500 → 70 + 2500 = 2570 → 2570 ÷ 5 = 514",
+      "fr": "10 ÷ 2 = 5 → 75 − 5 = 70 → 100 × 25 = 2500 → 70 + 2500 = 2570 → 2570 ÷ 5 = 514",
+      "de": "10 ÷ 2 = 5 → 75 − 5 = 70 → 100 × 25 = 2500 → 70 + 2500 = 2570 → 2570 ÷ 5 = 514"
+    }
+  },
+  {
+    "id": "tg11_s02",
+    "type": "target",
+    "track": "target",
+    "chapter": 11,
+    "order": 2,
+    "numbers": [
+      75,
+      7,
+      8,
+      25,
+      1,
+      50
+    ],
+    "target": 503,
+    "answer": "503",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 50, 25 타일을 골라 보세요.",
+        "50 ÷ 25 = 2 부터 계산해 보세요.",
+        "이어지는 계산: 75 − 2 = 73 → 73 × 7 = 511. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 50 and 25 tiles.",
+        "Make 50 ÷ 25 = 2 first.",
+        "Next steps: 75 − 2 = 73 → 73 × 7 = 511. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 50 と 25 のタイルを選んでみましょう。",
+        "まず 50 ÷ 25 = 2 を作ってみましょう。",
+        "続きの計算: 75 − 2 = 73 → 73 × 7 = 511。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 50 和 25 这两个数字。",
+        "先算出 50 ÷ 25 = 2。",
+        "接下来：75 − 2 = 73 → 73 × 7 = 511。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 50 y 25.",
+        "Primero haz 50 ÷ 25 = 2.",
+        "Siguientes pasos: 75 − 2 = 73 → 73 × 7 = 511. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 50 et 25.",
+        "Calculez d'abord 50 ÷ 25 = 2.",
+        "Étapes suivantes : 75 − 2 = 73 → 73 × 7 = 511. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 50 und 25.",
+        "Rechne zuerst 50 ÷ 25 = 2.",
+        "Nächste Schritte: 75 − 2 = 73 → 73 × 7 = 511. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "50 ÷ 25 = 2 → 75 − 2 = 73 → 73 × 7 = 511 → 511 − 8 = 503",
+      "en": "50 ÷ 25 = 2 → 75 − 2 = 73 → 73 × 7 = 511 → 511 − 8 = 503",
+      "ja": "50 ÷ 25 = 2 → 75 − 2 = 73 → 73 × 7 = 511 → 511 − 8 = 503",
+      "zh": "50 ÷ 25 = 2 → 75 − 2 = 73 → 73 × 7 = 511 → 511 − 8 = 503",
+      "es": "50 ÷ 25 = 2 → 75 − 2 = 73 → 73 × 7 = 511 → 511 − 8 = 503",
+      "fr": "50 ÷ 25 = 2 → 75 − 2 = 73 → 73 × 7 = 511 → 511 − 8 = 503",
+      "de": "50 ÷ 25 = 2 → 75 − 2 = 73 → 73 × 7 = 511 → 511 − 8 = 503"
+    }
+  },
+  {
+    "id": "tg11_s03",
+    "type": "target",
+    "track": "target",
+    "chapter": 11,
+    "order": 3,
+    "numbers": [
+      50,
+      1,
+      100,
+      75,
+      6,
+      5
+    ],
+    "target": 217,
+    "answer": "217",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 100, 50 타일을 골라 보세요.",
+        "100 ÷ 50 = 2 부터 계산해 보세요.",
+        "이어지는 계산: 6 ÷ 2 = 3 → 75 − 1 = 74 → 3 × 74 = 222. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 100 and 50 tiles.",
+        "Make 100 ÷ 50 = 2 first.",
+        "Next steps: 6 ÷ 2 = 3 → 75 − 1 = 74 → 3 × 74 = 222. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 100 と 50 のタイルを選んでみましょう。",
+        "まず 100 ÷ 50 = 2 を作ってみましょう。",
+        "続きの計算: 6 ÷ 2 = 3 → 75 − 1 = 74 → 3 × 74 = 222。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 100 和 50 这两个数字。",
+        "先算出 100 ÷ 50 = 2。",
+        "接下来：6 ÷ 2 = 3 → 75 − 1 = 74 → 3 × 74 = 222。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 100 y 50.",
+        "Primero haz 100 ÷ 50 = 2.",
+        "Siguientes pasos: 6 ÷ 2 = 3 → 75 − 1 = 74 → 3 × 74 = 222. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 100 et 50.",
+        "Calculez d'abord 100 ÷ 50 = 2.",
+        "Étapes suivantes : 6 ÷ 2 = 3 → 75 − 1 = 74 → 3 × 74 = 222. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 100 und 50.",
+        "Rechne zuerst 100 ÷ 50 = 2.",
+        "Nächste Schritte: 6 ÷ 2 = 3 → 75 − 1 = 74 → 3 × 74 = 222. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "100 ÷ 50 = 2 → 6 ÷ 2 = 3 → 75 − 1 = 74 → 3 × 74 = 222 → 222 − 5 = 217",
+      "en": "100 ÷ 50 = 2 → 6 ÷ 2 = 3 → 75 − 1 = 74 → 3 × 74 = 222 → 222 − 5 = 217",
+      "ja": "100 ÷ 50 = 2 → 6 ÷ 2 = 3 → 75 − 1 = 74 → 3 × 74 = 222 → 222 − 5 = 217",
+      "zh": "100 ÷ 50 = 2 → 6 ÷ 2 = 3 → 75 − 1 = 74 → 3 × 74 = 222 → 222 − 5 = 217",
+      "es": "100 ÷ 50 = 2 → 6 ÷ 2 = 3 → 75 − 1 = 74 → 3 × 74 = 222 → 222 − 5 = 217",
+      "fr": "100 ÷ 50 = 2 → 6 ÷ 2 = 3 → 75 − 1 = 74 → 3 × 74 = 222 → 222 − 5 = 217",
+      "de": "100 ÷ 50 = 2 → 6 ÷ 2 = 3 → 75 − 1 = 74 → 3 × 74 = 222 → 222 − 5 = 217"
+    }
+  },
+  {
+    "id": "tg11_s04",
+    "type": "target",
+    "track": "target",
+    "chapter": 11,
+    "order": 4,
+    "numbers": [
+      7,
+      9,
+      6,
+      25,
+      100,
+      75
+    ],
+    "target": 923,
+    "answer": "923",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 7, 6 타일을 골라 보세요.",
+        "7 + 6 = 13 부터 계산해 보세요.",
+        "이어지는 계산: 100 ÷ 25 = 4 → 75 − 4 = 71. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 7 and 6 tiles.",
+        "Make 7 + 6 = 13 first.",
+        "Next steps: 100 ÷ 25 = 4 → 75 − 4 = 71. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 7 と 6 のタイルを選んでみましょう。",
+        "まず 7 + 6 = 13 を作ってみましょう。",
+        "続きの計算: 100 ÷ 25 = 4 → 75 − 4 = 71。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 7 和 6 这两个数字。",
+        "先算出 7 + 6 = 13。",
+        "接下来：100 ÷ 25 = 4 → 75 − 4 = 71。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 7 y 6.",
+        "Primero haz 7 + 6 = 13.",
+        "Siguientes pasos: 100 ÷ 25 = 4 → 75 − 4 = 71. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 7 et 6.",
+        "Calculez d'abord 7 + 6 = 13.",
+        "Étapes suivantes : 100 ÷ 25 = 4 → 75 − 4 = 71. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 7 und 6.",
+        "Rechne zuerst 7 + 6 = 13.",
+        "Nächste Schritte: 100 ÷ 25 = 4 → 75 − 4 = 71. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "7 + 6 = 13 → 100 ÷ 25 = 4 → 75 − 4 = 71 → 13 × 71 = 923",
+      "en": "7 + 6 = 13 → 100 ÷ 25 = 4 → 75 − 4 = 71 → 13 × 71 = 923",
+      "ja": "7 + 6 = 13 → 100 ÷ 25 = 4 → 75 − 4 = 71 → 13 × 71 = 923",
+      "zh": "7 + 6 = 13 → 100 ÷ 25 = 4 → 75 − 4 = 71 → 13 × 71 = 923",
+      "es": "7 + 6 = 13 → 100 ÷ 25 = 4 → 75 − 4 = 71 → 13 × 71 = 923",
+      "fr": "7 + 6 = 13 → 100 ÷ 25 = 4 → 75 − 4 = 71 → 13 × 71 = 923",
+      "de": "7 + 6 = 13 → 100 ÷ 25 = 4 → 75 − 4 = 71 → 13 × 71 = 923"
+    }
+  },
+  {
+    "id": "tg11_s05",
+    "type": "target",
+    "track": "target",
+    "chapter": 11,
+    "order": 5,
+    "numbers": [
+      6,
+      100,
+      50,
+      10,
+      75,
+      1
+    ],
+    "target": 398,
+    "answer": "398",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 10, 1 타일을 골라 보세요.",
+        "10 − 1 = 9 부터 계산해 보세요.",
+        "이어지는 계산: 75 − 9 = 66 → 6 × 66 = 396 → 100 ÷ 50 = 2. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 10 and 1 tiles.",
+        "Make 10 − 1 = 9 first.",
+        "Next steps: 75 − 9 = 66 → 6 × 66 = 396 → 100 ÷ 50 = 2. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 10 と 1 のタイルを選んでみましょう。",
+        "まず 10 − 1 = 9 を作ってみましょう。",
+        "続きの計算: 75 − 9 = 66 → 6 × 66 = 396 → 100 ÷ 50 = 2。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 10 和 1 这两个数字。",
+        "先算出 10 − 1 = 9。",
+        "接下来：75 − 9 = 66 → 6 × 66 = 396 → 100 ÷ 50 = 2。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 10 y 1.",
+        "Primero haz 10 − 1 = 9.",
+        "Siguientes pasos: 75 − 9 = 66 → 6 × 66 = 396 → 100 ÷ 50 = 2. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 10 et 1.",
+        "Calculez d'abord 10 − 1 = 9.",
+        "Étapes suivantes : 75 − 9 = 66 → 6 × 66 = 396 → 100 ÷ 50 = 2. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 10 und 1.",
+        "Rechne zuerst 10 − 1 = 9.",
+        "Nächste Schritte: 75 − 9 = 66 → 6 × 66 = 396 → 100 ÷ 50 = 2. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "10 − 1 = 9 → 75 − 9 = 66 → 6 × 66 = 396 → 100 ÷ 50 = 2 → 396 + 2 = 398",
+      "en": "10 − 1 = 9 → 75 − 9 = 66 → 6 × 66 = 396 → 100 ÷ 50 = 2 → 396 + 2 = 398",
+      "ja": "10 − 1 = 9 → 75 − 9 = 66 → 6 × 66 = 396 → 100 ÷ 50 = 2 → 396 + 2 = 398",
+      "zh": "10 − 1 = 9 → 75 − 9 = 66 → 6 × 66 = 396 → 100 ÷ 50 = 2 → 396 + 2 = 398",
+      "es": "10 − 1 = 9 → 75 − 9 = 66 → 6 × 66 = 396 → 100 ÷ 50 = 2 → 396 + 2 = 398",
+      "fr": "10 − 1 = 9 → 75 − 9 = 66 → 6 × 66 = 396 → 100 ÷ 50 = 2 → 396 + 2 = 398",
+      "de": "10 − 1 = 9 → 75 − 9 = 66 → 6 × 66 = 396 → 100 ÷ 50 = 2 → 396 + 2 = 398"
+    }
+  },
+  {
+    "id": "tg11_s06",
+    "type": "target",
+    "track": "target",
+    "chapter": 11,
+    "order": 6,
+    "numbers": [
+      6,
+      50,
+      25,
+      5,
+      100,
+      2
+    ],
+    "target": 539,
+    "answer": "539",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 6, 5 타일을 골라 보세요.",
+        "6 + 5 = 11 부터 계산해 보세요.",
+        "이어지는 계산: 100 − 2 = 98 → 11 × 98 = 1078 → 1078 × 25 = 26950. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 6 and 5 tiles.",
+        "Make 6 + 5 = 11 first.",
+        "Next steps: 100 − 2 = 98 → 11 × 98 = 1078 → 1078 × 25 = 26950. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 6 と 5 のタイルを選んでみましょう。",
+        "まず 6 + 5 = 11 を作ってみましょう。",
+        "続きの計算: 100 − 2 = 98 → 11 × 98 = 1078 → 1078 × 25 = 26950。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 6 和 5 这两个数字。",
+        "先算出 6 + 5 = 11。",
+        "接下来：100 − 2 = 98 → 11 × 98 = 1078 → 1078 × 25 = 26950。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 6 y 5.",
+        "Primero haz 6 + 5 = 11.",
+        "Siguientes pasos: 100 − 2 = 98 → 11 × 98 = 1078 → 1078 × 25 = 26950. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 6 et 5.",
+        "Calculez d'abord 6 + 5 = 11.",
+        "Étapes suivantes : 100 − 2 = 98 → 11 × 98 = 1078 → 1078 × 25 = 26950. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 6 und 5.",
+        "Rechne zuerst 6 + 5 = 11.",
+        "Nächste Schritte: 100 − 2 = 98 → 11 × 98 = 1078 → 1078 × 25 = 26950. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "6 + 5 = 11 → 100 − 2 = 98 → 11 × 98 = 1078 → 1078 × 25 = 26950 → 26950 ÷ 50 = 539",
+      "en": "6 + 5 = 11 → 100 − 2 = 98 → 11 × 98 = 1078 → 1078 × 25 = 26950 → 26950 ÷ 50 = 539",
+      "ja": "6 + 5 = 11 → 100 − 2 = 98 → 11 × 98 = 1078 → 1078 × 25 = 26950 → 26950 ÷ 50 = 539",
+      "zh": "6 + 5 = 11 → 100 − 2 = 98 → 11 × 98 = 1078 → 1078 × 25 = 26950 → 26950 ÷ 50 = 539",
+      "es": "6 + 5 = 11 → 100 − 2 = 98 → 11 × 98 = 1078 → 1078 × 25 = 26950 → 26950 ÷ 50 = 539",
+      "fr": "6 + 5 = 11 → 100 − 2 = 98 → 11 × 98 = 1078 → 1078 × 25 = 26950 → 26950 ÷ 50 = 539",
+      "de": "6 + 5 = 11 → 100 − 2 = 98 → 11 × 98 = 1078 → 1078 × 25 = 26950 → 26950 ÷ 50 = 539"
+    }
+  },
+  {
+    "id": "tg12_s01",
+    "type": "target",
+    "track": "target",
+    "chapter": 12,
+    "order": 1,
+    "numbers": [
+      10,
+      6,
+      50,
+      5,
+      25,
+      8
+    ],
+    "target": 729,
+    "answer": "729",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 10, 8 타일을 골라 보세요.",
+        "10 × 8 = 80 부터 계산해 보세요.",
+        "이어지는 계산: 50 − 6 = 44 → 80 × 44 = 3520 → 3520 ÷ 5 = 704. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 10 and 8 tiles.",
+        "Make 10 × 8 = 80 first.",
+        "Next steps: 50 − 6 = 44 → 80 × 44 = 3520 → 3520 ÷ 5 = 704. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 10 と 8 のタイルを選んでみましょう。",
+        "まず 10 × 8 = 80 を作ってみましょう。",
+        "続きの計算: 50 − 6 = 44 → 80 × 44 = 3520 → 3520 ÷ 5 = 704。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 10 和 8 这两个数字。",
+        "先算出 10 × 8 = 80。",
+        "接下来：50 − 6 = 44 → 80 × 44 = 3520 → 3520 ÷ 5 = 704。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 10 y 8.",
+        "Primero haz 10 × 8 = 80.",
+        "Siguientes pasos: 50 − 6 = 44 → 80 × 44 = 3520 → 3520 ÷ 5 = 704. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 10 et 8.",
+        "Calculez d'abord 10 × 8 = 80.",
+        "Étapes suivantes : 50 − 6 = 44 → 80 × 44 = 3520 → 3520 ÷ 5 = 704. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 10 und 8.",
+        "Rechne zuerst 10 × 8 = 80.",
+        "Nächste Schritte: 50 − 6 = 44 → 80 × 44 = 3520 → 3520 ÷ 5 = 704. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "10 × 8 = 80 → 50 − 6 = 44 → 80 × 44 = 3520 → 3520 ÷ 5 = 704 → 704 + 25 = 729",
+      "en": "10 × 8 = 80 → 50 − 6 = 44 → 80 × 44 = 3520 → 3520 ÷ 5 = 704 → 704 + 25 = 729",
+      "ja": "10 × 8 = 80 → 50 − 6 = 44 → 80 × 44 = 3520 → 3520 ÷ 5 = 704 → 704 + 25 = 729",
+      "zh": "10 × 8 = 80 → 50 − 6 = 44 → 80 × 44 = 3520 → 3520 ÷ 5 = 704 → 704 + 25 = 729",
+      "es": "10 × 8 = 80 → 50 − 6 = 44 → 80 × 44 = 3520 → 3520 ÷ 5 = 704 → 704 + 25 = 729",
+      "fr": "10 × 8 = 80 → 50 − 6 = 44 → 80 × 44 = 3520 → 3520 ÷ 5 = 704 → 704 + 25 = 729",
+      "de": "10 × 8 = 80 → 50 − 6 = 44 → 80 × 44 = 3520 → 3520 ÷ 5 = 704 → 704 + 25 = 729"
+    }
+  },
+  {
+    "id": "tg12_s02",
+    "type": "target",
+    "track": "target",
+    "chapter": 12,
+    "order": 2,
+    "numbers": [
+      6,
+      25,
+      5,
+      4,
+      100,
+      10
+    ],
+    "target": 987,
+    "answer": "987",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 100, 6 타일을 골라 보세요.",
+        "100 − 6 = 94 부터 계산해 보세요.",
+        "이어지는 계산: 10 ÷ 5 = 2 → 94 ÷ 2 = 47 → 25 − 4 = 21. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 100 and 6 tiles.",
+        "Make 100 − 6 = 94 first.",
+        "Next steps: 10 ÷ 5 = 2 → 94 ÷ 2 = 47 → 25 − 4 = 21. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 100 と 6 のタイルを選んでみましょう。",
+        "まず 100 − 6 = 94 を作ってみましょう。",
+        "続きの計算: 10 ÷ 5 = 2 → 94 ÷ 2 = 47 → 25 − 4 = 21。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 100 和 6 这两个数字。",
+        "先算出 100 − 6 = 94。",
+        "接下来：10 ÷ 5 = 2 → 94 ÷ 2 = 47 → 25 − 4 = 21。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 100 y 6.",
+        "Primero haz 100 − 6 = 94.",
+        "Siguientes pasos: 10 ÷ 5 = 2 → 94 ÷ 2 = 47 → 25 − 4 = 21. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 100 et 6.",
+        "Calculez d'abord 100 − 6 = 94.",
+        "Étapes suivantes : 10 ÷ 5 = 2 → 94 ÷ 2 = 47 → 25 − 4 = 21. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 100 und 6.",
+        "Rechne zuerst 100 − 6 = 94.",
+        "Nächste Schritte: 10 ÷ 5 = 2 → 94 ÷ 2 = 47 → 25 − 4 = 21. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "100 − 6 = 94 → 10 ÷ 5 = 2 → 94 ÷ 2 = 47 → 25 − 4 = 21 → 47 × 21 = 987",
+      "en": "100 − 6 = 94 → 10 ÷ 5 = 2 → 94 ÷ 2 = 47 → 25 − 4 = 21 → 47 × 21 = 987",
+      "ja": "100 − 6 = 94 → 10 ÷ 5 = 2 → 94 ÷ 2 = 47 → 25 − 4 = 21 → 47 × 21 = 987",
+      "zh": "100 − 6 = 94 → 10 ÷ 5 = 2 → 94 ÷ 2 = 47 → 25 − 4 = 21 → 47 × 21 = 987",
+      "es": "100 − 6 = 94 → 10 ÷ 5 = 2 → 94 ÷ 2 = 47 → 25 − 4 = 21 → 47 × 21 = 987",
+      "fr": "100 − 6 = 94 → 10 ÷ 5 = 2 → 94 ÷ 2 = 47 → 25 − 4 = 21 → 47 × 21 = 987",
+      "de": "100 − 6 = 94 → 10 ÷ 5 = 2 → 94 ÷ 2 = 47 → 25 − 4 = 21 → 47 × 21 = 987"
+    }
+  },
+  {
+    "id": "tg12_s03",
+    "type": "target",
+    "track": "target",
+    "chapter": 12,
+    "order": 3,
+    "numbers": [
+      10,
+      6,
+      25,
+      5,
+      50,
+      4
+    ],
+    "target": 582,
+    "answer": "582",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 25, 5 타일을 골라 보세요.",
+        "25 + 5 = 30 부터 계산해 보세요.",
+        "이어지는 계산: 30 ÷ 10 = 3 → 50 × 4 = 200 → 200 − 6 = 194. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 25 and 5 tiles.",
+        "Make 25 + 5 = 30 first.",
+        "Next steps: 30 ÷ 10 = 3 → 50 × 4 = 200 → 200 − 6 = 194. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 25 と 5 のタイルを選んでみましょう。",
+        "まず 25 + 5 = 30 を作ってみましょう。",
+        "続きの計算: 30 ÷ 10 = 3 → 50 × 4 = 200 → 200 − 6 = 194。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 25 和 5 这两个数字。",
+        "先算出 25 + 5 = 30。",
+        "接下来：30 ÷ 10 = 3 → 50 × 4 = 200 → 200 − 6 = 194。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 25 y 5.",
+        "Primero haz 25 + 5 = 30.",
+        "Siguientes pasos: 30 ÷ 10 = 3 → 50 × 4 = 200 → 200 − 6 = 194. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 25 et 5.",
+        "Calculez d'abord 25 + 5 = 30.",
+        "Étapes suivantes : 30 ÷ 10 = 3 → 50 × 4 = 200 → 200 − 6 = 194. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 25 und 5.",
+        "Rechne zuerst 25 + 5 = 30.",
+        "Nächste Schritte: 30 ÷ 10 = 3 → 50 × 4 = 200 → 200 − 6 = 194. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "25 + 5 = 30 → 30 ÷ 10 = 3 → 50 × 4 = 200 → 200 − 6 = 194 → 3 × 194 = 582",
+      "en": "25 + 5 = 30 → 30 ÷ 10 = 3 → 50 × 4 = 200 → 200 − 6 = 194 → 3 × 194 = 582",
+      "ja": "25 + 5 = 30 → 30 ÷ 10 = 3 → 50 × 4 = 200 → 200 − 6 = 194 → 3 × 194 = 582",
+      "zh": "25 + 5 = 30 → 30 ÷ 10 = 3 → 50 × 4 = 200 → 200 − 6 = 194 → 3 × 194 = 582",
+      "es": "25 + 5 = 30 → 30 ÷ 10 = 3 → 50 × 4 = 200 → 200 − 6 = 194 → 3 × 194 = 582",
+      "fr": "25 + 5 = 30 → 30 ÷ 10 = 3 → 50 × 4 = 200 → 200 − 6 = 194 → 3 × 194 = 582",
+      "de": "25 + 5 = 30 → 30 ÷ 10 = 3 → 50 × 4 = 200 → 200 − 6 = 194 → 3 × 194 = 582"
+    }
+  },
+  {
+    "id": "tg12_s04",
+    "type": "target",
+    "track": "target",
+    "chapter": 12,
+    "order": 4,
+    "numbers": [
+      10,
+      50,
+      100,
+      8,
+      6,
+      4
+    ],
+    "target": 781,
+    "answer": "781",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 100, 8 타일을 골라 보세요.",
+        "100 × 8 = 800 부터 계산해 보세요.",
+        "이어지는 계산: 50 + 4 = 54 → 54 ÷ 6 = 9 → 10 + 9 = 19. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 100 and 8 tiles.",
+        "Make 100 × 8 = 800 first.",
+        "Next steps: 50 + 4 = 54 → 54 ÷ 6 = 9 → 10 + 9 = 19. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 100 と 8 のタイルを選んでみましょう。",
+        "まず 100 × 8 = 800 を作ってみましょう。",
+        "続きの計算: 50 + 4 = 54 → 54 ÷ 6 = 9 → 10 + 9 = 19。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 100 和 8 这两个数字。",
+        "先算出 100 × 8 = 800。",
+        "接下来：50 + 4 = 54 → 54 ÷ 6 = 9 → 10 + 9 = 19。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 100 y 8.",
+        "Primero haz 100 × 8 = 800.",
+        "Siguientes pasos: 50 + 4 = 54 → 54 ÷ 6 = 9 → 10 + 9 = 19. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 100 et 8.",
+        "Calculez d'abord 100 × 8 = 800.",
+        "Étapes suivantes : 50 + 4 = 54 → 54 ÷ 6 = 9 → 10 + 9 = 19. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 100 und 8.",
+        "Rechne zuerst 100 × 8 = 800.",
+        "Nächste Schritte: 50 + 4 = 54 → 54 ÷ 6 = 9 → 10 + 9 = 19. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "100 × 8 = 800 → 50 + 4 = 54 → 54 ÷ 6 = 9 → 10 + 9 = 19 → 800 − 19 = 781",
+      "en": "100 × 8 = 800 → 50 + 4 = 54 → 54 ÷ 6 = 9 → 10 + 9 = 19 → 800 − 19 = 781",
+      "ja": "100 × 8 = 800 → 50 + 4 = 54 → 54 ÷ 6 = 9 → 10 + 9 = 19 → 800 − 19 = 781",
+      "zh": "100 × 8 = 800 → 50 + 4 = 54 → 54 ÷ 6 = 9 → 10 + 9 = 19 → 800 − 19 = 781",
+      "es": "100 × 8 = 800 → 50 + 4 = 54 → 54 ÷ 6 = 9 → 10 + 9 = 19 → 800 − 19 = 781",
+      "fr": "100 × 8 = 800 → 50 + 4 = 54 → 54 ÷ 6 = 9 → 10 + 9 = 19 → 800 − 19 = 781",
+      "de": "100 × 8 = 800 → 50 + 4 = 54 → 54 ÷ 6 = 9 → 10 + 9 = 19 → 800 − 19 = 781"
+    }
+  },
+  {
+    "id": "tg12_s05",
+    "type": "target",
+    "track": "target",
+    "chapter": 12,
+    "order": 5,
+    "numbers": [
+      100,
+      9,
+      2,
+      50,
+      10,
+      5
+    ],
+    "target": 646,
+    "answer": "646",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 10, 5 타일을 골라 보세요.",
+        "10 ÷ 5 = 2 부터 계산해 보세요.",
+        "이어지는 계산: 100 − 2 = 98 → 98 × 2 = 196 → 9 × 50 = 450. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 10 and 5 tiles.",
+        "Make 10 ÷ 5 = 2 first.",
+        "Next steps: 100 − 2 = 98 → 98 × 2 = 196 → 9 × 50 = 450. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 10 と 5 のタイルを選んでみましょう。",
+        "まず 10 ÷ 5 = 2 を作ってみましょう。",
+        "続きの計算: 100 − 2 = 98 → 98 × 2 = 196 → 9 × 50 = 450。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 10 和 5 这两个数字。",
+        "先算出 10 ÷ 5 = 2。",
+        "接下来：100 − 2 = 98 → 98 × 2 = 196 → 9 × 50 = 450。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 10 y 5.",
+        "Primero haz 10 ÷ 5 = 2.",
+        "Siguientes pasos: 100 − 2 = 98 → 98 × 2 = 196 → 9 × 50 = 450. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 10 et 5.",
+        "Calculez d'abord 10 ÷ 5 = 2.",
+        "Étapes suivantes : 100 − 2 = 98 → 98 × 2 = 196 → 9 × 50 = 450. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 10 und 5.",
+        "Rechne zuerst 10 ÷ 5 = 2.",
+        "Nächste Schritte: 100 − 2 = 98 → 98 × 2 = 196 → 9 × 50 = 450. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "10 ÷ 5 = 2 → 100 − 2 = 98 → 98 × 2 = 196 → 9 × 50 = 450 → 196 + 450 = 646",
+      "en": "10 ÷ 5 = 2 → 100 − 2 = 98 → 98 × 2 = 196 → 9 × 50 = 450 → 196 + 450 = 646",
+      "ja": "10 ÷ 5 = 2 → 100 − 2 = 98 → 98 × 2 = 196 → 9 × 50 = 450 → 196 + 450 = 646",
+      "zh": "10 ÷ 5 = 2 → 100 − 2 = 98 → 98 × 2 = 196 → 9 × 50 = 450 → 196 + 450 = 646",
+      "es": "10 ÷ 5 = 2 → 100 − 2 = 98 → 98 × 2 = 196 → 9 × 50 = 450 → 196 + 450 = 646",
+      "fr": "10 ÷ 5 = 2 → 100 − 2 = 98 → 98 × 2 = 196 → 9 × 50 = 450 → 196 + 450 = 646",
+      "de": "10 ÷ 5 = 2 → 100 − 2 = 98 → 98 × 2 = 196 → 9 × 50 = 450 → 196 + 450 = 646"
+    }
+  },
+  {
+    "id": "tg12_s06",
+    "type": "target",
+    "track": "target",
+    "chapter": 12,
+    "order": 6,
+    "numbers": [
+      7,
+      6,
+      50,
+      4,
+      100,
+      2
+    ],
+    "target": 873,
+    "answer": "873",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 50, 2 타일을 골라 보세요.",
+        "50 + 2 = 52 부터 계산해 보세요.",
+        "이어지는 계산: 52 × 100 = 5200 → 5200 − 4 = 5196 → 5196 ÷ 6 = 866. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 50 and 2 tiles.",
+        "Make 50 + 2 = 52 first.",
+        "Next steps: 52 × 100 = 5200 → 5200 − 4 = 5196 → 5196 ÷ 6 = 866. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 50 と 2 のタイルを選んでみましょう。",
+        "まず 50 + 2 = 52 を作ってみましょう。",
+        "続きの計算: 52 × 100 = 5200 → 5200 − 4 = 5196 → 5196 ÷ 6 = 866。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 50 和 2 这两个数字。",
+        "先算出 50 + 2 = 52。",
+        "接下来：52 × 100 = 5200 → 5200 − 4 = 5196 → 5196 ÷ 6 = 866。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 50 y 2.",
+        "Primero haz 50 + 2 = 52.",
+        "Siguientes pasos: 52 × 100 = 5200 → 5200 − 4 = 5196 → 5196 ÷ 6 = 866. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 50 et 2.",
+        "Calculez d'abord 50 + 2 = 52.",
+        "Étapes suivantes : 52 × 100 = 5200 → 5200 − 4 = 5196 → 5196 ÷ 6 = 866. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 50 und 2.",
+        "Rechne zuerst 50 + 2 = 52.",
+        "Nächste Schritte: 52 × 100 = 5200 → 5200 − 4 = 5196 → 5196 ÷ 6 = 866. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "50 + 2 = 52 → 52 × 100 = 5200 → 5200 − 4 = 5196 → 5196 ÷ 6 = 866 → 7 + 866 = 873",
+      "en": "50 + 2 = 52 → 52 × 100 = 5200 → 5200 − 4 = 5196 → 5196 ÷ 6 = 866 → 7 + 866 = 873",
+      "ja": "50 + 2 = 52 → 52 × 100 = 5200 → 5200 − 4 = 5196 → 5196 ÷ 6 = 866 → 7 + 866 = 873",
+      "zh": "50 + 2 = 52 → 52 × 100 = 5200 → 5200 − 4 = 5196 → 5196 ÷ 6 = 866 → 7 + 866 = 873",
+      "es": "50 + 2 = 52 → 52 × 100 = 5200 → 5200 − 4 = 5196 → 5196 ÷ 6 = 866 → 7 + 866 = 873",
+      "fr": "50 + 2 = 52 → 52 × 100 = 5200 → 5200 − 4 = 5196 → 5196 ÷ 6 = 866 → 7 + 866 = 873",
+      "de": "50 + 2 = 52 → 52 × 100 = 5200 → 5200 − 4 = 5196 → 5196 ÷ 6 = 866 → 7 + 866 = 873"
+    }
+  },
+  {
+    "id": "tg13_s01",
+    "type": "target",
+    "track": "target",
+    "chapter": 13,
+    "order": 1,
+    "numbers": [
+      50,
+      6,
+      25,
+      100,
+      2,
+      4
+    ],
+    "target": 640,
+    "answer": "640",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 100, 25 타일을 골라 보세요.",
+        "100 ÷ 25 = 4 부터 계산해 보세요.",
+        "이어지는 계산: 50 + 4 = 54 → 54 × 6 = 324 → 324 − 4 = 320. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 100 and 25 tiles.",
+        "Make 100 ÷ 25 = 4 first.",
+        "Next steps: 50 + 4 = 54 → 54 × 6 = 324 → 324 − 4 = 320. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 100 と 25 のタイルを選んでみましょう。",
+        "まず 100 ÷ 25 = 4 を作ってみましょう。",
+        "続きの計算: 50 + 4 = 54 → 54 × 6 = 324 → 324 − 4 = 320。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 100 和 25 这两个数字。",
+        "先算出 100 ÷ 25 = 4。",
+        "接下来：50 + 4 = 54 → 54 × 6 = 324 → 324 − 4 = 320。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 100 y 25.",
+        "Primero haz 100 ÷ 25 = 4.",
+        "Siguientes pasos: 50 + 4 = 54 → 54 × 6 = 324 → 324 − 4 = 320. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 100 et 25.",
+        "Calculez d'abord 100 ÷ 25 = 4.",
+        "Étapes suivantes : 50 + 4 = 54 → 54 × 6 = 324 → 324 − 4 = 320. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 100 und 25.",
+        "Rechne zuerst 100 ÷ 25 = 4.",
+        "Nächste Schritte: 50 + 4 = 54 → 54 × 6 = 324 → 324 − 4 = 320. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "100 ÷ 25 = 4 → 50 + 4 = 54 → 54 × 6 = 324 → 324 − 4 = 320 → 320 × 2 = 640",
+      "en": "100 ÷ 25 = 4 → 50 + 4 = 54 → 54 × 6 = 324 → 324 − 4 = 320 → 320 × 2 = 640",
+      "ja": "100 ÷ 25 = 4 → 50 + 4 = 54 → 54 × 6 = 324 → 324 − 4 = 320 → 320 × 2 = 640",
+      "zh": "100 ÷ 25 = 4 → 50 + 4 = 54 → 54 × 6 = 324 → 324 − 4 = 320 → 320 × 2 = 640",
+      "es": "100 ÷ 25 = 4 → 50 + 4 = 54 → 54 × 6 = 324 → 324 − 4 = 320 → 320 × 2 = 640",
+      "fr": "100 ÷ 25 = 4 → 50 + 4 = 54 → 54 × 6 = 324 → 324 − 4 = 320 → 320 × 2 = 640",
+      "de": "100 ÷ 25 = 4 → 50 + 4 = 54 → 54 × 6 = 324 → 324 − 4 = 320 → 320 × 2 = 640"
+    }
+  },
+  {
+    "id": "tg13_s02",
+    "type": "target",
+    "track": "target",
+    "chapter": 13,
+    "order": 2,
+    "numbers": [
+      4,
+      100,
+      50,
+      2,
+      3,
+      6
+    ],
+    "target": 869,
+    "answer": "869",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 100, 6 타일을 골라 보세요.",
+        "100 × 6 = 600 부터 계산해 보세요.",
+        "이어지는 계산: 600 − 4 = 596 → 596 × 3 = 1788 → 1788 − 50 = 1738. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 100 and 6 tiles.",
+        "Make 100 × 6 = 600 first.",
+        "Next steps: 600 − 4 = 596 → 596 × 3 = 1788 → 1788 − 50 = 1738. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 100 と 6 のタイルを選んでみましょう。",
+        "まず 100 × 6 = 600 を作ってみましょう。",
+        "続きの計算: 600 − 4 = 596 → 596 × 3 = 1788 → 1788 − 50 = 1738。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 100 和 6 这两个数字。",
+        "先算出 100 × 6 = 600。",
+        "接下来：600 − 4 = 596 → 596 × 3 = 1788 → 1788 − 50 = 1738。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 100 y 6.",
+        "Primero haz 100 × 6 = 600.",
+        "Siguientes pasos: 600 − 4 = 596 → 596 × 3 = 1788 → 1788 − 50 = 1738. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 100 et 6.",
+        "Calculez d'abord 100 × 6 = 600.",
+        "Étapes suivantes : 600 − 4 = 596 → 596 × 3 = 1788 → 1788 − 50 = 1738. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 100 und 6.",
+        "Rechne zuerst 100 × 6 = 600.",
+        "Nächste Schritte: 600 − 4 = 596 → 596 × 3 = 1788 → 1788 − 50 = 1738. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "100 × 6 = 600 → 600 − 4 = 596 → 596 × 3 = 1788 → 1788 − 50 = 1738 → 1738 ÷ 2 = 869",
+      "en": "100 × 6 = 600 → 600 − 4 = 596 → 596 × 3 = 1788 → 1788 − 50 = 1738 → 1738 ÷ 2 = 869",
+      "ja": "100 × 6 = 600 → 600 − 4 = 596 → 596 × 3 = 1788 → 1788 − 50 = 1738 → 1738 ÷ 2 = 869",
+      "zh": "100 × 6 = 600 → 600 − 4 = 596 → 596 × 3 = 1788 → 1788 − 50 = 1738 → 1738 ÷ 2 = 869",
+      "es": "100 × 6 = 600 → 600 − 4 = 596 → 596 × 3 = 1788 → 1788 − 50 = 1738 → 1738 ÷ 2 = 869",
+      "fr": "100 × 6 = 600 → 600 − 4 = 596 → 596 × 3 = 1788 → 1788 − 50 = 1738 → 1738 ÷ 2 = 869",
+      "de": "100 × 6 = 600 → 600 − 4 = 596 → 596 × 3 = 1788 → 1788 − 50 = 1738 → 1738 ÷ 2 = 869"
+    }
+  },
+  {
+    "id": "tg13_s03",
+    "type": "target",
+    "track": "target",
+    "chapter": 13,
+    "order": 3,
+    "numbers": [
+      2,
+      25,
+      6,
+      75,
+      5,
+      50
+    ],
+    "target": 559,
+    "answer": "559",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 2, 6 타일을 골라 보세요.",
+        "2 × 6 = 12 부터 계산해 보세요.",
+        "이어지는 계산: 75 ÷ 25 = 3 → 50 − 3 = 47 → 12 × 47 = 564. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 2 and 6 tiles.",
+        "Make 2 × 6 = 12 first.",
+        "Next steps: 75 ÷ 25 = 3 → 50 − 3 = 47 → 12 × 47 = 564. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 2 と 6 のタイルを選んでみましょう。",
+        "まず 2 × 6 = 12 を作ってみましょう。",
+        "続きの計算: 75 ÷ 25 = 3 → 50 − 3 = 47 → 12 × 47 = 564。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 2 和 6 这两个数字。",
+        "先算出 2 × 6 = 12。",
+        "接下来：75 ÷ 25 = 3 → 50 − 3 = 47 → 12 × 47 = 564。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 2 y 6.",
+        "Primero haz 2 × 6 = 12.",
+        "Siguientes pasos: 75 ÷ 25 = 3 → 50 − 3 = 47 → 12 × 47 = 564. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 2 et 6.",
+        "Calculez d'abord 2 × 6 = 12.",
+        "Étapes suivantes : 75 ÷ 25 = 3 → 50 − 3 = 47 → 12 × 47 = 564. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 2 und 6.",
+        "Rechne zuerst 2 × 6 = 12.",
+        "Nächste Schritte: 75 ÷ 25 = 3 → 50 − 3 = 47 → 12 × 47 = 564. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "2 × 6 = 12 → 75 ÷ 25 = 3 → 50 − 3 = 47 → 12 × 47 = 564 → 564 − 5 = 559",
+      "en": "2 × 6 = 12 → 75 ÷ 25 = 3 → 50 − 3 = 47 → 12 × 47 = 564 → 564 − 5 = 559",
+      "ja": "2 × 6 = 12 → 75 ÷ 25 = 3 → 50 − 3 = 47 → 12 × 47 = 564 → 564 − 5 = 559",
+      "zh": "2 × 6 = 12 → 75 ÷ 25 = 3 → 50 − 3 = 47 → 12 × 47 = 564 → 564 − 5 = 559",
+      "es": "2 × 6 = 12 → 75 ÷ 25 = 3 → 50 − 3 = 47 → 12 × 47 = 564 → 564 − 5 = 559",
+      "fr": "2 × 6 = 12 → 75 ÷ 25 = 3 → 50 − 3 = 47 → 12 × 47 = 564 → 564 − 5 = 559",
+      "de": "2 × 6 = 12 → 75 ÷ 25 = 3 → 50 − 3 = 47 → 12 × 47 = 564 → 564 − 5 = 559"
+    }
+  },
+  {
+    "id": "tg13_s04",
+    "type": "target",
+    "track": "target",
+    "chapter": 13,
+    "order": 4,
+    "numbers": [
+      100,
+      50,
+      3,
+      4,
+      75,
+      2
+    ],
+    "target": 757,
+    "answer": "757",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 100, 50 타일을 골라 보세요.",
+        "100 × 50 = 5000 부터 계산해 보세요.",
+        "이어지는 계산: 5000 ÷ 2 = 2500 → 2500 − 4 = 2496 → 2496 ÷ 3 = 832. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 100 and 50 tiles.",
+        "Make 100 × 50 = 5000 first.",
+        "Next steps: 5000 ÷ 2 = 2500 → 2500 − 4 = 2496 → 2496 ÷ 3 = 832. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 100 と 50 のタイルを選んでみましょう。",
+        "まず 100 × 50 = 5000 を作ってみましょう。",
+        "続きの計算: 5000 ÷ 2 = 2500 → 2500 − 4 = 2496 → 2496 ÷ 3 = 832。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 100 和 50 这两个数字。",
+        "先算出 100 × 50 = 5000。",
+        "接下来：5000 ÷ 2 = 2500 → 2500 − 4 = 2496 → 2496 ÷ 3 = 832。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 100 y 50.",
+        "Primero haz 100 × 50 = 5000.",
+        "Siguientes pasos: 5000 ÷ 2 = 2500 → 2500 − 4 = 2496 → 2496 ÷ 3 = 832. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 100 et 50.",
+        "Calculez d'abord 100 × 50 = 5000.",
+        "Étapes suivantes : 5000 ÷ 2 = 2500 → 2500 − 4 = 2496 → 2496 ÷ 3 = 832. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 100 und 50.",
+        "Rechne zuerst 100 × 50 = 5000.",
+        "Nächste Schritte: 5000 ÷ 2 = 2500 → 2500 − 4 = 2496 → 2496 ÷ 3 = 832. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "100 × 50 = 5000 → 5000 ÷ 2 = 2500 → 2500 − 4 = 2496 → 2496 ÷ 3 = 832 → 832 − 75 = 757",
+      "en": "100 × 50 = 5000 → 5000 ÷ 2 = 2500 → 2500 − 4 = 2496 → 2496 ÷ 3 = 832 → 832 − 75 = 757",
+      "ja": "100 × 50 = 5000 → 5000 ÷ 2 = 2500 → 2500 − 4 = 2496 → 2496 ÷ 3 = 832 → 832 − 75 = 757",
+      "zh": "100 × 50 = 5000 → 5000 ÷ 2 = 2500 → 2500 − 4 = 2496 → 2496 ÷ 3 = 832 → 832 − 75 = 757",
+      "es": "100 × 50 = 5000 → 5000 ÷ 2 = 2500 → 2500 − 4 = 2496 → 2496 ÷ 3 = 832 → 832 − 75 = 757",
+      "fr": "100 × 50 = 5000 → 5000 ÷ 2 = 2500 → 2500 − 4 = 2496 → 2496 ÷ 3 = 832 → 832 − 75 = 757",
+      "de": "100 × 50 = 5000 → 5000 ÷ 2 = 2500 → 2500 − 4 = 2496 → 2496 ÷ 3 = 832 → 832 − 75 = 757"
+    }
+  },
+  {
+    "id": "tg13_s05",
+    "type": "target",
+    "track": "target",
+    "chapter": 13,
+    "order": 5,
+    "numbers": [
+      50,
+      10,
+      75,
+      5,
+      25,
+      2
+    ],
+    "target": 394,
+    "answer": "394",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 50, 10 타일을 골라 보세요.",
+        "50 − 10 = 40 부터 계산해 보세요.",
+        "이어지는 계산: 40 × 5 = 200 → 75 ÷ 25 = 3 → 200 − 3 = 197. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 50 and 10 tiles.",
+        "Make 50 − 10 = 40 first.",
+        "Next steps: 40 × 5 = 200 → 75 ÷ 25 = 3 → 200 − 3 = 197. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 50 と 10 のタイルを選んでみましょう。",
+        "まず 50 − 10 = 40 を作ってみましょう。",
+        "続きの計算: 40 × 5 = 200 → 75 ÷ 25 = 3 → 200 − 3 = 197。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 50 和 10 这两个数字。",
+        "先算出 50 − 10 = 40。",
+        "接下来：40 × 5 = 200 → 75 ÷ 25 = 3 → 200 − 3 = 197。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 50 y 10.",
+        "Primero haz 50 − 10 = 40.",
+        "Siguientes pasos: 40 × 5 = 200 → 75 ÷ 25 = 3 → 200 − 3 = 197. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 50 et 10.",
+        "Calculez d'abord 50 − 10 = 40.",
+        "Étapes suivantes : 40 × 5 = 200 → 75 ÷ 25 = 3 → 200 − 3 = 197. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 50 und 10.",
+        "Rechne zuerst 50 − 10 = 40.",
+        "Nächste Schritte: 40 × 5 = 200 → 75 ÷ 25 = 3 → 200 − 3 = 197. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "50 − 10 = 40 → 40 × 5 = 200 → 75 ÷ 25 = 3 → 200 − 3 = 197 → 197 × 2 = 394",
+      "en": "50 − 10 = 40 → 40 × 5 = 200 → 75 ÷ 25 = 3 → 200 − 3 = 197 → 197 × 2 = 394",
+      "ja": "50 − 10 = 40 → 40 × 5 = 200 → 75 ÷ 25 = 3 → 200 − 3 = 197 → 197 × 2 = 394",
+      "zh": "50 − 10 = 40 → 40 × 5 = 200 → 75 ÷ 25 = 3 → 200 − 3 = 197 → 197 × 2 = 394",
+      "es": "50 − 10 = 40 → 40 × 5 = 200 → 75 ÷ 25 = 3 → 200 − 3 = 197 → 197 × 2 = 394",
+      "fr": "50 − 10 = 40 → 40 × 5 = 200 → 75 ÷ 25 = 3 → 200 − 3 = 197 → 197 × 2 = 394",
+      "de": "50 − 10 = 40 → 40 × 5 = 200 → 75 ÷ 25 = 3 → 200 − 3 = 197 → 197 × 2 = 394"
+    }
+  },
+  {
+    "id": "tg13_s06",
+    "type": "target",
+    "track": "target",
+    "chapter": 13,
+    "order": 6,
+    "numbers": [
+      100,
+      5,
+      7,
+      10,
+      8,
+      50
+    ],
+    "target": 534,
+    "answer": "534",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 100, 8 타일을 골라 보세요.",
+        "100 − 8 = 92 부터 계산해 보세요.",
+        "이어지는 계산: 10 ÷ 5 = 2 → 92 × 2 = 184 → 7 × 50 = 350. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 100 and 8 tiles.",
+        "Make 100 − 8 = 92 first.",
+        "Next steps: 10 ÷ 5 = 2 → 92 × 2 = 184 → 7 × 50 = 350. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 100 と 8 のタイルを選んでみましょう。",
+        "まず 100 − 8 = 92 を作ってみましょう。",
+        "続きの計算: 10 ÷ 5 = 2 → 92 × 2 = 184 → 7 × 50 = 350。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 100 和 8 这两个数字。",
+        "先算出 100 − 8 = 92。",
+        "接下来：10 ÷ 5 = 2 → 92 × 2 = 184 → 7 × 50 = 350。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 100 y 8.",
+        "Primero haz 100 − 8 = 92.",
+        "Siguientes pasos: 10 ÷ 5 = 2 → 92 × 2 = 184 → 7 × 50 = 350. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 100 et 8.",
+        "Calculez d'abord 100 − 8 = 92.",
+        "Étapes suivantes : 10 ÷ 5 = 2 → 92 × 2 = 184 → 7 × 50 = 350. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 100 und 8.",
+        "Rechne zuerst 100 − 8 = 92.",
+        "Nächste Schritte: 10 ÷ 5 = 2 → 92 × 2 = 184 → 7 × 50 = 350. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "100 − 8 = 92 → 10 ÷ 5 = 2 → 92 × 2 = 184 → 7 × 50 = 350 → 184 + 350 = 534",
+      "en": "100 − 8 = 92 → 10 ÷ 5 = 2 → 92 × 2 = 184 → 7 × 50 = 350 → 184 + 350 = 534",
+      "ja": "100 − 8 = 92 → 10 ÷ 5 = 2 → 92 × 2 = 184 → 7 × 50 = 350 → 184 + 350 = 534",
+      "zh": "100 − 8 = 92 → 10 ÷ 5 = 2 → 92 × 2 = 184 → 7 × 50 = 350 → 184 + 350 = 534",
+      "es": "100 − 8 = 92 → 10 ÷ 5 = 2 → 92 × 2 = 184 → 7 × 50 = 350 → 184 + 350 = 534",
+      "fr": "100 − 8 = 92 → 10 ÷ 5 = 2 → 92 × 2 = 184 → 7 × 50 = 350 → 184 + 350 = 534",
+      "de": "100 − 8 = 92 → 10 ÷ 5 = 2 → 92 × 2 = 184 → 7 × 50 = 350 → 184 + 350 = 534"
+    }
+  },
+  {
+    "id": "tg14_s01",
+    "type": "target",
+    "track": "target",
+    "chapter": 14,
+    "order": 1,
+    "numbers": [
+      5,
+      50,
+      25,
+      2,
+      6,
+      3
+    ],
+    "target": 724,
+    "answer": "724",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 25, 3 타일을 골라 보세요.",
+        "25 × 3 = 75 부터 계산해 보세요.",
+        "이어지는 계산: 75 − 2 = 73 → 50 × 73 = 3650 → 3650 ÷ 5 = 730. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 25 and 3 tiles.",
+        "Make 25 × 3 = 75 first.",
+        "Next steps: 75 − 2 = 73 → 50 × 73 = 3650 → 3650 ÷ 5 = 730. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 25 と 3 のタイルを選んでみましょう。",
+        "まず 25 × 3 = 75 を作ってみましょう。",
+        "続きの計算: 75 − 2 = 73 → 50 × 73 = 3650 → 3650 ÷ 5 = 730。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 25 和 3 这两个数字。",
+        "先算出 25 × 3 = 75。",
+        "接下来：75 − 2 = 73 → 50 × 73 = 3650 → 3650 ÷ 5 = 730。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 25 y 3.",
+        "Primero haz 25 × 3 = 75.",
+        "Siguientes pasos: 75 − 2 = 73 → 50 × 73 = 3650 → 3650 ÷ 5 = 730. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 25 et 3.",
+        "Calculez d'abord 25 × 3 = 75.",
+        "Étapes suivantes : 75 − 2 = 73 → 50 × 73 = 3650 → 3650 ÷ 5 = 730. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 25 und 3.",
+        "Rechne zuerst 25 × 3 = 75.",
+        "Nächste Schritte: 75 − 2 = 73 → 50 × 73 = 3650 → 3650 ÷ 5 = 730. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "25 × 3 = 75 → 75 − 2 = 73 → 50 × 73 = 3650 → 3650 ÷ 5 = 730 → 730 − 6 = 724",
+      "en": "25 × 3 = 75 → 75 − 2 = 73 → 50 × 73 = 3650 → 3650 ÷ 5 = 730 → 730 − 6 = 724",
+      "ja": "25 × 3 = 75 → 75 − 2 = 73 → 50 × 73 = 3650 → 3650 ÷ 5 = 730 → 730 − 6 = 724",
+      "zh": "25 × 3 = 75 → 75 − 2 = 73 → 50 × 73 = 3650 → 3650 ÷ 5 = 730 → 730 − 6 = 724",
+      "es": "25 × 3 = 75 → 75 − 2 = 73 → 50 × 73 = 3650 → 3650 ÷ 5 = 730 → 730 − 6 = 724",
+      "fr": "25 × 3 = 75 → 75 − 2 = 73 → 50 × 73 = 3650 → 3650 ÷ 5 = 730 → 730 − 6 = 724",
+      "de": "25 × 3 = 75 → 75 − 2 = 73 → 50 × 73 = 3650 → 3650 ÷ 5 = 730 → 730 − 6 = 724"
+    }
+  },
+  {
+    "id": "tg14_s02",
+    "type": "target",
+    "track": "target",
+    "chapter": 14,
+    "order": 2,
+    "numbers": [
+      4,
+      50,
+      6,
+      9,
+      2,
+      25
+    ],
+    "target": 980,
+    "answer": "980",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 4, 25 타일을 골라 보세요.",
+        "4 + 25 = 29 부터 계산해 보세요.",
+        "이어지는 계산: 50 ÷ 2 = 25 → 25 + 9 = 34 → 29 × 34 = 986. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 4 and 25 tiles.",
+        "Make 4 + 25 = 29 first.",
+        "Next steps: 50 ÷ 2 = 25 → 25 + 9 = 34 → 29 × 34 = 986. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 4 と 25 のタイルを選んでみましょう。",
+        "まず 4 + 25 = 29 を作ってみましょう。",
+        "続きの計算: 50 ÷ 2 = 25 → 25 + 9 = 34 → 29 × 34 = 986。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 4 和 25 这两个数字。",
+        "先算出 4 + 25 = 29。",
+        "接下来：50 ÷ 2 = 25 → 25 + 9 = 34 → 29 × 34 = 986。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 4 y 25.",
+        "Primero haz 4 + 25 = 29.",
+        "Siguientes pasos: 50 ÷ 2 = 25 → 25 + 9 = 34 → 29 × 34 = 986. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 4 et 25.",
+        "Calculez d'abord 4 + 25 = 29.",
+        "Étapes suivantes : 50 ÷ 2 = 25 → 25 + 9 = 34 → 29 × 34 = 986. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 4 und 25.",
+        "Rechne zuerst 4 + 25 = 29.",
+        "Nächste Schritte: 50 ÷ 2 = 25 → 25 + 9 = 34 → 29 × 34 = 986. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "4 + 25 = 29 → 50 ÷ 2 = 25 → 25 + 9 = 34 → 29 × 34 = 986 → 986 − 6 = 980",
+      "en": "4 + 25 = 29 → 50 ÷ 2 = 25 → 25 + 9 = 34 → 29 × 34 = 986 → 986 − 6 = 980",
+      "ja": "4 + 25 = 29 → 50 ÷ 2 = 25 → 25 + 9 = 34 → 29 × 34 = 986 → 986 − 6 = 980",
+      "zh": "4 + 25 = 29 → 50 ÷ 2 = 25 → 25 + 9 = 34 → 29 × 34 = 986 → 986 − 6 = 980",
+      "es": "4 + 25 = 29 → 50 ÷ 2 = 25 → 25 + 9 = 34 → 29 × 34 = 986 → 986 − 6 = 980",
+      "fr": "4 + 25 = 29 → 50 ÷ 2 = 25 → 25 + 9 = 34 → 29 × 34 = 986 → 986 − 6 = 980",
+      "de": "4 + 25 = 29 → 50 ÷ 2 = 25 → 25 + 9 = 34 → 29 × 34 = 986 → 986 − 6 = 980"
+    }
+  },
+  {
+    "id": "tg14_s03",
+    "type": "target",
+    "track": "target",
+    "chapter": 14,
+    "order": 3,
+    "numbers": [
+      50,
+      2,
+      100,
+      6,
+      4,
+      7
+    ],
+    "target": 997,
+    "answer": "997",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 100, 7 타일을 골라 보세요.",
+        "100 × 7 = 700 부터 계산해 보세요.",
+        "이어지는 계산: 700 − 2 = 698 → 698 × 6 = 4188 → 4188 ÷ 4 = 1047. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 100 and 7 tiles.",
+        "Make 100 × 7 = 700 first.",
+        "Next steps: 700 − 2 = 698 → 698 × 6 = 4188 → 4188 ÷ 4 = 1047. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 100 と 7 のタイルを選んでみましょう。",
+        "まず 100 × 7 = 700 を作ってみましょう。",
+        "続きの計算: 700 − 2 = 698 → 698 × 6 = 4188 → 4188 ÷ 4 = 1047。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 100 和 7 这两个数字。",
+        "先算出 100 × 7 = 700。",
+        "接下来：700 − 2 = 698 → 698 × 6 = 4188 → 4188 ÷ 4 = 1047。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 100 y 7.",
+        "Primero haz 100 × 7 = 700.",
+        "Siguientes pasos: 700 − 2 = 698 → 698 × 6 = 4188 → 4188 ÷ 4 = 1047. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 100 et 7.",
+        "Calculez d'abord 100 × 7 = 700.",
+        "Étapes suivantes : 700 − 2 = 698 → 698 × 6 = 4188 → 4188 ÷ 4 = 1047. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 100 und 7.",
+        "Rechne zuerst 100 × 7 = 700.",
+        "Nächste Schritte: 700 − 2 = 698 → 698 × 6 = 4188 → 4188 ÷ 4 = 1047. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "100 × 7 = 700 → 700 − 2 = 698 → 698 × 6 = 4188 → 4188 ÷ 4 = 1047 → 1047 − 50 = 997",
+      "en": "100 × 7 = 700 → 700 − 2 = 698 → 698 × 6 = 4188 → 4188 ÷ 4 = 1047 → 1047 − 50 = 997",
+      "ja": "100 × 7 = 700 → 700 − 2 = 698 → 698 × 6 = 4188 → 4188 ÷ 4 = 1047 → 1047 − 50 = 997",
+      "zh": "100 × 7 = 700 → 700 − 2 = 698 → 698 × 6 = 4188 → 4188 ÷ 4 = 1047 → 1047 − 50 = 997",
+      "es": "100 × 7 = 700 → 700 − 2 = 698 → 698 × 6 = 4188 → 4188 ÷ 4 = 1047 → 1047 − 50 = 997",
+      "fr": "100 × 7 = 700 → 700 − 2 = 698 → 698 × 6 = 4188 → 4188 ÷ 4 = 1047 → 1047 − 50 = 997",
+      "de": "100 × 7 = 700 → 700 − 2 = 698 → 698 × 6 = 4188 → 4188 ÷ 4 = 1047 → 1047 − 50 = 997"
+    }
+  },
+  {
+    "id": "tg14_s04",
+    "type": "target",
+    "track": "target",
+    "chapter": 14,
+    "order": 4,
+    "numbers": [
+      2,
+      100,
+      8,
+      6,
+      50,
+      4
+    ],
+    "target": 515,
+    "answer": "515",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 100, 8 타일을 골라 보세요.",
+        "100 + 8 = 108 부터 계산해 보세요.",
+        "이어지는 계산: 6 + 4 = 10 → 108 × 10 = 1080 → 1080 − 50 = 1030. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 100 and 8 tiles.",
+        "Make 100 + 8 = 108 first.",
+        "Next steps: 6 + 4 = 10 → 108 × 10 = 1080 → 1080 − 50 = 1030. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 100 と 8 のタイルを選んでみましょう。",
+        "まず 100 + 8 = 108 を作ってみましょう。",
+        "続きの計算: 6 + 4 = 10 → 108 × 10 = 1080 → 1080 − 50 = 1030。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 100 和 8 这两个数字。",
+        "先算出 100 + 8 = 108。",
+        "接下来：6 + 4 = 10 → 108 × 10 = 1080 → 1080 − 50 = 1030。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 100 y 8.",
+        "Primero haz 100 + 8 = 108.",
+        "Siguientes pasos: 6 + 4 = 10 → 108 × 10 = 1080 → 1080 − 50 = 1030. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 100 et 8.",
+        "Calculez d'abord 100 + 8 = 108.",
+        "Étapes suivantes : 6 + 4 = 10 → 108 × 10 = 1080 → 1080 − 50 = 1030. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 100 und 8.",
+        "Rechne zuerst 100 + 8 = 108.",
+        "Nächste Schritte: 6 + 4 = 10 → 108 × 10 = 1080 → 1080 − 50 = 1030. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "100 + 8 = 108 → 6 + 4 = 10 → 108 × 10 = 1080 → 1080 − 50 = 1030 → 1030 ÷ 2 = 515",
+      "en": "100 + 8 = 108 → 6 + 4 = 10 → 108 × 10 = 1080 → 1080 − 50 = 1030 → 1030 ÷ 2 = 515",
+      "ja": "100 + 8 = 108 → 6 + 4 = 10 → 108 × 10 = 1080 → 1080 − 50 = 1030 → 1030 ÷ 2 = 515",
+      "zh": "100 + 8 = 108 → 6 + 4 = 10 → 108 × 10 = 1080 → 1080 − 50 = 1030 → 1030 ÷ 2 = 515",
+      "es": "100 + 8 = 108 → 6 + 4 = 10 → 108 × 10 = 1080 → 1080 − 50 = 1030 → 1030 ÷ 2 = 515",
+      "fr": "100 + 8 = 108 → 6 + 4 = 10 → 108 × 10 = 1080 → 1080 − 50 = 1030 → 1030 ÷ 2 = 515",
+      "de": "100 + 8 = 108 → 6 + 4 = 10 → 108 × 10 = 1080 → 1080 − 50 = 1030 → 1030 ÷ 2 = 515"
+    }
+  },
+  {
+    "id": "tg14_s05",
+    "type": "target",
+    "track": "target",
+    "chapter": 14,
+    "order": 5,
+    "numbers": [
+      4,
+      2,
+      50,
+      9,
+      5,
+      25
+    ],
+    "target": 606,
+    "answer": "606",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 50, 25 타일을 골라 보세요.",
+        "50 × 25 = 1250 부터 계산해 보세요.",
+        "이어지는 계산: 4 × 5 = 20 → 1250 − 20 = 1230 → 1230 ÷ 2 = 615. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 50 and 25 tiles.",
+        "Make 50 × 25 = 1250 first.",
+        "Next steps: 4 × 5 = 20 → 1250 − 20 = 1230 → 1230 ÷ 2 = 615. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 50 と 25 のタイルを選んでみましょう。",
+        "まず 50 × 25 = 1250 を作ってみましょう。",
+        "続きの計算: 4 × 5 = 20 → 1250 − 20 = 1230 → 1230 ÷ 2 = 615。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 50 和 25 这两个数字。",
+        "先算出 50 × 25 = 1250。",
+        "接下来：4 × 5 = 20 → 1250 − 20 = 1230 → 1230 ÷ 2 = 615。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 50 y 25.",
+        "Primero haz 50 × 25 = 1250.",
+        "Siguientes pasos: 4 × 5 = 20 → 1250 − 20 = 1230 → 1230 ÷ 2 = 615. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 50 et 25.",
+        "Calculez d'abord 50 × 25 = 1250.",
+        "Étapes suivantes : 4 × 5 = 20 → 1250 − 20 = 1230 → 1230 ÷ 2 = 615. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 50 und 25.",
+        "Rechne zuerst 50 × 25 = 1250.",
+        "Nächste Schritte: 4 × 5 = 20 → 1250 − 20 = 1230 → 1230 ÷ 2 = 615. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "50 × 25 = 1250 → 4 × 5 = 20 → 1250 − 20 = 1230 → 1230 ÷ 2 = 615 → 615 − 9 = 606",
+      "en": "50 × 25 = 1250 → 4 × 5 = 20 → 1250 − 20 = 1230 → 1230 ÷ 2 = 615 → 615 − 9 = 606",
+      "ja": "50 × 25 = 1250 → 4 × 5 = 20 → 1250 − 20 = 1230 → 1230 ÷ 2 = 615 → 615 − 9 = 606",
+      "zh": "50 × 25 = 1250 → 4 × 5 = 20 → 1250 − 20 = 1230 → 1230 ÷ 2 = 615 → 615 − 9 = 606",
+      "es": "50 × 25 = 1250 → 4 × 5 = 20 → 1250 − 20 = 1230 → 1230 ÷ 2 = 615 → 615 − 9 = 606",
+      "fr": "50 × 25 = 1250 → 4 × 5 = 20 → 1250 − 20 = 1230 → 1230 ÷ 2 = 615 → 615 − 9 = 606",
+      "de": "50 × 25 = 1250 → 4 × 5 = 20 → 1250 − 20 = 1230 → 1230 ÷ 2 = 615 → 615 − 9 = 606"
+    }
+  },
+  {
+    "id": "tg14_s06",
+    "type": "target",
+    "track": "target",
+    "chapter": 14,
+    "order": 6,
+    "numbers": [
+      5,
+      6,
+      50,
+      4,
+      3,
+      75
+    ],
+    "target": 857,
+    "answer": "857",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "먼저 75, 5 타일을 골라 보세요.",
+        "75 − 5 = 70 부터 계산해 보세요.",
+        "이어지는 계산: 70 × 50 = 3500 → 3500 ÷ 4 = 875 → 6 × 3 = 18. 마지막 한 단계는 직접 찾아보세요."
+      ],
+      "en": [
+        "Start by picking the 75 and 5 tiles.",
+        "Make 75 − 5 = 70 first.",
+        "Next steps: 70 × 50 = 3500 → 3500 ÷ 4 = 875 → 6 × 3 = 18. Find the last step yourself."
+      ],
+      "ja": [
+        "まず 75 と 5 のタイルを選んでみましょう。",
+        "まず 75 − 5 = 70 を作ってみましょう。",
+        "続きの計算: 70 × 50 = 3500 → 3500 ÷ 4 = 875 → 6 × 3 = 18。最後の一手は自分で見つけましょう。"
+      ],
+      "zh": [
+        "先选择 75 和 5 这两个数字。",
+        "先算出 75 − 5 = 70。",
+        "接下来：70 × 50 = 3500 → 3500 ÷ 4 = 875 → 6 × 3 = 18。最后一步请自己找出。"
+      ],
+      "es": [
+        "Empieza eligiendo las fichas 75 y 5.",
+        "Primero haz 75 − 5 = 70.",
+        "Siguientes pasos: 70 × 50 = 3500 → 3500 ÷ 4 = 875 → 6 × 3 = 18. El último paso, ¡encuéntralo tú!"
+      ],
+      "fr": [
+        "Commencez par choisir les tuiles 75 et 5.",
+        "Calculez d'abord 75 − 5 = 70.",
+        "Étapes suivantes : 70 × 50 = 3500 → 3500 ÷ 4 = 875 → 6 × 3 = 18. Trouvez la dernière étape vous-même."
+      ],
+      "de": [
+        "Beginne mit den Kacheln 75 und 5.",
+        "Rechne zuerst 75 − 5 = 70.",
+        "Nächste Schritte: 70 × 50 = 3500 → 3500 ÷ 4 = 875 → 6 × 3 = 18. Den letzten Schritt findest du selbst."
+      ]
+    },
+    "explanation": {
+      "ko": "75 − 5 = 70 → 70 × 50 = 3500 → 3500 ÷ 4 = 875 → 6 × 3 = 18 → 875 − 18 = 857",
+      "en": "75 − 5 = 70 → 70 × 50 = 3500 → 3500 ÷ 4 = 875 → 6 × 3 = 18 → 875 − 18 = 857",
+      "ja": "75 − 5 = 70 → 70 × 50 = 3500 → 3500 ÷ 4 = 875 → 6 × 3 = 18 → 875 − 18 = 857",
+      "zh": "75 − 5 = 70 → 70 × 50 = 3500 → 3500 ÷ 4 = 875 → 6 × 3 = 18 → 875 − 18 = 857",
+      "es": "75 − 5 = 70 → 70 × 50 = 3500 → 3500 ÷ 4 = 875 → 6 × 3 = 18 → 875 − 18 = 857",
+      "fr": "75 − 5 = 70 → 70 × 50 = 3500 → 3500 ÷ 4 = 875 → 6 × 3 = 18 → 875 − 18 = 857",
+      "de": "75 − 5 = 70 → 70 × 50 = 3500 → 3500 ÷ 4 = 875 → 6 × 3 = 18 → 875 − 18 = 857"
+    }
   }
 ]

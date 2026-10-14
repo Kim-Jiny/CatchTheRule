@@ -22,6 +22,8 @@ struct Puzzle: Codable, Identifiable, Equatable {
     let figureChoices: [Figure]?     // 시각형 보기(도형 보기)
     let prompt: [String: String]?    // 논리형 질문 문단(로케일코드 → 문장). 있으면 수열 대신 질문을 표시.
     let statements: [String: [String]]?  // 모순찾기 문장 목록(로케일코드 → 문장 배열). 번호 매긴 카드로 표시, answer=모순 문장 번호(1-based).
+    let numbers: [Int]?      // 숫자 만들기 재료
+    let target: Int?         // 숫자 만들기 목표
     let answer: String
     let inputType: InputType
     let choices: [String]?
@@ -45,6 +47,9 @@ struct Puzzle: Codable, Identifiable, Equatable {
 
     /// 모순찾기(문장 목록) 퍼즐 여부.
     var isContradiction: Bool { (statements?.isEmpty == false) }
+
+    /// 숫자 만들기(재료+목표) 퍼즐 여부.
+    var isTarget: Bool { (numbers?.isEmpty == false) }
 
     /// 현재 언어의 문장 목록(없으면 영어 → 임의 폴백).
     var localizedStatements: [String] {

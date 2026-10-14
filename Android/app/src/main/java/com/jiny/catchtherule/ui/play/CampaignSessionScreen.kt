@@ -82,6 +82,9 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
     var showCalc by remember { mutableStateOf(false) }
 
     val puzzle: Puzzle? = puzzles.getOrNull(index)
+    // 숫자 만들기 상태 — 퍼즐이 바뀌면 반드시 초기화(key = puzzle.id).
+    val targetUi = remember(puzzle?.id) { puzzle?.takeIf { it.isTarget }?.let { TargetUi(it) } }
+    val haptic = androidx.compose.ui.platform.LocalHapticFeedback.current
 
     // 정답 후 자동 진행
     LaunchedEffect(solved) {
@@ -159,12 +162,20 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.spacedBy(28.dp, Alignment.CenterVertically),
                 ) {
-                    if (puzzle.isContradiction) {
+                    if (puzzle.isTarget) {
+                        Text(stringResource(R.string.target_prompt), color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
+                    } else if (puzzle.isContradiction) {
                         Text(stringResource(R.string.contradiction_prompt), color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
                     } else if (!puzzle.isPrompt) {
                         Text(stringResource(R.string.play_prompt), color = AppColors.TextSecondary, fontSize = 15.sp)
                     }
-                    SequenceDisplay(puzzle = puzzle, typed = typed, reveal = reveal, feedback = feedback,
+                    if (puzzle.isTarget && targetUi != null) {
+                        TargetPlayArea(puzzle, targetUi, solved, feedback) { id ->
+                            if (!solved) {
+                                if (!targetUi.tapTile(id) && progress.hapticsOn) haptic.performHapticFeedback(androidx.compose.ui.hapticfeedback.HapticFeedbackType.LongPress)
+                            }
+                        }
+                    } else SequenceDisplay(puzzle = puzzle, typed = typed, reveal = reveal, feedback = feedback,
                         onPickStatement = { picked ->
                             if (!solved) {
                                 typed = picked.toString()
@@ -191,7 +202,26 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
 
             // 입력 영역 (모순찾기는 문장 카드를 직접 탭하므로 하단 입력 없음)
             Box(Modifier.padding(horizontal = 20.dp, vertical = 12.dp)) {
-                if (puzzle.isContradiction) {
+                if (puzzle.isTarget && targetUi != null) {
+                    TargetControls(
+                        targetUi, puzzle.target ?: 0, solved,
+                        onReject = { if (progress.hapticsOn) haptic.performHapticFeedback(androidx.compose.ui.hapticfeedback.HapticFeedbackType.LongPress) },
+                        onCheck = {
+                            val v = targetUi.expr.evaluate()
+                            if (solved || feedback != null) {
+                                // 피드백 진행 중에는 무시
+                            } else if (v == null) {
+                                targetUi.markIncomplete()
+                                if (progress.hapticsOn) haptic.performHapticFeedback(androidx.compose.ui.hapticfeedback.HapticFeedbackType.LongPress)
+                            } else {
+                                // 목표와 같으면 정답 문자열, 아니면 answer 와 절대 같지 않은 결과 문자열("23", "7/3")
+                                submitCampaign(puzzle, index, v.toString(), progress, hintsShown,
+                                    onCorrect = { feedback = AnswerFeedback.Correct; reveal = true; solved = true },
+                                    onWrong = { feedback = AnswerFeedback.Wrong })
+                            }
+                        },
+                    )
+                } else if (puzzle.isContradiction) {
                     // no bottom input
                 } else if (puzzle.isFigureSequence) {
                     // 시각형(도형 시퀀스)은 도형 보기로 고른다.
@@ -223,7 +253,7 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
 
             AnimatedVisibility(
                 visible = feedback == AnswerFeedback.Correct,
-                modifier = Modifier.align(Alignment.Center).offset(y = (-150).dp),
+                modifier = Modifier.align(Alignment.Center).offset(y = (if (puzzle.isTarget) -250 else -150).dp),
                 enter = scaleIn(initialScale = 0.5f) + fadeIn(),
                 exit = scaleOut(targetScale = 0.5f) + fadeOut(),
             ) { CorrectBadge() }
