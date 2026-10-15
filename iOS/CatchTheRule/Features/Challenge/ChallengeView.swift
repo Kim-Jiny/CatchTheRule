@@ -17,6 +17,8 @@ struct ChallengeView: View {
     @State private var loading = false
     @State private var failed = false
     @State private var playing = false
+    @State private var resetsAt: Date?
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some View {
         NavigationStack {
@@ -40,6 +42,9 @@ struct ChallengeView: View {
                 TimeAttackView()
             }
             .task { reload() }
+            .onChange(of: scenePhase) { _, phase in
+                if phase == .active { reload() }
+            }
         }
     }
 
@@ -115,7 +120,11 @@ struct ChallengeView: View {
 
     private var leaderboard: some View {
         VStack(alignment: .leading, spacing: 14) {
-            SectionHeader(title: String.loc("ranking"))
+            HStack(spacing: 8) {
+                SectionHeader(title: String.loc("ranking_monthly"))
+                Spacer(minLength: 0)
+                resetChip
+            }
             if loading && entries.isEmpty {
                 skeleton
             } else if entries.isEmpty {
@@ -135,6 +144,18 @@ struct ChallengeView: View {
                 }
             }
         }
+    }
+
+    /// 초기화까지 남은 일수 칩. 서버 resetsAt 우선, 없으면 KST 로 직접 계산.
+    private var resetChip: some View {
+        let days = KSTPeriod.daysUntil(resetsAt ?? KSTPeriod.resetDate())
+        return Text(days == 0 ? String.loc("ranking_resets_today") : String.loc("ranking_resets_in", days))
+            .font(.system(size: 11, weight: .bold))
+            .foregroundStyle(ChallengeColor.amber)
+            .lineLimit(1)
+            .padding(.horizontal, 8).padding(.vertical, 3)
+            .background(Capsule().fill(ChallengeColor.amber.opacity(0.14)))
+            .fixedSize()
     }
 
     /// 같은 rank 를 가진 엔트리가 2개 이상인 rank 집합(경쟁 순위 동점).
@@ -215,10 +236,13 @@ struct ChallengeView: View {
     }
 
     private func reload() {
+        progress.refreshBestPeriod()   // 앱을 연 채 월이 바뀐 경우 로컬 최고점 리셋
         loading = true
         Task {
             do {
-                let result = try await Ranking.service.leaderboard(mode: .timeAttack)
+                let board = try await Ranking.service.leaderboard(mode: .timeAttack)
+                let result = board.entries
+                resetsAt = board.resetsAt
                 let mine = progress.nickname
                 entries = result.map { e in
                     var e = e

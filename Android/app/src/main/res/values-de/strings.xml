@@ -125,12 +125,15 @@
     <string name="unlock_ok">Los geht\'s!</string>
     <string name="challenge_title">Zeitangriff</string>
     <string name="challenge_subtitle">Löse in 60 s so viele wie möglich und steige im Ranking</string>
-    <string name="challenge_best">Meine Bestpunktzahl</string>
+    <string name="challenge_best">Meine Monatsbestleistung</string>
     <string name="challenge_mode_note">Aufgaben aller freigeschalteten Modi werden zufällig gemischt.</string>
     <string name="ta_skip">Überspringen −3 s</string>
     <string name="challenge_start">Starten</string>
     <string name="ranking">Rangliste</string>
     <string name="ranking_empty">Noch keine Einträge. Sei der Erste!</string>
+    <string name="ranking_monthly">Monatsranking</string>
+    <string name="ranking_resets_in">Zurücksetzung in %d Tagen</string>
+    <string name="ranking_resets_today">Wird heute zurückgesetzt</string>
     <string name="ranking_my_rank">Mein Rang</string>
     <string name="ranking_rank_n">Platz %d</string>
     <string name="ranking_out_of_top">Außerhalb Top %d</string>

@@ -125,12 +125,15 @@
     <string name="unlock_ok">좋아요!</string>
     <string name="challenge_title">타임어택</string>
     <string name="challenge_subtitle">60초 동안 최대한 많이 풀고 랭킹에 도전하세요</string>
-    <string name="challenge_best">내 최고 점수</string>
+    <string name="challenge_best">이번 달 내 최고 점수</string>
     <string name="challenge_mode_note">열어 둔 모든 모드의 문제가 무작위로 섞여 출제돼요.</string>
     <string name="ta_skip">건너뛰기 −3초</string>
     <string name="challenge_start">타임어택 시작</string>
     <string name="ranking">랭킹</string>
     <string name="ranking_empty">아직 기록이 없어요. 첫 주자가 되어보세요!</string>
+    <string name="ranking_monthly">월간 랭킹</string>
+    <string name="ranking_resets_in">초기화까지 %d일</string>
+    <string name="ranking_resets_today">오늘 초기화</string>
     <string name="ranking_my_rank">내 순위</string>
     <string name="ranking_rank_n">%d위</string>
     <string name="ranking_out_of_top">%d위 밖</string>

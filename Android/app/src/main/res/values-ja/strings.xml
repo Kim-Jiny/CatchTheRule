@@ -125,12 +125,15 @@
     <string name="unlock_ok">いいね！</string>
     <string name="challenge_title">タイムアタック</string>
     <string name="challenge_subtitle">60秒でできるだけ多く解いてランキングに挑戦</string>
-    <string name="challenge_best">自己ベスト</string>
+    <string name="challenge_best">今月の自己ベスト</string>
     <string name="challenge_mode_note">解放済みのすべてのモードの問題がランダムに出題されます。</string>
     <string name="ta_skip">スキップ −3秒</string>
     <string name="challenge_start">タイムアタック開始</string>
     <string name="ranking">ランキング</string>
     <string name="ranking_empty">まだ記録がありません。最初の挑戦者になろう！</string>
+    <string name="ranking_monthly">月間ランキング</string>
+    <string name="ranking_resets_in">リセットまであと%d日</string>
+    <string name="ranking_resets_today">本日リセット</string>
     <string name="ranking_my_rank">自分の順位</string>
     <string name="ranking_rank_n">%d位</string>
     <string name="ranking_out_of_top">%d位圏外</string>

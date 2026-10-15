@@ -399,9 +399,7 @@ struct TimeAttackView: View {
 
     private func finish() {
         finished = true
-        if score > progress.bestTimeAttack {
-            progress.bestTimeAttack = score
-        }
+        progress.recordTimeAttack(score: score)
     }
 }
 

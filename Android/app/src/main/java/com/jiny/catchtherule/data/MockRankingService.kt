@@ -37,12 +37,14 @@ object MockRankingService : RankingService {
         }
     }
 
-    override suspend fun leaderboard(mode: GameMode): List<RankEntry> {
+    override suspend fun leaderboard(mode: GameMode): Leaderboard {
         delay(300)
-        return mutex.withLock {
+        val now = System.currentTimeMillis()
+        val list = mutex.withLock {
             scores.sortedByDescending { it.second }
                 // 샘플 랭킹은 한국 국기로 표시.
                 .mapIndexed { i, (nick, sc) -> RankEntry(rank = i + 1, nickname = nick, score = sc, country = "KR") }
         }
+        return Leaderboard(list, KstPeriod.current(now), KstPeriod.resetsAt(now))
     }
 }

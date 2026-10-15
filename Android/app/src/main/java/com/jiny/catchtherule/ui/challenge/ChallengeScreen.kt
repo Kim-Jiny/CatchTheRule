@@ -30,7 +30,9 @@ import androidx.compose.material.icons.outlined.Info
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -57,6 +59,10 @@ import androidx.compose.ui.unit.sp
 import com.jiny.catchtherule.R
 import com.jiny.catchtherule.core.model.GameMode
 import com.jiny.catchtherule.core.model.RankEntry
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.LifecycleEventObserver
+import androidx.lifecycle.compose.LocalLifecycleOwner
+import com.jiny.catchtherule.data.KstPeriod
 import com.jiny.catchtherule.data.LocalProgress
 import com.jiny.catchtherule.data.Ranking
 import com.jiny.catchtherule.ui.home.pressable
@@ -82,12 +88,28 @@ fun ChallengeScreen(modifier: Modifier = Modifier, onStart: () -> Unit) {
     var loading by remember { mutableStateOf(true) }
     var failed by remember { mutableStateOf(false) }
 
-    LaunchedEffect(progress.bestTimeAttack, progress.nickname) {
+    var resetsAtMs by remember { mutableStateOf<Long?>(null) }
+    var refreshKey by remember { mutableIntStateOf(0) }
+
+    // 탭 진입/복귀 시 월 경계를 확인하고(최고점 리셋) 리더보드를 재조회한다.
+    val lifecycleOwner = LocalLifecycleOwner.current
+    DisposableEffect(lifecycleOwner) {
+        val obs = LifecycleEventObserver { _, e ->
+            if (e == Lifecycle.Event.ON_RESUME) { progress.refreshPeriod(); refreshKey++ }
+        }
+        lifecycleOwner.lifecycle.addObserver(obs)
+        onDispose { lifecycleOwner.lifecycle.removeObserver(obs) }
+    }
+
+    LaunchedEffect(progress.bestTimeAttack, progress.nickname, refreshKey) {
         loading = true
         val res = runCatching { Ranking.service.leaderboard(GameMode.TimeAttack) }
         failed = res.isFailure
+        val board = res.getOrNull()
+        // 서버값 우선, 구버전 서버(필드 없음)/실패 시 클라이언트 KST 계산.
+        resetsAtMs = board?.resetsAtMs ?: KstPeriod.resetsAt()
         val me = progress.nickname
-        entries = res.getOrDefault(emptyList()).map { it.copy(isMe = me.isNotEmpty() && it.nickname == me && it.score == progress.bestTimeAttack) }
+        entries = (board?.entries ?: emptyList()).map { it.copy(isMe = me.isNotEmpty() && it.nickname == me && it.score == progress.bestTimeAttack) }
         loading = false
     }
 
@@ -102,10 +124,19 @@ fun ChallengeScreen(modifier: Modifier = Modifier, onStart: () -> Unit) {
             // 도전탭 배너 (타임어택 시작 ↔ 랭킹)
             com.jiny.catchtherule.ui.BannerAd(com.jiny.catchtherule.ui.BannerUnits.challenge)
 
-            Text(
-                stringResource(R.string.ranking), color = AppColors.TextSecondary, fontSize = 13.sp,
-                fontWeight = FontWeight.Bold, modifier = Modifier.staggerIn(2),
-            )
+            Row(Modifier.staggerIn(2), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                Text(
+                    stringResource(R.string.ranking_monthly), color = AppColors.TextSecondary, fontSize = 13.sp,
+                    fontWeight = FontWeight.Bold,
+                )
+                val days = KstPeriod.daysUntil(resetsAtMs ?: KstPeriod.resetsAt())
+                Box(Modifier.clip(CircleShape).background(Color.White.copy(alpha = 0.12f)).padding(horizontal = 8.dp, vertical = 2.dp)) {
+                    Text(
+                        if (days <= 1) stringResource(R.string.ranking_resets_today) else stringResource(R.string.ranking_resets_in, days),
+                        color = AppColors.TextSecondary, fontSize = 11.sp, fontWeight = FontWeight.Bold, maxLines = 1,
+                    )
+                }
+            }
             when {
                 loading -> SkeletonList()
                 entries.isEmpty() -> {

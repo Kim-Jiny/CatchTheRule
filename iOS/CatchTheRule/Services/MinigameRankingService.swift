@@ -3,7 +3,7 @@ import Foundation
 /// Minigame 서버(https://duo.jiny.shop)의 CatchTheRule 랭킹 API 결합.
 ///
 ///   POST /api/catchtherule/scores       { nickname, score, mode, deviceId } -> { rank }
-///   GET  /api/catchtherule/leaderboard?mode=timeAttack&limit=100 -> { entries: [...] }
+///   GET  /api/catchtherule/leaderboard?mode=timeAttack&limit=100 -> { period?, resetsAt?, entries: [...] }
 ///
 /// 로그인이 없으므로 인증 헤더 없이 호출하고, 기기당 1행 유지를 위해
 /// 로컬에 영속화한 deviceId(UUID)를 함께 보낸다.
@@ -37,7 +37,7 @@ final class MinigameRankingService: RankingService {
         return try JSONDecoder().decode(SubmitResponse.self, from: data).rank
     }
 
-    func leaderboard(mode: GameMode) async throws -> [RankEntry] {
+    func leaderboard(mode: GameMode) async throws -> Leaderboard {
         var comps = URLComponents(
             url: baseURL.appendingPathComponent("api/catchtherule/leaderboard"),
             resolvingAgainstBaseURL: false
@@ -52,12 +52,23 @@ final class MinigameRankingService: RankingService {
         let (data, response) = try await session.data(for: request)
         try Self.check(response, data)
         let decoded = try JSONDecoder().decode(LeaderboardResponse.self, from: data)
-        return decoded.entries.map {
+        let entries = decoded.entries.map {
             RankEntry(rank: $0.rank, nickname: $0.nickname, score: $0.score, country: $0.country)
         }
+        return Leaderboard(entries: entries, period: decoded.period,
+                           resetsAt: decoded.resetsAt.flatMap(Self.parseDate))
     }
 
     // MARK: - Helpers
+
+    /// ISO8601 (소수초 유무 모두 허용).
+    private static func parseDate(_ s: String) -> Date? {
+        let f = ISO8601DateFormatter()
+        f.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+        if let d = f.date(from: s) { return d }
+        f.formatOptions = [.withInternetDateTime]
+        return f.date(from: s)
+    }
 
     private static func check(_ response: URLResponse, _ data: Data) throws {
         guard let http = response as? HTTPURLResponse else { return }
@@ -92,6 +103,8 @@ final class MinigameRankingService: RankingService {
         let rank: Int
     }
     private struct LeaderboardResponse: Decodable {
+        let period: String?
+        let resetsAt: String?
         let entries: [Entry]
         struct Entry: Decodable {
             let rank: Int

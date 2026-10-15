@@ -125,12 +125,15 @@
     <string name="unlock_ok">¡Vamos!</string>
     <string name="challenge_title">Contrarreloj</string>
     <string name="challenge_subtitle">Resuelve todo lo posible en 60 s y sube en el ranking</string>
-    <string name="challenge_best">Mi mejor puntuación</string>
+    <string name="challenge_best">Mi mejor marca del mes</string>
     <string name="challenge_mode_note">Se mezclan al azar los acertijos de todos los modos desbloqueados.</string>
     <string name="ta_skip">Saltar −3 s</string>
     <string name="challenge_start">Iniciar contrarreloj</string>
     <string name="ranking">Ranking</string>
     <string name="ranking_empty">Aún no hay registros. ¡Sé el primero!</string>
+    <string name="ranking_monthly">Ranking mensual</string>
+    <string name="ranking_resets_in">Se reinicia en %d días</string>
+    <string name="ranking_resets_today">Se reinicia hoy</string>
     <string name="ranking_my_rank">Mi posición</string>
     <string name="ranking_rank_n">#%d</string>
     <string name="ranking_out_of_top">Fuera del top %d</string>

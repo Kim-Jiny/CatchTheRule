@@ -125,12 +125,15 @@
     <string name="unlock_ok">好的！</string>
     <string name="challenge_title">限时挑战</string>
     <string name="challenge_subtitle">60秒内尽量多答，冲击排行榜</string>
-    <string name="challenge_best">我的最高分</string>
+    <string name="challenge_best">本月我的最高分</string>
     <string name="challenge_mode_note">已解锁的所有模式的题目会随机混合出现。</string>
     <string name="ta_skip">跳过 −3秒</string>
     <string name="challenge_start">开始限时挑战</string>
     <string name="ranking">排行榜</string>
     <string name="ranking_empty">还没有记录，来当第一名吧！</string>
+    <string name="ranking_monthly">月度排行榜</string>
+    <string name="ranking_resets_in">%d天后重置</string>
+    <string name="ranking_resets_today">今日重置</string>
     <string name="ranking_my_rank">我的排名</string>
     <string name="ranking_rank_n">第%d名</string>
     <string name="ranking_out_of_top">%d名之外</string>

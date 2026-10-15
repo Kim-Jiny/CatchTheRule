@@ -125,12 +125,15 @@
     <string name="unlock_ok">C\'est parti !</string>
     <string name="challenge_title">Contre-la-montre</string>
     <string name="challenge_subtitle">Résolvez-en un max en 60 s et grimpez au classement</string>
-    <string name="challenge_best">Mon meilleur score</string>
+    <string name="challenge_best">Mon meilleur score du mois</string>
     <string name="challenge_mode_note">Les énigmes de tous les modes débloqués sont mélangées au hasard.</string>
     <string name="ta_skip">Passer −3 s</string>
     <string name="challenge_start">Démarrer</string>
     <string name="ranking">Classement</string>
     <string name="ranking_empty">Aucun record. Soyez le premier !</string>
+    <string name="ranking_monthly">Classement mensuel</string>
+    <string name="ranking_resets_in">Réinitialisation dans %d jours</string>
+    <string name="ranking_resets_today">Réinitialisation aujourd\'hui</string>
     <string name="ranking_my_rank">Mon classement</string>
     <string name="ranking_rank_n">n°%d</string>
     <string name="ranking_out_of_top">Hors du top %d</string>

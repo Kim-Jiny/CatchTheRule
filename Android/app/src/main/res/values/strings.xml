@@ -125,12 +125,15 @@
     <string name="unlock_ok">Let\'s go!</string>
     <string name="challenge_title">Time Attack</string>
     <string name="challenge_subtitle">Solve as many as you can in 60s and climb the ranking</string>
-    <string name="challenge_best">My Best Score</string>
+    <string name="challenge_best">This month\'s best</string>
     <string name="challenge_mode_note">Puzzles from every unlocked mode are mixed at random.</string>
     <string name="ta_skip">Skip −3s</string>
     <string name="challenge_start">Start Time Attack</string>
     <string name="ranking">Ranking</string>
     <string name="ranking_empty">No records yet. Be the first!</string>
+    <string name="ranking_monthly">Monthly ranking</string>
+    <string name="ranking_resets_in">Resets in %d days</string>
+    <string name="ranking_resets_today">Resets today</string>
     <string name="ranking_my_rank">My rank</string>
     <string name="ranking_rank_n">#%d</string>
     <string name="ranking_out_of_top">Outside top %d</string>

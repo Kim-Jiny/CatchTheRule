@@ -31,7 +31,8 @@ class ProgressStore(context: Context) {
     /** 도형규칙 해금 알림을 본 적 있는지(1회성). */
     var shapesUnlockSeen by mutableStateOf(prefs.getBoolean(K_UNLOCK_SEEN, false))
         private set
-    var bestTimeAttack by mutableIntStateOf(prefs.getInt(K_BEST, 0))
+    /** 이번 달(KST) 최고 점수. 기간이 바뀌면 [refreshPeriod] 가 0 으로 리셋한다. */
+    var bestTimeAttack by mutableIntStateOf(loadBest())
         private set
     var nickname by mutableStateOf(prefs.getString(K_NICK, "") ?: "")
         private set
@@ -123,7 +124,32 @@ class ProgressStore(context: Context) {
         prefs.edit().putBoolean(K_HAPTICS, value).apply()
     }
 
+    /** 저장된 최고점의 기간이 현재 KST 월과 다르면 0 으로 리셋. 앱 시작·onResume·점수 갱신 시 호출. */
+    fun refreshPeriod() {
+        val cur = KstPeriod.current()
+        val saved = prefs.getString(K_BEST_PERIOD, null)
+        if (saved == cur) return
+        if (saved == null) { // 구버전 사용자: 현재 월로 간주하고 값 유지
+            prefs.edit().putString(K_BEST_PERIOD, cur).apply()
+            return
+        }
+        bestTimeAttack = 0
+        prefs.edit().putInt(K_BEST, 0).putString(K_BEST_PERIOD, cur).apply()
+    }
+
+    private fun loadBest(): Int {
+        val cur = KstPeriod.current()
+        val saved = prefs.getString(K_BEST_PERIOD, null)
+        if (saved == null || saved == cur) {
+            if (saved == null) prefs.edit().putString(K_BEST_PERIOD, cur).apply()
+            return prefs.getInt(K_BEST, 0)
+        }
+        prefs.edit().putInt(K_BEST, 0).putString(K_BEST_PERIOD, cur).apply()
+        return 0
+    }
+
     fun updateBestTimeAttack(score: Int) {
+        refreshPeriod()
         if (score > bestTimeAttack) {
             bestTimeAttack = score
             prefs.edit().putInt(K_BEST, score).apply()
@@ -145,6 +171,7 @@ class ProgressStore(context: Context) {
             .remove(K_UNLOCK_SEEN)
             .putInt(K_HINTS, INITIAL_HINTS)
             .putInt(K_BEST, 0)
+            .putString(K_BEST_PERIOD, KstPeriod.current())
             .apply()
     }
 
@@ -175,6 +202,7 @@ class ProgressStore(context: Context) {
         private const val K_HAPTICS = "hapticsOn"
         private const val K_LAST_TRACK = "lastTrack"
         private const val K_BEST = "bestTimeAttack"
+        private const val K_BEST_PERIOD = "bestTimeAttackPeriod"
     }
 }
 

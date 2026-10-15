@@ -6,7 +6,16 @@ protocol RankingService {
     /// 점수 제출 후 내 순위를 반환.
     func submit(score: Int, nickname: String, mode: GameMode) async throws -> Int
     /// 리더보드 조회.
-    func leaderboard(mode: GameMode) async throws -> [RankEntry]
+    func leaderboard(mode: GameMode) async throws -> Leaderboard
+}
+
+/// 리더보드 조회 결과. 월간 랭킹 메타(`period`/`resetsAt`)는 구버전 서버에선 nil.
+struct Leaderboard {
+    var entries: [RankEntry]
+    /// KST 달력 월 "YYYY-MM".
+    var period: String?
+    /// 다음 초기화 시각(다음 달 1일 00:00 KST).
+    var resetsAt: Date?
 }
 
 enum RankingError: Error {
