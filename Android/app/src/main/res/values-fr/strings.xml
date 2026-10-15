@@ -99,6 +99,7 @@
     <string name="mode_match">Casse-tête d\'allumettes</string>
     <string name="mode_fragment">Chiffres en morceaux</string>
     <string name="fragment_prompt">Assemble les morceaux dans ta tête et saisis le nombre</string>
+    <string name="fragment_wrong">Raté, réessayez</string>
     <string name="fragment_rule_xor">Un trait qui apparaît deux fois disparaît</string>
     <string name="fragment_chapter_1">Échauffement</string>
     <string name="fragment_chapter_2">Facile</string>

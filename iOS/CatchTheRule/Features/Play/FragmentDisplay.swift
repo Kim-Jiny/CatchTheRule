@@ -30,6 +30,11 @@ struct FragmentDisplay: View {
         VStack(spacing: 14) {
             displayCard
             typedRow
+            if feedback == .wrong {
+                Text(String.loc("fragment_wrong"))
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundStyle(Theme.danger)
+            }
         }
         .id(puzzle.id)   // 문제가 바뀌면 상태(시작 시각)를 새로 만들어 첫 장부터 재시작
         .background(

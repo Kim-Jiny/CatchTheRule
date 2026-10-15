@@ -166,7 +166,6 @@ fun TimeAttackScreen(onClose: () -> Unit) {
             feedback = AnswerFeedback.Correct
         } else {
             feedback = AnswerFeedback.Wrong
-            typed = ""
             buzz()
         }
     }

@@ -99,6 +99,7 @@
     <string name="mode_match">Acertijo de cerillas</string>
     <string name="mode_fragment">Dígitos en fragmentos</string>
     <string name="fragment_prompt">Une los fragmentos mentalmente e introduce el número</string>
+    <string name="fragment_wrong">Incorrecto, inténtalo otra vez</string>
     <string name="fragment_rule_xor">Un trazo que aparece dos veces desaparece</string>
     <string name="fragment_chapter_1">Calentamiento</string>
     <string name="fragment_chapter_2">Fácil</string>

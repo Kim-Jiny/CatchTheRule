@@ -99,6 +99,7 @@
     <string name="mode_match">Matchstick Puzzle</string>
     <string name="mode_fragment">Digit Fragments</string>
     <string name="fragment_prompt">Merge the pieces in your head and enter the number</string>
+    <string name="fragment_wrong">Not quite — try again</string>
     <string name="fragment_rule_xor">A stroke that appears twice disappears</string>
     <string name="fragment_chapter_1">Warm-up</string>
     <string name="fragment_chapter_2">Easy</string>

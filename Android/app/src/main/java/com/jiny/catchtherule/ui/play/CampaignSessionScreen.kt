@@ -261,7 +261,7 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
                         onDelete = { if (!solved && typed.isNotEmpty()) typed = typed.dropLast(1) },
                         onSubmit = { submitCampaign(puzzle, index, typed, progress, hintsShown,
                             onCorrect = { feedback = AnswerFeedback.Correct; reveal = true; solved = true },
-                            onWrong = { feedback = AnswerFeedback.Wrong; typed = "" }) },
+                            onWrong = { feedback = AnswerFeedback.Wrong }) },
                     )
                     InputType.Choices -> ChoicesGrid(puzzle.choices ?: emptyList(), enabled = !solved) { picked ->
                         submitCampaign(puzzle, index, picked, progress, hintsShown,

@@ -99,6 +99,7 @@
     <string name="mode_match">マッチ棒パズル</string>
     <string name="mode_fragment">かけらナンバー</string>
     <string name="fragment_prompt">かけらを頭の中で合わせて数を入力しよう</string>
+    <string name="fragment_wrong">違います。もう一度！</string>
     <string name="fragment_rule_xor">2回出てきた線は消えます</string>
     <string name="fragment_chapter_1">入門</string>
     <string name="fragment_chapter_2">やさしい</string>

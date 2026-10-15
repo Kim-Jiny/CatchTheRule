@@ -99,6 +99,7 @@
     <string name="mode_match">Streichholzrätsel</string>
     <string name="mode_fragment">Ziffernteile</string>
     <string name="fragment_prompt">Setze die Teile im Kopf zusammen und gib die Zahl ein</string>
+    <string name="fragment_wrong">Falsch, versuch es nochmal</string>
     <string name="fragment_rule_xor">Ein Strich, der zweimal erscheint, verschwindet</string>
     <string name="fragment_chapter_1">Aufwärmen</string>
     <string name="fragment_chapter_2">Leicht</string>

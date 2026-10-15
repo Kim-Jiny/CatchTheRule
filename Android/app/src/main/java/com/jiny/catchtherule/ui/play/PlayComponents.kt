@@ -76,7 +76,7 @@ fun SequenceDisplay(
     val popScale = pop.value
     val grid = puzzle.grid
     if (puzzle.isFragment) {
-        FragmentDisplay(puzzle, modifier)
+        FragmentDisplay(puzzle, modifier, typed, feedback)
     } else if (puzzle.isContradiction) {
         // 모순찾기: 번호 매긴 문장 카드 목록. 각 카드를 탭하면 그 번호(1-based)를 제출.
         ContradictionList(puzzle, typed, reveal, feedback, onPickStatement)

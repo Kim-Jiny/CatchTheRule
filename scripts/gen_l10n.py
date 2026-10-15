@@ -117,6 +117,7 @@ T = {
  "mode_match": ["Matchstick Puzzle","성냥개비 퍼즐","マッチ棒パズル","火柴棒谜题","Acertijo de cerillas","Casse-tête d'allumettes","Streichholzrätsel"],
  "mode_fragment": ["Digit Fragments","조각 숫자","かけらナンバー","碎片数字","Dígitos en fragmentos","Chiffres en morceaux","Ziffernteile"],
  "fragment_prompt": ["Merge the pieces in your head and enter the number","조각을 머릿속에서 합쳐 숫자를 입력하세요","かけらを頭の中で合わせて数を入力しよう","在脑中合并碎片，输入数字","Une los fragmentos mentalmente e introduce el número","Assemble les morceaux dans ta tête et saisis le nombre","Setze die Teile im Kopf zusammen und gib die Zahl ein"],
+ "fragment_wrong": ["Not quite — try again","틀렸어요, 다시 해보세요","違います。もう一度！","不对，再试一次","Incorrecto, inténtalo otra vez","Raté, réessayez","Falsch, versuch es nochmal"],
  "fragment_rule_xor": ["A stroke that appears twice disappears","두 번 나오는 획은 사라져요","2回出てきた線は消えます","出现两次的笔画会消失","Un trazo que aparece dos veces desaparece","Un trait qui apparaît deux fois disparaît","Ein Strich, der zweimal erscheint, verschwindet"],
  "fragment_chapter_1": ["Warm-up", "입문", "入門", "入门", "Calentamiento", "Échauffement", "Aufwärmen"],
  "fragment_chapter_2": ["Easy", "쉬움", "やさしい", "简单", "Fácil", "Facile", "Leicht"],

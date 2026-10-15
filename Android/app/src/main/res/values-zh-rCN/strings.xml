@@ -99,6 +99,7 @@
     <string name="mode_match">火柴棒谜题</string>
     <string name="mode_fragment">碎片数字</string>
     <string name="fragment_prompt">在脑中合并碎片，输入数字</string>
+    <string name="fragment_wrong">不对，再试一次</string>
     <string name="fragment_rule_xor">出现两次的笔画会消失</string>
     <string name="fragment_chapter_1">入门</string>
     <string name="fragment_chapter_2">简单</string>

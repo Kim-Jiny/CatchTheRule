@@ -10,10 +10,14 @@ import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.offset
+import androidx.compose.ui.unit.IntOffset
+import kotlin.math.roundToInt
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.fillMaxHeight
@@ -74,7 +78,12 @@ fun FragmentPrompt(puzzle: Puzzle) {
  * 퍼즐이 바뀌면 처음 장부터 재시작, 화면이 비활성이면 정지.
  */
 @Composable
-fun FragmentDisplay(puzzle: Puzzle, modifier: Modifier = Modifier) {
+fun FragmentDisplay(
+    puzzle: Puzzle,
+    modifier: Modifier = Modifier,
+    typed: String = "",
+    feedback: AnswerFeedback? = null,
+) {
     val frames = puzzle.frames ?: return
     if (frames.isEmpty()) return
     key(puzzle.id) {
@@ -145,6 +154,39 @@ fun FragmentDisplay(puzzle: Puzzle, modifier: Modifier = Modifier) {
             }
             Box(Modifier.width(140.dp).height(4.dp).clip(CircleShape).background(Color.White.copy(alpha = 0.08f))) {
                 Box(Modifier.fillMaxHeight().fillMaxWidth(bar.value).clip(CircleShape).background(fragmentFrameColor(current)))
+            }
+            // 입력 칸: 자릿수만큼, 입력한 숫자를 표시(정답/오답이면 색 반영)
+            val tint = when (feedback) {
+                AnswerFeedback.Correct -> AppColors.Success
+                AnswerFeedback.Wrong -> AppColors.Danger
+                null -> AppColors.TextPrimary
+            }
+            val shake = remember { Animatable(0f) }
+            LaunchedEffect(feedback) {
+                if (feedback == AnswerFeedback.Wrong) {
+                    for (x in listOf(-12f, 12f, -9f, 9f, -5f, 5f, 0f)) shake.animateTo(x, tween(40))
+                }
+            }
+            Row(
+                Modifier.offset { IntOffset(shake.value.roundToInt(), 0) },
+                horizontalArrangement = Arrangement.spacedBy(10.dp),
+            ) {
+                for (i in 0 until digits) {
+                    val focus = i == typed.length && feedback == null
+                    Box(
+                        Modifier.size(42.dp, 52.dp).clip(RoundedCornerShape(12.dp)).background(AppColors.Card)
+                            .then(
+                                if (focus) Modifier.border(2.dp, AppColors.AccentGradient, RoundedCornerShape(12.dp))
+                                else Modifier.border(1.dp, if (feedback == null) AppColors.Stroke else tint.copy(alpha = 0.8f), RoundedCornerShape(12.dp)),
+                            ),
+                        contentAlignment = Alignment.Center,
+                    ) {
+                        Text(typed.getOrNull(i)?.toString() ?: "", color = tint, fontSize = 26.sp, fontWeight = FontWeight.Bold)
+                    }
+                }
+            }
+            if (feedback == AnswerFeedback.Wrong) {
+                Text(stringResource(R.string.fragment_wrong), color = AppColors.Danger, fontSize = 14.sp, fontWeight = FontWeight.SemiBold)
             }
         }
     }
