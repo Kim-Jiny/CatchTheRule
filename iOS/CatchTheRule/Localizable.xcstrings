@@ -5835,43 +5835,43 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "My Best Score"
+            "value": "This month's best"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "내 최고 점수"
+            "value": "이번 달 내 최고 점수"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "自己ベスト"
+            "value": "今月の自己ベスト"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "我的最高分"
+            "value": "本月我的最高分"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mi mejor puntuación"
+            "value": "Mi mejor marca del mes"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mon meilleur score"
+            "value": "Mon meilleur score du mois"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Meine Bestpunktzahl"
+            "value": "Meine Monatsbestleistung"
           }
         }
       }
@@ -6107,6 +6107,147 @@
           "stringUnit": {
             "state": "translated",
             "value": "Noch keine Einträge. Sei der Erste!"
+          }
+        }
+      }
+    },
+    "ranking_monthly": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monthly ranking"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "월간 랭킹"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "月間ランキング"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "月度排行榜"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ranking mensual"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Classement mensuel"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monatsranking"
+          }
+        }
+      }
+    },
+    "ranking_resets_in": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resets in %lld days"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "초기화까지 %lld일"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "リセットまであと%lld日"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld天后重置"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se reinicia en %lld días"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réinitialisation dans %lld jours"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zurücksetzung in %lld Tagen"
+          }
+        }
+      }
+    },
+    "ranking_resets_today": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resets today"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "오늘 초기화"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "本日リセット"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今日重置"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se reinicia hoy"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réinitialisation aujourd'hui"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wird heute zurückgesetzt"
           }
         }
       }
