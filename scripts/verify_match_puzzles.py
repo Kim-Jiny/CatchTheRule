@@ -108,6 +108,8 @@ def bfs(eq, moves):
 
 
 def nums(s):
+    # 「 」 안의 글자와 바로 뒤의 "(막대 N개)" 같은 개수 표기는 칸 번호가 아니므로 제외하고 번호만 추출
+    s = re.sub(r"「[^」]*」(\s*[（(][^）)]*[）)])?", " ", s)
     return [int(x) for x in re.findall(r"\d+", s)]
 
 

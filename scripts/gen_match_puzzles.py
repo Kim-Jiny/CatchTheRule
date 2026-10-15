@@ -309,71 +309,103 @@ def fmt_list(nums, lang):
     return sep.join(str(x) for x in nums)
 
 
+# 힌트는 "칸" 단위로 말한다: 숫자와 연산자(+ - =)를 모두 왼쪽부터 한 칸씩 센 번호이며,
+# 헷갈리지 않도록 그 칸에 지금 들어 있는 글자를 「 」로 함께 보여 준다(막대가 2개 이상이면 "(막대 N개)").
+CELL = {
+    "ko": lambda n, c: f"{n}번째 「{c}」",
+    "en": lambda n, c: f"cell {n} 「{c}」",
+    "ja": lambda n, c: f"{n}番目「{c}」",
+    "zh": lambda n, c: f"第{n}格「{c}」",
+    "es": lambda n, c: f"casilla {n} 「{c}」",
+    "fr": lambda n, c: f"case {n} 「{c}」",
+    "de": lambda n, c: f"Feld {n} 「{c}」",
+}
+
+CNT = {
+    "ko": lambda n: f"(막대 {n}개)",
+    "en": lambda n: f" ({n} sticks)",
+    "ja": lambda n: f"（棒{n}本）",
+    "zh": lambda n: f"（{n}根）",
+    "es": lambda n: f" ({n} cerillas)",
+    "fr": lambda n: f" ({n} allumettes)",
+    "de": lambda n: f" ({n} Hölzer)",
+}
+
 T_H = {
     "ko": dict(
-        rem=lambda L, p: f"{L}번째 기호에서 막대를 빼야 해요.",
-        same=lambda L, p: "빼낸 막대를 같은 기호 안에서 옮겨요.",
-        add=lambda L, p: f"막대를 {L}번째 기호에 놓아야 해요.",
-        mixed=lambda L, B, p: f"막대를 {L}번째 기호에 놓아야 해요. ({B}번째 기호는 같은 기호 안에서 옮겨요)",
+        rem=lambda L: f"왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. {L}에서 막대를 빼야 해요.",
+        same=lambda L: "빼낸 막대를 같은 칸 안에서 옮겨요.",
+        add=lambda L: f"막대를 {L}에 놓아야 해요.",
+        mixed=lambda L, B: f"막대를 {L}에 놓아야 해요. ({B}는 같은 칸 안에서 옮겨요)",
         full=lambda t: f"정답 식: {t}"),
     "en": dict(
-        rem=lambda L, p: f"Take matchsticks away from {'symbols' if p else 'symbol'} {L}.",
-        same=lambda L, p: "Move that matchstick within the same symbol.",
-        add=lambda L, p: f"Place matchsticks on {'symbols' if p else 'symbol'} {L}.",
-        mixed=lambda L, B, p: f"Place matchsticks on {'symbols' if p else 'symbol'} {L}. (Symbol {B}: move within the same symbol)",
+        rem=lambda L: f"Count every digit and operator from the left, one cell each. Take matchsticks away from {L}.",
+        same=lambda L: "Move that matchstick within the same cell.",
+        add=lambda L: f"Place matchsticks on {L}.",
+        mixed=lambda L, B: f"Place matchsticks on {L}. ({B}: move within the same cell)",
         full=lambda t: f"Answer: {t}"),
     "ja": dict(
-        rem=lambda L, p: f"{L}番目の記号から棒を取り除きます。",
-        same=lambda L, p: "取った棒は同じ記号の中で動かします。",
-        add=lambda L, p: f"{L}番目の記号に棒を置きます。",
-        mixed=lambda L, B, p: f"{L}番目の記号に棒を置きます。（{B}番目は同じ記号の中で動かします）",
+        rem=lambda L: f"左から数字と記号をひとマスずつ数えます。{L}から棒を取り除きます。",
+        same=lambda L: "取った棒は同じマスの中で動かします。",
+        add=lambda L: f"{L}に棒を置きます。",
+        mixed=lambda L, B: f"{L}に棒を置きます。（{B}は同じマスの中で動かします）",
         full=lambda t: f"正解の式：{t}"),
     "zh": dict(
-        rem=lambda L, p: f"需要从第{L}个符号上拿走火柴棒。",
-        same=lambda L, p: "把拿走的火柴棒在同一个符号内移动。",
-        add=lambda L, p: f"需要把火柴棒放到第{L}个符号上。",
-        mixed=lambda L, B, p: f"需要把火柴棒放到第{L}个符号上。（第{B}个符号在自身内部移动）",
+        rem=lambda L: f"从左边开始，数字和运算符各算一格。需要从{L}拿走火柴棒。",
+        same=lambda L: "把拿走的火柴棒在同一格内移动。",
+        add=lambda L: f"需要把火柴棒放到{L}。",
+        mixed=lambda L, B: f"需要把火柴棒放到{L}。（{B}在自身格内移动）",
         full=lambda t: f"正确算式：{t}"),
     "es": dict(
-        rem=lambda L, p: f"Quita cerillas {'de los símbolos' if p else 'del símbolo'} {L}.",
-        same=lambda L, p: "Mueve la cerilla dentro del mismo símbolo.",
-        add=lambda L, p: f"Coloca cerillas {'en los símbolos' if p else 'en el símbolo'} {L}.",
-        mixed=lambda L, B, p: f"Coloca cerillas {'en los símbolos' if p else 'en el símbolo'} {L}. (Símbolo {B}: se mueve dentro del mismo símbolo)",
+        rem=lambda L: f"Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de {L}.",
+        same=lambda L: "Mueve la cerilla dentro de la misma casilla.",
+        add=lambda L: f"Coloca cerillas en {L}.",
+        mixed=lambda L, B: f"Coloca cerillas en {L}. ({B}: se mueve dentro de la misma casilla)",
         full=lambda t: f"Ecuación correcta: {t}"),
     "fr": dict(
-        rem=lambda L, p: f"Retirez des allumettes {'des symboles' if p else 'du symbole'} {L}.",
-        same=lambda L, p: "Déplacez l'allumette à l'intérieur du même symbole.",
-        add=lambda L, p: f"Placez des allumettes {'sur les symboles' if p else 'sur le symbole'} {L}.",
-        mixed=lambda L, B, p: f"Placez des allumettes {'sur les symboles' if p else 'sur le symbole'} {L}. (Symbole {B} : déplacement dans le même symbole)",
+        rem=lambda L: f"Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de {L}.",
+        same=lambda L: "Déplacez l'allumette à l'intérieur de la même case.",
+        add=lambda L: f"Placez des allumettes sur {L}.",
+        mixed=lambda L, B: f"Placez des allumettes sur {L}. ({B} : déplacement dans la même case)",
         full=lambda t: f"Équation correcte : {t}"),
     "de": dict(
-        rem=lambda L, p: f"Nimm Streichhölzer {'von den Symbolen' if p else 'vom Symbol'} {L} weg.",
-        same=lambda L, p: "Verschiebe das Streichholz innerhalb desselben Symbols.",
-        add=lambda L, p: f"Lege Streichhölzer {'auf die Symbole' if p else 'auf das Symbol'} {L}.",
-        mixed=lambda L, B, p: f"Lege Streichhölzer {'auf die Symbole' if p else 'auf das Symbol'} {L}. (Symbol {B}: innerhalb desselben Symbols verschieben)",
+        rem=lambda L: f"Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von {L} weg.",
+        same=lambda L: "Verschiebe das Streichholz innerhalb desselben Feldes.",
+        add=lambda L: f"Lege Streichhölzer auf {L}.",
+        mixed=lambda L, B: f"Lege Streichhölzer auf {L}. ({B}: innerhalb desselben Feldes verschieben)",
         full=lambda t: f"Richtige Gleichung: {t}"),
 }
 
 
 def pretty(t):
-    return t.replace("-", "−")
+    return t.replace("-", "\u2212")
 
 
 def make_hints(chars, answer, masks):
+    inits = initial_masks(chars)
     rem, add = changes(chars, masks)
-    R = [i + 1 for i in rem]
-    A = [i + 1 for i in add]
-    B = [i + 1 for i in sorted(set(rem) & set(add))]
+    B = sorted(set(rem) & set(add))
+    pc = lambda x: bin(x).count("1")
+
+    def items(idx, lang, kind):
+        out = []
+        for i in idx:
+            cnt = pc(inits[i] & ~masks[i]) if kind == "rem" else pc(masks[i] & ~inits[i])
+            c = pretty(chars[i])
+            out.append(CELL[lang](i + 1, c) + (CNT[lang](cnt) if cnt > 1 else ""))
+        return ("、" if lang in ("ja", "zh") else ", ").join(out)
+
     hints = {}
     for lang in LANGS:
         t = T_H[lang]
-        h1 = t["rem"](fmt_list(R, lang), len(R) > 1)
-        if R == A == B:
-            h2 = t["same"](None, False)
+        h1 = t["rem"](items(rem, lang, "rem"))
+        if rem == add == B:
+            h2 = t["same"](None)
         elif not B:
-            h2 = t["add"](fmt_list(A, lang), len(A) > 1)
+            h2 = t["add"](items(add, lang, "add"))
         else:
-            h2 = t["mixed"](fmt_list(A, lang), fmt_list(B, lang), len(A) > 1)
+            bs = ("、" if lang in ("ja", "zh") else ", ").join(CELL[lang](i + 1, pretty(chars[i])) for i in B)
+            h2 = t["mixed"](items(add, lang, "add"), bs)
         hints[lang] = [h1, h2, t["full"](pretty(answer))]
     return hints
 

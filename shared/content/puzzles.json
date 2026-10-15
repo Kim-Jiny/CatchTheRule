@@ -34582,38 +34582,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "5번째 기호에서 막대를 빼야 해요.",
-        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 5번째 「6」에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 칸 안에서 옮겨요.",
         "정답 식: 0+0=0"
       ],
       "en": [
-        "Take matchsticks away from symbol 5.",
-        "Move that matchstick within the same symbol.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 5 「6」.",
+        "Move that matchstick within the same cell.",
         "Answer: 0+0=0"
       ],
       "ja": [
-        "5番目の記号から棒を取り除きます。",
-        "取った棒は同じ記号の中で動かします。",
+        "左から数字と記号をひとマスずつ数えます。5番目「6」から棒を取り除きます。",
+        "取った棒は同じマスの中で動かします。",
         "正解の式：0+0=0"
       ],
       "zh": [
-        "需要从第5个符号上拿走火柴棒。",
-        "把拿走的火柴棒在同一个符号内移动。",
+        "从左边开始，数字和运算符各算一格。需要从第5格「6」拿走火柴棒。",
+        "把拿走的火柴棒在同一格内移动。",
         "正确算式：0+0=0"
       ],
       "es": [
-        "Quita cerillas del símbolo 5.",
-        "Mueve la cerilla dentro del mismo símbolo.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 5 「6」.",
+        "Mueve la cerilla dentro de la misma casilla.",
         "Ecuación correcta: 0+0=0"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 5.",
-        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 5 「6」.",
+        "Déplacez l'allumette à l'intérieur de la même case.",
         "Équation correcte : 0+0=0"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 5 weg.",
-        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 5 「6」 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Feldes.",
         "Richtige Gleichung: 0+0=0"
       ]
     },
@@ -34646,38 +34646,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "5번째 기호에서 막대를 빼야 해요.",
-        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 5번째 「5」에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 칸 안에서 옮겨요.",
         "정답 식: 3+0=3"
       ],
       "en": [
-        "Take matchsticks away from symbol 5.",
-        "Move that matchstick within the same symbol.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 5 「5」.",
+        "Move that matchstick within the same cell.",
         "Answer: 3+0=3"
       ],
       "ja": [
-        "5番目の記号から棒を取り除きます。",
-        "取った棒は同じ記号の中で動かします。",
+        "左から数字と記号をひとマスずつ数えます。5番目「5」から棒を取り除きます。",
+        "取った棒は同じマスの中で動かします。",
         "正解の式：3+0=3"
       ],
       "zh": [
-        "需要从第5个符号上拿走火柴棒。",
-        "把拿走的火柴棒在同一个符号内移动。",
+        "从左边开始，数字和运算符各算一格。需要从第5格「5」拿走火柴棒。",
+        "把拿走的火柴棒在同一格内移动。",
         "正确算式：3+0=3"
       ],
       "es": [
-        "Quita cerillas del símbolo 5.",
-        "Mueve la cerilla dentro del mismo símbolo.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 5 「5」.",
+        "Mueve la cerilla dentro de la misma casilla.",
         "Ecuación correcta: 3+0=3"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 5.",
-        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 5 「5」.",
+        "Déplacez l'allumette à l'intérieur de la même case.",
         "Équation correcte : 3+0=3"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 5 weg.",
-        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 5 「5」 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Feldes.",
         "Richtige Gleichung: 3+0=3"
       ]
     },
@@ -34710,38 +34710,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1번째 기호에서 막대를 빼야 해요.",
-        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「9」에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 칸 안에서 옮겨요.",
         "정답 식: 0+8=8"
       ],
       "en": [
-        "Take matchsticks away from symbol 1.",
-        "Move that matchstick within the same symbol.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「9」.",
+        "Move that matchstick within the same cell.",
         "Answer: 0+8=8"
       ],
       "ja": [
-        "1番目の記号から棒を取り除きます。",
-        "取った棒は同じ記号の中で動かします。",
+        "左から数字と記号をひとマスずつ数えます。1番目「9」から棒を取り除きます。",
+        "取った棒は同じマスの中で動かします。",
         "正解の式：0+8=8"
       ],
       "zh": [
-        "需要从第1个符号上拿走火柴棒。",
-        "把拿走的火柴棒在同一个符号内移动。",
+        "从左边开始，数字和运算符各算一格。需要从第1格「9」拿走火柴棒。",
+        "把拿走的火柴棒在同一格内移动。",
         "正确算式：0+8=8"
       ],
       "es": [
-        "Quita cerillas del símbolo 1.",
-        "Mueve la cerilla dentro del mismo símbolo.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「9」.",
+        "Mueve la cerilla dentro de la misma casilla.",
         "Ecuación correcta: 0+8=8"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 1.",
-        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「9」.",
+        "Déplacez l'allumette à l'intérieur de la même case.",
         "Équation correcte : 0+8=8"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 1 weg.",
-        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「9」 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Feldes.",
         "Richtige Gleichung: 0+8=8"
       ]
     },
@@ -34774,38 +34774,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "3번째 기호에서 막대를 빼야 해요.",
-        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 3번째 「2」에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 칸 안에서 옮겨요.",
         "정답 식: 2+3=5"
       ],
       "en": [
-        "Take matchsticks away from symbol 3.",
-        "Move that matchstick within the same symbol.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 3 「2」.",
+        "Move that matchstick within the same cell.",
         "Answer: 2+3=5"
       ],
       "ja": [
-        "3番目の記号から棒を取り除きます。",
-        "取った棒は同じ記号の中で動かします。",
+        "左から数字と記号をひとマスずつ数えます。3番目「2」から棒を取り除きます。",
+        "取った棒は同じマスの中で動かします。",
         "正解の式：2+3=5"
       ],
       "zh": [
-        "需要从第3个符号上拿走火柴棒。",
-        "把拿走的火柴棒在同一个符号内移动。",
+        "从左边开始，数字和运算符各算一格。需要从第3格「2」拿走火柴棒。",
+        "把拿走的火柴棒在同一格内移动。",
         "正确算式：2+3=5"
       ],
       "es": [
-        "Quita cerillas del símbolo 3.",
-        "Mueve la cerilla dentro del mismo símbolo.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 3 「2」.",
+        "Mueve la cerilla dentro de la misma casilla.",
         "Ecuación correcta: 2+3=5"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 3.",
-        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 3 「2」.",
+        "Déplacez l'allumette à l'intérieur de la même case.",
         "Équation correcte : 2+3=5"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 3 weg.",
-        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 3 「2」 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Feldes.",
         "Richtige Gleichung: 2+3=5"
       ]
     },
@@ -34838,38 +34838,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1번째 기호에서 막대를 빼야 해요.",
-        "막대를 5번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「9」에서 막대를 빼야 해요.",
+        "막대를 5번째 「9」에 놓아야 해요.",
         "정답 식: 3+5=8"
       ],
       "en": [
-        "Take matchsticks away from symbol 1.",
-        "Place matchsticks on symbol 5.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「9」.",
+        "Place matchsticks on cell 5 「9」.",
         "Answer: 3+5=8"
       ],
       "ja": [
-        "1番目の記号から棒を取り除きます。",
-        "5番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。1番目「9」から棒を取り除きます。",
+        "5番目「9」に棒を置きます。",
         "正解の式：3+5=8"
       ],
       "zh": [
-        "需要从第1个符号上拿走火柴棒。",
-        "需要把火柴棒放到第5个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第1格「9」拿走火柴棒。",
+        "需要把火柴棒放到第5格「9」。",
         "正确算式：3+5=8"
       ],
       "es": [
-        "Quita cerillas del símbolo 1.",
-        "Coloca cerillas en el símbolo 5.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「9」.",
+        "Coloca cerillas en casilla 5 「9」.",
         "Ecuación correcta: 3+5=8"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 1.",
-        "Placez des allumettes sur le symbole 5.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「9」.",
+        "Placez des allumettes sur case 5 「9」.",
         "Équation correcte : 3+5=8"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 1 weg.",
-        "Lege Streichhölzer auf das Symbol 5.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「9」 weg.",
+        "Lege Streichhölzer auf Feld 5 「9」.",
         "Richtige Gleichung: 3+5=8"
       ]
     },
@@ -34902,38 +34902,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "3번째 기호에서 막대를 빼야 해요.",
-        "막대를 1번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 3번째 「8」에서 막대를 빼야 해요.",
+        "막대를 1번째 「6」에 놓아야 해요.",
         "정답 식: 8−6=2"
       ],
       "en": [
-        "Take matchsticks away from symbol 3.",
-        "Place matchsticks on symbol 1.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 3 「8」.",
+        "Place matchsticks on cell 1 「6」.",
         "Answer: 8−6=2"
       ],
       "ja": [
-        "3番目の記号から棒を取り除きます。",
-        "1番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。3番目「8」から棒を取り除きます。",
+        "1番目「6」に棒を置きます。",
         "正解の式：8−6=2"
       ],
       "zh": [
-        "需要从第3个符号上拿走火柴棒。",
-        "需要把火柴棒放到第1个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第3格「8」拿走火柴棒。",
+        "需要把火柴棒放到第1格「6」。",
         "正确算式：8−6=2"
       ],
       "es": [
-        "Quita cerillas del símbolo 3.",
-        "Coloca cerillas en el símbolo 1.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 3 「8」.",
+        "Coloca cerillas en casilla 1 「6」.",
         "Ecuación correcta: 8−6=2"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 3.",
-        "Placez des allumettes sur le symbole 1.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 3 「8」.",
+        "Placez des allumettes sur case 1 「6」.",
         "Équation correcte : 8−6=2"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 3 weg.",
-        "Lege Streichhölzer auf das Symbol 1.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 3 「8」 weg.",
+        "Lege Streichhölzer auf Feld 1 「6」.",
         "Richtige Gleichung: 8−6=2"
       ]
     },
@@ -34966,38 +34966,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "5번째 기호에서 막대를 빼야 해요.",
-        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 5번째 「3」에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 칸 안에서 옮겨요.",
         "정답 식: 8−3=5"
       ],
       "en": [
-        "Take matchsticks away from symbol 5.",
-        "Move that matchstick within the same symbol.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 5 「3」.",
+        "Move that matchstick within the same cell.",
         "Answer: 8−3=5"
       ],
       "ja": [
-        "5番目の記号から棒を取り除きます。",
-        "取った棒は同じ記号の中で動かします。",
+        "左から数字と記号をひとマスずつ数えます。5番目「3」から棒を取り除きます。",
+        "取った棒は同じマスの中で動かします。",
         "正解の式：8−3=5"
       ],
       "zh": [
-        "需要从第5个符号上拿走火柴棒。",
-        "把拿走的火柴棒在同一个符号内移动。",
+        "从左边开始，数字和运算符各算一格。需要从第5格「3」拿走火柴棒。",
+        "把拿走的火柴棒在同一格内移动。",
         "正确算式：8−3=5"
       ],
       "es": [
-        "Quita cerillas del símbolo 5.",
-        "Mueve la cerilla dentro del mismo símbolo.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 5 「3」.",
+        "Mueve la cerilla dentro de la misma casilla.",
         "Ecuación correcta: 8−3=5"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 5.",
-        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 5 「3」.",
+        "Déplacez l'allumette à l'intérieur de la même case.",
         "Équation correcte : 8−3=5"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 5 weg.",
-        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 5 「3」 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Feldes.",
         "Richtige Gleichung: 8−3=5"
       ]
     },
@@ -35030,38 +35030,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "3번째 기호에서 막대를 빼야 해요.",
-        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 3번째 「5」에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 칸 안에서 옮겨요.",
         "정답 식: 5−3=2"
       ],
       "en": [
-        "Take matchsticks away from symbol 3.",
-        "Move that matchstick within the same symbol.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 3 「5」.",
+        "Move that matchstick within the same cell.",
         "Answer: 5−3=2"
       ],
       "ja": [
-        "3番目の記号から棒を取り除きます。",
-        "取った棒は同じ記号の中で動かします。",
+        "左から数字と記号をひとマスずつ数えます。3番目「5」から棒を取り除きます。",
+        "取った棒は同じマスの中で動かします。",
         "正解の式：5−3=2"
       ],
       "zh": [
-        "需要从第3个符号上拿走火柴棒。",
-        "把拿走的火柴棒在同一个符号内移动。",
+        "从左边开始，数字和运算符各算一格。需要从第3格「5」拿走火柴棒。",
+        "把拿走的火柴棒在同一格内移动。",
         "正确算式：5−3=2"
       ],
       "es": [
-        "Quita cerillas del símbolo 3.",
-        "Mueve la cerilla dentro del mismo símbolo.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 3 「5」.",
+        "Mueve la cerilla dentro de la misma casilla.",
         "Ecuación correcta: 5−3=2"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 3.",
-        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 3 「5」.",
+        "Déplacez l'allumette à l'intérieur de la même case.",
         "Équation correcte : 5−3=2"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 3 weg.",
-        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 3 「5」 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Feldes.",
         "Richtige Gleichung: 5−3=2"
       ]
     },
@@ -35094,38 +35094,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1번째 기호에서 막대를 빼야 해요.",
-        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「3」에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 칸 안에서 옮겨요.",
         "정답 식: 5+4=9"
       ],
       "en": [
-        "Take matchsticks away from symbol 1.",
-        "Move that matchstick within the same symbol.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「3」.",
+        "Move that matchstick within the same cell.",
         "Answer: 5+4=9"
       ],
       "ja": [
-        "1番目の記号から棒を取り除きます。",
-        "取った棒は同じ記号の中で動かします。",
+        "左から数字と記号をひとマスずつ数えます。1番目「3」から棒を取り除きます。",
+        "取った棒は同じマスの中で動かします。",
         "正解の式：5+4=9"
       ],
       "zh": [
-        "需要从第1个符号上拿走火柴棒。",
-        "把拿走的火柴棒在同一个符号内移动。",
+        "从左边开始，数字和运算符各算一格。需要从第1格「3」拿走火柴棒。",
+        "把拿走的火柴棒在同一格内移动。",
         "正确算式：5+4=9"
       ],
       "es": [
-        "Quita cerillas del símbolo 1.",
-        "Mueve la cerilla dentro del mismo símbolo.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「3」.",
+        "Mueve la cerilla dentro de la misma casilla.",
         "Ecuación correcta: 5+4=9"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 1.",
-        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「3」.",
+        "Déplacez l'allumette à l'intérieur de la même case.",
         "Équation correcte : 5+4=9"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 1 weg.",
-        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「3」 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Feldes.",
         "Richtige Gleichung: 5+4=9"
       ]
     },
@@ -35158,38 +35158,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1번째 기호에서 막대를 빼야 해요.",
-        "막대를 5번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「9」에서 막대를 빼야 해요.",
+        "막대를 5번째 「0」에 놓아야 해요.",
         "정답 식: 5+3=8"
       ],
       "en": [
-        "Take matchsticks away from symbol 1.",
-        "Place matchsticks on symbol 5.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「9」.",
+        "Place matchsticks on cell 5 「0」.",
         "Answer: 5+3=8"
       ],
       "ja": [
-        "1番目の記号から棒を取り除きます。",
-        "5番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。1番目「9」から棒を取り除きます。",
+        "5番目「0」に棒を置きます。",
         "正解の式：5+3=8"
       ],
       "zh": [
-        "需要从第1个符号上拿走火柴棒。",
-        "需要把火柴棒放到第5个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第1格「9」拿走火柴棒。",
+        "需要把火柴棒放到第5格「0」。",
         "正确算式：5+3=8"
       ],
       "es": [
-        "Quita cerillas del símbolo 1.",
-        "Coloca cerillas en el símbolo 5.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「9」.",
+        "Coloca cerillas en casilla 5 「0」.",
         "Ecuación correcta: 5+3=8"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 1.",
-        "Placez des allumettes sur le symbole 5.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「9」.",
+        "Placez des allumettes sur case 5 「0」.",
         "Équation correcte : 5+3=8"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 1 weg.",
-        "Lege Streichhölzer auf das Symbol 5.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「9」 weg.",
+        "Lege Streichhölzer auf Feld 5 「0」.",
         "Richtige Gleichung: 5+3=8"
       ]
     },
@@ -35222,38 +35222,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1번째 기호에서 막대를 빼야 해요.",
-        "막대를 5번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「6」에서 막대를 빼야 해요.",
+        "막대를 5번째 「1」에 놓아야 해요.",
         "정답 식: 5+2=7"
       ],
       "en": [
-        "Take matchsticks away from symbol 1.",
-        "Place matchsticks on symbol 5.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「6」.",
+        "Place matchsticks on cell 5 「1」.",
         "Answer: 5+2=7"
       ],
       "ja": [
-        "1番目の記号から棒を取り除きます。",
-        "5番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。1番目「6」から棒を取り除きます。",
+        "5番目「1」に棒を置きます。",
         "正解の式：5+2=7"
       ],
       "zh": [
-        "需要从第1个符号上拿走火柴棒。",
-        "需要把火柴棒放到第5个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第1格「6」拿走火柴棒。",
+        "需要把火柴棒放到第5格「1」。",
         "正确算式：5+2=7"
       ],
       "es": [
-        "Quita cerillas del símbolo 1.",
-        "Coloca cerillas en el símbolo 5.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「6」.",
+        "Coloca cerillas en casilla 5 「1」.",
         "Ecuación correcta: 5+2=7"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 1.",
-        "Placez des allumettes sur le symbole 5.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「6」.",
+        "Placez des allumettes sur case 5 「1」.",
         "Équation correcte : 5+2=7"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 1 weg.",
-        "Lege Streichhölzer auf das Symbol 5.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「6」 weg.",
+        "Lege Streichhölzer auf Feld 5 「1」.",
         "Richtige Gleichung: 5+2=7"
       ]
     },
@@ -35286,38 +35286,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "2번째 기호에서 막대를 빼야 해요.",
-        "막대를 1번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 2번째 「+」에서 막대를 빼야 해요.",
+        "막대를 1번째 「0」에 놓아야 해요.",
         "정답 식: 8−8=0"
       ],
       "en": [
-        "Take matchsticks away from symbol 2.",
-        "Place matchsticks on symbol 1.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 2 「+」.",
+        "Place matchsticks on cell 1 「0」.",
         "Answer: 8−8=0"
       ],
       "ja": [
-        "2番目の記号から棒を取り除きます。",
-        "1番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。2番目「+」から棒を取り除きます。",
+        "1番目「0」に棒を置きます。",
         "正解の式：8−8=0"
       ],
       "zh": [
-        "需要从第2个符号上拿走火柴棒。",
-        "需要把火柴棒放到第1个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第2格「+」拿走火柴棒。",
+        "需要把火柴棒放到第1格「0」。",
         "正确算式：8−8=0"
       ],
       "es": [
-        "Quita cerillas del símbolo 2.",
-        "Coloca cerillas en el símbolo 1.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 2 「+」.",
+        "Coloca cerillas en casilla 1 「0」.",
         "Ecuación correcta: 8−8=0"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 2.",
-        "Placez des allumettes sur le symbole 1.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 2 「+」.",
+        "Placez des allumettes sur case 1 「0」.",
         "Équation correcte : 8−8=0"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 2 weg.",
-        "Lege Streichhölzer auf das Symbol 1.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 2 「+」 weg.",
+        "Lege Streichhölzer auf Feld 1 「0」.",
         "Richtige Gleichung: 8−8=0"
       ]
     },
@@ -35350,38 +35350,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "3번째 기호에서 막대를 빼야 해요.",
-        "막대를 1번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 3번째 「7」에서 막대를 빼야 해요.",
+        "막대를 1번째 「0」에 놓아야 해요.",
         "정답 식: 8−1=7"
       ],
       "en": [
-        "Take matchsticks away from symbol 3.",
-        "Place matchsticks on symbol 1.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 3 「7」.",
+        "Place matchsticks on cell 1 「0」.",
         "Answer: 8−1=7"
       ],
       "ja": [
-        "3番目の記号から棒を取り除きます。",
-        "1番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。3番目「7」から棒を取り除きます。",
+        "1番目「0」に棒を置きます。",
         "正解の式：8−1=7"
       ],
       "zh": [
-        "需要从第3个符号上拿走火柴棒。",
-        "需要把火柴棒放到第1个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第3格「7」拿走火柴棒。",
+        "需要把火柴棒放到第1格「0」。",
         "正确算式：8−1=7"
       ],
       "es": [
-        "Quita cerillas del símbolo 3.",
-        "Coloca cerillas en el símbolo 1.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 3 「7」.",
+        "Coloca cerillas en casilla 1 「0」.",
         "Ecuación correcta: 8−1=7"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 3.",
-        "Placez des allumettes sur le symbole 1.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 3 「7」.",
+        "Placez des allumettes sur case 1 「0」.",
         "Équation correcte : 8−1=7"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 3 weg.",
-        "Lege Streichhölzer auf das Symbol 1.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 3 「7」 weg.",
+        "Lege Streichhölzer auf Feld 1 「0」.",
         "Richtige Gleichung: 8−1=7"
       ]
     },
@@ -35414,38 +35414,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "5번째 기호에서 막대를 빼야 해요.",
-        "막대를 1번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 5번째 「8」에서 막대를 빼야 해요.",
+        "막대를 1번째 「3」에 놓아야 해요.",
         "정답 식: 9−3=6"
       ],
       "en": [
-        "Take matchsticks away from symbol 5.",
-        "Place matchsticks on symbol 1.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 5 「8」.",
+        "Place matchsticks on cell 1 「3」.",
         "Answer: 9−3=6"
       ],
       "ja": [
-        "5番目の記号から棒を取り除きます。",
-        "1番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。5番目「8」から棒を取り除きます。",
+        "1番目「3」に棒を置きます。",
         "正解の式：9−3=6"
       ],
       "zh": [
-        "需要从第5个符号上拿走火柴棒。",
-        "需要把火柴棒放到第1个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第5格「8」拿走火柴棒。",
+        "需要把火柴棒放到第1格「3」。",
         "正确算式：9−3=6"
       ],
       "es": [
-        "Quita cerillas del símbolo 5.",
-        "Coloca cerillas en el símbolo 1.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 5 「8」.",
+        "Coloca cerillas en casilla 1 「3」.",
         "Ecuación correcta: 9−3=6"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 5.",
-        "Placez des allumettes sur le symbole 1.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 5 「8」.",
+        "Placez des allumettes sur case 1 「3」.",
         "Équation correcte : 9−3=6"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 5 weg.",
-        "Lege Streichhölzer auf das Symbol 1.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 5 「8」 weg.",
+        "Lege Streichhölzer auf Feld 1 「3」.",
         "Richtige Gleichung: 9−3=6"
       ]
     },
@@ -35478,38 +35478,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "5번째 기호에서 막대를 빼야 해요.",
-        "막대를 3번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 5번째 「8」에서 막대를 빼야 해요.",
+        "막대를 3번째 「3」에 놓아야 해요.",
         "정답 식: 9−9=0"
       ],
       "en": [
-        "Take matchsticks away from symbol 5.",
-        "Place matchsticks on symbol 3.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 5 「8」.",
+        "Place matchsticks on cell 3 「3」.",
         "Answer: 9−9=0"
       ],
       "ja": [
-        "5番目の記号から棒を取り除きます。",
-        "3番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。5番目「8」から棒を取り除きます。",
+        "3番目「3」に棒を置きます。",
         "正解の式：9−9=0"
       ],
       "zh": [
-        "需要从第5个符号上拿走火柴棒。",
-        "需要把火柴棒放到第3个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第5格「8」拿走火柴棒。",
+        "需要把火柴棒放到第3格「3」。",
         "正确算式：9−9=0"
       ],
       "es": [
-        "Quita cerillas del símbolo 5.",
-        "Coloca cerillas en el símbolo 3.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 5 「8」.",
+        "Coloca cerillas en casilla 3 「3」.",
         "Ecuación correcta: 9−9=0"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 5.",
-        "Placez des allumettes sur le symbole 3.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 5 「8」.",
+        "Placez des allumettes sur case 3 「3」.",
         "Équation correcte : 9−9=0"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 5 weg.",
-        "Lege Streichhölzer auf das Symbol 3.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 5 「8」 weg.",
+        "Lege Streichhölzer auf Feld 3 「3」.",
         "Richtige Gleichung: 9−9=0"
       ]
     },
@@ -35543,38 +35543,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "6번째 기호에서 막대를 빼야 해요.",
-        "막대를 3번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 6번째 「8」에서 막대를 빼야 해요.",
+        "막대를 3번째 「3」에 놓아야 해요.",
         "정답 식: 1+9=10"
       ],
       "en": [
-        "Take matchsticks away from symbol 6.",
-        "Place matchsticks on symbol 3.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 6 「8」.",
+        "Place matchsticks on cell 3 「3」.",
         "Answer: 1+9=10"
       ],
       "ja": [
-        "6番目の記号から棒を取り除きます。",
-        "3番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。6番目「8」から棒を取り除きます。",
+        "3番目「3」に棒を置きます。",
         "正解の式：1+9=10"
       ],
       "zh": [
-        "需要从第6个符号上拿走火柴棒。",
-        "需要把火柴棒放到第3个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第6格「8」拿走火柴棒。",
+        "需要把火柴棒放到第3格「3」。",
         "正确算式：1+9=10"
       ],
       "es": [
-        "Quita cerillas del símbolo 6.",
-        "Coloca cerillas en el símbolo 3.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 6 「8」.",
+        "Coloca cerillas en casilla 3 「3」.",
         "Ecuación correcta: 1+9=10"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 6.",
-        "Placez des allumettes sur le symbole 3.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 6 「8」.",
+        "Placez des allumettes sur case 3 「3」.",
         "Équation correcte : 1+9=10"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 6 weg.",
-        "Lege Streichhölzer auf das Symbol 3.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 6 「8」 weg.",
+        "Lege Streichhölzer auf Feld 3 「3」.",
         "Richtige Gleichung: 1+9=10"
       ]
     },
@@ -35608,38 +35608,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "6번째 기호에서 막대를 빼야 해요.",
-        "막대를 1번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 6번째 「9」에서 막대를 빼야 해요.",
+        "막대를 1번째 「9」에 놓아야 해요.",
         "정답 식: 8+5=13"
       ],
       "en": [
-        "Take matchsticks away from symbol 6.",
-        "Place matchsticks on symbol 1.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 6 「9」.",
+        "Place matchsticks on cell 1 「9」.",
         "Answer: 8+5=13"
       ],
       "ja": [
-        "6番目の記号から棒を取り除きます。",
-        "1番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。6番目「9」から棒を取り除きます。",
+        "1番目「9」に棒を置きます。",
         "正解の式：8+5=13"
       ],
       "zh": [
-        "需要从第6个符号上拿走火柴棒。",
-        "需要把火柴棒放到第1个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第6格「9」拿走火柴棒。",
+        "需要把火柴棒放到第1格「9」。",
         "正确算式：8+5=13"
       ],
       "es": [
-        "Quita cerillas del símbolo 6.",
-        "Coloca cerillas en el símbolo 1.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 6 「9」.",
+        "Coloca cerillas en casilla 1 「9」.",
         "Ecuación correcta: 8+5=13"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 6.",
-        "Placez des allumettes sur le symbole 1.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 6 「9」.",
+        "Placez des allumettes sur case 1 「9」.",
         "Équation correcte : 8+5=13"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 6 weg.",
-        "Lege Streichhölzer auf das Symbol 1.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 6 「9」 weg.",
+        "Lege Streichhölzer auf Feld 1 「9」.",
         "Richtige Gleichung: 8+5=13"
       ]
     },
@@ -35673,38 +35673,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "6번째 기호에서 막대를 빼야 해요.",
-        "막대를 2번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 6번째 「6」에서 막대를 빼야 해요.",
+        "막대를 2번째 「−」에 놓아야 해요.",
         "정답 식: 8+7=15"
       ],
       "en": [
-        "Take matchsticks away from symbol 6.",
-        "Place matchsticks on symbol 2.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 6 「6」.",
+        "Place matchsticks on cell 2 「−」.",
         "Answer: 8+7=15"
       ],
       "ja": [
-        "6番目の記号から棒を取り除きます。",
-        "2番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。6番目「6」から棒を取り除きます。",
+        "2番目「−」に棒を置きます。",
         "正解の式：8+7=15"
       ],
       "zh": [
-        "需要从第6个符号上拿走火柴棒。",
-        "需要把火柴棒放到第2个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第6格「6」拿走火柴棒。",
+        "需要把火柴棒放到第2格「−」。",
         "正确算式：8+7=15"
       ],
       "es": [
-        "Quita cerillas del símbolo 6.",
-        "Coloca cerillas en el símbolo 2.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 6 「6」.",
+        "Coloca cerillas en casilla 2 「−」.",
         "Ecuación correcta: 8+7=15"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 6.",
-        "Placez des allumettes sur le symbole 2.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 6 「6」.",
+        "Placez des allumettes sur case 2 「−」.",
         "Équation correcte : 8+7=15"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 6 weg.",
-        "Lege Streichhölzer auf das Symbol 2.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 6 「6」 weg.",
+        "Lege Streichhölzer auf Feld 2 「−」.",
         "Richtige Gleichung: 8+7=15"
       ]
     },
@@ -35737,38 +35737,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "3번째 기호에서 막대를 빼야 해요.",
-        "막대를 5번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 3번째 「9」에서 막대를 빼야 해요.",
+        "막대를 5번째 「0」에 놓아야 해요.",
         "정답 식: 5+3=8"
       ],
       "en": [
-        "Take matchsticks away from symbol 3.",
-        "Place matchsticks on symbol 5.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 3 「9」.",
+        "Place matchsticks on cell 5 「0」.",
         "Answer: 5+3=8"
       ],
       "ja": [
-        "3番目の記号から棒を取り除きます。",
-        "5番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。3番目「9」から棒を取り除きます。",
+        "5番目「0」に棒を置きます。",
         "正解の式：5+3=8"
       ],
       "zh": [
-        "需要从第3个符号上拿走火柴棒。",
-        "需要把火柴棒放到第5个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第3格「9」拿走火柴棒。",
+        "需要把火柴棒放到第5格「0」。",
         "正确算式：5+3=8"
       ],
       "es": [
-        "Quita cerillas del símbolo 3.",
-        "Coloca cerillas en el símbolo 5.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 3 「9」.",
+        "Coloca cerillas en casilla 5 「0」.",
         "Ecuación correcta: 5+3=8"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 3.",
-        "Placez des allumettes sur le symbole 5.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 3 「9」.",
+        "Placez des allumettes sur case 5 「0」.",
         "Équation correcte : 5+3=8"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 3 weg.",
-        "Lege Streichhölzer auf das Symbol 5.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 3 「9」 weg.",
+        "Lege Streichhölzer auf Feld 5 「0」.",
         "Richtige Gleichung: 5+3=8"
       ]
     },
@@ -35802,38 +35802,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "5번째 기호에서 막대를 빼야 해요.",
-        "막대를 1번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 5번째 「7」에서 막대를 빼야 해요.",
+        "막대를 1번째 「3」에 놓아야 해요.",
         "정답 식: 9+2=11"
       ],
       "en": [
-        "Take matchsticks away from symbol 5.",
-        "Place matchsticks on symbol 1.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 5 「7」.",
+        "Place matchsticks on cell 1 「3」.",
         "Answer: 9+2=11"
       ],
       "ja": [
-        "5番目の記号から棒を取り除きます。",
-        "1番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。5番目「7」から棒を取り除きます。",
+        "1番目「3」に棒を置きます。",
         "正解の式：9+2=11"
       ],
       "zh": [
-        "需要从第5个符号上拿走火柴棒。",
-        "需要把火柴棒放到第1个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第5格「7」拿走火柴棒。",
+        "需要把火柴棒放到第1格「3」。",
         "正确算式：9+2=11"
       ],
       "es": [
-        "Quita cerillas del símbolo 5.",
-        "Coloca cerillas en el símbolo 1.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 5 「7」.",
+        "Coloca cerillas en casilla 1 「3」.",
         "Ecuación correcta: 9+2=11"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 5.",
-        "Placez des allumettes sur le symbole 1.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 5 「7」.",
+        "Placez des allumettes sur case 1 「3」.",
         "Équation correcte : 9+2=11"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 5 weg.",
-        "Lege Streichhölzer auf das Symbol 1.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 5 「7」 weg.",
+        "Lege Streichhölzer auf Feld 1 「3」.",
         "Richtige Gleichung: 9+2=11"
       ]
     },
@@ -35867,38 +35867,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "6번째 기호에서 막대를 빼야 해요.",
-        "막대를 3번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 6번째 「7」에서 막대를 빼야 해요.",
+        "막대를 3번째 「0」에 놓아야 해요.",
         "정답 식: 3+8=11"
       ],
       "en": [
-        "Take matchsticks away from symbol 6.",
-        "Place matchsticks on symbol 3.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 6 「7」.",
+        "Place matchsticks on cell 3 「0」.",
         "Answer: 3+8=11"
       ],
       "ja": [
-        "6番目の記号から棒を取り除きます。",
-        "3番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。6番目「7」から棒を取り除きます。",
+        "3番目「0」に棒を置きます。",
         "正解の式：3+8=11"
       ],
       "zh": [
-        "需要从第6个符号上拿走火柴棒。",
-        "需要把火柴棒放到第3个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第6格「7」拿走火柴棒。",
+        "需要把火柴棒放到第3格「0」。",
         "正确算式：3+8=11"
       ],
       "es": [
-        "Quita cerillas del símbolo 6.",
-        "Coloca cerillas en el símbolo 3.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 6 「7」.",
+        "Coloca cerillas en casilla 3 「0」.",
         "Ecuación correcta: 3+8=11"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 6.",
-        "Placez des allumettes sur le symbole 3.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 6 「7」.",
+        "Placez des allumettes sur case 3 「0」.",
         "Équation correcte : 3+8=11"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 6 weg.",
-        "Lege Streichhölzer auf das Symbol 3.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 6 「7」 weg.",
+        "Lege Streichhölzer auf Feld 3 「0」.",
         "Richtige Gleichung: 3+8=11"
       ]
     },
@@ -35932,38 +35932,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "6번째 기호에서 막대를 빼야 해요.",
-        "막대를 1번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 6번째 「6」에서 막대를 빼야 해요.",
+        "막대를 1번째 「5」에 놓아야 해요.",
         "정답 식: 9+6=15"
       ],
       "en": [
-        "Take matchsticks away from symbol 6.",
-        "Place matchsticks on symbol 1.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 6 「6」.",
+        "Place matchsticks on cell 1 「5」.",
         "Answer: 9+6=15"
       ],
       "ja": [
-        "6番目の記号から棒を取り除きます。",
-        "1番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。6番目「6」から棒を取り除きます。",
+        "1番目「5」に棒を置きます。",
         "正解の式：9+6=15"
       ],
       "zh": [
-        "需要从第6个符号上拿走火柴棒。",
-        "需要把火柴棒放到第1个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第6格「6」拿走火柴棒。",
+        "需要把火柴棒放到第1格「5」。",
         "正确算式：9+6=15"
       ],
       "es": [
-        "Quita cerillas del símbolo 6.",
-        "Coloca cerillas en el símbolo 1.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 6 「6」.",
+        "Coloca cerillas en casilla 1 「5」.",
         "Ecuación correcta: 9+6=15"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 6.",
-        "Placez des allumettes sur le symbole 1.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 6 「6」.",
+        "Placez des allumettes sur case 1 「5」.",
         "Équation correcte : 9+6=15"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 6 weg.",
-        "Lege Streichhölzer auf das Symbol 1.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 6 「6」 weg.",
+        "Lege Streichhölzer auf Feld 1 「5」.",
         "Richtige Gleichung: 9+6=15"
       ]
     },
@@ -35996,38 +35996,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "2번째 기호에서 막대를 빼야 해요.",
-        "막대를 1번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 2번째 「+」에서 막대를 빼야 해요.",
+        "막대를 1번째 「6」에 놓아야 해요.",
         "정답 식: 8−6=2"
       ],
       "en": [
-        "Take matchsticks away from symbol 2.",
-        "Place matchsticks on symbol 1.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 2 「+」.",
+        "Place matchsticks on cell 1 「6」.",
         "Answer: 8−6=2"
       ],
       "ja": [
-        "2番目の記号から棒を取り除きます。",
-        "1番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。2番目「+」から棒を取り除きます。",
+        "1番目「6」に棒を置きます。",
         "正解の式：8−6=2"
       ],
       "zh": [
-        "需要从第2个符号上拿走火柴棒。",
-        "需要把火柴棒放到第1个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第2格「+」拿走火柴棒。",
+        "需要把火柴棒放到第1格「6」。",
         "正确算式：8−6=2"
       ],
       "es": [
-        "Quita cerillas del símbolo 2.",
-        "Coloca cerillas en el símbolo 1.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 2 「+」.",
+        "Coloca cerillas en casilla 1 「6」.",
         "Ecuación correcta: 8−6=2"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 2.",
-        "Placez des allumettes sur le symbole 1.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 2 「+」.",
+        "Placez des allumettes sur case 1 「6」.",
         "Équation correcte : 8−6=2"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 2 weg.",
-        "Lege Streichhölzer auf das Symbol 1.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 2 「+」 weg.",
+        "Lege Streichhölzer auf Feld 1 「6」.",
         "Richtige Gleichung: 8−6=2"
       ]
     },
@@ -36061,38 +36061,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "3번째 기호에서 막대를 빼야 해요.",
-        "막대를 4번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 3번째 「+」에서 막대를 빼야 해요.",
+        "막대를 4번째 「5」에 놓아야 해요.",
         "정답 식: 14−6=8"
       ],
       "en": [
-        "Take matchsticks away from symbol 3.",
-        "Place matchsticks on symbol 4.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 3 「+」.",
+        "Place matchsticks on cell 4 「5」.",
         "Answer: 14−6=8"
       ],
       "ja": [
-        "3番目の記号から棒を取り除きます。",
-        "4番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。3番目「+」から棒を取り除きます。",
+        "4番目「5」に棒を置きます。",
         "正解の式：14−6=8"
       ],
       "zh": [
-        "需要从第3个符号上拿走火柴棒。",
-        "需要把火柴棒放到第4个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第3格「+」拿走火柴棒。",
+        "需要把火柴棒放到第4格「5」。",
         "正确算式：14−6=8"
       ],
       "es": [
-        "Quita cerillas del símbolo 3.",
-        "Coloca cerillas en el símbolo 4.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 3 「+」.",
+        "Coloca cerillas en casilla 4 「5」.",
         "Ecuación correcta: 14−6=8"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 3.",
-        "Placez des allumettes sur le symbole 4.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 3 「+」.",
+        "Placez des allumettes sur case 4 「5」.",
         "Équation correcte : 14−6=8"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 3 weg.",
-        "Lege Streichhölzer auf das Symbol 4.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 3 「+」 weg.",
+        "Lege Streichhölzer auf Feld 4 「5」.",
         "Richtige Gleichung: 14−6=8"
       ]
     },
@@ -36126,38 +36126,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "6번째 기호에서 막대를 빼야 해요.",
-        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 6번째 「5」에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 칸 안에서 옮겨요.",
         "정답 식: 5+8=13"
       ],
       "en": [
-        "Take matchsticks away from symbol 6.",
-        "Move that matchstick within the same symbol.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 6 「5」.",
+        "Move that matchstick within the same cell.",
         "Answer: 5+8=13"
       ],
       "ja": [
-        "6番目の記号から棒を取り除きます。",
-        "取った棒は同じ記号の中で動かします。",
+        "左から数字と記号をひとマスずつ数えます。6番目「5」から棒を取り除きます。",
+        "取った棒は同じマスの中で動かします。",
         "正解の式：5+8=13"
       ],
       "zh": [
-        "需要从第6个符号上拿走火柴棒。",
-        "把拿走的火柴棒在同一个符号内移动。",
+        "从左边开始，数字和运算符各算一格。需要从第6格「5」拿走火柴棒。",
+        "把拿走的火柴棒在同一格内移动。",
         "正确算式：5+8=13"
       ],
       "es": [
-        "Quita cerillas del símbolo 6.",
-        "Mueve la cerilla dentro del mismo símbolo.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 6 「5」.",
+        "Mueve la cerilla dentro de la misma casilla.",
         "Ecuación correcta: 5+8=13"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 6.",
-        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 6 「5」.",
+        "Déplacez l'allumette à l'intérieur de la même case.",
         "Équation correcte : 5+8=13"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 6 weg.",
-        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 6 「5」 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Feldes.",
         "Richtige Gleichung: 5+8=13"
       ]
     },
@@ -36192,38 +36192,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "3번째 기호에서 막대를 빼야 해요.",
-        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 3번째 「3」에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 칸 안에서 옮겨요.",
         "정답 식: 9+22=31"
       ],
       "en": [
-        "Take matchsticks away from symbol 3.",
-        "Move that matchstick within the same symbol.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 3 「3」.",
+        "Move that matchstick within the same cell.",
         "Answer: 9+22=31"
       ],
       "ja": [
-        "3番目の記号から棒を取り除きます。",
-        "取った棒は同じ記号の中で動かします。",
+        "左から数字と記号をひとマスずつ数えます。3番目「3」から棒を取り除きます。",
+        "取った棒は同じマスの中で動かします。",
         "正解の式：9+22=31"
       ],
       "zh": [
-        "需要从第3个符号上拿走火柴棒。",
-        "把拿走的火柴棒在同一个符号内移动。",
+        "从左边开始，数字和运算符各算一格。需要从第3格「3」拿走火柴棒。",
+        "把拿走的火柴棒在同一格内移动。",
         "正确算式：9+22=31"
       ],
       "es": [
-        "Quita cerillas del símbolo 3.",
-        "Mueve la cerilla dentro del mismo símbolo.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 3 「3」.",
+        "Mueve la cerilla dentro de la misma casilla.",
         "Ecuación correcta: 9+22=31"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 3.",
-        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 3 「3」.",
+        "Déplacez l'allumette à l'intérieur de la même case.",
         "Équation correcte : 9+22=31"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 3 weg.",
-        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 3 「3」 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Feldes.",
         "Richtige Gleichung: 9+22=31"
       ]
     },
@@ -36258,38 +36258,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "6번째 기호에서 막대를 빼야 해요.",
-        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 6번째 「5」에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 칸 안에서 옮겨요.",
         "정답 식: 5+31=36"
       ],
       "en": [
-        "Take matchsticks away from symbol 6.",
-        "Move that matchstick within the same symbol.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 6 「5」.",
+        "Move that matchstick within the same cell.",
         "Answer: 5+31=36"
       ],
       "ja": [
-        "6番目の記号から棒を取り除きます。",
-        "取った棒は同じ記号の中で動かします。",
+        "左から数字と記号をひとマスずつ数えます。6番目「5」から棒を取り除きます。",
+        "取った棒は同じマスの中で動かします。",
         "正解の式：5+31=36"
       ],
       "zh": [
-        "需要从第6个符号上拿走火柴棒。",
-        "把拿走的火柴棒在同一个符号内移动。",
+        "从左边开始，数字和运算符各算一格。需要从第6格「5」拿走火柴棒。",
+        "把拿走的火柴棒在同一格内移动。",
         "正确算式：5+31=36"
       ],
       "es": [
-        "Quita cerillas del símbolo 6.",
-        "Mueve la cerilla dentro del mismo símbolo.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 6 「5」.",
+        "Mueve la cerilla dentro de la misma casilla.",
         "Ecuación correcta: 5+31=36"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 6.",
-        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 6 「5」.",
+        "Déplacez l'allumette à l'intérieur de la même case.",
         "Équation correcte : 5+31=36"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 6 weg.",
-        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 6 「5」 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Feldes.",
         "Richtige Gleichung: 5+31=36"
       ]
     },
@@ -36323,38 +36323,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "5번째 기호에서 막대를 빼야 해요.",
-        "막대를 1번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 5번째 「7」에서 막대를 빼야 해요.",
+        "막대를 1번째 「9」에 놓아야 해요.",
         "정답 식: 8+9=17"
       ],
       "en": [
-        "Take matchsticks away from symbol 5.",
-        "Place matchsticks on symbol 1.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 5 「7」.",
+        "Place matchsticks on cell 1 「9」.",
         "Answer: 8+9=17"
       ],
       "ja": [
-        "5番目の記号から棒を取り除きます。",
-        "1番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。5番目「7」から棒を取り除きます。",
+        "1番目「9」に棒を置きます。",
         "正解の式：8+9=17"
       ],
       "zh": [
-        "需要从第5个符号上拿走火柴棒。",
-        "需要把火柴棒放到第1个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第5格「7」拿走火柴棒。",
+        "需要把火柴棒放到第1格「9」。",
         "正确算式：8+9=17"
       ],
       "es": [
-        "Quita cerillas del símbolo 5.",
-        "Coloca cerillas en el símbolo 1.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 5 「7」.",
+        "Coloca cerillas en casilla 1 「9」.",
         "Ecuación correcta: 8+9=17"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 5.",
-        "Placez des allumettes sur le symbole 1.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 5 「7」.",
+        "Placez des allumettes sur case 1 「9」.",
         "Équation correcte : 8+9=17"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 5 weg.",
-        "Lege Streichhölzer auf das Symbol 1.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 5 「7」 weg.",
+        "Lege Streichhölzer auf Feld 1 「9」.",
         "Richtige Gleichung: 8+9=17"
       ]
     },
@@ -36389,38 +36389,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "2번째 기호에서 막대를 빼야 해요.",
-        "막대를 1번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 2번째 「7」에서 막대를 빼야 해요.",
+        "막대를 1번째 「5」에 놓아야 해요.",
         "정답 식: 61+3=64"
       ],
       "en": [
-        "Take matchsticks away from symbol 2.",
-        "Place matchsticks on symbol 1.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 2 「7」.",
+        "Place matchsticks on cell 1 「5」.",
         "Answer: 61+3=64"
       ],
       "ja": [
-        "2番目の記号から棒を取り除きます。",
-        "1番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。2番目「7」から棒を取り除きます。",
+        "1番目「5」に棒を置きます。",
         "正解の式：61+3=64"
       ],
       "zh": [
-        "需要从第2个符号上拿走火柴棒。",
-        "需要把火柴棒放到第1个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第2格「7」拿走火柴棒。",
+        "需要把火柴棒放到第1格「5」。",
         "正确算式：61+3=64"
       ],
       "es": [
-        "Quita cerillas del símbolo 2.",
-        "Coloca cerillas en el símbolo 1.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 2 「7」.",
+        "Coloca cerillas en casilla 1 「5」.",
         "Ecuación correcta: 61+3=64"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 2.",
-        "Placez des allumettes sur le symbole 1.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 2 「7」.",
+        "Placez des allumettes sur case 1 「5」.",
         "Équation correcte : 61+3=64"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 2 weg.",
-        "Lege Streichhölzer auf das Symbol 1.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 2 「7」 weg.",
+        "Lege Streichhölzer auf Feld 1 「5」.",
         "Richtige Gleichung: 61+3=64"
       ]
     },
@@ -36455,38 +36455,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "2번째 기호에서 막대를 빼야 해요.",
-        "막대를 6번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 2번째 「8」에서 막대를 빼야 해요.",
+        "막대를 6번째 「6」에 놓아야 해요.",
         "정답 식: 86+1=87"
       ],
       "en": [
-        "Take matchsticks away from symbol 2.",
-        "Place matchsticks on symbol 6.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 2 「8」.",
+        "Place matchsticks on cell 6 「6」.",
         "Answer: 86+1=87"
       ],
       "ja": [
-        "2番目の記号から棒を取り除きます。",
-        "6番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。2番目「8」から棒を取り除きます。",
+        "6番目「6」に棒を置きます。",
         "正解の式：86+1=87"
       ],
       "zh": [
-        "需要从第2个符号上拿走火柴棒。",
-        "需要把火柴棒放到第6个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第2格「8」拿走火柴棒。",
+        "需要把火柴棒放到第6格「6」。",
         "正确算式：86+1=87"
       ],
       "es": [
-        "Quita cerillas del símbolo 2.",
-        "Coloca cerillas en el símbolo 6.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 2 「8」.",
+        "Coloca cerillas en casilla 6 「6」.",
         "Ecuación correcta: 86+1=87"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 2.",
-        "Placez des allumettes sur le symbole 6.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 2 「8」.",
+        "Placez des allumettes sur case 6 「6」.",
         "Équation correcte : 86+1=87"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 2 weg.",
-        "Lege Streichhölzer auf das Symbol 6.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 2 「8」 weg.",
+        "Lege Streichhölzer auf Feld 6 「6」.",
         "Richtige Gleichung: 86+1=87"
       ]
     },
@@ -36520,38 +36520,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "6번째 기호에서 막대를 빼야 해요.",
-        "막대를 3번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 6번째 「7」에서 막대를 빼야 해요.",
+        "막대를 3번째 「5」에 놓아야 해요.",
         "정답 식: 5+6=11"
       ],
       "en": [
-        "Take matchsticks away from symbol 6.",
-        "Place matchsticks on symbol 3.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 6 「7」.",
+        "Place matchsticks on cell 3 「5」.",
         "Answer: 5+6=11"
       ],
       "ja": [
-        "6番目の記号から棒を取り除きます。",
-        "3番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。6番目「7」から棒を取り除きます。",
+        "3番目「5」に棒を置きます。",
         "正解の式：5+6=11"
       ],
       "zh": [
-        "需要从第6个符号上拿走火柴棒。",
-        "需要把火柴棒放到第3个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第6格「7」拿走火柴棒。",
+        "需要把火柴棒放到第3格「5」。",
         "正确算式：5+6=11"
       ],
       "es": [
-        "Quita cerillas del símbolo 6.",
-        "Coloca cerillas en el símbolo 3.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 6 「7」.",
+        "Coloca cerillas en casilla 3 「5」.",
         "Ecuación correcta: 5+6=11"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 6.",
-        "Placez des allumettes sur le symbole 3.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 6 「7」.",
+        "Placez des allumettes sur case 3 「5」.",
         "Équation correcte : 5+6=11"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 6 weg.",
-        "Lege Streichhölzer auf das Symbol 3.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 6 「7」 weg.",
+        "Lege Streichhölzer auf Feld 3 「5」.",
         "Richtige Gleichung: 5+6=11"
       ]
     },
@@ -36585,38 +36585,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "6번째 기호에서 막대를 빼야 해요.",
-        "막대를 4번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 6번째 「6」에서 막대를 빼야 해요.",
+        "막대를 4번째 「3」에 놓아야 해요.",
         "정답 식: 14−9=5"
       ],
       "en": [
-        "Take matchsticks away from symbol 6.",
-        "Place matchsticks on symbol 4.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 6 「6」.",
+        "Place matchsticks on cell 4 「3」.",
         "Answer: 14−9=5"
       ],
       "ja": [
-        "6番目の記号から棒を取り除きます。",
-        "4番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。6番目「6」から棒を取り除きます。",
+        "4番目「3」に棒を置きます。",
         "正解の式：14−9=5"
       ],
       "zh": [
-        "需要从第6个符号上拿走火柴棒。",
-        "需要把火柴棒放到第4个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第6格「6」拿走火柴棒。",
+        "需要把火柴棒放到第4格「3」。",
         "正确算式：14−9=5"
       ],
       "es": [
-        "Quita cerillas del símbolo 6.",
-        "Coloca cerillas en el símbolo 4.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 6 「6」.",
+        "Coloca cerillas en casilla 4 「3」.",
         "Ecuación correcta: 14−9=5"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 6.",
-        "Placez des allumettes sur le symbole 4.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 6 「6」.",
+        "Placez des allumettes sur case 4 「3」.",
         "Équation correcte : 14−9=5"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 6 weg.",
-        "Lege Streichhölzer auf das Symbol 4.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 6 「6」 weg.",
+        "Lege Streichhölzer auf Feld 4 「3」.",
         "Richtige Gleichung: 14−9=5"
       ]
     },
@@ -36650,38 +36650,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1번째 기호에서 막대를 빼야 해요.",
-        "막대를 6번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「7」에서 막대를 빼야 해요.",
+        "막대를 6번째 「1」에 놓아야 해요.",
         "정답 식: 11−4=7"
       ],
       "en": [
-        "Take matchsticks away from symbol 1.",
-        "Place matchsticks on symbol 6.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「7」.",
+        "Place matchsticks on cell 6 「1」.",
         "Answer: 11−4=7"
       ],
       "ja": [
-        "1番目の記号から棒を取り除きます。",
-        "6番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。1番目「7」から棒を取り除きます。",
+        "6番目「1」に棒を置きます。",
         "正解の式：11−4=7"
       ],
       "zh": [
-        "需要从第1个符号上拿走火柴棒。",
-        "需要把火柴棒放到第6个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第1格「7」拿走火柴棒。",
+        "需要把火柴棒放到第6格「1」。",
         "正确算式：11−4=7"
       ],
       "es": [
-        "Quita cerillas del símbolo 1.",
-        "Coloca cerillas en el símbolo 6.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「7」.",
+        "Coloca cerillas en casilla 6 「1」.",
         "Ecuación correcta: 11−4=7"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 1.",
-        "Placez des allumettes sur le symbole 6.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「7」.",
+        "Placez des allumettes sur case 6 「1」.",
         "Équation correcte : 11−4=7"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 1 weg.",
-        "Lege Streichhölzer auf das Symbol 6.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「7」 weg.",
+        "Lege Streichhölzer auf Feld 6 「1」.",
         "Richtige Gleichung: 11−4=7"
       ]
     },
@@ -36716,38 +36716,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1번째 기호에서 막대를 빼야 해요.",
-        "막대를 7번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「8」에서 막대를 빼야 해요.",
+        "막대를 7번째 「1」에 놓아야 해요.",
         "정답 식: 6+31=37"
       ],
       "en": [
-        "Take matchsticks away from symbol 1.",
-        "Place matchsticks on symbol 7.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「8」.",
+        "Place matchsticks on cell 7 「1」.",
         "Answer: 6+31=37"
       ],
       "ja": [
-        "1番目の記号から棒を取り除きます。",
-        "7番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。1番目「8」から棒を取り除きます。",
+        "7番目「1」に棒を置きます。",
         "正解の式：6+31=37"
       ],
       "zh": [
-        "需要从第1个符号上拿走火柴棒。",
-        "需要把火柴棒放到第7个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第1格「8」拿走火柴棒。",
+        "需要把火柴棒放到第7格「1」。",
         "正确算式：6+31=37"
       ],
       "es": [
-        "Quita cerillas del símbolo 1.",
-        "Coloca cerillas en el símbolo 7.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「8」.",
+        "Coloca cerillas en casilla 7 「1」.",
         "Ecuación correcta: 6+31=37"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 1.",
-        "Placez des allumettes sur le symbole 7.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「8」.",
+        "Placez des allumettes sur case 7 「1」.",
         "Équation correcte : 6+31=37"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 1 weg.",
-        "Lege Streichhölzer auf das Symbol 7.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「8」 weg.",
+        "Lege Streichhölzer auf Feld 7 「1」.",
         "Richtige Gleichung: 6+31=37"
       ]
     },
@@ -36782,38 +36782,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "5번째 기호에서 막대를 빼야 해요.",
-        "막대를 4번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 5번째 「8」에서 막대를 빼야 해요.",
+        "막대를 4번째 「6」에 놓아야 해요.",
         "정답 식: 90−86=4"
       ],
       "en": [
-        "Take matchsticks away from symbol 5.",
-        "Place matchsticks on symbol 4.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 5 「8」.",
+        "Place matchsticks on cell 4 「6」.",
         "Answer: 90−86=4"
       ],
       "ja": [
-        "5番目の記号から棒を取り除きます。",
-        "4番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。5番目「8」から棒を取り除きます。",
+        "4番目「6」に棒を置きます。",
         "正解の式：90−86=4"
       ],
       "zh": [
-        "需要从第5个符号上拿走火柴棒。",
-        "需要把火柴棒放到第4个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第5格「8」拿走火柴棒。",
+        "需要把火柴棒放到第4格「6」。",
         "正确算式：90−86=4"
       ],
       "es": [
-        "Quita cerillas del símbolo 5.",
-        "Coloca cerillas en el símbolo 4.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 5 「8」.",
+        "Coloca cerillas en casilla 4 「6」.",
         "Ecuación correcta: 90−86=4"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 5.",
-        "Placez des allumettes sur le symbole 4.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 5 「8」.",
+        "Placez des allumettes sur case 4 「6」.",
         "Équation correcte : 90−86=4"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 5 weg.",
-        "Lege Streichhölzer auf das Symbol 4.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 5 「8」 weg.",
+        "Lege Streichhölzer auf Feld 4 「6」.",
         "Richtige Gleichung: 90−86=4"
       ]
     },
@@ -36848,38 +36848,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "4번째 기호에서 막대를 빼야 해요.",
-        "막대를 3번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 4번째 「7」에서 막대를 빼야 해요.",
+        "막대를 3번째 「−」에 놓아야 해요.",
         "정답 식: 34+1=35"
       ],
       "en": [
-        "Take matchsticks away from symbol 4.",
-        "Place matchsticks on symbol 3.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 4 「7」.",
+        "Place matchsticks on cell 3 「−」.",
         "Answer: 34+1=35"
       ],
       "ja": [
-        "4番目の記号から棒を取り除きます。",
-        "3番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。4番目「7」から棒を取り除きます。",
+        "3番目「−」に棒を置きます。",
         "正解の式：34+1=35"
       ],
       "zh": [
-        "需要从第4个符号上拿走火柴棒。",
-        "需要把火柴棒放到第3个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第4格「7」拿走火柴棒。",
+        "需要把火柴棒放到第3格「−」。",
         "正确算式：34+1=35"
       ],
       "es": [
-        "Quita cerillas del símbolo 4.",
-        "Coloca cerillas en el símbolo 3.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 4 「7」.",
+        "Coloca cerillas en casilla 3 「−」.",
         "Ecuación correcta: 34+1=35"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 4.",
-        "Placez des allumettes sur le symbole 3.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 4 「7」.",
+        "Placez des allumettes sur case 3 「−」.",
         "Équation correcte : 34+1=35"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 4 weg.",
-        "Lege Streichhölzer auf das Symbol 3.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 4 「7」 weg.",
+        "Lege Streichhölzer auf Feld 3 「−」.",
         "Richtige Gleichung: 34+1=35"
       ]
     },
@@ -36914,38 +36914,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "5번째 기호에서 막대를 빼야 해요.",
-        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 5번째 「6」에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 칸 안에서 옮겨요.",
         "정답 식: 8−8+0=0"
       ],
       "en": [
-        "Take matchsticks away from symbol 5.",
-        "Move that matchstick within the same symbol.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 5 「6」.",
+        "Move that matchstick within the same cell.",
         "Answer: 8−8+0=0"
       ],
       "ja": [
-        "5番目の記号から棒を取り除きます。",
-        "取った棒は同じ記号の中で動かします。",
+        "左から数字と記号をひとマスずつ数えます。5番目「6」から棒を取り除きます。",
+        "取った棒は同じマスの中で動かします。",
         "正解の式：8−8+0=0"
       ],
       "zh": [
-        "需要从第5个符号上拿走火柴棒。",
-        "把拿走的火柴棒在同一个符号内移动。",
+        "从左边开始，数字和运算符各算一格。需要从第5格「6」拿走火柴棒。",
+        "把拿走的火柴棒在同一格内移动。",
         "正确算式：8−8+0=0"
       ],
       "es": [
-        "Quita cerillas del símbolo 5.",
-        "Mueve la cerilla dentro del mismo símbolo.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 5 「6」.",
+        "Mueve la cerilla dentro de la misma casilla.",
         "Ecuación correcta: 8−8+0=0"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 5.",
-        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 5 「6」.",
+        "Déplacez l'allumette à l'intérieur de la même case.",
         "Équation correcte : 8−8+0=0"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 5 weg.",
-        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 5 「6」 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Feldes.",
         "Richtige Gleichung: 8−8+0=0"
       ]
     },
@@ -36980,38 +36980,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1번째 기호에서 막대를 빼야 해요.",
-        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「5」에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 칸 안에서 옮겨요.",
         "정답 식: 3−5+3=1"
       ],
       "en": [
-        "Take matchsticks away from symbol 1.",
-        "Move that matchstick within the same symbol.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「5」.",
+        "Move that matchstick within the same cell.",
         "Answer: 3−5+3=1"
       ],
       "ja": [
-        "1番目の記号から棒を取り除きます。",
-        "取った棒は同じ記号の中で動かします。",
+        "左から数字と記号をひとマスずつ数えます。1番目「5」から棒を取り除きます。",
+        "取った棒は同じマスの中で動かします。",
         "正解の式：3−5+3=1"
       ],
       "zh": [
-        "需要从第1个符号上拿走火柴棒。",
-        "把拿走的火柴棒在同一个符号内移动。",
+        "从左边开始，数字和运算符各算一格。需要从第1格「5」拿走火柴棒。",
+        "把拿走的火柴棒在同一格内移动。",
         "正确算式：3−5+3=1"
       ],
       "es": [
-        "Quita cerillas del símbolo 1.",
-        "Mueve la cerilla dentro del mismo símbolo.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「5」.",
+        "Mueve la cerilla dentro de la misma casilla.",
         "Ecuación correcta: 3−5+3=1"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 1.",
-        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「5」.",
+        "Déplacez l'allumette à l'intérieur de la même case.",
         "Équation correcte : 3−5+3=1"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 1 weg.",
-        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「5」 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Feldes.",
         "Richtige Gleichung: 3−5+3=1"
       ]
     },
@@ -37047,38 +37047,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "8번째 기호에서 막대를 빼야 해요.",
-        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 8번째 「5」에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 칸 안에서 옮겨요.",
         "정답 식: 2−9+10=3"
       ],
       "en": [
-        "Take matchsticks away from symbol 8.",
-        "Move that matchstick within the same symbol.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 8 「5」.",
+        "Move that matchstick within the same cell.",
         "Answer: 2−9+10=3"
       ],
       "ja": [
-        "8番目の記号から棒を取り除きます。",
-        "取った棒は同じ記号の中で動かします。",
+        "左から数字と記号をひとマスずつ数えます。8番目「5」から棒を取り除きます。",
+        "取った棒は同じマスの中で動かします。",
         "正解の式：2−9+10=3"
       ],
       "zh": [
-        "需要从第8个符号上拿走火柴棒。",
-        "把拿走的火柴棒在同一个符号内移动。",
+        "从左边开始，数字和运算符各算一格。需要从第8格「5」拿走火柴棒。",
+        "把拿走的火柴棒在同一格内移动。",
         "正确算式：2−9+10=3"
       ],
       "es": [
-        "Quita cerillas del símbolo 8.",
-        "Mueve la cerilla dentro del mismo símbolo.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 8 「5」.",
+        "Mueve la cerilla dentro de la misma casilla.",
         "Ecuación correcta: 2−9+10=3"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 8.",
-        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 8 「5」.",
+        "Déplacez l'allumette à l'intérieur de la même case.",
         "Équation correcte : 2−9+10=3"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 8 weg.",
-        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 8 「5」 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Feldes.",
         "Richtige Gleichung: 2−9+10=3"
       ]
     },
@@ -37113,38 +37113,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "3번째 기호에서 막대를 빼야 해요.",
-        "막대를 5번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 3번째 「8」에서 막대를 빼야 해요.",
+        "막대를 5번째 「6」에 놓아야 해요.",
         "정답 식: 1−0+8=9"
       ],
       "en": [
-        "Take matchsticks away from symbol 3.",
-        "Place matchsticks on symbol 5.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 3 「8」.",
+        "Place matchsticks on cell 5 「6」.",
         "Answer: 1−0+8=9"
       ],
       "ja": [
-        "3番目の記号から棒を取り除きます。",
-        "5番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。3番目「8」から棒を取り除きます。",
+        "5番目「6」に棒を置きます。",
         "正解の式：1−0+8=9"
       ],
       "zh": [
-        "需要从第3个符号上拿走火柴棒。",
-        "需要把火柴棒放到第5个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第3格「8」拿走火柴棒。",
+        "需要把火柴棒放到第5格「6」。",
         "正确算式：1−0+8=9"
       ],
       "es": [
-        "Quita cerillas del símbolo 3.",
-        "Coloca cerillas en el símbolo 5.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 3 「8」.",
+        "Coloca cerillas en casilla 5 「6」.",
         "Ecuación correcta: 1−0+8=9"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 3.",
-        "Placez des allumettes sur le symbole 5.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 3 「8」.",
+        "Placez des allumettes sur case 5 「6」.",
         "Équation correcte : 1−0+8=9"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 3 weg.",
-        "Lege Streichhölzer auf das Symbol 5.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 3 「8」 weg.",
+        "Lege Streichhölzer auf Feld 5 「6」.",
         "Richtige Gleichung: 1−0+8=9"
       ]
     },
@@ -37180,38 +37180,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "8번째 기호에서 막대를 빼야 해요.",
-        "막대를 6번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 8번째 「8」에서 막대를 빼야 해요.",
+        "막대를 6번째 「1」에 놓아야 해요.",
         "정답 식: 19−3−7=9"
       ],
       "en": [
-        "Take matchsticks away from symbol 8.",
-        "Place matchsticks on symbol 6.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 8 「8」.",
+        "Place matchsticks on cell 6 「1」.",
         "Answer: 19−3−7=9"
       ],
       "ja": [
-        "8番目の記号から棒を取り除きます。",
-        "6番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。8番目「8」から棒を取り除きます。",
+        "6番目「1」に棒を置きます。",
         "正解の式：19−3−7=9"
       ],
       "zh": [
-        "需要从第8个符号上拿走火柴棒。",
-        "需要把火柴棒放到第6个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第8格「8」拿走火柴棒。",
+        "需要把火柴棒放到第6格「1」。",
         "正确算式：19−3−7=9"
       ],
       "es": [
-        "Quita cerillas del símbolo 8.",
-        "Coloca cerillas en el símbolo 6.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 8 「8」.",
+        "Coloca cerillas en casilla 6 「1」.",
         "Ecuación correcta: 19−3−7=9"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 8.",
-        "Placez des allumettes sur le symbole 6.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 8 「8」.",
+        "Placez des allumettes sur case 6 「1」.",
         "Équation correcte : 19−3−7=9"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 8 weg.",
-        "Lege Streichhölzer auf das Symbol 6.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 8 「8」 weg.",
+        "Lege Streichhölzer auf Feld 6 「1」.",
         "Richtige Gleichung: 19−3−7=9"
       ]
     },
@@ -37247,38 +37247,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1번째 기호에서 막대를 빼야 해요.",
-        "막대를 5번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「6」에서 막대를 빼야 해요.",
+        "막대를 5번째 「−」에 놓아야 해요.",
         "정답 식: 5−11+6=0"
       ],
       "en": [
-        "Take matchsticks away from symbol 1.",
-        "Place matchsticks on symbol 5.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「6」.",
+        "Place matchsticks on cell 5 「−」.",
         "Answer: 5−11+6=0"
       ],
       "ja": [
-        "1番目の記号から棒を取り除きます。",
-        "5番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。1番目「6」から棒を取り除きます。",
+        "5番目「−」に棒を置きます。",
         "正解の式：5−11+6=0"
       ],
       "zh": [
-        "需要从第1个符号上拿走火柴棒。",
-        "需要把火柴棒放到第5个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第1格「6」拿走火柴棒。",
+        "需要把火柴棒放到第5格「−」。",
         "正确算式：5−11+6=0"
       ],
       "es": [
-        "Quita cerillas del símbolo 1.",
-        "Coloca cerillas en el símbolo 5.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「6」.",
+        "Coloca cerillas en casilla 5 「−」.",
         "Ecuación correcta: 5−11+6=0"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 1.",
-        "Placez des allumettes sur le symbole 5.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「6」.",
+        "Placez des allumettes sur case 5 「−」.",
         "Équation correcte : 5−11+6=0"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 1 weg.",
-        "Lege Streichhölzer auf das Symbol 5.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「6」 weg.",
+        "Lege Streichhölzer auf Feld 5 「−」.",
         "Richtige Gleichung: 5−11+6=0"
       ]
     },
@@ -37313,38 +37313,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "3번째 기호에서 막대를 빼야 해요.",
-        "막대를 6번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 3번째 「8」에서 막대를 빼야 해요.",
+        "막대를 6번째 「3」에 놓아야 해요.",
         "정답 식: 2+94=96"
       ],
       "en": [
-        "Take matchsticks away from symbol 3.",
-        "Place matchsticks on symbol 6.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 3 「8」.",
+        "Place matchsticks on cell 6 「3」.",
         "Answer: 2+94=96"
       ],
       "ja": [
-        "3番目の記号から棒を取り除きます。",
-        "6番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。3番目「8」から棒を取り除きます。",
+        "6番目「3」に棒を置きます。",
         "正解の式：2+94=96"
       ],
       "zh": [
-        "需要从第3个符号上拿走火柴棒。",
-        "需要把火柴棒放到第6个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第3格「8」拿走火柴棒。",
+        "需要把火柴棒放到第6格「3」。",
         "正确算式：2+94=96"
       ],
       "es": [
-        "Quita cerillas del símbolo 3.",
-        "Coloca cerillas en el símbolo 6.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 3 「8」.",
+        "Coloca cerillas en casilla 6 「3」.",
         "Ecuación correcta: 2+94=96"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 3.",
-        "Placez des allumettes sur le symbole 6.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 3 「8」.",
+        "Placez des allumettes sur case 6 「3」.",
         "Équation correcte : 2+94=96"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 3 weg.",
-        "Lege Streichhölzer auf das Symbol 6.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 3 「8」 weg.",
+        "Lege Streichhölzer auf Feld 6 「3」.",
         "Richtige Gleichung: 2+94=96"
       ]
     },
@@ -37380,38 +37380,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "4번째 기호에서 막대를 빼야 해요.",
-        "막대를 7번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 4번째 「9」에서 막대를 빼야 해요.",
+        "막대를 7번째 「1」에 놓아야 해요.",
         "정답 식: 17+54=71"
       ],
       "en": [
-        "Take matchsticks away from symbol 4.",
-        "Place matchsticks on symbol 7.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 4 「9」.",
+        "Place matchsticks on cell 7 「1」.",
         "Answer: 17+54=71"
       ],
       "ja": [
-        "4番目の記号から棒を取り除きます。",
-        "7番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。4番目「9」から棒を取り除きます。",
+        "7番目「1」に棒を置きます。",
         "正解の式：17+54=71"
       ],
       "zh": [
-        "需要从第4个符号上拿走火柴棒。",
-        "需要把火柴棒放到第7个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第4格「9」拿走火柴棒。",
+        "需要把火柴棒放到第7格「1」。",
         "正确算式：17+54=71"
       ],
       "es": [
-        "Quita cerillas del símbolo 4.",
-        "Coloca cerillas en el símbolo 7.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 4 「9」.",
+        "Coloca cerillas en casilla 7 「1」.",
         "Ecuación correcta: 17+54=71"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 4.",
-        "Placez des allumettes sur le symbole 7.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 4 「9」.",
+        "Placez des allumettes sur case 7 「1」.",
         "Équation correcte : 17+54=71"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 4 weg.",
-        "Lege Streichhölzer auf das Symbol 7.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 4 「9」 weg.",
+        "Lege Streichhölzer auf Feld 7 「1」.",
         "Richtige Gleichung: 17+54=71"
       ]
     },
@@ -37447,38 +37447,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "4번째 기호에서 막대를 빼야 해요.",
-        "막대를 5번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 4번째 「7」에서 막대를 빼야 해요.",
+        "막대를 5번째 「1」에 놓아야 해요.",
         "정답 식: 30+17=47"
       ],
       "en": [
-        "Take matchsticks away from symbol 4.",
-        "Place matchsticks on symbol 5.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 4 「7」.",
+        "Place matchsticks on cell 5 「1」.",
         "Answer: 30+17=47"
       ],
       "ja": [
-        "4番目の記号から棒を取り除きます。",
-        "5番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。4番目「7」から棒を取り除きます。",
+        "5番目「1」に棒を置きます。",
         "正解の式：30+17=47"
       ],
       "zh": [
-        "需要从第4个符号上拿走火柴棒。",
-        "需要把火柴棒放到第5个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第4格「7」拿走火柴棒。",
+        "需要把火柴棒放到第5格「1」。",
         "正确算式：30+17=47"
       ],
       "es": [
-        "Quita cerillas del símbolo 4.",
-        "Coloca cerillas en el símbolo 5.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 4 「7」.",
+        "Coloca cerillas en casilla 5 「1」.",
         "Ecuación correcta: 30+17=47"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 4.",
-        "Placez des allumettes sur le symbole 5.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 4 「7」.",
+        "Placez des allumettes sur case 5 「1」.",
         "Équation correcte : 30+17=47"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 4 weg.",
-        "Lege Streichhölzer auf das Symbol 5.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 4 「7」 weg.",
+        "Lege Streichhölzer auf Feld 5 「1」.",
         "Richtige Gleichung: 30+17=47"
       ]
     },
@@ -37513,38 +37513,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "2번째 기호에서 막대를 빼야 해요.",
-        "막대를 7번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 2번째 「+」에서 막대를 빼야 해요.",
+        "막대를 7번째 「5」에 놓아야 해요.",
         "정답 식: 8−6+4=6"
       ],
       "en": [
-        "Take matchsticks away from symbol 2.",
-        "Place matchsticks on symbol 7.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 2 「+」.",
+        "Place matchsticks on cell 7 「5」.",
         "Answer: 8−6+4=6"
       ],
       "ja": [
-        "2番目の記号から棒を取り除きます。",
-        "7番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。2番目「+」から棒を取り除きます。",
+        "7番目「5」に棒を置きます。",
         "正解の式：8−6+4=6"
       ],
       "zh": [
-        "需要从第2个符号上拿走火柴棒。",
-        "需要把火柴棒放到第7个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第2格「+」拿走火柴棒。",
+        "需要把火柴棒放到第7格「5」。",
         "正确算式：8−6+4=6"
       ],
       "es": [
-        "Quita cerillas del símbolo 2.",
-        "Coloca cerillas en el símbolo 7.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 2 「+」.",
+        "Coloca cerillas en casilla 7 「5」.",
         "Ecuación correcta: 8−6+4=6"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 2.",
-        "Placez des allumettes sur le symbole 7.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 2 「+」.",
+        "Placez des allumettes sur case 7 「5」.",
         "Équation correcte : 8−6+4=6"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 2 weg.",
-        "Lege Streichhölzer auf das Symbol 7.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 2 「+」 weg.",
+        "Lege Streichhölzer auf Feld 7 「5」.",
         "Richtige Gleichung: 8−6+4=6"
       ]
     },
@@ -37579,38 +37579,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "3번째 기호에서 막대를 빼야 해요.",
-        "막대를 1번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 3번째 「+」에서 막대를 빼야 해요.",
+        "막대를 1번째 「9」에 놓아야 해요.",
         "정답 식: 88−87=1"
       ],
       "en": [
-        "Take matchsticks away from symbol 3.",
-        "Place matchsticks on symbol 1.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 3 「+」.",
+        "Place matchsticks on cell 1 「9」.",
         "Answer: 88−87=1"
       ],
       "ja": [
-        "3番目の記号から棒を取り除きます。",
-        "1番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。3番目「+」から棒を取り除きます。",
+        "1番目「9」に棒を置きます。",
         "正解の式：88−87=1"
       ],
       "zh": [
-        "需要从第3个符号上拿走火柴棒。",
-        "需要把火柴棒放到第1个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第3格「+」拿走火柴棒。",
+        "需要把火柴棒放到第1格「9」。",
         "正确算式：88−87=1"
       ],
       "es": [
-        "Quita cerillas del símbolo 3.",
-        "Coloca cerillas en el símbolo 1.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 3 「+」.",
+        "Coloca cerillas en casilla 1 「9」.",
         "Ecuación correcta: 88−87=1"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 3.",
-        "Placez des allumettes sur le symbole 1.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 3 「+」.",
+        "Placez des allumettes sur case 1 「9」.",
         "Équation correcte : 88−87=1"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 3 weg.",
-        "Lege Streichhölzer auf das Symbol 1.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 3 「+」 weg.",
+        "Lege Streichhölzer auf Feld 1 「9」.",
         "Richtige Gleichung: 88−87=1"
       ]
     },
@@ -37646,38 +37646,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "4번째 기호에서 막대를 빼야 해요.",
-        "막대를 2번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 4번째 「+」에서 막대를 빼야 해요.",
+        "막대를 2번째 「−」에 놓아야 해요.",
         "정답 식: 8+7−11=4"
       ],
       "en": [
-        "Take matchsticks away from symbol 4.",
-        "Place matchsticks on symbol 2.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 4 「+」.",
+        "Place matchsticks on cell 2 「−」.",
         "Answer: 8+7−11=4"
       ],
       "ja": [
-        "4番目の記号から棒を取り除きます。",
-        "2番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。4番目「+」から棒を取り除きます。",
+        "2番目「−」に棒を置きます。",
         "正解の式：8+7−11=4"
       ],
       "zh": [
-        "需要从第4个符号上拿走火柴棒。",
-        "需要把火柴棒放到第2个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第4格「+」拿走火柴棒。",
+        "需要把火柴棒放到第2格「−」。",
         "正确算式：8+7−11=4"
       ],
       "es": [
-        "Quita cerillas del símbolo 4.",
-        "Coloca cerillas en el símbolo 2.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 4 「+」.",
+        "Coloca cerillas en casilla 2 「−」.",
         "Ecuación correcta: 8+7−11=4"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 4.",
-        "Placez des allumettes sur le symbole 2.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 4 「+」.",
+        "Placez des allumettes sur case 2 「−」.",
         "Équation correcte : 8+7−11=4"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 4 weg.",
-        "Lege Streichhölzer auf das Symbol 2.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 4 「+」 weg.",
+        "Lege Streichhölzer auf Feld 2 「−」.",
         "Richtige Gleichung: 8+7−11=4"
       ]
     },
@@ -37712,38 +37712,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "7번째 기호에서 막대를 빼야 해요.",
-        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 7번째 「5」(막대 2개)에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 칸 안에서 옮겨요.",
         "정답 식: 29+3=32"
       ],
       "en": [
-        "Take matchsticks away from symbol 7.",
-        "Move that matchstick within the same symbol.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 7 「5」 (2 sticks).",
+        "Move that matchstick within the same cell.",
         "Answer: 29+3=32"
       ],
       "ja": [
-        "7番目の記号から棒を取り除きます。",
-        "取った棒は同じ記号の中で動かします。",
+        "左から数字と記号をひとマスずつ数えます。7番目「5」（棒2本）から棒を取り除きます。",
+        "取った棒は同じマスの中で動かします。",
         "正解の式：29+3=32"
       ],
       "zh": [
-        "需要从第7个符号上拿走火柴棒。",
-        "把拿走的火柴棒在同一个符号内移动。",
+        "从左边开始，数字和运算符各算一格。需要从第7格「5」（2根）拿走火柴棒。",
+        "把拿走的火柴棒在同一格内移动。",
         "正确算式：29+3=32"
       ],
       "es": [
-        "Quita cerillas del símbolo 7.",
-        "Mueve la cerilla dentro del mismo símbolo.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 7 「5」 (2 cerillas).",
+        "Mueve la cerilla dentro de la misma casilla.",
         "Ecuación correcta: 29+3=32"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 7.",
-        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 7 「5」 (2 allumettes).",
+        "Déplacez l'allumette à l'intérieur de la même case.",
         "Équation correcte : 29+3=32"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 7 weg.",
-        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 7 「5」 (2 Hölzer) weg.",
+        "Verschiebe das Streichholz innerhalb desselben Feldes.",
         "Richtige Gleichung: 29+3=32"
       ]
     },
@@ -37777,38 +37777,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1번째 기호에서 막대를 빼야 해요.",
-        "막대를 1, 3번째 기호에 놓아야 해요. (1번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「6」(막대 2개)에서 막대를 빼야 해요.",
+        "막대를 1번째 「6」, 3번째 「5」에 놓아야 해요. (1번째 「6」는 같은 칸 안에서 옮겨요)",
         "정답 식: 3+9=12"
       ],
       "en": [
-        "Take matchsticks away from symbol 1.",
-        "Place matchsticks on symbols 1, 3. (Symbol 1: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「6」 (2 sticks).",
+        "Place matchsticks on cell 1 「6」, cell 3 「5」. (cell 1 「6」: move within the same cell)",
         "Answer: 3+9=12"
       ],
       "ja": [
-        "1番目の記号から棒を取り除きます。",
-        "1、3番目の記号に棒を置きます。（1番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。1番目「6」（棒2本）から棒を取り除きます。",
+        "1番目「6」、3番目「5」に棒を置きます。（1番目「6」は同じマスの中で動かします）",
         "正解の式：3+9=12"
       ],
       "zh": [
-        "需要从第1个符号上拿走火柴棒。",
-        "需要把火柴棒放到第1、3个符号上。（第1个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第1格「6」（2根）拿走火柴棒。",
+        "需要把火柴棒放到第1格「6」、第3格「5」。（第1格「6」在自身格内移动）",
         "正确算式：3+9=12"
       ],
       "es": [
-        "Quita cerillas del símbolo 1.",
-        "Coloca cerillas en los símbolos 1, 3. (Símbolo 1: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「6」 (2 cerillas).",
+        "Coloca cerillas en casilla 1 「6」, casilla 3 「5」. (casilla 1 「6」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 3+9=12"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 1.",
-        "Placez des allumettes sur les symboles 1, 3. (Symbole 1 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「6」 (2 allumettes).",
+        "Placez des allumettes sur case 1 「6」, case 3 「5」. (case 1 「6」 : déplacement dans la même case)",
         "Équation correcte : 3+9=12"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 1 weg.",
-        "Lege Streichhölzer auf die Symbole 1, 3. (Symbol 1: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「6」 (2 Hölzer) weg.",
+        "Lege Streichhölzer auf Feld 1 「6」, Feld 3 「5」. (Feld 1 「6」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 3+9=12"
       ]
     },
@@ -37844,38 +37844,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "8번째 기호에서 막대를 빼야 해요.",
-        "막대를 4번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 8번째 「8」(막대 2개)에서 막대를 빼야 해요.",
+        "막대를 4번째 「7」(막대 2개)에 놓아야 해요.",
         "정답 식: 11−3−3=5"
       ],
       "en": [
-        "Take matchsticks away from symbol 8.",
-        "Place matchsticks on symbol 4.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 8 「8」 (2 sticks).",
+        "Place matchsticks on cell 4 「7」 (2 sticks).",
         "Answer: 11−3−3=5"
       ],
       "ja": [
-        "8番目の記号から棒を取り除きます。",
-        "4番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。8番目「8」（棒2本）から棒を取り除きます。",
+        "4番目「7」（棒2本）に棒を置きます。",
         "正解の式：11−3−3=5"
       ],
       "zh": [
-        "需要从第8个符号上拿走火柴棒。",
-        "需要把火柴棒放到第4个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第8格「8」（2根）拿走火柴棒。",
+        "需要把火柴棒放到第4格「7」（2根）。",
         "正确算式：11−3−3=5"
       ],
       "es": [
-        "Quita cerillas del símbolo 8.",
-        "Coloca cerillas en el símbolo 4.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 8 「8」 (2 cerillas).",
+        "Coloca cerillas en casilla 4 「7」 (2 cerillas).",
         "Ecuación correcta: 11−3−3=5"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 8.",
-        "Placez des allumettes sur le symbole 4.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 8 「8」 (2 allumettes).",
+        "Placez des allumettes sur case 4 「7」 (2 allumettes).",
         "Équation correcte : 11−3−3=5"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 8 weg.",
-        "Lege Streichhölzer auf das Symbol 4.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 8 「8」 (2 Hölzer) weg.",
+        "Lege Streichhölzer auf Feld 4 「7」 (2 Hölzer).",
         "Richtige Gleichung: 11−3−3=5"
       ]
     },
@@ -37911,38 +37911,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1, 4번째 기호에서 막대를 빼야 해요.",
-        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「2」, 4번째 「2」에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 칸 안에서 옮겨요.",
         "정답 식: 3+13−8=8"
       ],
       "en": [
-        "Take matchsticks away from symbols 1, 4.",
-        "Move that matchstick within the same symbol.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「2」, cell 4 「2」.",
+        "Move that matchstick within the same cell.",
         "Answer: 3+13−8=8"
       ],
       "ja": [
-        "1、4番目の記号から棒を取り除きます。",
-        "取った棒は同じ記号の中で動かします。",
+        "左から数字と記号をひとマスずつ数えます。1番目「2」、4番目「2」から棒を取り除きます。",
+        "取った棒は同じマスの中で動かします。",
         "正解の式：3+13−8=8"
       ],
       "zh": [
-        "需要从第1、4个符号上拿走火柴棒。",
-        "把拿走的火柴棒在同一个符号内移动。",
+        "从左边开始，数字和运算符各算一格。需要从第1格「2」、第4格「2」拿走火柴棒。",
+        "把拿走的火柴棒在同一格内移动。",
         "正确算式：3+13−8=8"
       ],
       "es": [
-        "Quita cerillas de los símbolos 1, 4.",
-        "Mueve la cerilla dentro del mismo símbolo.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「2」, casilla 4 「2」.",
+        "Mueve la cerilla dentro de la misma casilla.",
         "Ecuación correcta: 3+13−8=8"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 1, 4.",
-        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「2」, case 4 「2」.",
+        "Déplacez l'allumette à l'intérieur de la même case.",
         "Équation correcte : 3+13−8=8"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 1, 4 weg.",
-        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「2」, Feld 4 「2」 weg.",
+        "Verschiebe das Streichholz innerhalb desselben Feldes.",
         "Richtige Gleichung: 3+13−8=8"
       ]
     },
@@ -37978,38 +37978,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "3, 8번째 기호에서 막대를 빼야 해요.",
-        "막대를 6, 8번째 기호에 놓아야 해요. (8번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 3번째 「7」, 8번째 「5」에서 막대를 빼야 해요.",
+        "막대를 6번째 「0」, 8번째 「5」에 놓아야 해요. (8번째 「5」는 같은 칸 안에서 옮겨요)",
         "정답 식: 5−10+8=3"
       ],
       "en": [
-        "Take matchsticks away from symbols 3, 8.",
-        "Place matchsticks on symbols 6, 8. (Symbol 8: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 3 「7」, cell 8 「5」.",
+        "Place matchsticks on cell 6 「0」, cell 8 「5」. (cell 8 「5」: move within the same cell)",
         "Answer: 5−10+8=3"
       ],
       "ja": [
-        "3、8番目の記号から棒を取り除きます。",
-        "6、8番目の記号に棒を置きます。（8番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。3番目「7」、8番目「5」から棒を取り除きます。",
+        "6番目「0」、8番目「5」に棒を置きます。（8番目「5」は同じマスの中で動かします）",
         "正解の式：5−10+8=3"
       ],
       "zh": [
-        "需要从第3、8个符号上拿走火柴棒。",
-        "需要把火柴棒放到第6、8个符号上。（第8个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第3格「7」、第8格「5」拿走火柴棒。",
+        "需要把火柴棒放到第6格「0」、第8格「5」。（第8格「5」在自身格内移动）",
         "正确算式：5−10+8=3"
       ],
       "es": [
-        "Quita cerillas de los símbolos 3, 8.",
-        "Coloca cerillas en los símbolos 6, 8. (Símbolo 8: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 3 「7」, casilla 8 「5」.",
+        "Coloca cerillas en casilla 6 「0」, casilla 8 「5」. (casilla 8 「5」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 5−10+8=3"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 3, 8.",
-        "Placez des allumettes sur les symboles 6, 8. (Symbole 8 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 3 「7」, case 8 「5」.",
+        "Placez des allumettes sur case 6 「0」, case 8 「5」. (case 8 「5」 : déplacement dans la même case)",
         "Équation correcte : 5−10+8=3"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 3, 8 weg.",
-        "Lege Streichhölzer auf die Symbole 6, 8. (Symbol 8: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 3 「7」, Feld 8 「5」 weg.",
+        "Lege Streichhölzer auf Feld 6 「0」, Feld 8 「5」. (Feld 8 「5」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 5−10+8=3"
       ]
     },
@@ -38044,38 +38044,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "4, 5번째 기호에서 막대를 빼야 해요.",
-        "막대를 2, 4번째 기호에 놓아야 해요. (4번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 4번째 「5」, 5번째 「=」에서 막대를 빼야 해요.",
+        "막대를 2번째 「−」, 4번째 「5」에 놓아야 해요. (4번째 「5」는 같은 칸 안에서 옮겨요)",
         "정답 식: 2=93−91"
       ],
       "en": [
-        "Take matchsticks away from symbols 4, 5.",
-        "Place matchsticks on symbols 2, 4. (Symbol 4: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 4 「5」, cell 5 「=」.",
+        "Place matchsticks on cell 2 「−」, cell 4 「5」. (cell 4 「5」: move within the same cell)",
         "Answer: 2=93−91"
       ],
       "ja": [
-        "4、5番目の記号から棒を取り除きます。",
-        "2、4番目の記号に棒を置きます。（4番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。4番目「5」、5番目「=」から棒を取り除きます。",
+        "2番目「−」、4番目「5」に棒を置きます。（4番目「5」は同じマスの中で動かします）",
         "正解の式：2=93−91"
       ],
       "zh": [
-        "需要从第4、5个符号上拿走火柴棒。",
-        "需要把火柴棒放到第2、4个符号上。（第4个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第4格「5」、第5格「=」拿走火柴棒。",
+        "需要把火柴棒放到第2格「−」、第4格「5」。（第4格「5」在自身格内移动）",
         "正确算式：2=93−91"
       ],
       "es": [
-        "Quita cerillas de los símbolos 4, 5.",
-        "Coloca cerillas en los símbolos 2, 4. (Símbolo 4: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 4 「5」, casilla 5 「=」.",
+        "Coloca cerillas en casilla 2 「−」, casilla 4 「5」. (casilla 4 「5」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 2=93−91"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 4, 5.",
-        "Placez des allumettes sur les symboles 2, 4. (Symbole 4 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 4 「5」, case 5 「=」.",
+        "Placez des allumettes sur case 2 「−」, case 4 「5」. (case 4 「5」 : déplacement dans la même case)",
         "Équation correcte : 2=93−91"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 4, 5 weg.",
-        "Lege Streichhölzer auf die Symbole 2, 4. (Symbol 4: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 4 「5」, Feld 5 「=」 weg.",
+        "Lege Streichhölzer auf Feld 2 「−」, Feld 4 「5」. (Feld 4 「5」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 2=93−91"
       ]
     },
@@ -38111,38 +38111,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1번째 기호에서 막대를 빼야 해요.",
-        "빼낸 막대를 같은 기호 안에서 옮겨요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「5」(막대 2개)에서 막대를 빼야 해요.",
+        "빼낸 막대를 같은 칸 안에서 옮겨요.",
         "정답 식: 2+11−5=8"
       ],
       "en": [
-        "Take matchsticks away from symbol 1.",
-        "Move that matchstick within the same symbol.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「5」 (2 sticks).",
+        "Move that matchstick within the same cell.",
         "Answer: 2+11−5=8"
       ],
       "ja": [
-        "1番目の記号から棒を取り除きます。",
-        "取った棒は同じ記号の中で動かします。",
+        "左から数字と記号をひとマスずつ数えます。1番目「5」（棒2本）から棒を取り除きます。",
+        "取った棒は同じマスの中で動かします。",
         "正解の式：2+11−5=8"
       ],
       "zh": [
-        "需要从第1个符号上拿走火柴棒。",
-        "把拿走的火柴棒在同一个符号内移动。",
+        "从左边开始，数字和运算符各算一格。需要从第1格「5」（2根）拿走火柴棒。",
+        "把拿走的火柴棒在同一格内移动。",
         "正确算式：2+11−5=8"
       ],
       "es": [
-        "Quita cerillas del símbolo 1.",
-        "Mueve la cerilla dentro del mismo símbolo.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「5」 (2 cerillas).",
+        "Mueve la cerilla dentro de la misma casilla.",
         "Ecuación correcta: 2+11−5=8"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 1.",
-        "Déplacez l'allumette à l'intérieur du même symbole.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「5」 (2 allumettes).",
+        "Déplacez l'allumette à l'intérieur de la même case.",
         "Équation correcte : 2+11−5=8"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 1 weg.",
-        "Verschiebe das Streichholz innerhalb desselben Symbols.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「5」 (2 Hölzer) weg.",
+        "Verschiebe das Streichholz innerhalb desselben Feldes.",
         "Richtige Gleichung: 2+11−5=8"
       ]
     },
@@ -38177,38 +38177,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1, 2번째 기호에서 막대를 빼야 해요.",
-        "막대를 2번째 기호에 놓아야 해요. (2번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「6」, 2번째 「5」에서 막대를 빼야 해요.",
+        "막대를 2번째 「5」(막대 2개)에 놓아야 해요. (2번째 「5」는 같은 칸 안에서 옮겨요)",
         "정답 식: 50+2=52"
       ],
       "en": [
-        "Take matchsticks away from symbols 1, 2.",
-        "Place matchsticks on symbol 2. (Symbol 2: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「6」, cell 2 「5」.",
+        "Place matchsticks on cell 2 「5」 (2 sticks). (cell 2 「5」: move within the same cell)",
         "Answer: 50+2=52"
       ],
       "ja": [
-        "1、2番目の記号から棒を取り除きます。",
-        "2番目の記号に棒を置きます。（2番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。1番目「6」、2番目「5」から棒を取り除きます。",
+        "2番目「5」（棒2本）に棒を置きます。（2番目「5」は同じマスの中で動かします）",
         "正解の式：50+2=52"
       ],
       "zh": [
-        "需要从第1、2个符号上拿走火柴棒。",
-        "需要把火柴棒放到第2个符号上。（第2个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第1格「6」、第2格「5」拿走火柴棒。",
+        "需要把火柴棒放到第2格「5」（2根）。（第2格「5」在自身格内移动）",
         "正确算式：50+2=52"
       ],
       "es": [
-        "Quita cerillas de los símbolos 1, 2.",
-        "Coloca cerillas en el símbolo 2. (Símbolo 2: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「6」, casilla 2 「5」.",
+        "Coloca cerillas en casilla 2 「5」 (2 cerillas). (casilla 2 「5」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 50+2=52"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 1, 2.",
-        "Placez des allumettes sur le symbole 2. (Symbole 2 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「6」, case 2 「5」.",
+        "Placez des allumettes sur case 2 「5」 (2 allumettes). (case 2 「5」 : déplacement dans la même case)",
         "Équation correcte : 50+2=52"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 1, 2 weg.",
-        "Lege Streichhölzer auf das Symbol 2. (Symbol 2: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「6」, Feld 2 「5」 weg.",
+        "Lege Streichhölzer auf Feld 2 「5」 (2 Hölzer). (Feld 2 「5」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 50+2=52"
       ]
     },
@@ -38244,38 +38244,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "5, 8번째 기호에서 막대를 빼야 해요.",
-        "막대를 1, 3번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 5번째 「7」, 8번째 「7」에서 막대를 빼야 해요.",
+        "막대를 1번째 「5」, 3번째 「5」에 놓아야 해요.",
         "정답 식: 6+6−11=1"
       ],
       "en": [
-        "Take matchsticks away from symbols 5, 8.",
-        "Place matchsticks on symbols 1, 3.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 5 「7」, cell 8 「7」.",
+        "Place matchsticks on cell 1 「5」, cell 3 「5」.",
         "Answer: 6+6−11=1"
       ],
       "ja": [
-        "5、8番目の記号から棒を取り除きます。",
-        "1、3番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。5番目「7」、8番目「7」から棒を取り除きます。",
+        "1番目「5」、3番目「5」に棒を置きます。",
         "正解の式：6+6−11=1"
       ],
       "zh": [
-        "需要从第5、8个符号上拿走火柴棒。",
-        "需要把火柴棒放到第1、3个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第5格「7」、第8格「7」拿走火柴棒。",
+        "需要把火柴棒放到第1格「5」、第3格「5」。",
         "正确算式：6+6−11=1"
       ],
       "es": [
-        "Quita cerillas de los símbolos 5, 8.",
-        "Coloca cerillas en los símbolos 1, 3.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 5 「7」, casilla 8 「7」.",
+        "Coloca cerillas en casilla 1 「5」, casilla 3 「5」.",
         "Ecuación correcta: 6+6−11=1"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 5, 8.",
-        "Placez des allumettes sur les symboles 1, 3.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 5 「7」, case 8 「7」.",
+        "Placez des allumettes sur case 1 「5」, case 3 「5」.",
         "Équation correcte : 6+6−11=1"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 5, 8 weg.",
-        "Lege Streichhölzer auf die Symbole 1, 3.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 5 「7」, Feld 8 「7」 weg.",
+        "Lege Streichhölzer auf Feld 1 「5」, Feld 3 「5」.",
         "Richtige Gleichung: 6+6−11=1"
       ]
     },
@@ -38311,38 +38311,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "3, 8번째 기호에서 막대를 빼야 해요.",
-        "막대를 8번째 기호에 놓아야 해요. (8번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 3번째 「+」, 8번째 「3」에서 막대를 빼야 해요.",
+        "막대를 8번째 「3」(막대 2개)에 놓아야 해요. (8번째 「3」는 같은 칸 안에서 옮겨요)",
         "정답 식: 15−5−4=6"
       ],
       "en": [
-        "Take matchsticks away from symbols 3, 8.",
-        "Place matchsticks on symbol 8. (Symbol 8: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 3 「+」, cell 8 「3」.",
+        "Place matchsticks on cell 8 「3」 (2 sticks). (cell 8 「3」: move within the same cell)",
         "Answer: 15−5−4=6"
       ],
       "ja": [
-        "3、8番目の記号から棒を取り除きます。",
-        "8番目の記号に棒を置きます。（8番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。3番目「+」、8番目「3」から棒を取り除きます。",
+        "8番目「3」（棒2本）に棒を置きます。（8番目「3」は同じマスの中で動かします）",
         "正解の式：15−5−4=6"
       ],
       "zh": [
-        "需要从第3、8个符号上拿走火柴棒。",
-        "需要把火柴棒放到第8个符号上。（第8个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第3格「+」、第8格「3」拿走火柴棒。",
+        "需要把火柴棒放到第8格「3」（2根）。（第8格「3」在自身格内移动）",
         "正确算式：15−5−4=6"
       ],
       "es": [
-        "Quita cerillas de los símbolos 3, 8.",
-        "Coloca cerillas en el símbolo 8. (Símbolo 8: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 3 「+」, casilla 8 「3」.",
+        "Coloca cerillas en casilla 8 「3」 (2 cerillas). (casilla 8 「3」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 15−5−4=6"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 3, 8.",
-        "Placez des allumettes sur le symbole 8. (Symbole 8 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 3 「+」, case 8 「3」.",
+        "Placez des allumettes sur case 8 「3」 (2 allumettes). (case 8 「3」 : déplacement dans la même case)",
         "Équation correcte : 15−5−4=6"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 3, 8 weg.",
-        "Lege Streichhölzer auf das Symbol 8. (Symbol 8: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 3 「+」, Feld 8 「3」 weg.",
+        "Lege Streichhölzer auf Feld 8 「3」 (2 Hölzer). (Feld 8 「3」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 15−5−4=6"
       ]
     },
@@ -38378,38 +38378,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "2, 6번째 기호에서 막대를 빼야 해요.",
-        "막대를 6번째 기호에 놓아야 해요. (6번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 2번째 「6」, 6번째 「2」에서 막대를 빼야 해요.",
+        "막대를 6번째 「2」(막대 2개)에 놓아야 해요. (6번째 「2」는 같은 칸 안에서 옮겨요)",
         "정답 식: 15−2−9=4"
       ],
       "en": [
-        "Take matchsticks away from symbols 2, 6.",
-        "Place matchsticks on symbol 6. (Symbol 6: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 2 「6」, cell 6 「2」.",
+        "Place matchsticks on cell 6 「2」 (2 sticks). (cell 6 「2」: move within the same cell)",
         "Answer: 15−2−9=4"
       ],
       "ja": [
-        "2、6番目の記号から棒を取り除きます。",
-        "6番目の記号に棒を置きます。（6番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。2番目「6」、6番目「2」から棒を取り除きます。",
+        "6番目「2」（棒2本）に棒を置きます。（6番目「2」は同じマスの中で動かします）",
         "正解の式：15−2−9=4"
       ],
       "zh": [
-        "需要从第2、6个符号上拿走火柴棒。",
-        "需要把火柴棒放到第6个符号上。（第6个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第2格「6」、第6格「2」拿走火柴棒。",
+        "需要把火柴棒放到第6格「2」（2根）。（第6格「2」在自身格内移动）",
         "正确算式：15−2−9=4"
       ],
       "es": [
-        "Quita cerillas de los símbolos 2, 6.",
-        "Coloca cerillas en el símbolo 6. (Símbolo 6: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 2 「6」, casilla 6 「2」.",
+        "Coloca cerillas en casilla 6 「2」 (2 cerillas). (casilla 6 「2」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 15−2−9=4"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 2, 6.",
-        "Placez des allumettes sur le symbole 6. (Symbole 6 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 2 「6」, case 6 「2」.",
+        "Placez des allumettes sur case 6 「2」 (2 allumettes). (case 6 「2」 : déplacement dans la même case)",
         "Équation correcte : 15−2−9=4"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 2, 6 weg.",
-        "Lege Streichhölzer auf das Symbol 6. (Symbol 6: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 2 「6」, Feld 6 「2」 weg.",
+        "Lege Streichhölzer auf Feld 6 「2」 (2 Hölzer). (Feld 6 「2」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 15−2−9=4"
       ]
     },
@@ -38445,38 +38445,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "4, 8번째 기호에서 막대를 빼야 해요.",
-        "막대를 3, 8번째 기호에 놓아야 해요. (8번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 4번째 「+」, 8번째 「6」에서 막대를 빼야 해요.",
+        "막대를 3번째 「1」, 8번째 「6」에 놓아야 해요. (8번째 「6」는 같은 칸 안에서 옮겨요)",
         "정답 식: 7+7−14=0"
       ],
       "en": [
-        "Take matchsticks away from symbols 4, 8.",
-        "Place matchsticks on symbols 3, 8. (Symbol 8: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 4 「+」, cell 8 「6」.",
+        "Place matchsticks on cell 3 「1」, cell 8 「6」. (cell 8 「6」: move within the same cell)",
         "Answer: 7+7−14=0"
       ],
       "ja": [
-        "4、8番目の記号から棒を取り除きます。",
-        "3、8番目の記号に棒を置きます。（8番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。4番目「+」、8番目「6」から棒を取り除きます。",
+        "3番目「1」、8番目「6」に棒を置きます。（8番目「6」は同じマスの中で動かします）",
         "正解の式：7+7−14=0"
       ],
       "zh": [
-        "需要从第4、8个符号上拿走火柴棒。",
-        "需要把火柴棒放到第3、8个符号上。（第8个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第4格「+」、第8格「6」拿走火柴棒。",
+        "需要把火柴棒放到第3格「1」、第8格「6」。（第8格「6」在自身格内移动）",
         "正确算式：7+7−14=0"
       ],
       "es": [
-        "Quita cerillas de los símbolos 4, 8.",
-        "Coloca cerillas en los símbolos 3, 8. (Símbolo 8: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 4 「+」, casilla 8 「6」.",
+        "Coloca cerillas en casilla 3 「1」, casilla 8 「6」. (casilla 8 「6」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 7+7−14=0"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 4, 8.",
-        "Placez des allumettes sur les symboles 3, 8. (Symbole 8 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 4 「+」, case 8 「6」.",
+        "Placez des allumettes sur case 3 「1」, case 8 「6」. (case 8 「6」 : déplacement dans la même case)",
         "Équation correcte : 7+7−14=0"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 4, 8 weg.",
-        "Lege Streichhölzer auf die Symbole 3, 8. (Symbol 8: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 4 「+」, Feld 8 「6」 weg.",
+        "Lege Streichhölzer auf Feld 3 「1」, Feld 8 「6」. (Feld 8 「6」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 7+7−14=0"
       ]
     },
@@ -38510,38 +38510,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "2번째 기호에서 막대를 빼야 해요.",
-        "막대를 2, 6번째 기호에 놓아야 해요. (2번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 2번째 「5」(막대 2개)에서 막대를 빼야 해요.",
+        "막대를 2번째 「5」, 6번째 「3」에 놓아야 해요. (2번째 「5」는 같은 칸 안에서 옮겨요)",
         "정답 식: 14−5=9"
       ],
       "en": [
-        "Take matchsticks away from symbol 2.",
-        "Place matchsticks on symbols 2, 6. (Symbol 2: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 2 「5」 (2 sticks).",
+        "Place matchsticks on cell 2 「5」, cell 6 「3」. (cell 2 「5」: move within the same cell)",
         "Answer: 14−5=9"
       ],
       "ja": [
-        "2番目の記号から棒を取り除きます。",
-        "2、6番目の記号に棒を置きます。（2番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。2番目「5」（棒2本）から棒を取り除きます。",
+        "2番目「5」、6番目「3」に棒を置きます。（2番目「5」は同じマスの中で動かします）",
         "正解の式：14−5=9"
       ],
       "zh": [
-        "需要从第2个符号上拿走火柴棒。",
-        "需要把火柴棒放到第2、6个符号上。（第2个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第2格「5」（2根）拿走火柴棒。",
+        "需要把火柴棒放到第2格「5」、第6格「3」。（第2格「5」在自身格内移动）",
         "正确算式：14−5=9"
       ],
       "es": [
-        "Quita cerillas del símbolo 2.",
-        "Coloca cerillas en los símbolos 2, 6. (Símbolo 2: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 2 「5」 (2 cerillas).",
+        "Coloca cerillas en casilla 2 「5」, casilla 6 「3」. (casilla 2 「5」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 14−5=9"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 2.",
-        "Placez des allumettes sur les symboles 2, 6. (Symbole 2 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 2 「5」 (2 allumettes).",
+        "Placez des allumettes sur case 2 「5」, case 6 「3」. (case 2 「5」 : déplacement dans la même case)",
         "Équation correcte : 14−5=9"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 2 weg.",
-        "Lege Streichhölzer auf die Symbole 2, 6. (Symbol 2: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 2 「5」 (2 Hölzer) weg.",
+        "Lege Streichhölzer auf Feld 2 「5」, Feld 6 「3」. (Feld 2 「5」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 14−5=9"
       ]
     },
@@ -38576,38 +38576,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "4, 6번째 기호에서 막대를 빼야 해요.",
-        "막대를 2, 4번째 기호에 놓아야 해요. (4번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 4번째 「5」, 6번째 「8」에서 막대를 빼야 해요.",
+        "막대를 2번째 「1」, 4번째 「5」에 놓아야 해요. (4번째 「5」는 같은 칸 안에서 옮겨요)",
         "정답 식: 97−3=94"
       ],
       "en": [
-        "Take matchsticks away from symbols 4, 6.",
-        "Place matchsticks on symbols 2, 4. (Symbol 4: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 4 「5」, cell 6 「8」.",
+        "Place matchsticks on cell 2 「1」, cell 4 「5」. (cell 4 「5」: move within the same cell)",
         "Answer: 97−3=94"
       ],
       "ja": [
-        "4、6番目の記号から棒を取り除きます。",
-        "2、4番目の記号に棒を置きます。（4番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。4番目「5」、6番目「8」から棒を取り除きます。",
+        "2番目「1」、4番目「5」に棒を置きます。（4番目「5」は同じマスの中で動かします）",
         "正解の式：97−3=94"
       ],
       "zh": [
-        "需要从第4、6个符号上拿走火柴棒。",
-        "需要把火柴棒放到第2、4个符号上。（第4个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第4格「5」、第6格「8」拿走火柴棒。",
+        "需要把火柴棒放到第2格「1」、第4格「5」。（第4格「5」在自身格内移动）",
         "正确算式：97−3=94"
       ],
       "es": [
-        "Quita cerillas de los símbolos 4, 6.",
-        "Coloca cerillas en los símbolos 2, 4. (Símbolo 4: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 4 「5」, casilla 6 「8」.",
+        "Coloca cerillas en casilla 2 「1」, casilla 4 「5」. (casilla 4 「5」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 97−3=94"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 4, 6.",
-        "Placez des allumettes sur les symboles 2, 4. (Symbole 4 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 4 「5」, case 6 「8」.",
+        "Placez des allumettes sur case 2 「1」, case 4 「5」. (case 4 「5」 : déplacement dans la même case)",
         "Équation correcte : 97−3=94"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 4, 6 weg.",
-        "Lege Streichhölzer auf die Symbole 2, 4. (Symbol 4: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 4 「5」, Feld 6 「8」 weg.",
+        "Lege Streichhölzer auf Feld 2 「1」, Feld 4 「5」. (Feld 4 「5」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 97−3=94"
       ]
     },
@@ -38641,38 +38641,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "2번째 기호에서 막대를 빼야 해요.",
-        "막대를 2, 4번째 기호에 놓아야 해요. (2번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 2번째 「0」(막대 2개)에서 막대를 빼야 해요.",
+        "막대를 2번째 「0」, 4번째 「1」에 놓아야 해요. (2번째 「0」는 같은 칸 안에서 옮겨요)",
         "정답 식: 12−7=5"
       ],
       "en": [
-        "Take matchsticks away from symbol 2.",
-        "Place matchsticks on symbols 2, 4. (Symbol 2: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 2 「0」 (2 sticks).",
+        "Place matchsticks on cell 2 「0」, cell 4 「1」. (cell 2 「0」: move within the same cell)",
         "Answer: 12−7=5"
       ],
       "ja": [
-        "2番目の記号から棒を取り除きます。",
-        "2、4番目の記号に棒を置きます。（2番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。2番目「0」（棒2本）から棒を取り除きます。",
+        "2番目「0」、4番目「1」に棒を置きます。（2番目「0」は同じマスの中で動かします）",
         "正解の式：12−7=5"
       ],
       "zh": [
-        "需要从第2个符号上拿走火柴棒。",
-        "需要把火柴棒放到第2、4个符号上。（第2个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第2格「0」（2根）拿走火柴棒。",
+        "需要把火柴棒放到第2格「0」、第4格「1」。（第2格「0」在自身格内移动）",
         "正确算式：12−7=5"
       ],
       "es": [
-        "Quita cerillas del símbolo 2.",
-        "Coloca cerillas en los símbolos 2, 4. (Símbolo 2: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 2 「0」 (2 cerillas).",
+        "Coloca cerillas en casilla 2 「0」, casilla 4 「1」. (casilla 2 「0」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 12−7=5"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 2.",
-        "Placez des allumettes sur les symboles 2, 4. (Symbole 2 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 2 「0」 (2 allumettes).",
+        "Placez des allumettes sur case 2 「0」, case 4 「1」. (case 2 「0」 : déplacement dans la même case)",
         "Équation correcte : 12−7=5"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 2 weg.",
-        "Lege Streichhölzer auf die Symbole 2, 4. (Symbol 2: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 2 「0」 (2 Hölzer) weg.",
+        "Lege Streichhölzer auf Feld 2 「0」, Feld 4 「1」. (Feld 2 「0」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 12−7=5"
       ]
     },
@@ -38708,38 +38708,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "2, 8번째 기호에서 막대를 빼야 해요.",
-        "막대를 2, 4번째 기호에 놓아야 해요. (2번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 2번째 「2」, 8번째 「7」에서 막대를 빼야 해요.",
+        "막대를 2번째 「2」, 4번째 「0」에 놓아야 해요. (2번째 「2」는 같은 칸 안에서 옮겨요)",
         "정답 식: 13−8−4=1"
       ],
       "en": [
-        "Take matchsticks away from symbols 2, 8.",
-        "Place matchsticks on symbols 2, 4. (Symbol 2: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 2 「2」, cell 8 「7」.",
+        "Place matchsticks on cell 2 「2」, cell 4 「0」. (cell 2 「2」: move within the same cell)",
         "Answer: 13−8−4=1"
       ],
       "ja": [
-        "2、8番目の記号から棒を取り除きます。",
-        "2、4番目の記号に棒を置きます。（2番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。2番目「2」、8番目「7」から棒を取り除きます。",
+        "2番目「2」、4番目「0」に棒を置きます。（2番目「2」は同じマスの中で動かします）",
         "正解の式：13−8−4=1"
       ],
       "zh": [
-        "需要从第2、8个符号上拿走火柴棒。",
-        "需要把火柴棒放到第2、4个符号上。（第2个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第2格「2」、第8格「7」拿走火柴棒。",
+        "需要把火柴棒放到第2格「2」、第4格「0」。（第2格「2」在自身格内移动）",
         "正确算式：13−8−4=1"
       ],
       "es": [
-        "Quita cerillas de los símbolos 2, 8.",
-        "Coloca cerillas en los símbolos 2, 4. (Símbolo 2: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 2 「2」, casilla 8 「7」.",
+        "Coloca cerillas en casilla 2 「2」, casilla 4 「0」. (casilla 2 「2」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 13−8−4=1"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 2, 8.",
-        "Placez des allumettes sur les symboles 2, 4. (Symbole 2 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 2 「2」, case 8 「7」.",
+        "Placez des allumettes sur case 2 「2」, case 4 「0」. (case 2 「2」 : déplacement dans la même case)",
         "Équation correcte : 13−8−4=1"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 2, 8 weg.",
-        "Lege Streichhölzer auf die Symbole 2, 4. (Symbol 2: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 2 「2」, Feld 8 「7」 weg.",
+        "Lege Streichhölzer auf Feld 2 「2」, Feld 4 「0」. (Feld 2 「2」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 13−8−4=1"
       ]
     },
@@ -38775,38 +38775,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "8번째 기호에서 막대를 빼야 해요.",
-        "막대를 4, 8번째 기호에 놓아야 해요. (8번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 8번째 「5」(막대 2개)에서 막대를 빼야 해요.",
+        "막대를 4번째 「−」, 8번째 「5」에 놓아야 해요. (8번째 「5」는 같은 칸 안에서 옮겨요)",
         "정답 식: 2−9+11=4"
       ],
       "en": [
-        "Take matchsticks away from symbol 8.",
-        "Place matchsticks on symbols 4, 8. (Symbol 8: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 8 「5」 (2 sticks).",
+        "Place matchsticks on cell 4 「−」, cell 8 「5」. (cell 8 「5」: move within the same cell)",
         "Answer: 2−9+11=4"
       ],
       "ja": [
-        "8番目の記号から棒を取り除きます。",
-        "4、8番目の記号に棒を置きます。（8番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。8番目「5」（棒2本）から棒を取り除きます。",
+        "4番目「−」、8番目「5」に棒を置きます。（8番目「5」は同じマスの中で動かします）",
         "正解の式：2−9+11=4"
       ],
       "zh": [
-        "需要从第8个符号上拿走火柴棒。",
-        "需要把火柴棒放到第4、8个符号上。（第8个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第8格「5」（2根）拿走火柴棒。",
+        "需要把火柴棒放到第4格「−」、第8格「5」。（第8格「5」在自身格内移动）",
         "正确算式：2−9+11=4"
       ],
       "es": [
-        "Quita cerillas del símbolo 8.",
-        "Coloca cerillas en los símbolos 4, 8. (Símbolo 8: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 8 「5」 (2 cerillas).",
+        "Coloca cerillas en casilla 4 「−」, casilla 8 「5」. (casilla 8 「5」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 2−9+11=4"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 8.",
-        "Placez des allumettes sur les symboles 4, 8. (Symbole 8 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 8 「5」 (2 allumettes).",
+        "Placez des allumettes sur case 4 「−」, case 8 「5」. (case 8 「5」 : déplacement dans la même case)",
         "Équation correcte : 2−9+11=4"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 8 weg.",
-        "Lege Streichhölzer auf die Symbole 4, 8. (Symbol 8: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 8 「5」 (2 Hölzer) weg.",
+        "Lege Streichhölzer auf Feld 4 「−」, Feld 8 「5」. (Feld 8 「5」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 2−9+11=4"
       ]
     },
@@ -38841,38 +38841,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "7번째 기호에서 막대를 빼야 해요.",
-        "막대를 2, 6번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 7번째 「3」(막대 2개)에서 막대를 빼야 해요.",
+        "막대를 2번째 「−」, 6번째 「1」에 놓아야 해요.",
         "정답 식: 7+70=77"
       ],
       "en": [
-        "Take matchsticks away from symbol 7.",
-        "Place matchsticks on symbols 2, 6.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 7 「3」 (2 sticks).",
+        "Place matchsticks on cell 2 「−」, cell 6 「1」.",
         "Answer: 7+70=77"
       ],
       "ja": [
-        "7番目の記号から棒を取り除きます。",
-        "2、6番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。7番目「3」（棒2本）から棒を取り除きます。",
+        "2番目「−」、6番目「1」に棒を置きます。",
         "正解の式：7+70=77"
       ],
       "zh": [
-        "需要从第7个符号上拿走火柴棒。",
-        "需要把火柴棒放到第2、6个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第7格「3」（2根）拿走火柴棒。",
+        "需要把火柴棒放到第2格「−」、第6格「1」。",
         "正确算式：7+70=77"
       ],
       "es": [
-        "Quita cerillas del símbolo 7.",
-        "Coloca cerillas en los símbolos 2, 6.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 7 「3」 (2 cerillas).",
+        "Coloca cerillas en casilla 2 「−」, casilla 6 「1」.",
         "Ecuación correcta: 7+70=77"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 7.",
-        "Placez des allumettes sur les symboles 2, 6.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 7 「3」 (2 allumettes).",
+        "Placez des allumettes sur case 2 「−」, case 6 「1」.",
         "Équation correcte : 7+70=77"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 7 weg.",
-        "Lege Streichhölzer auf die Symbole 2, 6.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 7 「3」 (2 Hölzer) weg.",
+        "Lege Streichhölzer auf Feld 2 「−」, Feld 6 「1」.",
         "Richtige Gleichung: 7+70=77"
       ]
     },
@@ -38907,38 +38907,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1, 7번째 기호에서 막대를 빼야 해요.",
-        "막대를 6, 7번째 기호에 놓아야 해요. (7번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「8」, 7번째 「5」에서 막대를 빼야 해요.",
+        "막대를 6번째 「1」, 7번째 「5」에 놓아야 해요. (7번째 「5」는 같은 칸 안에서 옮겨요)",
         "정답 식: 6+67=73"
       ],
       "en": [
-        "Take matchsticks away from symbols 1, 7.",
-        "Place matchsticks on symbols 6, 7. (Symbol 7: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「8」, cell 7 「5」.",
+        "Place matchsticks on cell 6 「1」, cell 7 「5」. (cell 7 「5」: move within the same cell)",
         "Answer: 6+67=73"
       ],
       "ja": [
-        "1、7番目の記号から棒を取り除きます。",
-        "6、7番目の記号に棒を置きます。（7番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。1番目「8」、7番目「5」から棒を取り除きます。",
+        "6番目「1」、7番目「5」に棒を置きます。（7番目「5」は同じマスの中で動かします）",
         "正解の式：6+67=73"
       ],
       "zh": [
-        "需要从第1、7个符号上拿走火柴棒。",
-        "需要把火柴棒放到第6、7个符号上。（第7个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第1格「8」、第7格「5」拿走火柴棒。",
+        "需要把火柴棒放到第6格「1」、第7格「5」。（第7格「5」在自身格内移动）",
         "正确算式：6+67=73"
       ],
       "es": [
-        "Quita cerillas de los símbolos 1, 7.",
-        "Coloca cerillas en los símbolos 6, 7. (Símbolo 7: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「8」, casilla 7 「5」.",
+        "Coloca cerillas en casilla 6 「1」, casilla 7 「5」. (casilla 7 「5」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 6+67=73"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 1, 7.",
-        "Placez des allumettes sur les symboles 6, 7. (Symbole 7 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「8」, case 7 「5」.",
+        "Placez des allumettes sur case 6 「1」, case 7 「5」. (case 7 「5」 : déplacement dans la même case)",
         "Équation correcte : 6+67=73"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 1, 7 weg.",
-        "Lege Streichhölzer auf die Symbole 6, 7. (Symbol 7: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「8」, Feld 7 「5」 weg.",
+        "Lege Streichhölzer auf Feld 6 「1」, Feld 7 「5」. (Feld 7 「5」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 6+67=73"
       ]
     },
@@ -38974,38 +38974,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "5, 6번째 기호에서 막대를 빼야 해요.",
-        "막대를 6번째 기호에 놓아야 해요. (6번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 5번째 「7」, 6번째 「2」에서 막대를 빼야 해요.",
+        "막대를 6번째 「2」(막대 2개)에 놓아야 해요. (6번째 「2」는 같은 칸 안에서 옮겨요)",
         "정답 식: 6−7+10=9"
       ],
       "en": [
-        "Take matchsticks away from symbols 5, 6.",
-        "Place matchsticks on symbol 6. (Symbol 6: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 5 「7」, cell 6 「2」.",
+        "Place matchsticks on cell 6 「2」 (2 sticks). (cell 6 「2」: move within the same cell)",
         "Answer: 6−7+10=9"
       ],
       "ja": [
-        "5、6番目の記号から棒を取り除きます。",
-        "6番目の記号に棒を置きます。（6番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。5番目「7」、6番目「2」から棒を取り除きます。",
+        "6番目「2」（棒2本）に棒を置きます。（6番目「2」は同じマスの中で動かします）",
         "正解の式：6−7+10=9"
       ],
       "zh": [
-        "需要从第5、6个符号上拿走火柴棒。",
-        "需要把火柴棒放到第6个符号上。（第6个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第5格「7」、第6格「2」拿走火柴棒。",
+        "需要把火柴棒放到第6格「2」（2根）。（第6格「2」在自身格内移动）",
         "正确算式：6−7+10=9"
       ],
       "es": [
-        "Quita cerillas de los símbolos 5, 6.",
-        "Coloca cerillas en el símbolo 6. (Símbolo 6: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 5 「7」, casilla 6 「2」.",
+        "Coloca cerillas en casilla 6 「2」 (2 cerillas). (casilla 6 「2」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 6−7+10=9"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 5, 6.",
-        "Placez des allumettes sur le symbole 6. (Symbole 6 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 5 「7」, case 6 「2」.",
+        "Placez des allumettes sur case 6 「2」 (2 allumettes). (case 6 「2」 : déplacement dans la même case)",
         "Équation correcte : 6−7+10=9"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 5, 6 weg.",
-        "Lege Streichhölzer auf das Symbol 6. (Symbol 6: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 5 「7」, Feld 6 「2」 weg.",
+        "Lege Streichhölzer auf Feld 6 「2」 (2 Hölzer). (Feld 6 「2」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 6−7+10=9"
       ]
     },
@@ -39041,38 +39041,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1, 4번째 기호에서 막대를 빼야 해요.",
-        "막대를 4, 8번째 기호에 놓아야 해요. (4번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「7」, 4번째 「6」에서 막대를 빼야 해요.",
+        "막대를 4번째 「6」, 8번째 「1」에 놓아야 해요. (4번째 「6」는 같은 칸 안에서 옮겨요)",
         "정답 식: 18−9−2=7"
       ],
       "en": [
-        "Take matchsticks away from symbols 1, 4.",
-        "Place matchsticks on symbols 4, 8. (Symbol 4: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「7」, cell 4 「6」.",
+        "Place matchsticks on cell 4 「6」, cell 8 「1」. (cell 4 「6」: move within the same cell)",
         "Answer: 18−9−2=7"
       ],
       "ja": [
-        "1、4番目の記号から棒を取り除きます。",
-        "4、8番目の記号に棒を置きます。（4番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。1番目「7」、4番目「6」から棒を取り除きます。",
+        "4番目「6」、8番目「1」に棒を置きます。（4番目「6」は同じマスの中で動かします）",
         "正解の式：18−9−2=7"
       ],
       "zh": [
-        "需要从第1、4个符号上拿走火柴棒。",
-        "需要把火柴棒放到第4、8个符号上。（第4个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第1格「7」、第4格「6」拿走火柴棒。",
+        "需要把火柴棒放到第4格「6」、第8格「1」。（第4格「6」在自身格内移动）",
         "正确算式：18−9−2=7"
       ],
       "es": [
-        "Quita cerillas de los símbolos 1, 4.",
-        "Coloca cerillas en los símbolos 4, 8. (Símbolo 4: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「7」, casilla 4 「6」.",
+        "Coloca cerillas en casilla 4 「6」, casilla 8 「1」. (casilla 4 「6」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 18−9−2=7"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 1, 4.",
-        "Placez des allumettes sur les symboles 4, 8. (Symbole 4 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「7」, case 4 「6」.",
+        "Placez des allumettes sur case 4 「6」, case 8 「1」. (case 4 「6」 : déplacement dans la même case)",
         "Équation correcte : 18−9−2=7"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 1, 4 weg.",
-        "Lege Streichhölzer auf die Symbole 4, 8. (Symbol 4: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「7」, Feld 4 「6」 weg.",
+        "Lege Streichhölzer auf Feld 4 「6」, Feld 8 「1」. (Feld 4 「6」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 18−9−2=7"
       ]
     },
@@ -39107,38 +39107,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1번째 기호에서 막대를 빼야 해요.",
-        "막대를 1, 2번째 기호에 놓아야 해요. (1번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「0」(막대 2개)에서 막대를 빼야 해요.",
+        "막대를 1번째 「0」, 2번째 「−」에 놓아야 해요. (1번째 「0」는 같은 칸 안에서 옮겨요)",
         "정답 식: 3+62=65"
       ],
       "en": [
-        "Take matchsticks away from symbol 1.",
-        "Place matchsticks on symbols 1, 2. (Symbol 1: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「0」 (2 sticks).",
+        "Place matchsticks on cell 1 「0」, cell 2 「−」. (cell 1 「0」: move within the same cell)",
         "Answer: 3+62=65"
       ],
       "ja": [
-        "1番目の記号から棒を取り除きます。",
-        "1、2番目の記号に棒を置きます。（1番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。1番目「0」（棒2本）から棒を取り除きます。",
+        "1番目「0」、2番目「−」に棒を置きます。（1番目「0」は同じマスの中で動かします）",
         "正解の式：3+62=65"
       ],
       "zh": [
-        "需要从第1个符号上拿走火柴棒。",
-        "需要把火柴棒放到第1、2个符号上。（第1个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第1格「0」（2根）拿走火柴棒。",
+        "需要把火柴棒放到第1格「0」、第2格「−」。（第1格「0」在自身格内移动）",
         "正确算式：3+62=65"
       ],
       "es": [
-        "Quita cerillas del símbolo 1.",
-        "Coloca cerillas en los símbolos 1, 2. (Símbolo 1: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「0」 (2 cerillas).",
+        "Coloca cerillas en casilla 1 「0」, casilla 2 「−」. (casilla 1 「0」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 3+62=65"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 1.",
-        "Placez des allumettes sur les symboles 1, 2. (Symbole 1 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「0」 (2 allumettes).",
+        "Placez des allumettes sur case 1 「0」, case 2 「−」. (case 1 「0」 : déplacement dans la même case)",
         "Équation correcte : 3+62=65"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 1 weg.",
-        "Lege Streichhölzer auf die Symbole 1, 2. (Symbol 1: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「0」 (2 Hölzer) weg.",
+        "Lege Streichhölzer auf Feld 1 「0」, Feld 2 「−」. (Feld 1 「0」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 3+62=65"
       ]
     },
@@ -39173,38 +39173,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1, 3번째 기호에서 막대를 빼야 해요.",
-        "막대를 1, 7번째 기호에 놓아야 해요. (1번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「3」, 3번째 「+」에서 막대를 빼야 해요.",
+        "막대를 1번째 「3」, 7번째 「3」에 놓아야 해요. (1번째 「3」는 같은 칸 안에서 옮겨요)",
         "정답 식: 21−2=19"
       ],
       "en": [
-        "Take matchsticks away from symbols 1, 3.",
-        "Place matchsticks on symbols 1, 7. (Symbol 1: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「3」, cell 3 「+」.",
+        "Place matchsticks on cell 1 「3」, cell 7 「3」. (cell 1 「3」: move within the same cell)",
         "Answer: 21−2=19"
       ],
       "ja": [
-        "1、3番目の記号から棒を取り除きます。",
-        "1、7番目の記号に棒を置きます。（1番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。1番目「3」、3番目「+」から棒を取り除きます。",
+        "1番目「3」、7番目「3」に棒を置きます。（1番目「3」は同じマスの中で動かします）",
         "正解の式：21−2=19"
       ],
       "zh": [
-        "需要从第1、3个符号上拿走火柴棒。",
-        "需要把火柴棒放到第1、7个符号上。（第1个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第1格「3」、第3格「+」拿走火柴棒。",
+        "需要把火柴棒放到第1格「3」、第7格「3」。（第1格「3」在自身格内移动）",
         "正确算式：21−2=19"
       ],
       "es": [
-        "Quita cerillas de los símbolos 1, 3.",
-        "Coloca cerillas en los símbolos 1, 7. (Símbolo 1: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「3」, casilla 3 「+」.",
+        "Coloca cerillas en casilla 1 「3」, casilla 7 「3」. (casilla 1 「3」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 21−2=19"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 1, 3.",
-        "Placez des allumettes sur les symboles 1, 7. (Symbole 1 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「3」, case 3 「+」.",
+        "Placez des allumettes sur case 1 「3」, case 7 「3」. (case 1 「3」 : déplacement dans la même case)",
         "Équation correcte : 21−2=19"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 1, 3 weg.",
-        "Lege Streichhölzer auf die Symbole 1, 7. (Symbol 1: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「3」, Feld 3 「+」 weg.",
+        "Lege Streichhölzer auf Feld 1 「3」, Feld 7 「3」. (Feld 1 「3」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 21−2=19"
       ]
     },
@@ -39240,38 +39240,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "3, 4번째 기호에서 막대를 빼야 해요.",
-        "막대를 2, 4번째 기호에 놓아야 해요. (4번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 3번째 「+」, 4번째 「5」에서 막대를 빼야 해요.",
+        "막대를 2번째 「5」, 4번째 「5」에 놓아야 해요. (4번째 「5」는 같은 칸 안에서 옮겨요)",
         "정답 식: 56−33=23"
       ],
       "en": [
-        "Take matchsticks away from symbols 3, 4.",
-        "Place matchsticks on symbols 2, 4. (Symbol 4: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 3 「+」, cell 4 「5」.",
+        "Place matchsticks on cell 2 「5」, cell 4 「5」. (cell 4 「5」: move within the same cell)",
         "Answer: 56−33=23"
       ],
       "ja": [
-        "3、4番目の記号から棒を取り除きます。",
-        "2、4番目の記号に棒を置きます。（4番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。3番目「+」、4番目「5」から棒を取り除きます。",
+        "2番目「5」、4番目「5」に棒を置きます。（4番目「5」は同じマスの中で動かします）",
         "正解の式：56−33=23"
       ],
       "zh": [
-        "需要从第3、4个符号上拿走火柴棒。",
-        "需要把火柴棒放到第2、4个符号上。（第4个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第3格「+」、第4格「5」拿走火柴棒。",
+        "需要把火柴棒放到第2格「5」、第4格「5」。（第4格「5」在自身格内移动）",
         "正确算式：56−33=23"
       ],
       "es": [
-        "Quita cerillas de los símbolos 3, 4.",
-        "Coloca cerillas en los símbolos 2, 4. (Símbolo 4: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 3 「+」, casilla 4 「5」.",
+        "Coloca cerillas en casilla 2 「5」, casilla 4 「5」. (casilla 4 「5」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 56−33=23"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 3, 4.",
-        "Placez des allumettes sur les symboles 2, 4. (Symbole 4 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 3 「+」, case 4 「5」.",
+        "Placez des allumettes sur case 2 「5」, case 4 「5」. (case 4 「5」 : déplacement dans la même case)",
         "Équation correcte : 56−33=23"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 3, 4 weg.",
-        "Lege Streichhölzer auf die Symbole 2, 4. (Symbol 4: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 3 「+」, Feld 4 「5」 weg.",
+        "Lege Streichhölzer auf Feld 2 「5」, Feld 4 「5」. (Feld 4 「5」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 56−33=23"
       ]
     },
@@ -39306,38 +39306,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1, 3번째 기호에서 막대를 빼야 해요.",
-        "막대를 1번째 기호에 놓아야 해요. (1번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「2」, 3번째 「+」에서 막대를 빼야 해요.",
+        "막대를 1번째 「2」(막대 2개)에 놓아야 해요. (1번째 「2」는 같은 칸 안에서 옮겨요)",
         "정답 식: 93−86=7"
       ],
       "en": [
-        "Take matchsticks away from symbols 1, 3.",
-        "Place matchsticks on symbol 1. (Symbol 1: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「2」, cell 3 「+」.",
+        "Place matchsticks on cell 1 「2」 (2 sticks). (cell 1 「2」: move within the same cell)",
         "Answer: 93−86=7"
       ],
       "ja": [
-        "1、3番目の記号から棒を取り除きます。",
-        "1番目の記号に棒を置きます。（1番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。1番目「2」、3番目「+」から棒を取り除きます。",
+        "1番目「2」（棒2本）に棒を置きます。（1番目「2」は同じマスの中で動かします）",
         "正解の式：93−86=7"
       ],
       "zh": [
-        "需要从第1、3个符号上拿走火柴棒。",
-        "需要把火柴棒放到第1个符号上。（第1个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第1格「2」、第3格「+」拿走火柴棒。",
+        "需要把火柴棒放到第1格「2」（2根）。（第1格「2」在自身格内移动）",
         "正确算式：93−86=7"
       ],
       "es": [
-        "Quita cerillas de los símbolos 1, 3.",
-        "Coloca cerillas en el símbolo 1. (Símbolo 1: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「2」, casilla 3 「+」.",
+        "Coloca cerillas en casilla 1 「2」 (2 cerillas). (casilla 1 「2」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 93−86=7"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 1, 3.",
-        "Placez des allumettes sur le symbole 1. (Symbole 1 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「2」, case 3 「+」.",
+        "Placez des allumettes sur case 1 「2」 (2 allumettes). (case 1 「2」 : déplacement dans la même case)",
         "Équation correcte : 93−86=7"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 1, 3 weg.",
-        "Lege Streichhölzer auf das Symbol 1. (Symbol 1: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「2」, Feld 3 「+」 weg.",
+        "Lege Streichhölzer auf Feld 1 「2」 (2 Hölzer). (Feld 1 「2」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 93−86=7"
       ]
     },
@@ -39372,38 +39372,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1번째 기호에서 막대를 빼야 해요.",
-        "막대를 2, 7번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「8」(막대 2개)에서 막대를 빼야 해요.",
+        "막대를 2번째 「−」, 7번째 「1」에 놓아야 해요.",
         "정답 식: 2+75=77"
       ],
       "en": [
-        "Take matchsticks away from symbol 1.",
-        "Place matchsticks on symbols 2, 7.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「8」 (2 sticks).",
+        "Place matchsticks on cell 2 「−」, cell 7 「1」.",
         "Answer: 2+75=77"
       ],
       "ja": [
-        "1番目の記号から棒を取り除きます。",
-        "2、7番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。1番目「8」（棒2本）から棒を取り除きます。",
+        "2番目「−」、7番目「1」に棒を置きます。",
         "正解の式：2+75=77"
       ],
       "zh": [
-        "需要从第1个符号上拿走火柴棒。",
-        "需要把火柴棒放到第2、7个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第1格「8」（2根）拿走火柴棒。",
+        "需要把火柴棒放到第2格「−」、第7格「1」。",
         "正确算式：2+75=77"
       ],
       "es": [
-        "Quita cerillas del símbolo 1.",
-        "Coloca cerillas en los símbolos 2, 7.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「8」 (2 cerillas).",
+        "Coloca cerillas en casilla 2 「−」, casilla 7 「1」.",
         "Ecuación correcta: 2+75=77"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 1.",
-        "Placez des allumettes sur les symboles 2, 7.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「8」 (2 allumettes).",
+        "Placez des allumettes sur case 2 「−」, case 7 「1」.",
         "Équation correcte : 2+75=77"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 1 weg.",
-        "Lege Streichhölzer auf die Symbole 2, 7.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「8」 (2 Hölzer) weg.",
+        "Lege Streichhölzer auf Feld 2 「−」, Feld 7 「1」.",
         "Richtige Gleichung: 2+75=77"
       ]
     },
@@ -39438,38 +39438,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "2, 3번째 기호에서 막대를 빼야 해요.",
-        "막대를 2, 4번째 기호에 놓아야 해요. (2번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 2번째 「9」, 3번째 「+」에서 막대를 빼야 해요.",
+        "막대를 2번째 「9」, 4번째 「5」에 놓아야 해요. (2번째 「9」는 같은 칸 안에서 옮겨요)",
         "정답 식: 70−68=2"
       ],
       "en": [
-        "Take matchsticks away from symbols 2, 3.",
-        "Place matchsticks on symbols 2, 4. (Symbol 2: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 2 「9」, cell 3 「+」.",
+        "Place matchsticks on cell 2 「9」, cell 4 「5」. (cell 2 「9」: move within the same cell)",
         "Answer: 70−68=2"
       ],
       "ja": [
-        "2、3番目の記号から棒を取り除きます。",
-        "2、4番目の記号に棒を置きます。（2番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。2番目「9」、3番目「+」から棒を取り除きます。",
+        "2番目「9」、4番目「5」に棒を置きます。（2番目「9」は同じマスの中で動かします）",
         "正解の式：70−68=2"
       ],
       "zh": [
-        "需要从第2、3个符号上拿走火柴棒。",
-        "需要把火柴棒放到第2、4个符号上。（第2个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第2格「9」、第3格「+」拿走火柴棒。",
+        "需要把火柴棒放到第2格「9」、第4格「5」。（第2格「9」在自身格内移动）",
         "正确算式：70−68=2"
       ],
       "es": [
-        "Quita cerillas de los símbolos 2, 3.",
-        "Coloca cerillas en los símbolos 2, 4. (Símbolo 2: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 2 「9」, casilla 3 「+」.",
+        "Coloca cerillas en casilla 2 「9」, casilla 4 「5」. (casilla 2 「9」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 70−68=2"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 2, 3.",
-        "Placez des allumettes sur les symboles 2, 4. (Symbole 2 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 2 「9」, case 3 「+」.",
+        "Placez des allumettes sur case 2 「9」, case 4 「5」. (case 2 「9」 : déplacement dans la même case)",
         "Équation correcte : 70−68=2"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 2, 3 weg.",
-        "Lege Streichhölzer auf die Symbole 2, 4. (Symbol 2: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 2 「9」, Feld 3 「+」 weg.",
+        "Lege Streichhölzer auf Feld 2 「9」, Feld 4 「5」. (Feld 2 「9」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 70−68=2"
       ]
     },
@@ -39505,38 +39505,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1, 5번째 기호에서 막대를 빼야 해요.",
-        "막대를 2, 3번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「6」, 5번째 「7」에서 막대를 빼야 해요.",
+        "막대를 2번째 「−」, 3번째 「3」에 놓아야 해요.",
         "정답 식: 5+9−10=4"
       ],
       "en": [
-        "Take matchsticks away from symbols 1, 5.",
-        "Place matchsticks on symbols 2, 3.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「6」, cell 5 「7」.",
+        "Place matchsticks on cell 2 「−」, cell 3 「3」.",
         "Answer: 5+9−10=4"
       ],
       "ja": [
-        "1、5番目の記号から棒を取り除きます。",
-        "2、3番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。1番目「6」、5番目「7」から棒を取り除きます。",
+        "2番目「−」、3番目「3」に棒を置きます。",
         "正解の式：5+9−10=4"
       ],
       "zh": [
-        "需要从第1、5个符号上拿走火柴棒。",
-        "需要把火柴棒放到第2、3个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第1格「6」、第5格「7」拿走火柴棒。",
+        "需要把火柴棒放到第2格「−」、第3格「3」。",
         "正确算式：5+9−10=4"
       ],
       "es": [
-        "Quita cerillas de los símbolos 1, 5.",
-        "Coloca cerillas en los símbolos 2, 3.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「6」, casilla 5 「7」.",
+        "Coloca cerillas en casilla 2 「−」, casilla 3 「3」.",
         "Ecuación correcta: 5+9−10=4"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 1, 5.",
-        "Placez des allumettes sur les symboles 2, 3.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「6」, case 5 「7」.",
+        "Placez des allumettes sur case 2 「−」, case 3 「3」.",
         "Équation correcte : 5+9−10=4"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 1, 5 weg.",
-        "Lege Streichhölzer auf die Symbole 2, 3.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「6」, Feld 5 「7」 weg.",
+        "Lege Streichhölzer auf Feld 2 「−」, Feld 3 「3」.",
         "Richtige Gleichung: 5+9−10=4"
       ]
     },
@@ -39572,38 +39572,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "7번째 기호에서 막대를 빼야 해요.",
-        "막대를 3, 4번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 7번째 「4」(막대 2개)에서 막대를 빼야 해요.",
+        "막대를 3번째 「3」, 4번째 「−」에 놓아야 해요.",
         "정답 식: 4+9+4=17"
       ],
       "en": [
-        "Take matchsticks away from symbol 7.",
-        "Place matchsticks on symbols 3, 4.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 7 「4」 (2 sticks).",
+        "Place matchsticks on cell 3 「3」, cell 4 「−」.",
         "Answer: 4+9+4=17"
       ],
       "ja": [
-        "7番目の記号から棒を取り除きます。",
-        "3、4番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。7番目「4」（棒2本）から棒を取り除きます。",
+        "3番目「3」、4番目「−」に棒を置きます。",
         "正解の式：4+9+4=17"
       ],
       "zh": [
-        "需要从第7个符号上拿走火柴棒。",
-        "需要把火柴棒放到第3、4个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第7格「4」（2根）拿走火柴棒。",
+        "需要把火柴棒放到第3格「3」、第4格「−」。",
         "正确算式：4+9+4=17"
       ],
       "es": [
-        "Quita cerillas del símbolo 7.",
-        "Coloca cerillas en los símbolos 3, 4.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 7 「4」 (2 cerillas).",
+        "Coloca cerillas en casilla 3 「3」, casilla 4 「−」.",
         "Ecuación correcta: 4+9+4=17"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 7.",
-        "Placez des allumettes sur les symboles 3, 4.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 7 「4」 (2 allumettes).",
+        "Placez des allumettes sur case 3 「3」, case 4 「−」.",
         "Équation correcte : 4+9+4=17"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 7 weg.",
-        "Lege Streichhölzer auf die Symbole 3, 4.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 7 「4」 (2 Hölzer) weg.",
+        "Lege Streichhölzer auf Feld 3 「3」, Feld 4 「−」.",
         "Richtige Gleichung: 4+9+4=17"
       ]
     },
@@ -39639,38 +39639,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "7, 8번째 기호에서 막대를 빼야 해요.",
-        "막대를 2, 8번째 기호에 놓아야 해요. (8번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 7번째 「7」, 8번째 「9」에서 막대를 빼야 해요.",
+        "막대를 2번째 「−」, 8번째 「9」에 놓아야 해요. (8번째 「9」는 같은 칸 안에서 옮겨요)",
         "정답 식: 5+6−1=10"
       ],
       "en": [
-        "Take matchsticks away from symbols 7, 8.",
-        "Place matchsticks on symbols 2, 8. (Symbol 8: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 7 「7」, cell 8 「9」.",
+        "Place matchsticks on cell 2 「−」, cell 8 「9」. (cell 8 「9」: move within the same cell)",
         "Answer: 5+6−1=10"
       ],
       "ja": [
-        "7、8番目の記号から棒を取り除きます。",
-        "2、8番目の記号に棒を置きます。（8番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。7番目「7」、8番目「9」から棒を取り除きます。",
+        "2番目「−」、8番目「9」に棒を置きます。（8番目「9」は同じマスの中で動かします）",
         "正解の式：5+6−1=10"
       ],
       "zh": [
-        "需要从第7、8个符号上拿走火柴棒。",
-        "需要把火柴棒放到第2、8个符号上。（第8个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第7格「7」、第8格「9」拿走火柴棒。",
+        "需要把火柴棒放到第2格「−」、第8格「9」。（第8格「9」在自身格内移动）",
         "正确算式：5+6−1=10"
       ],
       "es": [
-        "Quita cerillas de los símbolos 7, 8.",
-        "Coloca cerillas en los símbolos 2, 8. (Símbolo 8: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 7 「7」, casilla 8 「9」.",
+        "Coloca cerillas en casilla 2 「−」, casilla 8 「9」. (casilla 8 「9」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 5+6−1=10"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 7, 8.",
-        "Placez des allumettes sur les symboles 2, 8. (Symbole 8 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 7 「7」, case 8 「9」.",
+        "Placez des allumettes sur case 2 「−」, case 8 「9」. (case 8 「9」 : déplacement dans la même case)",
         "Équation correcte : 5+6−1=10"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 7, 8 weg.",
-        "Lege Streichhölzer auf die Symbole 2, 8. (Symbol 8: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 7 「7」, Feld 8 「9」 weg.",
+        "Lege Streichhölzer auf Feld 2 「−」, Feld 8 「9」. (Feld 8 「9」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 5+6−1=10"
       ]
     },
@@ -39705,38 +39705,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1, 3번째 기호에서 막대를 빼야 해요.",
-        "막대를 1번째 기호에 놓아야 해요. (1번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「2」, 3번째 「+」에서 막대를 빼야 해요.",
+        "막대를 1번째 「2」(막대 2개)에 놓아야 해요. (1번째 「2」는 같은 칸 안에서 옮겨요)",
         "정답 식: 99−95=4"
       ],
       "en": [
-        "Take matchsticks away from symbols 1, 3.",
-        "Place matchsticks on symbol 1. (Symbol 1: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「2」, cell 3 「+」.",
+        "Place matchsticks on cell 1 「2」 (2 sticks). (cell 1 「2」: move within the same cell)",
         "Answer: 99−95=4"
       ],
       "ja": [
-        "1、3番目の記号から棒を取り除きます。",
-        "1番目の記号に棒を置きます。（1番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。1番目「2」、3番目「+」から棒を取り除きます。",
+        "1番目「2」（棒2本）に棒を置きます。（1番目「2」は同じマスの中で動かします）",
         "正解の式：99−95=4"
       ],
       "zh": [
-        "需要从第1、3个符号上拿走火柴棒。",
-        "需要把火柴棒放到第1个符号上。（第1个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第1格「2」、第3格「+」拿走火柴棒。",
+        "需要把火柴棒放到第1格「2」（2根）。（第1格「2」在自身格内移动）",
         "正确算式：99−95=4"
       ],
       "es": [
-        "Quita cerillas de los símbolos 1, 3.",
-        "Coloca cerillas en el símbolo 1. (Símbolo 1: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「2」, casilla 3 「+」.",
+        "Coloca cerillas en casilla 1 「2」 (2 cerillas). (casilla 1 「2」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 99−95=4"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 1, 3.",
-        "Placez des allumettes sur le symbole 1. (Symbole 1 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「2」, case 3 「+」.",
+        "Placez des allumettes sur case 1 「2」 (2 allumettes). (case 1 「2」 : déplacement dans la même case)",
         "Équation correcte : 99−95=4"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 1, 3 weg.",
-        "Lege Streichhölzer auf das Symbol 1. (Symbol 1: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「2」, Feld 3 「+」 weg.",
+        "Lege Streichhölzer auf Feld 1 「2」 (2 Hölzer). (Feld 1 「2」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 99−95=4"
       ]
     },
@@ -39771,38 +39771,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1, 6번째 기호에서 막대를 빼야 해요.",
-        "막대를 1, 2번째 기호에 놓아야 해요. (1번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「9」, 6번째 「9」에서 막대를 빼야 해요.",
+        "막대를 1번째 「9」, 2번째 「−」에 놓아야 해요. (1번째 「9」는 같은 칸 안에서 옮겨요)",
         "정답 식: 6+31=37"
       ],
       "en": [
-        "Take matchsticks away from symbols 1, 6.",
-        "Place matchsticks on symbols 1, 2. (Symbol 1: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「9」, cell 6 「9」.",
+        "Place matchsticks on cell 1 「9」, cell 2 「−」. (cell 1 「9」: move within the same cell)",
         "Answer: 6+31=37"
       ],
       "ja": [
-        "1、6番目の記号から棒を取り除きます。",
-        "1、2番目の記号に棒を置きます。（1番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。1番目「9」、6番目「9」から棒を取り除きます。",
+        "1番目「9」、2番目「−」に棒を置きます。（1番目「9」は同じマスの中で動かします）",
         "正解の式：6+31=37"
       ],
       "zh": [
-        "需要从第1、6个符号上拿走火柴棒。",
-        "需要把火柴棒放到第1、2个符号上。（第1个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第1格「9」、第6格「9」拿走火柴棒。",
+        "需要把火柴棒放到第1格「9」、第2格「−」。（第1格「9」在自身格内移动）",
         "正确算式：6+31=37"
       ],
       "es": [
-        "Quita cerillas de los símbolos 1, 6.",
-        "Coloca cerillas en los símbolos 1, 2. (Símbolo 1: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「9」, casilla 6 「9」.",
+        "Coloca cerillas en casilla 1 「9」, casilla 2 「−」. (casilla 1 「9」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 6+31=37"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 1, 6.",
-        "Placez des allumettes sur les symboles 1, 2. (Symbole 1 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「9」, case 6 「9」.",
+        "Placez des allumettes sur case 1 「9」, case 2 「−」. (case 1 「9」 : déplacement dans la même case)",
         "Équation correcte : 6+31=37"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 1, 6 weg.",
-        "Lege Streichhölzer auf die Symbole 1, 2. (Symbol 1: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「9」, Feld 6 「9」 weg.",
+        "Lege Streichhölzer auf Feld 1 「9」, Feld 2 「−」. (Feld 1 「9」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 6+31=37"
       ]
     },
@@ -39837,38 +39837,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "1, 3번째 기호에서 막대를 빼야 해요.",
-        "막대를 5, 7번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 1번째 「8」, 3번째 「+」에서 막대를 빼야 해요.",
+        "막대를 5번째 「3」, 7번째 「5」에 놓아야 해요.",
         "정답 식: 65−59=6"
       ],
       "en": [
-        "Take matchsticks away from symbols 1, 3.",
-        "Place matchsticks on symbols 5, 7.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 1 「8」, cell 3 「+」.",
+        "Place matchsticks on cell 5 「3」, cell 7 「5」.",
         "Answer: 65−59=6"
       ],
       "ja": [
-        "1、3番目の記号から棒を取り除きます。",
-        "5、7番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。1番目「8」、3番目「+」から棒を取り除きます。",
+        "5番目「3」、7番目「5」に棒を置きます。",
         "正解の式：65−59=6"
       ],
       "zh": [
-        "需要从第1、3个符号上拿走火柴棒。",
-        "需要把火柴棒放到第5、7个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第1格「8」、第3格「+」拿走火柴棒。",
+        "需要把火柴棒放到第5格「3」、第7格「5」。",
         "正确算式：65−59=6"
       ],
       "es": [
-        "Quita cerillas de los símbolos 1, 3.",
-        "Coloca cerillas en los símbolos 5, 7.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 1 「8」, casilla 3 「+」.",
+        "Coloca cerillas en casilla 5 「3」, casilla 7 「5」.",
         "Ecuación correcta: 65−59=6"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 1, 3.",
-        "Placez des allumettes sur les symboles 5, 7.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 1 「8」, case 3 「+」.",
+        "Placez des allumettes sur case 5 「3」, case 7 「5」.",
         "Équation correcte : 65−59=6"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 1, 3 weg.",
-        "Lege Streichhölzer auf die Symbole 5, 7.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 1 「8」, Feld 3 「+」 weg.",
+        "Lege Streichhölzer auf Feld 5 「3」, Feld 7 「5」.",
         "Richtige Gleichung: 65−59=6"
       ]
     },
@@ -39904,38 +39904,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "4번째 기호에서 막대를 빼야 해요.",
-        "막대를 3, 8번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 4번째 「8」(막대 2개)에서 막대를 빼야 해요.",
+        "막대를 3번째 「−」, 8번째 「9」에 놓아야 해요.",
         "정답 식: 26+22=48"
       ],
       "en": [
-        "Take matchsticks away from symbol 4.",
-        "Place matchsticks on symbols 3, 8.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 4 「8」 (2 sticks).",
+        "Place matchsticks on cell 3 「−」, cell 8 「9」.",
         "Answer: 26+22=48"
       ],
       "ja": [
-        "4番目の記号から棒を取り除きます。",
-        "3、8番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。4番目「8」（棒2本）から棒を取り除きます。",
+        "3番目「−」、8番目「9」に棒を置きます。",
         "正解の式：26+22=48"
       ],
       "zh": [
-        "需要从第4个符号上拿走火柴棒。",
-        "需要把火柴棒放到第3、8个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第4格「8」（2根）拿走火柴棒。",
+        "需要把火柴棒放到第3格「−」、第8格「9」。",
         "正确算式：26+22=48"
       ],
       "es": [
-        "Quita cerillas del símbolo 4.",
-        "Coloca cerillas en los símbolos 3, 8.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 4 「8」 (2 cerillas).",
+        "Coloca cerillas en casilla 3 「−」, casilla 8 「9」.",
         "Ecuación correcta: 26+22=48"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 4.",
-        "Placez des allumettes sur les symboles 3, 8.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 4 「8」 (2 allumettes).",
+        "Placez des allumettes sur case 3 「−」, case 8 「9」.",
         "Équation correcte : 26+22=48"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 4 weg.",
-        "Lege Streichhölzer auf die Symbole 3, 8.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 4 「8」 (2 Hölzer) weg.",
+        "Lege Streichhölzer auf Feld 3 「−」, Feld 8 「9」.",
         "Richtige Gleichung: 26+22=48"
       ]
     },
@@ -39971,38 +39971,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "4, 8번째 기호에서 막대를 빼야 해요.",
-        "막대를 2, 8번째 기호에 놓아야 해요. (8번째 기호는 같은 기호 안에서 옮겨요)",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 4번째 「+」, 8번째 「5」에서 막대를 빼야 해요.",
+        "막대를 2번째 「−」, 8번째 「5」에 놓아야 해요. (8번째 「5」는 같은 칸 안에서 옮겨요)",
         "정답 식: 7+7−11=3"
       ],
       "en": [
-        "Take matchsticks away from symbols 4, 8.",
-        "Place matchsticks on symbols 2, 8. (Symbol 8: move within the same symbol)",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 4 「+」, cell 8 「5」.",
+        "Place matchsticks on cell 2 「−」, cell 8 「5」. (cell 8 「5」: move within the same cell)",
         "Answer: 7+7−11=3"
       ],
       "ja": [
-        "4、8番目の記号から棒を取り除きます。",
-        "2、8番目の記号に棒を置きます。（8番目は同じ記号の中で動かします）",
+        "左から数字と記号をひとマスずつ数えます。4番目「+」、8番目「5」から棒を取り除きます。",
+        "2番目「−」、8番目「5」に棒を置きます。（8番目「5」は同じマスの中で動かします）",
         "正解の式：7+7−11=3"
       ],
       "zh": [
-        "需要从第4、8个符号上拿走火柴棒。",
-        "需要把火柴棒放到第2、8个符号上。（第8个符号在自身内部移动）",
+        "从左边开始，数字和运算符各算一格。需要从第4格「+」、第8格「5」拿走火柴棒。",
+        "需要把火柴棒放到第2格「−」、第8格「5」。（第8格「5」在自身格内移动）",
         "正确算式：7+7−11=3"
       ],
       "es": [
-        "Quita cerillas de los símbolos 4, 8.",
-        "Coloca cerillas en los símbolos 2, 8. (Símbolo 8: se mueve dentro del mismo símbolo)",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 4 「+」, casilla 8 「5」.",
+        "Coloca cerillas en casilla 2 「−」, casilla 8 「5」. (casilla 8 「5」: se mueve dentro de la misma casilla)",
         "Ecuación correcta: 7+7−11=3"
       ],
       "fr": [
-        "Retirez des allumettes des symboles 4, 8.",
-        "Placez des allumettes sur les symboles 2, 8. (Symbole 8 : déplacement dans le même symbole)",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 4 「+」, case 8 「5」.",
+        "Placez des allumettes sur case 2 「−」, case 8 「5」. (case 8 「5」 : déplacement dans la même case)",
         "Équation correcte : 7+7−11=3"
       ],
       "de": [
-        "Nimm Streichhölzer von den Symbolen 4, 8 weg.",
-        "Lege Streichhölzer auf die Symbole 2, 8. (Symbol 8: innerhalb desselben Symbols verschieben)",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 4 「+」, Feld 8 「5」 weg.",
+        "Lege Streichhölzer auf Feld 2 「−」, Feld 8 「5」. (Feld 8 「5」: innerhalb desselben Feldes verschieben)",
         "Richtige Gleichung: 7+7−11=3"
       ]
     },
@@ -40038,38 +40038,38 @@
     "choices": null,
     "hints": {
       "ko": [
-        "7번째 기호에서 막대를 빼야 해요.",
-        "막대를 2, 8번째 기호에 놓아야 해요.",
+        "왼쪽부터 숫자와 연산자를 한 칸씩 세어 보세요. 7번째 「4」(막대 2개)에서 막대를 빼야 해요.",
+        "막대를 2번째 「−」, 8번째 「6」에 놓아야 해요.",
         "정답 식: 4+8+6=18"
       ],
       "en": [
-        "Take matchsticks away from symbol 7.",
-        "Place matchsticks on symbols 2, 8.",
+        "Count every digit and operator from the left, one cell each. Take matchsticks away from cell 7 「4」 (2 sticks).",
+        "Place matchsticks on cell 2 「−」, cell 8 「6」.",
         "Answer: 4+8+6=18"
       ],
       "ja": [
-        "7番目の記号から棒を取り除きます。",
-        "2、8番目の記号に棒を置きます。",
+        "左から数字と記号をひとマスずつ数えます。7番目「4」（棒2本）から棒を取り除きます。",
+        "2番目「−」、8番目「6」に棒を置きます。",
         "正解の式：4+8+6=18"
       ],
       "zh": [
-        "需要从第7个符号上拿走火柴棒。",
-        "需要把火柴棒放到第2、8个符号上。",
+        "从左边开始，数字和运算符各算一格。需要从第7格「4」（2根）拿走火柴棒。",
+        "需要把火柴棒放到第2格「−」、第8格「6」。",
         "正确算式：4+8+6=18"
       ],
       "es": [
-        "Quita cerillas del símbolo 7.",
-        "Coloca cerillas en los símbolos 2, 8.",
+        "Cuenta de izquierda a derecha cada dígito y cada operador como una casilla. Quita cerillas de casilla 7 「4」 (2 cerillas).",
+        "Coloca cerillas en casilla 2 「−」, casilla 8 「6」.",
         "Ecuación correcta: 4+8+6=18"
       ],
       "fr": [
-        "Retirez des allumettes du symbole 7.",
-        "Placez des allumettes sur les symboles 2, 8.",
+        "Compte de gauche à droite chaque chiffre et chaque opérateur comme une case. Retirez des allumettes de case 7 「4」 (2 allumettes).",
+        "Placez des allumettes sur case 2 「−」, case 8 「6」.",
         "Équation correcte : 4+8+6=18"
       ],
       "de": [
-        "Nimm Streichhölzer vom Symbol 7 weg.",
-        "Lege Streichhölzer auf die Symbole 2, 8.",
+        "Zähle von links jede Ziffer und jeden Operator als ein Feld. Nimm Streichhölzer von Feld 7 「4」 (2 Hölzer) weg.",
+        "Lege Streichhölzer auf Feld 2 「−」, Feld 8 「6」.",
         "Richtige Gleichung: 4+8+6=18"
       ]
     },
