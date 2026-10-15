@@ -130,6 +130,11 @@
     <string name="challenge_start">타임어택 시작</string>
     <string name="ranking">랭킹</string>
     <string name="ranking_empty">아직 기록이 없어요. 첫 주자가 되어보세요!</string>
+    <string name="ranking_my_rank">내 순위</string>
+    <string name="ranking_rank_n">%d위</string>
+    <string name="ranking_out_of_top">%d위 밖</string>
+    <string name="ranking_no_record">타임어택을 플레이하면 순위가 표시돼요</string>
+    <string name="ranking_tied">공동</string>
     <string name="me">나</string>
     <string name="play_prompt">규칙을 찾아 빈칸을 채워보세요</string>
     <string name="correct">정답!</string>

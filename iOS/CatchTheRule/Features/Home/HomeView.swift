@@ -28,6 +28,7 @@ struct HomeView: View {
                     }
                     .padding(20)
                 }
+                .tabBarSafeArea()
             }
             .neonScreen()
             .navigationBarTitleDisplayMode(.inline)
@@ -144,6 +145,7 @@ struct ModeDetailView: View {
                 }
                 .padding(20)
             }
+            .tabBarSafeArea()
         }
         .neonScreen()
         .safeAreaInset(edge: .top) {

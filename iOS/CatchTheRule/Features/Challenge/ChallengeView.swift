@@ -32,6 +32,7 @@ struct ChallengeView: View {
                     }
                     .padding(20)
                 }
+                .tabBarSafeArea()
             }
             .neonScreen()
             .toolbar(.hidden, for: .navigationBar)
@@ -122,14 +123,66 @@ struct ChallengeView: View {
             } else {
                 let top = Array(entries.prefix(3))
                 let rest = Array(entries.dropFirst(3))
-                Podium(entries: top)
+                let tied = tiedRanks
+                myRankCard(tied: tied)
+                Podium(entries: top, tiedRanks: tied)
                 if !rest.isEmpty {
                     VStack(spacing: 10) {
-                        ForEach(rest) { LeaderboardRow(entry: $0) }
+                        ForEach(Array(rest.enumerated()), id: \.element.id) { i, e in
+                            LeaderboardRow(entry: e, tied: tied.contains(e.rank), index: i)
+                        }
                     }
                 }
             }
         }
+    }
+
+    /// 같은 rank 를 가진 엔트리가 2개 이상인 rank 집합(경쟁 순위 동점).
+    private var tiedRanks: Set<Int> {
+        var counts: [Int: Int] = [:]
+        for e in entries { counts[e.rank, default: 0] += 1 }
+        return Set(counts.filter { $0.value > 1 }.keys)
+    }
+
+    @ViewBuilder
+    private func myRankCard(tied: Set<Int>) -> some View {
+        let best = progress.bestTimeAttack
+        let name = progress.nickname.trimmingCharacters(in: .whitespaces)
+        HStack(spacing: 12) {
+            Text(String.loc("ranking_my_rank"))
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundStyle(Theme.textSecondary)
+            Spacer(minLength: 4)
+            if best > 0 {
+                let rank = entries.filter { $0.score > best }.count + 1
+                let outside = entries.count >= 100 && best < (entries.last?.score ?? 0)
+                VStack(alignment: .trailing, spacing: 4) {
+                    HStack(spacing: 6) {
+                        if !outside, entries.contains(where: { $0.score == best }) {
+                            TiedChip()
+                        }
+                        Text(outside ? String.loc("ranking_out_of_top", 100) : String.loc("ranking_rank_n", rank))
+                            .font(.system(size: 26, weight: .heavy, design: .rounded))
+                            .foregroundStyle(Theme.accentGradient)
+                            .lineLimit(1)
+                            .minimumScaleFactor(0.6)
+                    }
+                    Text(name.isEmpty ? "\(best)" : "\(name) · \(best)")
+                        .font(.system(size: 12, weight: .semibold))
+                        .foregroundStyle(Theme.textSecondary)
+                        .lineLimit(1)
+                }
+            } else {
+                Text(String.loc("ranking_no_record"))
+                    .font(.system(size: 14))
+                    .foregroundStyle(Theme.textTertiary)
+            }
+        }
+        .padding(.horizontal, 16).padding(.vertical, 14)
+        .background(RoundedRectangle(cornerRadius: 18, style: .continuous).fill(Theme.accent.opacity(0.12)))
+        .overlay(RoundedRectangle(cornerRadius: 18, style: .continuous).stroke(Theme.accent, lineWidth: 1.5))
+        .shadow(color: Theme.accent.opacity(0.3), radius: 10)
+        .accessibilityElement(children: .combine)
     }
 
     private var skeleton: some View {
@@ -168,7 +221,7 @@ struct ChallengeView: View {
                 let mine = progress.nickname
                 entries = result.map { e in
                     var e = e
-                    e.isMe = !mine.isEmpty && e.nickname == mine
+                    e.isMe = !mine.isEmpty && e.nickname == mine && e.score == progress.bestTimeAttack
                     return e
                 }
                 failed = false
@@ -267,21 +320,23 @@ private extension View {
 
 // MARK: - 포디움
 
+/// 서버 순서 상위 3개: 가운데=entries[0], 왼쪽=entries[1], 오른쪽=entries[2]. 각 카드는 자기 entry.rank 로 표시/스타일.
 private struct Podium: View {
     let entries: [RankEntry]
+    let tiedRanks: Set<Int>
 
     var body: some View {
         HStack(alignment: .bottom, spacing: 10) {
-            slot(rank: 2)
-            slot(rank: 1)
-            slot(rank: 3)
+            slot(1)
+            slot(0)
+            slot(2)
         }
     }
 
     @ViewBuilder
-    private func slot(rank: Int) -> some View {
-        if let e = entries.first(where: { $0.rank == rank }) ?? (rank <= entries.count ? entries[rank - 1] : nil) {
-            PodiumCard(entry: e, place: rank)
+    private func slot(_ i: Int) -> some View {
+        if i < entries.count {
+            PodiumCard(entry: entries[i], tied: tiedRanks.contains(entries[i].rank), order: i)
                 .frame(maxWidth: .infinity)
         } else {
             Color.clear.frame(maxWidth: .infinity)
@@ -289,10 +344,21 @@ private struct Podium: View {
     }
 }
 
+private struct TiedChip: View {
+    var body: some View {
+        Text(String.loc("ranking_tied"))
+            .font(.system(size: 10, weight: .bold))
+            .foregroundStyle(Theme.textSecondary)
+            .padding(.horizontal, 6).padding(.vertical, 2)
+            .background(Capsule().fill(Color.white.opacity(0.10)))
+    }
+}
+
 private struct PodiumCard: View {
     let entry: RankEntry
-    let place: Int
-    @Environment(\.neonAnimating) private var active
+    let tied: Bool
+    let order: Int
+    private var place: Int { entry.rank }
 
     private var color: Color {
         switch place {
@@ -311,9 +377,12 @@ private struct PodiumCard: View {
                     .foregroundStyle(color)
                     .shadow(color: color.opacity(0.8), radius: 8)
             }
-            Text("\(place)")
-                .font(.system(size: first ? 22 : 18, weight: .heavy, design: .rounded))
-                .foregroundStyle(color)
+            HStack(spacing: 4) {
+                Text("\(place)")
+                    .font(.system(size: first ? 22 : 18, weight: .heavy, design: .rounded))
+                    .foregroundStyle(color)
+                if tied { TiedChip() }
+            }
             if let flag = entry.flagEmoji {
                 Text(flag).font(.system(size: first ? 24 : 20))
             }
@@ -322,7 +391,7 @@ private struct PodiumCard: View {
                 .foregroundStyle(entry.isMe ? Theme.accent2 : Theme.textPrimary)
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
-            AnimatedValue(target: Double(entry.score), duration: 0.9, delay: 0.15 * Double(place)) { v in
+            AnimatedValue(target: Double(entry.score), duration: 0.9, delay: 0.15 * Double(order)) { v in
                 Text("\(Int(v.rounded()))")
                     .font(.system(size: first ? 22 : 17, weight: .heavy, design: .rounded))
                     .monospacedDigit()
@@ -346,7 +415,7 @@ private struct PodiumCard: View {
                 RoundedRectangle(cornerRadius: 18, style: .continuous).stroke(Theme.accent, lineWidth: 2)
             }
         }
-        .staggerOnAppear(order: place == 1 ? 0 : 1, step: 0.1, dy: 30)
+        .staggerOnAppear(order: order == 0 ? 0 : 1, step: 0.1, dy: 30)
         .accessibilityElement(children: .combine)
     }
 }
@@ -355,6 +424,8 @@ private struct PodiumCard: View {
 
 struct LeaderboardRow: View {
     let entry: RankEntry
+    var tied = false
+    var index = 0
 
     var body: some View {
         HStack(spacing: 12) {
@@ -365,6 +436,11 @@ struct LeaderboardRow: View {
                 .frame(minWidth: 30, minHeight: 28)
                 .background(Capsule().fill(Color.white.opacity(0.08)))
 
+            if tied {
+                Text(String.loc("ranking_tied"))
+                    .font(.system(size: 10, weight: .bold))
+                    .foregroundStyle(Theme.textSecondary)
+            }
             if let flag = entry.flagEmoji {
                 Text(flag).font(.system(size: 18))
             }
@@ -398,7 +474,15 @@ struct LeaderboardRow: View {
                 .stroke(entry.isMe ? Theme.accent : Theme.stroke, lineWidth: entry.isMe ? 1.5 : 1)
         )
         .shadow(color: entry.isMe ? Theme.accent.opacity(0.35) : .clear, radius: 10)
-        .staggerOnAppear(order: min(entry.rank - 3, 6), step: 0.04, dy: 16)
+        .staggerIfEarly(index)
         .accessibilityElement(children: .combine)
+    }
+}
+
+private extension View {
+    /// 앞쪽 일부 행만 스태거, 나머지는 즉시 표시(성능).
+    @ViewBuilder
+    func staggerIfEarly(_ index: Int) -> some View {
+        if index < 8 { staggerOnAppear(order: index, step: 0.04, dy: 16) } else { self }
     }
 }

@@ -130,6 +130,11 @@
     <string name="challenge_start">Start Time Attack</string>
     <string name="ranking">Ranking</string>
     <string name="ranking_empty">No records yet. Be the first!</string>
+    <string name="ranking_my_rank">My rank</string>
+    <string name="ranking_rank_n">#%d</string>
+    <string name="ranking_out_of_top">Outside top %d</string>
+    <string name="ranking_no_record">Play a round to get ranked</string>
+    <string name="ranking_tied">Tied</string>
     <string name="me">Me</string>
     <string name="play_prompt">Find the rule and fill the blank</string>
     <string name="correct">Correct!</string>

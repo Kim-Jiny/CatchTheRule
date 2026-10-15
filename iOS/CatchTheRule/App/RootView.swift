@@ -7,22 +7,17 @@ struct RootView: View {
 
     @State private var selection: RootTab = .home
 
-    private var tabBarHeight: CGFloat { 64 + 12 }
-
     var body: some View {
         TabView(selection: $selection) {
             HomeView()
-                .safeAreaInset(edge: .bottom, spacing: 0) { Color.clear.frame(height: tabBarHeight + 8) }
                 .toolbar(.hidden, for: .tabBar)
                 .tag(RootTab.home)
 
             ChallengeView()
-                .safeAreaInset(edge: .bottom, spacing: 0) { Color.clear.frame(height: tabBarHeight + 8) }
                 .toolbar(.hidden, for: .tabBar)
                 .tag(RootTab.challenge)
 
             SettingsView()
-                .safeAreaInset(edge: .bottom, spacing: 0) { Color.clear.frame(height: tabBarHeight + 8) }
                 .toolbar(.hidden, for: .tabBar)
                 .tag(RootTab.settings)
         }
@@ -39,6 +34,14 @@ struct RootView: View {
             AnalyticsService.ping()
             await PuzzleStore.refreshFromServer()   // 추가 스테이지 캐시 갱신(다음 실행 반영)
         }
+    }
+}
+
+extension View {
+    /// 플로팅 탭바(64) + 하단 간격(12) + 여유(16)만큼 스크롤 콘텐츠 끝에 여백. 탭바가 보이는 모든 ScrollView 에 적용.
+    /// (하단 세이프에어리어는 스크롤뷰가 자동으로 더하고, 탭바는 세이프에어리어 위에 떠 있다.)
+    func tabBarSafeArea() -> some View {
+        contentMargins(.bottom, 64 + 12 + 16, for: .scrollContent)
     }
 }
 

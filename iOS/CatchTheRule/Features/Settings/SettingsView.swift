@@ -35,6 +35,7 @@ struct SettingsView: View {
                     }
                     .padding(20)
                 }
+                .tabBarSafeArea()
             }
             .neonScreen()
             .toolbar(.hidden, for: .navigationBar)

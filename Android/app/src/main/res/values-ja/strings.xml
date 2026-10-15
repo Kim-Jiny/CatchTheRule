@@ -130,6 +130,11 @@
     <string name="challenge_start">タイムアタック開始</string>
     <string name="ranking">ランキング</string>
     <string name="ranking_empty">まだ記録がありません。最初の挑戦者になろう！</string>
+    <string name="ranking_my_rank">自分の順位</string>
+    <string name="ranking_rank_n">%d位</string>
+    <string name="ranking_out_of_top">%d位圏外</string>
+    <string name="ranking_no_record">プレイすると順位が表示されます</string>
+    <string name="ranking_tied">同率</string>
     <string name="me">あなた</string>
     <string name="play_prompt">ルールを見つけて空欄を埋めよう</string>
     <string name="correct">正解！</string>

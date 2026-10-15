@@ -130,6 +130,11 @@
     <string name="challenge_start">开始限时挑战</string>
     <string name="ranking">排行榜</string>
     <string name="ranking_empty">还没有记录，来当第一名吧！</string>
+    <string name="ranking_my_rank">我的排名</string>
+    <string name="ranking_rank_n">第%d名</string>
+    <string name="ranking_out_of_top">%d名之外</string>
+    <string name="ranking_no_record">游玩后即可显示排名</string>
+    <string name="ranking_tied">并列</string>
     <string name="me">我</string>
     <string name="play_prompt">找出规律，填上空格</string>
     <string name="correct">答对了！</string>

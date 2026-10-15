@@ -130,6 +130,11 @@
     <string name="challenge_start">Démarrer</string>
     <string name="ranking">Classement</string>
     <string name="ranking_empty">Aucun record. Soyez le premier !</string>
+    <string name="ranking_my_rank">Mon classement</string>
+    <string name="ranking_rank_n">n°%d</string>
+    <string name="ranking_out_of_top">Hors du top %d</string>
+    <string name="ranking_no_record">Joue une partie pour être classé</string>
+    <string name="ranking_tied">Ex æquo</string>
     <string name="me">Moi</string>
     <string name="play_prompt">Trouvez la règle et remplissez le vide</string>
     <string name="correct">Correct !</string>

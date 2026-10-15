@@ -87,7 +87,7 @@ fun ChallengeScreen(modifier: Modifier = Modifier, onStart: () -> Unit) {
         val res = runCatching { Ranking.service.leaderboard(GameMode.TimeAttack) }
         failed = res.isFailure
         val me = progress.nickname
-        entries = res.getOrDefault(emptyList()).map { it.copy(isMe = me.isNotEmpty() && it.nickname == me) }
+        entries = res.getOrDefault(emptyList()).map { it.copy(isMe = me.isNotEmpty() && it.nickname == me && it.score == progress.bestTimeAttack) }
         loading = false
     }
 
@@ -108,16 +108,61 @@ fun ChallengeScreen(modifier: Modifier = Modifier, onStart: () -> Unit) {
             )
             when {
                 loading -> SkeletonList()
-                entries.isEmpty() -> EmptyCard(failed, Modifier.staggerIn(3))
+                entries.isEmpty() -> {
+                    MyRankCard(progress.nickname, progress.bestTimeAttack, entries, Modifier.staggerIn(3))
+                    EmptyCard(failed, Modifier.staggerIn(4))
+                }
                 else -> {
-                    val podiumList = entries.sortedBy { it.rank }.take(3)
-                    Podium(podiumList, Modifier.staggerIn(3))
-                    entries.drop(podiumList.size).forEachIndexed { i, e ->
-                        LeaderboardRow(e, Modifier.staggerIn(4 + i.coerceAtMost(8), 40))
+                    MyRankCard(progress.nickname, progress.bestTimeAttack, entries, Modifier.staggerIn(3))
+                    val tiedRanks = entries.groupingBy { it.rank }.eachCount().filter { it.value > 1 }.keys
+                    // 포디움: 서버 순서 상위 3개, 가운데=[0] 왼쪽=[1] 오른쪽=[2]
+                    Podium(entries.take(3), tiedRanks, Modifier.staggerIn(4))
+                    entries.drop(3).forEachIndexed { i, e ->
+                        LeaderboardRow(e, e.rank in tiedRanks, if (i < 8) Modifier.staggerIn(5 + i, 40) else Modifier)
                     }
                 }
             }
         }
+    }
+}
+
+@Composable
+private fun TiedChip() {
+    Box(Modifier.clip(CircleShape).background(Color.White.copy(alpha = 0.12f)).padding(horizontal = 6.dp, vertical = 1.dp)) {
+        Text(stringResource(R.string.ranking_tied), color = AppColors.TextSecondary, fontSize = 10.sp, fontWeight = FontWeight.Bold, maxLines = 1)
+    }
+}
+
+@Composable
+private fun MyRankCard(nickname: String, best: Int, entries: List<RankEntry>, modifier: Modifier) {
+    val shape = RoundedCornerShape(20.dp)
+    val myRank = entries.count { it.score > best } + 1
+    val outside = entries.size >= 100 && best < (entries.lastOrNull()?.score ?: 0)
+    val tied = entries.any { it.score == best }
+    Row(
+        modifier.fillMaxWidth().clip(shape)
+            .background(AppColors.Accent.copy(alpha = 0.14f).compositeOnCard())
+            .border(1.5.dp, AppColors.Accent.copy(alpha = 0.8f), shape)
+            .padding(horizontal = 16.dp, vertical = 14.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(12.dp),
+    ) {
+        Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+            Text(stringResource(R.string.ranking_my_rank), color = AppColors.Accent2, fontSize = 12.sp, fontWeight = FontWeight.Bold)
+            if (best > 0) {
+                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Text(
+                        if (outside) stringResource(R.string.ranking_out_of_top, 100) else stringResource(R.string.ranking_rank_n, myRank),
+                        style = TNUM.copy(color = AppColors.TextPrimary, fontSize = 26.sp, fontWeight = FontWeight.ExtraBold),
+                    )
+                    if (tied && !outside) TiedChip()
+                }
+                if (nickname.isNotEmpty()) Text(nickname, color = AppColors.TextSecondary, fontSize = 13.sp, maxLines = 1, overflow = TextOverflow.Ellipsis)
+            } else {
+                Text(stringResource(R.string.ranking_no_record), color = AppColors.TextSecondary, fontSize = 14.sp)
+            }
+        }
+        if (best > 0) Text("$best", style = TNUM.copy(color = AppColors.Accent2, fontSize = 24.sp, fontWeight = FontWeight.ExtraBold))
     }
 }
 
@@ -275,19 +320,19 @@ private fun ChallengeShineButton(text: String, onClick: () -> Unit) {
     }
 }
 
-private fun medalColor(rank: Int) = when (rank) { 1 -> Gold; 2 -> Silver; else -> Bronze }
+private fun medalColor(rank: Int) = when { rank <= 1 -> Gold; rank == 2 -> Silver; else -> Bronze }
 
 @Composable
-private fun Podium(list: List<RankEntry>, modifier: Modifier) {
-    // 표시 순서: 2위 · 1위 · 3위 (있는 만큼만)
+private fun Podium(list: List<RankEntry>, tiedRanks: Set<Int>, modifier: Modifier) {
+    // 표시 순서: 왼쪽=[1], 가운데=[0], 오른쪽=[2] (있는 만큼만)
     val order = listOfNotNull(list.getOrNull(1), list.getOrNull(0), list.getOrNull(2))
     Row(modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(10.dp), verticalAlignment = Alignment.Bottom) {
-        order.forEach { e -> PodiumCard(e, Modifier.weight(1f)) }
+        order.forEach { e -> PodiumCard(e, e.rank in tiedRanks, Modifier.weight(1f)) }
     }
 }
 
 @Composable
-private fun PodiumCard(entry: RankEntry, modifier: Modifier) {
+private fun PodiumCard(entry: RankEntry, tied: Boolean, modifier: Modifier) {
     val first = entry.rank == 1
     val c = medalColor(entry.rank)
     val shape = RoundedCornerShape(20.dp)
@@ -319,6 +364,7 @@ private fun PodiumCard(entry: RankEntry, modifier: Modifier) {
             Modifier.size(if (first) 40.dp else 32.dp).clip(CircleShape).background(c.copy(alpha = 0.22f)).border(1.5.dp, c, CircleShape),
             contentAlignment = Alignment.Center,
         ) { Text("${entry.rank}", color = c, fontSize = if (first) 18.sp else 15.sp, fontWeight = FontWeight.ExtraBold) }
+        if (tied) TiedChip()
         Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
             entry.flagEmoji?.let { Text(it, fontSize = 14.sp) }
             Text(
@@ -337,7 +383,7 @@ private fun PodiumCard(entry: RankEntry, modifier: Modifier) {
 }
 
 @Composable
-private fun LeaderboardRow(entry: RankEntry, modifier: Modifier) {
+private fun LeaderboardRow(entry: RankEntry, tied: Boolean, modifier: Modifier) {
     val shape = RoundedCornerShape(16.dp)
     val bg = if (entry.isMe) AppColors.Accent.copy(alpha = 0.14f) else AppColors.Card
     val stroke = if (entry.isMe) AppColors.Accent.copy(alpha = 0.8f) else AppColors.Stroke
@@ -354,6 +400,7 @@ private fun LeaderboardRow(entry: RankEntry, modifier: Modifier) {
         Box(Modifier.size(32.dp).clip(CircleShape).background(Color.White.copy(alpha = 0.08f)), contentAlignment = Alignment.Center) {
             Text("${entry.rank}", style = TNUM.copy(color = AppColors.TextSecondary, fontSize = 13.sp, fontWeight = FontWeight.Bold))
         }
+        if (tied) TiedChip()
         entry.flagEmoji?.let { Text(it, fontSize = 18.sp) }
         Text(
             entry.nickname,

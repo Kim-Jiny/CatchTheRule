@@ -130,6 +130,11 @@
     <string name="challenge_start">Iniciar contrarreloj</string>
     <string name="ranking">Ranking</string>
     <string name="ranking_empty">Aún no hay registros. ¡Sé el primero!</string>
+    <string name="ranking_my_rank">Mi posición</string>
+    <string name="ranking_rank_n">#%d</string>
+    <string name="ranking_out_of_top">Fuera del top %d</string>
+    <string name="ranking_no_record">Juega una partida para entrar en el ranking</string>
+    <string name="ranking_tied">Empate</string>
     <string name="me">Yo</string>
     <string name="play_prompt">Encuentra la regla y rellena el hueco</string>
     <string name="correct">¡Correcto!</string>

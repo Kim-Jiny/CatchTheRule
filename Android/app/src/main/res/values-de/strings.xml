@@ -130,6 +130,11 @@
     <string name="challenge_start">Starten</string>
     <string name="ranking">Rangliste</string>
     <string name="ranking_empty">Noch keine Einträge. Sei der Erste!</string>
+    <string name="ranking_my_rank">Mein Rang</string>
+    <string name="ranking_rank_n">Platz %d</string>
+    <string name="ranking_out_of_top">Außerhalb Top %d</string>
+    <string name="ranking_no_record">Spiele eine Runde, um platziert zu werden</string>
+    <string name="ranking_tied">Geteilt</string>
     <string name="me">Ich</string>
     <string name="play_prompt">Finde die Regel und fülle die Lücke</string>
     <string name="correct">Richtig!</string>
