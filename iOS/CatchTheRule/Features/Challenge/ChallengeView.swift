@@ -151,39 +151,35 @@ struct ChallengeView: View {
         // 서버에 내 닉네임+최고점으로 등록된 항목이 있으면(점수 0점 포함) 그 순위를 그대로 쓴다.
         let mine = entries.first { !name.isEmpty && $0.nickname == name && $0.score == best }
         let played = best > 0 || mine != nil
-        HStack(spacing: 12) {
+        HStack(spacing: 10) {
             Text(String.loc("ranking_my_rank"))
-                .font(.system(size: 13, weight: .semibold))
-                .foregroundStyle(Theme.textSecondary)
-            Spacer(minLength: 4)
+                .font(.system(size: 13, weight: .bold))
+                .foregroundStyle(Theme.accent2)
             if played {
                 let rank = mine?.rank ?? (entries.filter { $0.score > best }.count + 1)
                 let outside = mine == nil && entries.count >= 100 && best < (entries.last?.score ?? 0)
                 let isTied = mine.map { m in entries.filter { $0.rank == m.rank }.count > 1 }
                     ?? entries.contains(where: { $0.score == best })
-                VStack(alignment: .trailing, spacing: 4) {
-                    HStack(spacing: 6) {
-                        if !outside, isTied {
-                            TiedChip()
-                        }
-                        Text(outside ? String.loc("ranking_out_of_top", 100) : String.loc("ranking_rank_n", rank))
-                            .font(.system(size: 26, weight: .heavy, design: .rounded))
-                            .foregroundStyle(Theme.accentGradient)
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.6)
-                    }
-                    Text(name.isEmpty ? "\(best)" : "\(name) · \(best)")
-                        .font(.system(size: 12, weight: .semibold))
-                        .foregroundStyle(Theme.textSecondary)
-                        .lineLimit(1)
-                }
+                Text(outside ? String.loc("ranking_out_of_top", 100) : String.loc("ranking_rank_n", rank))
+                    .font(.system(size: 22, weight: .heavy, design: .rounded))
+                    .foregroundStyle(Theme.textPrimary)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.6)
+                if !outside, isTied { TiedChip() }
+                Spacer(minLength: 4)
+                Text("\(best)")
+                    .font(.system(size: 20, weight: .heavy, design: .rounded))
+                    .monospacedDigit()
+                    .foregroundStyle(Theme.accent2)
             } else {
                 Text(String.loc("ranking_no_record"))
-                    .font(.system(size: 14))
-                    .foregroundStyle(Theme.textTertiary)
+                    .font(.system(size: 13))
+                    .foregroundStyle(Theme.textSecondary)
+                    .lineLimit(1)
+                Spacer(minLength: 0)
             }
         }
-        .padding(.horizontal, 16).padding(.vertical, 14)
+        .padding(.horizontal, 16).padding(.vertical, 10)
         .background(RoundedRectangle(cornerRadius: 18, style: .continuous).fill(Theme.accent.opacity(0.12)))
         .overlay(RoundedRectangle(cornerRadius: 18, style: .continuous).stroke(Theme.accent, lineWidth: 1.5))
         .shadow(color: Theme.accent.opacity(0.3), radius: 10)

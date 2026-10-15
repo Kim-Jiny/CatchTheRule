@@ -146,26 +146,25 @@ private fun MyRankCard(nickname: String, best: Int, entries: List<RankEntry>, mo
         modifier.fillMaxWidth().clip(shape)
             .background(AppColors.Accent.copy(alpha = 0.14f).compositeOnCard())
             .border(1.5.dp, AppColors.Accent.copy(alpha = 0.8f), shape)
-            .padding(horizontal = 16.dp, vertical = 14.dp),
+            .padding(horizontal = 16.dp, vertical = 10.dp),
         verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.spacedBy(12.dp),
+        horizontalArrangement = Arrangement.spacedBy(10.dp),
     ) {
-        Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
-            Text(stringResource(R.string.ranking_my_rank), color = AppColors.Accent2, fontSize = 12.sp, fontWeight = FontWeight.Bold)
-            if (played) {
-                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    Text(
-                        if (outside) stringResource(R.string.ranking_out_of_top, 100) else stringResource(R.string.ranking_rank_n, myRank),
-                        style = TNUM.copy(color = AppColors.TextPrimary, fontSize = 26.sp, fontWeight = FontWeight.ExtraBold),
-                    )
-                    if (tied && !outside) TiedChip()
-                }
-                if (nickname.isNotEmpty()) Text(nickname, color = AppColors.TextSecondary, fontSize = 13.sp, maxLines = 1, overflow = TextOverflow.Ellipsis)
-            } else {
-                Text(stringResource(R.string.ranking_no_record), color = AppColors.TextSecondary, fontSize = 14.sp)
-            }
+        Text(stringResource(R.string.ranking_my_rank), color = AppColors.Accent2, fontSize = 13.sp, fontWeight = FontWeight.Bold)
+        if (played) {
+            Text(
+                if (outside) stringResource(R.string.ranking_out_of_top, 100) else stringResource(R.string.ranking_rank_n, myRank),
+                style = TNUM.copy(color = AppColors.TextPrimary, fontSize = 22.sp, fontWeight = FontWeight.ExtraBold),
+            )
+            if (tied && !outside) TiedChip()
+            Box(Modifier.weight(1f))
+            Text("$best", style = TNUM.copy(color = AppColors.Accent2, fontSize = 20.sp, fontWeight = FontWeight.ExtraBold))
+        } else {
+            Text(
+                stringResource(R.string.ranking_no_record), color = AppColors.TextSecondary, fontSize = 13.sp,
+                modifier = Modifier.weight(1f), maxLines = 1, overflow = TextOverflow.Ellipsis,
+            )
         }
-        if (played) Text("$best", style = TNUM.copy(color = AppColors.Accent2, fontSize = 24.sp, fontWeight = FontWeight.ExtraBold))
     }
 }
 
