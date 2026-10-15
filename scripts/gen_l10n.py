@@ -28,6 +28,8 @@ T = {
  "home_all_clear": ["All Cleared","전체 클리어","全クリア","全部通关","¡Todo completado!","Tout terminé","Alles gelöst"],
  "home_congrats": ["Congratulations! 🎉","축하해요! 🎉","おめでとう！🎉","恭喜！🎉","¡Felicidades! 🎉","Félicitations ! 🎉","Glückwunsch! 🎉"],
  "home_continue": ["Continue","이어하기","つづきから","继续","Continuar","Continuer","Weiter"],
+ "home_last_played": ["Last played","마지막으로 플레이","前回のプレイ","上次游玩","Última partida","Dernière partie","Zuletzt gespielt"],
+ "home_total_stars": ["%d stars","별 %d개","スター %d","%d 颗星","%d estrellas","%d étoiles","%d Sterne"],
  "home_retry": ["Play Again","다시 도전","もう一度","再玩一次","Jugar de nuevo","Rejouer","Nochmal"],
  "home_wait_update": ["New stages coming soon — stay tuned! 🎉","새로운 단계 업데이트를 기다려 주세요 🎉","新しいステージは近日追加予定です。お楽しみに！🎉","新关卡即将上线，敬请期待！🎉","¡Pronto habrá nuevos niveles! 🎉","De nouveaux niveaux arrivent bientôt ! 🎉","Neue Level kommen bald! 🎉"],
  "chapters": ["Chapters","챕터","チャプター","章节","Capítulos","Chapitres","Kapitel"],

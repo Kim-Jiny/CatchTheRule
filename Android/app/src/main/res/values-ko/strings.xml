@@ -10,6 +10,8 @@
     <string name="home_all_clear">전체 클리어</string>
     <string name="home_congrats">축하해요! 🎉</string>
     <string name="home_continue">이어하기</string>
+    <string name="home_last_played">마지막으로 플레이</string>
+    <string name="home_total_stars">별 %d개</string>
     <string name="home_retry">다시 도전</string>
     <string name="home_wait_update">새로운 단계 업데이트를 기다려 주세요 🎉</string>
     <string name="chapters">챕터</string>

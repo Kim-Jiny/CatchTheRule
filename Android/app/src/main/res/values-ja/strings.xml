@@ -10,6 +10,8 @@
     <string name="home_all_clear">全クリア</string>
     <string name="home_congrats">おめでとう！🎉</string>
     <string name="home_continue">つづきから</string>
+    <string name="home_last_played">前回のプレイ</string>
+    <string name="home_total_stars">スター %d</string>
     <string name="home_retry">もう一度</string>
     <string name="home_wait_update">新しいステージは近日追加予定です。お楽しみに！🎉</string>
     <string name="chapters">チャプター</string>

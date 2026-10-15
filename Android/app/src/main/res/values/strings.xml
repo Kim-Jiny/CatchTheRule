@@ -10,6 +10,8 @@
     <string name="home_all_clear">All Cleared</string>
     <string name="home_congrats">Congratulations! 🎉</string>
     <string name="home_continue">Continue</string>
+    <string name="home_last_played">Last played</string>
+    <string name="home_total_stars">%d stars</string>
     <string name="home_retry">Play Again</string>
     <string name="home_wait_update">New stages coming soon — stay tuned! 🎉</string>
     <string name="chapters">Chapters</string>

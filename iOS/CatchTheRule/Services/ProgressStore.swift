@@ -15,6 +15,8 @@ final class ProgressStore {
     var nickname: String { didSet { defaults.set(nickname, forKey: Keys.nickname) } }
     var soundOn: Bool { didSet { defaults.set(soundOn, forKey: Keys.sound) } }
     var hapticsOn: Bool { didSet { defaults.set(hapticsOn, forKey: Keys.haptics) } }
+    /// 마지막으로 플레이한 트랙(홈 히어로용). 없으면 nil.
+    var lastPlayedTrack: String? { didSet { defaults.set(lastPlayedTrack, forKey: Keys.lastTrack) } }
     var bestTimeAttack: Int { didSet { defaults.set(bestTimeAttack, forKey: Keys.best) } }
 
     private let defaults: UserDefaults
@@ -34,6 +36,7 @@ final class ProgressStore {
         nickname = defaults.string(forKey: Keys.nickname) ?? ""
         soundOn = defaults.object(forKey: Keys.sound) as? Bool ?? true
         hapticsOn = defaults.object(forKey: Keys.haptics) as? Bool ?? true
+        lastPlayedTrack = defaults.string(forKey: Keys.lastTrack)
         bestTimeAttack = defaults.integer(forKey: Keys.best)
     }
 
@@ -79,6 +82,7 @@ final class ProgressStore {
     func recordCampaignClear(puzzle: Puzzle, atIndex index: Int, earnedStars: Int) {
         let best = max(stars[puzzle.id] ?? 0, earnedStars)
         stars[puzzle.id] = best
+        lastPlayedTrack = puzzle.trackKey
         // 이미 풀었던 단계를 재도전한 경우 진행 인덱스는 건드리지 않는다.
         let track = puzzle.trackKey
         if index >= currentIndex(track: track) {
@@ -98,6 +102,7 @@ final class ProgressStore {
         hintsRemaining = Self.initialHintGrant
         bestTimeAttack = 0
         shapesUnlockSeen = false
+        lastPlayedTrack = nil
         defaults.removeObject(forKey: Keys.currentIndex)   // 구버전 키도 정리
     }
 
@@ -115,5 +120,6 @@ final class ProgressStore {
         static let sound = "soundOn"
         static let haptics = "hapticsOn"
         static let best = "bestTimeAttack"
+        static let lastTrack = "lastPlayedTrack"
     }
 }

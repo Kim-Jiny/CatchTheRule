@@ -1,28 +1,35 @@
 import SwiftUI
 
-/// 홈. 도형규칙 해금 전엔 숫자규칙 단일 캠페인(튜토리얼), 해금 후엔 모드 선택 허브.
+/// 홈. 도형규칙 해금 전엔 숫자규칙 단일 캠페인(튜토리얼), 해금 후엔 히어로 + 모드 그리드 허브.
 struct HomeView: View {
     @Environment(ProgressStore.self) private var progress
     @State private var showUnlock = false
+    @State private var path = NavigationPath()
+    @State private var playing = false
+    @State private var playTrack = PuzzleStore.defaultTrack
+    @State private var startIndex = 0
 
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             ZStack {
-                ScreenBackground()
+                ScreenBackground(animated: true)
                 ScrollView {
-                    VStack(spacing: 24) {
-                        title
+                    VStack(spacing: 22) {
+                        HomeHeader()
+                            .staggerOnAppear(order: 0, dy: -24)
                         if progress.isShapesUnlocked {
                             hub
                         } else {
                             // 잠금: 숫자규칙 캠페인을 홈에 직접 표시(튜토리얼)
                             BannerAd(unitID: BannerUnits.home)
                             CampaignTrackView(track: "numbers")
+                                .staggerOnAppear(order: 1)
                         }
                     }
                     .padding(20)
                 }
             }
+            .neonScreen()
             .navigationBarTitleDisplayMode(.inline)
             .toolbar(.hidden, for: .navigationBar)
             .navigationDestination(for: String.self) { track in
@@ -32,6 +39,9 @@ struct HomeView: View {
         .sheet(isPresented: $showUnlock) {
             UnlockSheet { showUnlock = false }
                 .preferredColorScheme(.dark)
+        }
+        .fullScreenCover(isPresented: $playing) {
+            CampaignSessionView(startIndex: startIndex, track: playTrack)
         }
         .task { maybeShowUnlock() }
         .onChange(of: progress.isShapesUnlocked) { _, _ in maybeShowUnlock() }
@@ -44,91 +54,59 @@ struct HomeView: View {
         showUnlock = true
     }
 
-    private var title: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            Text(String.loc("app_name"))
-                .font(.system(size: 30, weight: .bold, design: .rounded))
-                .foregroundStyle(Theme.textPrimary)
-            Text(String.loc("home_subtitle"))
-                .font(.system(size: 15))
-                .foregroundStyle(Theme.textSecondary)
-        }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.top, 8)
-    }
-
     // MARK: - 허브(해금 후)
 
+    /// 히어로 대상: 마지막 플레이 모드(없으면 첫 모드). 이미 전부 클리어했으면 가장 진행이 덜 된 모드.
+    private var heroTrack: String {
+        let tracks = PuzzleStore.shared.tracks
+        let candidate = progress.lastPlayedTrack.flatMap { tracks.contains($0) ? $0 : nil } ?? tracks.first ?? "numbers"
+        guard progress.isCampaignFinished(track: candidate) else { return candidate }
+        return tracks.filter { !progress.isCampaignFinished(track: $0) }
+            .min { progress.progressFraction(track: $0) < progress.progressFraction(track: $1) } ?? candidate
+    }
+
     private var hub: some View {
-        VStack(alignment: .leading, spacing: 14) {
-            SectionHeader(title: String.loc("select_mode"))
-            BannerAd(unitID: BannerUnits.home)
-            ForEach(PuzzleStore.shared.tracks, id: \.self) { track in
-                NavigationLink(value: track) {
-                    ModeCard(track: track)
-                }
-                .buttonStyle(.plain)
+        let tracks = PuzzleStore.shared.tracks
+        let hero = heroTrack
+        return VStack(alignment: .leading, spacing: 18) {
+            HeroCard(track: hero, caption: String.loc("home_last_played"),
+                     onOpen: { path.append(hero) },
+                     onContinue: {
+                         playTrack = hero
+                         startIndex = progress.currentIndex(track: hero)
+                         progress.lastPlayedTrack = hero
+                         playing = true
+                     })
+                .staggerOnAppear(order: 1)
+            VStack(alignment: .leading, spacing: 14) {
+                SectionHeader(title: String.loc("select_mode"))
+                BannerAd(unitID: BannerUnits.home)
+                grid(tracks)
             }
+            .staggerOnAppear(order: 2)
         }
     }
-}
 
-// MARK: - 모드 카드(허브)
-
-private struct ModeCard: View {
-    @Environment(ProgressStore.self) private var progress
-    let track: String
-
-    var body: some View {
-        let fraction = progress.progressFraction(track: track)
-        let finished = progress.isCampaignFinished(track: track)
-        HStack(spacing: 14) {
-            ZStack {
-                RoundedRectangle(cornerRadius: 14, style: .continuous)
-                    .fill(Theme.accentGradient)
-                    .frame(width: 50, height: 50)
-                Image(systemName: modeIcon(track))
-                    .font(.system(size: 20, weight: .bold))
-                    .foregroundStyle(.white)
-            }
-            VStack(alignment: .leading, spacing: 4) {
-                Text(modeTitle(track))
-                    .font(.system(size: 17, weight: .bold))
-                    .foregroundStyle(Theme.textPrimary)
-                if finished {
-                    HStack(spacing: 4) {
-                        Image(systemName: "checkmark.seal.fill").foregroundStyle(Theme.success)
-                        Text(String.loc("mode_complete")).foregroundStyle(Theme.success)
+    /// 2열 그리드. 개수가 홀수면 마지막 카드는 가로 꽉.
+    private func grid(_ tracks: [String]) -> some View {
+        let rows = stride(from: 0, to: tracks.count, by: 2).map { Array(tracks[$0..<min($0 + 2, tracks.count)]) }
+        return VStack(spacing: 14) {
+            ForEach(Array(rows.enumerated()), id: \.offset) { r, row in
+                HStack(spacing: 14) {
+                    ForEach(Array(row.enumerated()), id: \.element) { c, track in
+                        NavigationLink(value: track) {
+                            ModeGridCard(track: track)
+                        }
+                        .buttonStyle(NeonPressStyle())
+                        .staggerOnAppear(order: 3 + r * 2 + c)
                     }
-                    .font(.system(size: 13, weight: .semibold))
-                } else {
-                    Text(String.loc("mode_progress", Int(fraction * 100)))
-                        .font(.system(size: 13))
-                        .foregroundStyle(Theme.textTertiary)
                 }
             }
-            Spacer()
-            ZStack {
-                Circle().stroke(Theme.stroke, lineWidth: 5)
-                Circle()
-                    .trim(from: 0, to: fraction)
-                    .stroke(Theme.accentGradient, style: StrokeStyle(lineWidth: 5, lineCap: .round))
-                    .rotationEffect(.degrees(-90))
-                Text("\(Int(fraction * 100))%")
-                    .font(.system(size: 12, weight: .bold, design: .rounded))
-                    .foregroundStyle(Theme.textPrimary)
-            }
-            .frame(width: 52, height: 52)
-            Image(systemName: "chevron.right")
-                .font(.system(size: 14, weight: .semibold))
-                .foregroundStyle(Theme.textTertiary)
         }
-        .padding(18)
-        .card()
     }
 }
 
-private func modeTitle(_ track: String) -> String {
+func modeTitle(_ track: String) -> String {
     switch track {
     case "shapes":        return String.loc("mode_shapes")
     case "logic":         return String.loc("mode_logic")
@@ -139,7 +117,7 @@ private func modeTitle(_ track: String) -> String {
     }
 }
 
-private func modeIcon(_ track: String) -> String {
+func modeIcon(_ track: String) -> String {
     switch track {
     case "shapes":        return "triangle.fill"
     case "logic":         return "brain.head.profile"
@@ -158,7 +136,8 @@ struct ModeDetailView: View {
 
     var body: some View {
         ZStack {
-            ScreenBackground()
+            ScreenBackground(animated: true)
+            header
             ScrollView {
                 VStack(spacing: 16) {
                     CampaignTrackView(track: track)
@@ -166,6 +145,7 @@ struct ModeDetailView: View {
                 .padding(20)
             }
         }
+        .neonScreen()
         .safeAreaInset(edge: .top) {
             HStack {
                 Button { dismiss() } label: {
@@ -178,7 +158,7 @@ struct ModeDetailView: View {
                 .buttonStyle(.plain)
                 Spacer()
                 Text(modeTitle(track))
-                    .font(.system(size: 17, weight: .bold))
+                    .font(.system(size: 17, weight: .heavy))
                     .foregroundStyle(Theme.textPrimary)
                 Spacer()
                 Color.clear.frame(width: 38, height: 38)
@@ -189,6 +169,24 @@ struct ModeDetailView: View {
         }
         .navigationBarBackButtonHidden(true)
         .toolbar(.hidden, for: .navigationBar)
+    }
+
+    /// 상단 모드색 글로우 + 큰 아이콘 워터마크.
+    private var header: some View {
+        ZStack(alignment: .topTrailing) {
+            RadialGradient(colors: [Theme.modeColor(track).opacity(0.38), .clear],
+                           center: .top, startRadius: 0, endRadius: 320)
+            Image(systemName: modeIcon(track))
+                .font(.system(size: 150, weight: .bold))
+                .foregroundStyle(Theme.modeColor(track).opacity(0.10))
+                .rotationEffect(.degrees(-12))
+                .offset(x: 30, y: 40)
+        }
+        .frame(maxWidth: .infinity, maxHeight: 340, alignment: .top)
+        .frame(maxHeight: .infinity, alignment: .top)
+        .clipped()
+        .ignoresSafeArea()
+        .allowsHitTesting(false)
     }
 }
 
@@ -220,9 +218,9 @@ struct UnlockSheet: View {
     }
 }
 
-// MARK: - 트랙 캠페인 뷰 (이어하기 + 챕터 목록 + 플레이)
+// MARK: - 트랙 캠페인 뷰 (이어하기 + 챕터 타임라인 + 플레이)
 
-/// 한 트랙의 이어하기 카드 + 챕터 목록. 잠금 홈(numbers)·모드 상세 공용.
+/// 한 트랙의 이어하기 카드 + 챕터 타임라인. 잠금 홈(numbers)·모드 상세 공용.
 struct CampaignTrackView: View {
     @Environment(ProgressStore.self) private var progress
     let track: String
@@ -231,15 +229,19 @@ struct CampaignTrackView: View {
     @State private var startIndex = 0
     @State private var expanded: Set<Int> = []
 
-    private func position() -> (chapter: Int, stage: Int)? {
-        let total = PuzzleStore.shared.totalCount(track: track)
-        guard total > 0 else { return nil }
-        return PuzzleStore.shared.position(of: min(progress.currentIndex(track: track), total - 1), track: track)
+    private var color: Color { Theme.modeColor(track) }
+
+    private func play(from index: Int) {
+        startIndex = index
+        progress.lastPlayedTrack = track
+        playing = true
     }
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 14) {
-            continueCard
+        VStack(alignment: .leading, spacing: 18) {
+            HeroCard(track: track, caption: String.loc("home_current")) {
+                play(from: progress.currentIndex(track: track))
+            }
             chapterList
         }
         .fullScreenCover(isPresented: $playing) {
@@ -247,81 +249,18 @@ struct CampaignTrackView: View {
         }
     }
 
-    private var continueCard: some View {
-        let finished = progress.isCampaignFinished(track: track)
-        let pos = position()
-        let earned = progress.earnedStars(track: track)
-        let maxStars = progress.maxStars(track: track)
-        return VStack(alignment: .leading, spacing: 18) {
-            HStack {
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(String.loc(finished ? "home_all_clear" : "home_current"))
-                        .font(.system(size: 13, weight: .semibold))
-                        .foregroundStyle(Theme.textSecondary)
-                    if let p = pos, !finished {
-                        Text(String.loc("chapter_label", p.chapter) + " · " + String.loc("stage_label", p.stage))
-                            .font(.system(size: 22, weight: .bold, design: .rounded))
-                            .foregroundStyle(Theme.textPrimary)
-                    } else {
-                        Text(String.loc("home_congrats"))
-                            .font(.system(size: 22, weight: .bold, design: .rounded))
-                            .foregroundStyle(Theme.textPrimary)
-                    }
-                }
-                Spacer()
-                ZStack {
-                    Circle().stroke(Theme.stroke, lineWidth: 6)
-                    Circle()
-                        .trim(from: 0, to: progress.progressFraction(track: track))
-                        .stroke(Theme.accentGradient, style: StrokeStyle(lineWidth: 6, lineCap: .round))
-                        .rotationEffect(.degrees(-90))
-                    Text("\(Int(progress.progressFraction(track: track) * 100))%")
-                        .font(.system(size: 13, weight: .bold, design: .rounded))
-                        .foregroundStyle(Theme.textPrimary)
-                }
-                .frame(width: 62, height: 62)
-            }
-
-            HStack(spacing: 6) {
-                Image(systemName: "star.fill").foregroundStyle(Theme.star)
-                Text("\(earned)")
-                    .fontWeight(.semibold)
-                    .foregroundStyle(Theme.textPrimary)
-                Text(String.loc("stars_of_max", maxStars))
-                    .foregroundStyle(Theme.textTertiary)
-            }
-            .font(.system(size: 14))
-
-            if finished {
-                Text(String.loc("home_wait_update"))
-                    .font(.system(size: 15, weight: .semibold))
-                    .foregroundStyle(Theme.textSecondary)
-                    .multilineTextAlignment(.center)
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 14)
-                    .background(RoundedRectangle(cornerRadius: 14, style: .continuous).fill(Theme.bgElevated))
-                    .overlay(RoundedRectangle(cornerRadius: 14, style: .continuous).stroke(Theme.stroke, lineWidth: 1))
-            } else {
-                PrimaryButton(String.loc("home_continue"), systemImage: "play.fill") {
-                    startIndex = progress.currentIndex(track: track)
-                    playing = true
-                }
-            }
-        }
-        .padding(20)
-        .card()
-    }
-
     private var chapterList: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            ForEach(PuzzleStore.shared.chapters(track: track), id: \.self) { chapter in
-                chapterBlock(chapter)
+        let chapters = PuzzleStore.shared.chapters(track: track)
+        return VStack(alignment: .leading, spacing: 0) {
+            ForEach(Array(chapters.enumerated()), id: \.element) { offset, chapter in
+                chapterBlock(chapter, isFirst: offset == 0, isLast: offset == chapters.count - 1)
+                    .staggerOnAppear(order: min(offset, 8), step: 0.04)
             }
         }
     }
 
     @ViewBuilder
-    private func chapterBlock(_ chapter: Int) -> some View {
+    private func chapterBlock(_ chapter: Int, isFirst: Bool, isLast: Bool) -> some View {
         let items = PuzzleStore.shared.puzzles(in: chapter, track: track)
         let trackPuzzles = PuzzleStore.shared.puzzles(track: track)
         let firstIndex = trackPuzzles.firstIndex { $0.chapter == chapter } ?? 0
@@ -330,69 +269,88 @@ struct CampaignTrackView: View {
         let unlocked = current >= firstIndex
         let completed = current > lastIndex
         let isExpanded = expanded.contains(chapter)
+        let state: ChapterState = completed ? .completed : (unlocked ? .current : .locked)
 
-        VStack(spacing: 10) {
-            Button {
-                guard completed else { return }
-                withAnimation(.easeInOut(duration: 0.2)) {
-                    if isExpanded { expanded.remove(chapter) } else { expanded.insert(chapter) }
+        HStack(alignment: .top, spacing: 12) {
+            Color.clear.frame(width: TimelineRail.width, height: 1)
+            VStack(spacing: 8) {
+                Button {
+                    guard completed else { return }
+                    withAnimation(.spring(response: 0.4, dampingFraction: 0.85)) {
+                        if isExpanded { expanded.remove(chapter) } else { expanded.insert(chapter) }
+                    }
+                } label: {
+                    chapterRow(chapter, items: items, state: state, firstIndex: firstIndex, expanded: isExpanded)
                 }
-            } label: {
-                chapterRow(chapter, items: items, unlocked: unlocked, completed: completed, expanded: isExpanded)
-            }
-            .buttonStyle(.plain)
-            .disabled(!completed)
+                .buttonStyle(NeonPressStyle())
+                .disabled(!completed)
 
-            if completed && isExpanded {
-                stageList(items: items, firstIndex: firstIndex)
+                if completed && isExpanded {
+                    stageList(items: items, firstIndex: firstIndex)
+                }
             }
+            .padding(.bottom, isLast ? 0 : 14)
+        }
+        .background(alignment: .topLeading) {
+            TimelineRail(track: track, number: chapter, state: state,
+                         prevCompleted: current > firstIndex - 1 && !isFirst,
+                         isFirst: isFirst, isLast: isLast)
         }
     }
 
-    private func chapterRow(_ chapter: Int, items: [Puzzle], unlocked: Bool, completed: Bool, expanded: Bool) -> some View {
+    private func chapterRow(_ chapter: Int, items: [Puzzle], state: ChapterState, firstIndex: Int, expanded: Bool) -> some View {
         let earned = items.reduce(0) { $0 + progress.starCount(for: $1.id) }
         let maxStars = items.count * 3
-        return HStack(spacing: 14) {
-            ZStack {
-                RoundedRectangle(cornerRadius: 14, style: .continuous)
-                    .fill(Theme.accentGradient.opacity(unlocked ? 1 : 0.25))
-                    .frame(width: 46, height: 46)
-                Text("\(chapter)")
-                    .font(.system(size: 18, weight: .bold, design: .rounded))
-                    .foregroundStyle(.white)
+        let solved = max(0, min(items.count, progress.currentIndex(track: track) - firstIndex))
+        let fraction = items.isEmpty ? 0 : Double(solved) / Double(items.count)
+        let rowColor = state == .locked ? Theme.lockedColor : color
+        return VStack(spacing: 10) {
+            HStack(spacing: 12) {
+                VStack(alignment: .leading, spacing: 3) {
+                    Text(String.loc("chapter_label", chapter))
+                        .font(.system(size: 11, weight: .heavy))
+                        .foregroundStyle(state == .locked ? Theme.textTertiary : color)
+                    Text(chapterTitle(chapter))
+                        .font(.system(size: 16, weight: .bold))
+                        .foregroundStyle(state == .locked ? Theme.textTertiary : Theme.textPrimary)
+                        .lineLimit(2)
+                        .minimumScaleFactor(0.8)
+                        .multilineTextAlignment(.leading)
+                    Text(String.loc("chapter_stages", items.count))
+                        .font(.system(size: 12))
+                        .foregroundStyle(Theme.textTertiary)
+                }
+                Spacer(minLength: 4)
+                if state != .locked {
+                    VStack(alignment: .trailing, spacing: 4) {
+                        StarRow(count: maxStars == 0 ? 0 : Int(round(Double(earned) / Double(maxStars) * 3)))
+                        Text("\(earned)/\(maxStars)")
+                            .font(.system(size: 12, weight: .medium))
+                            .monospacedDigit()
+                            .foregroundStyle(Theme.textTertiary)
+                    }
+                }
+                if state == .completed {
+                    Image(systemName: "chevron.down")
+                        .font(.system(size: 13, weight: .semibold))
+                        .foregroundStyle(Theme.textTertiary)
+                        .rotationEffect(.degrees(expanded ? 180 : 0))
+                }
             }
-            VStack(alignment: .leading, spacing: 4) {
-                Text(chapterTitle(chapter))
-                    .font(.system(size: 16, weight: .semibold))
-                    .foregroundStyle(Theme.textPrimary)
-                Text(String.loc("chapter_stages", items.count))
-                    .font(.system(size: 13))
-                    .foregroundStyle(Theme.textTertiary)
-            }
-            Spacer()
-            VStack(alignment: .trailing, spacing: 4) {
-                StarRow(count: maxStars == 0 ? 0 : Int(round(Double(earned) / Double(maxStars) * 3)))
-                Text("\(earned)/\(maxStars)")
-                    .font(.system(size: 12))
-                    .foregroundStyle(Theme.textTertiary)
-            }
-            if completed {
-                Image(systemName: "chevron.down")
-                    .font(.system(size: 13, weight: .semibold))
-                    .foregroundStyle(Theme.textTertiary)
-                    .rotationEffect(.degrees(expanded ? 180 : 0))
+            if state != .locked {
+                NeonBar(track: track, fraction: fraction, height: 4)
             }
         }
-        .padding(16)
-        .card()
+        .padding(14)
+        .neonCard(rowColor, radius: 18, strong: state == .current)
+        .opacity(state == .locked ? 0.55 : 1)
     }
 
     private func stageList(items: [Puzzle], firstIndex: Int) -> some View {
         VStack(spacing: 8) {
             ForEach(Array(items.enumerated()), id: \.element.id) { offset, puzzle in
                 Button {
-                    startIndex = firstIndex + offset
-                    playing = true
+                    play(from: firstIndex + offset)
                 } label: {
                     HStack(spacing: 12) {
                         Text(String.loc("stage_label", offset + 1))
@@ -403,16 +361,17 @@ struct CampaignTrackView: View {
                         Spacer()
                         Image(systemName: "arrow.clockwise")
                             .font(.system(size: 13, weight: .semibold))
-                            .foregroundStyle(Theme.accent2)
+                            .foregroundStyle(color)
                     }
                     .padding(.horizontal, 16)
                     .padding(.vertical, 12)
-                    .card()
+                    .background(RoundedRectangle(cornerRadius: 14, style: .continuous).fill(Theme.modeTint(track)))
+                    .overlay(RoundedRectangle(cornerRadius: 14, style: .continuous).stroke(color.opacity(0.35), lineWidth: 1))
                 }
-                .buttonStyle(.plain)
+                .buttonStyle(NeonPressStyle())
+                .staggerOnAppear(order: offset, step: 0.04, dy: 12)
             }
         }
-        .padding(.leading, 12)
         .transition(.opacity.combined(with: .move(edge: .top)))
     }
 

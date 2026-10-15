@@ -10,6 +10,8 @@
     <string name="home_all_clear">¡Todo completado!</string>
     <string name="home_congrats">¡Felicidades! 🎉</string>
     <string name="home_continue">Continuar</string>
+    <string name="home_last_played">Última partida</string>
+    <string name="home_total_stars">%d estrellas</string>
     <string name="home_retry">Jugar de nuevo</string>
     <string name="home_wait_update">¡Pronto habrá nuevos niveles! 🎉</string>
     <string name="chapters">Capítulos</string>

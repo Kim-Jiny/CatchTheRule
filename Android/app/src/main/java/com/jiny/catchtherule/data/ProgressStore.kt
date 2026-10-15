@@ -41,6 +41,9 @@ class ProgressStore(context: Context) {
         private set
     var stars by mutableStateOf(loadStars())
         private set
+    /** 마지막으로 플레이한 트랙(홈 히어로용). 없으면 null. */
+    var lastTrack by mutableStateOf(prefs.getString(K_LAST_TRACK, null))
+        private set
 
     // MARK: Derived
 
@@ -74,11 +77,18 @@ class ProgressStore(context: Context) {
 
     // MARK: Mutations
 
+    fun markLastTrack(track: String) {
+        if (lastTrack == track) return
+        lastTrack = track
+        prefs.edit().putString(K_LAST_TRACK, track).apply()
+    }
+
     fun recordCampaignClear(puzzle: Puzzle, atIndex: Int, earnedStars: Int) {
         val best = maxOf(stars[puzzle.id] ?: 0, earnedStars)
         stars = stars.toMutableMap().apply { put(puzzle.id, best) }
         prefs.edit().putString(K_STARS, Json.encodeToString(stars)).apply()
         val track = puzzle.trackKey
+        markLastTrack(track)
         if (atIndex >= currentIndex(track)) {
             indices = indices.toMutableMap().apply { put(track, atIndex + 1) }
             prefs.edit().putString(K_INDICES, Json.encodeToString(indices)).apply()
@@ -126,7 +136,9 @@ class ProgressStore(context: Context) {
         hintsRemaining = INITIAL_HINTS
         bestTimeAttack = 0
         shapesUnlockSeen = false
+        lastTrack = null
         prefs.edit()
+            .remove(K_LAST_TRACK)
             .remove(K_INDICES)
             .remove(K_INDEX)            // 구버전 키도 정리
             .remove(K_STARS)
@@ -161,6 +173,7 @@ class ProgressStore(context: Context) {
         private const val K_NICK = "nickname"
         private const val K_SOUND = "soundOn"
         private const val K_HAPTICS = "hapticsOn"
+        private const val K_LAST_TRACK = "lastTrack"
         private const val K_BEST = "bestTimeAttack"
     }
 }
