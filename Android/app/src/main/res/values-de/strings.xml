@@ -2,6 +2,8 @@
 <!-- 자동 생성: scripts/gen_l10n.py — 직접 편집하지 마세요. 문자열은 gen_l10n.py 의 T 테이블에서 고친 뒤 재생성하면 됩니다(직접 추가분은 재생성 시 삭제됨). -->
 <resources>
     <string name="app_name">Finde die Regel</string>
+    <string name="att_usage_description">Erlaube das Tracking, um relevantere Werbung zu sehen und das Spiel kostenlos zu halten.</string>
+    <string name="settings_update_new">NEU</string>
     <string name="tab_home">Start</string>
     <string name="tab_challenge">Challenge</string>
     <string name="tab_settings">Einstellungen</string>

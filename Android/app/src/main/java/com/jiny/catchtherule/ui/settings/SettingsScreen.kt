@@ -444,7 +444,7 @@ private fun AppInfoSection(modifier: Modifier = Modifier) {
                 }
                 if (updateAvailable) {
                     Box(Modifier.padding(start = 6.dp).clip(RoundedCornerShape(50)).background(AppColors.Accent2).padding(horizontal = 8.dp, vertical = 4.dp)) {
-                        Text("NEW", color = Color.Black, fontSize = 11.sp, fontWeight = FontWeight.ExtraBold)
+                        Text(stringResource(R.string.settings_update_new), color = Color.Black, fontSize = 11.sp, fontWeight = FontWeight.ExtraBold)
                     }
                 }
             }
