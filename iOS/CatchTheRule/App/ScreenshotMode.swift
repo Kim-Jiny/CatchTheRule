@@ -33,7 +33,7 @@ enum ScreenshotMode {
 
     /// 모드별 진행률(숫자는 100% — 모든 모드 해금).
     private static let fractions: [String: Double] = [
-        "numbers": 1.0, "shapes": 0.42, "logic": 0.28, "contradiction": 0.55, "target": 0.35, "match": 0.18,
+        "numbers": 1.0, "shapes": 0.42, "logic": 0.28, "contradiction": 0.55, "target": 0.35, "match": 0.18, "fragment": 0.1,
     ]
     private static let heroTrack = "target"
 

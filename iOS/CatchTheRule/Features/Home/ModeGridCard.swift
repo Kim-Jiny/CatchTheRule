@@ -46,6 +46,7 @@ struct ModeGridCard: View {
             }
         }
         .padding(14)
+        .frame(maxWidth: .infinity)
         .frame(height: 158)
         .neonCard(color, strong: finished)
     }

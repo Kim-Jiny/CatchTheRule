@@ -27,6 +27,9 @@ data class Puzzle(
     val target: Int? = null,                   // 숫자 만들기 목표 숫자
     val equation: List<String>? = null,        // 성냥개비 퍼즐 초기 식(셀 배열)
     val moves: Int? = null,                    // 성냥개비 퍼즐 허용 이동 수(순변위)
+    val frames: List<List<String>>? = null,    // 조각 숫자: frames[장][자리] = 켜지는 획 문자열(a~g)
+    val combine: String? = null,               // 조각 숫자 합성 규칙 "or" | "xor"
+    val frameMs: Int? = null,                  // 조각 숫자: 한 장 표시 시간(ms)
     val answer: String,
     val inputType: String,      // "keypad" | "choices"
     val choices: List<String>? = null,
@@ -55,6 +58,9 @@ data class Puzzle(
 
     /** 성냥개비 퍼즐 여부. */
     val isMatch: Boolean get() = equation?.isNotEmpty() == true
+
+    /** 조각 숫자 퍼즐 여부. */
+    val isFragment: Boolean get() = frames?.isNotEmpty() == true
 
     /** 현재 언어의 문장 목록(없으면 영어 → 임의 폴백). */
     val localizedStatements: List<String>

@@ -40082,5 +40082,6224 @@
       "fr": "4−8+6=46 → 4+8+6=18",
       "de": "4−8+6=46 → 4+8+6=18"
     }
+  },
+  {
+    "id": "fg1_s01",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 1,
+    "order": 1,
+    "frames": [
+      [
+        "c"
+      ],
+      [
+        "b"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 2000,
+    "answer": "1",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "이 숫자는 모두 2개의 획으로 이루어져 있어요.",
+        "정답은 홀수예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "This digit is made of 2 strokes in total.",
+        "The answer is odd."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "この数字は全部で2本の線でできています。",
+        "答えは奇数です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "这个数字一共由2根笔画组成。",
+        "答案是奇数。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "Este número se forma con 2 trazos en total.",
+        "La respuesta es impar."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Ce chiffre est formé de 2 traits au total.",
+        "La réponse est impaire."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Diese Ziffer besteht aus insgesamt 2 Strichen.",
+        "Die Antwort ist ungerade."
+      ]
+    },
+    "explanation": {
+      "ko": "1",
+      "en": "1",
+      "ja": "1",
+      "zh": "1",
+      "es": "1",
+      "fr": "1",
+      "de": "1"
+    }
+  },
+  {
+    "id": "fg1_s02",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 1,
+    "order": 2,
+    "frames": [
+      [
+        "a"
+      ],
+      [
+        "bc"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1950,
+    "answer": "7",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "이 숫자는 모두 3개의 획으로 이루어져 있어요.",
+        "정답은 홀수예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "This digit is made of 3 strokes in total.",
+        "The answer is odd."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "この数字は全部で3本の線でできています。",
+        "答えは奇数です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "这个数字一共由3根笔画组成。",
+        "答案是奇数。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "Este número se forma con 3 trazos en total.",
+        "La respuesta es impar."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Ce chiffre est formé de 3 traits au total.",
+        "La réponse est impaire."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Diese Ziffer besteht aus insgesamt 3 Strichen.",
+        "Die Antwort ist ungerade."
+      ]
+    },
+    "explanation": {
+      "ko": "7",
+      "en": "7",
+      "ja": "7",
+      "zh": "7",
+      "es": "7",
+      "fr": "7",
+      "de": "7"
+    }
+  },
+  {
+    "id": "fg1_s03",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 1,
+    "order": 3,
+    "frames": [
+      [
+        "c"
+      ],
+      [
+        "bfg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1900,
+    "answer": "4",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "이 숫자는 모두 4개의 획으로 이루어져 있어요.",
+        "정답은 짝수예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "This digit is made of 4 strokes in total.",
+        "The answer is even."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "この数字は全部で4本の線でできています。",
+        "答えは偶数です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "这个数字一共由4根笔画组成。",
+        "答案是偶数。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "Este número se forma con 4 trazos en total.",
+        "La respuesta es par."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Ce chiffre est formé de 4 traits au total.",
+        "La réponse est paire."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Diese Ziffer besteht aus insgesamt 4 Strichen.",
+        "Die Antwort ist gerade."
+      ]
+    },
+    "explanation": {
+      "ko": "4",
+      "en": "4",
+      "ja": "4",
+      "zh": "4",
+      "es": "4",
+      "fr": "4",
+      "de": "4"
+    }
+  },
+  {
+    "id": "fg1_s04",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 1,
+    "order": 4,
+    "frames": [
+      [
+        "abeg"
+      ],
+      [
+        "d"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1900,
+    "answer": "2",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "이 숫자는 모두 5개의 획으로 이루어져 있어요.",
+        "정답은 짝수예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "This digit is made of 5 strokes in total.",
+        "The answer is even."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "この数字は全部で5本の線でできています。",
+        "答えは偶数です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "这个数字一共由5根笔画组成。",
+        "答案是偶数。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "Este número se forma con 5 trazos en total.",
+        "La respuesta es par."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Ce chiffre est formé de 5 traits au total.",
+        "La réponse est paire."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Diese Ziffer besteht aus insgesamt 5 Strichen.",
+        "Die Antwort ist gerade."
+      ]
+    },
+    "explanation": {
+      "ko": "2",
+      "en": "2",
+      "ja": "2",
+      "zh": "2",
+      "es": "2",
+      "fr": "2",
+      "de": "2"
+    }
+  },
+  {
+    "id": "fg1_s05",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 1,
+    "order": 5,
+    "frames": [
+      [
+        "cd"
+      ],
+      [
+        "aefg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1850,
+    "answer": "6",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "이 숫자는 모두 6개의 획으로 이루어져 있어요.",
+        "정답은 짝수예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "This digit is made of 6 strokes in total.",
+        "The answer is even."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "この数字は全部で6本の線でできています。",
+        "答えは偶数です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "这个数字一共由6根笔画组成。",
+        "答案是偶数。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "Este número se forma con 6 trazos en total.",
+        "La respuesta es par."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Ce chiffre est formé de 6 traits au total.",
+        "La réponse est paire."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Diese Ziffer besteht aus insgesamt 6 Strichen.",
+        "Die Antwort ist gerade."
+      ]
+    },
+    "explanation": {
+      "ko": "6",
+      "en": "6",
+      "ja": "6",
+      "zh": "6",
+      "es": "6",
+      "fr": "6",
+      "de": "6"
+    }
+  },
+  {
+    "id": "fg1_s06",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 1,
+    "order": 6,
+    "frames": [
+      [
+        "a"
+      ],
+      [
+        "bcdfg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1800,
+    "answer": "9",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "이 숫자는 모두 6개의 획으로 이루어져 있어요.",
+        "정답은 홀수예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "This digit is made of 6 strokes in total.",
+        "The answer is odd."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "この数字は全部で6本の線でできています。",
+        "答えは奇数です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "这个数字一共由6根笔画组成。",
+        "答案是奇数。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "Este número se forma con 6 trazos en total.",
+        "La respuesta es impar."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Ce chiffre est formé de 6 traits au total.",
+        "La réponse est impaire."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Diese Ziffer besteht aus insgesamt 6 Strichen.",
+        "Die Antwort ist ungerade."
+      ]
+    },
+    "explanation": {
+      "ko": "9",
+      "en": "9",
+      "ja": "9",
+      "zh": "9",
+      "es": "9",
+      "fr": "9",
+      "de": "9"
+    }
+  },
+  {
+    "id": "fg2_s01",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 2,
+    "order": 1,
+    "frames": [
+      [
+        "b"
+      ],
+      [
+        "c"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 2000,
+    "answer": "1",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "이 숫자는 모두 2개의 획으로 이루어져 있어요.",
+        "정답은 홀수예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "This digit is made of 2 strokes in total.",
+        "The answer is odd."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "この数字は全部で2本の線でできています。",
+        "答えは奇数です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "这个数字一共由2根笔画组成。",
+        "答案是奇数。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "Este número se forma con 2 trazos en total.",
+        "La respuesta es impar."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Ce chiffre est formé de 2 traits au total.",
+        "La réponse est impaire."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Diese Ziffer besteht aus insgesamt 2 Strichen.",
+        "Die Antwort ist ungerade."
+      ]
+    },
+    "explanation": {
+      "ko": "1",
+      "en": "1",
+      "ja": "1",
+      "zh": "1",
+      "es": "1",
+      "fr": "1",
+      "de": "1"
+    }
+  },
+  {
+    "id": "fg2_s02",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 2,
+    "order": 2,
+    "frames": [
+      [
+        "bc"
+      ],
+      [
+        "a"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1950,
+    "answer": "7",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "이 숫자는 모두 3개의 획으로 이루어져 있어요.",
+        "정답은 홀수예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "This digit is made of 3 strokes in total.",
+        "The answer is odd."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "この数字は全部で3本の線でできています。",
+        "答えは奇数です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "这个数字一共由3根笔画组成。",
+        "答案是奇数。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "Este número se forma con 3 trazos en total.",
+        "La respuesta es impar."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Ce chiffre est formé de 3 traits au total.",
+        "La réponse est impaire."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Diese Ziffer besteht aus insgesamt 3 Strichen.",
+        "Die Antwort ist ungerade."
+      ]
+    },
+    "explanation": {
+      "ko": "7",
+      "en": "7",
+      "ja": "7",
+      "zh": "7",
+      "es": "7",
+      "fr": "7",
+      "de": "7"
+    }
+  },
+  {
+    "id": "fg2_s03",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 2,
+    "order": 3,
+    "frames": [
+      [
+        "cf"
+      ],
+      [
+        "bg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1900,
+    "answer": "4",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "이 숫자는 모두 4개의 획으로 이루어져 있어요.",
+        "정답은 짝수예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "This digit is made of 4 strokes in total.",
+        "The answer is even."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "この数字は全部で4本の線でできています。",
+        "答えは偶数です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "这个数字一共由4根笔画组成。",
+        "答案是偶数。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "Este número se forma con 4 trazos en total.",
+        "La respuesta es par."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Ce chiffre est formé de 4 traits au total.",
+        "La réponse est paire."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Diese Ziffer besteht aus insgesamt 4 Strichen.",
+        "Die Antwort ist gerade."
+      ]
+    },
+    "explanation": {
+      "ko": "4",
+      "en": "4",
+      "ja": "4",
+      "zh": "4",
+      "es": "4",
+      "fr": "4",
+      "de": "4"
+    }
+  },
+  {
+    "id": "fg2_s04",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 2,
+    "order": 4,
+    "frames": [
+      [
+        "b"
+      ],
+      [
+        "acdg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1800,
+    "answer": "3",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "이 숫자는 모두 5개의 획으로 이루어져 있어요.",
+        "정답은 홀수예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "This digit is made of 5 strokes in total.",
+        "The answer is odd."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "この数字は全部で5本の線でできています。",
+        "答えは奇数です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "这个数字一共由5根笔画组成。",
+        "答案是奇数。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "Este número se forma con 5 trazos en total.",
+        "La respuesta es impar."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Ce chiffre est formé de 5 traits au total.",
+        "La réponse est impaire."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Diese Ziffer besteht aus insgesamt 5 Strichen.",
+        "Die Antwort ist ungerade."
+      ]
+    },
+    "explanation": {
+      "ko": "3",
+      "en": "3",
+      "ja": "3",
+      "zh": "3",
+      "es": "3",
+      "fr": "3",
+      "de": "3"
+    }
+  },
+  {
+    "id": "fg2_s05",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 2,
+    "order": 5,
+    "frames": [
+      [
+        "cd"
+      ],
+      [
+        "afg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1750,
+    "answer": "5",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "이 숫자는 모두 5개의 획으로 이루어져 있어요.",
+        "정답은 홀수예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "This digit is made of 5 strokes in total.",
+        "The answer is odd."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "この数字は全部で5本の線でできています。",
+        "答えは奇数です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "这个数字一共由5根笔画组成。",
+        "答案是奇数。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "Este número se forma con 5 trazos en total.",
+        "La respuesta es impar."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Ce chiffre est formé de 5 traits au total.",
+        "La réponse est impaire."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Diese Ziffer besteht aus insgesamt 5 Strichen.",
+        "Die Antwort ist ungerade."
+      ]
+    },
+    "explanation": {
+      "ko": "5",
+      "en": "5",
+      "ja": "5",
+      "zh": "5",
+      "es": "5",
+      "fr": "5",
+      "de": "5"
+    }
+  },
+  {
+    "id": "fg2_s06",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 2,
+    "order": 6,
+    "frames": [
+      [
+        "dfg"
+      ],
+      [
+        "abce"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1700,
+    "answer": "8",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "이 숫자는 모두 7개의 획으로 이루어져 있어요.",
+        "정답은 짝수예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "This digit is made of 7 strokes in total.",
+        "The answer is even."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "この数字は全部で7本の線でできています。",
+        "答えは偶数です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "这个数字一共由7根笔画组成。",
+        "答案是偶数。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "Este número se forma con 7 trazos en total.",
+        "La respuesta es par."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Ce chiffre est formé de 7 traits au total.",
+        "La réponse est paire."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Diese Ziffer besteht aus insgesamt 7 Strichen.",
+        "Die Antwort ist gerade."
+      ]
+    },
+    "explanation": {
+      "ko": "8",
+      "en": "8",
+      "ja": "8",
+      "zh": "8",
+      "es": "8",
+      "fr": "8",
+      "de": "8"
+    }
+  },
+  {
+    "id": "fg3_s01",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 3,
+    "order": 1,
+    "frames": [
+      [
+        "cdf",
+        "b"
+      ],
+      [
+        "abeg",
+        "ac"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1800,
+    "answer": "87",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 8이에요.",
+        "각 자리 숫자를 모두 더하면 15예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 8.",
+        "The digits add up to 15."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は8です。",
+        "各桁の数字をすべて足すと15です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是8。",
+        "各位数字相加等于15。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 8.",
+        "Si sumas todos los dígitos, obtienes 15."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 8.",
+        "La somme de tous les chiffres est 15."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 8.",
+        "Die Summe aller Ziffern ist 15."
+      ]
+    },
+    "explanation": {
+      "ko": "87",
+      "en": "87",
+      "ja": "87",
+      "zh": "87",
+      "es": "87",
+      "fr": "87",
+      "de": "87"
+    }
+  },
+  {
+    "id": "fg3_s02",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 3,
+    "order": 2,
+    "frames": [
+      [
+        "bc",
+        "cdf"
+      ],
+      [
+        "fg",
+        "abe"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1750,
+    "answer": "40",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 4예요.",
+        "각 자리 숫자를 모두 더하면 4예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 4.",
+        "The digits add up to 4."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は4です。",
+        "各桁の数字をすべて足すと4です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是4。",
+        "各位数字相加等于4。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 4.",
+        "Si sumas todos los dígitos, obtienes 4."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 4.",
+        "La somme de tous les chiffres est 4."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 4.",
+        "Die Summe aller Ziffern ist 4."
+      ]
+    },
+    "explanation": {
+      "ko": "40",
+      "en": "40",
+      "ja": "40",
+      "zh": "40",
+      "es": "40",
+      "fr": "40",
+      "de": "40"
+    }
+  },
+  {
+    "id": "fg3_s03",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 3,
+    "order": 3,
+    "frames": [
+      [
+        "bde",
+        "def"
+      ],
+      [
+        "ag",
+        "abc"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1700,
+    "answer": "20",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 2예요.",
+        "각 자리 숫자를 모두 더하면 2예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 2.",
+        "The digits add up to 2."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は2です。",
+        "各桁の数字をすべて足すと2です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是2。",
+        "各位数字相加等于2。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 2.",
+        "Si sumas todos los dígitos, obtienes 2."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 2.",
+        "La somme de tous les chiffres est 2."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 2.",
+        "Die Summe aller Ziffern ist 2."
+      ]
+    },
+    "explanation": {
+      "ko": "20",
+      "en": "20",
+      "ja": "20",
+      "zh": "20",
+      "es": "20",
+      "fr": "20",
+      "de": "20"
+    }
+  },
+  {
+    "id": "fg3_s04",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 3,
+    "order": 4,
+    "frames": [
+      [
+        "b",
+        "c"
+      ],
+      [
+        "c",
+        "b"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1700,
+    "answer": "11",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 1이에요.",
+        "각 자리 숫자를 모두 더하면 2예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 1.",
+        "The digits add up to 2."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は1です。",
+        "各桁の数字をすべて足すと2です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是1。",
+        "各位数字相加等于2。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 1.",
+        "Si sumas todos los dígitos, obtienes 2."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 1.",
+        "La somme de tous les chiffres est 2."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 1.",
+        "Die Summe aller Ziffern ist 2."
+      ]
+    },
+    "explanation": {
+      "ko": "11",
+      "en": "11",
+      "ja": "11",
+      "zh": "11",
+      "es": "11",
+      "fr": "11",
+      "de": "11"
+    }
+  },
+  {
+    "id": "fg3_s05",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 3,
+    "order": 5,
+    "frames": [
+      [
+        "fg",
+        "ac"
+      ],
+      [
+        "bc",
+        "bdfg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1650,
+    "answer": "49",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 4예요.",
+        "각 자리 숫자를 모두 더하면 13이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 4.",
+        "The digits add up to 13."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は4です。",
+        "各桁の数字をすべて足すと13です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是4。",
+        "各位数字相加等于13。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 4.",
+        "Si sumas todos los dígitos, obtienes 13."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 4.",
+        "La somme de tous les chiffres est 13."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 4.",
+        "Die Summe aller Ziffern ist 13."
+      ]
+    },
+    "explanation": {
+      "ko": "49",
+      "en": "49",
+      "ja": "49",
+      "zh": "49",
+      "es": "49",
+      "fr": "49",
+      "de": "49"
+    }
+  },
+  {
+    "id": "fg3_s06",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 3,
+    "order": 6,
+    "frames": [
+      [
+        "bd",
+        "cdef"
+      ],
+      [
+        "aeg",
+        "ag"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1600,
+    "answer": "26",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 2예요.",
+        "각 자리 숫자를 모두 더하면 8이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 2.",
+        "The digits add up to 8."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は2です。",
+        "各桁の数字をすべて足すと8です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是2。",
+        "各位数字相加等于8。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 2.",
+        "Si sumas todos los dígitos, obtienes 8."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 2.",
+        "La somme de tous les chiffres est 8."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 2.",
+        "Die Summe aller Ziffern ist 8."
+      ]
+    },
+    "explanation": {
+      "ko": "26",
+      "en": "26",
+      "ja": "26",
+      "zh": "26",
+      "es": "26",
+      "fr": "26",
+      "de": "26"
+    }
+  },
+  {
+    "id": "fg4_s01",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 4,
+    "order": 1,
+    "frames": [
+      [
+        "acdg",
+        "b"
+      ],
+      [
+        "bf",
+        "acdfg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1700,
+    "answer": "99",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 9예요.",
+        "각 자리 숫자를 모두 더하면 18이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 9.",
+        "The digits add up to 18."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は9です。",
+        "各桁の数字をすべて足すと18です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是9。",
+        "各位数字相加等于18。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 9.",
+        "Si sumas todos los dígitos, obtienes 18."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 9.",
+        "La somme de tous les chiffres est 18."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 9.",
+        "Die Summe aller Ziffern ist 18."
+      ]
+    },
+    "explanation": {
+      "ko": "99",
+      "en": "99",
+      "ja": "99",
+      "zh": "99",
+      "es": "99",
+      "fr": "99",
+      "de": "99"
+    }
+  },
+  {
+    "id": "fg4_s02",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 4,
+    "order": 2,
+    "frames": [
+      [
+        "acdef",
+        "adg"
+      ],
+      [
+        "g",
+        "cef"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1650,
+    "answer": "66",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 6이에요.",
+        "각 자리 숫자를 모두 더하면 12예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 6.",
+        "The digits add up to 12."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は6です。",
+        "各桁の数字をすべて足すと12です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是6。",
+        "各位数字相加等于12。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 6.",
+        "Si sumas todos los dígitos, obtienes 12."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 6.",
+        "La somme de tous les chiffres est 12."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 6.",
+        "Die Summe aller Ziffern ist 12."
+      ]
+    },
+    "explanation": {
+      "ko": "66",
+      "en": "66",
+      "ja": "66",
+      "zh": "66",
+      "es": "66",
+      "fr": "66",
+      "de": "66"
+    }
+  },
+  {
+    "id": "fg4_s03",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 4,
+    "order": 3,
+    "frames": [
+      [
+        "cef",
+        "ad"
+      ],
+      [
+        "adg",
+        "bcef"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1600,
+    "answer": "60",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 6이에요.",
+        "각 자리 숫자를 모두 더하면 6이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 6.",
+        "The digits add up to 6."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は6です。",
+        "各桁の数字をすべて足すと6です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是6。",
+        "各位数字相加等于6。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 6.",
+        "Si sumas todos los dígitos, obtienes 6."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 6.",
+        "La somme de tous les chiffres est 6."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 6.",
+        "Die Summe aller Ziffern ist 6."
+      ]
+    },
+    "explanation": {
+      "ko": "60",
+      "en": "60",
+      "ja": "60",
+      "zh": "60",
+      "es": "60",
+      "fr": "60",
+      "de": "60"
+    }
+  },
+  {
+    "id": "fg4_s04",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 4,
+    "order": 4,
+    "frames": [
+      [
+        "bdg",
+        "ag"
+      ],
+      [
+        "ae",
+        "cdf"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1600,
+    "answer": "25",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 2예요.",
+        "각 자리 숫자를 모두 더하면 7이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 2.",
+        "The digits add up to 7."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は2です。",
+        "各桁の数字をすべて足すと7です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是2。",
+        "各位数字相加等于7。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 2.",
+        "Si sumas todos los dígitos, obtienes 7."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 2.",
+        "La somme de tous les chiffres est 7."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 2.",
+        "Die Summe aller Ziffern ist 7."
+      ]
+    },
+    "explanation": {
+      "ko": "25",
+      "en": "25",
+      "ja": "25",
+      "zh": "25",
+      "es": "25",
+      "fr": "25",
+      "de": "25"
+    }
+  },
+  {
+    "id": "fg4_s05",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 4,
+    "order": 5,
+    "frames": [
+      [
+        "dg",
+        "bf"
+      ],
+      [
+        "abcf",
+        "cg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1550,
+    "answer": "94",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 9예요.",
+        "각 자리 숫자를 모두 더하면 13이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 9.",
+        "The digits add up to 13."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は9です。",
+        "各桁の数字をすべて足すと13です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是9。",
+        "各位数字相加等于13。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 9.",
+        "Si sumas todos los dígitos, obtienes 13."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 9.",
+        "La somme de tous les chiffres est 13."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 9.",
+        "Die Summe aller Ziffern ist 13."
+      ]
+    },
+    "explanation": {
+      "ko": "94",
+      "en": "94",
+      "ja": "94",
+      "zh": "94",
+      "es": "94",
+      "fr": "94",
+      "de": "94"
+    }
+  },
+  {
+    "id": "fg4_s06",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 4,
+    "order": 6,
+    "frames": [
+      [
+        "a",
+        "acdfg"
+      ],
+      [
+        "bcdg",
+        "e"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1500,
+    "answer": "36",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 3이에요.",
+        "각 자리 숫자를 모두 더하면 9예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 3.",
+        "The digits add up to 9."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は3です。",
+        "各桁の数字をすべて足すと9です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是3。",
+        "各位数字相加等于9。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 3.",
+        "Si sumas todos los dígitos, obtienes 9."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 3.",
+        "La somme de tous les chiffres est 9."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 3.",
+        "Die Summe aller Ziffern ist 9."
+      ]
+    },
+    "explanation": {
+      "ko": "36",
+      "en": "36",
+      "ja": "36",
+      "zh": "36",
+      "es": "36",
+      "fr": "36",
+      "de": "36"
+    }
+  },
+  {
+    "id": "fg5_s01",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 5,
+    "order": 1,
+    "frames": [
+      [
+        "b",
+        "bdg",
+        ""
+      ],
+      [
+        "a",
+        "aef",
+        "b"
+      ],
+      [
+        "c",
+        "c",
+        "ac"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1500,
+    "answer": "787",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 7이에요.",
+        "각 자리 숫자를 모두 더하면 22예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 7.",
+        "The digits add up to 22."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は7です。",
+        "各桁の数字をすべて足すと22です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是7。",
+        "各位数字相加等于22。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 7.",
+        "Si sumas todos los dígitos, obtienes 22."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 7.",
+        "La somme de tous les chiffres est 22."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 7.",
+        "Die Summe aller Ziffern ist 22."
+      ]
+    },
+    "explanation": {
+      "ko": "787",
+      "en": "787",
+      "ja": "787",
+      "zh": "787",
+      "es": "787",
+      "fr": "787",
+      "de": "787"
+    }
+  },
+  {
+    "id": "fg5_s02",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 5,
+    "order": 2,
+    "frames": [
+      [
+        "bc",
+        "ag",
+        ""
+      ],
+      [
+        "a",
+        "c",
+        "df"
+      ],
+      [
+        "dg",
+        "def",
+        "acg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1500,
+    "answer": "365",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 3이에요.",
+        "각 자리 숫자를 모두 더하면 14예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 3.",
+        "The digits add up to 14."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は3です。",
+        "各桁の数字をすべて足すと14です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是3。",
+        "各位数字相加等于14。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 3.",
+        "Si sumas todos los dígitos, obtienes 14."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 3.",
+        "La somme de tous les chiffres est 14."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 3.",
+        "Die Summe aller Ziffern ist 14."
+      ]
+    },
+    "explanation": {
+      "ko": "365",
+      "en": "365",
+      "ja": "365",
+      "zh": "365",
+      "es": "365",
+      "fr": "365",
+      "de": "365"
+    }
+  },
+  {
+    "id": "fg5_s03",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 5,
+    "order": 3,
+    "frames": [
+      [
+        "a",
+        "d",
+        "c"
+      ],
+      [
+        "d",
+        "cg",
+        "a"
+      ],
+      [
+        "cfg",
+        "af",
+        "bdg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1450,
+    "answer": "553",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 5예요.",
+        "각 자리 숫자를 모두 더하면 13이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 5.",
+        "The digits add up to 13."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は5です。",
+        "各桁の数字をすべて足すと13です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是5。",
+        "各位数字相加等于13。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 5.",
+        "Si sumas todos los dígitos, obtienes 13."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 5.",
+        "La somme de tous les chiffres est 13."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 5.",
+        "Die Summe aller Ziffern ist 13."
+      ]
+    },
+    "explanation": {
+      "ko": "553",
+      "en": "553",
+      "ja": "553",
+      "zh": "553",
+      "es": "553",
+      "fr": "553",
+      "de": "553"
+    }
+  },
+  {
+    "id": "fg5_s04",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 5,
+    "order": 4,
+    "frames": [
+      [
+        "ceg",
+        "ae",
+        "b"
+      ],
+      [
+        "ad",
+        "bdf",
+        "ag"
+      ],
+      [
+        "f",
+        "c",
+        "de"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1450,
+    "answer": "602",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 6이에요.",
+        "각 자리 숫자를 모두 더하면 8이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 6.",
+        "The digits add up to 8."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は6です。",
+        "各桁の数字をすべて足すと8です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是6。",
+        "各位数字相加等于8。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 6.",
+        "Si sumas todos los dígitos, obtienes 8."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 6.",
+        "La somme de tous les chiffres est 8."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 6.",
+        "Die Summe aller Ziffern ist 8."
+      ]
+    },
+    "explanation": {
+      "ko": "602",
+      "en": "602",
+      "ja": "602",
+      "zh": "602",
+      "es": "602",
+      "fr": "602",
+      "de": "602"
+    }
+  },
+  {
+    "id": "fg5_s05",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 5,
+    "order": 5,
+    "frames": [
+      [
+        "g",
+        "b",
+        ""
+      ],
+      [
+        "acdf",
+        "",
+        "ab"
+      ],
+      [
+        "",
+        "c",
+        "cdfg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1400,
+    "answer": "519",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 5예요.",
+        "각 자리 숫자를 모두 더하면 15예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 5.",
+        "The digits add up to 15."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は5です。",
+        "各桁の数字をすべて足すと15です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是5。",
+        "各位数字相加等于15。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 5.",
+        "Si sumas todos los dígitos, obtienes 15."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 5.",
+        "La somme de tous les chiffres est 15."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 5.",
+        "Die Summe aller Ziffern ist 15."
+      ]
+    },
+    "explanation": {
+      "ko": "519",
+      "en": "519",
+      "ja": "519",
+      "zh": "519",
+      "es": "519",
+      "fr": "519",
+      "de": "519"
+    }
+  },
+  {
+    "id": "fg5_s06",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 5,
+    "order": 6,
+    "frames": [
+      [
+        "f",
+        "acdef",
+        "adg"
+      ],
+      [
+        "abcg",
+        "",
+        "bc"
+      ],
+      [
+        "d",
+        "b",
+        ""
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1400,
+    "answer": "903",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 9예요.",
+        "각 자리 숫자를 모두 더하면 12예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 9.",
+        "The digits add up to 12."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は9です。",
+        "各桁の数字をすべて足すと12です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是9。",
+        "各位数字相加等于12。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 9.",
+        "Si sumas todos los dígitos, obtienes 12."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 9.",
+        "La somme de tous les chiffres est 12."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 9.",
+        "Die Summe aller Ziffern ist 12."
+      ]
+    },
+    "explanation": {
+      "ko": "903",
+      "en": "903",
+      "ja": "903",
+      "zh": "903",
+      "es": "903",
+      "fr": "903",
+      "de": "903"
+    }
+  },
+  {
+    "id": "fg6_s01",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 6,
+    "order": 1,
+    "frames": [
+      [
+        "f",
+        "bfg",
+        ""
+      ],
+      [
+        "dg",
+        "a",
+        "dfg"
+      ],
+      [
+        "abc",
+        "cd",
+        "ac"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1400,
+    "answer": "995",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 9예요.",
+        "각 자리 숫자를 모두 더하면 23이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 9.",
+        "The digits add up to 23."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は9です。",
+        "各桁の数字をすべて足すと23です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是9。",
+        "各位数字相加等于23。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 9.",
+        "Si sumas todos los dígitos, obtienes 23."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 9.",
+        "La somme de tous les chiffres est 23."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 9.",
+        "Die Summe aller Ziffern ist 23."
+      ]
+    },
+    "explanation": {
+      "ko": "995",
+      "en": "995",
+      "ja": "995",
+      "zh": "995",
+      "es": "995",
+      "fr": "995",
+      "de": "995"
+    }
+  },
+  {
+    "id": "fg6_s02",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 6,
+    "order": 2,
+    "frames": [
+      [
+        "cf",
+        "",
+        "cf"
+      ],
+      [
+        "g",
+        "abe",
+        "ad"
+      ],
+      [
+        "b",
+        "dg",
+        "bg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1400,
+    "answer": "429",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 4예요.",
+        "각 자리 숫자를 모두 더하면 15예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 4.",
+        "The digits add up to 15."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は4です。",
+        "各桁の数字をすべて足すと15です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是4。",
+        "各位数字相加等于15。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 4.",
+        "Si sumas todos los dígitos, obtienes 15."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 4.",
+        "La somme de tous les chiffres est 15."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 4.",
+        "Die Summe aller Ziffern ist 15."
+      ]
+    },
+    "explanation": {
+      "ko": "429",
+      "en": "429",
+      "ja": "429",
+      "zh": "429",
+      "es": "429",
+      "fr": "429",
+      "de": "429"
+    }
+  },
+  {
+    "id": "fg6_s03",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 6,
+    "order": 3,
+    "frames": [
+      [
+        "b",
+        "a",
+        "bfg"
+      ],
+      [
+        "c",
+        "b",
+        "c"
+      ],
+      [
+        "",
+        "c",
+        ""
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1350,
+    "answer": "174",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 1이에요.",
+        "각 자리 숫자를 모두 더하면 12예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 1.",
+        "The digits add up to 12."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は1です。",
+        "各桁の数字をすべて足すと12です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是1。",
+        "各位数字相加等于12。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 1.",
+        "Si sumas todos los dígitos, obtienes 12."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 1.",
+        "La somme de tous les chiffres est 12."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 1.",
+        "Die Summe aller Ziffern ist 12."
+      ]
+    },
+    "explanation": {
+      "ko": "174",
+      "en": "174",
+      "ja": "174",
+      "zh": "174",
+      "es": "174",
+      "fr": "174",
+      "de": "174"
+    }
+  },
+  {
+    "id": "fg6_s04",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 6,
+    "order": 4,
+    "frames": [
+      [
+        "b",
+        "bc",
+        "f"
+      ],
+      [
+        "a",
+        "",
+        "ace"
+      ],
+      [
+        "c",
+        "a",
+        "bdg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1350,
+    "answer": "778",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 7이에요.",
+        "각 자리 숫자를 모두 더하면 22예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 7.",
+        "The digits add up to 22."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は7です。",
+        "各桁の数字をすべて足すと22です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是7。",
+        "各位数字相加等于22。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 7.",
+        "Si sumas todos los dígitos, obtienes 22."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 7.",
+        "La somme de tous les chiffres est 22."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 7.",
+        "Die Summe aller Ziffern ist 22."
+      ]
+    },
+    "explanation": {
+      "ko": "778",
+      "en": "778",
+      "ja": "778",
+      "zh": "778",
+      "es": "778",
+      "fr": "778",
+      "de": "778"
+    }
+  },
+  {
+    "id": "fg6_s05",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 6,
+    "order": 5,
+    "frames": [
+      [
+        "cdf",
+        "cf",
+        "c"
+      ],
+      [
+        "ag",
+        "abe",
+        "b"
+      ],
+      [
+        "b",
+        "d",
+        "a"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1300,
+    "answer": "907",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 9예요.",
+        "각 자리 숫자를 모두 더하면 16이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 9.",
+        "The digits add up to 16."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は9です。",
+        "各桁の数字をすべて足すと16です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是9。",
+        "各位数字相加等于16。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 9.",
+        "Si sumas todos los dígitos, obtienes 16."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 9.",
+        "La somme de tous les chiffres est 16."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 9.",
+        "Die Summe aller Ziffern ist 16."
+      ]
+    },
+    "explanation": {
+      "ko": "907",
+      "en": "907",
+      "ja": "907",
+      "zh": "907",
+      "es": "907",
+      "fr": "907",
+      "de": "907"
+    }
+  },
+  {
+    "id": "fg6_s06",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 6,
+    "order": 6,
+    "frames": [
+      [
+        "be",
+        "cf",
+        "ac"
+      ],
+      [
+        "d",
+        "bg",
+        ""
+      ],
+      [
+        "ag",
+        "",
+        "b"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1300,
+    "answer": "247",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 2예요.",
+        "각 자리 숫자를 모두 더하면 13이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 2.",
+        "The digits add up to 13."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は2です。",
+        "各桁の数字をすべて足すと13です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是2。",
+        "各位数字相加等于13。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 2.",
+        "Si sumas todos los dígitos, obtienes 13."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 2.",
+        "La somme de tous les chiffres est 13."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 2.",
+        "Die Summe aller Ziffern ist 13."
+      ]
+    },
+    "explanation": {
+      "ko": "247",
+      "en": "247",
+      "ja": "247",
+      "zh": "247",
+      "es": "247",
+      "fr": "247",
+      "de": "247"
+    }
+  },
+  {
+    "id": "fg7_s01",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 7,
+    "order": 1,
+    "frames": [
+      [
+        "f",
+        "dg",
+        "a"
+      ],
+      [
+        "bg",
+        "c",
+        "bc"
+      ],
+      [
+        "c",
+        "ab",
+        ""
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1200,
+    "answer": "437",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 4예요.",
+        "각 자리 숫자를 모두 더하면 14예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 4.",
+        "The digits add up to 14."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は4です。",
+        "各桁の数字をすべて足すと14です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是4。",
+        "各位数字相加等于14。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 4.",
+        "Si sumas todos los dígitos, obtienes 14."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 4.",
+        "La somme de tous les chiffres est 14."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 4.",
+        "Die Summe aller Ziffern ist 14."
+      ]
+    },
+    "explanation": {
+      "ko": "437",
+      "en": "437",
+      "ja": "437",
+      "zh": "437",
+      "es": "437",
+      "fr": "437",
+      "de": "437"
+    }
+  },
+  {
+    "id": "fg7_s02",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 7,
+    "order": 2,
+    "frames": [
+      [
+        "c",
+        "cfg",
+        ""
+      ],
+      [
+        "b",
+        "abd",
+        "acdfg"
+      ],
+      [
+        "a",
+        "e",
+        "e"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1200,
+    "answer": "786",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 7이에요.",
+        "각 자리 숫자를 모두 더하면 21이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 7.",
+        "The digits add up to 21."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は7です。",
+        "各桁の数字をすべて足すと21です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是7。",
+        "各位数字相加等于21。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 7.",
+        "Si sumas todos los dígitos, obtienes 21."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 7.",
+        "La somme de tous les chiffres est 21."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 7.",
+        "Die Summe aller Ziffern ist 21."
+      ]
+    },
+    "explanation": {
+      "ko": "786",
+      "en": "786",
+      "ja": "786",
+      "zh": "786",
+      "es": "786",
+      "fr": "786",
+      "de": "786"
+    }
+  },
+  {
+    "id": "fg7_s03",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 7,
+    "order": 3,
+    "frames": [
+      [
+        "g",
+        "bf",
+        "df"
+      ],
+      [
+        "df",
+        "cg",
+        "bce"
+      ],
+      [
+        "abc",
+        "",
+        "a"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1150,
+    "answer": "940",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 9예요.",
+        "각 자리 숫자를 모두 더하면 13이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 9.",
+        "The digits add up to 13."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は9です。",
+        "各桁の数字をすべて足すと13です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是9。",
+        "各位数字相加等于13。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 9.",
+        "Si sumas todos los dígitos, obtienes 13."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 9.",
+        "La somme de tous les chiffres est 13."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 9.",
+        "Die Summe aller Ziffern ist 13."
+      ]
+    },
+    "explanation": {
+      "ko": "940",
+      "en": "940",
+      "ja": "940",
+      "zh": "940",
+      "es": "940",
+      "fr": "940",
+      "de": "940"
+    }
+  },
+  {
+    "id": "fg7_s04",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 7,
+    "order": 4,
+    "frames": [
+      [
+        "bcfg",
+        "def",
+        ""
+      ],
+      [
+        "e",
+        "abc",
+        "abd"
+      ],
+      [
+        "ad",
+        "",
+        "eg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1150,
+    "answer": "802",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 8이에요.",
+        "각 자리 숫자를 모두 더하면 10이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 8.",
+        "The digits add up to 10."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は8です。",
+        "各桁の数字をすべて足すと10です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是8。",
+        "各位数字相加等于10。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 8.",
+        "Si sumas todos los dígitos, obtienes 10."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 8.",
+        "La somme de tous les chiffres est 10."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 8.",
+        "Die Summe aller Ziffern ist 10."
+      ]
+    },
+    "explanation": {
+      "ko": "802",
+      "en": "802",
+      "ja": "802",
+      "zh": "802",
+      "es": "802",
+      "fr": "802",
+      "de": "802"
+    }
+  },
+  {
+    "id": "fg7_s05",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 7,
+    "order": 5,
+    "frames": [
+      [
+        "bc",
+        "acdfg",
+        "e"
+      ],
+      [
+        "fg",
+        "e",
+        "ad"
+      ],
+      [
+        "",
+        "b",
+        "cfg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1100,
+    "answer": "486",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 4예요.",
+        "각 자리 숫자를 모두 더하면 18이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 4.",
+        "The digits add up to 18."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は4です。",
+        "各桁の数字をすべて足すと18です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是4。",
+        "各位数字相加等于18。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 4.",
+        "Si sumas todos los dígitos, obtienes 18."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 4.",
+        "La somme de tous les chiffres est 18."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 4.",
+        "Die Summe aller Ziffern ist 18."
+      ]
+    },
+    "explanation": {
+      "ko": "486",
+      "en": "486",
+      "ja": "486",
+      "zh": "486",
+      "es": "486",
+      "fr": "486",
+      "de": "486"
+    }
+  },
+  {
+    "id": "fg7_s06",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 7,
+    "order": 6,
+    "frames": [
+      [
+        "",
+        "bc",
+        "bc"
+      ],
+      [
+        "a",
+        "",
+        "adf"
+      ],
+      [
+        "bdeg",
+        "a",
+        "e"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1100,
+    "answer": "270",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 2예요.",
+        "각 자리 숫자를 모두 더하면 9예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 2.",
+        "The digits add up to 9."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は2です。",
+        "各桁の数字をすべて足すと9です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是2。",
+        "各位数字相加等于9。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 2.",
+        "Si sumas todos los dígitos, obtienes 9."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 2.",
+        "La somme de tous les chiffres est 9."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 2.",
+        "Die Summe aller Ziffern ist 9."
+      ]
+    },
+    "explanation": {
+      "ko": "270",
+      "en": "270",
+      "ja": "270",
+      "zh": "270",
+      "es": "270",
+      "fr": "270",
+      "de": "270"
+    }
+  },
+  {
+    "id": "fg8_s01",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 8,
+    "order": 1,
+    "frames": [
+      [
+        "acg",
+        "abc",
+        "b"
+      ],
+      [
+        "d",
+        "df",
+        "c"
+      ],
+      [
+        "b",
+        "e",
+        ""
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1100,
+    "answer": "301",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 3이에요.",
+        "각 자리 숫자를 모두 더하면 4예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 3.",
+        "The digits add up to 4."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は3です。",
+        "各桁の数字をすべて足すと4です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是3。",
+        "各位数字相加等于4。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 3.",
+        "Si sumas todos los dígitos, obtienes 4."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 3.",
+        "La somme de tous les chiffres est 4."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 3.",
+        "Die Summe aller Ziffern ist 4."
+      ]
+    },
+    "explanation": {
+      "ko": "301",
+      "en": "301",
+      "ja": "301",
+      "zh": "301",
+      "es": "301",
+      "fr": "301",
+      "de": "301"
+    }
+  },
+  {
+    "id": "fg8_s02",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 8,
+    "order": 2,
+    "frames": [
+      [
+        "abc",
+        "deg",
+        ""
+      ],
+      [
+        "d",
+        "a",
+        "f"
+      ],
+      [
+        "fg",
+        "b",
+        "abcdg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1100,
+    "answer": "929",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 9예요.",
+        "각 자리 숫자를 모두 더하면 20이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 9.",
+        "The digits add up to 20."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は9です。",
+        "各桁の数字をすべて足すと20です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是9。",
+        "各位数字相加等于20。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 9.",
+        "Si sumas todos los dígitos, obtienes 20."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 9.",
+        "La somme de tous les chiffres est 20."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 9.",
+        "Die Summe aller Ziffern ist 20."
+      ]
+    },
+    "explanation": {
+      "ko": "929",
+      "en": "929",
+      "ja": "929",
+      "zh": "929",
+      "es": "929",
+      "fr": "929",
+      "de": "929"
+    }
+  },
+  {
+    "id": "fg8_s03",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 8,
+    "order": 3,
+    "frames": [
+      [
+        "c",
+        "",
+        "b"
+      ],
+      [
+        "a",
+        "be",
+        ""
+      ],
+      [
+        "b",
+        "acdfg",
+        "acdfg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1050,
+    "answer": "789",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 7이에요.",
+        "각 자리 숫자를 모두 더하면 24예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 7.",
+        "The digits add up to 24."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は7です。",
+        "各桁の数字をすべて足すと24です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是7。",
+        "各位数字相加等于24。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 7.",
+        "Si sumas todos los dígitos, obtienes 24."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 7.",
+        "La somme de tous les chiffres est 24."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 7.",
+        "Die Summe aller Ziffern ist 24."
+      ]
+    },
+    "explanation": {
+      "ko": "789",
+      "en": "789",
+      "ja": "789",
+      "zh": "789",
+      "es": "789",
+      "fr": "789",
+      "de": "789"
+    }
+  },
+  {
+    "id": "fg8_s04",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 8,
+    "order": 4,
+    "frames": [
+      [
+        "c",
+        "acdfg",
+        ""
+      ],
+      [
+        "",
+        "",
+        "a"
+      ],
+      [
+        "b",
+        "e",
+        "bc"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1050,
+    "answer": "167",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 1이에요.",
+        "각 자리 숫자를 모두 더하면 14예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 1.",
+        "The digits add up to 14."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は1です。",
+        "各桁の数字をすべて足すと14です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是1。",
+        "各位数字相加等于14。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 1.",
+        "Si sumas todos los dígitos, obtienes 14."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 1.",
+        "La somme de tous les chiffres est 14."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 1.",
+        "Die Summe aller Ziffern ist 14."
+      ]
+    },
+    "explanation": {
+      "ko": "167",
+      "en": "167",
+      "ja": "167",
+      "zh": "167",
+      "es": "167",
+      "fr": "167",
+      "de": "167"
+    }
+  },
+  {
+    "id": "fg8_s05",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 8,
+    "order": 5,
+    "frames": [
+      [
+        "abc",
+        "dg",
+        "abcdef"
+      ],
+      [
+        "g",
+        "abc",
+        ""
+      ],
+      [
+        "d",
+        "",
+        "g"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1000,
+    "answer": "338",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 3이에요.",
+        "각 자리 숫자를 모두 더하면 14예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 3.",
+        "The digits add up to 14."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は3です。",
+        "各桁の数字をすべて足すと14です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是3。",
+        "各位数字相加等于14。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 3.",
+        "Si sumas todos los dígitos, obtienes 14."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 3.",
+        "La somme de tous les chiffres est 14."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 3.",
+        "Die Summe aller Ziffern ist 14."
+      ]
+    },
+    "explanation": {
+      "ko": "338",
+      "en": "338",
+      "ja": "338",
+      "zh": "338",
+      "es": "338",
+      "fr": "338",
+      "de": "338"
+    }
+  },
+  {
+    "id": "fg8_s06",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 8,
+    "order": 6,
+    "frames": [
+      [
+        "d",
+        "acdfg",
+        ""
+      ],
+      [
+        "fg",
+        "b",
+        "def"
+      ],
+      [
+        "abc",
+        "",
+        "abc"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1000,
+    "answer": "990",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 9예요.",
+        "각 자리 숫자를 모두 더하면 18이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 9.",
+        "The digits add up to 18."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は9です。",
+        "各桁の数字をすべて足すと18です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是9。",
+        "各位数字相加等于18。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 9.",
+        "Si sumas todos los dígitos, obtienes 18."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 9.",
+        "La somme de tous les chiffres est 18."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 9.",
+        "Die Summe aller Ziffern ist 18."
+      ]
+    },
+    "explanation": {
+      "ko": "990",
+      "en": "990",
+      "ja": "990",
+      "zh": "990",
+      "es": "990",
+      "fr": "990",
+      "de": "990"
+    }
+  },
+  {
+    "id": "fg9_s01",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 9,
+    "order": 1,
+    "frames": [
+      [
+        "de",
+        "bdf",
+        "be",
+        ""
+      ],
+      [
+        "",
+        "ce",
+        "g",
+        "acefg"
+      ],
+      [
+        "abcdfg",
+        "ag",
+        "abd",
+        "d"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1000,
+    "answer": "8826",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 8이에요.",
+        "각 자리 숫자를 모두 더하면 24예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 8.",
+        "The digits add up to 24."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は8です。",
+        "各桁の数字をすべて足すと24です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是8。",
+        "各位数字相加等于24。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 8.",
+        "Si sumas todos los dígitos, obtienes 24."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 8.",
+        "La somme de tous les chiffres est 24."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 8.",
+        "Die Summe aller Ziffern ist 24."
+      ]
+    },
+    "explanation": {
+      "ko": "8826",
+      "en": "8826",
+      "ja": "8826",
+      "zh": "8826",
+      "es": "8826",
+      "fr": "8826",
+      "de": "8826"
+    }
+  },
+  {
+    "id": "fg9_s02",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 9,
+    "order": 2,
+    "frames": [
+      [
+        "dg",
+        "cdfg",
+        "bce",
+        "ad"
+      ],
+      [
+        "",
+        "a",
+        "afg",
+        "ef"
+      ],
+      [
+        "abc",
+        "abg",
+        "d",
+        "cg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 1000,
+    "answer": "3986",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 3이에요.",
+        "각 자리 숫자를 모두 더하면 26이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 3.",
+        "The digits add up to 26."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は3です。",
+        "各桁の数字をすべて足すと26です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是3。",
+        "各位数字相加等于26。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 3.",
+        "Si sumas todos los dígitos, obtienes 26."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 3.",
+        "La somme de tous les chiffres est 26."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 3.",
+        "Die Summe aller Ziffern ist 26."
+      ]
+    },
+    "explanation": {
+      "ko": "3986",
+      "en": "3986",
+      "ja": "3986",
+      "zh": "3986",
+      "es": "3986",
+      "fr": "3986",
+      "de": "3986"
+    }
+  },
+  {
+    "id": "fg9_s03",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 9,
+    "order": 3,
+    "frames": [
+      [
+        "g",
+        "be",
+        "g",
+        "ef"
+      ],
+      [
+        "cdf",
+        "abc",
+        "bc",
+        "acefg"
+      ],
+      [
+        "ae",
+        "df",
+        "f",
+        "de"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 950,
+    "answer": "6046",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 6이에요.",
+        "각 자리 숫자를 모두 더하면 16이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 6.",
+        "The digits add up to 16."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は6です。",
+        "各桁の数字をすべて足すと16です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是6。",
+        "各位数字相加等于16。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 6.",
+        "Si sumas todos los dígitos, obtienes 16."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 6.",
+        "La somme de tous les chiffres est 16."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 6.",
+        "Die Summe aller Ziffern ist 16."
+      ]
+    },
+    "explanation": {
+      "ko": "6046",
+      "en": "6046",
+      "ja": "6046",
+      "zh": "6046",
+      "es": "6046",
+      "fr": "6046",
+      "de": "6046"
+    }
+  },
+  {
+    "id": "fg9_s04",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 9,
+    "order": 4,
+    "frames": [
+      [
+        "bc",
+        "bf",
+        "d",
+        "cdg"
+      ],
+      [
+        "a",
+        "bc",
+        "a",
+        "af"
+      ],
+      [
+        "",
+        "g",
+        "cfg",
+        "cg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 950,
+    "answer": "7455",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 7이에요.",
+        "각 자리 숫자를 모두 더하면 21이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 7.",
+        "The digits add up to 21."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は7です。",
+        "各桁の数字をすべて足すと21です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是7。",
+        "各位数字相加等于21。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 7.",
+        "Si sumas todos los dígitos, obtienes 21."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 7.",
+        "La somme de tous les chiffres est 21."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 7.",
+        "Die Summe aller Ziffern ist 21."
+      ]
+    },
+    "explanation": {
+      "ko": "7455",
+      "en": "7455",
+      "ja": "7455",
+      "zh": "7455",
+      "es": "7455",
+      "fr": "7455",
+      "de": "7455"
+    }
+  },
+  {
+    "id": "fg9_s05",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 9,
+    "order": 5,
+    "frames": [
+      [
+        "def",
+        "abc",
+        "ade",
+        ""
+      ],
+      [
+        "acg",
+        "df",
+        "d",
+        "ac"
+      ],
+      [
+        "ae",
+        "ce",
+        "bdg",
+        "bc"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 900,
+    "answer": "6027",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 6이에요.",
+        "각 자리 숫자를 모두 더하면 15예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 6.",
+        "The digits add up to 15."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は6です。",
+        "各桁の数字をすべて足すと15です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是6。",
+        "各位数字相加等于15。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 6.",
+        "Si sumas todos los dígitos, obtienes 15."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 6.",
+        "La somme de tous les chiffres est 15."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 6.",
+        "Die Summe aller Ziffern ist 15."
+      ]
+    },
+    "explanation": {
+      "ko": "6027",
+      "en": "6027",
+      "ja": "6027",
+      "zh": "6027",
+      "es": "6027",
+      "fr": "6027",
+      "de": "6027"
+    }
+  },
+  {
+    "id": "fg9_s06",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 9,
+    "order": 6,
+    "frames": [
+      [
+        "abcdef",
+        "de",
+        "ag",
+        ""
+      ],
+      [
+        "ab",
+        "f",
+        "dg",
+        "a"
+      ],
+      [
+        "fg",
+        "acdfg",
+        "bc",
+        "bc"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 900,
+    "answer": "8637",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 8이에요.",
+        "각 자리 숫자를 모두 더하면 24예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 8.",
+        "The digits add up to 24."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は8です。",
+        "各桁の数字をすべて足すと24です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是8。",
+        "各位数字相加等于24。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 8.",
+        "Si sumas todos los dígitos, obtienes 24."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 8.",
+        "La somme de tous les chiffres est 24."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 8.",
+        "Die Summe aller Ziffern ist 24."
+      ]
+    },
+    "explanation": {
+      "ko": "8637",
+      "en": "8637",
+      "ja": "8637",
+      "zh": "8637",
+      "es": "8637",
+      "fr": "8637",
+      "de": "8637"
+    }
+  },
+  {
+    "id": "fg10_s01",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 10,
+    "order": 1,
+    "frames": [
+      [
+        "acd",
+        "cf",
+        "g",
+        "g"
+      ],
+      [
+        "efg",
+        "cg",
+        "",
+        "df"
+      ],
+      [
+        "f",
+        "bc",
+        "abcdef",
+        "ac"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 900,
+    "answer": "6485",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 6이에요.",
+        "각 자리 숫자를 모두 더하면 23이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 6.",
+        "The digits add up to 23."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は6です。",
+        "各桁の数字をすべて足すと23です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是6。",
+        "各位数字相加等于23。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 6.",
+        "Si sumas todos los dígitos, obtienes 23."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 6.",
+        "La somme de tous les chiffres est 23."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 6.",
+        "Die Summe aller Ziffern ist 23."
+      ]
+    },
+    "explanation": {
+      "ko": "6485",
+      "en": "6485",
+      "ja": "6485",
+      "zh": "6485",
+      "es": "6485",
+      "fr": "6485",
+      "de": "6485"
+    }
+  },
+  {
+    "id": "fg10_s02",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 10,
+    "order": 2,
+    "frames": [
+      [
+        "ag",
+        "cdg",
+        "ab",
+        "bg"
+      ],
+      [
+        "a",
+        "def",
+        "",
+        ""
+      ],
+      [
+        "cdfg",
+        "ad",
+        "bc",
+        "acdfg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 900,
+    "answer": "5679",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 5예요.",
+        "각 자리 숫자를 모두 더하면 27이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 5.",
+        "The digits add up to 27."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は5です。",
+        "各桁の数字をすべて足すと27です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是5。",
+        "各位数字相加等于27。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 5.",
+        "Si sumas todos los dígitos, obtienes 27."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 5.",
+        "La somme de tous les chiffres est 27."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 5.",
+        "Die Summe aller Ziffern ist 27."
+      ]
+    },
+    "explanation": {
+      "ko": "5679",
+      "en": "5679",
+      "ja": "5679",
+      "zh": "5679",
+      "es": "5679",
+      "fr": "5679",
+      "de": "5679"
+    }
+  },
+  {
+    "id": "fg10_s03",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 10,
+    "order": 3,
+    "frames": [
+      [
+        "bg",
+        "acdfg",
+        "f",
+        "e"
+      ],
+      [
+        "f",
+        "",
+        "cdg",
+        "e"
+      ],
+      [
+        "bc",
+        "eg",
+        "acdf",
+        "acdfg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 850,
+    "answer": "4656",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 4예요.",
+        "각 자리 숫자를 모두 더하면 21이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 4.",
+        "The digits add up to 21."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は4です。",
+        "各桁の数字をすべて足すと21です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是4。",
+        "各位数字相加等于21。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 4.",
+        "Si sumas todos los dígitos, obtienes 21."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 4.",
+        "La somme de tous les chiffres est 21."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 4.",
+        "Die Summe aller Ziffern ist 21."
+      ]
+    },
+    "explanation": {
+      "ko": "4656",
+      "en": "4656",
+      "ja": "4656",
+      "zh": "4656",
+      "es": "4656",
+      "fr": "4656",
+      "de": "4656"
+    }
+  },
+  {
+    "id": "fg10_s04",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 10,
+    "order": 4,
+    "frames": [
+      [
+        "f",
+        "acf",
+        "cdfg",
+        "abcdef"
+      ],
+      [
+        "abc",
+        "de",
+        "",
+        "g"
+      ],
+      [
+        "adg",
+        "abc",
+        "ad",
+        "cg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 850,
+    "answer": "9058",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 9예요.",
+        "각 자리 숫자를 모두 더하면 22예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 9.",
+        "The digits add up to 22."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は9です。",
+        "各桁の数字をすべて足すと22です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是9。",
+        "各位数字相加等于22。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 9.",
+        "Si sumas todos los dígitos, obtienes 22."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 9.",
+        "La somme de tous les chiffres est 22."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 9.",
+        "Die Summe aller Ziffern ist 22."
+      ]
+    },
+    "explanation": {
+      "ko": "9058",
+      "en": "9058",
+      "ja": "9058",
+      "zh": "9058",
+      "es": "9058",
+      "fr": "9058",
+      "de": "9058"
+    }
+  },
+  {
+    "id": "fg10_s05",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 10,
+    "order": 5,
+    "frames": [
+      [
+        "adg",
+        "abdeg",
+        "b",
+        "e"
+      ],
+      [
+        "acdfg",
+        "c",
+        "fg",
+        "f"
+      ],
+      [
+        "eg",
+        "f",
+        "cf",
+        "abcdg"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 800,
+    "answer": "6848",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 6이에요.",
+        "각 자리 숫자를 모두 더하면 26이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 6.",
+        "The digits add up to 26."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は6です。",
+        "各桁の数字をすべて足すと26です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是6。",
+        "各位数字相加等于26。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 6.",
+        "Si sumas todos los dígitos, obtienes 26."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 6.",
+        "La somme de tous les chiffres est 26."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 6.",
+        "Die Summe aller Ziffern ist 26."
+      ]
+    },
+    "explanation": {
+      "ko": "6848",
+      "en": "6848",
+      "ja": "6848",
+      "zh": "6848",
+      "es": "6848",
+      "fr": "6848",
+      "de": "6848"
+    }
+  },
+  {
+    "id": "fg10_s06",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 10,
+    "order": 6,
+    "frames": [
+      [
+        "f",
+        "acdfg",
+        "bc",
+        "f"
+      ],
+      [
+        "abc",
+        "c",
+        "bc",
+        "bg"
+      ],
+      [
+        "bdeg",
+        "deg",
+        "abdg",
+        "bc"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 800,
+    "answer": "8634",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 8이에요.",
+        "각 자리 숫자를 모두 더하면 21이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 8.",
+        "The digits add up to 21."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は8です。",
+        "各桁の数字をすべて足すと21です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是8。",
+        "各位数字相加等于21。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 8.",
+        "Si sumas todos los dígitos, obtienes 21."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 8.",
+        "La somme de tous les chiffres est 21."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 8.",
+        "Die Summe aller Ziffern ist 21."
+      ]
+    },
+    "explanation": {
+      "ko": "8634",
+      "en": "8634",
+      "ja": "8634",
+      "zh": "8634",
+      "es": "8634",
+      "fr": "8634",
+      "de": "8634"
+    }
+  },
+  {
+    "id": "fg11_s01",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 11,
+    "order": 1,
+    "frames": [
+      [
+        "bceg",
+        "bdg",
+        "e"
+      ],
+      [
+        "ade",
+        "ac",
+        "acdefg"
+      ]
+    ],
+    "combine": "xor",
+    "frameMs": 1200,
+    "answer": "335",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "짝수 번 나온 획은 사라지고, 홀수 번 나온 획만 남는다는 걸 기억하세요.",
+        "첫 번째 자리의 숫자는 3이에요.",
+        "각 자리 숫자를 모두 더하면 11이에요."
+      ],
+      "en": [
+        "Remember: a stroke that appears an even number of times disappears; only odd-count strokes stay.",
+        "The first digit is 3.",
+        "The digits add up to 11."
+      ],
+      "ja": [
+        "偶数回出てきた線は消え、奇数回出てきた線だけが残ることを思い出してください。",
+        "1桁目の数字は3です。",
+        "各桁の数字をすべて足すと11です。"
+      ],
+      "zh": [
+        "记住：出现偶数次的笔画会消失，只有出现奇数次的笔画会保留。",
+        "第一位数字是3。",
+        "各位数字相加等于11。"
+      ],
+      "es": [
+        "Recuerda: un trazo que aparece un número par de veces desaparece; solo quedan los de número impar.",
+        "El primer dígito es 3.",
+        "Si sumas todos los dígitos, obtienes 11."
+      ],
+      "fr": [
+        "Rappelez-vous : un trait qui apparaît un nombre pair de fois disparaît ; seuls les traits en nombre impair restent.",
+        "Le premier chiffre est 3.",
+        "La somme de tous les chiffres est 11."
+      ],
+      "de": [
+        "Denk daran: Ein Strich, der gerade oft erscheint, verschwindet; nur ungerade oft erscheinende bleiben.",
+        "Die erste Ziffer ist 3.",
+        "Die Summe aller Ziffern ist 11."
+      ]
+    },
+    "explanation": {
+      "ko": "335",
+      "en": "335",
+      "ja": "335",
+      "zh": "335",
+      "es": "335",
+      "fr": "335",
+      "de": "335"
+    }
+  },
+  {
+    "id": "fg11_s02",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 11,
+    "order": 2,
+    "frames": [
+      [
+        "acfg",
+        "defg",
+        "b"
+      ],
+      [
+        "d",
+        "abcg",
+        "acdefg"
+      ]
+    ],
+    "combine": "xor",
+    "frameMs": 1200,
+    "answer": "508",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "짝수 번 나온 획은 사라지고, 홀수 번 나온 획만 남는다는 걸 기억하세요.",
+        "첫 번째 자리의 숫자는 5예요.",
+        "각 자리 숫자를 모두 더하면 13이에요."
+      ],
+      "en": [
+        "Remember: a stroke that appears an even number of times disappears; only odd-count strokes stay.",
+        "The first digit is 5.",
+        "The digits add up to 13."
+      ],
+      "ja": [
+        "偶数回出てきた線は消え、奇数回出てきた線だけが残ることを思い出してください。",
+        "1桁目の数字は5です。",
+        "各桁の数字をすべて足すと13です。"
+      ],
+      "zh": [
+        "记住：出现偶数次的笔画会消失，只有出现奇数次的笔画会保留。",
+        "第一位数字是5。",
+        "各位数字相加等于13。"
+      ],
+      "es": [
+        "Recuerda: un trazo que aparece un número par de veces desaparece; solo quedan los de número impar.",
+        "El primer dígito es 5.",
+        "Si sumas todos los dígitos, obtienes 13."
+      ],
+      "fr": [
+        "Rappelez-vous : un trait qui apparaît un nombre pair de fois disparaît ; seuls les traits en nombre impair restent.",
+        "Le premier chiffre est 5.",
+        "La somme de tous les chiffres est 13."
+      ],
+      "de": [
+        "Denk daran: Ein Strich, der gerade oft erscheint, verschwindet; nur ungerade oft erscheinende bleiben.",
+        "Die erste Ziffer ist 5.",
+        "Die Summe aller Ziffern ist 13."
+      ]
+    },
+    "explanation": {
+      "ko": "508",
+      "en": "508",
+      "ja": "508",
+      "zh": "508",
+      "es": "508",
+      "fr": "508",
+      "de": "508"
+    }
+  },
+  {
+    "id": "fg11_s03",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 11,
+    "order": 3,
+    "frames": [
+      [
+        "adef",
+        "adf",
+        "e"
+      ],
+      [
+        "bcefg",
+        "cg",
+        "abcdefg"
+      ]
+    ],
+    "combine": "xor",
+    "frameMs": 1150,
+    "answer": "359",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "짝수 번 나온 획은 사라지고, 홀수 번 나온 획만 남는다는 걸 기억하세요.",
+        "첫 번째 자리의 숫자는 3이에요.",
+        "각 자리 숫자를 모두 더하면 17이에요."
+      ],
+      "en": [
+        "Remember: a stroke that appears an even number of times disappears; only odd-count strokes stay.",
+        "The first digit is 3.",
+        "The digits add up to 17."
+      ],
+      "ja": [
+        "偶数回出てきた線は消え、奇数回出てきた線だけが残ることを思い出してください。",
+        "1桁目の数字は3です。",
+        "各桁の数字をすべて足すと17です。"
+      ],
+      "zh": [
+        "记住：出现偶数次的笔画会消失，只有出现奇数次的笔画会保留。",
+        "第一位数字是3。",
+        "各位数字相加等于17。"
+      ],
+      "es": [
+        "Recuerda: un trazo que aparece un número par de veces desaparece; solo quedan los de número impar.",
+        "El primer dígito es 3.",
+        "Si sumas todos los dígitos, obtienes 17."
+      ],
+      "fr": [
+        "Rappelez-vous : un trait qui apparaît un nombre pair de fois disparaît ; seuls les traits en nombre impair restent.",
+        "Le premier chiffre est 3.",
+        "La somme de tous les chiffres est 17."
+      ],
+      "de": [
+        "Denk daran: Ein Strich, der gerade oft erscheint, verschwindet; nur ungerade oft erscheinende bleiben.",
+        "Die erste Ziffer ist 3.",
+        "Die Summe aller Ziffern ist 17."
+      ]
+    },
+    "explanation": {
+      "ko": "359",
+      "en": "359",
+      "ja": "359",
+      "zh": "359",
+      "es": "359",
+      "fr": "359",
+      "de": "359"
+    }
+  },
+  {
+    "id": "fg11_s04",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 11,
+    "order": 4,
+    "frames": [
+      [
+        "befg",
+        "df",
+        "acdfg"
+      ],
+      [
+        "acd",
+        "b",
+        "b"
+      ],
+      [
+        "ade",
+        "abcg",
+        ""
+      ]
+    ],
+    "combine": "xor",
+    "frameMs": 1150,
+    "answer": "459",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "짝수 번 나온 획은 사라지고, 홀수 번 나온 획만 남는다는 걸 기억하세요.",
+        "첫 번째 자리의 숫자는 4예요.",
+        "각 자리 숫자를 모두 더하면 18이에요."
+      ],
+      "en": [
+        "Remember: a stroke that appears an even number of times disappears; only odd-count strokes stay.",
+        "The first digit is 4.",
+        "The digits add up to 18."
+      ],
+      "ja": [
+        "偶数回出てきた線は消え、奇数回出てきた線だけが残ることを思い出してください。",
+        "1桁目の数字は4です。",
+        "各桁の数字をすべて足すと18です。"
+      ],
+      "zh": [
+        "记住：出现偶数次的笔画会消失，只有出现奇数次的笔画会保留。",
+        "第一位数字是4。",
+        "各位数字相加等于18。"
+      ],
+      "es": [
+        "Recuerda: un trazo que aparece un número par de veces desaparece; solo quedan los de número impar.",
+        "El primer dígito es 4.",
+        "Si sumas todos los dígitos, obtienes 18."
+      ],
+      "fr": [
+        "Rappelez-vous : un trait qui apparaît un nombre pair de fois disparaît ; seuls les traits en nombre impair restent.",
+        "Le premier chiffre est 4.",
+        "La somme de tous les chiffres est 18."
+      ],
+      "de": [
+        "Denk daran: Ein Strich, der gerade oft erscheint, verschwindet; nur ungerade oft erscheinende bleiben.",
+        "Die erste Ziffer ist 4.",
+        "Die Summe aller Ziffern ist 18."
+      ]
+    },
+    "explanation": {
+      "ko": "459",
+      "en": "459",
+      "ja": "459",
+      "zh": "459",
+      "es": "459",
+      "fr": "459",
+      "de": "459"
+    }
+  },
+  {
+    "id": "fg11_s05",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 11,
+    "order": 5,
+    "frames": [
+      [
+        "acefg",
+        "",
+        "df"
+      ],
+      [
+        "c",
+        "abd",
+        "adf"
+      ],
+      [
+        "bdf",
+        "bcfg",
+        "bc"
+      ]
+    ],
+    "combine": "xor",
+    "frameMs": 1100,
+    "answer": "257",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "짝수 번 나온 획은 사라지고, 홀수 번 나온 획만 남는다는 걸 기억하세요.",
+        "첫 번째 자리의 숫자는 2예요.",
+        "각 자리 숫자를 모두 더하면 14예요."
+      ],
+      "en": [
+        "Remember: a stroke that appears an even number of times disappears; only odd-count strokes stay.",
+        "The first digit is 2.",
+        "The digits add up to 14."
+      ],
+      "ja": [
+        "偶数回出てきた線は消え、奇数回出てきた線だけが残ることを思い出してください。",
+        "1桁目の数字は2です。",
+        "各桁の数字をすべて足すと14です。"
+      ],
+      "zh": [
+        "记住：出现偶数次的笔画会消失，只有出现奇数次的笔画会保留。",
+        "第一位数字是2。",
+        "各位数字相加等于14。"
+      ],
+      "es": [
+        "Recuerda: un trazo que aparece un número par de veces desaparece; solo quedan los de número impar.",
+        "El primer dígito es 2.",
+        "Si sumas todos los dígitos, obtienes 14."
+      ],
+      "fr": [
+        "Rappelez-vous : un trait qui apparaît un nombre pair de fois disparaît ; seuls les traits en nombre impair restent.",
+        "Le premier chiffre est 2.",
+        "La somme de tous les chiffres est 14."
+      ],
+      "de": [
+        "Denk daran: Ein Strich, der gerade oft erscheint, verschwindet; nur ungerade oft erscheinende bleiben.",
+        "Die erste Ziffer ist 2.",
+        "Die Summe aller Ziffern ist 14."
+      ]
+    },
+    "explanation": {
+      "ko": "257",
+      "en": "257",
+      "ja": "257",
+      "zh": "257",
+      "es": "257",
+      "fr": "257",
+      "de": "257"
+    }
+  },
+  {
+    "id": "fg11_s06",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 11,
+    "order": 6,
+    "frames": [
+      [
+        "g",
+        "abcdefg",
+        "df"
+      ],
+      [
+        "bdef",
+        "b",
+        "abcdg"
+      ],
+      [
+        "abc",
+        "e",
+        "a"
+      ]
+    ],
+    "combine": "xor",
+    "frameMs": 1100,
+    "answer": "654",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "짝수 번 나온 획은 사라지고, 홀수 번 나온 획만 남는다는 걸 기억하세요.",
+        "첫 번째 자리의 숫자는 6이에요.",
+        "각 자리 숫자를 모두 더하면 15예요."
+      ],
+      "en": [
+        "Remember: a stroke that appears an even number of times disappears; only odd-count strokes stay.",
+        "The first digit is 6.",
+        "The digits add up to 15."
+      ],
+      "ja": [
+        "偶数回出てきた線は消え、奇数回出てきた線だけが残ることを思い出してください。",
+        "1桁目の数字は6です。",
+        "各桁の数字をすべて足すと15です。"
+      ],
+      "zh": [
+        "记住：出现偶数次的笔画会消失，只有出现奇数次的笔画会保留。",
+        "第一位数字是6。",
+        "各位数字相加等于15。"
+      ],
+      "es": [
+        "Recuerda: un trazo que aparece un número par de veces desaparece; solo quedan los de número impar.",
+        "El primer dígito es 6.",
+        "Si sumas todos los dígitos, obtienes 15."
+      ],
+      "fr": [
+        "Rappelez-vous : un trait qui apparaît un nombre pair de fois disparaît ; seuls les traits en nombre impair restent.",
+        "Le premier chiffre est 6.",
+        "La somme de tous les chiffres est 15."
+      ],
+      "de": [
+        "Denk daran: Ein Strich, der gerade oft erscheint, verschwindet; nur ungerade oft erscheinende bleiben.",
+        "Die erste Ziffer ist 6.",
+        "Die Summe aller Ziffern ist 15."
+      ]
+    },
+    "explanation": {
+      "ko": "654",
+      "en": "654",
+      "ja": "654",
+      "zh": "654",
+      "es": "654",
+      "fr": "654",
+      "de": "654"
+    }
+  },
+  {
+    "id": "fg12_s01",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 12,
+    "order": 1,
+    "frames": [
+      [
+        "afg",
+        "abcd",
+        "d"
+      ],
+      [
+        "efg",
+        "",
+        "g"
+      ],
+      [
+        "abce",
+        "g",
+        "abc"
+      ]
+    ],
+    "combine": "xor",
+    "frameMs": 1100,
+    "answer": "133",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "짝수 번 나온 획은 사라지고, 홀수 번 나온 획만 남는다는 걸 기억하세요.",
+        "첫 번째 자리의 숫자는 1이에요.",
+        "각 자리 숫자를 모두 더하면 7이에요."
+      ],
+      "en": [
+        "Remember: a stroke that appears an even number of times disappears; only odd-count strokes stay.",
+        "The first digit is 1.",
+        "The digits add up to 7."
+      ],
+      "ja": [
+        "偶数回出てきた線は消え、奇数回出てきた線だけが残ることを思い出してください。",
+        "1桁目の数字は1です。",
+        "各桁の数字をすべて足すと7です。"
+      ],
+      "zh": [
+        "记住：出现偶数次的笔画会消失，只有出现奇数次的笔画会保留。",
+        "第一位数字是1。",
+        "各位数字相加等于7。"
+      ],
+      "es": [
+        "Recuerda: un trazo que aparece un número par de veces desaparece; solo quedan los de número impar.",
+        "El primer dígito es 1.",
+        "Si sumas todos los dígitos, obtienes 7."
+      ],
+      "fr": [
+        "Rappelez-vous : un trait qui apparaît un nombre pair de fois disparaît ; seuls les traits en nombre impair restent.",
+        "Le premier chiffre est 1.",
+        "La somme de tous les chiffres est 7."
+      ],
+      "de": [
+        "Denk daran: Ein Strich, der gerade oft erscheint, verschwindet; nur ungerade oft erscheinende bleiben.",
+        "Die erste Ziffer ist 1.",
+        "Die Summe aller Ziffern ist 7."
+      ]
+    },
+    "explanation": {
+      "ko": "133",
+      "en": "133",
+      "ja": "133",
+      "zh": "133",
+      "es": "133",
+      "fr": "133",
+      "de": "133"
+    }
+  },
+  {
+    "id": "fg12_s02",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 12,
+    "order": 2,
+    "frames": [
+      [
+        "abcdg",
+        "be",
+        "bc"
+      ],
+      [
+        "cf",
+        "cdg",
+        "adfg"
+      ],
+      [
+        "ef",
+        "afg",
+        ""
+      ]
+    ],
+    "combine": "xor",
+    "frameMs": 1100,
+    "answer": "209",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "짝수 번 나온 획은 사라지고, 홀수 번 나온 획만 남는다는 걸 기억하세요.",
+        "첫 번째 자리의 숫자는 2예요.",
+        "각 자리 숫자를 모두 더하면 11이에요."
+      ],
+      "en": [
+        "Remember: a stroke that appears an even number of times disappears; only odd-count strokes stay.",
+        "The first digit is 2.",
+        "The digits add up to 11."
+      ],
+      "ja": [
+        "偶数回出てきた線は消え、奇数回出てきた線だけが残ることを思い出してください。",
+        "1桁目の数字は2です。",
+        "各桁の数字をすべて足すと11です。"
+      ],
+      "zh": [
+        "记住：出现偶数次的笔画会消失，只有出现奇数次的笔画会保留。",
+        "第一位数字是2。",
+        "各位数字相加等于11。"
+      ],
+      "es": [
+        "Recuerda: un trazo que aparece un número par de veces desaparece; solo quedan los de número impar.",
+        "El primer dígito es 2.",
+        "Si sumas todos los dígitos, obtienes 11."
+      ],
+      "fr": [
+        "Rappelez-vous : un trait qui apparaît un nombre pair de fois disparaît ; seuls les traits en nombre impair restent.",
+        "Le premier chiffre est 2.",
+        "La somme de tous les chiffres est 11."
+      ],
+      "de": [
+        "Denk daran: Ein Strich, der gerade oft erscheint, verschwindet; nur ungerade oft erscheinende bleiben.",
+        "Die erste Ziffer ist 2.",
+        "Die Summe aller Ziffern ist 11."
+      ]
+    },
+    "explanation": {
+      "ko": "209",
+      "en": "209",
+      "ja": "209",
+      "zh": "209",
+      "es": "209",
+      "fr": "209",
+      "de": "209"
+    }
+  },
+  {
+    "id": "fg12_s03",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 12,
+    "order": 3,
+    "frames": [
+      [
+        "f",
+        "defg",
+        "dg"
+      ],
+      [
+        "g",
+        "bg",
+        "abc"
+      ],
+      [
+        "bcfg",
+        "ac",
+        ""
+      ]
+    ],
+    "combine": "xor",
+    "frameMs": 1050,
+    "answer": "103",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "짝수 번 나온 획은 사라지고, 홀수 번 나온 획만 남는다는 걸 기억하세요.",
+        "첫 번째 자리의 숫자는 1이에요.",
+        "각 자리 숫자를 모두 더하면 4예요."
+      ],
+      "en": [
+        "Remember: a stroke that appears an even number of times disappears; only odd-count strokes stay.",
+        "The first digit is 1.",
+        "The digits add up to 4."
+      ],
+      "ja": [
+        "偶数回出てきた線は消え、奇数回出てきた線だけが残ることを思い出してください。",
+        "1桁目の数字は1です。",
+        "各桁の数字をすべて足すと4です。"
+      ],
+      "zh": [
+        "记住：出现偶数次的笔画会消失，只有出现奇数次的笔画会保留。",
+        "第一位数字是1。",
+        "各位数字相加等于4。"
+      ],
+      "es": [
+        "Recuerda: un trazo que aparece un número par de veces desaparece; solo quedan los de número impar.",
+        "El primer dígito es 1.",
+        "Si sumas todos los dígitos, obtienes 4."
+      ],
+      "fr": [
+        "Rappelez-vous : un trait qui apparaît un nombre pair de fois disparaît ; seuls les traits en nombre impair restent.",
+        "Le premier chiffre est 1.",
+        "La somme de tous les chiffres est 4."
+      ],
+      "de": [
+        "Denk daran: Ein Strich, der gerade oft erscheint, verschwindet; nur ungerade oft erscheinende bleiben.",
+        "Die erste Ziffer ist 1.",
+        "Die Summe aller Ziffern ist 4."
+      ]
+    },
+    "explanation": {
+      "ko": "103",
+      "en": "103",
+      "ja": "103",
+      "zh": "103",
+      "es": "103",
+      "fr": "103",
+      "de": "103"
+    }
+  },
+  {
+    "id": "fg12_s04",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 12,
+    "order": 4,
+    "frames": [
+      [
+        "abcdg",
+        "abcdfg",
+        "a"
+      ],
+      [
+        "e",
+        "eg",
+        "d"
+      ],
+      [
+        "adeg",
+        "",
+        "bcef"
+      ]
+    ],
+    "combine": "xor",
+    "frameMs": 1050,
+    "answer": "100",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "짝수 번 나온 획은 사라지고, 홀수 번 나온 획만 남는다는 걸 기억하세요.",
+        "첫 번째 자리의 숫자는 1이에요.",
+        "각 자리 숫자를 모두 더하면 1이에요."
+      ],
+      "en": [
+        "Remember: a stroke that appears an even number of times disappears; only odd-count strokes stay.",
+        "The first digit is 1.",
+        "The digits add up to 1."
+      ],
+      "ja": [
+        "偶数回出てきた線は消え、奇数回出てきた線だけが残ることを思い出してください。",
+        "1桁目の数字は1です。",
+        "各桁の数字をすべて足すと1です。"
+      ],
+      "zh": [
+        "记住：出现偶数次的笔画会消失，只有出现奇数次的笔画会保留。",
+        "第一位数字是1。",
+        "各位数字相加等于1。"
+      ],
+      "es": [
+        "Recuerda: un trazo que aparece un número par de veces desaparece; solo quedan los de número impar.",
+        "El primer dígito es 1.",
+        "Si sumas todos los dígitos, obtienes 1."
+      ],
+      "fr": [
+        "Rappelez-vous : un trait qui apparaît un nombre pair de fois disparaît ; seuls les traits en nombre impair restent.",
+        "Le premier chiffre est 1.",
+        "La somme de tous les chiffres est 1."
+      ],
+      "de": [
+        "Denk daran: Ein Strich, der gerade oft erscheint, verschwindet; nur ungerade oft erscheinende bleiben.",
+        "Die erste Ziffer ist 1.",
+        "Die Summe aller Ziffern ist 1."
+      ]
+    },
+    "explanation": {
+      "ko": "100",
+      "en": "100",
+      "ja": "100",
+      "zh": "100",
+      "es": "100",
+      "fr": "100",
+      "de": "100"
+    }
+  },
+  {
+    "id": "fg12_s05",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 12,
+    "order": 5,
+    "frames": [
+      [
+        "",
+        "bcf",
+        "acdfg"
+      ],
+      [
+        "defg",
+        "ce",
+        "e"
+      ],
+      [
+        "abcdefg",
+        "abcdg",
+        "b"
+      ]
+    ],
+    "combine": "xor",
+    "frameMs": 1000,
+    "answer": "768",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "짝수 번 나온 획은 사라지고, 홀수 번 나온 획만 남는다는 걸 기억하세요.",
+        "첫 번째 자리의 숫자는 7이에요.",
+        "각 자리 숫자를 모두 더하면 21이에요."
+      ],
+      "en": [
+        "Remember: a stroke that appears an even number of times disappears; only odd-count strokes stay.",
+        "The first digit is 7.",
+        "The digits add up to 21."
+      ],
+      "ja": [
+        "偶数回出てきた線は消え、奇数回出てきた線だけが残ることを思い出してください。",
+        "1桁目の数字は7です。",
+        "各桁の数字をすべて足すと21です。"
+      ],
+      "zh": [
+        "记住：出现偶数次的笔画会消失，只有出现奇数次的笔画会保留。",
+        "第一位数字是7。",
+        "各位数字相加等于21。"
+      ],
+      "es": [
+        "Recuerda: un trazo que aparece un número par de veces desaparece; solo quedan los de número impar.",
+        "El primer dígito es 7.",
+        "Si sumas todos los dígitos, obtienes 21."
+      ],
+      "fr": [
+        "Rappelez-vous : un trait qui apparaît un nombre pair de fois disparaît ; seuls les traits en nombre impair restent.",
+        "Le premier chiffre est 7.",
+        "La somme de tous les chiffres est 21."
+      ],
+      "de": [
+        "Denk daran: Ein Strich, der gerade oft erscheint, verschwindet; nur ungerade oft erscheinende bleiben.",
+        "Die erste Ziffer ist 7.",
+        "Die Summe aller Ziffern ist 21."
+      ]
+    },
+    "explanation": {
+      "ko": "768",
+      "en": "768",
+      "ja": "768",
+      "zh": "768",
+      "es": "768",
+      "fr": "768",
+      "de": "768"
+    }
+  },
+  {
+    "id": "fg12_s06",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 12,
+    "order": 6,
+    "frames": [
+      [
+        "bc",
+        "acde",
+        "abcdefg"
+      ],
+      [
+        "aefg",
+        "bcfg",
+        "ag"
+      ],
+      [
+        "ae",
+        "f",
+        "a"
+      ]
+    ],
+    "combine": "xor",
+    "frameMs": 1000,
+    "answer": "420",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "짝수 번 나온 획은 사라지고, 홀수 번 나온 획만 남는다는 걸 기억하세요.",
+        "첫 번째 자리의 숫자는 4예요.",
+        "각 자리 숫자를 모두 더하면 6이에요."
+      ],
+      "en": [
+        "Remember: a stroke that appears an even number of times disappears; only odd-count strokes stay.",
+        "The first digit is 4.",
+        "The digits add up to 6."
+      ],
+      "ja": [
+        "偶数回出てきた線は消え、奇数回出てきた線だけが残ることを思い出してください。",
+        "1桁目の数字は4です。",
+        "各桁の数字をすべて足すと6です。"
+      ],
+      "zh": [
+        "记住：出现偶数次的笔画会消失，只有出现奇数次的笔画会保留。",
+        "第一位数字是4。",
+        "各位数字相加等于6。"
+      ],
+      "es": [
+        "Recuerda: un trazo que aparece un número par de veces desaparece; solo quedan los de número impar.",
+        "El primer dígito es 4.",
+        "Si sumas todos los dígitos, obtienes 6."
+      ],
+      "fr": [
+        "Rappelez-vous : un trait qui apparaît un nombre pair de fois disparaît ; seuls les traits en nombre impair restent.",
+        "Le premier chiffre est 4.",
+        "La somme de tous les chiffres est 6."
+      ],
+      "de": [
+        "Denk daran: Ein Strich, der gerade oft erscheint, verschwindet; nur ungerade oft erscheinende bleiben.",
+        "Die erste Ziffer ist 4.",
+        "Die Summe aller Ziffern ist 6."
+      ]
+    },
+    "explanation": {
+      "ko": "420",
+      "en": "420",
+      "ja": "420",
+      "zh": "420",
+      "es": "420",
+      "fr": "420",
+      "de": "420"
+    }
+  },
+  {
+    "id": "fg13_s01",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 13,
+    "order": 1,
+    "frames": [
+      [
+        "de",
+        "ef",
+        "ae",
+        "bdg"
+      ],
+      [
+        "acdfg",
+        "abcd",
+        "bef",
+        "dg"
+      ],
+      [
+        "bde",
+        "bg",
+        "cdeg",
+        "abcdefg"
+      ]
+    ],
+    "combine": "xor",
+    "frameMs": 1000,
+    "answer": "9686",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "짝수 번 나온 획은 사라지고, 홀수 번 나온 획만 남는다는 걸 기억하세요.",
+        "첫 번째 자리의 숫자는 9예요.",
+        "각 자리 숫자를 모두 더하면 29예요."
+      ],
+      "en": [
+        "Remember: a stroke that appears an even number of times disappears; only odd-count strokes stay.",
+        "The first digit is 9.",
+        "The digits add up to 29."
+      ],
+      "ja": [
+        "偶数回出てきた線は消え、奇数回出てきた線だけが残ることを思い出してください。",
+        "1桁目の数字は9です。",
+        "各桁の数字をすべて足すと29です。"
+      ],
+      "zh": [
+        "记住：出现偶数次的笔画会消失，只有出现奇数次的笔画会保留。",
+        "第一位数字是9。",
+        "各位数字相加等于29。"
+      ],
+      "es": [
+        "Recuerda: un trazo que aparece un número par de veces desaparece; solo quedan los de número impar.",
+        "El primer dígito es 9.",
+        "Si sumas todos los dígitos, obtienes 29."
+      ],
+      "fr": [
+        "Rappelez-vous : un trait qui apparaît un nombre pair de fois disparaît ; seuls les traits en nombre impair restent.",
+        "Le premier chiffre est 9.",
+        "La somme de tous les chiffres est 29."
+      ],
+      "de": [
+        "Denk daran: Ein Strich, der gerade oft erscheint, verschwindet; nur ungerade oft erscheinende bleiben.",
+        "Die erste Ziffer ist 9.",
+        "Die Summe aller Ziffern ist 29."
+      ]
+    },
+    "explanation": {
+      "ko": "9686",
+      "en": "9686",
+      "ja": "9686",
+      "zh": "9686",
+      "es": "9686",
+      "fr": "9686",
+      "de": "9686"
+    }
+  },
+  {
+    "id": "fg13_s02",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 13,
+    "order": 2,
+    "frames": [
+      [
+        "fg",
+        "f",
+        "e",
+        "g"
+      ],
+      [
+        "bc",
+        "abcdg",
+        "deg",
+        "c"
+      ],
+      [
+        "g",
+        "g",
+        "ab",
+        "bcf"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 950,
+    "answer": "4924",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 4예요.",
+        "각 자리 숫자를 모두 더하면 19예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 4.",
+        "The digits add up to 19."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は4です。",
+        "各桁の数字をすべて足すと19です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是4。",
+        "各位数字相加等于19。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 4.",
+        "Si sumas todos los dígitos, obtienes 19."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 4.",
+        "La somme de tous les chiffres est 19."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 4.",
+        "Die Summe aller Ziffern ist 19."
+      ]
+    },
+    "explanation": {
+      "ko": "4924",
+      "en": "4924",
+      "ja": "4924",
+      "zh": "4924",
+      "es": "4924",
+      "fr": "4924",
+      "de": "4924"
+    }
+  },
+  {
+    "id": "fg13_s03",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 13,
+    "order": 3,
+    "frames": [
+      [
+        "f",
+        "abef",
+        "abcd",
+        "e"
+      ],
+      [
+        "abcdef",
+        "abcdg",
+        "fg",
+        "ef"
+      ],
+      [
+        "efg",
+        "ae",
+        "eg",
+        "abcdfg"
+      ]
+    ],
+    "combine": "xor",
+    "frameMs": 950,
+    "answer": "9503",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "짝수 번 나온 획은 사라지고, 홀수 번 나온 획만 남는다는 걸 기억하세요.",
+        "첫 번째 자리의 숫자는 9예요.",
+        "각 자리 숫자를 모두 더하면 17이에요."
+      ],
+      "en": [
+        "Remember: a stroke that appears an even number of times disappears; only odd-count strokes stay.",
+        "The first digit is 9.",
+        "The digits add up to 17."
+      ],
+      "ja": [
+        "偶数回出てきた線は消え、奇数回出てきた線だけが残ることを思い出してください。",
+        "1桁目の数字は9です。",
+        "各桁の数字をすべて足すと17です。"
+      ],
+      "zh": [
+        "记住：出现偶数次的笔画会消失，只有出现奇数次的笔画会保留。",
+        "第一位数字是9。",
+        "各位数字相加等于17。"
+      ],
+      "es": [
+        "Recuerda: un trazo que aparece un número par de veces desaparece; solo quedan los de número impar.",
+        "El primer dígito es 9.",
+        "Si sumas todos los dígitos, obtienes 17."
+      ],
+      "fr": [
+        "Rappelez-vous : un trait qui apparaît un nombre pair de fois disparaît ; seuls les traits en nombre impair restent.",
+        "Le premier chiffre est 9.",
+        "La somme de tous les chiffres est 17."
+      ],
+      "de": [
+        "Denk daran: Ein Strich, der gerade oft erscheint, verschwindet; nur ungerade oft erscheinende bleiben.",
+        "Die erste Ziffer ist 9.",
+        "Die Summe aller Ziffern ist 17."
+      ]
+    },
+    "explanation": {
+      "ko": "9503",
+      "en": "9503",
+      "ja": "9503",
+      "zh": "9503",
+      "es": "9503",
+      "fr": "9503",
+      "de": "9503"
+    }
+  },
+  {
+    "id": "fg13_s04",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 13,
+    "order": 4,
+    "frames": [
+      [
+        "acdfg",
+        "deg",
+        "g",
+        "cf"
+      ],
+      [
+        "abdeg",
+        "bfg",
+        "bg",
+        "e"
+      ],
+      [
+        "efg",
+        "g",
+        "",
+        "abcdfg"
+      ],
+      [
+        "ad",
+        "acef",
+        "acdefg",
+        ""
+      ]
+    ],
+    "combine": "xor",
+    "frameMs": 900,
+    "answer": "3382",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "짝수 번 나온 획은 사라지고, 홀수 번 나온 획만 남는다는 걸 기억하세요.",
+        "첫 번째 자리의 숫자는 3이에요.",
+        "각 자리 숫자를 모두 더하면 16이에요."
+      ],
+      "en": [
+        "Remember: a stroke that appears an even number of times disappears; only odd-count strokes stay.",
+        "The first digit is 3.",
+        "The digits add up to 16."
+      ],
+      "ja": [
+        "偶数回出てきた線は消え、奇数回出てきた線だけが残ることを思い出してください。",
+        "1桁目の数字は3です。",
+        "各桁の数字をすべて足すと16です。"
+      ],
+      "zh": [
+        "记住：出现偶数次的笔画会消失，只有出现奇数次的笔画会保留。",
+        "第一位数字是3。",
+        "各位数字相加等于16。"
+      ],
+      "es": [
+        "Recuerda: un trazo que aparece un número par de veces desaparece; solo quedan los de número impar.",
+        "El primer dígito es 3.",
+        "Si sumas todos los dígitos, obtienes 16."
+      ],
+      "fr": [
+        "Rappelez-vous : un trait qui apparaît un nombre pair de fois disparaît ; seuls les traits en nombre impair restent.",
+        "Le premier chiffre est 3.",
+        "La somme de tous les chiffres est 16."
+      ],
+      "de": [
+        "Denk daran: Ein Strich, der gerade oft erscheint, verschwindet; nur ungerade oft erscheinende bleiben.",
+        "Die erste Ziffer ist 3.",
+        "Die Summe aller Ziffern ist 16."
+      ]
+    },
+    "explanation": {
+      "ko": "3382",
+      "en": "3382",
+      "ja": "3382",
+      "zh": "3382",
+      "es": "3382",
+      "fr": "3382",
+      "de": "3382"
+    }
+  },
+  {
+    "id": "fg13_s05",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 13,
+    "order": 5,
+    "frames": [
+      [
+        "acdfg",
+        "b",
+        "cd",
+        "bcfg"
+      ],
+      [
+        "",
+        "b",
+        "ac",
+        ""
+      ],
+      [
+        "b",
+        "bc",
+        "fg",
+        "ade"
+      ],
+      [
+        "",
+        "fg",
+        "d",
+        "a"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 900,
+    "answer": "9458",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 9예요.",
+        "각 자리 숫자를 모두 더하면 26이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 9.",
+        "The digits add up to 26."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は9です。",
+        "各桁の数字をすべて足すと26です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是9。",
+        "各位数字相加等于26。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 9.",
+        "Si sumas todos los dígitos, obtienes 26."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 9.",
+        "La somme de tous les chiffres est 26."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 9.",
+        "Die Summe aller Ziffern ist 26."
+      ]
+    },
+    "explanation": {
+      "ko": "9458",
+      "en": "9458",
+      "ja": "9458",
+      "zh": "9458",
+      "es": "9458",
+      "fr": "9458",
+      "de": "9458"
+    }
+  },
+  {
+    "id": "fg13_s06",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 13,
+    "order": 6,
+    "frames": [
+      [
+        "g",
+        "e",
+        "ac",
+        "cfg"
+      ],
+      [
+        "abcdfg",
+        "abcdg",
+        "de",
+        "abc"
+      ],
+      [
+        "ef",
+        "bcefg",
+        "ef",
+        "de"
+      ],
+      [
+        "ade",
+        "bce",
+        "be",
+        "cg"
+      ]
+    ],
+    "combine": "xor",
+    "frameMs": 850,
+    "answer": "1000",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "짝수 번 나온 획은 사라지고, 홀수 번 나온 획만 남는다는 걸 기억하세요.",
+        "첫 번째 자리의 숫자는 1이에요.",
+        "각 자리 숫자를 모두 더하면 1이에요."
+      ],
+      "en": [
+        "Remember: a stroke that appears an even number of times disappears; only odd-count strokes stay.",
+        "The first digit is 1.",
+        "The digits add up to 1."
+      ],
+      "ja": [
+        "偶数回出てきた線は消え、奇数回出てきた線だけが残ることを思い出してください。",
+        "1桁目の数字は1です。",
+        "各桁の数字をすべて足すと1です。"
+      ],
+      "zh": [
+        "记住：出现偶数次的笔画会消失，只有出现奇数次的笔画会保留。",
+        "第一位数字是1。",
+        "各位数字相加等于1。"
+      ],
+      "es": [
+        "Recuerda: un trazo que aparece un número par de veces desaparece; solo quedan los de número impar.",
+        "El primer dígito es 1.",
+        "Si sumas todos los dígitos, obtienes 1."
+      ],
+      "fr": [
+        "Rappelez-vous : un trait qui apparaît un nombre pair de fois disparaît ; seuls les traits en nombre impair restent.",
+        "Le premier chiffre est 1.",
+        "La somme de tous les chiffres est 1."
+      ],
+      "de": [
+        "Denk daran: Ein Strich, der gerade oft erscheint, verschwindet; nur ungerade oft erscheinende bleiben.",
+        "Die erste Ziffer ist 1.",
+        "Die Summe aller Ziffern ist 1."
+      ]
+    },
+    "explanation": {
+      "ko": "1000",
+      "en": "1000",
+      "ja": "1000",
+      "zh": "1000",
+      "es": "1000",
+      "fr": "1000",
+      "de": "1000"
+    }
+  },
+  {
+    "id": "fg14_s01",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 14,
+    "order": 1,
+    "frames": [
+      [
+        "g",
+        "acefg",
+        "bdeg",
+        "bc"
+      ],
+      [
+        "ef",
+        "bdefg",
+        "bcfg",
+        "ce"
+      ],
+      [
+        "abcdg",
+        "f",
+        "af",
+        "abcdg"
+      ],
+      [
+        "eg",
+        "g",
+        "fg",
+        "f"
+      ]
+    ],
+    "combine": "xor",
+    "frameMs": 850,
+    "answer": "9966",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "짝수 번 나온 획은 사라지고, 홀수 번 나온 획만 남는다는 걸 기억하세요.",
+        "첫 번째 자리의 숫자는 9예요.",
+        "각 자리 숫자를 모두 더하면 30이에요."
+      ],
+      "en": [
+        "Remember: a stroke that appears an even number of times disappears; only odd-count strokes stay.",
+        "The first digit is 9.",
+        "The digits add up to 30."
+      ],
+      "ja": [
+        "偶数回出てきた線は消え、奇数回出てきた線だけが残ることを思い出してください。",
+        "1桁目の数字は9です。",
+        "各桁の数字をすべて足すと30です。"
+      ],
+      "zh": [
+        "记住：出现偶数次的笔画会消失，只有出现奇数次的笔画会保留。",
+        "第一位数字是9。",
+        "各位数字相加等于30。"
+      ],
+      "es": [
+        "Recuerda: un trazo que aparece un número par de veces desaparece; solo quedan los de número impar.",
+        "El primer dígito es 9.",
+        "Si sumas todos los dígitos, obtienes 30."
+      ],
+      "fr": [
+        "Rappelez-vous : un trait qui apparaît un nombre pair de fois disparaît ; seuls les traits en nombre impair restent.",
+        "Le premier chiffre est 9.",
+        "La somme de tous les chiffres est 30."
+      ],
+      "de": [
+        "Denk daran: Ein Strich, der gerade oft erscheint, verschwindet; nur ungerade oft erscheinende bleiben.",
+        "Die erste Ziffer ist 9.",
+        "Die Summe aller Ziffern ist 30."
+      ]
+    },
+    "explanation": {
+      "ko": "9966",
+      "en": "9966",
+      "ja": "9966",
+      "zh": "9966",
+      "es": "9966",
+      "fr": "9966",
+      "de": "9966"
+    }
+  },
+  {
+    "id": "fg14_s02",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 14,
+    "order": 2,
+    "frames": [
+      [
+        "df",
+        "bc",
+        "bd",
+        "ae"
+      ],
+      [
+        "abcdef",
+        "",
+        "ce",
+        ""
+      ],
+      [
+        "dfg",
+        "c",
+        "befg",
+        "abcdefg"
+      ],
+      [
+        "",
+        "abcdefg",
+        "a",
+        "a"
+      ]
+    ],
+    "combine": "xor",
+    "frameMs": 800,
+    "answer": "8659",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "짝수 번 나온 획은 사라지고, 홀수 번 나온 획만 남는다는 걸 기억하세요.",
+        "첫 번째 자리의 숫자는 8이에요.",
+        "각 자리 숫자를 모두 더하면 28이에요."
+      ],
+      "en": [
+        "Remember: a stroke that appears an even number of times disappears; only odd-count strokes stay.",
+        "The first digit is 8.",
+        "The digits add up to 28."
+      ],
+      "ja": [
+        "偶数回出てきた線は消え、奇数回出てきた線だけが残ることを思い出してください。",
+        "1桁目の数字は8です。",
+        "各桁の数字をすべて足すと28です。"
+      ],
+      "zh": [
+        "记住：出现偶数次的笔画会消失，只有出现奇数次的笔画会保留。",
+        "第一位数字是8。",
+        "各位数字相加等于28。"
+      ],
+      "es": [
+        "Recuerda: un trazo que aparece un número par de veces desaparece; solo quedan los de número impar.",
+        "El primer dígito es 8.",
+        "Si sumas todos los dígitos, obtienes 28."
+      ],
+      "fr": [
+        "Rappelez-vous : un trait qui apparaît un nombre pair de fois disparaît ; seuls les traits en nombre impair restent.",
+        "Le premier chiffre est 8.",
+        "La somme de tous les chiffres est 28."
+      ],
+      "de": [
+        "Denk daran: Ein Strich, der gerade oft erscheint, verschwindet; nur ungerade oft erscheinende bleiben.",
+        "Die erste Ziffer ist 8.",
+        "Die Summe aller Ziffern ist 28."
+      ]
+    },
+    "explanation": {
+      "ko": "8659",
+      "en": "8659",
+      "ja": "8659",
+      "zh": "8659",
+      "es": "8659",
+      "fr": "8659",
+      "de": "8659"
+    }
+  },
+  {
+    "id": "fg14_s03",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 14,
+    "order": 3,
+    "frames": [
+      [
+        "a",
+        "abc",
+        "deg",
+        ""
+      ],
+      [
+        "bf",
+        "g",
+        "",
+        "e"
+      ],
+      [
+        "dg",
+        "d",
+        "bcf",
+        "acdfg"
+      ],
+      [
+        "bc",
+        "c",
+        "a",
+        "ce"
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 800,
+    "answer": "9386",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 9예요.",
+        "각 자리 숫자를 모두 더하면 26이에요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 9.",
+        "The digits add up to 26."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は9です。",
+        "各桁の数字をすべて足すと26です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是9。",
+        "各位数字相加等于26。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 9.",
+        "Si sumas todos los dígitos, obtienes 26."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 9.",
+        "La somme de tous les chiffres est 26."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 9.",
+        "Die Summe aller Ziffern ist 26."
+      ]
+    },
+    "explanation": {
+      "ko": "9386",
+      "en": "9386",
+      "ja": "9386",
+      "zh": "9386",
+      "es": "9386",
+      "fr": "9386",
+      "de": "9386"
+    }
+  },
+  {
+    "id": "fg14_s04",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 14,
+    "order": 4,
+    "frames": [
+      [
+        "bcfg",
+        "e",
+        "f",
+        "fg"
+      ],
+      [
+        "",
+        "cdeg",
+        "abdeg",
+        "d"
+      ],
+      [
+        "a",
+        "cd",
+        "af",
+        "abde"
+      ],
+      [
+        "cdef",
+        "abcdef",
+        "ace",
+        "cdg"
+      ]
+    ],
+    "combine": "xor",
+    "frameMs": 750,
+    "answer": "2830",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "짝수 번 나온 획은 사라지고, 홀수 번 나온 획만 남는다는 걸 기억하세요.",
+        "첫 번째 자리의 숫자는 2예요.",
+        "각 자리 숫자를 모두 더하면 13이에요."
+      ],
+      "en": [
+        "Remember: a stroke that appears an even number of times disappears; only odd-count strokes stay.",
+        "The first digit is 2.",
+        "The digits add up to 13."
+      ],
+      "ja": [
+        "偶数回出てきた線は消え、奇数回出てきた線だけが残ることを思い出してください。",
+        "1桁目の数字は2です。",
+        "各桁の数字をすべて足すと13です。"
+      ],
+      "zh": [
+        "记住：出现偶数次的笔画会消失，只有出现奇数次的笔画会保留。",
+        "第一位数字是2。",
+        "各位数字相加等于13。"
+      ],
+      "es": [
+        "Recuerda: un trazo que aparece un número par de veces desaparece; solo quedan los de número impar.",
+        "El primer dígito es 2.",
+        "Si sumas todos los dígitos, obtienes 13."
+      ],
+      "fr": [
+        "Rappelez-vous : un trait qui apparaît un nombre pair de fois disparaît ; seuls les traits en nombre impair restent.",
+        "Le premier chiffre est 2.",
+        "La somme de tous les chiffres est 13."
+      ],
+      "de": [
+        "Denk daran: Ein Strich, der gerade oft erscheint, verschwindet; nur ungerade oft erscheinende bleiben.",
+        "Die erste Ziffer ist 2.",
+        "Die Summe aller Ziffern ist 13."
+      ]
+    },
+    "explanation": {
+      "ko": "2830",
+      "en": "2830",
+      "ja": "2830",
+      "zh": "2830",
+      "es": "2830",
+      "fr": "2830",
+      "de": "2830"
+    }
+  },
+  {
+    "id": "fg14_s05",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 14,
+    "order": 5,
+    "frames": [
+      [
+        "abdeg",
+        "ae",
+        "c",
+        "ef"
+      ],
+      [
+        "",
+        "bcfg",
+        "",
+        "ac"
+      ],
+      [
+        "c",
+        "",
+        "f",
+        "abcdg"
+      ],
+      [
+        "ef",
+        "bd",
+        "abcdefg",
+        "cde"
+      ]
+    ],
+    "combine": "xor",
+    "frameMs": 750,
+    "answer": "9624",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "짝수 번 나온 획은 사라지고, 홀수 번 나온 획만 남는다는 걸 기억하세요.",
+        "첫 번째 자리의 숫자는 9예요.",
+        "각 자리 숫자를 모두 더하면 21이에요."
+      ],
+      "en": [
+        "Remember: a stroke that appears an even number of times disappears; only odd-count strokes stay.",
+        "The first digit is 9.",
+        "The digits add up to 21."
+      ],
+      "ja": [
+        "偶数回出てきた線は消え、奇数回出てきた線だけが残ることを思い出してください。",
+        "1桁目の数字は9です。",
+        "各桁の数字をすべて足すと21です。"
+      ],
+      "zh": [
+        "记住：出现偶数次的笔画会消失，只有出现奇数次的笔画会保留。",
+        "第一位数字是9。",
+        "各位数字相加等于21。"
+      ],
+      "es": [
+        "Recuerda: un trazo que aparece un número par de veces desaparece; solo quedan los de número impar.",
+        "El primer dígito es 9.",
+        "Si sumas todos los dígitos, obtienes 21."
+      ],
+      "fr": [
+        "Rappelez-vous : un trait qui apparaît un nombre pair de fois disparaît ; seuls les traits en nombre impair restent.",
+        "Le premier chiffre est 9.",
+        "La somme de tous les chiffres est 21."
+      ],
+      "de": [
+        "Denk daran: Ein Strich, der gerade oft erscheint, verschwindet; nur ungerade oft erscheinende bleiben.",
+        "Die erste Ziffer ist 9.",
+        "Die Summe aller Ziffern ist 21."
+      ]
+    },
+    "explanation": {
+      "ko": "9624",
+      "en": "9624",
+      "ja": "9624",
+      "zh": "9624",
+      "es": "9624",
+      "fr": "9624",
+      "de": "9624"
+    }
+  },
+  {
+    "id": "fg14_s06",
+    "type": "fragment",
+    "track": "fragment",
+    "chapter": 14,
+    "order": 6,
+    "frames": [
+      [
+        "a",
+        "bc",
+        "bc",
+        "bc"
+      ],
+      [
+        "",
+        "ac",
+        "",
+        "f"
+      ],
+      [
+        "a",
+        "b",
+        "g",
+        "bg"
+      ],
+      [
+        "bc",
+        "",
+        "f",
+        ""
+      ]
+    ],
+    "combine": "or",
+    "frameMs": 700,
+    "answer": "7744",
+    "inputType": "keypad",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "모든 장에 나온 획을 한 숫자 위에 겹쳐 보세요.",
+        "첫 번째 자리의 숫자는 7이에요.",
+        "각 자리 숫자를 모두 더하면 22예요."
+      ],
+      "en": [
+        "Stack every stroke from all the frames on top of a single digit.",
+        "The first digit is 7.",
+        "The digits add up to 22."
+      ],
+      "ja": [
+        "すべてのコマに出てきた線を、ひとつの数字の上に重ねてみましょう。",
+        "1桁目の数字は7です。",
+        "各桁の数字をすべて足すと22です。"
+      ],
+      "zh": [
+        "把所有画面中出现的笔画叠加到同一个数字上。",
+        "第一位数字是7。",
+        "各位数字相加等于22。"
+      ],
+      "es": [
+        "Superpón en un solo número todos los trazos que aparecen en las imágenes.",
+        "El primer dígito es 7.",
+        "Si sumas todos los dígitos, obtienes 22."
+      ],
+      "fr": [
+        "Superposez sur un seul chiffre tous les traits apparus dans les images.",
+        "Le premier chiffre est 7.",
+        "La somme de tous les chiffres est 22."
+      ],
+      "de": [
+        "Lege alle Striche aus allen Bildern übereinander auf eine einzige Ziffer.",
+        "Die erste Ziffer ist 7.",
+        "Die Summe aller Ziffern ist 22."
+      ]
+    },
+    "explanation": {
+      "ko": "7744",
+      "en": "7744",
+      "ja": "7744",
+      "zh": "7744",
+      "es": "7744",
+      "fr": "7744",
+      "de": "7744"
+    }
   }
 ]

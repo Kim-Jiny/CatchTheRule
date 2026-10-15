@@ -26,6 +26,9 @@ struct Puzzle: Codable, Identifiable, Equatable {
     let target: Int?         // 숫자 만들기 목표
     let equation: [String]?  // 성냥개비 퍼즐 초기 식(셀 배열)
     let moves: Int?          // 성냥개비 퍼즐 허용 이동(순변위 상한)
+    let frames: [[String]]?  // 조각 숫자: frames[장][자리] = 켜지는 획 문자열(a~g)
+    let combine: String?     // "or" | "xor"
+    let frameMs: Int?        // 한 장을 보여 주는 시간(ms)
     let answer: String
     let inputType: InputType
     let choices: [String]?
@@ -55,6 +58,9 @@ struct Puzzle: Codable, Identifiable, Equatable {
 
     /// 성냥개비 퍼즐(식 셀 배열) 여부.
     var isMatch: Bool { (equation?.isEmpty == false) }
+
+    /// 조각 숫자(여러 장의 7세그먼트 조각) 퍼즐 여부.
+    var isFragment: Bool { (frames?.isEmpty == false) }
 
     /// 현재 언어의 문장 목록(없으면 영어 → 임의 폴백).
     var localizedStatements: [String] {

@@ -163,7 +163,9 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.spacedBy(28.dp, Alignment.CenterVertically),
                 ) {
-                    if (puzzle.isMatch) {
+                    if (puzzle.isFragment) {
+                        FragmentPrompt(puzzle)
+                    } else if (puzzle.isMatch) {
                         Text(stringResource(R.string.match_prompt), color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
                     } else if (puzzle.isTarget) {
                         Text(stringResource(R.string.target_prompt), color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
