@@ -38,12 +38,13 @@ final class MockRankingService: RankingService {
         return await board.submit(nickname: nickname, score: score)
     }
 
-    func leaderboard(mode: GameMode) async throws -> [RankEntry] {
+    func leaderboard(mode: GameMode) async throws -> Leaderboard {
         try? await Task.sleep(nanoseconds: 300_000_000)
         let snap = await board.snapshot()
-        return snap.enumerated().map { idx, item in
+        let entries = snap.enumerated().map { idx, item in
             // 샘플 랭킹은 한국 국기로 표시.
             RankEntry(rank: idx + 1, nickname: item.nickname, score: item.score, country: "KR")
         }
+        return Leaderboard(entries: entries, period: KSTPeriod.current(), resetsAt: KSTPeriod.resetDate())
     }
 }

@@ -15,6 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.lerp
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 
@@ -35,6 +36,9 @@ object AppColors {
     val Danger = Color(0xFFFF6B6B)
     val Star = Color(0xFFFFD166)
 
+    val NeonBgTop = Color(0xFF0B0E14)
+    val NeonBgBottom = Color(0xFF10141C)
+
     val AccentGradient = Brush.linearGradient(listOf(Accent, Accent2))
 }
 
@@ -54,12 +58,16 @@ fun CatchTheRuleTheme(content: @Composable () -> Unit) {
 
 /** 화면 공통 배경. */
 @Composable
-fun ScreenBackground(content: @Composable () -> Unit) {
+fun ScreenBackground(animated: Boolean = false, content: @Composable () -> Unit) {
     Box(
         Modifier
             .fillMaxSize()
-            .background(Brush.verticalGradient(listOf(AppColors.Bg, AppColors.BgElevated)))
+            .background(
+                if (animated) Brush.verticalGradient(listOf(AppColors.NeonBgTop, AppColors.NeonBgBottom))
+                else Brush.verticalGradient(listOf(AppColors.Bg, AppColors.BgElevated))
+            )
     ) {
+        if (animated) NeonBackdrop()
         content()
     }
 }
@@ -92,3 +100,18 @@ fun Modifier.card(radius: Dp = 20.dp): Modifier = this
     .clip(RoundedCornerShape(radius))
     .background(AppColors.Card)
     .border(1.dp, AppColors.Stroke, RoundedCornerShape(radius))
+
+/** 모드별 네온 포인트 컬러(홈/챕터 목록 공용, iOS Theme.modeColor 와 동일). */
+fun modeColor(track: String): Color = when (track) {
+    "shapes" -> Color(0xFF18C8FF)
+    "logic" -> Color(0xFFFFB020)
+    "contradiction" -> Color(0xFFFF5C8A)
+    "target" -> Color(0xFF3DDC97)
+    "match" -> Color(0xFFFF7A45)
+    else -> Color(0xFF7C5CFF)
+}
+
+fun modeColorEnd(track: String): Color = lerp(modeColor(track), AppColors.Accent, 0.15f)
+fun modeGradient(track: String): Brush = Brush.linearGradient(listOf(modeColor(track), modeColorEnd(track)))
+fun modeGlow(track: String): Color = modeColor(track).copy(alpha = 0.55f)
+fun modeTint(track: String): Color = modeColor(track).copy(alpha = 0.14f)

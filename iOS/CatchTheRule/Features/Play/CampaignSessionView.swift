@@ -19,12 +19,29 @@ struct CampaignSessionView: View {
     @State private var solved = false       // 현재 퍼즐 정답 처리 완료
     @State private var showHintShop = false // 힌트 0개일 때 광고/구매 팝업
     @State private var showCalc = false      // 플로팅 계산기
+    @State private var expr: TargetExpression?   // 숫자 만들기 수식(퍼즐 전환 시 재생성)
+    @State private var incompleteShown = false
+    @State private var match: MatchBoard?        // 성냥개비 퍼즐 상태(퍼즐 전환 시 재생성)
+    @State private var matchMessage: String?
     @State private var advanceTask: Task<Void, Never>?  // 정답 후 지연 진행/광고 — 이탈 시 취소
 
     init(startIndex: Int, track: String = PuzzleStore.defaultTrack) {
         self.track = track
         self.puzzles = PuzzleStore.shared.puzzles(track: track)
-        _index = State(initialValue: max(0, startIndex))
+        let start = max(0, startIndex)
+        _index = State(initialValue: start)
+        _expr = State(initialValue: Self.makeExpr(for: puzzles.indices.contains(start) ? puzzles[start] : nil))
+        _match = State(initialValue: Self.makeMatch(for: puzzles.indices.contains(start) ? puzzles[start] : nil))
+    }
+
+    private static func makeMatch(for puzzle: Puzzle?) -> MatchBoard? {
+        guard let p = puzzle, p.isMatch, let eq = p.equation else { return nil }
+        return MatchBoard(equation: eq, moves: p.moves ?? 1)
+    }
+
+    private static func makeExpr(for puzzle: Puzzle?) -> TargetExpression? {
+        guard let p = puzzle, p.isTarget, let nums = p.numbers, let t = p.target else { return nil }
+        return TargetExpression(numbers: nums, target: t)
     }
 
     private var puzzle: Puzzle? {
@@ -43,7 +60,7 @@ struct CampaignSessionView: View {
         .overlay {
             if feedback == .correct {
                 CorrectBadge()
-                    .offset(y: -150)
+                    .offset(y: (puzzle?.isTarget == true || puzzle?.isMatch == true) ? -250 : -150)  // 숫자 만들기·성냥개비는 식 영역을 가리지 않게 위로
                     .transition(.scale(scale: 0.5).combined(with: .opacity))
             }
         }
@@ -74,7 +91,17 @@ struct CampaignSessionView: View {
             GeometryReader { geo in
                 ScrollView {
                     VStack(spacing: 28) {
-                        if puzzle.isContradiction {
+                        if puzzle.isMatch {
+                            Text(String.loc("match_prompt"))
+                                .font(.system(size: 15, weight: .semibold))
+                                .foregroundStyle(Theme.textSecondary)
+                                .multilineTextAlignment(.center)
+                        } else if puzzle.isTarget {
+                            Text(String.loc("target_prompt"))
+                                .font(.system(size: 15, weight: .semibold))
+                                .foregroundStyle(Theme.textSecondary)
+                                .multilineTextAlignment(.center)
+                        } else if puzzle.isContradiction {
                             Text(String.loc("contradiction_prompt"))
                                 .font(.system(size: 15, weight: .semibold))
                                 .foregroundStyle(Theme.textSecondary)
@@ -85,12 +112,21 @@ struct CampaignSessionView: View {
                                 .foregroundStyle(Theme.textSecondary)
                         }
 
-                        SequenceDisplay(puzzle: puzzle, typed: typed, reveal: reveal, feedback: feedback) { picked in
-                            guard !solved else { return }
-                            typed = "\(picked)"
-                            submit(puzzle: puzzle, value: "\(picked)")
+                        if puzzle.isMatch, match != nil {
+                            matchSection
+                        } else if puzzle.isTarget, let expr {
+                            TargetBoardView(expr: expr, incompleteShown: incompleteShown) { i in
+                                targetEdit { $0.addTile(i) }
+                            }
+                            .modifier(Shake(animatableData: shake))
+                        } else {
+                            SequenceDisplay(puzzle: puzzle, typed: typed, reveal: reveal, feedback: feedback) { picked in
+                                guard !solved else { return }
+                                typed = "\(picked)"
+                                submit(puzzle: puzzle, value: "\(picked)")
+                            }
+                            .modifier(Shake(animatableData: shake))
                         }
-                        .modifier(Shake(animatableData: shake))
 
                         if !shownHints.isEmpty {
                             hintBox
@@ -217,7 +253,19 @@ struct CampaignSessionView: View {
 
     @ViewBuilder
     private func inputArea(for puzzle: Puzzle) -> some View {
-        if puzzle.isContradiction {
+        if puzzle.isMatch, let m = match {
+            matchControls(m, puzzle: puzzle)
+        } else if puzzle.isTarget, let e = expr {
+            TargetControlsView(
+                expr: e, disabled: solved,
+                onOp: { o in targetEdit { $0.addOp(o) } },
+                onOpen: { targetEdit { $0.addOpen() } },
+                onClose: { targetEdit { $0.addClose() } },
+                onDelete: { targetEdit { $0.deleteLast(); return true } },
+                onReset: { targetEdit { $0.reset(); return true } },
+                onCheck: { checkTarget(puzzle: puzzle) }
+            )
+        } else if puzzle.isContradiction {
             // 모순찾기는 문장 카드를 직접 탭 — 하단 입력 영역 없음.
             EmptyView()
         } else if puzzle.isFigureSequence {
@@ -249,6 +297,120 @@ struct CampaignSessionView: View {
                 }
             }
         }
+    }
+
+    // MARK: - 숫자 만들기
+
+    /// 수식 편집. 가드 위반(false)이면 변경 없이 가벼운 햅틱만.
+    private func targetEdit(_ edit: (inout TargetExpression) -> Bool) {
+        guard !solved, var e = expr else { return }
+        let ok = edit(&e)
+        if ok { expr = e }
+        if progress.hapticsOn { ok ? Haptics.soft() : Haptics.tap() }
+    }
+
+    private func checkTarget(puzzle: Puzzle) {
+        guard !solved, let e = expr else { return }
+        guard let v = e.value else {
+            // 미완성 식: 제출하지 않고 안내 + 흔들림
+            if progress.hapticsOn { Haptics.error() }
+            withAnimation(.linear(duration: 0.4)) { shake += 1 }
+            incompleteShown = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.4) { incompleteShown = false }
+            return
+        }
+        // 정답이면 answer 문자열, 아니면 answer 와 절대 같지 않은 값(결과 문자열)을 넘겨 기존 오답 경로를 탄다.
+        submit(puzzle: puzzle, value: e.isCorrect ? String(e.target) : "x" + v.text)
+    }
+
+    // MARK: - 성냥개비 퍼즐
+
+    private var matchSection: some View {
+        VStack(spacing: 14) {
+            if let m = match {
+                Text(String.loc("match_moves", m.displacement, m.moves))
+                    .font(.system(size: 15, weight: .bold, design: .rounded))
+                    .foregroundStyle(m.displacement >= m.moves ? Theme.star : Theme.textPrimary)
+                    .padding(.horizontal, 14).padding(.vertical, 6)
+                    .background(Capsule().fill(Theme.card))
+            }
+            MatchBoardView(
+                board: Binding(get: { match ?? MatchBoard(equation: [], moves: 0) }, set: { match = $0 }),
+                disabled: solved,
+                onPick: { if progress.hapticsOn { Haptics.soft() } },
+                onDrop: { result in
+                    switch result {
+                    case .placed: if progress.hapticsOn { Haptics.tap() }
+                    case .returned: break
+                    case .rejectedLimit: matchWarn("match_limit")
+                    }
+                }
+            )
+            .frame(height: 130)
+            .modifier(Shake(animatableData: shake))
+            Text(matchMessage ?? " ")
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundStyle(Theme.danger)
+                .multilineTextAlignment(.center)
+                .frame(minHeight: 18)
+        }
+    }
+
+    private func matchWarn(_ key: String) {
+        if progress.hapticsOn { Haptics.error() }
+        withAnimation(.linear(duration: 0.4)) { shake += 1 }
+        matchMessage = String.loc(key)
+        let shown = matchMessage
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.8) {
+            if matchMessage == shown { matchMessage = nil }
+        }
+    }
+
+    private func matchControls(_ m: MatchBoard, puzzle: Puzzle) -> some View {
+        VStack(spacing: 8) {
+            HStack(spacing: 8) {
+                matchKey("arrow.uturn.backward", String.loc("match_undo"), on: m.canUndo && !solved) { match?.undo() }
+                matchKey("arrow.counterclockwise", String.loc("match_reset"), on: m.canReset && !solved) { match?.reset(); matchMessage = nil }
+            }
+            Button { checkMatch(puzzle: puzzle) } label: {
+                Text(String.loc("match_check"))
+                    .font(.system(size: 17, weight: .bold))
+                    .foregroundStyle(.white)
+                    .frame(maxWidth: .infinity, minHeight: 50)
+                    .background(
+                        RoundedRectangle(cornerRadius: 14, style: .continuous)
+                            .fill(m.canCheck && !solved ? AnyShapeStyle(Theme.accentGradient) : AnyShapeStyle(Theme.accent.opacity(0.3)))
+                    )
+            }
+            .buttonStyle(.plain)
+            .disabled(!m.canCheck || solved)
+            .opacity(m.canCheck && !solved ? 1 : 0.6)
+        }
+    }
+
+    private func matchKey(_ icon: String, _ title: String, on: Bool, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            HStack(spacing: 6) {
+                Image(systemName: icon)
+                Text(title).lineLimit(1).minimumScaleFactor(0.7)
+            }
+            .font(.system(size: 14, weight: .semibold))
+            .foregroundStyle(on ? Theme.textSecondary : Theme.textTertiary)
+            .frame(maxWidth: .infinity, minHeight: 40)
+            .card(cornerRadius: 12)
+        }
+        .buttonStyle(.plain)
+        .disabled(!on)
+    }
+
+    private func checkMatch(puzzle: Puzzle) {
+        guard !solved, let m = match, m.canCheck else { return }
+        guard let text = m.text, let truth = MatchBoard.evaluate(text) else {
+            matchWarn("match_invalid")   // 무효 글리프/문법 오류: 제출 안 함
+            return
+        }
+        // 참이면 answer, 아니면 answer 와 절대 같지 않은 값으로 기존 오답 경로. 식은 유지.
+        submit(puzzle: puzzle, value: truth ? puzzle.answer : "x" + text)
     }
 
     // MARK: - Submit
@@ -290,6 +452,10 @@ struct CampaignSessionView: View {
     private func advance() {
         withAnimation(.easeInOut(duration: 0.25)) {
             index += 1
+            expr = Self.makeExpr(for: puzzles.indices.contains(index) ? puzzles[index] : nil)
+            match = Self.makeMatch(for: puzzles.indices.contains(index) ? puzzles[index] : nil)
+            matchMessage = nil
+            incompleteShown = false
             typed = ""
             hintsShown = 0
             feedback = nil

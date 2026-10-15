@@ -68,7 +68,7 @@ fun InquiryScreen(modifier: Modifier = Modifier, onClose: () -> Unit) {
 
     androidx.compose.runtime.LaunchedEffect(Unit) { reload() }
 
-    ScreenBackground {
+    ScreenBackground(animated = true) {
         Column(modifier.fillMaxWidth().verticalScroll(rememberScrollState()).padding(20.dp)) {
             // 헤더
             Row(verticalAlignment = Alignment.CenterVertically) {

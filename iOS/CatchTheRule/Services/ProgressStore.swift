@@ -15,7 +15,12 @@ final class ProgressStore {
     var nickname: String { didSet { defaults.set(nickname, forKey: Keys.nickname) } }
     var soundOn: Bool { didSet { defaults.set(soundOn, forKey: Keys.sound) } }
     var hapticsOn: Bool { didSet { defaults.set(hapticsOn, forKey: Keys.haptics) } }
+    /// 마지막으로 플레이한 트랙(홈 히어로용). 없으면 nil.
+    var lastPlayedTrack: String? { didSet { defaults.set(lastPlayedTrack, forKey: Keys.lastTrack) } }
+    /// 이번 달(KST) 타임어택 최고 점수. 기간이 바뀌면 `refreshBestPeriod()` 가 0 으로 리셋한다.
     var bestTimeAttack: Int { didSet { defaults.set(bestTimeAttack, forKey: Keys.best) } }
+    /// `bestTimeAttack` 이 속한 KST 월("YYYY-MM").
+    private(set) var bestTimeAttackPeriod: String { didSet { defaults.set(bestTimeAttackPeriod, forKey: Keys.bestPeriod) } }
 
     private let defaults: UserDefaults
 
@@ -34,7 +39,11 @@ final class ProgressStore {
         nickname = defaults.string(forKey: Keys.nickname) ?? ""
         soundOn = defaults.object(forKey: Keys.sound) as? Bool ?? true
         hapticsOn = defaults.object(forKey: Keys.haptics) as? Bool ?? true
+        lastPlayedTrack = defaults.string(forKey: Keys.lastTrack)
         bestTimeAttack = defaults.integer(forKey: Keys.best)
+        // 기간 키가 없으면(구버전 데이터) 현재 월로 간주해 기존 값을 유지한다.
+        bestTimeAttackPeriod = defaults.string(forKey: Keys.bestPeriod) ?? KSTPeriod.current()
+        refreshBestPeriod()
     }
 
     // MARK: - Derived
@@ -79,11 +88,26 @@ final class ProgressStore {
     func recordCampaignClear(puzzle: Puzzle, atIndex index: Int, earnedStars: Int) {
         let best = max(stars[puzzle.id] ?? 0, earnedStars)
         stars[puzzle.id] = best
+        lastPlayedTrack = puzzle.trackKey
         // 이미 풀었던 단계를 재도전한 경우 진행 인덱스는 건드리지 않는다.
         let track = puzzle.trackKey
         if index >= currentIndex(track: track) {
             indices[track] = index + 1
         }
+    }
+
+    /// 저장된 최고점의 기간이 현재 KST 월과 다르면 0 으로 리셋. 앱 시작/포그라운드 복귀/점수 갱신 시 호출.
+    func refreshBestPeriod(now: Date = Date()) {
+        let cur = KSTPeriod.current(now)
+        guard bestTimeAttackPeriod != cur else { return }
+        bestTimeAttack = 0
+        bestTimeAttackPeriod = cur
+    }
+
+    /// 타임어택 종료 시 점수 반영(이번 달 최고점 갱신).
+    func recordTimeAttack(score: Int) {
+        refreshBestPeriod()
+        if score > bestTimeAttack { bestTimeAttack = score }
     }
 
     func spendHint() -> Bool {
@@ -97,7 +121,9 @@ final class ProgressStore {
         stars = [:]
         hintsRemaining = Self.initialHintGrant
         bestTimeAttack = 0
+        bestTimeAttackPeriod = KSTPeriod.current()
         shapesUnlockSeen = false
+        lastPlayedTrack = nil
         defaults.removeObject(forKey: Keys.currentIndex)   // 구버전 키도 정리
     }
 
@@ -115,5 +141,7 @@ final class ProgressStore {
         static let sound = "soundOn"
         static let haptics = "hapticsOn"
         static let best = "bestTimeAttack"
+        static let bestPeriod = "bestTimeAttackPeriod"
+        static let lastTrack = "lastPlayedTrack"
     }
 }

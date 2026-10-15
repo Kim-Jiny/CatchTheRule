@@ -15,17 +15,9 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
-import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
-import androidx.compose.material.icons.filled.ChangeHistory
-import androidx.compose.material.icons.filled.ExpandMore
-import androidx.compose.material.icons.filled.Lightbulb
 import androidx.compose.material.icons.filled.LockOpen
-import androidx.compose.material.icons.filled.Numbers
 import androidx.compose.material.icons.filled.PlayArrow
-import androidx.compose.material.icons.filled.Refresh
 import androidx.compose.material.icons.filled.Star
-import androidx.compose.material.icons.filled.Verified
-import androidx.compose.material.icons.filled.Warning
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -37,24 +29,25 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.draw.rotate
+import androidx.compose.ui.draw.drawBehind
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.StrokeCap
-import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.jiny.catchtherule.R
 import com.jiny.catchtherule.core.PuzzleStore
 import com.jiny.catchtherule.data.LocalProgress
+import com.jiny.catchtherule.data.ProgressStore
 import com.jiny.catchtherule.ui.PrimaryButton
-import com.jiny.catchtherule.ui.SectionHeader
-import com.jiny.catchtherule.ui.StarRow
 import com.jiny.catchtherule.ui.theme.AppColors
 import com.jiny.catchtherule.ui.theme.ScreenBackground
 import com.jiny.catchtherule.ui.theme.card
+import com.jiny.catchtherule.ui.theme.modeColor
 import kotlin.math.roundToInt
 
 @Composable
@@ -77,115 +70,175 @@ fun HomeScreen(
     }
     if (showUnlock) UnlockDialog { showUnlock = false }
 
+    // 세션 시작 시 마지막 플레이 모드 기록(히어로가 사용)
+    val play: (Int, String) -> Unit = { index, track ->
+        progress.markLastTrack(track)
+        onPlay(index, track)
+    }
+
     when {
-        selectedMode != null -> ModeDetail(modifier, selectedMode, onBack = onBackToHub, onPlay = onPlay)
-        progress.isShapesUnlocked -> Hub(modifier, onSelectMode)
-        else -> LockedHome(modifier, onPlay)   // 잠금: 숫자규칙 단일 캠페인(튜토리얼)
+        selectedMode != null -> ModeDetail(modifier, selectedMode, onBack = onBackToHub, onPlay = play)
+        progress.isShapesUnlocked -> Hub(modifier, onSelectMode, play)
+        else -> LockedHome(modifier, play)   // 잠금: 숫자규칙 단일 캠페인(튜토리얼)
     }
 }
 
 /** 잠금 상태 홈 — 숫자규칙 캠페인을 직접 표시. */
 @Composable
 private fun LockedHome(modifier: Modifier, onPlay: (Int, String) -> Unit) {
-    ScreenBackground {
+    ScreenBackground(animated = true) {
         Column(
-            modifier.verticalScroll(rememberScrollState()).padding(20.dp),
-            verticalArrangement = Arrangement.spacedBy(20.dp),
+            modifier.verticalScroll(rememberScrollState()).padding(horizontal = 20.dp).padding(top = 12.dp, bottom = 28.dp),
+            verticalArrangement = Arrangement.spacedBy(18.dp),
         ) {
-            HomeTitle()
+            HomeHeader()
             com.jiny.catchtherule.ui.BannerAd(com.jiny.catchtherule.ui.BannerUnits.home)
             TrackCampaign("numbers", onPlay)
         }
     }
 }
 
-/** 모드 선택 허브(해금 후). */
+/** 마지막 플레이 모드(없으면 첫 모드). 이미 완주한 모드면 가장 진행이 덜 된 모드. */
+private fun heroTrack(tracks: List<String>, progress: ProgressStore): String {
+    val candidate = progress.lastTrack?.takeIf { it in tracks } ?: tracks.first()
+    if (!progress.isCampaignFinished(candidate)) return candidate
+    return tracks.minByOrNull { progress.progressFraction(it) } ?: candidate
+}
+
+/** 모드 선택 허브(해금 후): 헤더 → 이어하기 히어로 → 2열 모드 그리드. */
 @Composable
-private fun Hub(modifier: Modifier, onSelectMode: (String) -> Unit) {
+private fun Hub(modifier: Modifier, onSelectMode: (String) -> Unit, onPlay: (Int, String) -> Unit) {
     val store = PuzzleStore.get(LocalContext.current)
-    ScreenBackground {
-        Column(
-            modifier.verticalScroll(rememberScrollState()).padding(20.dp),
-            verticalArrangement = Arrangement.spacedBy(20.dp),
-        ) {
-            HomeTitle()
-            SectionHeader(stringResource(R.string.select_mode))
-            com.jiny.catchtherule.ui.BannerAd(com.jiny.catchtherule.ui.BannerUnits.home)
-            store.tracks.forEach { track -> ModeCard(track) { onSelectMode(track) } }
-        }
-    }
-}
-
-@Composable
-private fun HomeTitle() {
-    Column(Modifier.padding(top = 8.dp)) {
-        Text(stringResource(R.string.app_name), color = AppColors.TextPrimary, fontSize = 30.sp, fontWeight = FontWeight.Bold)
-        Text(stringResource(R.string.home_subtitle), color = AppColors.TextSecondary, fontSize = 15.sp)
-    }
-}
-
-/** 허브의 모드 카드 — 제목 + 완료 %(또는 완료 배지). */
-@Composable
-private fun ModeCard(track: String, onClick: () -> Unit) {
     val progress = LocalProgress.current
-    val fraction = progress.progressFraction(track)
-    val finished = progress.isCampaignFinished(track)
-    Row(
-        Modifier.fillMaxWidth().card().clickable { onClick() }.padding(18.dp),
-        verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.spacedBy(14.dp),
-    ) {
-        Box(
-            Modifier.size(50.dp).clip(RoundedCornerShape(14.dp)).background(AppColors.AccentGradient),
-            contentAlignment = Alignment.Center,
+    val tracks = store.tracks
+    ScreenBackground(animated = true) {
+        Column(
+            modifier.verticalScroll(rememberScrollState()).padding(horizontal = 20.dp).padding(top = 12.dp, bottom = 28.dp),
+            verticalArrangement = Arrangement.spacedBy(18.dp),
         ) {
-            Icon(
-                modeIcon(track),
-                null, tint = Color.White, modifier = Modifier.size(22.dp),
+            HomeHeader()
+            if (tracks.isNotEmpty()) {
+                val hero = heroTrack(tracks, progress)
+                val total = store.totalCount(hero)
+                val finished = progress.isCampaignFinished(hero)
+                val position = if (total > 0) store.position(progress.currentIndex(hero).coerceAtMost(total - 1), hero) else null
+                HeroCard(
+                    track = hero,
+                    caption = stringResource(R.string.home_last_played),
+                    title = stringResource(modeTitleRes(hero)),
+                    subtitle = if (finished || position == null) stringResource(R.string.home_all_clear)
+                    else stringResource(R.string.chapter_label, position.first) + " · " + stringResource(R.string.stage_label, position.second),
+                    fraction = progress.progressFraction(hero),
+                    finished = finished,
+                    modifier = Modifier.staggerIn(1),
+                    onOpen = { onSelectMode(hero) },
+                    onContinue = { onPlay(progress.currentIndex(hero), hero) },
+                )
+            }
+            com.jiny.catchtherule.ui.BannerAd(com.jiny.catchtherule.ui.BannerUnits.home)
+            Text(
+                stringResource(R.string.select_mode),
+                color = AppColors.TextSecondary, fontSize = 14.sp, fontWeight = FontWeight.Bold,
             )
+            tracks.chunked(2).forEachIndexed { row, pair ->
+                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(14.dp)) {
+                    pair.forEachIndexed { col, track ->
+                        val total = store.totalCount(track)
+                        ModeGridCard(
+                            track = track,
+                            fraction = progress.progressFraction(track),
+                            solved = progress.currentIndex(track).coerceAtMost(total),
+                            total = total,
+                            finished = progress.isCampaignFinished(track),
+                            modifier = Modifier.weight(1f),
+                            index = row * 2 + col,
+                            onClick = { onSelectMode(track) },
+                        )
+                    }
+                    // 홀수 개면 마지막 카드는 왼쪽 정렬(한 칸)
+                    if (pair.size == 1) Spacer(Modifier.weight(1f))
+                }
+            }
         }
+    }
+}
+
+/** 앱 타이틀(흰→시안 그라데이션, 위에서 슬라이드 인) + 부제 + 별 합계 칩(카운트업). */
+@Composable
+private fun HomeHeader() {
+    val progress = LocalProgress.current
+    val stars by rememberCountUp(progress.totalStars.toFloat(), 700)
+    Row(
+        Modifier.fillMaxWidth().staggerIn(0, 60),
+        verticalAlignment = Alignment.Top,
+    ) {
         Column(Modifier.weight(1f)) {
             Text(
-                stringResource(modeTitleRes(track)),
-                color = AppColors.TextPrimary, fontSize = 17.sp, fontWeight = FontWeight.Bold,
+                stringResource(R.string.app_name),
+                style = TextStyle(
+                    brush = Brush.horizontalGradient(listOf(Color.White, Color(0xFF18C8FF))),
+                    fontSize = 30.sp, fontWeight = FontWeight.ExtraBold,
+                ),
             )
-            if (finished) {
-                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
-                    Icon(Icons.Filled.Verified, null, tint = AppColors.Success, modifier = Modifier.size(14.dp))
-                    Text(stringResource(R.string.mode_complete), color = AppColors.Success, fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
-                }
-            } else {
-                Text(stringResource(R.string.mode_progress, (fraction * 100).roundToInt()), color = AppColors.TextTertiary, fontSize = 13.sp)
-            }
+            Text(stringResource(R.string.home_subtitle), color = AppColors.TextSecondary, fontSize = 14.sp)
         }
-        ProgressRing(fraction, size = 52.dp)
-        Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, null, tint = AppColors.TextTertiary, modifier = Modifier.size(22.dp))
+        Row(
+            Modifier.padding(start = 10.dp, top = 6.dp)
+                .clip(RoundedCornerShape(16.dp))
+                .background(AppColors.Star.copy(alpha = 0.12f))
+                .drawBehind { drawRoundRect(AppColors.Star.copy(alpha = 0.35f), Offset.Zero, size, androidx.compose.ui.geometry.CornerRadius(16.dp.toPx()), style = androidx.compose.ui.graphics.drawscope.Stroke(1.dp.toPx())) }
+                .padding(horizontal = 12.dp, vertical = 7.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(5.dp),
+        ) {
+            Icon(Icons.Filled.Star, null, tint = AppColors.Star, modifier = Modifier.size(15.dp))
+            Text(
+                stringResource(R.string.home_total_stars, stars.roundToInt()),
+                style = TextStyle(fontFeatureSettings = "tnum", color = AppColors.TextPrimary, fontSize = 13.sp, fontWeight = FontWeight.ExtraBold),
+            )
+        }
     }
 }
 
-/** 모드 상세 페이지 — 헤더(뒤로+모드명) + 캠페인. */
+/** 모드 상세 페이지(챕터 목록) — 모드색 글로우 헤더(뒤로+모드명, 아이콘 워터마크) + 캠페인. */
 @Composable
 private fun ModeDetail(modifier: Modifier, track: String, onBack: () -> Unit, onPlay: (Int, String) -> Unit) {
-    ScreenBackground {
+    val color = modeColor(track)
+    ScreenBackground(animated = true) {
         Column(modifier) {
-            Row(
-                Modifier.fillMaxWidth().padding(horizontal = 20.dp, vertical = 8.dp),
-                verticalAlignment = Alignment.CenterVertically,
+            Box(
+                Modifier.fillMaxWidth().drawBehind {
+                    drawRect(
+                        Brush.radialGradient(
+                            listOf(color.copy(alpha = 0.35f), Color.Transparent),
+                            center = Offset(size.width * 0.5f, 0f), radius = size.width * 0.8f,
+                        ),
+                    )
+                },
             ) {
-                Box(
-                    Modifier.size(38.dp).card(12.dp).clickable { onBack() },
-                    contentAlignment = Alignment.Center,
-                ) { Icon(Icons.AutoMirrored.Filled.ArrowBack, null, tint = AppColors.TextSecondary, modifier = Modifier.size(18.dp)) }
-                Box(Modifier.weight(1f))
-                Text(
-                    stringResource(modeTitleRes(track)),
-                    color = AppColors.TextPrimary, fontSize = 17.sp, fontWeight = FontWeight.Bold,
+                Icon(
+                    modeIcon(track), null, tint = color.copy(alpha = 0.10f),
+                    modifier = Modifier.align(Alignment.CenterEnd).padding(end = 12.dp).size(96.dp),
                 )
-                Box(Modifier.weight(1f))
-                Box(Modifier.size(38.dp))
+                Row(
+                    Modifier.fillMaxWidth().padding(horizontal = 20.dp, vertical = 10.dp),
+                    verticalAlignment = Alignment.CenterVertically,
+                ) {
+                    Box(
+                        Modifier.size(38.dp).card(12.dp).clickable { onBack() },
+                        contentAlignment = Alignment.Center,
+                    ) { Icon(Icons.AutoMirrored.Filled.ArrowBack, null, tint = AppColors.TextSecondary, modifier = Modifier.size(18.dp)) }
+                    Box(Modifier.weight(1f))
+                    Text(
+                        stringResource(modeTitleRes(track)),
+                        color = AppColors.TextPrimary, fontSize = 18.sp, fontWeight = FontWeight.ExtraBold,
+                    )
+                    Box(Modifier.weight(1f))
+                    Box(Modifier.size(38.dp))
+                }
             }
             Column(
-                Modifier.verticalScroll(rememberScrollState()).padding(horizontal = 20.dp).padding(bottom = 20.dp),
+                Modifier.verticalScroll(rememberScrollState()).padding(horizontal = 20.dp).padding(top = 8.dp, bottom = 28.dp),
                 verticalArrangement = Arrangement.spacedBy(16.dp),
             ) {
                 TrackCampaign(track, onPlay)
@@ -211,194 +264,55 @@ private fun UnlockDialog(onClose: () -> Unit) {
     }
 }
 
-/** 한 트랙의 이어하기 카드 + 챕터 목록. 잠금 홈·모드 상세 공용. */
-@Composable
-private fun TrackCampaign(track: String, onPlay: (Int, String) -> Unit) {
-    val progress = LocalProgress.current
-    val store = PuzzleStore.get(LocalContext.current)
-    var expanded by remember(track) { mutableStateOf(setOf<Int>()) }
-    val total = store.totalCount(track)
-    val position = if (total > 0) store.position(progress.currentIndex(track).coerceAtMost(total - 1), track) else null
-    val finished = progress.isCampaignFinished(track)
-
-    Column(verticalArrangement = Arrangement.spacedBy(14.dp)) {
-        // 이어하기 카드
-        Column(
-            Modifier.fillMaxWidth().card().padding(20.dp),
-            verticalArrangement = Arrangement.spacedBy(18.dp),
-        ) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                Column(Modifier.weight(1f)) {
-                    Text(
-                        stringResource(if (finished) R.string.home_all_clear else R.string.home_current),
-                        color = AppColors.TextSecondary, fontSize = 13.sp, fontWeight = FontWeight.SemiBold,
-                    )
-                    Text(
-                        if (finished || position == null) stringResource(R.string.home_congrats)
-                        else stringResource(R.string.chapter_label, position.first) + " · " + stringResource(R.string.stage_label, position.second),
-                        color = AppColors.TextPrimary, fontSize = 22.sp, fontWeight = FontWeight.Bold,
-                    )
-                }
-                ProgressRing(progress.progressFraction(track))
-            }
-
-            Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
-                Icon(Icons.Filled.Star, null, tint = AppColors.Star, modifier = Modifier.size(16.dp))
-                Text("${progress.earnedStars(track)}", color = AppColors.TextPrimary, fontSize = 14.sp, fontWeight = FontWeight.SemiBold)
-                Text(stringResource(R.string.stars_of_max, progress.maxStars(track)), color = AppColors.TextTertiary, fontSize = 14.sp)
-            }
-
-            if (finished) {
-                Box(
-                    Modifier.fillMaxWidth().clip(RoundedCornerShape(14.dp))
-                        .background(AppColors.BgElevated).padding(vertical = 14.dp),
-                    contentAlignment = Alignment.Center,
-                ) {
-                    Text(
-                        stringResource(R.string.home_wait_update),
-                        color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold,
-                    )
-                }
-            } else {
-                PrimaryButton(
-                    text = stringResource(R.string.home_continue),
-                    icon = Icons.Filled.PlayArrow,
-                    onClick = { onPlay(progress.currentIndex(track), track) },
-                )
-            }
-        }
-
-        // 챕터 목록
-        store.chapters(track).forEach { chapter ->
-            ChapterBlock(
-                track = track,
-                chapter = chapter,
-                expanded = chapter in expanded,
-                onToggle = { expanded = if (chapter in expanded) expanded - chapter else expanded + chapter },
-                onReplay = { idx -> onPlay(idx, track) },
-            )
-        }
-    }
-}
-
-@Composable
-private fun ProgressRing(fraction: Float, size: androidx.compose.ui.unit.Dp = 62.dp) {
-    Box(contentAlignment = Alignment.Center, modifier = Modifier.size(size)) {
-        androidx.compose.foundation.Canvas(Modifier.size(size)) {
-            val stroke = 6.dp.toPx()
-            drawArc(
-                color = AppColors.Stroke,
-                startAngle = 0f, sweepAngle = 360f, useCenter = false,
-                style = Stroke(width = stroke),
-            )
-            drawArc(
-                brush = AppColors.AccentGradient,
-                startAngle = -90f, sweepAngle = 360f * fraction, useCenter = false,
-                style = Stroke(width = stroke, cap = StrokeCap.Round),
-            )
-        }
-        Text("${(fraction * 100).roundToInt()}%", color = AppColors.TextPrimary, fontSize = 13.sp, fontWeight = FontWeight.Bold)
-    }
-}
-
-/** 챕터 한 칸. 완료(지나간) 챕터는 탭하면 스테이지 목록을 펼쳐 이전 문제를 다시 풀 수 있다. */
-@Composable
-private fun ChapterBlock(
-    track: String,
-    chapter: Int,
-    expanded: Boolean,
-    onToggle: () -> Unit,
-    onReplay: (Int) -> Unit,
-) {
-    val progress = LocalProgress.current
-    val store = PuzzleStore.get(LocalContext.current)
-    val items = store.puzzlesIn(chapter, track)
-    val earned = items.sumOf { progress.starCount(it.id) }
-    val maxStars = items.size * 3
-    // 해당 챕터의 첫 인덱스(=잠금 해제 기준). order 는 챕터 내 번호라 트랙 인덱스로 비교.
-    val firstIndex = store.puzzles(track).indexOfFirst { it.chapter == chapter }.coerceAtLeast(0)
-    val lastIndex = firstIndex + items.size - 1
-    val current = progress.currentIndex(track)
-    val unlocked = current >= firstIndex
-    val completed = current > lastIndex   // 챕터 전체를 지나감
-    val starLevel = if (maxStars == 0) 0 else (earned.toDouble() / maxStars * 3).roundToInt()
-
-    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-        Row(
-            Modifier.fillMaxWidth().card()
-                .let { if (completed) it.clickable { onToggle() } else it }
-                .padding(16.dp),
-            verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.spacedBy(14.dp),
-        ) {
-            val badgeBrush = if (unlocked) AppColors.AccentGradient
-            else androidx.compose.ui.graphics.SolidColor(AppColors.Accent.copy(alpha = 0.25f))
-            Box(
-                Modifier.size(46.dp).clip(RoundedCornerShape(14.dp)).background(badgeBrush),
-                contentAlignment = Alignment.Center,
-            ) {
-                Text("$chapter", color = Color.White, fontSize = 18.sp, fontWeight = FontWeight.Bold)
-            }
-            Column(Modifier.weight(1f)) {
-                Text(chapterTitle(track, chapter), color = AppColors.TextPrimary, fontSize = 16.sp, fontWeight = FontWeight.SemiBold)
-                Text(stringResource(R.string.chapter_stages, items.size), color = AppColors.TextTertiary, fontSize = 13.sp)
-            }
-            Column(horizontalAlignment = Alignment.End, verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                StarRow(starLevel)
-                Text("$earned/$maxStars", color = AppColors.TextTertiary, fontSize = 12.sp)
-            }
-            if (completed) {
-                Icon(
-                    Icons.Filled.ExpandMore, null, tint = AppColors.TextTertiary,
-                    modifier = Modifier.size(20.dp).rotate(if (expanded) 180f else 0f),
-                )
-            }
-        }
-
-        if (completed && expanded) {
-            items.forEachIndexed { offset, puzzle ->
-                StageReplayRow(
-                    stage = offset + 1,
-                    stars = progress.starCount(puzzle.id),
-                    onClick = { onReplay(firstIndex + offset) },
-                )
-            }
-        }
-    }
-}
-
-/** 완료된 챕터의 스테이지 한 줄 — 누르면 그 스테이지부터 다시 플레이. */
-@Composable
-private fun StageReplayRow(stage: Int, stars: Int, onClick: () -> Unit) {
-    Row(
-        Modifier.fillMaxWidth().padding(start = 12.dp).card().clickable { onClick() }
-            .padding(horizontal = 16.dp, vertical = 12.dp),
-        verticalAlignment = Alignment.CenterVertically,
-        horizontalArrangement = Arrangement.spacedBy(12.dp),
-    ) {
-        Text(stringResource(R.string.stage_label, stage), color = AppColors.TextPrimary, fontSize = 14.sp, fontWeight = FontWeight.SemiBold)
-        StarRow(stars, size = 12)
-        Box(Modifier.weight(1f))
-        Icon(Icons.Filled.Refresh, null, tint = AppColors.Accent2, modifier = Modifier.size(16.dp))
-    }
-}
-
-private fun modeTitleRes(track: String): Int = when (track) {
+fun modeTitleRes(track: String): Int = when (track) {
     "shapes" -> R.string.mode_shapes
     "logic" -> R.string.mode_logic
     "contradiction" -> R.string.mode_contradiction
+    "target" -> R.string.mode_target
+    "match" -> R.string.mode_match
     else -> R.string.mode_numbers
 }
 
-private fun modeIcon(track: String) = when (track) {
-    "shapes" -> Icons.Filled.ChangeHistory
-    "logic" -> Icons.Filled.Lightbulb
-    "contradiction" -> Icons.Filled.Warning
-    else -> Icons.Filled.Numbers
-}
-
 @Composable
-private fun chapterTitle(track: String, chapter: Int): String {
+fun chapterTitle(track: String, chapter: Int): String {
+    if (track == "match") {
+        return when (chapter) {
+            1 -> stringResource(R.string.match_chapter_1)
+            2 -> stringResource(R.string.match_chapter_2)
+            3 -> stringResource(R.string.match_chapter_3)
+            4 -> stringResource(R.string.match_chapter_4)
+            5 -> stringResource(R.string.match_chapter_5)
+            6 -> stringResource(R.string.match_chapter_6)
+            7 -> stringResource(R.string.match_chapter_7)
+            8 -> stringResource(R.string.match_chapter_8)
+            9 -> stringResource(R.string.match_chapter_9)
+            10 -> stringResource(R.string.match_chapter_10)
+            11 -> stringResource(R.string.match_chapter_11)
+            12 -> stringResource(R.string.match_chapter_12)
+            13 -> stringResource(R.string.match_chapter_13)
+            14 -> stringResource(R.string.match_chapter_14)
+            else -> stringResource(R.string.chapter_label, chapter)
+        }
+    }
+    if (track == "target") {
+        return when (chapter) {
+            1 -> stringResource(R.string.target_chapter_1)
+            2 -> stringResource(R.string.target_chapter_2)
+            3 -> stringResource(R.string.target_chapter_3)
+            4 -> stringResource(R.string.target_chapter_4)
+            5 -> stringResource(R.string.target_chapter_5)
+            6 -> stringResource(R.string.target_chapter_6)
+            7 -> stringResource(R.string.target_chapter_7)
+            8 -> stringResource(R.string.target_chapter_8)
+            9 -> stringResource(R.string.target_chapter_9)
+            10 -> stringResource(R.string.target_chapter_10)
+            11 -> stringResource(R.string.target_chapter_11)
+            12 -> stringResource(R.string.target_chapter_12)
+            13 -> stringResource(R.string.target_chapter_13)
+            14 -> stringResource(R.string.target_chapter_14)
+            else -> stringResource(R.string.chapter_label, chapter)
+        }
+    }
     if (track == "contradiction") {
         return when (chapter) {
             1 -> stringResource(R.string.contradiction_chapter_1)

@@ -3,8 +3,8 @@ import SwiftUI
 /// 앱 전역 디자인 토큰. 다크 베이스 + 바이올렛→시안 포인트 그라데이션.
 enum Theme {
     // Backgrounds
-    static let bg = Color(hex: 0x0E1116)
-    static let bgElevated = Color(hex: 0x151A22)
+    static let bg = Color(hex: 0x0B0E14)
+    static let bgElevated = Color(hex: 0x10141C)
     static let card = Color(hex: 0x1B212B)
     static let stroke = Color.white.opacity(0.07)
 
@@ -38,21 +38,5 @@ extension Color {
                   green: Double((hex >> 8) & 0xFF) / 255,
                   blue: Double(hex & 0xFF) / 255,
                   opacity: alpha)
-    }
-}
-
-/// 화면 공통 배경.
-struct ScreenBackground: View {
-    var body: some View {
-        Theme.bgGradient
-            .ignoresSafeArea()
-            .overlay(alignment: .top) {
-                Theme.accent
-                    .opacity(0.18)
-                    .frame(height: 280)
-                    .blur(radius: 120)
-                    .offset(y: -120)
-                    .ignoresSafeArea()
-            }
     }
 }

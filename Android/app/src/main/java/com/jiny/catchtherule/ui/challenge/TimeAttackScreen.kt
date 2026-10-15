@@ -1,6 +1,9 @@
 package com.jiny.catchtherule.ui.challenge
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -18,6 +21,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.EmojiEvents
 import androidx.compose.material.icons.filled.Flag
+import androidx.compose.material.icons.filled.SkipNext
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.filled.Timer
 import androidx.compose.material3.Icon
@@ -36,7 +40,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -50,64 +56,104 @@ import com.jiny.catchtherule.R
 import com.jiny.catchtherule.core.PuzzleStore
 import com.jiny.catchtherule.core.model.GameMode
 import com.jiny.catchtherule.core.model.InputType
-import com.jiny.catchtherule.core.model.Puzzle
+import com.jiny.catchtherule.core.TimeAttackDeck
 import com.jiny.catchtherule.data.LocalProgress
 import com.jiny.catchtherule.data.Ranking
 import com.jiny.catchtherule.ui.PrimaryButton
 import com.jiny.catchtherule.ui.SecondaryButton
 import com.jiny.catchtherule.ui.play.AnswerFeedback
 import com.jiny.catchtherule.ui.play.ChoicesGrid
+import com.jiny.catchtherule.ui.play.FigureChoicesGrid
 import com.jiny.catchtherule.ui.play.Keypad
+import com.jiny.catchtherule.ui.play.MatchControls
+import com.jiny.catchtherule.ui.play.MatchMessage
+import com.jiny.catchtherule.ui.play.MatchPlayArea
+import com.jiny.catchtherule.ui.play.MatchUi
+import com.jiny.catchtherule.ui.play.TargetControls
+import com.jiny.catchtherule.ui.play.TargetPlayArea
+import com.jiny.catchtherule.ui.play.TargetUi
+import com.jiny.catchtherule.ui.play.matchSubmitValue
 import com.jiny.catchtherule.ui.play.SequenceDisplay
 import com.jiny.catchtherule.ui.theme.AppColors
 import com.jiny.catchtherule.ui.theme.FullScreenBackground
+import com.jiny.catchtherule.ui.home.modeIcon
+import com.jiny.catchtherule.ui.home.modeTitleRes
 import com.jiny.catchtherule.ui.theme.card
+import com.jiny.catchtherule.ui.theme.modeColor
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 private const val DURATION = 60
+private const val SKIP_PENALTY = 3
 
 @Composable
 fun TimeAttackScreen(onClose: () -> Unit) {
     val progress = LocalProgress.current
     val store = PuzzleStore.get(LocalContext.current)
+    val haptic = LocalHapticFeedback.current
 
-    // 타임어택은 숫자 규칙(numbers) 트랙만 — 도형 퍼즐은 제외.
-    var deck by remember { mutableStateOf(store.puzzles("numbers").shuffled()) }
-    var deckIndex by remember { mutableIntStateOf(0) }
+    // 해금된 모든 모드를 섞어 출제. 해금 전에는 숫자 모드뿐.
+    val unlocked = progress.isShapesUnlocked
+    val deck = remember(unlocked) {
+        TimeAttackDeck(
+            allPuzzles = { store.puzzles(it) },
+            tracks = if (unlocked) store.tracks else listOf(PuzzleStore.DEFAULT_TRACK),
+        )
+    }
+    var puzzle by remember(deck) { mutableStateOf(deck.next()) }
     var typed by remember { mutableStateOf("") }
     // 점수·남은시간·종료여부는 rememberSaveable — 저메모리 프로세스 사망에도 진행 중 기록이 유지된다.
     var score by rememberSaveable { mutableIntStateOf(0) }
     var timeLeft by rememberSaveable { mutableIntStateOf(DURATION) }
     var feedback by remember { mutableStateOf<AnswerFeedback?>(null) }
     var finished by rememberSaveable { mutableStateOf(false) }
-    // 카드 전환 중 재제출(같은 프레임 더블탭) 방지. deckIndex 가 바뀌면(=다음 카드) 해제.
+    // 카드 전환 중 재제출(같은 프레임 더블탭) 방지. 다음 카드로 넘어가면 해제.
     var advancing by remember { mutableStateOf(false) }
 
     // 타이머 — 앱이 RESUMED 일 때만 진행(백그라운드에선 멈춤). 실제 플레이 시간만 소진.
     val lifecycleOwner = LocalLifecycleOwner.current
     LaunchedEffect(Unit) {
         lifecycleOwner.repeatOnLifecycle(Lifecycle.State.RESUMED) {
-            if (finished) return@repeatOnLifecycle
             while (timeLeft > 0) {
                 delay(1000)
-                timeLeft -= 1
+                timeLeft = (timeLeft - 1).coerceAtLeast(0)
             }
+        }
+    }
+    // 종료 처리(시간 소진 또는 건너뛰기 차감으로 0 도달).
+    LaunchedEffect(timeLeft) {
+        if (timeLeft <= 0 && !finished) {
             progress.updateBestTimeAttack(score)
             finished = true
         }
     }
 
-    LaunchedEffect(deckIndex) { advancing = false }
-
-    val puzzle: Puzzle? = deck.getOrNull(deckIndex)
-
     fun nextCard() {
         typed = ""
         feedback = null
-        if (deckIndex + 1 >= deck.size) {
-            deck = deck.shuffled(); deckIndex = 0
-        } else deckIndex += 1
+        puzzle = deck.next()
+        advancing = false
+    }
+
+    // 정답 후 짧은 지연(0.2s) 뒤 다음 카드.
+    LaunchedEffect(advancing) {
+        if (advancing) {
+            delay(200)
+            nextCard()
+        }
+    }
+
+    // 오답 피드백은 잠시 뒤 해제(다음 오답에서 다시 흔들리도록).
+    LaunchedEffect(feedback) {
+        if (feedback == AnswerFeedback.Wrong) {
+            delay(450)
+            typed = ""
+            feedback = null
+        }
+    }
+
+    fun buzz() {
+        if (progress.hapticsOn) haptic.performHapticFeedback(HapticFeedbackType.LongPress)
     }
 
     fun submit(value: String) {
@@ -117,12 +163,23 @@ fun TimeAttackScreen(onClose: () -> Unit) {
             advancing = true
             score += 1
             feedback = AnswerFeedback.Correct
-            nextCard()
         } else {
             feedback = AnswerFeedback.Wrong
             typed = ""
+            buzz()
         }
     }
+
+    fun skip() {
+        if (finished || advancing) return
+        timeLeft = (timeLeft - SKIP_PENALTY).coerceAtLeast(0)
+        if (timeLeft > 0) nextCard()
+    }
+
+    val current = puzzle
+    // 숫자 만들기/성냥개비 보드 상태 — 문제가 바뀌면 반드시 초기화(key = puzzle.id).
+    val targetUi = remember(current?.id) { current?.takeIf { it.isTarget }?.let { TargetUi(it) } }
+    val matchUi = remember(current?.id) { current?.takeIf { it.isMatch }?.let { MatchUi(it) } }
 
     FullScreenBackground {
         if (finished) {
@@ -154,34 +211,116 @@ fun TimeAttackScreen(onClose: () -> Unit) {
                     }
                 }
 
+                if (current != null) {
+                    ModeChip(current.trackKey, Modifier.align(Alignment.CenterHorizontally).padding(top = 10.dp))
+                }
+
                 Box(Modifier.weight(1f)) {
-                    Column(
-                        Modifier.fillMaxWidth().align(Alignment.Center).padding(horizontal = 20.dp),
-                        horizontalAlignment = Alignment.CenterHorizontally,
-                        verticalArrangement = Arrangement.spacedBy(28.dp),
-                    ) {
-                        if (puzzle != null) {
-                            Text(stringResource(R.string.play_prompt), color = AppColors.TextSecondary, fontSize = 14.sp)
-                            SequenceDisplay(puzzle = puzzle, typed = typed, feedback = feedback)
+                    if (current != null) {
+                        Column(
+                            Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(horizontal = 20.dp, vertical = 12.dp),
+                            horizontalAlignment = Alignment.CenterHorizontally,
+                            verticalArrangement = Arrangement.spacedBy(28.dp, Alignment.CenterVertically),
+                        ) {
+                            val promptRes = when {
+                                current.isMatch -> R.string.match_prompt
+                                current.isTarget -> R.string.target_prompt
+                                current.isContradiction -> R.string.contradiction_prompt
+                                !current.isPrompt -> R.string.play_prompt
+                                else -> null
+                            }
+                            if (promptRes != null) {
+                                Text(stringResource(promptRes), color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
+                            }
+                            if (current.isMatch && matchUi != null) {
+                                MatchPlayArea(matchUi, advancing, feedback, onReject = { buzz() })
+                            } else if (current.isTarget && targetUi != null) {
+                                TargetPlayArea(current, targetUi, advancing, feedback) { id ->
+                                    if (!advancing && !targetUi.tapTile(id)) buzz()
+                                }
+                            } else {
+                                SequenceDisplay(
+                                    puzzle = current, typed = typed, feedback = feedback,
+                                    onPickStatement = { picked -> submit(picked.toString()) },
+                                )
+                            }
                         }
                     }
                 }
 
-                if (puzzle != null) {
+                // 건너뛰기 — 입력 영역 위, 작게 우측 정렬.
+                Row(Modifier.fillMaxWidth().padding(horizontal = 20.dp), horizontalArrangement = Arrangement.End) {
+                    Row(
+                        Modifier.clip(RoundedCornerShape(10.dp)).clickable(enabled = !advancing) { skip() }
+                            .padding(horizontal = 10.dp, vertical = 6.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(4.dp),
+                    ) {
+                        Icon(Icons.Filled.SkipNext, null, tint = AppColors.TextTertiary, modifier = Modifier.size(16.dp))
+                        Text(stringResource(R.string.ta_skip), color = AppColors.TextTertiary, fontSize = 13.sp, fontWeight = FontWeight.SemiBold)
+                    }
+                }
+
+                if (current != null) {
                     Box(Modifier.padding(horizontal = 20.dp, vertical = 12.dp)) {
-                        when (InputType.from(puzzle.inputType)) {
+                        if (current.isMatch && matchUi != null) {
+                            MatchControls(matchUi, advancing) {
+                                if (advancing || feedback != null || !matchUi.game.canCheck) {
+                                    // 피드백/전환 중에는 무시
+                                } else {
+                                    val v = matchSubmitValue(current, matchUi)
+                                    if (v == null) {
+                                        matchUi.flash(MatchMessage.Invalid)
+                                        buzz()
+                                    } else submit(v)
+                                }
+                            }
+                        } else if (current.isTarget && targetUi != null) {
+                            TargetControls(
+                                targetUi, current.target ?: 0, advancing,
+                                onReject = { buzz() },
+                                onCheck = {
+                                    val v = targetUi.expr.evaluate()
+                                    if (advancing || feedback != null) {
+                                        // 피드백/전환 중에는 무시
+                                    } else if (v == null) {
+                                        targetUi.markIncomplete()
+                                        buzz()
+                                    } else submit(v.toString())
+                                },
+                            )
+                        } else if (current.isContradiction) {
+                            // 문장 카드를 직접 탭 — 하단 입력 없음
+                        } else if (current.isFigureSequence) {
+                            FigureChoicesGrid(current.figureChoices ?: emptyList(), enabled = !advancing) { submit(it) }
+                        } else when (InputType.from(current.inputType)) {
                             InputType.Keypad -> Keypad(
                                 canSubmit = typed.isNotEmpty() && !advancing,
                                 onDigit = { if (!advancing && typed.length < 4) typed += it.toString() },
                                 onDelete = { if (typed.isNotEmpty()) typed = typed.dropLast(1) },
                                 onSubmit = { submit(typed) },
                             )
-                            InputType.Choices -> ChoicesGrid(puzzle.choices ?: emptyList(), enabled = !advancing) { submit(it) }
+                            InputType.Choices -> ChoicesGrid(current.choices ?: emptyList(), enabled = !advancing) { submit(it) }
                         }
                     }
                 }
             }
         }
+    }
+}
+
+/** 현재 문제의 모드 칩(아이콘 + 모드 제목, 모드색). */
+@Composable
+private fun ModeChip(track: String, modifier: Modifier = Modifier) {
+    val color = modeColor(track)
+    Row(
+        modifier.clip(RoundedCornerShape(50)).background(color.copy(alpha = 0.16f))
+            .padding(horizontal = 12.dp, vertical = 5.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(6.dp),
+    ) {
+        Icon(modeIcon(track), null, tint = color, modifier = Modifier.size(14.dp))
+        Text(stringResource(modeTitleRes(track)), color = color, fontSize = 12.sp, fontWeight = FontWeight.Bold)
     }
 }
 

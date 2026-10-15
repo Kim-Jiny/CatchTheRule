@@ -7,11 +7,18 @@ import com.jiny.catchtherule.core.model.RankEntry
 /**
  * 랭킹 백엔드 추상화. 실서버는 [MinigameRankingService], 오프라인 개발용은 [MockRankingService].
  */
+/** 리더보드 결과. [period]/[resetsAtMs] 는 구버전 서버에서는 null(클라이언트가 KST 로 계산). */
+data class Leaderboard(
+    val entries: List<RankEntry>,
+    val period: String? = null,
+    val resetsAtMs: Long? = null,
+)
+
 interface RankingService {
     /** 점수 제출 후 내 순위를 반환. */
     suspend fun submit(score: Int, nickname: String, mode: GameMode): Int
     /** 리더보드 조회. */
-    suspend fun leaderboard(mode: GameMode): List<RankEntry>
+    suspend fun leaderboard(mode: GameMode): Leaderboard
 }
 
 /**

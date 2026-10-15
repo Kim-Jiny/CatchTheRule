@@ -4,7 +4,8 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
+import androidx.compose.foundation.border
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -28,6 +29,7 @@ import androidx.compose.material.icons.filled.Lightbulb
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.PrivacyTip
 import androidx.compose.material.icons.filled.Restore
+import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.filled.VolumeUp
 import androidx.compose.material.icons.filled.Vibration
 import androidx.compose.material3.AlertDialog
@@ -49,6 +51,18 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.draw.drawBehind
+import androidx.compose.ui.geometry.CornerRadius
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.geometry.Size
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.compositeOver
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.style.TextOverflow
+import com.jiny.catchtherule.ui.home.pressable
+import com.jiny.catchtherule.ui.home.rememberCountUp
+import com.jiny.catchtherule.ui.home.staggerIn
+import kotlin.math.roundToInt
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.foundation.shape.RoundedCornerShape
 import com.google.android.play.core.appupdate.AppUpdateManagerFactory
@@ -94,29 +108,41 @@ fun SettingsScreen(modifier: Modifier = Modifier) {
         return
     }
 
-    ScreenBackground {
+    var idx = 0
+    ScreenBackground(animated = true) {
         Column(
             modifier.verticalScroll(rememberScrollState()).padding(20.dp),
-            verticalArrangement = Arrangement.spacedBy(20.dp),
+            verticalArrangement = Arrangement.spacedBy(18.dp),
         ) {
-            Text(stringResource(R.string.settings), color = AppColors.TextPrimary, fontSize = 28.sp, fontWeight = FontWeight.Bold, modifier = Modifier.padding(top = 8.dp))
+            Text(
+                stringResource(R.string.settings),
+                style = TextStyle(brush = AppColors.AccentGradient, fontSize = 30.sp, fontWeight = FontWeight.ExtraBold),
+                modifier = Modifier.padding(top = 8.dp).staggerIn(idx++),
+            )
 
-            // 프로필
-            Column(Modifier.fillMaxWidth().card()) {
-                SettingsRow(Icons.Filled.Person, stringResource(R.string.nickname), progress.nickname.ifEmpty { stringResource(R.string.not_set) }) {
+            // 프로필 카드
+            ProfileCard(
+                nickname = progress.nickname,
+                stars = progress.totalStars,
+                modifier = Modifier.staggerIn(idx++),
+            ) { draftNick = progress.nickname; showNickname = true }
+
+            // 프로필 설정
+            GroupCard(Modifier.staggerIn(idx++)) {
+                SettingsRow(Icons.Filled.Person, Cyan, stringResource(R.string.nickname), progress.nickname.ifEmpty { stringResource(R.string.not_set) }) {
                     draftNick = progress.nickname; showNickname = true
                 }
                 RowDivider()
-                SettingsRow(Icons.Filled.Lightbulb, stringResource(R.string.hints_left), stringResource(R.string.hints_value, progress.hintsRemaining), chevron = false, onClick = null)
+                SettingsRow(Icons.Filled.Lightbulb, Amber, stringResource(R.string.hints_left), stringResource(R.string.hints_value, progress.hintsRemaining), chevron = false, onClick = null)
             }
 
             // 인앱결제
-            Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                Column(Modifier.fillMaxWidth().card()) {
+            Column(Modifier.staggerIn(idx++), verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                GroupCard {
                     // 광고 제거 — 구매 전에만 노출(구매 시 자동으로 사라짐)
                     if (!billing.removeAdsPurchased) {
                         SettingsRow(
-                            Icons.Filled.Block, stringResource(R.string.iap_remove_ads),
+                            Icons.Filled.Block, Pink, stringResource(R.string.iap_remove_ads),
                             billing.removeAdsPrice.ifEmpty { stringResource(R.string.iap_loading) },
                         ) {
                             activity?.let { billing.purchase(it, BillingManager.REMOVE_ADS_ID) }
@@ -124,12 +150,12 @@ fun SettingsScreen(modifier: Modifier = Modifier) {
                         RowDivider()
                     }
                     // 힌트 구매 — 단일 버튼(누르면 5·10·20·50 팝업)
-                    SettingsRow(Icons.Filled.Lightbulb, stringResource(R.string.iap_buy_hints), null) {
+                    SettingsRow(Icons.Filled.Lightbulb, Amber, stringResource(R.string.iap_buy_hints), null) {
                         showHintShop = true
                     }
                     RowDivider()
                     // 구매 복원
-                    SettingsRow(Icons.Filled.Restore, stringResource(R.string.iap_restore), null) {
+                    SettingsRow(Icons.Filled.Restore, Green, stringResource(R.string.iap_restore), null) {
                         billing.queryPurchases { restored -> iapMsg = if (restored) restoreDoneMsg else restoreNoneMsg }
                     }
                 }
@@ -145,45 +171,51 @@ fun SettingsScreen(modifier: Modifier = Modifier) {
             }
 
             // 환경설정
-            Column(Modifier.fillMaxWidth().card()) {
-                ToggleRow(Icons.Filled.VolumeUp, stringResource(R.string.sound), progress.soundOn) { progress.setSound(it) }
+            GroupCard(Modifier.staggerIn(idx++)) {
+                ToggleRow(Icons.Filled.VolumeUp, Cyan, stringResource(R.string.sound), progress.soundOn) { progress.setSound(it) }
                 RowDivider()
-                ToggleRow(Icons.Filled.Vibration, stringResource(R.string.haptics), progress.hapticsOn) { progress.setHaptics(it) }
+                ToggleRow(Icons.Filled.Vibration, Violet, stringResource(R.string.haptics), progress.hapticsOn) { progress.setHaptics(it) }
             }
 
             // 설정탭 배너 (햅틱 ↔ 문의하기)
             com.jiny.catchtherule.ui.BannerAd(com.jiny.catchtherule.ui.BannerUnits.settings)
 
             // 지원
-            Column(Modifier.fillMaxWidth().card()) {
-                SettingsRow(Icons.Filled.Email, stringResource(R.string.contact), null) {
+            GroupCard(Modifier.staggerIn(idx++)) {
+                SettingsRow(Icons.Filled.Email, Green, stringResource(R.string.contact), null) {
                     showInquiry = true
                 }
                 RowDivider()
-                SettingsRow(Icons.Filled.Info, stringResource(R.string.support), null) {
+                SettingsRow(Icons.Filled.Info, SlateBlue, stringResource(R.string.support), null) {
                     runCatching { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("$SUPPORT_URL?lang=$langCode"))) }
                 }
                 RowDivider()
-                SettingsRow(Icons.Filled.Description, stringResource(R.string.terms), null) {
+                SettingsRow(Icons.Filled.Description, SlateBlue, stringResource(R.string.terms), null) {
                     runCatching { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("$TERMS_URL?lang=$langCode"))) }
                 }
                 RowDivider()
-                SettingsRow(Icons.Filled.PrivacyTip, stringResource(R.string.privacy), null) {
+                SettingsRow(Icons.Filled.PrivacyTip, SlateBlue, stringResource(R.string.privacy), null) {
                     runCatching { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("$PRIVACY_URL?lang=$langCode"))) }
                 }
             }
 
-            // 초기화
+            // 초기화 (위험)
+            val dangerShape = RoundedCornerShape(20.dp)
             Row(
-                Modifier.fillMaxWidth().card().clickable { showReset = true }.padding(16.dp),
+                Modifier.staggerIn(idx++).fillMaxWidth()
+                    .clip(dangerShape)
+                    .background(AppColors.Danger.copy(alpha = 0.08f).compositeOver(AppColors.Card))
+                    .border(1.dp, AppColors.Danger.copy(alpha = 0.35f), dangerShape)
+                    .pressable { showReset = true }
+                    .padding(14.dp),
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(14.dp),
             ) {
-                Icon(Icons.Filled.Delete, null, tint = AppColors.Danger, modifier = Modifier.size(20.dp))
-                Text(stringResource(R.string.reset_progress), color = AppColors.Danger, fontSize = 16.sp, fontWeight = FontWeight.Medium)
+                IconChip(Icons.Filled.Delete, AppColors.Danger)
+                Text(stringResource(R.string.reset_progress), color = AppColors.Danger, fontSize = 16.sp, fontWeight = FontWeight.SemiBold)
             }
 
-            AppInfoSection()
+            AppInfoSection(Modifier.staggerIn(idx++))
         }
     }
 
@@ -229,17 +261,94 @@ fun SettingsScreen(modifier: Modifier = Modifier) {
     }
 }
 
+private val Cyan = Color(0xFF18C8FF)
+private val Violet = Color(0xFFA78BFA)
+private val Amber = Color(0xFFFFB020)
+private val Green = Color(0xFF3DDC97)
+private val Pink = Color(0xFFFF5C8A)
+private val SlateBlue = Color(0xFF8FA3C7)
+
+private val TNUM = TextStyle(fontFeatureSettings = "tnum")
+
+/** 컬러 아이콘 칩: 항목 성격별 네온색 틴트 배경 + 글로우 테두리. */
 @Composable
-private fun SettingsRow(icon: ImageVector, title: String, value: String?, chevron: Boolean = true, onClick: (() -> Unit)?) {
+private fun IconChip(icon: ImageVector, color: Color) {
+    Box(
+        Modifier.size(34.dp).clip(RoundedCornerShape(10.dp))
+            .background(color.copy(alpha = 0.16f))
+            .border(1.dp, color.copy(alpha = 0.35f), RoundedCornerShape(10.dp)),
+        contentAlignment = Alignment.Center,
+    ) { Icon(icon, null, tint = color, modifier = Modifier.size(19.dp)) }
+}
+
+@Composable
+private fun GroupCard(modifier: Modifier = Modifier, content: @Composable () -> Unit) {
+    Column(modifier.fillMaxWidth().card(22.dp)) { content() }
+}
+
+@Composable
+private fun ProfileCard(nickname: String, stars: Int, modifier: Modifier, onEdit: () -> Unit) {
+    val count by rememberCountUp(stars.toFloat(), 800)
+    val shape = RoundedCornerShape(24.dp)
     Row(
-        Modifier.fillMaxWidth().let { if (onClick != null) it.clickable { onClick() } else it }.padding(16.dp),
+        modifier.fillMaxWidth()
+            .drawBehind {
+                val pad = 12.dp.toPx()
+                drawRoundRect(
+                    brush = Brush.radialGradient(
+                        listOf(AppColors.Accent.copy(alpha = 0.22f), Color.Transparent),
+                        center = Offset(size.width / 2, size.height / 2),
+                        radius = maxOf(size.width, size.height) / 2 + pad,
+                    ),
+                    topLeft = Offset(-pad, -pad), size = Size(size.width + pad * 2, size.height + pad * 2),
+                    cornerRadius = CornerRadius(24.dp.toPx() + pad),
+                )
+            }
+            .clip(shape)
+            .background(Brush.linearGradient(listOf(AppColors.Accent.copy(alpha = 0.16f).compositeOver(AppColors.Card), AppColors.Accent2.copy(alpha = 0.04f).compositeOver(AppColors.Card))))
+            .border(1.dp, AppColors.Accent.copy(alpha = 0.4f), shape)
+            .pressable(onClick = onEdit)
+            .padding(18.dp),
+        verticalAlignment = Alignment.CenterVertically,
+        horizontalArrangement = Arrangement.spacedBy(16.dp),
+    ) {
+        Box(
+            Modifier.size(68.dp).border(3.dp, AppColors.AccentGradient, CircleShape).padding(5.dp)
+                .clip(CircleShape).background(AppColors.BgElevated),
+            contentAlignment = Alignment.Center,
+        ) {
+            val initial = nickname.trim().firstOrNull()?.uppercase()
+            if (initial != null) Text(initial, color = Color.White, fontSize = 26.sp, fontWeight = FontWeight.ExtraBold)
+            else Icon(Icons.Filled.Person, null, tint = AppColors.TextSecondary, modifier = Modifier.size(30.dp))
+        }
+        Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+            Text(
+                nickname.ifEmpty { stringResource(R.string.not_set) },
+                color = AppColors.TextPrimary, fontSize = 20.sp, fontWeight = FontWeight.ExtraBold,
+                maxLines = 1, overflow = TextOverflow.Ellipsis,
+            )
+            Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(4.dp)) {
+                Icon(Icons.Filled.Star, null, tint = AppColors.Star, modifier = Modifier.size(16.dp))
+                Text(
+                    stringResource(R.string.home_total_stars, count.roundToInt()),
+                    style = TNUM.copy(color = AppColors.Star, fontSize = 14.sp, fontWeight = FontWeight.Bold),
+                )
+            }
+        }
+        Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, null, tint = AppColors.TextTertiary, modifier = Modifier.size(18.dp))
+    }
+}
+
+@Composable
+private fun SettingsRow(icon: ImageVector, color: Color, title: String, value: String?, chevron: Boolean = true, onClick: (() -> Unit)?) {
+    Row(
+        Modifier.fillMaxWidth().let { if (onClick != null) it.pressable(onClick = onClick) else it }.padding(horizontal = 14.dp, vertical = 12.dp),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(14.dp),
     ) {
-        Icon(icon, null, tint = AppColors.Accent2, modifier = Modifier.size(20.dp))
-        Text(title, color = AppColors.TextPrimary, fontSize = 16.sp)
-        Box(Modifier.weight(1f))
-        if (value != null) Text(value, color = AppColors.TextTertiary, fontSize = 15.sp)
+        IconChip(icon, color)
+        Text(title, color = AppColors.TextPrimary, fontSize = 16.sp, modifier = Modifier.weight(1f, fill = value == null))
+        if (value != null) Text(value, color = AppColors.TextTertiary, fontSize = 15.sp, maxLines = 1, overflow = TextOverflow.Ellipsis, modifier = Modifier.weight(1f, fill = false))
         if (chevron && onClick != null) {
             Icon(Icons.AutoMirrored.Filled.KeyboardArrowRight, null, tint = AppColors.TextTertiary, modifier = Modifier.size(18.dp))
         }
@@ -247,22 +356,24 @@ private fun SettingsRow(icon: ImageVector, title: String, value: String?, chevro
 }
 
 @Composable
-private fun ToggleRow(icon: ImageVector, title: String, checked: Boolean, onChange: (Boolean) -> Unit) {
+private fun ToggleRow(icon: ImageVector, color: Color, title: String, checked: Boolean, onChange: (Boolean) -> Unit) {
     Row(
-        Modifier.fillMaxWidth().padding(16.dp),
+        Modifier.fillMaxWidth().padding(horizontal = 14.dp, vertical = 8.dp),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.spacedBy(14.dp),
     ) {
-        Icon(icon, null, tint = AppColors.Accent2, modifier = Modifier.size(20.dp))
-        Text(title, color = AppColors.TextPrimary, fontSize = 16.sp)
-        Box(Modifier.weight(1f))
+        IconChip(icon, color)
+        Text(title, color = AppColors.TextPrimary, fontSize = 16.sp, modifier = Modifier.weight(1f))
         Switch(
             checked = checked,
             onCheckedChange = onChange,
             colors = SwitchDefaults.colors(
-                checkedThumbColor = androidx.compose.ui.graphics.Color.White,
+                checkedThumbColor = Color.White,
                 checkedTrackColor = AppColors.Accent,
+                checkedBorderColor = AppColors.Accent2,
+                uncheckedThumbColor = Color.White.copy(alpha = 0.7f),
                 uncheckedTrackColor = AppColors.BgElevated,
+                uncheckedBorderColor = Color.White.copy(alpha = 0.18f),
             ),
         )
     }
@@ -270,13 +381,13 @@ private fun ToggleRow(icon: ImageVector, title: String, checked: Boolean, onChan
 
 @Composable
 private fun RowDivider() {
-    HorizontalDivider(color = AppColors.Stroke, thickness = 1.dp)
+    HorizontalDivider(color = Color.White.copy(alpha = 0.06f), thickness = 1.dp, modifier = Modifier.padding(start = 62.dp))
 }
 
 /** 앱 정보: 내 버전 + Play 인앱업데이트로 스토어 새 버전(=새 문제) 안내.
  *  주의: Play 인앱업데이트는 Play 로 설치한 앱에서만 동작(에뮬·사이드로드는 '최신'으로 표시). */
 @Composable
-private fun AppInfoSection() {
+private fun AppInfoSection(modifier: Modifier = Modifier) {
     val context = LocalContext.current
     val pkg = remember {
         runCatching { context.packageManager.getPackageInfo(context.packageName, 0) }.getOrNull()
@@ -299,13 +410,22 @@ private fun AppInfoSection() {
         checked = true
     }
 
-    Column(verticalArrangement = Arrangement.spacedBy(12.dp), modifier = Modifier.padding(top = 8.dp)) {
+    Column(verticalArrangement = Arrangement.spacedBy(12.dp), modifier = modifier.padding(top = 4.dp)) {
         // 새 문제(스토어 새 버전) 안내 배너
         if (updateAvailable) {
             Row(
-                Modifier.fillMaxWidth().clip(RoundedCornerShape(14.dp))
+                Modifier.fillMaxWidth()
+                    .drawBehind {
+                        val pad = 8.dp.toPx()
+                        drawRoundRect(
+                            AppColors.Accent.copy(alpha = 0.3f),
+                            topLeft = Offset(-pad, -pad / 2), size = Size(size.width + pad * 2, size.height + pad),
+                            cornerRadius = CornerRadius(16.dp.toPx() + pad),
+                        )
+                    }
+                    .clip(RoundedCornerShape(16.dp))
                     .background(AppColors.AccentGradient)
-                    .clickable { openPlayStore(context) }.padding(14.dp),
+                    .pressable { openPlayStore(context) }.padding(14.dp),
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.spacedBy(8.dp),
             ) {
@@ -315,10 +435,18 @@ private fun AppInfoSection() {
             }
         }
 
-        Column(Modifier.fillMaxWidth().card().padding(16.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-            Row(Modifier.fillMaxWidth()) {
-                Text(stringResource(R.string.my_version), color = AppColors.TextTertiary, fontSize = 13.sp, modifier = Modifier.weight(1f))
-                Text("v$versionName ($versionCode)", color = AppColors.TextSecondary, fontSize = 13.sp)
+        Column(Modifier.fillMaxWidth().card(22.dp).padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+            Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                IconChip(Icons.Filled.Info, Pink)
+                Text(stringResource(R.string.my_version), color = AppColors.TextTertiary, fontSize = 13.sp, modifier = Modifier.weight(1f).padding(start = 12.dp))
+                Box(Modifier.clip(RoundedCornerShape(50)).background(Pink.copy(alpha = 0.16f)).border(1.dp, Pink.copy(alpha = 0.4f), RoundedCornerShape(50)).padding(horizontal = 10.dp, vertical = 4.dp)) {
+                    Text("v$versionName ($versionCode)", color = Pink, fontSize = 12.sp, fontWeight = FontWeight.Bold)
+                }
+                if (updateAvailable) {
+                    Box(Modifier.padding(start = 6.dp).clip(RoundedCornerShape(50)).background(AppColors.Accent2).padding(horizontal = 8.dp, vertical = 4.dp)) {
+                        Text("NEW", color = Color.Black, fontSize = 11.sp, fontWeight = FontWeight.ExtraBold)
+                    }
+                }
             }
             Row(Modifier.fillMaxWidth()) {
                 Text(stringResource(R.string.store_version), color = AppColors.TextTertiary, fontSize = 13.sp, modifier = Modifier.weight(1f))

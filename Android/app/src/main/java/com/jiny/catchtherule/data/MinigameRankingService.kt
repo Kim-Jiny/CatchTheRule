@@ -16,7 +16,7 @@ import java.net.URL
  * Minigame 서버(https://duo.jiny.shop)의 CatchTheRule 랭킹 API 결합.
  *
  *   POST /api/catchtherule/scores       { nickname, score, mode, deviceId } -> { rank }
- *   GET  /api/catchtherule/leaderboard?mode=timeAttack&limit=100 -> { entries: [...] }
+ *   GET  /api/catchtherule/leaderboard?mode=timeAttack&limit=100 -> { period?, resetsAt?, entries: [...] }  (월간·KST 기준)
  *
  * 로그인이 없으므로 인증 없이 호출하고, 기기당 1행 유지를 위해
  * 로컬에 영속화한 deviceId(UUID)를 함께 보낸다.
@@ -35,12 +35,17 @@ class MinigameRankingService(context: Context) : RankingService {
             json.decodeFromString<SubmitResponse>(text).rank
         }
 
-    override suspend fun leaderboard(mode: GameMode): List<RankEntry> =
+    override suspend fun leaderboard(mode: GameMode): Leaderboard =
         withContext(Dispatchers.IO) {
             val text = request("GET", "/api/catchtherule/leaderboard?mode=${mode.key}&limit=100", null)
-            json.decodeFromString<LeaderboardResponse>(text).entries.map {
-                RankEntry(rank = it.rank, nickname = it.nickname, score = it.score, country = it.country)
-            }
+            val res = json.decodeFromString<LeaderboardResponse>(text)
+            Leaderboard(
+                entries = res.entries.map {
+                    RankEntry(rank = it.rank, nickname = it.nickname, score = it.score, country = it.country)
+                },
+                period = res.period,
+                resetsAtMs = KstPeriod.parseIso(res.resetsAt),
+            )
         }
 
     // MARK: - HTTP
@@ -77,10 +82,14 @@ class MinigameRankingService(context: Context) : RankingService {
     )
 
     @Serializable
-    private data class SubmitResponse(val rank: Int)
+    private data class SubmitResponse(val rank: Int, val period: String? = null)
 
     @Serializable
-    private data class LeaderboardResponse(val entries: List<Entry>) {
+    private data class LeaderboardResponse(
+        val entries: List<Entry>,
+        val period: String? = null,
+        val resetsAt: String? = null,
+    ) {
         @Serializable
         data class Entry(val rank: Int, val nickname: String, val score: Int, val country: String? = null)
     }
