@@ -136,9 +136,12 @@ private fun TiedChip() {
 @Composable
 private fun MyRankCard(nickname: String, best: Int, entries: List<RankEntry>, modifier: Modifier) {
     val shape = RoundedCornerShape(20.dp)
-    val myRank = entries.count { it.score > best } + 1
-    val outside = entries.size >= 100 && best < (entries.lastOrNull()?.score ?: 0)
-    val tied = entries.any { it.score == best }
+    // 서버에 내 닉네임+최고점으로 등록된 항목이 있으면(점수 0점 포함) 그 순위를 그대로 쓴다.
+    val mine = entries.firstOrNull { nickname.isNotEmpty() && it.nickname == nickname && it.score == best }
+    val played = best > 0 || mine != null
+    val myRank = mine?.rank ?: (entries.count { it.score > best } + 1)
+    val outside = mine == null && entries.size >= 100 && best < (entries.lastOrNull()?.score ?: 0)
+    val tied = mine?.let { m -> entries.count { it.rank == m.rank } > 1 } ?: entries.any { it.score == best }
     Row(
         modifier.fillMaxWidth().clip(shape)
             .background(AppColors.Accent.copy(alpha = 0.14f).compositeOnCard())
@@ -149,7 +152,7 @@ private fun MyRankCard(nickname: String, best: Int, entries: List<RankEntry>, mo
     ) {
         Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
             Text(stringResource(R.string.ranking_my_rank), color = AppColors.Accent2, fontSize = 12.sp, fontWeight = FontWeight.Bold)
-            if (best > 0) {
+            if (played) {
                 Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     Text(
                         if (outside) stringResource(R.string.ranking_out_of_top, 100) else stringResource(R.string.ranking_rank_n, myRank),
@@ -162,7 +165,7 @@ private fun MyRankCard(nickname: String, best: Int, entries: List<RankEntry>, mo
                 Text(stringResource(R.string.ranking_no_record), color = AppColors.TextSecondary, fontSize = 14.sp)
             }
         }
-        if (best > 0) Text("$best", style = TNUM.copy(color = AppColors.Accent2, fontSize = 24.sp, fontWeight = FontWeight.ExtraBold))
+        if (played) Text("$best", style = TNUM.copy(color = AppColors.Accent2, fontSize = 24.sp, fontWeight = FontWeight.ExtraBold))
     }
 }
 
