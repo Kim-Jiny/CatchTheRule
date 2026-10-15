@@ -12,7 +12,7 @@ struct InquiryView: View {
 
     var body: some View {
         ZStack {
-            ScreenBackground()
+            ScreenBackground(animated: true)
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
                     composer
@@ -30,6 +30,7 @@ struct InquiryView: View {
                 .padding(20)
             }
         }
+        .neonScreen()
         .navigationTitle(String.loc("contact"))
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
@@ -108,7 +109,7 @@ struct InquiryView: View {
             }
         }
         .padding(16)
-        .card()
+        .neonCard(inquiry.isReplied ? Theme.success : Theme.star, radius: 20)
     }
 
     private var canSend: Bool {
