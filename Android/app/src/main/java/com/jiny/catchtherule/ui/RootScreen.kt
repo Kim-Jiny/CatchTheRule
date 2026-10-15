@@ -88,8 +88,10 @@ private data class Tab(val label: String, val icon: ImageVector)
 
 @Composable
 fun RootScreen() {
-    var fullScreen by remember { mutableStateOf<FullScreen?>(null) }
-    var selectedTab by rememberSaveable { mutableStateOf(0) }
+    var fullScreen by remember {
+        mutableStateOf<FullScreen?>(com.jiny.catchtherule.ScreenshotMode.play?.let { FullScreen.Campaign(it.second, it.first) })
+    }
+    var selectedTab by rememberSaveable { mutableStateOf(com.jiny.catchtherule.ScreenshotMode.startTab) }
     var homeMode by rememberSaveable { mutableStateOf<String?>(null) }   // 선택된 모드 상세(허브 백스택)
 
     when (val fs = fullScreen) {
