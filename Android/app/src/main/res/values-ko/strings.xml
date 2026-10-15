@@ -2,6 +2,8 @@
 <!-- 자동 생성: scripts/gen_l10n.py — 직접 편집하지 마세요. 문자열은 gen_l10n.py 의 T 테이블에서 고친 뒤 재생성하면 됩니다(직접 추가분은 재생성 시 삭제됨). -->
 <resources>
     <string name="app_name">규칙찾기</string>
+    <string name="att_usage_description">추적을 허용하면 나에게 더 맞는 광고가 표시되고 게임을 무료로 유지할 수 있어요.</string>
+    <string name="settings_update_new">NEW</string>
     <string name="tab_home">홈</string>
     <string name="tab_challenge">도전</string>
     <string name="tab_settings">설정</string>

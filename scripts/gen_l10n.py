@@ -3,7 +3,7 @@
 #
 # 마스터 테이블 T(아래) 하나만 수정하면 아래가 한 번에 재생성됩니다.
 #   - iOS  : iOS/CatchTheRule/Localizable.xcstrings   (UI 문자열, 키별 7개국어)
-#   - iOS  : iOS/CatchTheRule/InfoPlist.xcstrings      (CFBundleDisplayName = 앱 이름/아이콘 라벨)
+#   - iOS  : iOS/CatchTheRule/InfoPlist.xcstrings      (CFBundleDisplayName = 앱 이름/아이콘 라벨, NSUserTrackingUsageDescription = ATT 안내 문구)
 #   - AOS  : Android/app/src/main/res/values-*/strings.xml (7개 로케일)
 #
 # 사용법:  python3 scripts/gen_l10n.py   (저장소 루트 어디서든 실행 가능)
@@ -20,6 +20,8 @@ AND_DIR  = {"en":"values","ko":"values-ko","ja":"values-ja","zh":"values-zh-rCN"
 # key: [en, ko, ja, zh, es, fr, de]   (정수 포맷은 %d / %1$d / %2$d)
 T = {
  "app_name": ["Catch the Rule","규칙찾기","ルールを探せ","发现规律","Encuentra la Regla","Trouve le Motif","Finde die Regel"],
+ "att_usage_description": ["Allow tracking to show ads more relevant to you and keep the game free.","추적을 허용하면 나에게 더 맞는 광고가 표시되고 게임을 무료로 유지할 수 있어요.","トラッキングを許可すると、あなたに合った広告が表示され、ゲームを無料で提供し続けられます。","允许跟踪后，将为您展示更相关的广告，并让游戏保持免费。","Permite el seguimiento para ver anuncios más relevantes y mantener el juego gratis.","Autorisez le suivi pour afficher des publicités plus pertinentes et garder le jeu gratuit.","Erlaube das Tracking, um relevantere Werbung zu sehen und das Spiel kostenlos zu halten."],
+ "settings_update_new": ["NEW","NEW","NEW","新","NUEVO","NOUVEAU","NEU"],
  "tab_home": ["Home","홈","ホーム","主页","Inicio","Accueil","Start"],
  "tab_challenge": ["Challenge","도전","チャレンジ","挑战","Reto","Défi","Challenge"],
  "tab_settings": ["Settings","설정","設定","设置","Ajustes","Réglages","Einstellungen"],
@@ -250,8 +252,13 @@ app = T["app_name"]
 info_loc = {}
 for i, lang in enumerate(LANGS):
     info_loc[IOS_CODE[lang]] = {"stringUnit": {"state": "translated", "value": app[i]}}
+att = T["att_usage_description"]
+att_loc = {}
+for i, lang in enumerate(LANGS):
+    att_loc[IOS_CODE[lang]] = {"stringUnit": {"state": "translated", "value": att[i]}}
 info = {"sourceLanguage": "en", "strings": {
-    "CFBundleDisplayName": {"extractionState": "manual", "localizations": info_loc}
+    "CFBundleDisplayName": {"extractionState": "manual", "localizations": info_loc},
+    "NSUserTrackingUsageDescription": {"extractionState": "manual", "localizations": att_loc},
 }, "version": "1.0"}
 info_path = os.path.join(ROOT, "iOS/CatchTheRule/InfoPlist.xcstrings")
 with open(info_path, "w", encoding="utf-8") as f:
