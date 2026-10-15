@@ -5882,43 +5882,90 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Time Attack uses Find the Rule puzzles only."
+            "value": "Puzzles from every unlocked mode are mixed at random."
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "타임어택은 규칙찾기 문제만 출제돼요."
+            "value": "열어 둔 모든 모드의 문제가 무작위로 섞여 출제돼요."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "タイムアタックはルール探しの問題のみ出題。"
+            "value": "解放済みのすべてのモードの問題がランダムに出題されます。"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "限时挑战只出「找规律」题。"
+            "value": "已解锁的所有模式的题目会随机混合出现。"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "El Contrarreloj usa solo acertijos de Encuentra la regla."
+            "value": "Se mezclan al azar los acertijos de todos los modos desbloqueados."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Le Contre-la-montre n'utilise que des énigmes Trouve la règle."
+            "value": "Les énigmes de tous les modes débloqués sont mélangées au hasard."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zeitangriff nutzt nur Finde-die-Regel-Rätsel."
+            "value": "Aufgaben aller freigeschalteten Modi werden zufällig gemischt."
+          }
+        }
+      }
+    },
+    "ta_skip": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skip −3s"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "건너뛰기 −3초"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スキップ −3秒"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "跳过 −3秒"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saltar −3 s"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passer −3 s"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Überspringen −3 s"
           }
         }
       }

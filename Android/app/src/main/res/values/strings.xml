@@ -126,7 +126,8 @@
     <string name="challenge_title">Time Attack</string>
     <string name="challenge_subtitle">Solve as many as you can in 60s and climb the ranking</string>
     <string name="challenge_best">My Best Score</string>
-    <string name="challenge_mode_note">Time Attack uses Find the Rule puzzles only.</string>
+    <string name="challenge_mode_note">Puzzles from every unlocked mode are mixed at random.</string>
+    <string name="ta_skip">Skip −3s</string>
     <string name="challenge_start">Start Time Attack</string>
     <string name="ranking">Ranking</string>
     <string name="ranking_empty">No records yet. Be the first!</string>

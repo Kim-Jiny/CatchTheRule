@@ -23,7 +23,14 @@ struct SettingsView: View {
                 ScrollView {
                     VStack(spacing: 20) {
                         header.staggerOnAppear(order: 0, dy: -24)
-                        profileCard.staggerOnAppear(order: 1)
+                        Button {
+                            draftNickname = progress.nickname
+                            editingNickname = true
+                        } label: {
+                            profileCard
+                        }
+                        .buttonStyle(NeonPressStyle())
+                        .staggerOnAppear(order: 1)
                         profileSection.staggerOnAppear(order: 2)
                         storeSection.staggerOnAppear(order: 3)
                         preferencesSection.staggerOnAppear(order: 4)
@@ -119,10 +126,14 @@ struct SettingsView: View {
                 .overlay(Capsule().stroke(Theme.star.opacity(0.35), lineWidth: 1))
             }
             Spacer(minLength: 0)
+            Image(systemName: "chevron.right")
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(Theme.textTertiary)
         }
         .padding(18)
         .neonCard(Theme.accent, strong: true)
         .accessibilityElement(children: .combine)
+        .accessibilityAddTraits(.isButton)
     }
 
     private var profileSection: some View {
