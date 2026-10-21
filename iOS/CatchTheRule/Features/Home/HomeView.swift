@@ -229,16 +229,20 @@ struct CampaignTrackView: View {
     @Environment(ProgressStore.self) private var progress
     let track: String
 
-    @State private var playing = false
-    @State private var startIndex = 0
+    /// 시작 위치를 cover 에 함께 실어 보낸다(별도 @State 로 두면 갱신 전 값(0)으로 세션이 열릴 수 있음).
+    private struct PlaySession: Identifiable {
+        let id = UUID()
+        let startIndex: Int
+    }
+
+    @State private var session: PlaySession?
     @State private var expanded: Set<Int> = []
 
     private var color: Color { Theme.modeColor(track) }
 
     private func play(from index: Int) {
-        startIndex = index
         progress.lastPlayedTrack = track
-        playing = true
+        session = PlaySession(startIndex: index)
     }
 
     var body: some View {
@@ -248,8 +252,8 @@ struct CampaignTrackView: View {
             }
             chapterList
         }
-        .fullScreenCover(isPresented: $playing) {
-            CampaignSessionView(startIndex: startIndex, track: track)
+        .fullScreenCover(item: $session) { s in
+            CampaignSessionView(startIndex: s.startIndex, track: track)
         }
     }
 
