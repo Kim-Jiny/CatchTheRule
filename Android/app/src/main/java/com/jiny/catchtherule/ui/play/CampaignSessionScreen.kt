@@ -165,6 +165,10 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
                 ) {
                     if (puzzle.isFragment) {
                         FragmentPrompt(puzzle)
+                    } else if (puzzle.isCipher) {
+                        Text(stringResource(R.string.cipher_prompt), color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
+                    } else if (puzzle.isScale) {
+                        Text(stringResource(R.string.scale_prompt), color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
                     } else if (puzzle.isMatch) {
                         Text(stringResource(R.string.match_prompt), color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
                     } else if (puzzle.isTarget) {

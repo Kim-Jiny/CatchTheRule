@@ -30,6 +30,9 @@ data class Puzzle(
     val frames: List<List<String>>? = null,    // 조각 숫자: frames[장][자리] = 켜지는 획 문자열(a~g)
     val combine: String? = null,               // 조각 숫자 합성 규칙 "or" | "xor"
     val frameMs: Int? = null,                  // 조각 숫자: 한 장 표시 시간(ms)
+    val pairs: List<List<List<String>>>? = null,   // 암호 해독: pairs[i] = [입력 토큰들, 출력 토큰들]
+    val scales: List<List<List<String>>>? = null,  // 저울 추리: scales[i] = [왼쪽 접시 토큰들, 오른쪽 접시 토큰들]
+    val query: List<String>? = null,               // 암호/저울 질문 토큰들
     val answer: String,
     val inputType: String,      // "keypad" | "choices"
     val choices: List<String>? = null,
@@ -58,6 +61,12 @@ data class Puzzle(
 
     /** 성냥개비 퍼즐 여부. */
     val isMatch: Boolean get() = equation?.isNotEmpty() == true
+
+    /** 암호 해독 퍼즐 여부. */
+    val isCipher: Boolean get() = pairs?.isNotEmpty() == true
+
+    /** 저울 추리 퍼즐 여부. */
+    val isScale: Boolean get() = scales?.isNotEmpty() == true
 
     /** 조각 숫자 퍼즐 여부. */
     val isFragment: Boolean get() = frames?.isNotEmpty() == true

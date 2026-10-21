@@ -91,7 +91,17 @@ struct CampaignSessionView: View {
             GeometryReader { geo in
                 ScrollView {
                     VStack(spacing: 28) {
-                        if puzzle.isFragment {
+                        if puzzle.isCipher {
+                            Text(String.loc("cipher_prompt"))
+                                .font(.system(size: 15, weight: .semibold))
+                                .foregroundStyle(Theme.textSecondary)
+                                .multilineTextAlignment(.center)
+                        } else if puzzle.isScale {
+                            Text(String.loc("scale_prompt"))
+                                .font(.system(size: 15, weight: .semibold))
+                                .foregroundStyle(Theme.textSecondary)
+                                .multilineTextAlignment(.center)
+                        } else if puzzle.isFragment {
                             fragmentPrompt(puzzle)
                         } else if puzzle.isMatch {
                             Text(String.loc("match_prompt"))

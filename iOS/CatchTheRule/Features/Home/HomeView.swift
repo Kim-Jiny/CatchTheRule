@@ -115,6 +115,8 @@ func modeTitle(_ track: String) -> String {
     case "target":        return String.loc("mode_target")
     case "match":         return String.loc("mode_match")
     case "fragment":      return String.loc("mode_fragment")
+    case "cipher":        return String.loc("mode_cipher")
+    case "scale":         return String.loc("mode_scale")
     default:              return String.loc("mode_numbers")
     }
 }
@@ -127,6 +129,8 @@ func modeIcon(_ track: String) -> String {
     case "target":        return "plus.forwardslash.minus"
     case "match":         return "flame.fill"
     case "fragment":      return "square.stack.3d.up.fill"
+    case "cipher":        return "lock.open.fill"
+    case "scale":         return "scalemass.fill"
     default:              return "number"
     }
 }
@@ -419,6 +423,44 @@ struct CampaignTrackView: View {
             case 12: return String.loc("fragment_chapter_12")
             case 13: return String.loc("fragment_chapter_13")
             case 14: return String.loc("fragment_chapter_14")
+            default: return String.loc("chapter_label", chapter)
+            }
+        }
+        if track == "cipher" {
+            switch chapter {
+            case 1: return String.loc("cipher_chapter_1")
+            case 2: return String.loc("cipher_chapter_2")
+            case 3: return String.loc("cipher_chapter_3")
+            case 4: return String.loc("cipher_chapter_4")
+            case 5: return String.loc("cipher_chapter_5")
+            case 6: return String.loc("cipher_chapter_6")
+            case 7: return String.loc("cipher_chapter_7")
+            case 8: return String.loc("cipher_chapter_8")
+            case 9: return String.loc("cipher_chapter_9")
+            case 10: return String.loc("cipher_chapter_10")
+            case 11: return String.loc("cipher_chapter_11")
+            case 12: return String.loc("cipher_chapter_12")
+            case 13: return String.loc("cipher_chapter_13")
+            case 14: return String.loc("cipher_chapter_14")
+            default: return String.loc("chapter_label", chapter)
+            }
+        }
+        if track == "scale" {
+            switch chapter {
+            case 1: return String.loc("scale_chapter_1")
+            case 2: return String.loc("scale_chapter_2")
+            case 3: return String.loc("scale_chapter_3")
+            case 4: return String.loc("scale_chapter_4")
+            case 5: return String.loc("scale_chapter_5")
+            case 6: return String.loc("scale_chapter_6")
+            case 7: return String.loc("scale_chapter_7")
+            case 8: return String.loc("scale_chapter_8")
+            case 9: return String.loc("scale_chapter_9")
+            case 10: return String.loc("scale_chapter_10")
+            case 11: return String.loc("scale_chapter_11")
+            case 12: return String.loc("scale_chapter_12")
+            case 13: return String.loc("scale_chapter_13")
+            case 14: return String.loc("scale_chapter_14")
             default: return String.loc("chapter_label", chapter)
             }
         }

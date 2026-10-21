@@ -226,6 +226,8 @@ fun TimeAttackScreen(onClose: () -> Unit) {
                                 current.isMatch -> R.string.match_prompt
                                 current.isTarget -> R.string.target_prompt
                                 current.isContradiction -> R.string.contradiction_prompt
+                                current.isCipher -> R.string.cipher_prompt
+                                current.isScale -> R.string.scale_prompt
                                 !current.isPrompt -> R.string.play_prompt
                                 else -> null
                             }

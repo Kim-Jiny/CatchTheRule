@@ -129,7 +129,11 @@ struct TimeAttackView: View {
     @ViewBuilder
     private func problemArea(for puzzle: Puzzle) -> some View {
         VStack(spacing: 28) {
-            if puzzle.isFragment {
+            if puzzle.isCipher {
+                promptText("cipher_prompt", bold: true)
+            } else if puzzle.isScale {
+                promptText("scale_prompt", bold: true)
+            } else if puzzle.isFragment {
                 VStack(spacing: 6) {
                     promptText("fragment_prompt", bold: true)
                     if puzzle.combine == "xor" {

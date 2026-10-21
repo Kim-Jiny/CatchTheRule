@@ -29,6 +29,9 @@ struct Puzzle: Codable, Identifiable, Equatable {
     let frames: [[String]]?  // 조각 숫자: frames[장][자리] = 켜지는 획 문자열(a~g)
     let combine: String?     // "or" | "xor"
     let frameMs: Int?        // 한 장을 보여 주는 시간(ms)
+    let pairs: [[[String]]]? // 암호 해독: pairs[i] = [입력 토큰들, 출력 토큰들]
+    let scales: [[[String]]]? // 저울 추리: scales[i] = [왼쪽 접시, 오른쪽 접시] (균형)
+    let query: [String]?     // 암호/저울: 풀어야 할 토큰들
     let answer: String
     let inputType: InputType
     let choices: [String]?
@@ -61,6 +64,12 @@ struct Puzzle: Codable, Identifiable, Equatable {
 
     /// 조각 숫자(여러 장의 7세그먼트 조각) 퍼즐 여부.
     var isFragment: Bool { (frames?.isEmpty == false) }
+
+    /// 암호 해독(기호→숫자 예시) 퍼즐 여부.
+    var isCipher: Bool { (pairs?.isEmpty == false) }
+
+    /// 저울 추리(균형 저울 목록) 퍼즐 여부.
+    var isScale: Bool { (scales?.isEmpty == false) }
 
     /// 현재 언어의 문장 목록(없으면 영어 → 임의 폴백).
     var localizedStatements: [String] {
