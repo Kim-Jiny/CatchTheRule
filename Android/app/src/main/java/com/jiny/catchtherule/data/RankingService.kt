@@ -32,6 +32,9 @@ object Ranking {
     val service: RankingService
         get() = injected ?: MockRankingService
 
+    /** 서비스 직접 주입(DEBUG 스크린샷 모드의 가짜 랭킹용). 이후 [init] 은 무시된다. */
+    fun inject(service: RankingService) { injected = service }
+
     fun init(context: Context) {
         if (injected == null) {
             injected = MinigameRankingService(context.applicationContext)

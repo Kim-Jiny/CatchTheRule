@@ -5,9 +5,29 @@ struct RootView: View {
     @Environment(ProgressStore.self) private var progress
     @Environment(AdsManager.self) private var ads
 
-    @State private var selection: RootTab = .home
+    @State private var selection: RootTab = Self.initialTab
+
+    private static var initialTab: RootTab {
+        #if DEBUG
+        ScreenshotMode.startsOnChallenge ? .challenge : .home
+        #else
+        .home
+        #endif
+    }
 
     var body: some View {
+        #if DEBUG
+        if let play = ScreenshotMode.play {
+            CampaignSessionView(startIndex: play.index, track: play.track)   // 스크린샷: 퍼즐 화면 직행
+        } else {
+            mainBody
+        }
+        #else
+        mainBody
+        #endif
+    }
+
+    private var mainBody: some View {
         TabView(selection: $selection) {
             HomeView()
                 .toolbar(.hidden, for: .tabBar)
@@ -29,6 +49,9 @@ struct RootView: View {
                 .ignoresSafeArea(.keyboard)
         }
         .task {
+            #if DEBUG
+            if ScreenshotMode.active { return }   // 스크린샷: 광고/ATT/UMP/핑/서버 갱신 전부 생략
+            #endif
             // 힌트 지급 콜백은 앱 init 에서 이미 연결됨(CatchTheRuleApp) — 여기선 광고/네트워크 초기화만.
             ads.start()   // 리워드 광고 SDK 초기화 + 미리 로드
             AnalyticsService.ping()

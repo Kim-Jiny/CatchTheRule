@@ -114,6 +114,9 @@ func modeTitle(_ track: String) -> String {
     case "contradiction": return String.loc("mode_contradiction")
     case "target":        return String.loc("mode_target")
     case "match":         return String.loc("mode_match")
+    case "fragment":      return String.loc("mode_fragment")
+    case "cipher":        return String.loc("mode_cipher")
+    case "scale":         return String.loc("mode_scale")
     default:              return String.loc("mode_numbers")
     }
 }
@@ -125,6 +128,9 @@ func modeIcon(_ track: String) -> String {
     case "contradiction": return "exclamationmark.triangle.fill"
     case "target":        return "plus.forwardslash.minus"
     case "match":         return "flame.fill"
+    case "fragment":      return "square.stack.3d.up.fill"
+    case "cipher":        return "lock.open.fill"
+    case "scale":         return "scalemass.fill"
     default:              return "number"
     }
 }
@@ -227,16 +233,20 @@ struct CampaignTrackView: View {
     @Environment(ProgressStore.self) private var progress
     let track: String
 
-    @State private var playing = false
-    @State private var startIndex = 0
+    /// 시작 위치를 cover 에 함께 실어 보낸다(별도 @State 로 두면 갱신 전 값(0)으로 세션이 열릴 수 있음).
+    private struct PlaySession: Identifiable {
+        let id = UUID()
+        let startIndex: Int
+    }
+
+    @State private var session: PlaySession?
     @State private var expanded: Set<Int> = []
 
     private var color: Color { Theme.modeColor(track) }
 
     private func play(from index: Int) {
-        startIndex = index
         progress.lastPlayedTrack = track
-        playing = true
+        session = PlaySession(startIndex: index)
     }
 
     var body: some View {
@@ -246,8 +256,8 @@ struct CampaignTrackView: View {
             }
             chapterList
         }
-        .fullScreenCover(isPresented: $playing) {
-            CampaignSessionView(startIndex: startIndex, track: track)
+        .fullScreenCover(item: $session) { s in
+            CampaignSessionView(startIndex: s.startIndex, track: track)
         }
     }
 
@@ -394,6 +404,63 @@ struct CampaignTrackView: View {
             case 12: return String.loc("target_chapter_12")
             case 13: return String.loc("target_chapter_13")
             case 14: return String.loc("target_chapter_14")
+            default: return String.loc("chapter_label", chapter)
+            }
+        }
+        if track == "fragment" {
+            switch chapter {
+            case 1: return String.loc("fragment_chapter_1")
+            case 2: return String.loc("fragment_chapter_2")
+            case 3: return String.loc("fragment_chapter_3")
+            case 4: return String.loc("fragment_chapter_4")
+            case 5: return String.loc("fragment_chapter_5")
+            case 6: return String.loc("fragment_chapter_6")
+            case 7: return String.loc("fragment_chapter_7")
+            case 8: return String.loc("fragment_chapter_8")
+            case 9: return String.loc("fragment_chapter_9")
+            case 10: return String.loc("fragment_chapter_10")
+            case 11: return String.loc("fragment_chapter_11")
+            case 12: return String.loc("fragment_chapter_12")
+            case 13: return String.loc("fragment_chapter_13")
+            case 14: return String.loc("fragment_chapter_14")
+            default: return String.loc("chapter_label", chapter)
+            }
+        }
+        if track == "cipher" {
+            switch chapter {
+            case 1: return String.loc("cipher_chapter_1")
+            case 2: return String.loc("cipher_chapter_2")
+            case 3: return String.loc("cipher_chapter_3")
+            case 4: return String.loc("cipher_chapter_4")
+            case 5: return String.loc("cipher_chapter_5")
+            case 6: return String.loc("cipher_chapter_6")
+            case 7: return String.loc("cipher_chapter_7")
+            case 8: return String.loc("cipher_chapter_8")
+            case 9: return String.loc("cipher_chapter_9")
+            case 10: return String.loc("cipher_chapter_10")
+            case 11: return String.loc("cipher_chapter_11")
+            case 12: return String.loc("cipher_chapter_12")
+            case 13: return String.loc("cipher_chapter_13")
+            case 14: return String.loc("cipher_chapter_14")
+            default: return String.loc("chapter_label", chapter)
+            }
+        }
+        if track == "scale" {
+            switch chapter {
+            case 1: return String.loc("scale_chapter_1")
+            case 2: return String.loc("scale_chapter_2")
+            case 3: return String.loc("scale_chapter_3")
+            case 4: return String.loc("scale_chapter_4")
+            case 5: return String.loc("scale_chapter_5")
+            case 6: return String.loc("scale_chapter_6")
+            case 7: return String.loc("scale_chapter_7")
+            case 8: return String.loc("scale_chapter_8")
+            case 9: return String.loc("scale_chapter_9")
+            case 10: return String.loc("scale_chapter_10")
+            case 11: return String.loc("scale_chapter_11")
+            case 12: return String.loc("scale_chapter_12")
+            case 13: return String.loc("scale_chapter_13")
+            case 14: return String.loc("scale_chapter_14")
             default: return String.loc("chapter_label", chapter)
             }
         }

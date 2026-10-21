@@ -108,6 +108,9 @@ fun modeColor(track: String): Color = when (track) {
     "contradiction" -> Color(0xFFFF5C8A)
     "target" -> Color(0xFF3DDC97)
     "match" -> Color(0xFFFF7A45)
+    "fragment" -> Color(0xFFA3E635)
+    "cipher" -> Color(0xFF2DD4BF)
+    "scale" -> Color(0xFFE879F9)
     else -> Color(0xFF7C5CFF)
 }
 

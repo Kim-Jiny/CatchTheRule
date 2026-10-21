@@ -22,7 +22,13 @@ struct SequenceDisplay: View {
 
     var body: some View {
         Group {
-            if puzzle.isContradiction {
+            if puzzle.isCipher {
+                CipherDisplay(puzzle: puzzle, typed: typed, feedback: feedback)
+            } else if puzzle.isScale {
+                ScaleDisplay(puzzle: puzzle, typed: typed, feedback: feedback)
+            } else if puzzle.isFragment {
+                FragmentDisplay(puzzle: puzzle, typed: typed, feedback: feedback)
+            } else if puzzle.isContradiction {
                 contradictionList(puzzle.localizedStatements)
             } else if puzzle.isPrompt {
                 promptCard(puzzle.localizedPrompt)

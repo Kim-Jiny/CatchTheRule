@@ -9,8 +9,17 @@ struct BannerAd: View {
     /// 배너 양옆 여백 합(좌우 각각 20이면 40). 스테이지 풀폭은 0.
     var horizontalInset: CGFloat = 40
 
+    /// 스크린샷 모드(DEBUG)에선 배너를 아예 렌더하지 않는다(레이아웃 영향 없음).
+    private static var suppressed: Bool {
+        #if DEBUG
+        ScreenshotMode.active
+        #else
+        false
+        #endif
+    }
+
     var body: some View {
-        if !store.removeAdsPurchased {
+        if !store.removeAdsPurchased && !Self.suppressed {
             let width = UIScreen.main.bounds.width - horizontalInset
             let size = currentOrientationAnchoredAdaptiveBanner(width: width)
             BannerRepresentable(unitID: unitID, adSize: size)

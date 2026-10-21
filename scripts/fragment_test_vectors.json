@@ -1,0 +1,1054 @@
+{
+  "format": "조각 숫자 테스트 벡터(명세 docs/fragment-mode-spec.md). combine_cases[]: {combine:'or'|'xor', frames:[[획문자열 per 자리] per 장], result: 합성된 숫자 문자열 또는 null(무효), note}. 합성: 자리마다 장들의 획 출현 횟수를 세어 or=1회 이상, xor=홀수 회인 획을 켠다. 켜진 획 집합이 숫자 패턴(0:abcdef 1:bc 2:abdeg 3:abcdg 4:bcfg 5:acdfg 6:acdefg 7:abc 8:abcdefg 9:abcdfg)과 정확히 같지 않은 자리가 하나라도 있으면 null. frames 가 비었거나 자릿수가 0이거나 장마다 자릿수가 다르면 null. 획 문자열 안의 문자 순서는 무관. 선행 0 은 합성에서 판정하지 않는다. samples[]: 실제 퍼즐 10개 요약(id, chapter, order, frames, combine, frameMs, answer, inputType, choices) — 앱이 puzzles.json 디코딩 후 합성 결과가 answer 와 같은지 확인하는 용도.",
+  "patterns": {
+    "0": "abcdef",
+    "1": "bc",
+    "2": "abdeg",
+    "3": "abcdg",
+    "4": "bcfg",
+    "5": "acdfg",
+    "6": "acdefg",
+    "7": "abc",
+    "8": "abcdefg",
+    "9": "abcdfg"
+  },
+  "combine_cases": [
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "a"
+        ],
+        [
+          "bc"
+        ]
+      ],
+      "result": "7",
+      "note": "or 1자리: a + bc = 7"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "ab"
+        ],
+        [
+          "cdefg"
+        ]
+      ],
+      "result": "8",
+      "note": "or 1자리: 합집합 abcdefg = 8"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "bc"
+        ],
+        [
+          "bc"
+        ]
+      ],
+      "result": "1",
+      "note": "or: 같은 획이 두 장에 중복 = 1"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "abg"
+        ],
+        [
+          "edc"
+        ]
+      ],
+      "result": null,
+      "note": "or: abg + cde = abcdeg 는 어느 숫자도 아님 -> null"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "abg"
+        ],
+        [
+          "ed"
+        ]
+      ],
+      "result": "2",
+      "note": "or: 획 순서 무관, abg + de = abdeg = 2"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "ab",
+          ""
+        ],
+        [
+          "",
+          "bc"
+        ],
+        [
+          "c",
+          "g"
+        ]
+      ],
+      "result": null,
+      "note": "or 2자리: 둘째 자리 bcg 무효 -> null"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "ab",
+          ""
+        ],
+        [
+          "",
+          "bc"
+        ],
+        [
+          "c",
+          ""
+        ]
+      ],
+      "result": "71",
+      "note": "or 2자리: 빈 문자열 포함, abc / bc = 71"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "ab",
+          "ab"
+        ],
+        [
+          "c",
+          "cdfg"
+        ]
+      ],
+      "result": "79",
+      "note": "or 2자리: 자리별 합집합 abc / abcdfg = 79"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "ab",
+          "",
+          "g"
+        ],
+        [
+          "",
+          "bc",
+          "d"
+        ],
+        [
+          "fc",
+          "",
+          "a"
+        ]
+      ],
+      "result": null,
+      "note": "or 3자리: 첫 자리 abcf 무효 -> null"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "abc",
+          "bc",
+          "abcdefg"
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ],
+      "result": "718",
+      "note": "or: 빈 장이 있어도 됨, 7/1/8"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "acdfg"
+        ],
+        [
+          ""
+        ]
+      ],
+      "result": "5",
+      "note": "or: 한 장이 완전히 빈 자리 = 5"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "abcdef"
+        ],
+        [
+          "g"
+        ],
+        [
+          "b"
+        ]
+      ],
+      "result": "8",
+      "note": "or 3장: 획 중복 = 8"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "bcfg"
+        ],
+        [
+          "b"
+        ]
+      ],
+      "result": "4",
+      "note": "or: 4"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "abdeg"
+        ],
+        [
+          "a"
+        ],
+        [
+          "g"
+        ]
+      ],
+      "result": "2",
+      "note": "or: 2"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "ab"
+        ],
+        [
+          "bc"
+        ]
+      ],
+      "result": "7",
+      "note": "or: ab + bc = abc = 7"
+    },
+    {
+      "combine": "xor",
+      "frames": [
+        [
+          "abc"
+        ],
+        [
+          "a"
+        ]
+      ],
+      "result": "1",
+      "note": "xor: abc 에서 a 가 두 번 -> bc = 1"
+    },
+    {
+      "combine": "xor",
+      "frames": [
+        [
+          "abcdefg"
+        ],
+        [
+          "g"
+        ]
+      ],
+      "result": "0",
+      "note": "xor: 8 에서 g 상쇄 = 0"
+    },
+    {
+      "combine": "xor",
+      "frames": [
+        [
+          "ab"
+        ],
+        [
+          "ag"
+        ],
+        [
+          "cg"
+        ]
+      ],
+      "result": "1",
+      "note": "xor 3장: a,g 두 번씩 상쇄 -> b,c = 1"
+    },
+    {
+      "combine": "xor",
+      "frames": [
+        [
+          "abcdg"
+        ],
+        [
+          "f"
+        ],
+        [
+          "f"
+        ]
+      ],
+      "result": "3",
+      "note": "xor: f 두 번 상쇄 -> abcdg = 3"
+    },
+    {
+      "combine": "xor",
+      "frames": [
+        [
+          "abcdfg"
+        ],
+        [
+          "a"
+        ],
+        [
+          "a"
+        ],
+        [
+          "e"
+        ],
+        [
+          "e"
+        ]
+      ],
+      "result": "9",
+      "note": "xor 5장: a,e 두 번씩 상쇄 = 9"
+    },
+    {
+      "combine": "xor",
+      "frames": [
+        [
+          "abc",
+          "bcfg",
+          "acdfg"
+        ],
+        [
+          "",
+          "",
+          ""
+        ]
+      ],
+      "result": "745",
+      "note": "xor: 한 장만 켜진 것과 같음 = 745"
+    },
+    {
+      "combine": "xor",
+      "frames": [
+        [
+          "abc"
+        ],
+        [
+          "abc"
+        ],
+        [
+          "abc"
+        ]
+      ],
+      "result": "7",
+      "note": "xor: 세 번(홀수) 나온 획은 유지 = 7"
+    },
+    {
+      "combine": "xor",
+      "frames": [
+        [
+          "bc"
+        ],
+        [
+          "b"
+        ],
+        [
+          "b"
+        ]
+      ],
+      "result": "1",
+      "note": "xor: b 세 번(홀수) 유지, c 한 번 = 1"
+    },
+    {
+      "combine": "xor",
+      "frames": [
+        [
+          "a"
+        ],
+        [
+          "b"
+        ],
+        [
+          "c"
+        ]
+      ],
+      "result": "7",
+      "note": "xor: 각각 한 번씩 = abc = 7"
+    },
+    {
+      "combine": "xor",
+      "frames": [
+        [
+          "adef",
+          "adf",
+          "e"
+        ],
+        [
+          "bcefg",
+          "cg",
+          "abcdefg"
+        ]
+      ],
+      "result": "359",
+      "note": "xor 3자리: 노이즈 획 포함, 실제 퍼즐형"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "a"
+        ],
+        [
+          "b"
+        ]
+      ],
+      "result": null,
+      "note": "or: ab 는 숫자가 아님 -> null"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "",
+          ""
+        ],
+        [
+          "",
+          ""
+        ]
+      ],
+      "result": null,
+      "note": "or: 모든 자리가 비어 있음 -> null"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "abc",
+          "a"
+        ],
+        [
+          "",
+          "b"
+        ]
+      ],
+      "result": null,
+      "note": "or: 둘째 자리 ab 무효 -> null"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "abcdefg",
+          "bcg"
+        ]
+      ],
+      "result": null,
+      "note": "or 1장: 둘째 자리 bcg 무효 -> null"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "bc",
+          "abc"
+        ],
+        [
+          "x"
+        ]
+      ],
+      "result": null,
+      "note": "장마다 자릿수가 다름 -> null"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "a",
+          "bc"
+        ],
+        [
+          "bc"
+        ]
+      ],
+      "result": null,
+      "note": "장마다 자릿수가 다름(2 vs 1) -> null"
+    },
+    {
+      "combine": "or",
+      "frames": [],
+      "result": null,
+      "note": "frames 가 비어 있음 -> null"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        []
+      ],
+      "result": null,
+      "note": "자릿수 0 -> null"
+    },
+    {
+      "combine": "xor",
+      "frames": [
+        [
+          "abc"
+        ],
+        [
+          "abc"
+        ]
+      ],
+      "result": null,
+      "note": "xor: 완전 상쇄로 빈 자리 -> null"
+    },
+    {
+      "combine": "xor",
+      "frames": [
+        [
+          "abc"
+        ],
+        [
+          "bc"
+        ]
+      ],
+      "result": null,
+      "note": "xor: 결과 a 만 남음 -> null"
+    },
+    {
+      "combine": "xor",
+      "frames": [
+        [
+          "abcdefg"
+        ],
+        [
+          "abcdefg"
+        ]
+      ],
+      "result": null,
+      "note": "xor: 전부 상쇄 -> null"
+    },
+    {
+      "combine": "xor",
+      "frames": [
+        [
+          "ab",
+          "bc"
+        ],
+        [
+          "ab",
+          "b"
+        ]
+      ],
+      "result": null,
+      "note": "xor: 첫 자리 완전 상쇄 -> null"
+    },
+    {
+      "combine": "xor",
+      "frames": [
+        [
+          "abcdefg"
+        ],
+        [
+          "a"
+        ],
+        [
+          "b"
+        ]
+      ],
+      "result": null,
+      "note": "xor: cdefg 는 숫자가 아님 -> null"
+    },
+    {
+      "combine": "xor",
+      "frames": [
+        [
+          "abcd"
+        ],
+        [
+          "dfg"
+        ],
+        [
+          "fgb"
+        ]
+      ],
+      "result": null,
+      "note": "xor: a,c 만 남음 -> null"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "abcdefg"
+        ],
+        [
+          "abcdefg"
+        ]
+      ],
+      "result": "8",
+      "note": "or 와 xor 의 차이: 같은 입력이 or 이면 8"
+    },
+    {
+      "combine": "xor",
+      "frames": [
+        [
+          "abcdefg"
+        ],
+        [
+          "abcdefg"
+        ],
+        [
+          "a"
+        ]
+      ],
+      "result": null,
+      "note": "xor: a 만 남음 -> null (xor 와 or 의 차이)"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "bde",
+          "def"
+        ],
+        [
+          "ag",
+          "abc"
+        ]
+      ],
+      "result": "20",
+      "note": "fg3_s03 실제 퍼즐 (결과 = answer)"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "a",
+          "d",
+          "c"
+        ],
+        [
+          "d",
+          "cg",
+          "a"
+        ],
+        [
+          "cfg",
+          "af",
+          "bdg"
+        ]
+      ],
+      "result": "553",
+      "note": "fg5_s03 실제 퍼즐 (결과 = answer)"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "g",
+          "bf",
+          "df"
+        ],
+        [
+          "df",
+          "cg",
+          "bce"
+        ],
+        [
+          "abc",
+          "",
+          "a"
+        ]
+      ],
+      "result": "940",
+      "note": "fg7_s03 실제 퍼즐 (결과 = answer)"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "g",
+          "be",
+          "g",
+          "ef"
+        ],
+        [
+          "cdf",
+          "abc",
+          "bc",
+          "acefg"
+        ],
+        [
+          "ae",
+          "df",
+          "f",
+          "de"
+        ]
+      ],
+      "result": "6046",
+      "note": "fg9_s03 실제 퍼즐 (결과 = answer)"
+    },
+    {
+      "combine": "xor",
+      "frames": [
+        [
+          "adef",
+          "adf",
+          "e"
+        ],
+        [
+          "bcefg",
+          "cg",
+          "abcdefg"
+        ]
+      ],
+      "result": "359",
+      "note": "fg11_s03 실제 퍼즐 (결과 = answer)"
+    },
+    {
+      "combine": "xor",
+      "frames": [
+        [
+          "f",
+          "defg",
+          "dg"
+        ],
+        [
+          "g",
+          "bg",
+          "abc"
+        ],
+        [
+          "bcfg",
+          "ac",
+          ""
+        ]
+      ],
+      "result": "103",
+      "note": "fg12_s03 실제 퍼즐 (결과 = answer)"
+    },
+    {
+      "combine": "xor",
+      "frames": [
+        [
+          "f",
+          "abef",
+          "abcd",
+          "e"
+        ],
+        [
+          "abcdef",
+          "abcdg",
+          "fg",
+          "ef"
+        ],
+        [
+          "efg",
+          "ae",
+          "eg",
+          "abcdfg"
+        ]
+      ],
+      "result": "9503",
+      "note": "fg13_s03 실제 퍼즐 (결과 = answer)"
+    },
+    {
+      "combine": "or",
+      "frames": [
+        [
+          "a",
+          "abc",
+          "deg",
+          ""
+        ],
+        [
+          "bf",
+          "g",
+          "",
+          "e"
+        ],
+        [
+          "dg",
+          "d",
+          "bcf",
+          "acdfg"
+        ],
+        [
+          "bc",
+          "c",
+          "a",
+          "ce"
+        ]
+      ],
+      "result": "9386",
+      "note": "fg14_s03 실제 퍼즐 (결과 = answer)"
+    }
+  ],
+  "samples": [
+    {
+      "id": "fg1_s01",
+      "chapter": 1,
+      "order": 1,
+      "frames": [
+        [
+          "c"
+        ],
+        [
+          "b"
+        ]
+      ],
+      "combine": "or",
+      "frameMs": 2000,
+      "answer": "1",
+      "inputType": "keypad",
+      "choices": null
+    },
+    {
+      "id": "fg2_s05",
+      "chapter": 2,
+      "order": 5,
+      "frames": [
+        [
+          "cd"
+        ],
+        [
+          "afg"
+        ]
+      ],
+      "combine": "or",
+      "frameMs": 1750,
+      "answer": "5",
+      "inputType": "keypad",
+      "choices": null
+    },
+    {
+      "id": "fg3_s02",
+      "chapter": 3,
+      "order": 2,
+      "frames": [
+        [
+          "bc",
+          "cdf"
+        ],
+        [
+          "fg",
+          "abe"
+        ]
+      ],
+      "combine": "or",
+      "frameMs": 1750,
+      "answer": "40",
+      "inputType": "keypad",
+      "choices": null
+    },
+    {
+      "id": "fg5_s04",
+      "chapter": 5,
+      "order": 4,
+      "frames": [
+        [
+          "ceg",
+          "ae",
+          "b"
+        ],
+        [
+          "ad",
+          "bdf",
+          "ag"
+        ],
+        [
+          "f",
+          "c",
+          "de"
+        ]
+      ],
+      "combine": "or",
+      "frameMs": 1450,
+      "answer": "602",
+      "inputType": "keypad",
+      "choices": null
+    },
+    {
+      "id": "fg7_s03",
+      "chapter": 7,
+      "order": 3,
+      "frames": [
+        [
+          "g",
+          "bf",
+          "df"
+        ],
+        [
+          "df",
+          "cg",
+          "bce"
+        ],
+        [
+          "abc",
+          "",
+          "a"
+        ]
+      ],
+      "combine": "or",
+      "frameMs": 1150,
+      "answer": "940",
+      "inputType": "keypad",
+      "choices": null
+    },
+    {
+      "id": "fg9_s05",
+      "chapter": 9,
+      "order": 5,
+      "frames": [
+        [
+          "def",
+          "abc",
+          "ade",
+          ""
+        ],
+        [
+          "acg",
+          "df",
+          "d",
+          "ac"
+        ],
+        [
+          "ae",
+          "ce",
+          "bdg",
+          "bc"
+        ]
+      ],
+      "combine": "or",
+      "frameMs": 900,
+      "answer": "6027",
+      "inputType": "keypad",
+      "choices": null
+    },
+    {
+      "id": "fg11_s02",
+      "chapter": 11,
+      "order": 2,
+      "frames": [
+        [
+          "acfg",
+          "defg",
+          "b"
+        ],
+        [
+          "d",
+          "abcg",
+          "acdefg"
+        ]
+      ],
+      "combine": "xor",
+      "frameMs": 1200,
+      "answer": "508",
+      "inputType": "keypad",
+      "choices": null
+    },
+    {
+      "id": "fg12_s06",
+      "chapter": 12,
+      "order": 6,
+      "frames": [
+        [
+          "bc",
+          "acde",
+          "abcdefg"
+        ],
+        [
+          "aefg",
+          "bcfg",
+          "ag"
+        ],
+        [
+          "ae",
+          "f",
+          "a"
+        ]
+      ],
+      "combine": "xor",
+      "frameMs": 1000,
+      "answer": "420",
+      "inputType": "keypad",
+      "choices": null
+    },
+    {
+      "id": "fg13_s02",
+      "chapter": 13,
+      "order": 2,
+      "frames": [
+        [
+          "fg",
+          "f",
+          "e",
+          "g"
+        ],
+        [
+          "bc",
+          "abcdg",
+          "deg",
+          "c"
+        ],
+        [
+          "g",
+          "g",
+          "ab",
+          "bcf"
+        ]
+      ],
+      "combine": "or",
+      "frameMs": 950,
+      "answer": "4924",
+      "inputType": "keypad",
+      "choices": null
+    },
+    {
+      "id": "fg14_s04",
+      "chapter": 14,
+      "order": 4,
+      "frames": [
+        [
+          "bcfg",
+          "e",
+          "f",
+          "fg"
+        ],
+        [
+          "",
+          "cdeg",
+          "abdeg",
+          "d"
+        ],
+        [
+          "a",
+          "cd",
+          "af",
+          "abde"
+        ],
+        [
+          "cdef",
+          "abcdef",
+          "ace",
+          "cdg"
+        ]
+      ],
+      "combine": "xor",
+      "frameMs": 750,
+      "answer": "2830",
+      "inputType": "keypad",
+      "choices": null
+    }
+  ]
+}

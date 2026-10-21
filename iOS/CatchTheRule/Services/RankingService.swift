@@ -26,5 +26,10 @@ enum RankingError: Error {
 /// 앱 전역에서 사용할 현재 랭킹 서비스.
 /// 실서버: MinigameRankingService() · 오프라인 개발용: MockRankingService.shared
 enum Ranking {
-    static let service: RankingService = MinigameRankingService()
+    static let service: RankingService = {
+        #if DEBUG
+        if ScreenshotMode.active { return ScreenshotMode.FakeRanking() }   // 스크린샷 모드: 가짜 데이터만
+        #endif
+        return MinigameRankingService()
+    }()
 }

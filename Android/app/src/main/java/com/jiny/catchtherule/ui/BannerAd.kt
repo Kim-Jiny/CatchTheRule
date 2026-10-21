@@ -22,6 +22,7 @@ import com.jiny.catchtherule.data.LocalBilling
 fun BannerAd(unitId: String, modifier: Modifier = Modifier) {
     val billing = LocalBilling.current
     if (billing.removeAdsPurchased) return
+    if (com.jiny.catchtherule.ScreenshotMode.active) return   // 스크린샷 모드(DEBUG)에선 배너 자체를 없앤다
 
     val context = LocalContext.current
     val widthDp = LocalConfiguration.current.screenWidthDp

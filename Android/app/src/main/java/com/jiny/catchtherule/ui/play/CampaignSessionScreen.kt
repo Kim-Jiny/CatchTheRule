@@ -163,7 +163,13 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
                     horizontalAlignment = Alignment.CenterHorizontally,
                     verticalArrangement = Arrangement.spacedBy(28.dp, Alignment.CenterVertically),
                 ) {
-                    if (puzzle.isMatch) {
+                    if (puzzle.isFragment) {
+                        FragmentPrompt(puzzle)
+                    } else if (puzzle.isCipher) {
+                        Text(stringResource(R.string.cipher_prompt), color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
+                    } else if (puzzle.isScale) {
+                        Text(stringResource(R.string.scale_prompt), color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
+                    } else if (puzzle.isMatch) {
                         Text(stringResource(R.string.match_prompt), color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
                     } else if (puzzle.isTarget) {
                         Text(stringResource(R.string.target_prompt), color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
@@ -259,7 +265,7 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
                         onDelete = { if (!solved && typed.isNotEmpty()) typed = typed.dropLast(1) },
                         onSubmit = { submitCampaign(puzzle, index, typed, progress, hintsShown,
                             onCorrect = { feedback = AnswerFeedback.Correct; reveal = true; solved = true },
-                            onWrong = { feedback = AnswerFeedback.Wrong; typed = "" }) },
+                            onWrong = { feedback = AnswerFeedback.Wrong }) },
                     )
                     InputType.Choices -> ChoicesGrid(puzzle.choices ?: emptyList(), enabled = !solved) { picked ->
                         submitCampaign(puzzle, index, picked, progress, hintsShown,

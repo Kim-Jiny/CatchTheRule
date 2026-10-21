@@ -17,10 +17,10 @@ import kotlinx.serialization.json.Json
  * Compose snapshot state 로 노출한다. (로그인/서버 불필요)
  * iOS 의 ProgressStore 와 동등.
  */
-class ProgressStore(context: Context) {
+class ProgressStore(context: Context, prefsName: String = "ctr_progress") {
 
     private val prefs = context.applicationContext
-        .getSharedPreferences("ctr_progress", Context.MODE_PRIVATE)
+        .getSharedPreferences(prefsName, Context.MODE_PRIVATE)
     private val store = PuzzleStore.get(context)
 
     /** 트랙별 "다음에 풀 인덱스"(해당 트랙 퍼즐 배열 기준). 키=트랙. */

@@ -434,21 +434,22 @@ private fun LeaderboardRow(entry: RankEntry, tied: Boolean, modifier: Modifier) 
             Text("${entry.rank}", style = TNUM.copy(color = AppColors.TextSecondary, fontSize = 13.sp, fontWeight = FontWeight.Bold))
         }
         if (tied) TiedChip()
-        entry.flagEmoji?.let { Text(it, fontSize = 18.sp) }
-        Text(
-            entry.nickname,
-            color = if (entry.isMe) AppColors.Accent2 else AppColors.TextPrimary,
-            fontSize = 16.sp,
-            fontWeight = if (entry.isMe) FontWeight.Bold else FontWeight.Medium,
-            maxLines = 1, overflow = TextOverflow.Ellipsis,
-            modifier = Modifier.weight(1f, fill = false),
-        )
-        if (entry.isMe) {
-            Box(Modifier.clip(CircleShape).background(AppColors.Accent).padding(horizontal = 6.dp, vertical = 2.dp)) {
-                Text(stringResource(R.string.me), color = Color.White, fontSize = 11.sp, fontWeight = FontWeight.Bold)
+        Row(Modifier.weight(1f), verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+            entry.flagEmoji?.let { Text(it, fontSize = 18.sp) }
+            Text(
+                entry.nickname,
+                color = if (entry.isMe) AppColors.Accent2 else AppColors.TextPrimary,
+                fontSize = 16.sp,
+                fontWeight = if (entry.isMe) FontWeight.Bold else FontWeight.Medium,
+                maxLines = 1, overflow = TextOverflow.Ellipsis,
+                modifier = Modifier.weight(1f, fill = false),
+            )
+            if (entry.isMe) {
+                Box(Modifier.clip(CircleShape).background(AppColors.Accent).padding(horizontal = 6.dp, vertical = 2.dp)) {
+                    Text(stringResource(R.string.me), color = Color.White, fontSize = 11.sp, fontWeight = FontWeight.Bold)
+                }
             }
         }
-        Box(Modifier.weight(1f))
         Text("${entry.score}", style = TNUM.copy(color = AppColors.TextPrimary, fontSize = 16.sp, fontWeight = FontWeight.Bold))
     }
 }

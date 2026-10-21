@@ -23,12 +23,16 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        Ranking.init(this)
-        AnalyticsService.ping(this)
-        com.jiny.catchtherule.core.PuzzleStore.refreshFromServer(this)  // 추가 스테이지 캐시 갱신
-        val progress = ProgressStore(this)
-        billing = BillingManager(this, progress).also { it.start() }
-        ads = AdsManager(this).also { it.start(this) }
+        ScreenshotMode.setup(this)   // DEBUG 전용(릴리스는 no-op)
+        val shot = ScreenshotMode.active
+        if (!shot) {
+            Ranking.init(this)
+            AnalyticsService.ping(this)
+            com.jiny.catchtherule.core.PuzzleStore.refreshFromServer(this)  // 추가 스테이지 캐시 갱신
+        }
+        val progress = ProgressStore(this, ScreenshotMode.prefsName)
+        billing = BillingManager(this, progress).also { if (!shot) it.start() }
+        ads = AdsManager(this).also { if (!shot) it.start(this) }
         setContent {
             CatchTheRuleTheme {
                 CompositionLocalProvider(
@@ -45,6 +49,6 @@ class MainActivity : ComponentActivity() {
     override fun onResume() {
         super.onResume()
         // 외부(스토어/다른 기기)에서의 구매·환불 반영
-        if (::billing.isInitialized) billing.queryPurchases()
+        if (::billing.isInitialized && !ScreenshotMode.active) billing.queryPurchases()
     }
 }

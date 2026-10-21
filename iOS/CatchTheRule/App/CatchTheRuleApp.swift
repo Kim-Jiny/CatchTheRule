@@ -7,6 +7,9 @@ struct CatchTheRuleApp: App {
     @State private var ads = AdsManager()
 
     init() {
+        #if DEBUG
+        ScreenshotMode.seed()   // 스크린샷 모드일 때만 진행도 시드(ProgressStore 생성 전)
+        #endif
         let progress = ProgressStore()
         let store = StoreManager()
         // 소비형(힌트) 지급 콜백을 앱 시작 즉시 연결 — 백그라운드 트랜잭션(Transaction.updates)이

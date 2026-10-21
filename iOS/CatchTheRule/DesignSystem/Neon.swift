@@ -10,6 +10,9 @@ extension Theme {
         case "contradiction": return 0xFF5C8A   // 핑크
         case "target":        return 0x3DDC97   // 그린
         case "match":         return 0xFF7A45   // 오렌지
+        case "fragment":      return 0xA3E635   // 라임
+        case "cipher":        return 0x2DD4BF   // 틸
+        case "scale":         return 0xE879F9   // 퓨샤
         default:              return 0x7C5CFF   // 바이올렛(numbers)
         }
     }
@@ -242,6 +245,9 @@ struct ModeIconTile: View {
         case "contradiction": return 0.7
         case "target": return 3.4
         case "match": return 0.2
+        case "fragment": return 1.7
+        case "cipher": return 2.6
+        case "scale": return 0.9
         default: return 0
         }
     }
@@ -271,6 +277,17 @@ struct ModeIconTile: View {
         case "match":
             scale = 1 + 0.08 * sin(t * 2 * .pi / 1.3)
             rotation = sin(t * 2 * .pi / 0.9) * 4
+        case "fragment":
+            // 조각이 번갈아 켜지듯 아이콘이 깜빡
+            glow = max(0, sin(t * 2 * .pi / 1.6))
+            scale = 1 + 0.05 * glow
+        case "cipher":
+            // 자물쇠가 열리려는 듯 살짝 흔들리며 발광
+            rotation = sin(t * 2 * .pi / 1.8) * 8
+            glow = max(0, sin(t * 2 * .pi / 2.4)) * 0.8
+        case "scale":
+            // 저울이 평형을 찾듯 좌우로 기울었다 돌아옴
+            rotation = sin(t * 2 * .pi / 2.8) * 9
         default:
             offsetY = CGFloat(sin(t * 2 * .pi / 2.6)) * size * 0.07
         }

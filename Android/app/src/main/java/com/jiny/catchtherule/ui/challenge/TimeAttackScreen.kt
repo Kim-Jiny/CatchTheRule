@@ -73,6 +73,7 @@ import com.jiny.catchtherule.ui.play.TargetControls
 import com.jiny.catchtherule.ui.play.TargetPlayArea
 import com.jiny.catchtherule.ui.play.TargetUi
 import com.jiny.catchtherule.ui.play.matchSubmitValue
+import com.jiny.catchtherule.ui.play.FragmentPrompt
 import com.jiny.catchtherule.ui.play.SequenceDisplay
 import com.jiny.catchtherule.ui.theme.AppColors
 import com.jiny.catchtherule.ui.theme.FullScreenBackground
@@ -165,7 +166,6 @@ fun TimeAttackScreen(onClose: () -> Unit) {
             feedback = AnswerFeedback.Correct
         } else {
             feedback = AnswerFeedback.Wrong
-            typed = ""
             buzz()
         }
     }
@@ -226,10 +226,14 @@ fun TimeAttackScreen(onClose: () -> Unit) {
                                 current.isMatch -> R.string.match_prompt
                                 current.isTarget -> R.string.target_prompt
                                 current.isContradiction -> R.string.contradiction_prompt
+                                current.isCipher -> R.string.cipher_prompt
+                                current.isScale -> R.string.scale_prompt
                                 !current.isPrompt -> R.string.play_prompt
                                 else -> null
                             }
-                            if (promptRes != null) {
+                            if (current.isFragment) {
+                                FragmentPrompt(current)
+                            } else if (promptRes != null) {
                                 Text(stringResource(promptRes), color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
                             }
                             if (current.isMatch && matchUi != null) {
