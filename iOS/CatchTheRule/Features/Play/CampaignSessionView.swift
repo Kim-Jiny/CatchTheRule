@@ -23,6 +23,8 @@ struct CampaignSessionView: View {
     @State private var incompleteShown = false
     @State private var match: MatchBoard?        // 성냥개비 퍼즐 상태(퍼즐 전환 시 재생성)
     @State private var matchMessage: String?
+    @State private var fill: FillState?          // 격자 채우기 입력 상태(퍼즐 전환 시 재생성)
+    @State private var path: PathState?          // 경로 추적 선택 상태(퍼즐 전환 시 재생성)
     @State private var advanceTask: Task<Void, Never>?  // 정답 후 지연 진행/광고 — 이탈 시 취소
 
     init(startIndex: Int, track: String = PuzzleStore.defaultTrack) {
@@ -32,6 +34,8 @@ struct CampaignSessionView: View {
         _index = State(initialValue: start)
         _expr = State(initialValue: Self.makeExpr(for: puzzles.indices.contains(start) ? puzzles[start] : nil))
         _match = State(initialValue: Self.makeMatch(for: puzzles.indices.contains(start) ? puzzles[start] : nil))
+        _fill = State(initialValue: puzzles.indices.contains(start) ? FillState(puzzle: puzzles[start]) : nil)
+        _path = State(initialValue: puzzles.indices.contains(start) ? PathState(puzzle: puzzles[start]) : nil)
     }
 
     private static func makeMatch(for puzzle: Puzzle?) -> MatchBoard? {
@@ -60,7 +64,7 @@ struct CampaignSessionView: View {
         .overlay {
             if feedback == .correct {
                 CorrectBadge()
-                    .offset(y: (puzzle?.isTarget == true || puzzle?.isMatch == true) ? -250 : -150)  // 숫자 만들기·성냥개비는 식 영역을 가리지 않게 위로
+                    .offset(y: (puzzle?.isTarget == true || puzzle?.isMatch == true || puzzle?.isFill == true || puzzle?.isPath == true) ? -250 : -150)  // 식·격자 영역을 가리지 않게 위로
                     .transition(.scale(scale: 0.5).combined(with: .opacity))
             }
         }
@@ -91,7 +95,17 @@ struct CampaignSessionView: View {
             GeometryReader { geo in
                 ScrollView {
                     VStack(spacing: 28) {
-                        if puzzle.isCipher {
+                        if puzzle.isFill {
+                            Text(String.loc("fill_prompt"))
+                                .font(.system(size: 15, weight: .semibold))
+                                .foregroundStyle(Theme.textSecondary)
+                                .multilineTextAlignment(.center)
+                        } else if puzzle.isPath {
+                            Text(String.loc("path_prompt"))
+                                .font(.system(size: 15, weight: .semibold))
+                                .foregroundStyle(Theme.textSecondary)
+                                .multilineTextAlignment(.center)
+                        } else if puzzle.isCipher {
                             Text(String.loc("cipher_prompt"))
                                 .font(.system(size: 15, weight: .semibold))
                                 .foregroundStyle(Theme.textSecondary)
@@ -124,7 +138,11 @@ struct CampaignSessionView: View {
                                 .foregroundStyle(Theme.textSecondary)
                         }
 
-                        if puzzle.isMatch, match != nil {
+                        if puzzle.isFill, fill != nil {
+                            fillSection
+                        } else if puzzle.isPath, path != nil {
+                            pathSection
+                        } else if puzzle.isMatch, match != nil {
                             matchSection
                         } else if puzzle.isTarget, let expr {
                             TargetBoardView(expr: expr, incompleteShown: incompleteShown) { i in
@@ -280,7 +298,16 @@ struct CampaignSessionView: View {
 
     @ViewBuilder
     private func inputArea(for puzzle: Puzzle) -> some View {
-        if puzzle.isMatch, let m = match {
+        if puzzle.isFill, let f = fill {
+            FillControlsView(
+                state: f, disabled: solved,
+                onDigit: { d in fill?.enter(d); if progress.hapticsOn { Haptics.soft() } },
+                onClear: { fill?.clearSelected(); if progress.hapticsOn { Haptics.tap() } },
+                onCheck: { checkFill(puzzle: puzzle) }
+            )
+        } else if puzzle.isPath, let p = path {
+            PathControlsView(state: p, disabled: solved) { checkPath(puzzle: puzzle) }
+        } else if puzzle.isMatch, let m = match {
             matchControls(m, puzzle: puzzle)
         } else if puzzle.isTarget, let e = expr {
             TargetControlsView(
@@ -348,6 +375,50 @@ struct CampaignSessionView: View {
         }
         // 정답이면 answer 문자열, 아니면 answer 와 절대 같지 않은 값(결과 문자열)을 넘겨 기존 오답 경로를 탄다.
         submit(puzzle: puzzle, value: e.isCorrect ? String(e.target) : "x" + v.text)
+    }
+
+    // MARK: - 격자 채우기
+
+    private var fillSection: some View {
+        VStack(spacing: 14) {
+            FillBoardView(
+                state: Binding(get: { fill ?? FillState(puzzle: puzzle!)! }, set: { fill = $0 }),
+                disabled: solved,
+                onTap: { if progress.hapticsOn { Haptics.soft() } }
+            )
+            .modifier(Shake(animatableData: shake))
+            Text(matchMessage ?? " ")
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundStyle(Theme.danger)
+                .multilineTextAlignment(.center)
+                .frame(minHeight: 18)
+        }
+    }
+
+    private func checkFill(puzzle: Puzzle) {
+        guard !solved, let f = fill, f.isComplete else { return }
+        if f.hasConflict {
+            matchWarn("fill_invalid")   // 규칙 위반: 제출 안 함(오답 카운트 없음)
+            return
+        }
+        // 맞으면 answer, 아니면 answer 와 절대 같지 않은 값으로 기존 오답 경로. 입력은 유지.
+        submit(puzzle: puzzle, value: f.answerString == puzzle.answer ? puzzle.answer : "x" + f.answerString)
+    }
+
+    // MARK: - 경로 추적
+
+    private var pathSection: some View {
+        PathBoardView(
+            state: Binding(get: { path ?? PathState(puzzle: puzzle!)! }, set: { path = $0 }),
+            disabled: solved,
+            onTap: { if progress.hapticsOn { Haptics.soft() } }
+        )
+        .modifier(Shake(animatableData: shake))
+    }
+
+    private func checkPath(puzzle: Puzzle) {
+        guard !solved, let p = path, p.canCheck else { return }
+        submit(puzzle: puzzle, value: p.selected.map(String.init) == puzzle.answer ? puzzle.answer : "x" + p.answerString)
     }
 
     // MARK: - 성냥개비 퍼즐
@@ -481,6 +552,8 @@ struct CampaignSessionView: View {
             index += 1
             expr = Self.makeExpr(for: puzzles.indices.contains(index) ? puzzles[index] : nil)
             match = Self.makeMatch(for: puzzles.indices.contains(index) ? puzzles[index] : nil)
+            fill = puzzles.indices.contains(index) ? FillState(puzzle: puzzles[index]) : nil
+            path = puzzles.indices.contains(index) ? PathState(puzzle: puzzles[index]) : nil
             matchMessage = nil
             incompleteShown = false
             typed = ""

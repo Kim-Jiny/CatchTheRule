@@ -98,6 +98,7 @@ struct CipherDisplay: View {
         frames: nil, combine: nil, frameMs: nil,
         pairs: [[["🍎", "🍌"], ["7", "3"]], [["🍌", "🍇"], ["3", "9"]], [["🍇", "🍎", "🍇", "🍌"], ["9", "7", "9", "3"]]],
         scales: nil, query: ["🍌", "🍎", "🍇", "🍎"],
+        board: nil, rules: nil, lt: nil, cages: nil, size: nil, start: nil, trail: nil, total: nil,
         answer: "3797", inputType: .keypad, choices: nil, hints: [:], explanation: [:])
     return ZStack {
         Color.black.ignoresSafeArea()

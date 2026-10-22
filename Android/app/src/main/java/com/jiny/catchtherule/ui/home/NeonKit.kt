@@ -57,11 +57,13 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Balance
 import androidx.compose.material.icons.filled.Calculate
 import androidx.compose.material.icons.filled.ChangeHistory
+import androidx.compose.material.icons.filled.GridOn
 import androidx.compose.material.icons.filled.Layers
 import androidx.compose.material.icons.filled.Lightbulb
 import androidx.compose.material.icons.filled.LockOpen
 import androidx.compose.material.icons.filled.LocalFireDepartment
 import androidx.compose.material.icons.filled.Numbers
+import androidx.compose.material.icons.filled.Route
 import androidx.compose.material.icons.filled.Warning
 import androidx.compose.ui.graphics.vector.ImageVector
 
@@ -75,6 +77,8 @@ fun modeIcon(track: String): ImageVector = when (track) {
     "fragment" -> Icons.Filled.Layers
     "cipher" -> Icons.Filled.LockOpen
     "scale" -> Icons.Filled.Balance
+    "fill" -> Icons.Filled.GridOn
+    "path" -> Icons.Filled.Route
     else -> Icons.Filled.Numbers
 }
 
@@ -213,6 +217,8 @@ private fun IdleIcon(track: String, modifier: Modifier) {
         "fragment" -> t.animateFloat(0.92f, 1.08f, infiniteRepeatable(tween(1500), RepeatMode.Reverse), "p")
         "cipher" -> t.animateFloat(-8f, 8f, infiniteRepeatable(tween(1800), RepeatMode.Reverse), "p")
         "scale" -> t.animateFloat(-7f, 7f, infiniteRepeatable(tween(1600), RepeatMode.Reverse), "p")
+        "fill" -> t.animateFloat(0.94f, 1.1f, infiniteRepeatable(tween(1400), RepeatMode.Reverse), "p")
+        "path" -> t.animateFloat(-3f, 3f, infiniteRepeatable(tween(1500), RepeatMode.Reverse), "p")
         else -> t.animateFloat(-2.5f, 2.5f, infiniteRepeatable(tween(2300), RepeatMode.Reverse), "p")
     }
     Icon(
@@ -221,8 +227,8 @@ private fun IdleIcon(track: String, modifier: Modifier) {
             when (track) {
                 "shapes" -> rotationZ = p
                 "logic" -> { alpha = p; scaleX = 0.9f + 0.1f * p; scaleY = scaleX }
-                "contradiction", "cipher", "scale" -> rotationZ = p
-                "target", "match", "fragment" -> { scaleX = p; scaleY = p }
+                "contradiction", "cipher", "scale", "path" -> rotationZ = p
+                "target", "match", "fragment", "fill" -> { scaleX = p; scaleY = p }
                 else -> translationY = p.dp.toPx()
             }
         },

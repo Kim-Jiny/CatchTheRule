@@ -5,9 +5,13 @@ struct HomeView: View {
     @Environment(ProgressStore.self) private var progress
     @State private var showUnlock = false
     @State private var path = NavigationPath()
-    @State private var playing = false
-    @State private var playTrack = PuzzleStore.defaultTrack
-    @State private var startIndex = 0
+    /// 트랙·시작 위치를 cover 에 함께 실어 보낸다(별도 @State 는 갱신 전 값으로 열릴 수 있음).
+    private struct PlaySession: Identifiable {
+        let id = UUID()
+        let track: String
+        let startIndex: Int
+    }
+    @State private var session: PlaySession?
 
     var body: some View {
         NavigationStack(path: $path) {
@@ -41,8 +45,8 @@ struct HomeView: View {
             UnlockSheet { showUnlock = false }
                 .preferredColorScheme(.dark)
         }
-        .fullScreenCover(isPresented: $playing) {
-            CampaignSessionView(startIndex: startIndex, track: playTrack)
+        .fullScreenCover(item: $session) { s in
+            CampaignSessionView(startIndex: s.startIndex, track: s.track)
         }
         .task { maybeShowUnlock() }
         .onChange(of: progress.isShapesUnlocked) { _, _ in maybeShowUnlock() }
@@ -73,10 +77,8 @@ struct HomeView: View {
             HeroCard(track: hero, caption: String.loc("home_last_played"),
                      onOpen: { path.append(hero) },
                      onContinue: {
-                         playTrack = hero
-                         startIndex = progress.currentIndex(track: hero)
                          progress.lastPlayedTrack = hero
-                         playing = true
+                         session = PlaySession(track: hero, startIndex: progress.currentIndex(track: hero))
                      })
                 .staggerOnAppear(order: 1)
             VStack(alignment: .leading, spacing: 14) {
@@ -117,6 +119,8 @@ func modeTitle(_ track: String) -> String {
     case "fragment":      return String.loc("mode_fragment")
     case "cipher":        return String.loc("mode_cipher")
     case "scale":         return String.loc("mode_scale")
+    case "fill":          return String.loc("mode_fill")
+    case "path":          return String.loc("mode_path")
     default:              return String.loc("mode_numbers")
     }
 }
@@ -131,6 +135,8 @@ func modeIcon(_ track: String) -> String {
     case "fragment":      return "square.stack.3d.up.fill"
     case "cipher":        return "lock.open.fill"
     case "scale":         return "scalemass.fill"
+    case "fill":          return "square.grid.3x3.fill"
+    case "path":          return "point.topleft.down.curvedto.point.bottomright.up"
     default:              return "number"
     }
 }
@@ -461,6 +467,44 @@ struct CampaignTrackView: View {
             case 12: return String.loc("scale_chapter_12")
             case 13: return String.loc("scale_chapter_13")
             case 14: return String.loc("scale_chapter_14")
+            default: return String.loc("chapter_label", chapter)
+            }
+        }
+        if track == "fill" {
+            switch chapter {
+            case 1: return String.loc("fill_chapter_1")
+            case 2: return String.loc("fill_chapter_2")
+            case 3: return String.loc("fill_chapter_3")
+            case 4: return String.loc("fill_chapter_4")
+            case 5: return String.loc("fill_chapter_5")
+            case 6: return String.loc("fill_chapter_6")
+            case 7: return String.loc("fill_chapter_7")
+            case 8: return String.loc("fill_chapter_8")
+            case 9: return String.loc("fill_chapter_9")
+            case 10: return String.loc("fill_chapter_10")
+            case 11: return String.loc("fill_chapter_11")
+            case 12: return String.loc("fill_chapter_12")
+            case 13: return String.loc("fill_chapter_13")
+            case 14: return String.loc("fill_chapter_14")
+            default: return String.loc("chapter_label", chapter)
+            }
+        }
+        if track == "path" {
+            switch chapter {
+            case 1: return String.loc("path_chapter_1")
+            case 2: return String.loc("path_chapter_2")
+            case 3: return String.loc("path_chapter_3")
+            case 4: return String.loc("path_chapter_4")
+            case 5: return String.loc("path_chapter_5")
+            case 6: return String.loc("path_chapter_6")
+            case 7: return String.loc("path_chapter_7")
+            case 8: return String.loc("path_chapter_8")
+            case 9: return String.loc("path_chapter_9")
+            case 10: return String.loc("path_chapter_10")
+            case 11: return String.loc("path_chapter_11")
+            case 12: return String.loc("path_chapter_12")
+            case 13: return String.loc("path_chapter_13")
+            case 14: return String.loc("path_chapter_14")
             default: return String.loc("chapter_label", chapter)
             }
         }

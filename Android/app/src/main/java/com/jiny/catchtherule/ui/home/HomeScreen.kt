@@ -272,11 +272,51 @@ fun modeTitleRes(track: String): Int = when (track) {
     "fragment" -> R.string.mode_fragment
     "cipher" -> R.string.mode_cipher
     "scale" -> R.string.mode_scale
+    "fill" -> R.string.mode_fill
+    "path" -> R.string.mode_path
     else -> R.string.mode_numbers
 }
 
 @Composable
 fun chapterTitle(track: String, chapter: Int): String {
+    if (track == "fill") {
+        return when (chapter) {
+            1 -> stringResource(R.string.fill_chapter_1)
+            2 -> stringResource(R.string.fill_chapter_2)
+            3 -> stringResource(R.string.fill_chapter_3)
+            4 -> stringResource(R.string.fill_chapter_4)
+            5 -> stringResource(R.string.fill_chapter_5)
+            6 -> stringResource(R.string.fill_chapter_6)
+            7 -> stringResource(R.string.fill_chapter_7)
+            8 -> stringResource(R.string.fill_chapter_8)
+            9 -> stringResource(R.string.fill_chapter_9)
+            10 -> stringResource(R.string.fill_chapter_10)
+            11 -> stringResource(R.string.fill_chapter_11)
+            12 -> stringResource(R.string.fill_chapter_12)
+            13 -> stringResource(R.string.fill_chapter_13)
+            14 -> stringResource(R.string.fill_chapter_14)
+            else -> stringResource(R.string.chapter_label, chapter)
+        }
+    }
+    if (track == "path") {
+        return when (chapter) {
+            1 -> stringResource(R.string.path_chapter_1)
+            2 -> stringResource(R.string.path_chapter_2)
+            3 -> stringResource(R.string.path_chapter_3)
+            4 -> stringResource(R.string.path_chapter_4)
+            5 -> stringResource(R.string.path_chapter_5)
+            6 -> stringResource(R.string.path_chapter_6)
+            7 -> stringResource(R.string.path_chapter_7)
+            8 -> stringResource(R.string.path_chapter_8)
+            9 -> stringResource(R.string.path_chapter_9)
+            10 -> stringResource(R.string.path_chapter_10)
+            11 -> stringResource(R.string.path_chapter_11)
+            12 -> stringResource(R.string.path_chapter_12)
+            13 -> stringResource(R.string.path_chapter_13)
+            14 -> stringResource(R.string.path_chapter_14)
+            else -> stringResource(R.string.chapter_label, chapter)
+        }
+    }
     if (track == "cipher") {
         return when (chapter) {
             1 -> stringResource(R.string.cipher_chapter_1)
