@@ -67730,39 +67730,39 @@
     "order": 4,
     "board": [
       [
-        0,
-        0,
         1,
         0,
-        0
+        5,
+        0,
+        3
       ],
       [
-        5,
+        0,
         0,
         3,
         0,
-        0
-      ],
-      [
-        0,
-        2,
-        4,
-        5,
-        0
-      ],
-      [
-        2,
-        1,
-        5,
-        0,
-        0
-      ],
-      [
-        1,
-        0,
-        0,
-        0,
         5
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        4
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        1
       ]
     ],
     "rules": [
@@ -67771,90 +67771,84 @@
     ],
     "lt": [
       [
-        4,
-        0,
+        1,
         3,
-        0
+        1,
+        4
       ],
       [
         3,
         1,
-        3,
-        0
-      ],
-      [
-        0,
         2,
-        0,
         1
       ],
       [
         1,
-        2,
-        2,
+        3,
+        1,
         2
       ],
       [
+        1,
         3,
-        3,
-        3,
-        4
+        0,
+        3
       ],
       [
-        2,
         1,
         2,
+        0,
         2
       ]
     ],
-    "answer": "45234123134324",
+    "answer": "424213514512245",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "부등호 ‹ 는 뾰족한 쪽이 작은 칸을 가리켜요. 작은 쪽 숫자부터 좁혀 봐요.",
-        "2행 2열은 4이에요.",
-        "3행 1열은 3이에요."
+        "3행 1열은 3이에요.",
+        "4행 1열은 5이에요."
       ],
       "en": [
         "The pointed end of an inequality sign ‹ points to the smaller cell. Narrow down the smaller side first.",
-        "Row 2, column 2 is 4.",
-        "Row 3, column 1 is 3."
+        "Row 3, column 1 is 3.",
+        "Row 4, column 1 is 5."
       ],
       "ja": [
         "不等号 ‹ は、とがった側が小さいマスを指します。小さい方から絞り込みましょう。",
-        "2行2列は4です。",
-        "3行1列は3です。"
+        "3行1列は3です。",
+        "4行1列は5です。"
       ],
       "zh": [
         "不等号 ‹ 的尖端指向较小的格子，先从较小的一侧缩小范围。",
-        "第2行第2列是4。",
-        "第3行第1列是3。"
+        "第3行第1列是3。",
+        "第4行第1列是5。"
       ],
       "es": [
         "El extremo puntiagudo del signo ‹ señala la casilla menor. Empieza acotando la casilla menor.",
-        "La fila 2, columna 2 es 4.",
-        "La fila 3, columna 1 es 3."
+        "La fila 3, columna 1 es 3.",
+        "La fila 4, columna 1 es 5."
       ],
       "fr": [
         "La pointe du signe ‹ désigne la case la plus petite. Commencez par restreindre la plus petite.",
-        "Ligne 2, colonne 2 : 4.",
-        "Ligne 3, colonne 1 : 3."
+        "Ligne 3, colonne 1 : 3.",
+        "Ligne 4, colonne 1 : 5."
       ],
       "de": [
         "Die Spitze des Zeichens ‹ zeigt auf das kleinere Feld. Grenze zuerst das kleinere Feld ein.",
-        "Zeile 2, Spalte 2 ist 4.",
-        "Zeile 3, Spalte 1 ist 3."
+        "Zeile 3, Spalte 1 ist 3.",
+        "Zeile 4, Spalte 1 ist 5."
       ]
     },
     "explanation": {
-      "ko": "45123 54312 32451 21534 13245",
-      "en": "45123 54312 32451 21534 13245",
-      "ja": "45123 54312 32451 21534 13245",
-      "zh": "45123 54312 32451 21534 13245",
-      "es": "45123 54312 32451 21534 13245",
-      "fr": "45123 54312 32451 21534 13245",
-      "de": "45123 54312 32451 21534 13245"
+      "ko": "14523 42315 35142 51234 23451",
+      "en": "14523 42315 35142 51234 23451",
+      "ja": "14523 42315 35142 51234 23451",
+      "zh": "14523 42315 35142 51234 23451",
+      "es": "14523 42315 35142 51234 23451",
+      "fr": "14523 42315 35142 51234 23451",
+      "de": "14523 42315 35142 51234 23451"
     }
   },
   {
@@ -67867,37 +67861,37 @@
       [
         0,
         0,
-        5,
+        0,
         0,
         3
       ],
       [
-        2,
-        4,
+        0,
+        1,
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        0,
         0,
         0,
         0
       ],
       [
         0,
-        1,
         4,
         3,
-        2
+        0,
+        1
       ],
       [
+        4,
         0,
-        0,
-        2,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
+        5,
         1,
-        2,
-        0
+        2
       ]
     ],
     "rules": [
@@ -67907,89 +67901,83 @@
     "lt": [
       [
         4,
-        2,
-        4,
+        3,
+        3,
         3
       ],
       [
-        0,
-        1,
-        0,
+        3,
+        3,
+        2,
+        3
+      ],
+      [
+        3,
+        3,
+        3,
         2
       ],
       [
-        1,
+        2,
         0,
-        1,
+        2,
         1
       ],
       [
         2,
-        1,
-        1,
-        1
-      ],
-      [
-        3,
         2,
-        3,
-        3
-      ],
-      [
-        3,
-        0,
-        3,
-        1
+        1,
+        2
       ]
     ],
-    "answer": "42135151345354",
+    "answer": "124532425134523",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "부등호 ‹ 는 뾰족한 쪽이 작은 칸을 가리켜요. 작은 쪽 숫자부터 좁혀 봐요.",
-        "1행 2열은 2이에요.",
-        "2행 3열은 3이에요."
+        "3행 5열은 4이에요.",
+        "4행 4열은 2이에요."
       ],
       "en": [
         "The pointed end of an inequality sign ‹ points to the smaller cell. Narrow down the smaller side first.",
-        "Row 1, column 2 is 2.",
-        "Row 2, column 3 is 3."
+        "Row 3, column 5 is 4.",
+        "Row 4, column 4 is 2."
       ],
       "ja": [
         "不等号 ‹ は、とがった側が小さいマスを指します。小さい方から絞り込みましょう。",
-        "1行2列は2です。",
-        "2行3列は3です。"
+        "3行5列は4です。",
+        "4行4列は2です。"
       ],
       "zh": [
         "不等号 ‹ 的尖端指向较小的格子，先从较小的一侧缩小范围。",
-        "第1行第2列是2。",
-        "第2行第3列是3。"
+        "第3行第5列是4。",
+        "第4行第4列是2。"
       ],
       "es": [
         "El extremo puntiagudo del signo ‹ señala la casilla menor. Empieza acotando la casilla menor.",
-        "La fila 1, columna 2 es 2.",
-        "La fila 2, columna 3 es 3."
+        "La fila 3, columna 5 es 4.",
+        "La fila 4, columna 4 es 2."
       ],
       "fr": [
         "La pointe du signe ‹ désigne la case la plus petite. Commencez par restreindre la plus petite.",
-        "Ligne 1, colonne 2 : 2.",
-        "Ligne 2, colonne 3 : 3."
+        "Ligne 3, colonne 5 : 4.",
+        "Ligne 4, colonne 4 : 2."
       ],
       "de": [
         "Die Spitze des Zeichens ‹ zeigt auf das kleinere Feld. Grenze zuerst das kleinere Feld ein.",
-        "Zeile 1, Spalte 2 ist 2.",
-        "Zeile 2, Spalte 3 ist 3."
+        "Zeile 3, Spalte 5 ist 4.",
+        "Zeile 4, Spalte 4 ist 2."
       ]
     },
     "explanation": {
-      "ko": "42513 24351 51432 13245 35124",
-      "en": "42513 24351 51432 13245 35124",
-      "ja": "42513 24351 51432 13245 35124",
-      "zh": "42513 24351 51432 13245 35124",
-      "es": "42513 24351 51432 13245 35124",
-      "fr": "42513 24351 51432 13245 35124",
-      "de": "42513 24351 51432 13245 35124"
+      "ko": "12453 31245 25134 54321 43512",
+      "en": "12453 31245 25134 54321 43512",
+      "ja": "12453 31245 25134 54321 43512",
+      "zh": "12453 31245 25134 54321 43512",
+      "es": "12453 31245 25134 54321 43512",
+      "fr": "12453 31245 25134 54321 43512",
+      "de": "12453 31245 25134 54321 43512"
     }
   },
   {
@@ -68000,39 +67988,39 @@
     "order": 6,
     "board": [
       [
-        5,
         0,
+        1,
         0,
         0,
         0
       ],
       [
         0,
-        0,
-        0,
         2,
+        0,
+        0,
         4
       ],
       [
         0,
         0,
-        1,
-        5,
+        0,
+        0,
         0
       ],
       [
         3,
+        4,
         0,
-        0,
-        0,
-        5
+        5,
+        1
       ],
       [
         0,
         0,
-        5,
-        4,
-        1
+        1,
+        2,
+        5
       ]
     ],
     "rules": [
@@ -68042,83 +68030,83 @@
     "lt": [
       [
         0,
-        1,
-        0,
-        0
-      ],
-      [
-        1,
-        0,
-        1,
-        1
-      ],
-      [
-        1,
         3,
-        1,
+        0,
         2
       ],
       [
+        2,
+        2,
+        2,
+        1
+      ],
+      [
+        0,
+        4,
         1,
-        0,
-        0,
-        0
+        4
       ],
       [
         3,
-        3,
         2,
-        3
+        3,
+        1
+      ],
+      [
+        2,
+        0,
+        3,
+        0
       ]
     ],
-    "answer": "143215342342123",
+    "answer": "254353115432243",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "부등호 ‹ 는 뾰족한 쪽이 작은 칸을 가리켜요. 작은 쪽 숫자부터 좁혀 봐요.",
-        "2행 1열은 1이에요.",
-        "2행 3열은 3이에요."
+        "4행 3열은 2이에요.",
+        "5행 1열은 4이에요."
       ],
       "en": [
         "The pointed end of an inequality sign ‹ points to the smaller cell. Narrow down the smaller side first.",
-        "Row 2, column 1 is 1.",
-        "Row 2, column 3 is 3."
+        "Row 4, column 3 is 2.",
+        "Row 5, column 1 is 4."
       ],
       "ja": [
         "不等号 ‹ は、とがった側が小さいマスを指します。小さい方から絞り込みましょう。",
-        "2行1列は1です。",
-        "2行3列は3です。"
+        "4行3列は2です。",
+        "5行1列は4です。"
       ],
       "zh": [
         "不等号 ‹ 的尖端指向较小的格子，先从较小的一侧缩小范围。",
-        "第2行第1列是1。",
-        "第2行第3列是3。"
+        "第4行第3列是2。",
+        "第5行第1列是4。"
       ],
       "es": [
         "El extremo puntiagudo del signo ‹ señala la casilla menor. Empieza acotando la casilla menor.",
-        "La fila 2, columna 1 es 1.",
-        "La fila 2, columna 3 es 3."
+        "La fila 4, columna 3 es 2.",
+        "La fila 5, columna 1 es 4."
       ],
       "fr": [
         "La pointe du signe ‹ désigne la case la plus petite. Commencez par restreindre la plus petite.",
-        "Ligne 2, colonne 1 : 1.",
-        "Ligne 2, colonne 3 : 3."
+        "Ligne 4, colonne 3 : 2.",
+        "Ligne 5, colonne 1 : 4."
       ],
       "de": [
         "Die Spitze des Zeichens ‹ zeigt auf das kleinere Feld. Grenze zuerst das kleinere Feld ein.",
-        "Zeile 2, Spalte 1 ist 1.",
-        "Zeile 2, Spalte 3 ist 3."
+        "Zeile 4, Spalte 3 ist 2.",
+        "Zeile 5, Spalte 1 ist 4."
       ]
     },
     "explanation": {
-      "ko": "51432 15324 42153 34215 23541",
-      "en": "51432 15324 42153 34215 23541",
-      "ja": "51432 15324 42153 34215 23541",
-      "zh": "51432 15324 42153 34215 23541",
-      "es": "51432 15324 42153 34215 23541",
-      "fr": "51432 15324 42153 34215 23541",
-      "de": "51432 15324 42153 34215 23541"
+      "ko": "21543 52314 15432 34251 43125",
+      "en": "21543 52314 15432 34251 43125",
+      "ja": "21543 52314 15432 34251 43125",
+      "zh": "21543 52314 15432 34251 43125",
+      "es": "21543 52314 15432 34251 43125",
+      "fr": "21543 52314 15432 34251 43125",
+      "de": "21543 52314 15432 34251 43125"
     }
   },
   {
@@ -68354,49 +68342,49 @@
         0,
         0,
         0,
+        3,
         0,
+        4
+      ],
+      [
+        4,
         0,
+        3,
+        0,
+        6,
         0
       ],
       [
         3,
-        5,
-        6,
-        1,
+        0,
+        0,
+        0,
         4,
-        2
-      ],
-      [
-        0,
-        0,
-        1,
-        0,
-        2,
         0
       ],
       [
-        0,
-        0,
-        5,
-        6,
         1,
-        0
+        0,
+        4,
+        0,
+        0,
+        3
       ],
       [
-        5,
+        0,
+        4,
+        1,
+        0,
+        3,
+        6
+      ],
+      [
         2,
         3,
-        4,
-        6,
-        1
-      ],
-      [
         0,
+        4,
         1,
-        4,
-        0,
-        0,
-        5
+        0
       ]
     ],
     "rules": [
@@ -68404,54 +68392,54 @@
       "col",
       "box"
     ],
-    "answer": "1423564653234623",
+    "answer": "612551225616525265",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "굵은 선으로 나뉜 상자 안에도 1부터 6까지 한 번씩 들어가요.",
-        "1행 2열은 4이에요.",
-        "1행 3열은 2이에요."
+        "5행 1열은 5이에요.",
+        "6행 6열은 5이에요."
       ],
       "en": [
         "Each box outlined by thick lines also holds 1 to 6 exactly once.",
-        "Row 1, column 2 is 4.",
-        "Row 1, column 3 is 2."
+        "Row 5, column 1 is 5.",
+        "Row 6, column 6 is 5."
       ],
       "ja": [
         "太い線で区切られたブロックの中にも、1から6までが1回ずつ入ります。",
-        "1行2列は4です。",
-        "1行3列は2です。"
+        "5行1列は5です。",
+        "6行6列は5です。"
       ],
       "zh": [
         "粗线围出的每个方块里，1到6也各出现一次。",
-        "第1行第2列是4。",
-        "第1行第3列是2。"
+        "第5行第1列是5。",
+        "第6行第6列是5。"
       ],
       "es": [
         "Cada recuadro delimitado por líneas gruesas también contiene del 1 al 6 una sola vez.",
-        "La fila 1, columna 2 es 4.",
-        "La fila 1, columna 3 es 2."
+        "La fila 5, columna 1 es 5.",
+        "La fila 6, columna 6 es 5."
       ],
       "fr": [
         "Chaque bloc délimité par des traits épais contient aussi de 1 à 6 une seule fois.",
-        "Ligne 1, colonne 2 : 4.",
-        "Ligne 1, colonne 3 : 2."
+        "Ligne 5, colonne 1 : 5.",
+        "Ligne 6, colonne 6 : 5."
       ],
       "de": [
         "Auch in jedem dick umrandeten Block steht 1 bis 6 genau einmal.",
-        "Zeile 1, Spalte 2 ist 4.",
-        "Zeile 1, Spalte 3 ist 2."
+        "Zeile 5, Spalte 1 ist 5.",
+        "Zeile 6, Spalte 6 ist 5."
       ]
     },
     "explanation": {
-      "ko": "142356 356142 461523 235614 523461 614235",
-      "en": "142356 356142 461523 235614 523461 614235",
-      "ja": "142356 356142 461523 235614 523461 614235",
-      "zh": "142356 356142 461523 235614 523461 614235",
-      "es": "142356 356142 461523 235614 523461 614235",
-      "fr": "142356 356142 461523 235614 523461 614235",
-      "de": "142356 356142 461523 235614 523461 614235"
+      "ko": "612354 453162 325641 164523 541236 236415",
+      "en": "612354 453162 325641 164523 541236 236415",
+      "ja": "612354 453162 325641 164523 541236 236415",
+      "zh": "612354 453162 325641 164523 541236 236415",
+      "es": "612354 453162 325641 164523 541236 236415",
+      "fr": "612354 453162 325641 164523 541236 236415",
+      "de": "612354 453162 325641 164523 541236 236415"
     }
   },
   {
@@ -68462,52 +68450,52 @@
     "order": 4,
     "board": [
       [
+        5,
+        0,
         0,
         4,
-        6,
         0,
-        5,
-        1
+        6
       ],
       [
+        4,
+        0,
         0,
         5,
         1,
-        0,
-        4,
         0
       ],
       [
-        6,
-        0,
-        0,
-        2,
-        1,
-        5
-      ],
-      [
-        1,
-        0,
-        5,
-        0,
-        6,
-        0
-      ],
-      [
-        5,
-        0,
-        2,
-        1,
         3,
+        4,
+        0,
+        0,
+        0,
         0
       ],
       [
-        0,
-        0,
+        6,
         0,
         5,
-        2,
+        0,
+        0,
         0
+      ],
+      [
+        2,
+        0,
+        4,
+        0,
+        6,
+        0
+      ],
+      [
+        1,
+        6,
+        0,
+        2,
+        4,
+        5
       ]
     ],
     "rules": [
@@ -68515,54 +68503,54 @@
       "col",
       "box"
     ],
-    "answer": "2336234243644136",
+    "answer": "213362265113245133",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "굵은 선으로 나뉜 상자 안에도 1부터 6까지 한 번씩 들어가요.",
-        "1행 4열은 3이에요.",
-        "3행 2열은 3이에요."
+        "6행 3열은 3이에요.",
+        "2행 3열은 6이에요."
       ],
       "en": [
         "Each box outlined by thick lines also holds 1 to 6 exactly once.",
-        "Row 1, column 4 is 3.",
-        "Row 3, column 2 is 3."
+        "Row 6, column 3 is 3.",
+        "Row 2, column 3 is 6."
       ],
       "ja": [
         "太い線で区切られたブロックの中にも、1から6までが1回ずつ入ります。",
-        "1行4列は3です。",
-        "3行2列は3です。"
+        "6行3列は3です。",
+        "2行3列は6です。"
       ],
       "zh": [
         "粗线围出的每个方块里，1到6也各出现一次。",
-        "第1行第4列是3。",
-        "第3行第2列是3。"
+        "第6行第3列是3。",
+        "第2行第3列是6。"
       ],
       "es": [
         "Cada recuadro delimitado por líneas gruesas también contiene del 1 al 6 una sola vez.",
-        "La fila 1, columna 4 es 3.",
-        "La fila 3, columna 2 es 3."
+        "La fila 6, columna 3 es 3.",
+        "La fila 2, columna 3 es 6."
       ],
       "fr": [
         "Chaque bloc délimité par des traits épais contient aussi de 1 à 6 une seule fois.",
-        "Ligne 1, colonne 4 : 3.",
-        "Ligne 3, colonne 2 : 3."
+        "Ligne 6, colonne 3 : 3.",
+        "Ligne 2, colonne 3 : 6."
       ],
       "de": [
         "Auch in jedem dick umrandeten Block steht 1 bis 6 genau einmal.",
-        "Zeile 1, Spalte 4 ist 3.",
-        "Zeile 3, Spalte 2 ist 3."
+        "Zeile 6, Spalte 3 ist 3.",
+        "Zeile 2, Spalte 3 ist 6."
       ]
     },
     "explanation": {
-      "ko": "246351 351642 634215 125463 562134 413526",
-      "en": "246351 351642 634215 125463 562134 413526",
-      "ja": "246351 351642 634215 125463 562134 413526",
-      "zh": "246351 351642 634215 125463 562134 413526",
-      "es": "246351 351642 634215 125463 562134 413526",
-      "fr": "246351 351642 634215 125463 562134 413526",
-      "de": "246351 351642 634215 125463 562134 413526"
+      "ko": "521436 436512 342651 615324 254163 163245",
+      "en": "521436 436512 342651 615324 254163 163245",
+      "ja": "521436 436512 342651 615324 254163 163245",
+      "zh": "521436 436512 342651 615324 254163 163245",
+      "es": "521436 436512 342651 615324 254163 163245",
+      "fr": "521436 436512 342651 615324 254163 163245",
+      "de": "521436 436512 342651 615324 254163 163245"
     }
   },
   {
@@ -68573,52 +68561,52 @@
     "order": 5,
     "board": [
       [
-        0,
-        0,
-        6,
         3,
-        0,
-        5
-      ],
-      [
         0,
         5,
         0,
-        0,
-        0,
-        4
-      ],
-      [
-        5,
-        0,
-        2,
-        0,
-        3,
+        1,
         0
       ],
       [
         0,
-        0,
-        4,
-        0,
+        1,
+        2,
         5,
-        2
+        0,
+        0
       ],
       [
-        6,
-        0,
         5,
+        0,
+        3,
         1,
         0,
         0
       ],
       [
-        4,
+        1,
+        0,
+        0,
         0,
         3,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
         5,
-        2,
-        6
+        1
+      ],
+      [
+        0,
+        5,
+        1,
+        3,
+        0,
+        4
       ]
     ],
     "rules": [
@@ -68626,54 +68614,54 @@
       "col",
       "box"
     ],
-    "answer": "24131266411362431",
+    "answer": "642463246462234662",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "굵은 선으로 나뉜 상자 안에도 1부터 6까지 한 번씩 들어가요.",
-        "1행 5열은 1이에요.",
-        "2행 3열은 1이에요."
+        "2행 6열은 3이에요.",
+        "5행 2열은 3이에요."
       ],
       "en": [
         "Each box outlined by thick lines also holds 1 to 6 exactly once.",
-        "Row 1, column 5 is 1.",
-        "Row 2, column 3 is 1."
+        "Row 2, column 6 is 3.",
+        "Row 5, column 2 is 3."
       ],
       "ja": [
         "太い線で区切られたブロックの中にも、1から6までが1回ずつ入ります。",
-        "1行5列は1です。",
-        "2行3列は1です。"
+        "2行6列は3です。",
+        "5行2列は3です。"
       ],
       "zh": [
         "粗线围出的每个方块里，1到6也各出现一次。",
-        "第1行第5列是1。",
-        "第2行第3列是1。"
+        "第2行第6列是3。",
+        "第5行第2列是3。"
       ],
       "es": [
         "Cada recuadro delimitado por líneas gruesas también contiene del 1 al 6 una sola vez.",
-        "La fila 1, columna 5 es 1.",
-        "La fila 2, columna 3 es 1."
+        "La fila 2, columna 6 es 3.",
+        "La fila 5, columna 2 es 3."
       ],
       "fr": [
         "Chaque bloc délimité par des traits épais contient aussi de 1 à 6 une seule fois.",
-        "Ligne 1, colonne 5 : 1.",
-        "Ligne 2, colonne 3 : 1."
+        "Ligne 2, colonne 6 : 3.",
+        "Ligne 5, colonne 2 : 3."
       ],
       "de": [
         "Auch in jedem dick umrandeten Block steht 1 bis 6 genau einmal.",
-        "Zeile 1, Spalte 5 ist 1.",
-        "Zeile 2, Spalte 3 ist 1."
+        "Zeile 2, Spalte 6 ist 3.",
+        "Zeile 5, Spalte 2 ist 3."
       ]
     },
     "explanation": {
-      "ko": "246315 351264 562431 134652 625143 413526",
-      "en": "246315 351264 562431 134652 625143 413526",
-      "ja": "246315 351264 562431 134652 625143 413526",
-      "zh": "246315 351264 562431 134652 625143 413526",
-      "es": "246315 351264 562431 134652 625143 413526",
-      "fr": "246315 351264 562431 134652 625143 413526",
-      "de": "246315 351264 562431 134652 625143 413526"
+      "ko": "365412 412563 523146 146235 234651 651324",
+      "en": "365412 412563 523146 146235 234651 651324",
+      "ja": "365412 412563 523146 146235 234651 651324",
+      "zh": "365412 412563 523146 146235 234651 651324",
+      "es": "365412 412563 523146 146235 234651 651324",
+      "fr": "365412 412563 523146 146235 234651 651324",
+      "de": "365412 412563 523146 146235 234651 651324"
     }
   },
   {
@@ -68684,50 +68672,50 @@
     "order": 6,
     "board": [
       [
-        4,
-        3,
-        5,
-        1,
         0,
+        0,
+        0,
+        0,
+        6,
+        0
+      ],
+      [
+        0,
+        5,
+        6,
+        4,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        4,
+        5,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        5,
+        0,
+        4,
         6
       ],
       [
         0,
         6,
         0,
-        3,
-        4,
-        5
-      ],
-      [
-        0,
-        1,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        6,
-        3,
-        0
-      ],
-      [
-        2,
-        0,
-        1,
-        0,
-        6,
-        0
-      ],
-      [
         0,
         5,
-        3,
+        2
+      ],
+      [
+        5,
         0,
+        0,
+        6,
         0,
         4
       ]
@@ -68737,54 +68725,54 @@
       "col",
       "box"
     ],
-    "answer": "212364525241453621",
+    "answer": "243151232332413321",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "굵은 선으로 나뉜 상자 안에도 1부터 6까지 한 번씩 들어가요.",
-        "1행 5열은 2이에요.",
-        "2행 1열은 1이에요."
+        "2행 6열은 3이에요.",
+        "1행 6열은 5이에요."
       ],
       "en": [
         "Each box outlined by thick lines also holds 1 to 6 exactly once.",
-        "Row 1, column 5 is 2.",
-        "Row 2, column 1 is 1."
+        "Row 2, column 6 is 3.",
+        "Row 1, column 6 is 5."
       ],
       "ja": [
         "太い線で区切られたブロックの中にも、1から6までが1回ずつ入ります。",
-        "1行5列は2です。",
-        "2行1列は1です。"
+        "2行6列は3です。",
+        "1行6列は5です。"
       ],
       "zh": [
         "粗线围出的每个方块里，1到6也各出现一次。",
-        "第1行第5列是2。",
-        "第2行第1列是1。"
+        "第2行第6列是3。",
+        "第1行第6列是5。"
       ],
       "es": [
         "Cada recuadro delimitado por líneas gruesas también contiene del 1 al 6 una sola vez.",
-        "La fila 1, columna 5 es 2.",
-        "La fila 2, columna 1 es 1."
+        "La fila 2, columna 6 es 3.",
+        "La fila 1, columna 6 es 5."
       ],
       "fr": [
         "Chaque bloc délimité par des traits épais contient aussi de 1 à 6 une seule fois.",
-        "Ligne 1, colonne 5 : 2.",
-        "Ligne 2, colonne 1 : 1."
+        "Ligne 2, colonne 6 : 3.",
+        "Ligne 1, colonne 6 : 5."
       ],
       "de": [
         "Auch in jedem dick umrandeten Block steht 1 bis 6 genau einmal.",
-        "Zeile 1, Spalte 5 ist 2.",
-        "Zeile 2, Spalte 1 ist 1."
+        "Zeile 2, Spalte 6 ist 3.",
+        "Zeile 1, Spalte 6 ist 5."
       ]
     },
     "explanation": {
-      "ko": "435126 162345 316452 524631 241563 653214",
-      "en": "435126 162345 316452 524631 241563 653214",
-      "ja": "435126 162345 316452 524631 241563 653214",
-      "zh": "435126 162345 316452 524631 241563 653214",
-      "es": "435126 162345 316452 524631 241563 653214",
-      "fr": "435126 162345 316452 524631 241563 653214",
-      "de": "435126 162345 316452 524631 241563 653214"
+      "ko": "243165 156423 624531 315246 461352 532614",
+      "en": "243165 156423 624531 315246 461352 532614",
+      "ja": "243165 156423 624531 315246 461352 532614",
+      "zh": "243165 156423 624531 315246 461352 532614",
+      "es": "243165 156423 624531 315246 461352 532614",
+      "fr": "243165 156423 624531 315246 461352 532614",
+      "de": "243165 156423 624531 315246 461352 532614"
     }
   },
   {
@@ -68938,39 +68926,39 @@
     "order": 2,
     "board": [
       [
-        2,
         0,
-        5,
-        1,
+        0,
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
         0
       ],
       [
         0,
-        1,
         0,
-        4,
-        0
+        0,
+        0,
+        1
       ],
       [
-        4,
         0,
+        1,
         0,
         0,
         3
       ],
       [
-        5,
-        4,
+        3,
         0,
-        2,
-        0
-      ],
-      [
+        1,
         0,
-        0,
-        0,
-        0,
-        0
+        4
       ]
     ],
     "rules": [
@@ -68979,98 +68967,93 @@
     ],
     "cages": [
       [
-        5,
+        9,
+        4,
+        3,
+        4,
+        4
+      ],
+      [
+        9,
         0,
         0,
         0,
-        1
+        1,
+        0,
+        2
+      ],
+      [
+        12,
+        2,
+        1,
+        2,
+        2,
+        3,
+        2
       ],
       [
         6,
-        4,
         0,
-        4,
-        1
+        3,
+        0,
+        4
       ],
       [
-        9,
-        0,
-        4,
+        7,
         1,
-        4
-      ],
-      [
         3,
-        3,
-        3,
-        3,
-        4
-      ],
-      [
-        9,
-        4,
         2,
-        4,
-        3,
-        4,
-        4
-      ],
-      [
-        5,
-        0,
-        3,
-        1,
         3
       ]
     ],
-    "answer": "343252153115432",
+    "answer": "43211452253454225",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "점선으로 묶인 칸들의 합이 모서리의 숫자와 같아요. 묶음 안에서는 같은 숫자를 쓰지 않아요.",
-        "1행 2열은 3이에요.",
-        "1행 5열은 4이에요."
+        "1행 4열은 1이에요.",
+        "2행 5열은 2이에요."
       ],
       "en": [
         "The cells inside a dotted outline add up to the number in its corner. A number is not repeated inside one outline.",
-        "Row 1, column 2 is 3.",
-        "Row 1, column 5 is 4."
+        "Row 1, column 4 is 1.",
+        "Row 2, column 5 is 2."
       ],
       "ja": [
         "点線で囲まれたマスの合計が、角の数字と同じになります。囲みの中で同じ数字は使いません。",
-        "1行2列は3です。",
-        "1行5列は4です。"
+        "1行4列は1です。",
+        "2行5列は2です。"
       ],
       "zh": [
         "虚线框内的格子之和等于角上的数字，同一个框里不会有重复数字。",
-        "第1行第2列是3。",
-        "第1行第5列是4。"
+        "第1行第4列是1。",
+        "第2行第5列是2。"
       ],
       "es": [
         "Las casillas dentro de un contorno punteado suman el número de su esquina. No se repite número dentro de un contorno.",
-        "La fila 1, columna 2 es 3.",
-        "La fila 1, columna 5 es 4."
+        "La fila 1, columna 4 es 1.",
+        "La fila 2, columna 5 es 2."
       ],
       "fr": [
         "Les cases d'un contour pointillé ont pour somme le nombre indiqué dans son coin. Aucun chiffre ne se répète dans un contour.",
-        "Ligne 1, colonne 2 : 3.",
-        "Ligne 1, colonne 5 : 4."
+        "Ligne 1, colonne 4 : 1.",
+        "Ligne 2, colonne 5 : 2."
       ],
       "de": [
         "Die Felder in einer gestrichelten Umrandung ergeben zusammen die Zahl in der Ecke. Innerhalb einer Umrandung wiederholt sich keine Zahl.",
-        "Zeile 1, Spalte 2 ist 3.",
-        "Zeile 1, Spalte 5 ist 4."
+        "Zeile 1, Spalte 4 ist 1.",
+        "Zeile 2, Spalte 5 ist 2."
       ]
     },
     "explanation": {
-      "ko": "23514 31245 42153 54321 15432",
-      "en": "23514 31245 42153 54321 15432",
-      "ja": "23514 31245 42153 54321 15432",
-      "zh": "23514 31245 42153 54321 15432",
-      "es": "23514 31245 42153 54321 15432",
-      "fr": "23514 31245 42153 54321 15432",
-      "de": "23514 31245 42153 54321 15432"
+      "ko": "43215 14532 25341 51423 32154",
+      "en": "43215 14532 25341 51423 32154",
+      "ja": "43215 14532 25341 51423 32154",
+      "zh": "43215 14532 25341 51423 32154",
+      "es": "43215 14532 25341 51423 32154",
+      "fr": "43215 14532 25341 51423 32154",
+      "de": "43215 14532 25341 51423 32154"
     }
   },
   {
@@ -69081,36 +69064,308 @@
     "order": 3,
     "board": [
       [
-        4,
-        2,
-        5,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        4,
-        0
-      ],
-      [
         0,
         0,
         0,
         0,
-        0
+        2
       ],
       [
         1,
         0,
+        0,
+        0,
+        4
+      ],
+      [
+        4,
         3,
-        2,
+        0,
+        0,
         5
       ],
       [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        3
+      ]
+    ],
+    "rules": [
+      "row",
+      "col"
+    ],
+    "cages": [
+      [
+        5,
+        0,
+        1,
+        0,
+        2
+      ],
+      [
+        10,
+        2,
+        3,
+        3,
+        3,
+        4,
+        3
+      ],
+      [
+        6,
+        2,
+        4,
+        3,
+        4
+      ],
+      [
+        6,
+        3,
+        1,
+        4,
+        1
+      ],
+      [
         5,
         1,
+        0,
+        2,
+        0
+      ]
+    ],
+    "answer": "51435322132541415",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "점선으로 묶인 칸들의 합이 모서리의 숫자와 같아요. 묶음 안에서는 같은 숫자를 쓰지 않아요.",
+        "4행 5열은 1이에요.",
+        "1행 1열은 5이에요."
+      ],
+      "en": [
+        "The cells inside a dotted outline add up to the number in its corner. A number is not repeated inside one outline.",
+        "Row 4, column 5 is 1.",
+        "Row 1, column 1 is 5."
+      ],
+      "ja": [
+        "点線で囲まれたマスの合計が、角の数字と同じになります。囲みの中で同じ数字は使いません。",
+        "4行5列は1です。",
+        "1行1列は5です。"
+      ],
+      "zh": [
+        "虚线框内的格子之和等于角上的数字，同一个框里不会有重复数字。",
+        "第4行第5列是1。",
+        "第1行第1列是5。"
+      ],
+      "es": [
+        "Las casillas dentro de un contorno punteado suman el número de su esquina. No se repite número dentro de un contorno.",
+        "La fila 4, columna 5 es 1.",
+        "La fila 1, columna 1 es 5."
+      ],
+      "fr": [
+        "Les cases d'un contour pointillé ont pour somme le nombre indiqué dans son coin. Aucun chiffre ne se répète dans un contour.",
+        "Ligne 4, colonne 5 : 1.",
+        "Ligne 1, colonne 1 : 5."
+      ],
+      "de": [
+        "Die Felder in einer gestrichelten Umrandung ergeben zusammen die Zahl in der Ecke. Innerhalb einer Umrandung wiederholt sich keine Zahl.",
+        "Zeile 4, Spalte 5 ist 1.",
+        "Zeile 1, Spalte 1 ist 5."
+      ]
+    },
+    "explanation": {
+      "ko": "51432 15324 43215 32541 24153",
+      "en": "51432 15324 43215 32541 24153",
+      "ja": "51432 15324 43215 32541 24153",
+      "zh": "51432 15324 43215 32541 24153",
+      "es": "51432 15324 43215 32541 24153",
+      "fr": "51432 15324 43215 32541 24153",
+      "de": "51432 15324 43215 32541 24153"
+    }
+  },
+  {
+    "id": "fx9_s04",
+    "type": "fill",
+    "track": "fill",
+    "chapter": 9,
+    "order": 4,
+    "board": [
+      [
+        0,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        5,
+        2
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        5
+      ],
+      [
+        0,
+        0,
+        5,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "rules": [
+      "row",
+      "col"
+    ],
+    "cages": [
+      [
+        4,
+        0,
+        3,
+        0,
+        4
+      ],
+      [
+        5,
+        2,
+        0,
+        3,
+        0
+      ],
+      [
+        5,
+        3,
+        4,
+        4,
+        4
+      ],
+      [
+        10,
+        3,
+        2,
+        4,
+        2,
+        4,
+        3
+      ],
+      [
+        8,
+        0,
+        1,
+        1,
+        1
+      ]
+    ],
+    "answer": "45211343242135432",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "점선으로 묶인 칸들의 합이 모서리의 숫자와 같아요. 묶음 안에서는 같은 숫자를 쓰지 않아요.",
+        "1행 4열은 1이에요.",
+        "2행 1열은 1이에요."
+      ],
+      "en": [
+        "The cells inside a dotted outline add up to the number in its corner. A number is not repeated inside one outline.",
+        "Row 1, column 4 is 1.",
+        "Row 2, column 1 is 1."
+      ],
+      "ja": [
+        "点線で囲まれたマスの合計が、角の数字と同じになります。囲みの中で同じ数字は使いません。",
+        "1行4列は1です。",
+        "2行1列は1です。"
+      ],
+      "zh": [
+        "虚线框内的格子之和等于角上的数字，同一个框里不会有重复数字。",
+        "第1行第4列是1。",
+        "第2行第1列是1。"
+      ],
+      "es": [
+        "Las casillas dentro de un contorno punteado suman el número de su esquina. No se repite número dentro de un contorno.",
+        "La fila 1, columna 4 es 1.",
+        "La fila 2, columna 1 es 1."
+      ],
+      "fr": [
+        "Les cases d'un contour pointillé ont pour somme le nombre indiqué dans son coin. Aucun chiffre ne se répète dans un contour.",
+        "Ligne 1, colonne 4 : 1.",
+        "Ligne 2, colonne 1 : 1."
+      ],
+      "de": [
+        "Die Felder in einer gestrichelten Umrandung ergeben zusammen die Zahl in der Ecke. Innerhalb einer Umrandung wiederholt sich keine Zahl.",
+        "Zeile 1, Spalte 4 ist 1.",
+        "Zeile 2, Spalte 1 ist 1."
+      ]
+    },
+    "explanation": {
+      "ko": "45213 13452 32145 21534 54321",
+      "en": "45213 13452 32145 21534 54321",
+      "ja": "45213 13452 32145 21534 54321",
+      "zh": "45213 13452 32145 21534 54321",
+      "es": "45213 13452 32145 21534 54321",
+      "fr": "45213 13452 32145 21534 54321",
+      "de": "45213 13452 32145 21534 54321"
+    }
+  },
+  {
+    "id": "fx9_s05",
+    "type": "fill",
+    "track": "fill",
+    "chapter": 9,
+    "order": 5,
+    "board": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        5,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        5,
+        4,
         0,
         0,
         0
@@ -69122,44 +69377,37 @@
     ],
     "cages": [
       [
-        9,
+        7,
+        0,
         2,
+        0,
+        3
+      ],
+      [
+        9,
+        1,
+        2,
+        2,
+        2
+      ],
+      [
+        10,
+        0,
         4,
-        3,
+        1,
+        4,
+        2,
         4
       ],
       [
-        12,
-        0,
-        0,
+        8,
         1,
         0,
         1,
         1
-      ],
-      [
-        7,
-        0,
-        2,
-        1,
-        2
-      ],
-      [
-        9,
-        1,
-        3,
-        2,
-        3
-      ],
-      [
-        4,
-        0,
-        3,
-        0,
-        4
       ]
     ],
-    "answer": "133521231544432",
+    "answer": "12345352134352213",
     "inputType": "choices",
     "choices": null,
     "hints": {
@@ -69200,280 +69448,13 @@
       ]
     },
     "explanation": {
-      "ko": "42513 35241 23154 14325 51432",
-      "en": "42513 35241 23154 14325 51432",
-      "ja": "42513 35241 23154 14325 51432",
-      "zh": "42513 35241 23154 14325 51432",
-      "es": "42513 35241 23154 14325 51432",
-      "fr": "42513 35241 23154 14325 51432",
-      "de": "42513 35241 23154 14325 51432"
-    }
-  },
-  {
-    "id": "fx9_s04",
-    "type": "fill",
-    "track": "fill",
-    "chapter": 9,
-    "order": 4,
-    "board": [
-      [
-        3,
-        0,
-        0,
-        5,
-        4
-      ],
-      [
-        0,
-        3,
-        1,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        1
-      ],
-      [
-        2,
-        0,
-        0,
-        0,
-        3
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        2
-      ]
-    ],
-    "rules": [
-      "row",
-      "col"
-    ],
-    "cages": [
-      [
-        8,
-        2,
-        2,
-        3,
-        2
-      ],
-      [
-        6,
-        1,
-        4,
-        2,
-        4
-      ],
-      [
-        7,
-        0,
-        0,
-        1,
-        0
-      ],
-      [
-        6,
-        3,
-        3,
-        3,
-        4,
-        4,
-        4
-      ],
-      [
-        12,
-        4,
-        1,
-        4,
-        2,
-        4,
-        3
-      ]
-    ],
-    "answer": "1242552344511543",
-    "inputType": "choices",
-    "choices": null,
-    "hints": {
-      "ko": [
-        "점선으로 묶인 칸들의 합이 모서리의 숫자와 같아요. 묶음 안에서는 같은 숫자를 쓰지 않아요.",
-        "1행 3열은 2이에요.",
-        "2행 1열은 4이에요."
-      ],
-      "en": [
-        "The cells inside a dotted outline add up to the number in its corner. A number is not repeated inside one outline.",
-        "Row 1, column 3 is 2.",
-        "Row 2, column 1 is 4."
-      ],
-      "ja": [
-        "点線で囲まれたマスの合計が、角の数字と同じになります。囲みの中で同じ数字は使いません。",
-        "1行3列は2です。",
-        "2行1列は4です。"
-      ],
-      "zh": [
-        "虚线框内的格子之和等于角上的数字，同一个框里不会有重复数字。",
-        "第1行第3列是2。",
-        "第2行第1列是4。"
-      ],
-      "es": [
-        "Las casillas dentro de un contorno punteado suman el número de su esquina. No se repite número dentro de un contorno.",
-        "La fila 1, columna 3 es 2.",
-        "La fila 2, columna 1 es 4."
-      ],
-      "fr": [
-        "Les cases d'un contour pointillé ont pour somme le nombre indiqué dans son coin. Aucun chiffre ne se répète dans un contour.",
-        "Ligne 1, colonne 3 : 2.",
-        "Ligne 2, colonne 1 : 4."
-      ],
-      "de": [
-        "Die Felder in einer gestrichelten Umrandung ergeben zusammen die Zahl in der Ecke. Innerhalb einer Umrandung wiederholt sich keine Zahl.",
-        "Zeile 1, Spalte 3 ist 2.",
-        "Zeile 2, Spalte 1 ist 4."
-      ]
-    },
-    "explanation": {
-      "ko": "31254 43125 52341 24513 15432",
-      "en": "31254 43125 52341 24513 15432",
-      "ja": "31254 43125 52341 24513 15432",
-      "zh": "31254 43125 52341 24513 15432",
-      "es": "31254 43125 52341 24513 15432",
-      "fr": "31254 43125 52341 24513 15432",
-      "de": "31254 43125 52341 24513 15432"
-    }
-  },
-  {
-    "id": "fx9_s05",
-    "type": "fill",
-    "track": "fill",
-    "chapter": 9,
-    "order": 5,
-    "board": [
-      [
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        3,
-        0,
-        4,
-        1,
-        0
-      ],
-      [
-        5,
-        0,
-        2,
-        0,
-        0
-      ],
-      [
-        1,
-        2,
-        0,
-        0,
-        0
-      ],
-      [
-        2,
-        3,
-        0,
-        0,
-        0
-      ]
-    ],
-    "rules": [
-      "row",
-      "col"
-    ],
-    "cages": [
-      [
-        3,
-        3,
-        0,
-        4,
-        0
-      ],
-      [
-        12,
-        3,
-        4,
-        4,
-        3,
-        4,
-        4
-      ],
-      [
-        5,
-        3,
-        1,
-        4,
-        1
-      ],
-      [
-        3,
-        1,
-        4,
-        2,
-        4
-      ]
-    ],
-    "answer": "4132552431543154",
-    "inputType": "choices",
-    "choices": null,
-    "hints": {
-      "ko": [
-        "점선으로 묶인 칸들의 합이 모서리의 숫자와 같아요. 묶음 안에서는 같은 숫자를 쓰지 않아요.",
-        "1행 1열은 4이에요.",
-        "2행 2열은 5이에요."
-      ],
-      "en": [
-        "The cells inside a dotted outline add up to the number in its corner. A number is not repeated inside one outline.",
-        "Row 1, column 1 is 4.",
-        "Row 2, column 2 is 5."
-      ],
-      "ja": [
-        "点線で囲まれたマスの合計が、角の数字と同じになります。囲みの中で同じ数字は使いません。",
-        "1行1列は4です。",
-        "2行2列は5です。"
-      ],
-      "zh": [
-        "虚线框内的格子之和等于角上的数字，同一个框里不会有重复数字。",
-        "第1行第1列是4。",
-        "第2行第2列是5。"
-      ],
-      "es": [
-        "Las casillas dentro de un contorno punteado suman el número de su esquina. No se repite número dentro de un contorno.",
-        "La fila 1, columna 1 es 4.",
-        "La fila 2, columna 2 es 5."
-      ],
-      "fr": [
-        "Les cases d'un contour pointillé ont pour somme le nombre indiqué dans son coin. Aucun chiffre ne se répète dans un contour.",
-        "Ligne 1, colonne 1 : 4.",
-        "Ligne 2, colonne 2 : 5."
-      ],
-      "de": [
-        "Die Felder in einer gestrichelten Umrandung ergeben zusammen die Zahl in der Ecke. Innerhalb einer Umrandung wiederholt sich keine Zahl.",
-        "Zeile 1, Spalte 1 ist 4.",
-        "Zeile 2, Spalte 2 ist 5."
-      ]
-    },
-    "explanation": {
-      "ko": "41325 35412 54231 12543 23154",
-      "en": "41325 35412 54231 12543 23154",
-      "ja": "41325 35412 54231 12543 23154",
-      "zh": "41325 35412 54231 12543 23154",
-      "es": "41325 35412 54231 12543 23154",
-      "fr": "41325 35412 54231 12543 23154",
-      "de": "41325 35412 54231 12543 23154"
+      "ko": "12345 35421 21534 43152 54213",
+      "en": "12345 35421 21534 43152 54213",
+      "ja": "12345 35421 21534 43152 54213",
+      "zh": "12345 35421 21534 43152 54213",
+      "es": "12345 35421 21534 43152 54213",
+      "fr": "12345 35421 21534 43152 54213",
+      "de": "12345 35421 21534 43152 54213"
     }
   },
   {
@@ -69484,6 +69465,27 @@
     "order": 6,
     "board": [
       [
+        3,
+        0,
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
         0,
         0,
         0,
@@ -69491,32 +69493,11 @@
         1
       ],
       [
-        1,
-        5,
-        3,
-        0,
-        4
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        1,
-        0,
-        5
-      ],
-      [
-        0,
-        0,
         5,
         0,
-        0
+        0,
+        0,
+        3
       ]
     ],
     "rules": [
@@ -69525,86 +69506,86 @@
     ],
     "cages": [
       [
-        7,
+        3,
         0,
-        0,
-        0,
-        1
-      ],
-      [
-        4,
         2,
+        0,
+        3
+      ],
+      [
+        4,
         1,
-        3,
+        0,
+        1,
         1
       ],
       [
-        7,
-        0,
-        4,
-        1,
+        10,
+        2,
+        2,
         3,
         1,
-        4
+        3,
+        2
       ],
       [
         11,
         3,
-        3,
-        3,
+        0,
         4,
+        0,
         4,
-        4
+        1
       ]
     ],
-    "answer": "52432412532343412",
+    "answer": "45354213544523241",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "점선으로 묶인 칸들의 합이 모서리의 숫자와 같아요. 묶음 안에서는 같은 숫자를 쓰지 않아요.",
-        "2행 4열은 2이에요.",
-        "1행 3열은 4이에요."
+        "2행 2열은 3이에요.",
+        "5행 4열은 1이에요."
       ],
       "en": [
         "The cells inside a dotted outline add up to the number in its corner. A number is not repeated inside one outline.",
-        "Row 2, column 4 is 2.",
-        "Row 1, column 3 is 4."
+        "Row 2, column 2 is 3.",
+        "Row 5, column 4 is 1."
       ],
       "ja": [
         "点線で囲まれたマスの合計が、角の数字と同じになります。囲みの中で同じ数字は使いません。",
-        "2行4列は2です。",
-        "1行3列は4です。"
+        "2行2列は3です。",
+        "5行4列は1です。"
       ],
       "zh": [
         "虚线框内的格子之和等于角上的数字，同一个框里不会有重复数字。",
-        "第2行第4列是2。",
-        "第1行第3列是4。"
+        "第2行第2列是3。",
+        "第5行第4列是1。"
       ],
       "es": [
         "Las casillas dentro de un contorno punteado suman el número de su esquina. No se repite número dentro de un contorno.",
-        "La fila 2, columna 4 es 2.",
-        "La fila 1, columna 3 es 4."
+        "La fila 2, columna 2 es 3.",
+        "La fila 5, columna 4 es 1."
       ],
       "fr": [
         "Les cases d'un contour pointillé ont pour somme le nombre indiqué dans son coin. Aucun chiffre ne se répète dans un contour.",
-        "Ligne 2, colonne 4 : 2.",
-        "Ligne 1, colonne 3 : 4."
+        "Ligne 2, colonne 2 : 3.",
+        "Ligne 5, colonne 4 : 1."
       ],
       "de": [
         "Die Felder in einer gestrichelten Umrandung ergeben zusammen die Zahl in der Ecke. Innerhalb einer Umrandung wiederholt sich keine Zahl.",
-        "Zeile 2, Spalte 4 ist 2.",
-        "Zeile 1, Spalte 3 ist 4."
+        "Zeile 2, Spalte 2 ist 3.",
+        "Zeile 5, Spalte 4 ist 1."
       ]
     },
     "explanation": {
-      "ko": "52431 15324 41253 23145 34512",
-      "en": "52431 15324 41253 23145 34512",
-      "ja": "52431 15324 41253 23145 34512",
-      "zh": "52431 15324 41253 23145 34512",
-      "es": "52431 15324 41253 23145 34512",
-      "fr": "52431 15324 41253 23145 34512",
-      "de": "52431 15324 41253 23145 34512"
+      "ko": "34125 13542 21354 45231 52413",
+      "en": "34125 13542 21354 45231 52413",
+      "ja": "34125 13542 21354 45231 52413",
+      "zh": "34125 13542 21354 45231 52413",
+      "es": "34125 13542 21354 45231 52413",
+      "fr": "34125 13542 21354 45231 52413",
+      "de": "34125 13542 21354 45231 52413"
     }
   },
   {
@@ -70292,52 +70273,52 @@
     "order": 2,
     "board": [
       [
-        6,
-        3,
+        0,
+        5,
         0,
         0,
         0,
         4
       ],
       [
-        1,
         0,
-        2,
-        0,
-        0,
-        5
-      ],
-      [
-        5,
-        0,
-        1,
         0,
         3,
-        6
-      ],
-      [
-        0,
-        6,
-        0,
-        0,
+        1,
         5,
         0
       ],
       [
         0,
+        1,
         0,
-        3,
         0,
+        0,
+        3
+      ],
+      [
+        4,
+        0,
+        6,
+        5,
         0,
         1
       ],
       [
         0,
+        2,
+        4,
+        0,
+        1,
+        0
+      ],
+      [
         0,
         6,
-        5,
-        2,
-        3
+        0,
+        0,
+        0,
+        0
       ]
     ],
     "rules": [
@@ -70347,90 +70328,78 @@
     ],
     "lt": [
       [
-        4,
-        5,
-        5,
-        5
-      ],
-      [
-        5,
-        4,
-        5,
-        5
-      ],
-      [
-        5,
-        1,
-        5,
-        0
-      ],
-      [
-        3,
         0,
         3,
-        1
+        0,
+        4
       ],
       [
-        3,
-        5,
+        4,
+        4,
         3,
         4
       ],
       [
-        1,
         3,
-        1,
-        4
+        3,
+        3,
+        2
+      ],
+      [
+        2,
+        2,
+        2,
+        3
       ]
     ],
-    "answer": "521436243412256441",
+    "answer": "612324652463236515342",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "부등호 ‹ 는 뾰족한 쪽이 작은 칸을 가리켜요. 작은 쪽 숫자부터 좁혀 봐요.",
-        "1행 3열은 5이에요.",
-        "1행 5열은 1이에요."
+        "2행 2열은 4이에요.",
+        "4행 2열은 3이에요."
       ],
       "en": [
         "The pointed end of an inequality sign ‹ points to the smaller cell. Narrow down the smaller side first.",
-        "Row 1, column 3 is 5.",
-        "Row 1, column 5 is 1."
+        "Row 2, column 2 is 4.",
+        "Row 4, column 2 is 3."
       ],
       "ja": [
         "不等号 ‹ は、とがった側が小さいマスを指します。小さい方から絞り込みましょう。",
-        "1行3列は5です。",
-        "1行5列は1です。"
+        "2行2列は4です。",
+        "4行2列は3です。"
       ],
       "zh": [
         "不等号 ‹ 的尖端指向较小的格子，先从较小的一侧缩小范围。",
-        "第1行第3列是5。",
-        "第1行第5列是1。"
+        "第2行第2列是4。",
+        "第4行第2列是3。"
       ],
       "es": [
         "El extremo puntiagudo del signo ‹ señala la casilla menor. Empieza acotando la casilla menor.",
-        "La fila 1, columna 3 es 5.",
-        "La fila 1, columna 5 es 1."
+        "La fila 2, columna 2 es 4.",
+        "La fila 4, columna 2 es 3."
       ],
       "fr": [
         "La pointe du signe ‹ désigne la case la plus petite. Commencez par restreindre la plus petite.",
-        "Ligne 1, colonne 3 : 5.",
-        "Ligne 1, colonne 5 : 1."
+        "Ligne 2, colonne 2 : 4.",
+        "Ligne 4, colonne 2 : 3."
       ],
       "de": [
         "Die Spitze des Zeichens ‹ zeigt auf das kleinere Feld. Grenze zuerst das kleinere Feld ein.",
-        "Zeile 1, Spalte 3 ist 5.",
-        "Zeile 1, Spalte 5 ist 1."
+        "Zeile 2, Spalte 2 ist 4.",
+        "Zeile 4, Spalte 2 ist 3."
       ]
     },
     "explanation": {
-      "ko": "635214 142365 521436 364152 253641 416523",
-      "en": "635214 142365 521436 364152 253641 416523",
-      "ja": "635214 142365 521436 364152 253641 416523",
-      "zh": "635214 142365 521436 364152 253641 416523",
-      "es": "635214 142365 521436 364152 253641 416523",
-      "fr": "635214 142365 521436 364152 253641 416523",
-      "de": "635214 142365 521436 364152 253641 416523"
+      "ko": "651234 243156 512463 436521 324615 165342",
+      "en": "651234 243156 512463 436521 324615 165342",
+      "ja": "651234 243156 512463 436521 324615 165342",
+      "zh": "651234 243156 512463 436521 324615 165342",
+      "es": "651234 243156 512463 436521 324615 165342",
+      "fr": "651234 243156 512463 436521 324615 165342",
+      "de": "651234 243156 512463 436521 324615 165342"
     }
   },
   {
@@ -70444,49 +70413,49 @@
         0,
         0,
         0,
+        6,
+        0,
+        3
+      ],
+      [
+        3,
         0,
         0,
+        0,
+        4,
+        1
+      ],
+      [
+        6,
+        3,
+        0,
+        4,
+        5,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        3,
         6
       ],
       [
-        3,
-        0,
-        2,
-        0,
-        1,
-        5
-      ],
-      [
-        0,
-        0,
-        3,
-        5,
         4,
+        0,
+        0,
+        0,
+        0,
         0
       ],
       [
+        0,
         5,
         0,
-        1,
-        0,
-        3,
-        0
-      ],
-      [
-        0,
-        3,
         0,
         0,
-        0,
-        0
-      ],
-      [
-        0,
-        1,
-        5,
-        2,
-        6,
-        3
+        4
       ]
     ],
     "rules": [
@@ -70497,83 +70466,77 @@
     "lt": [
       [
         1,
-        3,
-        2,
-        3
-      ],
-      [
+        4,
         1,
-        4,
-        2,
-        4
-      ],
-      [
-        3,
-        4,
-        3,
         3
       ],
       [
         3,
-        1,
-        3,
-        0
+        2,
+        4,
+        2
       ],
       [
+        1,
+        3,
         0,
-        4,
-        0,
-        5
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        1
       ]
     ],
-    "answer": "1543264621462261544",
+    "answer": "514262512245263151326",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "부등호 ‹ 는 뾰족한 쪽이 작은 칸을 가리켜요. 작은 쪽 숫자부터 좁혀 봐요.",
-        "1행 3열은 4이에요.",
-        "1행 5열은 2이에요."
+        "1행 5열은 2이에요.",
+        "2행 4열은 5이에요."
       ],
       "en": [
         "The pointed end of an inequality sign ‹ points to the smaller cell. Narrow down the smaller side first.",
-        "Row 1, column 3 is 4.",
-        "Row 1, column 5 is 2."
+        "Row 1, column 5 is 2.",
+        "Row 2, column 4 is 5."
       ],
       "ja": [
         "不等号 ‹ は、とがった側が小さいマスを指します。小さい方から絞り込みましょう。",
-        "1行3列は4です。",
-        "1行5列は2です。"
+        "1行5列は2です。",
+        "2行4列は5です。"
       ],
       "zh": [
         "不等号 ‹ 的尖端指向较小的格子，先从较小的一侧缩小范围。",
-        "第1行第3列是4。",
-        "第1行第5列是2。"
+        "第1行第5列是2。",
+        "第2行第4列是5。"
       ],
       "es": [
         "El extremo puntiagudo del signo ‹ señala la casilla menor. Empieza acotando la casilla menor.",
-        "La fila 1, columna 3 es 4.",
-        "La fila 1, columna 5 es 2."
+        "La fila 1, columna 5 es 2.",
+        "La fila 2, columna 4 es 5."
       ],
       "fr": [
         "La pointe du signe ‹ désigne la case la plus petite. Commencez par restreindre la plus petite.",
-        "Ligne 1, colonne 3 : 4.",
-        "Ligne 1, colonne 5 : 2."
+        "Ligne 1, colonne 5 : 2.",
+        "Ligne 2, colonne 4 : 5."
       ],
       "de": [
         "Die Spitze des Zeichens ‹ zeigt auf das kleinere Feld. Grenze zuerst das kleinere Feld ein.",
-        "Zeile 1, Spalte 3 ist 4.",
-        "Zeile 1, Spalte 5 ist 2."
+        "Zeile 1, Spalte 5 ist 2.",
+        "Zeile 2, Spalte 4 ist 5."
       ]
     },
     "explanation": {
-      "ko": "154326 362415 623541 541632 236154 415263",
-      "en": "154326 362415 623541 541632 236154 415263",
-      "ja": "154326 362415 623541 541632 236154 415263",
-      "zh": "154326 362415 623541 541632 236154 415263",
-      "es": "154326 362415 623541 541632 236154 415263",
-      "fr": "154326 362415 623541 541632 236154 415263",
-      "de": "154326 362415 623541 541632 236154 415263"
+      "ko": "514623 362541 631452 245136 426315 153264",
+      "en": "514623 362541 631452 245136 426315 153264",
+      "ja": "514623 362541 631452 245136 426315 153264",
+      "zh": "514623 362541 631452 245136 426315 153264",
+      "es": "514623 362541 631452 245136 426315 153264",
+      "fr": "514623 362541 631452 245136 426315 153264",
+      "de": "514623 362541 631452 245136 426315 153264"
     }
   },
   {
@@ -70584,52 +70547,52 @@
     "order": 4,
     "board": [
       [
-        6,
+        0,
+        1,
         0,
         0,
         0,
-        3,
-        2
+        3
       ],
       [
-        3,
+        0,
         5,
         0,
         0,
-        6,
-        4
+        0,
+        0
       ],
       [
         0,
-        6,
+        0,
+        0,
+        2,
+        0,
+        5
+      ],
+      [
+        0,
+        0,
+        5,
         3,
+        6,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
         4,
         0,
-        0
+        2
       ],
       [
+        5,
         0,
         0,
         1,
         0,
-        2,
         6
-      ],
-      [
-        1,
-        0,
-        0,
-        6,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        2,
-        1,
-        0
       ]
     ],
     "rules": [
@@ -70639,84 +70602,78 @@
     ],
     "lt": [
       [
-        0,
-        4,
-        0,
-        3
-      ],
-      [
         2,
         2,
-        2,
-        3
-      ],
-      [
         3,
+        2
+      ],
+      [
+        5,
+        2,
+        4,
+        2
+      ],
+      [
         1,
         2,
-        1
-      ],
-      [
         0,
-        5,
-        1,
-        5
+        2
       ],
       [
-        4,
-        5,
-        3,
-        5
+        1,
+        2,
+        1,
+        3
       ]
     ],
-    "answer": "1452125154325434365",
+    "answer": "645223614361442365423",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "부등호 ‹ 는 뾰족한 쪽이 작은 칸을 가리켜요. 작은 쪽 숫자부터 좁혀 봐요.",
-        "1행 3열은 4이에요.",
-        "1행 4열은 5이에요."
+        "2행 4열은 6이에요.",
+        "2행 6열은 4이에요."
       ],
       "en": [
         "The pointed end of an inequality sign ‹ points to the smaller cell. Narrow down the smaller side first.",
-        "Row 1, column 3 is 4.",
-        "Row 1, column 4 is 5."
+        "Row 2, column 4 is 6.",
+        "Row 2, column 6 is 4."
       ],
       "ja": [
         "不等号 ‹ は、とがった側が小さいマスを指します。小さい方から絞り込みましょう。",
-        "1行3列は4です。",
-        "1行4列は5です。"
+        "2行4列は6です。",
+        "2行6列は4です。"
       ],
       "zh": [
         "不等号 ‹ 的尖端指向较小的格子，先从较小的一侧缩小范围。",
-        "第1行第3列是4。",
-        "第1行第4列是5。"
+        "第2行第4列是6。",
+        "第2行第6列是4。"
       ],
       "es": [
         "El extremo puntiagudo del signo ‹ señala la casilla menor. Empieza acotando la casilla menor.",
-        "La fila 1, columna 3 es 4.",
-        "La fila 1, columna 4 es 5."
+        "La fila 2, columna 4 es 6.",
+        "La fila 2, columna 6 es 4."
       ],
       "fr": [
         "La pointe du signe ‹ désigne la case la plus petite. Commencez par restreindre la plus petite.",
-        "Ligne 1, colonne 3 : 4.",
-        "Ligne 1, colonne 4 : 5."
+        "Ligne 2, colonne 4 : 6.",
+        "Ligne 2, colonne 6 : 4."
       ],
       "de": [
         "Die Spitze des Zeichens ‹ zeigt auf das kleinere Feld. Grenze zuerst das kleinere Feld ein.",
-        "Zeile 1, Spalte 3 ist 4.",
-        "Zeile 1, Spalte 4 ist 5."
+        "Zeile 2, Spalte 4 ist 6.",
+        "Zeile 2, Spalte 6 ist 4."
       ]
     },
     "explanation": {
-      "ko": "614532 352164 263451 541326 125643 436215",
-      "en": "614532 352164 263451 541326 125643 436215",
-      "ja": "614532 352164 263451 541326 125643 436215",
-      "zh": "614532 352164 263451 541326 125643 436215",
-      "es": "614532 352164 263451 541326 125643 436215",
-      "fr": "614532 352164 263451 541326 125643 436215",
-      "de": "614532 352164 263451 541326 125643 436215"
+      "ko": "614523 253614 361245 425361 136452 542136",
+      "en": "614523 253614 361245 425361 136452 542136",
+      "ja": "614523 253614 361245 425361 136452 542136",
+      "zh": "614523 253614 361245 425361 136452 542136",
+      "es": "614523 253614 361245 425361 136452 542136",
+      "fr": "614523 253614 361245 425361 136452 542136",
+      "de": "614523 253614 361245 425361 136452 542136"
     }
   },
   {
@@ -70727,52 +70684,52 @@
     "order": 5,
     "board": [
       [
-        6,
         0,
-        0,
-        0,
-        0,
-        5
-      ],
-      [
         2,
-        1,
-        0,
         4,
         0,
+        1,
         3
       ],
       [
         0,
         0,
         0,
-        0,
-        0,
-        0
-      ],
-      [
-        3,
         2,
         0,
-        0,
-        4,
-        0
+        4
       ],
       [
-        0,
-        0,
-        4,
-        6,
-        0,
-        2
-      ],
-      [
+        2,
         5,
         0,
-        2,
-        3,
         1,
+        4,
+        6
+      ],
+      [
+        4,
+        0,
+        1,
+        0,
+        0,
         0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        0,
+        0,
+        5
       ]
     ],
     "rules": [
@@ -70782,78 +70739,78 @@
     ],
     "lt": [
       [
+        3,
+        3,
         4,
-        0,
-        5,
-        0
+        3
       ],
       [
-        5,
-        2,
-        5,
+        4,
+        1,
+        3,
         1
       ],
       [
-        4,
-        5,
-        5,
-        5
+        2,
+        3,
+        2,
+        4
       ],
       [
-        2,
-        2,
-        2,
+        1,
+        3,
+        0,
         3
       ]
     ],
-    "answer": "43125645123665113564",
+    "answer": "653156363525364211463",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "부등호 ‹ 는 뾰족한 쪽이 작은 칸을 가리켜요. 작은 쪽 숫자부터 좁혀 봐요.",
-        "1행 3열은 3이에요.",
-        "1행 5열은 2이에요."
+        "3행 3열은 3이에요.",
+        "4행 6열은 2이에요."
       ],
       "en": [
         "The pointed end of an inequality sign ‹ points to the smaller cell. Narrow down the smaller side first.",
-        "Row 1, column 3 is 3.",
-        "Row 1, column 5 is 2."
+        "Row 3, column 3 is 3.",
+        "Row 4, column 6 is 2."
       ],
       "ja": [
         "不等号 ‹ は、とがった側が小さいマスを指します。小さい方から絞り込みましょう。",
-        "1行3列は3です。",
-        "1行5列は2です。"
+        "3行3列は3です。",
+        "4行6列は2です。"
       ],
       "zh": [
         "不等号 ‹ 的尖端指向较小的格子，先从较小的一侧缩小范围。",
-        "第1行第3列是3。",
-        "第1行第5列是2。"
+        "第3行第3列是3。",
+        "第4行第6列是2。"
       ],
       "es": [
         "El extremo puntiagudo del signo ‹ señala la casilla menor. Empieza acotando la casilla menor.",
-        "La fila 1, columna 3 es 3.",
-        "La fila 1, columna 5 es 2."
+        "La fila 3, columna 3 es 3.",
+        "La fila 4, columna 6 es 2."
       ],
       "fr": [
         "La pointe du signe ‹ désigne la case la plus petite. Commencez par restreindre la plus petite.",
-        "Ligne 1, colonne 3 : 3.",
-        "Ligne 1, colonne 5 : 2."
+        "Ligne 3, colonne 3 : 3.",
+        "Ligne 4, colonne 6 : 2."
       ],
       "de": [
         "Die Spitze des Zeichens ‹ zeigt auf das kleinere Feld. Grenze zuerst das kleinere Feld ein.",
-        "Zeile 1, Spalte 3 ist 3.",
-        "Zeile 1, Spalte 5 ist 2."
+        "Zeile 3, Spalte 3 ist 3.",
+        "Zeile 4, Spalte 6 ist 2."
       ]
     },
     "explanation": {
-      "ko": "643125 215463 451236 326541 134652 562314",
-      "en": "643125 215463 451236 326541 134652 562314",
-      "ja": "643125 215463 451236 326541 134652 562314",
-      "zh": "643125 215463 451236 326541 134652 562314",
-      "es": "643125 215463 451236 326541 134652 562314",
-      "fr": "643125 215463 451236 326541 134652 562314",
-      "de": "643125 215463 451236 326541 134652 562314"
+      "ko": "624513 315264 253146 461352 536421 142635",
+      "en": "624513 315264 253146 461352 536421 142635",
+      "ja": "624513 315264 253146 461352 536421 142635",
+      "zh": "624513 315264 253146 461352 536421 142635",
+      "es": "624513 315264 253146 461352 536421 142635",
+      "fr": "624513 315264 253146 461352 536421 142635",
+      "de": "624513 315264 253146 461352 536421 142635"
     }
   },
   {
@@ -70864,52 +70821,52 @@
     "order": 6,
     "board": [
       [
-        6,
-        5,
+        0,
+        0,
+        0,
         0,
         3,
+        0
+      ],
+      [
         0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        6,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        5,
+        4,
         2
       ],
       [
-        3,
-        0,
-        0,
-        0,
-        4,
-        5
-      ],
-      [
-        0,
-        0,
         0,
         0,
         2,
-        0
-      ],
-      [
-        2,
-        4,
-        0,
         1,
-        0,
+        6,
         0
       ],
       [
         0,
         0,
-        2,
-        4,
         0,
-        0
-      ],
-      [
-        4,
         3,
-        0,
-        0,
-        0,
-        0
+        2,
+        5
       ]
     ],
     "rules": [
@@ -70920,77 +70877,77 @@
     "lt": [
       [
         0,
-        3,
         0,
-        2
-      ],
-      [
-        0,
-        2,
-        0,
-        1
+        1,
+        0
       ],
       [
         3,
-        0,
+        4,
         3,
-        1
+        3
       ],
       [
         4,
-        4,
+        3,
+        3,
+        3
+      ],
+      [
         5,
-        4
+        1,
+        4,
+        1
       ]
     ],
-    "answer": "412161635456351366251",
+    "answer": "125466435154336534416",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "부등호 ‹ 는 뾰족한 쪽이 작은 칸을 가리켜요. 작은 쪽 숫자부터 좁혀 봐요.",
-        "1행 3열은 4이에요.",
-        "1행 5열은 1이에요."
+        "1행 4열은 4이에요.",
+        "2행 5열은 5이에요."
       ],
       "en": [
         "The pointed end of an inequality sign ‹ points to the smaller cell. Narrow down the smaller side first.",
-        "Row 1, column 3 is 4.",
-        "Row 1, column 5 is 1."
+        "Row 1, column 4 is 4.",
+        "Row 2, column 5 is 5."
       ],
       "ja": [
         "不等号 ‹ は、とがった側が小さいマスを指します。小さい方から絞り込みましょう。",
-        "1行3列は4です。",
-        "1行5列は1です。"
+        "1行4列は4です。",
+        "2行5列は5です。"
       ],
       "zh": [
         "不等号 ‹ 的尖端指向较小的格子，先从较小的一侧缩小范围。",
-        "第1行第3列是4。",
-        "第1行第5列是1。"
+        "第1行第4列是4。",
+        "第2行第5列是5。"
       ],
       "es": [
         "El extremo puntiagudo del signo ‹ señala la casilla menor. Empieza acotando la casilla menor.",
-        "La fila 1, columna 3 es 4.",
-        "La fila 1, columna 5 es 1."
+        "La fila 1, columna 4 es 4.",
+        "La fila 2, columna 5 es 5."
       ],
       "fr": [
         "La pointe du signe ‹ désigne la case la plus petite. Commencez par restreindre la plus petite.",
-        "Ligne 1, colonne 3 : 4.",
-        "Ligne 1, colonne 5 : 1."
+        "Ligne 1, colonne 4 : 4.",
+        "Ligne 2, colonne 5 : 5."
       ],
       "de": [
         "Die Spitze des Zeichens ‹ zeigt auf das kleinere Feld. Grenze zuerst das kleinere Feld ein.",
-        "Zeile 1, Spalte 3 ist 4.",
-        "Zeile 1, Spalte 5 ist 1."
+        "Zeile 1, Spalte 4 ist 4.",
+        "Zeile 2, Spalte 5 ist 5."
       ]
     },
     "explanation": {
-      "ko": "654312 321645 163524 245163 512436 436251",
-      "en": "654312 321645 163524 245163 512436 436251",
-      "ja": "654312 321645 163524 245163 512436 436251",
-      "zh": "654312 321645 163524 245163 512436 436251",
-      "es": "654312 321645 163524 245163 512436 436251",
-      "fr": "654312 321645 163524 245163 512436 436251",
-      "de": "654312 321645 163524 245163 512436 436251"
+      "ko": "125436 643251 254613 361542 532164 416325",
+      "en": "125436 643251 254613 361542 532164 416325",
+      "ja": "125436 643251 254613 361542 532164 416325",
+      "zh": "125436 643251 254613 361542 532164 416325",
+      "es": "125436 643251 254613 361542 532164 416325",
+      "fr": "125436 643251 254613 361542 532164 416325",
+      "de": "125436 643251 254613 361542 532164 416325"
     }
   },
   {
@@ -71001,24 +70958,31 @@
     "order": 1,
     "board": [
       [
-        0,
-        0,
-        1,
         2,
+        0,
+        0,
+        5,
+        0
+      ],
+      [
+        5,
+        0,
+        0,
+        0,
         0
       ],
       [
         0,
-        0,
+        1,
         5,
         0,
-        4
+        2
       ],
       [
+        0,
+        0,
         3,
-        1,
-        2,
-        4,
+        0,
         5
       ],
       [
@@ -71027,13 +70991,6 @@
         0,
         0,
         0
-      ],
-      [
-        0,
-        0,
-        0,
-        3,
-        1
       ]
     ],
     "rules": [
@@ -71041,54 +70998,54 @@
       "col",
       "diag"
     ],
-    "answer": "45323114352524",
+    "answer": "31442313442115423",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "두 대각선에도 1부터 5까지 한 번씩 들어가요. 대각선 칸도 꼭 살펴봐요.",
-        "1행 5열은 3이에요.",
-        "2행 2열은 3이에요."
+        "4행 2열은 2이에요.",
+        "5행 2열은 5이에요."
       ],
       "en": [
         "Both diagonals also hold 1 to 5 exactly once. Check the diagonal cells too.",
-        "Row 1, column 5 is 3.",
-        "Row 2, column 2 is 3."
+        "Row 4, column 2 is 2.",
+        "Row 5, column 2 is 5."
       ],
       "ja": [
         "2本の対角線にも、1から5までが1回ずつ入ります。斜めのマスも確認しましょう。",
-        "1行5列は3です。",
-        "2行2列は3です。"
+        "4行2列は2です。",
+        "5行2列は5です。"
       ],
       "zh": [
         "两条对角线上，1到5也各出现一次，别忘了看对角线上的格子。",
-        "第1行第5列是3。",
-        "第2行第2列是3。"
+        "第4行第2列是2。",
+        "第5行第2列是5。"
       ],
       "es": [
         "Las dos diagonales también contienen del 1 al 5 una sola vez. Revisa también las casillas diagonales.",
-        "La fila 1, columna 5 es 3.",
-        "La fila 2, columna 2 es 3."
+        "La fila 4, columna 2 es 2.",
+        "La fila 5, columna 2 es 5."
       ],
       "fr": [
         "Les deux diagonales contiennent aussi de 1 à 5 une seule fois. Surveillez aussi les cases en diagonale.",
-        "Ligne 1, colonne 5 : 3.",
-        "Ligne 2, colonne 2 : 3."
+        "Ligne 4, colonne 2 : 2.",
+        "Ligne 5, colonne 2 : 5."
       ],
       "de": [
         "Auch beide Diagonalen enthalten 1 bis 5 genau einmal. Beachte auch die Diagonalfelder.",
-        "Zeile 1, Spalte 5 ist 3.",
-        "Zeile 2, Spalte 2 ist 3."
+        "Zeile 4, Spalte 2 ist 2.",
+        "Zeile 5, Spalte 2 ist 5."
       ]
     },
     "explanation": {
-      "ko": "45123 23514 31245 14352 52431",
-      "en": "45123 23514 31245 14352 52431",
-      "ja": "45123 23514 31245 14352 52431",
-      "zh": "45123 23514 31245 14352 52431",
-      "es": "45123 23514 31245 14352 52431",
-      "fr": "45123 23514 31245 14352 52431",
-      "de": "45123 23514 31245 14352 52431"
+      "ko": "23154 54231 31542 42315 15423",
+      "en": "23154 54231 31542 42315 15423",
+      "ja": "23154 54231 31542 42315 15423",
+      "zh": "23154 54231 31542 42315 15423",
+      "es": "23154 54231 31542 42315 15423",
+      "fr": "23154 54231 31542 42315 15423",
+      "de": "23154 54231 31542 42315 15423"
     }
   },
   {
@@ -71100,36 +71057,36 @@
     "board": [
       [
         0,
+        3,
+        4,
         0,
-        0,
-        1,
         0
       ],
       [
-        2,
-        5,
         0,
-        0,
-        1
-      ],
-      [
         0,
         3,
         0,
-        2,
-        4
-      ],
-      [
-        1,
-        0,
-        0,
-        4,
         0
       ],
       [
         0,
-        1,
         0,
+        5,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        5,
+        2,
         0,
         0
       ]
@@ -71139,54 +71096,54 @@
       "col",
       "diag"
     ],
-    "answer": "342543512534352",
+    "answer": "25151421434215314",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "두 대각선에도 1부터 5까지 한 번씩 들어가요. 대각선 칸도 꼭 살펴봐요.",
-        "1행 1열은 3이에요.",
-        "2행 4열은 3이에요."
+        "4행 3열은 1이에요.",
+        "1행 4열은 5이에요."
       ],
       "en": [
         "Both diagonals also hold 1 to 5 exactly once. Check the diagonal cells too.",
-        "Row 1, column 1 is 3.",
-        "Row 2, column 4 is 3."
+        "Row 4, column 3 is 1.",
+        "Row 1, column 4 is 5."
       ],
       "ja": [
         "2本の対角線にも、1から5までが1回ずつ入ります。斜めのマスも確認しましょう。",
-        "1行1列は3です。",
-        "2行4列は3です。"
+        "4行3列は1です。",
+        "1行4列は5です。"
       ],
       "zh": [
         "两条对角线上，1到5也各出现一次，别忘了看对角线上的格子。",
-        "第1行第1列是3。",
-        "第2行第4列是3。"
+        "第4行第3列是1。",
+        "第1行第4列是5。"
       ],
       "es": [
         "Las dos diagonales también contienen del 1 al 5 una sola vez. Revisa también las casillas diagonales.",
-        "La fila 1, columna 1 es 3.",
-        "La fila 2, columna 4 es 3."
+        "La fila 4, columna 3 es 1.",
+        "La fila 1, columna 4 es 5."
       ],
       "fr": [
         "Les deux diagonales contiennent aussi de 1 à 5 une seule fois. Surveillez aussi les cases en diagonale.",
-        "Ligne 1, colonne 1 : 3.",
-        "Ligne 2, colonne 4 : 3."
+        "Ligne 4, colonne 3 : 1.",
+        "Ligne 1, colonne 4 : 5."
       ],
       "de": [
         "Auch beide Diagonalen enthalten 1 bis 5 genau einmal. Beachte auch die Diagonalfelder.",
-        "Zeile 1, Spalte 1 ist 3.",
-        "Zeile 2, Spalte 4 ist 3."
+        "Zeile 4, Spalte 3 ist 1.",
+        "Zeile 1, Spalte 4 ist 5."
       ]
     },
     "explanation": {
-      "ko": "34215 25431 53124 12543 41352",
-      "en": "34215 25431 53124 12543 41352",
-      "ja": "34215 25431 53124 12543 41352",
-      "zh": "34215 25431 53124 12543 41352",
-      "es": "34215 25431 53124 12543 41352",
-      "fr": "34215 25431 53124 12543 41352",
-      "de": "34215 25431 53124 12543 41352"
+      "ko": "23451 51342 14523 42135 35214",
+      "en": "23451 51342 14523 42135 35214",
+      "ja": "23451 51342 14523 42135 35214",
+      "zh": "23451 51342 14523 42135 35214",
+      "es": "23451 51342 14523 42135 35214",
+      "fr": "23451 51342 14523 42135 35214",
+      "de": "23451 51342 14523 42135 35214"
     }
   },
   {
@@ -71200,36 +71157,36 @@
         0,
         0,
         0,
-        0,
-        0
-      ],
-      [
-        0,
-        3,
-        2,
         4,
         0
       ],
       [
-        2,
-        0,
-        0,
         3,
+        5,
+        0,
+        0,
         0
       ],
       [
-        3,
-        2,
+        5,
         0,
-        1,
-        0
+        0,
+        0,
+        1
       ],
       [
-        0,
         0,
         0,
         5,
-        2
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        5,
+        0
       ]
     ],
     "rules": [
@@ -71237,54 +71194,54 @@
       "col",
       "diag"
     ],
-    "answer": "451235115445143",
+    "answer": "21351242434312143",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "두 대각선에도 1부터 5까지 한 번씩 들어가요. 대각선 칸도 꼭 살펴봐요.",
-        "1행 4열은 2이에요.",
-        "3행 3열은 5이에요."
+        "1행 5열은 5이에요.",
+        "1행 1열은 2이에요."
       ],
       "en": [
         "Both diagonals also hold 1 to 5 exactly once. Check the diagonal cells too.",
-        "Row 1, column 4 is 2.",
-        "Row 3, column 3 is 5."
+        "Row 1, column 5 is 5.",
+        "Row 1, column 1 is 2."
       ],
       "ja": [
         "2本の対角線にも、1から5までが1回ずつ入ります。斜めのマスも確認しましょう。",
-        "1行4列は2です。",
-        "3行3列は5です。"
+        "1行5列は5です。",
+        "1行1列は2です。"
       ],
       "zh": [
         "两条对角线上，1到5也各出现一次，别忘了看对角线上的格子。",
-        "第1行第4列是2。",
-        "第3行第3列是5。"
+        "第1行第5列是5。",
+        "第1行第1列是2。"
       ],
       "es": [
         "Las dos diagonales también contienen del 1 al 5 una sola vez. Revisa también las casillas diagonales.",
-        "La fila 1, columna 4 es 2.",
-        "La fila 3, columna 3 es 5."
+        "La fila 1, columna 5 es 5.",
+        "La fila 1, columna 1 es 2."
       ],
       "fr": [
         "Les deux diagonales contiennent aussi de 1 à 5 une seule fois. Surveillez aussi les cases en diagonale.",
-        "Ligne 1, colonne 4 : 2.",
-        "Ligne 3, colonne 3 : 5."
+        "Ligne 1, colonne 5 : 5.",
+        "Ligne 1, colonne 1 : 2."
       ],
       "de": [
         "Auch beide Diagonalen enthalten 1 bis 5 genau einmal. Beachte auch die Diagonalfelder.",
-        "Zeile 1, Spalte 4 ist 2.",
-        "Zeile 3, Spalte 3 ist 5."
+        "Zeile 1, Spalte 5 ist 5.",
+        "Zeile 1, Spalte 1 ist 2."
       ]
     },
     "explanation": {
-      "ko": "45123 53241 21534 32415 14352",
-      "en": "45123 53241 21534 32415 14352",
-      "ja": "45123 53241 21534 32415 14352",
-      "zh": "45123 53241 21534 32415 14352",
-      "es": "45123 53241 21534 32415 14352",
-      "fr": "45123 53241 21534 32415 14352",
-      "de": "45123 53241 21534 32415 14352"
+      "ko": "21345 35124 52431 43512 14253",
+      "en": "21345 35124 52431 43512 14253",
+      "ja": "21345 35124 52431 43512 14253",
+      "zh": "21345 35124 52431 43512 14253",
+      "es": "21345 35124 52431 43512 14253",
+      "fr": "21345 35124 52431 43512 14253",
+      "de": "21345 35124 52431 43512 14253"
     }
   },
   {
@@ -71295,37 +71252,37 @@
     "order": 4,
     "board": [
       [
-        5,
         0,
         0,
         0,
-        0
-      ],
-      [
-        0,
-        0,
-        1,
         0,
         0
       ],
       [
         0,
         0,
+        5,
+        0,
+        2
+      ],
+      [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      [
         0,
         5,
+        0,
+        0,
         0
       ],
       [
-        3,
-        5,
         0,
-        1,
-        4
-      ],
-      [
+        2,
         0,
-        1,
-        5,
         0,
         0
       ]
@@ -71335,54 +71292,54 @@
       "col",
       "diag"
     ],
-    "answer": "4321423513422243",
+    "answer": "53421143323144153",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "두 대각선에도 1부터 5까지 한 번씩 들어가요. 대각선 칸도 꼭 살펴봐요.",
-        "4행 3열은 2이에요.",
-        "1행 5열은 1이에요."
+        "3행 1열은 3이에요.",
+        "1행 4열은 2이에요."
       ],
       "en": [
         "Both diagonals also hold 1 to 5 exactly once. Check the diagonal cells too.",
-        "Row 4, column 3 is 2.",
-        "Row 1, column 5 is 1."
+        "Row 3, column 1 is 3.",
+        "Row 1, column 4 is 2."
       ],
       "ja": [
         "2本の対角線にも、1から5までが1回ずつ入ります。斜めのマスも確認しましょう。",
-        "4行3列は2です。",
-        "1行5列は1です。"
+        "3行1列は3です。",
+        "1行4列は2です。"
       ],
       "zh": [
         "两条对角线上，1到5也各出现一次，别忘了看对角线上的格子。",
-        "第4行第3列是2。",
-        "第1行第5列是1。"
+        "第3行第1列是3。",
+        "第1行第4列是2。"
       ],
       "es": [
         "Las dos diagonales también contienen del 1 al 5 una sola vez. Revisa también las casillas diagonales.",
-        "La fila 4, columna 3 es 2.",
-        "La fila 1, columna 5 es 1."
+        "La fila 3, columna 1 es 3.",
+        "La fila 1, columna 4 es 2."
       ],
       "fr": [
         "Les deux diagonales contiennent aussi de 1 à 5 une seule fois. Surveillez aussi les cases en diagonale.",
-        "Ligne 4, colonne 3 : 2.",
-        "Ligne 1, colonne 5 : 1."
+        "Ligne 3, colonne 1 : 3.",
+        "Ligne 1, colonne 4 : 2."
       ],
       "de": [
         "Auch beide Diagonalen enthalten 1 bis 5 genau einmal. Beachte auch die Diagonalfelder.",
-        "Zeile 4, Spalte 3 ist 2.",
-        "Zeile 1, Spalte 5 ist 1."
+        "Zeile 3, Spalte 1 ist 3.",
+        "Zeile 1, Spalte 4 ist 2."
       ]
     },
     "explanation": {
-      "ko": "54321 42135 13452 35214 21543",
-      "en": "54321 42135 13452 35214 21543",
-      "ja": "54321 42135 13452 35214 21543",
-      "zh": "54321 42135 13452 35214 21543",
-      "es": "54321 42135 13452 35214 21543",
-      "fr": "54321 42135 13452 35214 21543",
-      "de": "54321 42135 13452 35214 21543"
+      "ko": "53421 14532 31245 25314 42153",
+      "en": "53421 14532 31245 25314 42153",
+      "ja": "53421 14532 31245 25314 42153",
+      "zh": "53421 14532 31245 25314 42153",
+      "es": "53421 14532 31245 25314 42153",
+      "fr": "53421 14532 31245 25314 42153",
+      "de": "53421 14532 31245 25314 42153"
     }
   },
   {
@@ -71393,38 +71350,38 @@
     "order": 5,
     "board": [
       [
+        4,
         5,
         0,
-        2,
         0,
         0
       ],
       [
-        4,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        2,
-        4,
-        0,
-        0
-      ],
-      [
-        0,
-        5,
         1,
+        0,
+        0,
         0,
         4
       ],
       [
+        2,
+        0,
+        0,
+        4,
+        0
+      ],
+      [
+        3,
         0,
         0,
         0,
+        0
+      ],
+      [
         5,
+        0,
+        0,
+        0,
         0
       ]
     ],
@@ -71433,54 +71390,54 @@
       "col",
       "diag"
     ],
-    "answer": "1433512135322431",
+    "answer": "31225331542511423",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "두 대각선에도 1부터 5까지 한 번씩 들어가요. 대각선 칸도 꼭 살펴봐요.",
-        "5행 3열은 3이에요.",
+        "2행 3열은 5이에요.",
         "3행 5열은 5이에요."
       ],
       "en": [
         "Both diagonals also hold 1 to 5 exactly once. Check the diagonal cells too.",
-        "Row 5, column 3 is 3.",
+        "Row 2, column 3 is 5.",
         "Row 3, column 5 is 5."
       ],
       "ja": [
         "2本の対角線にも、1から5までが1回ずつ入ります。斜めのマスも確認しましょう。",
-        "5行3列は3です。",
+        "2行3列は5です。",
         "3行5列は5です。"
       ],
       "zh": [
         "两条对角线上，1到5也各出现一次，别忘了看对角线上的格子。",
-        "第5行第3列是3。",
+        "第2行第3列是5。",
         "第3行第5列是5。"
       ],
       "es": [
         "Las dos diagonales también contienen del 1 al 5 una sola vez. Revisa también las casillas diagonales.",
-        "La fila 5, columna 3 es 3.",
+        "La fila 2, columna 3 es 5.",
         "La fila 3, columna 5 es 5."
       ],
       "fr": [
         "Les deux diagonales contiennent aussi de 1 à 5 une seule fois. Surveillez aussi les cases en diagonale.",
-        "Ligne 5, colonne 3 : 3.",
+        "Ligne 2, colonne 3 : 5.",
         "Ligne 3, colonne 5 : 5."
       ],
       "de": [
         "Auch beide Diagonalen enthalten 1 bis 5 genau einmal. Beachte auch die Diagonalfelder.",
-        "Zeile 5, Spalte 3 ist 3.",
+        "Zeile 2, Spalte 3 ist 5.",
         "Zeile 3, Spalte 5 ist 5."
       ]
     },
     "explanation": {
-      "ko": "51243 43512 12435 35124 24351",
-      "en": "51243 43512 12435 35124 24351",
-      "ja": "51243 43512 12435 35124 24351",
-      "zh": "51243 43512 12435 35124 24351",
-      "es": "51243 43512 12435 35124 24351",
-      "fr": "51243 43512 12435 35124 24351",
-      "de": "51243 43512 12435 35124 24351"
+      "ko": "45312 12534 23145 34251 51423",
+      "en": "45312 12534 23145 34251 51423",
+      "ja": "45312 12534 23145 34251 51423",
+      "zh": "45312 12534 23145 34251 51423",
+      "es": "45312 12534 23145 34251 51423",
+      "fr": "45312 12534 23145 34251 51423",
+      "de": "45312 12534 23145 34251 51423"
     }
   },
   {
@@ -71491,36 +71448,36 @@
     "order": 6,
     "board": [
       [
-        5,
         0,
         2,
+        0,
         0,
         0
       ],
       [
         1,
-        2,
-        3,
-        0,
-        0
-      ],
-      [
-        3,
-        0,
-        0,
-        2,
-        0
-      ],
-      [
-        0,
         0,
         0,
         0,
         0
       ],
       [
-        2,
         0,
+        0,
+        0,
+        4,
+        2
+      ],
+      [
+        0,
+        0,
+        5,
+        2,
+        0
+      ],
+      [
+        2,
+        1,
         0,
         0,
         0
@@ -71531,54 +71488,54 @@
       "col",
       "diag"
     ],
-    "answer": "43154145435125143",
+    "answer": "43155234531341453",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "두 대각선에도 1부터 5까지 한 번씩 들어가요. 대각선 칸도 꼭 살펴봐요.",
-        "4행 1열은 4이에요.",
-        "4행 5열은 2이에요."
+        "2행 3열은 2이에요.",
+        "3행 3열은 1이에요."
       ],
       "en": [
         "Both diagonals also hold 1 to 5 exactly once. Check the diagonal cells too.",
-        "Row 4, column 1 is 4.",
-        "Row 4, column 5 is 2."
+        "Row 2, column 3 is 2.",
+        "Row 3, column 3 is 1."
       ],
       "ja": [
         "2本の対角線にも、1から5までが1回ずつ入ります。斜めのマスも確認しましょう。",
-        "4行1列は4です。",
-        "4行5列は2です。"
+        "2行3列は2です。",
+        "3行3列は1です。"
       ],
       "zh": [
         "两条对角线上，1到5也各出现一次，别忘了看对角线上的格子。",
-        "第4行第1列是4。",
-        "第4行第5列是2。"
+        "第2行第3列是2。",
+        "第3行第3列是1。"
       ],
       "es": [
         "Las dos diagonales también contienen del 1 al 5 una sola vez. Revisa también las casillas diagonales.",
-        "La fila 4, columna 1 es 4.",
-        "La fila 4, columna 5 es 2."
+        "La fila 2, columna 3 es 2.",
+        "La fila 3, columna 3 es 1."
       ],
       "fr": [
         "Les deux diagonales contiennent aussi de 1 à 5 une seule fois. Surveillez aussi les cases en diagonale.",
-        "Ligne 4, colonne 1 : 4.",
-        "Ligne 4, colonne 5 : 2."
+        "Ligne 2, colonne 3 : 2.",
+        "Ligne 3, colonne 3 : 1."
       ],
       "de": [
         "Auch beide Diagonalen enthalten 1 bis 5 genau einmal. Beachte auch die Diagonalfelder.",
-        "Zeile 4, Spalte 1 ist 4.",
-        "Zeile 4, Spalte 5 ist 2."
+        "Zeile 2, Spalte 3 ist 2.",
+        "Zeile 3, Spalte 3 ist 1."
       ]
     },
     "explanation": {
-      "ko": "54231 12354 31425 43512 25143",
-      "en": "54231 12354 31425 43512 25143",
-      "ja": "54231 12354 31425 43512 25143",
-      "zh": "54231 12354 31425 43512 25143",
-      "es": "54231 12354 31425 43512 25143",
-      "fr": "54231 12354 31425 43512 25143",
-      "de": "54231 12354 31425 43512 25143"
+      "ko": "42315 15234 53142 34521 21453",
+      "en": "42315 15234 53142 34521 21453",
+      "ja": "42315 15234 53142 34521 21453",
+      "zh": "42315 15234 53142 34521 21453",
+      "es": "42315 15234 53142 34521 21453",
+      "fr": "42315 15234 53142 34521 21453",
+      "de": "42315 15234 53142 34521 21453"
     }
   },
   {
@@ -71589,50 +71546,50 @@
     "order": 1,
     "board": [
       [
+        2,
         0,
         5,
-        0,
-        0,
-        2,
-        6
-      ],
-      [
         0,
         4,
-        0,
-        3,
-        0,
-        0
+        1
       ],
       [
-        0,
-        0,
-        0,
-        5,
-        1,
-        0
-      ],
-      [
-        5,
-        0,
-        1,
-        0,
-        0,
-        4
-      ],
-      [
-        2,
-        3,
         6,
         0,
         4,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        4,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        1,
+        0,
+        2,
+        0
+      ],
+      [
+        4,
+        2,
+        0,
+        0,
+        0,
         0
       ],
       [
         0,
-        1,
-        5,
-        2,
+        0,
+        0,
+        0,
         0,
         0
       ]
@@ -71644,109 +71601,95 @@
     ],
     "cages": [
       [
-        15,
-        2,
-        2,
-        2,
+        12,
         3,
-        3,
-        3
-      ],
-      [
-        9,
-        4,
-        0,
-        4,
         1,
-        5,
-        0
-      ],
-      [
-        10,
         4,
+        0,
         4,
-        5,
-        4
-      ],
-      [
-        11,
-        0,
-        0,
-        1,
-        0,
-        1,
         1
       ],
       [
-        7,
-        4,
+        8,
+        0,
+        1,
+        0,
+        2
+      ],
+      [
+        10,
+        3,
         2,
         4,
+        2,
+        5,
+        2
+      ],
+      [
+        11,
+        3,
+        3,
+        4,
+        3,
+        5,
         3
       ],
       [
-        7,
-        0,
-        4,
-        1,
-        4
-      ],
-      [
-        4,
+        8,
         2,
-        4,
+        0,
         3,
-        4
+        0
       ]
     ],
-    "answer": "1346251364226315463",
+    "answer": "36135221656433516156234",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "점선으로 묶인 칸들의 합이 모서리의 숫자와 같아요. 묶음 안에서는 같은 숫자를 쓰지 않아요.",
-        "1행 1열은 1이에요.",
-        "1행 3열은 3이에요."
+        "1행 2열은 3이에요.",
+        "4행 2열은 6이에요."
       ],
       "en": [
         "The cells inside a dotted outline add up to the number in its corner. A number is not repeated inside one outline.",
-        "Row 1, column 1 is 1.",
-        "Row 1, column 3 is 3."
+        "Row 1, column 2 is 3.",
+        "Row 4, column 2 is 6."
       ],
       "ja": [
         "点線で囲まれたマスの合計が、角の数字と同じになります。囲みの中で同じ数字は使いません。",
-        "1行1列は1です。",
-        "1行3列は3です。"
+        "1行2列は3です。",
+        "4行2列は6です。"
       ],
       "zh": [
         "虚线框内的格子之和等于角上的数字，同一个框里不会有重复数字。",
-        "第1行第1列是1。",
-        "第1行第3列是3。"
+        "第1行第2列是3。",
+        "第4行第2列是6。"
       ],
       "es": [
         "Las casillas dentro de un contorno punteado suman el número de su esquina. No se repite número dentro de un contorno.",
-        "La fila 1, columna 1 es 1.",
-        "La fila 1, columna 3 es 3."
+        "La fila 1, columna 2 es 3.",
+        "La fila 4, columna 2 es 6."
       ],
       "fr": [
         "Les cases d'un contour pointillé ont pour somme le nombre indiqué dans son coin. Aucun chiffre ne se répète dans un contour.",
-        "Ligne 1, colonne 1 : 1.",
-        "Ligne 1, colonne 3 : 3."
+        "Ligne 1, colonne 2 : 3.",
+        "Ligne 4, colonne 2 : 6."
       ],
       "de": [
         "Die Felder in einer gestrichelten Umrandung ergeben zusammen die Zahl in der Ecke. Innerhalb einer Umrandung wiederholt sich keine Zahl.",
-        "Zeile 1, Spalte 1 ist 1.",
-        "Zeile 1, Spalte 3 ist 3."
+        "Zeile 1, Spalte 2 ist 3.",
+        "Zeile 4, Spalte 2 ist 6."
       ]
     },
     "explanation": {
-      "ko": "153426 642351 364512 521634 236145 415263",
-      "en": "153426 642351 364512 521634 236145 415263",
-      "ja": "153426 642351 364512 521634 236145 415263",
-      "zh": "153426 642351 364512 521634 236145 415263",
-      "es": "153426 642351 364512 521634 236145 415263",
-      "fr": "153426 642351 364512 521634 236145 415263",
-      "de": "153426 642351 364512 521634 236145 415263"
+      "ko": "235641 614352 342165 561423 423516 156234",
+      "en": "235641 614352 342165 561423 423516 156234",
+      "ja": "235641 614352 342165 561423 423516 156234",
+      "zh": "235641 614352 342165 561423 423516 156234",
+      "es": "235641 614352 342165 561423 423516 156234",
+      "fr": "235641 614352 342165 561423 423516 156234",
+      "de": "235641 614352 342165 561423 423516 156234"
     }
   },
   {
@@ -71757,19 +71700,19 @@
     "order": 2,
     "board": [
       [
-        0,
-        0,
         6,
         0,
-        4,
+        0,
+        0,
+        0,
         3
       ],
       [
-        3,
         0,
-        1,
         0,
-        6,
+        0,
+        4,
+        2,
         0
       ],
       [
@@ -71777,32 +71720,32 @@
         0,
         0,
         0,
-        0,
-        6
+        6,
+        0
       ],
       [
+        0,
+        0,
+        6,
+        0,
+        3,
+        0
+      ],
+      [
+        5,
+        1,
+        0,
+        6,
+        0,
+        2
+      ],
+      [
+        0,
         0,
         0,
         3,
         0,
-        0,
         5
-      ],
-      [
-        4,
-        0,
-        2,
-        0,
-        5,
-        1
-      ],
-      [
-        0,
-        1,
-        0,
-        0,
-        2,
-        4
       ]
     ],
     "rules": [
@@ -71812,113 +71755,97 @@
     ],
     "cages": [
       [
-        9,
+        10,
+        0,
         0,
         1,
-        1,
         0,
-        1,
-        1
+        2,
+        0
       ],
       [
-        10,
-        3,
-        5,
+        8,
+        1,
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      [
+        6,
         4,
-        5,
-        5,
+        4,
+        4,
         5
       ],
       [
-        10,
-        0,
+        12,
+        1,
+        3,
+        1,
         4,
         1,
-        4
+        5
       ],
       [
-        8,
-        3,
-        4,
-        4,
-        4,
-        5,
-        4
-      ],
-      [
-        11,
-        2,
-        1,
-        2,
-        2,
-        2,
-        3
-      ],
-      [
-        8,
-        4,
-        0,
-        4,
-        1,
-        5,
-        1
-      ],
-      [
-        3,
-        2,
+        9,
         0,
         3,
-        0
+        0,
+        4,
+        0,
+        5
       ]
     ],
-    "answer": "52145215423264136653",
+    "answer": "42151356321544521342641",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "점선으로 묶인 칸들의 합이 모서리의 숫자와 같아요. 묶음 안에서는 같은 숫자를 쓰지 않아요.",
-        "1행 2열은 2이에요.",
-        "2행 2열은 4이에요."
+        "2행 6열은 6이에요.",
+        "5행 5열은 4이에요."
       ],
       "en": [
         "The cells inside a dotted outline add up to the number in its corner. A number is not repeated inside one outline.",
-        "Row 1, column 2 is 2.",
-        "Row 2, column 2 is 4."
+        "Row 2, column 6 is 6.",
+        "Row 5, column 5 is 4."
       ],
       "ja": [
         "点線で囲まれたマスの合計が、角の数字と同じになります。囲みの中で同じ数字は使いません。",
-        "1行2列は2です。",
-        "2行2列は4です。"
+        "2行6列は6です。",
+        "5行5列は4です。"
       ],
       "zh": [
         "虚线框内的格子之和等于角上的数字，同一个框里不会有重复数字。",
-        "第1行第2列是2。",
-        "第2行第2列是4。"
+        "第2行第6列是6。",
+        "第5行第5列是4。"
       ],
       "es": [
         "Las casillas dentro de un contorno punteado suman el número de su esquina. No se repite número dentro de un contorno.",
-        "La fila 1, columna 2 es 2.",
-        "La fila 2, columna 2 es 4."
+        "La fila 2, columna 6 es 6.",
+        "La fila 5, columna 5 es 4."
       ],
       "fr": [
         "Les cases d'un contour pointillé ont pour somme le nombre indiqué dans son coin. Aucun chiffre ne se répète dans un contour.",
-        "Ligne 1, colonne 2 : 2.",
-        "Ligne 2, colonne 2 : 4."
+        "Ligne 2, colonne 6 : 6.",
+        "Ligne 5, colonne 5 : 4."
       ],
       "de": [
         "Die Felder in einer gestrichelten Umrandung ergeben zusammen die Zahl in der Ecke. Innerhalb einer Umrandung wiederholt sich keine Zahl.",
-        "Zeile 1, Spalte 2 ist 2.",
-        "Zeile 2, Spalte 2 ist 4."
+        "Zeile 2, Spalte 6 ist 6.",
+        "Zeile 5, Spalte 5 ist 4."
       ]
     },
     "explanation": {
-      "ko": "526143 341562 154236 263415 432651 615324",
-      "en": "526143 341562 154236 263415 432651 615324",
-      "ja": "526143 341562 154236 263415 432651 615324",
-      "zh": "526143 341562 154236 263415 432651 615324",
-      "es": "526143 341562 154236 263415 432651 615324",
-      "fr": "526143 341562 154236 263415 432651 615324",
-      "de": "526143 341562 154236 263415 432651 615324"
+      "ko": "642153 135426 321564 456231 513642 264315",
+      "en": "642153 135426 321564 456231 513642 264315",
+      "ja": "642153 135426 321564 456231 513642 264315",
+      "zh": "642153 135426 321564 456231 513642 264315",
+      "es": "642153 135426 321564 456231 513642 264315",
+      "fr": "642153 135426 321564 456231 513642 264315",
+      "de": "642153 135426 321564 456231 513642 264315"
     }
   },
   {
@@ -71929,50 +71856,50 @@
     "order": 3,
     "board": [
       [
-        5,
-        3,
-        0,
         0,
         2,
-        0
-      ],
-      [
-        2,
+        1,
         0,
-        6,
-        3,
         0,
         0
       ],
       [
         6,
-        0,
+        4,
         0,
         0,
         3,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
         0
       ],
       [
         1,
-        4,
-        3,
+        0,
+        0,
         2,
-        5,
-        0
-      ],
-      [
-        0,
-        5,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        5,
         0,
         0
       ]
@@ -71984,102 +71911,93 @@
     ],
     "cages": [
       [
-        9,
+        5,
+        2,
         0,
+        2,
+        1
+      ],
+      [
+        9,
+        3,
+        1,
+        3,
+        2
+      ],
+      [
+        7,
         3,
         0,
         4,
-        0,
+        0
+      ],
+      [
+        10,
+        4,
+        4,
+        4,
+        5,
+        5,
         5
       ],
       [
         8,
-        5,
-        2,
-        5,
-        3,
-        5,
-        4
-      ],
-      [
-        9,
-        1,
-        5,
-        2,
-        5
-      ],
-      [
-        5,
-        4,
-        5,
-        5,
-        5
-      ],
-      [
-        11,
-        3,
-        4,
-        3,
-        5
-      ],
-      [
-        6,
         0,
         1,
-        1,
         0,
+        2,
         1,
-        1
+        2
       ]
     ],
-    "answer": "461145251463146246213",
+    "answer": "36545124655642645135346",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "점선으로 묶인 칸들의 합이 모서리의 숫자와 같아요. 묶음 안에서는 같은 숫자를 쓰지 않아요.",
-        "2행 2열은 1이에요.",
-        "2행 6열은 5이에요."
+        "2행 3열은 5이에요.",
+        "3행 1열은 4이에요."
       ],
       "en": [
         "The cells inside a dotted outline add up to the number in its corner. A number is not repeated inside one outline.",
-        "Row 2, column 2 is 1.",
-        "Row 2, column 6 is 5."
+        "Row 2, column 3 is 5.",
+        "Row 3, column 1 is 4."
       ],
       "ja": [
         "点線で囲まれたマスの合計が、角の数字と同じになります。囲みの中で同じ数字は使いません。",
-        "2行2列は1です。",
-        "2行6列は5です。"
+        "2行3列は5です。",
+        "3行1列は4です。"
       ],
       "zh": [
         "虚线框内的格子之和等于角上的数字，同一个框里不会有重复数字。",
-        "第2行第2列是1。",
-        "第2行第6列是5。"
+        "第2行第3列是5。",
+        "第3行第1列是4。"
       ],
       "es": [
         "Las casillas dentro de un contorno punteado suman el número de su esquina. No se repite número dentro de un contorno.",
-        "La fila 2, columna 2 es 1.",
-        "La fila 2, columna 6 es 5."
+        "La fila 2, columna 3 es 5.",
+        "La fila 3, columna 1 es 4."
       ],
       "fr": [
         "Les cases d'un contour pointillé ont pour somme le nombre indiqué dans son coin. Aucun chiffre ne se répète dans un contour.",
-        "Ligne 2, colonne 2 : 1.",
-        "Ligne 2, colonne 6 : 5."
+        "Ligne 2, colonne 3 : 5.",
+        "Ligne 3, colonne 1 : 4."
       ],
       "de": [
         "Die Felder in einer gestrichelten Umrandung ergeben zusammen die Zahl in der Ecke. Innerhalb einer Umrandung wiederholt sich keine Zahl.",
-        "Zeile 2, Spalte 2 ist 1.",
-        "Zeile 2, Spalte 6 ist 5."
+        "Zeile 2, Spalte 3 ist 5.",
+        "Zeile 3, Spalte 1 ist 4."
       ]
     },
     "explanation": {
-      "ko": "534621 216345 625134 143256 351462 462513",
-      "en": "534621 216345 625134 143256 351462 462513",
-      "ja": "534621 216345 625134 143256 351462 462513",
-      "zh": "534621 216345 625134 143256 351462 462513",
-      "es": "534621 216345 625134 143256 351462 462513",
-      "fr": "534621 216345 625134 143256 351462 462513",
-      "de": "534621 216345 625134 143256 351462 462513"
+      "ko": "321654 645132 412365 536421 264513 153246",
+      "en": "321654 645132 412365 536421 264513 153246",
+      "ja": "321654 645132 412365 536421 264513 153246",
+      "zh": "321654 645132 412365 536421 264513 153246",
+      "es": "321654 645132 412365 536421 264513 153246",
+      "fr": "321654 645132 412365 536421 264513 153246",
+      "de": "321654 645132 412365 536421 264513 153246"
     }
   },
   {
@@ -72090,50 +72008,50 @@
     "order": 4,
     "board": [
       [
+        2,
         0,
         0,
-        4,
         0,
-        3,
-        0
+        0,
+        3
       ],
       [
         0,
-        0,
+        3,
+        5,
+        2,
+        4,
+        6
+      ],
+      [
         3,
         0,
         0,
-        0
-      ],
-      [
-        4,
+        0,
         1,
-        6,
-        0,
-        2,
-        5
-      ],
-      [
-        5,
-        0,
-        0,
-        4,
-        0,
         0
       ],
       [
-        6,
-        2,
-        5,
         0,
         0,
-        0
-      ],
-      [
+        1,
+        0,
         3,
-        4,
+        2
+      ],
+      [
         0,
         0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        5,
         0,
         0
       ]
@@ -72145,100 +72063,95 @@
     ],
     "cages": [
       [
-        7,
+        9,
         4,
         1,
         5,
-        1,
+        0,
         5,
-        2
-      ],
-      [
-        7,
-        0,
-        0,
-        0,
         1
       ],
       [
-        10,
-        2,
-        3,
-        2,
-        4,
-        2,
+        9,
+        0,
+        5,
+        1,
         5
       ],
       [
-        9,
+        11,
         2,
         0,
-        3,
-        0
-      ],
-      [
-        9,
-        4,
-        4,
-        5,
-        4
-      ],
-      [
-        7,
         2,
         1,
         2,
         2
+      ],
+      [
+        11,
+        2,
+        3,
+        3,
+        2,
+        3,
+        3
+      ],
+      [
+        5,
+        3,
+        4,
+        3,
+        5
       ]
     ],
-    "answer": "165225614332611431256",
+    "answer": "46151624545652436161324",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "점선으로 묶인 칸들의 합이 모서리의 숫자와 같아요. 묶음 안에서는 같은 숫자를 쓰지 않아요.",
-        "3행 4열은 3이에요.",
-        "4행 2열은 3이에요."
+        "1행 4열은 1이에요.",
+        "1행 5열은 5이에요."
       ],
       "en": [
         "The cells inside a dotted outline add up to the number in its corner. A number is not repeated inside one outline.",
-        "Row 3, column 4 is 3.",
-        "Row 4, column 2 is 3."
+        "Row 1, column 4 is 1.",
+        "Row 1, column 5 is 5."
       ],
       "ja": [
         "点線で囲まれたマスの合計が、角の数字と同じになります。囲みの中で同じ数字は使いません。",
-        "3行4列は3です。",
-        "4行2列は3です。"
+        "1行4列は1です。",
+        "1行5列は5です。"
       ],
       "zh": [
         "虚线框内的格子之和等于角上的数字，同一个框里不会有重复数字。",
-        "第3行第4列是3。",
-        "第4行第2列是3。"
+        "第1行第4列是1。",
+        "第1行第5列是5。"
       ],
       "es": [
         "Las casillas dentro de un contorno punteado suman el número de su esquina. No se repite número dentro de un contorno.",
-        "La fila 3, columna 4 es 3.",
-        "La fila 4, columna 2 es 3."
+        "La fila 1, columna 4 es 1.",
+        "La fila 1, columna 5 es 5."
       ],
       "fr": [
         "Les cases d'un contour pointillé ont pour somme le nombre indiqué dans son coin. Aucun chiffre ne se répète dans un contour.",
-        "Ligne 3, colonne 4 : 3.",
-        "Ligne 4, colonne 2 : 3."
+        "Ligne 1, colonne 4 : 1.",
+        "Ligne 1, colonne 5 : 5."
       ],
       "de": [
         "Die Felder in einer gestrichelten Umrandung ergeben zusammen die Zahl in der Ecke. Innerhalb einer Umrandung wiederholt sich keine Zahl.",
-        "Zeile 3, Spalte 4 ist 3.",
-        "Zeile 4, Spalte 2 ist 3."
+        "Zeile 1, Spalte 4 ist 1.",
+        "Zeile 1, Spalte 5 ist 5."
       ]
     },
     "explanation": {
-      "ko": "164532 253614 416325 532461 625143 341256",
-      "en": "164532 253614 416325 532461 625143 341256",
-      "ja": "164532 253614 416325 532461 625143 341256",
-      "zh": "164532 253614 416325 532461 625143 341256",
-      "es": "164532 253614 416325 532461 625143 341256",
-      "fr": "164532 253614 416325 532461 625143 341256",
-      "de": "164532 253614 416325 532461 625143 341256"
+      "ko": "246153 135246 362415 451632 524361 613524",
+      "en": "246153 135246 362415 451632 524361 613524",
+      "ja": "246153 135246 362415 451632 524361 613524",
+      "zh": "246153 135246 362415 451632 524361 613524",
+      "es": "246153 135246 362415 451632 524361 613524",
+      "fr": "246153 135246 362415 451632 524361 613524",
+      "de": "246153 135246 362415 451632 524361 613524"
     }
   },
   {
@@ -72251,45 +72164,45 @@
       [
         0,
         0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        2,
-        1,
-        3,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        4,
-        3,
-        6,
-        2
-      ],
-      [
+        5,
         0,
         3,
-        2,
-        0,
-        1,
-        5
+        1
       ],
       [
+        0,
+        0,
         0,
         6,
         5,
-        0,
-        0,
         0
       ],
       [
         3,
+        0,
+        4,
+        5,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        2,
+        1,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
         0,
         0,
         0,
@@ -72304,93 +72217,91 @@
     ],
     "cages": [
       [
-        10,
-        0,
-        1,
-        0,
-        2
-      ],
-      [
-        10,
-        4,
-        3,
-        4,
-        4,
-        5,
-        3
-      ],
-      [
-        11,
-        2,
-        2,
-        3,
-        2,
-        4,
-        2
-      ],
-      [
-        6,
+        7,
         3,
         4,
         3,
         5
       ],
       [
-        7,
+        11,
+        2,
+        3,
+        2,
+        4
+      ],
+      [
+        8,
         0,
         3,
         1,
         3
+      ],
+      [
+        8,
+        0,
+        4,
+        1,
+        4
+      ],
+      [
+        9,
+        4,
+        4,
+        5,
+        4,
+        5,
+        5
       ]
     ],
-    "answer": "5461236541564423121546",
+    "answer": "64212341625423615451326",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "점선으로 묶인 칸들의 합이 모서리의 숫자와 같아요. 묶음 안에서는 같은 숫자를 쓰지 않아요.",
-        "1행 2열은 4이에요.",
-        "1행 3열은 6이에요."
+        "1행 4열은 2이에요.",
+        "3행 2열은 1이에요."
       ],
       "en": [
         "The cells inside a dotted outline add up to the number in its corner. A number is not repeated inside one outline.",
-        "Row 1, column 2 is 4.",
-        "Row 1, column 3 is 6."
+        "Row 1, column 4 is 2.",
+        "Row 3, column 2 is 1."
       ],
       "ja": [
         "点線で囲まれたマスの合計が、角の数字と同じになります。囲みの中で同じ数字は使いません。",
-        "1行2列は4です。",
-        "1行3列は6です。"
+        "1行4列は2です。",
+        "3行2列は1です。"
       ],
       "zh": [
         "虚线框内的格子之和等于角上的数字，同一个框里不会有重复数字。",
-        "第1行第2列是4。",
-        "第1行第3列是6。"
+        "第1行第4列是2。",
+        "第3行第2列是1。"
       ],
       "es": [
         "Las casillas dentro de un contorno punteado suman el número de su esquina. No se repite número dentro de un contorno.",
-        "La fila 1, columna 2 es 4.",
-        "La fila 1, columna 3 es 6."
+        "La fila 1, columna 4 es 2.",
+        "La fila 3, columna 2 es 1."
       ],
       "fr": [
         "Les cases d'un contour pointillé ont pour somme le nombre indiqué dans son coin. Aucun chiffre ne se répète dans un contour.",
-        "Ligne 1, colonne 2 : 4.",
-        "Ligne 1, colonne 3 : 6."
+        "Ligne 1, colonne 4 : 2.",
+        "Ligne 3, colonne 2 : 1."
       ],
       "de": [
         "Die Felder in einer gestrichelten Umrandung ergeben zusammen die Zahl in der Ecke. Innerhalb einer Umrandung wiederholt sich keine Zahl.",
-        "Zeile 1, Spalte 2 ist 4.",
-        "Zeile 1, Spalte 3 ist 6."
+        "Zeile 1, Spalte 4 ist 2.",
+        "Zeile 3, Spalte 2 ist 1."
       ]
     },
     "explanation": {
-      "ko": "546123 213654 154362 632415 465231 321546",
-      "en": "546123 213654 154362 632415 465231 321546",
-      "ja": "546123 213654 154362 632415 465231 321546",
-      "zh": "546123 213654 154362 632415 465231 321546",
-      "es": "546123 213654 154362 632415 465231 321546",
-      "fr": "546123 213654 154362 632415 465231 321546",
-      "de": "546123 213654 154362 632415 465231 321546"
+      "ko": "645231 123654 314562 562143 236415 451326",
+      "en": "645231 123654 314562 562143 236415 451326",
+      "ja": "645231 123654 314562 562143 236415 451326",
+      "zh": "645231 123654 314562 562143 236415 451326",
+      "es": "645231 123654 314562 562143 236415 451326",
+      "fr": "645231 123654 314562 562143 236415 451326",
+      "de": "645231 123654 314562 562143 236415 451326"
     }
   },
   {
@@ -72401,52 +72312,52 @@
     "order": 6,
     "board": [
       [
-        0,
-        1,
         3,
         0,
-        6,
-        0
+        0,
+        0,
+        0,
+        1
       ],
       [
         0,
-        4,
+        1,
         0,
         0,
         3,
-        0
+        2
       ],
       [
         0,
-        0,
-        4,
-        1,
         5,
-        6
+        0,
+        3,
+        0,
+        0
       ],
       [
         0,
-        6,
         0,
+        1,
         0,
         0,
         0
       ],
       [
+        0,
         6,
         0,
-        0,
-        0,
+        1,
         0,
         0
       ],
       [
+        1,
         4,
         0,
         0,
-        6,
         0,
-        0
+        3
       ]
     ],
     "rules": [
@@ -72456,91 +72367,93 @@
     ],
     "cages": [
       [
-        7,
-        5,
-        0,
-        5,
-        1
-      ],
-      [
-        8,
+        4,
         3,
-        5,
+        2,
         4,
-        4,
-        4,
-        5
+        2
       ],
       [
-        9,
-        0,
-        4,
-        1,
+        6,
+        3,
+        3,
+        3,
         4
       ],
       [
         11,
-        1,
+        0,
         2,
         1,
+        1,
+        1,
+        2
+      ],
+      [
+        8,
+        4,
+        3,
+        5,
+        2,
+        5,
         3
       ],
       [
         9,
-        2,
+        5,
         4,
-        3,
-        4
+        5,
+        5
       ]
     ],
-    "answer": "54226513215243523143125",
+    "answer": "26545464216634252354526",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "점선으로 묶인 칸들의 합이 모서리의 숫자와 같아요. 묶음 안에서는 같은 숫자를 쓰지 않아요.",
-        "2행 3열은 6이에요.",
-        "2행 4열은 5이에요."
+        "1행 2열은 2이에요.",
+        "5행 3열은 3이에요."
       ],
       "en": [
         "The cells inside a dotted outline add up to the number in its corner. A number is not repeated inside one outline.",
-        "Row 2, column 3 is 6.",
-        "Row 2, column 4 is 5."
+        "Row 1, column 2 is 2.",
+        "Row 5, column 3 is 3."
       ],
       "ja": [
         "点線で囲まれたマスの合計が、角の数字と同じになります。囲みの中で同じ数字は使いません。",
-        "2行3列は6です。",
-        "2行4列は5です。"
+        "1行2列は2です。",
+        "5行3列は3です。"
       ],
       "zh": [
         "虚线框内的格子之和等于角上的数字，同一个框里不会有重复数字。",
-        "第2行第3列是6。",
-        "第2行第4列是5。"
+        "第1行第2列是2。",
+        "第5行第3列是3。"
       ],
       "es": [
         "Las casillas dentro de un contorno punteado suman el número de su esquina. No se repite número dentro de un contorno.",
-        "La fila 2, columna 3 es 6.",
-        "La fila 2, columna 4 es 5."
+        "La fila 1, columna 2 es 2.",
+        "La fila 5, columna 3 es 3."
       ],
       "fr": [
         "Les cases d'un contour pointillé ont pour somme le nombre indiqué dans son coin. Aucun chiffre ne se répète dans un contour.",
-        "Ligne 2, colonne 3 : 6.",
-        "Ligne 2, colonne 4 : 5."
+        "Ligne 1, colonne 2 : 2.",
+        "Ligne 5, colonne 3 : 3."
       ],
       "de": [
         "Die Felder in einer gestrichelten Umrandung ergeben zusammen die Zahl in der Ecke. Innerhalb einer Umrandung wiederholt sich keine Zahl.",
-        "Zeile 2, Spalte 3 ist 6.",
-        "Zeile 2, Spalte 4 ist 5."
+        "Zeile 1, Spalte 2 ist 2.",
+        "Zeile 5, Spalte 3 ist 3."
       ]
     },
     "explanation": {
-      "ko": "513462 246531 324156 165243 652314 431625",
-      "en": "513462 246531 324156 165243 652314 431625",
-      "ja": "513462 246531 324156 165243 652314 431625",
-      "zh": "513462 246531 324156 165243 652314 431625",
-      "es": "513462 246531 324156 165243 652314 431625",
-      "fr": "513462 246531 324156 165243 652314 431625",
-      "de": "513462 246531 324156 165243 652314 431625"
+      "ko": "326541 514632 452316 631425 263154 145263",
+      "en": "326541 514632 452316 631425 263154 145263",
+      "ja": "326541 514632 452316 631425 263154 145263",
+      "zh": "326541 514632 452316 631425 263154 145263",
+      "es": "326541 514632 452316 631425 263154 145263",
+      "fr": "326541 514632 452316 631425 263154 145263",
+      "de": "326541 514632 452316 631425 263154 145263"
     }
   },
   {
@@ -72551,36 +72464,36 @@
     "order": 1,
     "board": [
       [
-        4,
-        0,
+        5,
         2,
-        5,
-        0,
-        0
-      ],
-      [
         6,
-        5,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
         1,
-        2,
+        0,
+        0
+      ],
+      [
+        1,
+        3,
         4,
+        5,
+        0,
         0
       ],
       [
         0,
-        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
         0,
         6,
         0,
-        3
+        0,
+        0,
+        0
       ],
       [
         0,
@@ -72588,13 +72501,13 @@
         0,
         0,
         0,
-        2
+        0
       ],
       [
-        2,
-        3,
         6,
         0,
+        0,
+        4,
         0,
         0
       ]
@@ -72606,112 +72519,112 @@
     ],
     "lt": [
       [
+        4,
         2,
-        2,
-        2,
+        4,
         3
       ],
       [
-        3,
         5,
-        2,
+        4,
+        5,
         5
       ],
       [
-        5,
-        3,
-        5,
-        4
+        2,
+        2,
+        2,
+        1
       ],
       [
-        0,
-        1,
-        0,
-        2
+        5,
+        4,
+        4,
+        4
       ]
     ],
     "cages": [
       [
-        11,
-        3,
-        0,
-        3,
+        9,
+        4,
+        2,
+        4,
+        3
+      ],
+      [
+        10,
+        1,
+        2,
         1,
         3,
+        2,
         2
       ],
       [
         11,
-        0,
-        2,
-        0,
-        3,
         1,
-        3
+        4,
+        2,
+        4,
+        3,
+        4
       ],
       [
         5,
-        4,
-        0,
-        4,
-        1
-      ],
-      [
-        9,
         2,
-        0,
-        2,
-        1
+        3,
+        3,
+        3
       ]
     ],
-    "answer": "136342136554114536154",
+    "answer": "3462351246423152436511523",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "부등호와 점선 묶음의 합을 함께 써서 후보를 줄여 봐요. 줄·상자 규칙도 잊지 마요.",
-        "1행 2열은 1이에요.",
-        "2행 3열은 3이에요."
+        "3행 3열은 1이에요.",
+        "5행 3열은 3이에요."
       ],
       "en": [
         "Use the inequality signs and the dotted-outline sums together to cut down candidates, along with the line and box rules.",
-        "Row 1, column 2 is 1.",
-        "Row 2, column 3 is 3."
+        "Row 3, column 3 is 1.",
+        "Row 5, column 3 is 3."
       ],
       "ja": [
         "不等号と点線の合計を組み合わせて候補を絞りましょう。行・列・ブロックのルールも忘れずに。",
-        "1行2列は1です。",
-        "2行3列は3です。"
+        "3行3列は1です。",
+        "5行3列は3です。"
       ],
       "zh": [
         "把不等号和虚线框的和结合起来缩小候选数，同时别忘了行、列、方块的规则。",
-        "第1行第2列是1。",
-        "第2行第3列是3。"
+        "第3行第3列是1。",
+        "第5行第3列是3。"
       ],
       "es": [
         "Combina los signos de desigualdad y las sumas de los contornos punteados para reducir opciones, sin olvidar las reglas de línea y recuadro.",
-        "La fila 1, columna 2 es 1.",
-        "La fila 2, columna 3 es 3."
+        "La fila 3, columna 3 es 1.",
+        "La fila 5, columna 3 es 3."
       ],
       "fr": [
         "Combinez les signes d'inégalité et les sommes des contours pointillés pour réduire les possibilités, sans oublier les règles de ligne et de bloc.",
-        "Ligne 1, colonne 2 : 1.",
-        "Ligne 2, colonne 3 : 3."
+        "Ligne 3, colonne 3 : 1.",
+        "Ligne 5, colonne 3 : 3."
       ],
       "de": [
         "Kombiniere die Ungleichheitszeichen und die Summen der gestrichelten Umrandungen, um Kandidaten einzugrenzen. Zeilen- und Blockregeln gelten weiterhin.",
-        "Zeile 1, Spalte 2 ist 1.",
-        "Zeile 2, Spalte 3 ist 3."
+        "Zeile 3, Spalte 3 ist 1.",
+        "Zeile 5, Spalte 3 ist 3."
       ]
     },
     "explanation": {
-      "ko": "412536 653421 361245 524613 145362 236154",
-      "en": "412536 653421 361245 524613 145362 236154",
-      "ja": "412536 653421 361245 524613 145362 236154",
-      "zh": "412536 653421 361245 524613 145362 236154",
-      "es": "412536 653421 361245 524613 145362 236154",
-      "fr": "412536 653421 361245 524613 145362 236154",
-      "de": "412536 653421 361245 524613 145362 236154"
+      "ko": "526134 134562 351246 462315 243651 615423",
+      "en": "526134 134562 351246 462315 243651 615423",
+      "ja": "526134 134562 351246 462315 243651 615423",
+      "zh": "526134 134562 351246 462315 243651 615423",
+      "es": "526134 134562 351246 462315 243651 615423",
+      "fr": "526134 134562 351246 462315 243651 615423",
+      "de": "526134 134562 351246 462315 243651 615423"
     }
   },
   {
@@ -72723,350 +72636,11 @@
     "board": [
       [
         0,
-        5,
-        0,
-        0,
-        0,
-        1
-      ],
-      [
-        0,
-        4,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        2,
-        0,
-        3,
-        5,
-        1,
-        0
-      ],
-      [
-        0,
-        1,
-        0,
-        0,
-        2,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        3,
-        4,
-        5
-      ],
-      [
-        0,
-        0,
-        5,
-        1,
-        0,
-        0
-      ]
-    ],
-    "rules": [
-      "row",
-      "col",
-      "box"
-    ],
-    "lt": [
-      [
-        2,
-        0,
-        1,
-        0
-      ],
-      [
-        3,
-        1,
-        2,
-        1
-      ],
-      [
-        2,
-        5,
-        1,
-        5
-      ],
-      [
-        1,
-        4,
-        1,
-        5
-      ]
-    ],
-    "cages": [
-      [
-        3,
-        3,
-        1,
-        4,
-        1
-      ],
-      [
-        5,
-        2,
-        4,
-        2,
-        5
-      ],
-      [
-        9,
-        3,
-        3,
-        4,
-        3
-      ],
-      [
-        7,
-        5,
-        3,
-        5,
-        4
-      ]
-    ],
-    "answer": "6243312566454631264362",
-    "inputType": "choices",
-    "choices": null,
-    "hints": {
-      "ko": [
-        "부등호와 점선 묶음의 합을 함께 써서 후보를 줄여 봐요. 줄·상자 규칙도 잊지 마요.",
-        "2행 6열은 6이에요.",
-        "3행 2열은 6이에요."
-      ],
-      "en": [
-        "Use the inequality signs and the dotted-outline sums together to cut down candidates, along with the line and box rules.",
-        "Row 2, column 6 is 6.",
-        "Row 3, column 2 is 6."
-      ],
-      "ja": [
-        "不等号と点線の合計を組み合わせて候補を絞りましょう。行・列・ブロックのルールも忘れずに。",
-        "2行6列は6です。",
-        "3行2列は6です。"
-      ],
-      "zh": [
-        "把不等号和虚线框的和结合起来缩小候选数，同时别忘了行、列、方块的规则。",
-        "第2行第6列是6。",
-        "第3行第2列是6。"
-      ],
-      "es": [
-        "Combina los signos de desigualdad y las sumas de los contornos punteados para reducir opciones, sin olvidar las reglas de línea y recuadro.",
-        "La fila 2, columna 6 es 6.",
-        "La fila 3, columna 2 es 6."
-      ],
-      "fr": [
-        "Combinez les signes d'inégalité et les sommes des contours pointillés pour réduire les possibilités, sans oublier les règles de ligne et de bloc.",
-        "Ligne 2, colonne 6 : 6.",
-        "Ligne 3, colonne 2 : 6."
-      ],
-      "de": [
-        "Kombiniere die Ungleichheitszeichen und die Summen der gestrichelten Umrandungen, um Kandidaten einzugrenzen. Zeilen- und Blockregeln gelten weiterhin.",
-        "Zeile 2, Spalte 6 ist 6.",
-        "Zeile 3, Spalte 2 ist 6."
-      ]
-    },
-    "explanation": {
-      "ko": "652431 341256 263514 514623 126345 435162",
-      "en": "652431 341256 263514 514623 126345 435162",
-      "ja": "652431 341256 263514 514623 126345 435162",
-      "zh": "652431 341256 263514 514623 126345 435162",
-      "es": "652431 341256 263514 514623 126345 435162",
-      "fr": "652431 341256 263514 514623 126345 435162",
-      "de": "652431 341256 263514 514623 126345 435162"
-    }
-  },
-  {
-    "id": "fx14_s03",
-    "type": "fill",
-    "track": "fill",
-    "chapter": 14,
-    "order": 3,
-    "board": [
-      [
         6,
         0,
         0,
         0,
-        0,
-        4
-      ],
-      [
-        4,
-        0,
-        0,
-        5,
-        2,
-        0
-      ],
-      [
-        3,
-        0,
-        0,
-        0,
-        0,
-        5
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        4,
-        0
-      ],
-      [
-        5,
-        1,
-        0,
-        2,
-        0,
-        0
-      ],
-      [
-        2,
-        0,
-        0,
-        4,
-        0,
-        0
-      ]
-    ],
-    "rules": [
-      "row",
-      "col",
-      "box"
-    ],
-    "lt": [
-      [
-        1,
-        4,
-        1,
-        3
-      ],
-      [
-        2,
-        4,
-        1,
-        4
-      ],
-      [
-        1,
-        1,
-        2,
-        1
-      ]
-    ],
-    "cages": [
-      [
-        9,
-        2,
-        3,
-        3,
-        3
-      ],
-      [
-        13,
-        0,
-        0,
-        0,
-        1,
-        0,
         2
-      ],
-      [
-        7,
-        1,
-        3,
-        1,
-        4
-      ]
-    ],
-    "answer": "25133164261156324636351",
-    "inputType": "choices",
-    "choices": null,
-    "hints": {
-      "ko": [
-        "부등호와 점선 묶음의 합을 함께 써서 후보를 줄여 봐요. 줄·상자 규칙도 잊지 마요.",
-        "2행 2열은 3이에요.",
-        "3행 4열은 6이에요."
-      ],
-      "en": [
-        "Use the inequality signs and the dotted-outline sums together to cut down candidates, along with the line and box rules.",
-        "Row 2, column 2 is 3.",
-        "Row 3, column 4 is 6."
-      ],
-      "ja": [
-        "不等号と点線の合計を組み合わせて候補を絞りましょう。行・列・ブロックのルールも忘れずに。",
-        "2行2列は3です。",
-        "3行4列は6です。"
-      ],
-      "zh": [
-        "把不等号和虚线框的和结合起来缩小候选数，同时别忘了行、列、方块的规则。",
-        "第2行第2列是3。",
-        "第3行第4列是6。"
-      ],
-      "es": [
-        "Combina los signos de desigualdad y las sumas de los contornos punteados para reducir opciones, sin olvidar las reglas de línea y recuadro.",
-        "La fila 2, columna 2 es 3.",
-        "La fila 3, columna 4 es 6."
-      ],
-      "fr": [
-        "Combinez les signes d'inégalité et les sommes des contours pointillés pour réduire les possibilités, sans oublier les règles de ligne et de bloc.",
-        "Ligne 2, colonne 2 : 3.",
-        "Ligne 3, colonne 4 : 6."
-      ],
-      "de": [
-        "Kombiniere die Ungleichheitszeichen und die Summen der gestrichelten Umrandungen, um Kandidaten einzugrenzen. Zeilen- und Blockregeln gelten weiterhin.",
-        "Zeile 2, Spalte 2 ist 3.",
-        "Zeile 3, Spalte 4 ist 6."
-      ]
-    },
-    "explanation": {
-      "ko": "625134 431526 342615 156342 514263 263451",
-      "en": "625134 431526 342615 156342 514263 263451",
-      "ja": "625134 431526 342615 156342 514263 263451",
-      "zh": "625134 431526 342615 156342 514263 263451",
-      "es": "625134 431526 342615 156342 514263 263451",
-      "fr": "625134 431526 342615 156342 514263 263451",
-      "de": "625134 431526 342615 156342 514263 263451"
-    }
-  },
-  {
-    "id": "fx14_s04",
-    "type": "fill",
-    "track": "fill",
-    "chapter": 14,
-    "order": 4,
-    "board": [
-      [
-        5,
-        0,
-        3,
-        0,
-        4,
-        2
-      ],
-      [
-        2,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        2,
-        0
       ],
       [
         0,
@@ -73078,17 +72652,33 @@
       ],
       [
         6,
+        1,
         0,
+        4,
         0,
-        0,
-        3,
-        4
+        0
       ],
       [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        6,
         3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
         2,
-        0,
-        0,
         1,
         6
       ]
@@ -73100,36 +72690,51 @@
     ],
     "lt": [
       [
+        4,
+        1,
         3,
+        1
+      ],
+      [
+        0,
         2,
-        3,
-        3
+        0,
+        1
       ],
       [
-        4,
+        5,
         3,
         4,
-        4
+        3
       ],
       [
         5,
         4,
         5,
-        3
+        5
       ]
     ],
     "cages": [
       [
         12,
-        3,
-        3,
-        3,
-        4,
-        3,
-        5
+        0,
+        0,
+        1,
+        0,
+        2,
+        0
       ],
       [
-        8,
+        7,
+        0,
+        1,
+        0,
+        2
+      ],
+      [
+        6,
+        2,
+        1,
         2,
         2,
         3,
@@ -73137,60 +72742,370 @@
       ],
       [
         3,
-        4,
-        1,
         5,
-        1
+        3,
+        5,
+        4
       ]
     ],
-    "answer": "61413651564343265115245",
+    "answer": "4153235164253543621245354",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "부등호와 점선 묶음의 합을 함께 써서 후보를 줄여 봐요. 줄·상자 규칙도 잊지 마요.",
-        "5행 2열은 1이에요.",
-        "5행 4열은 2이에요."
+        "1행 3열은 1이에요.",
+        "5행 1열은 1이에요."
       ],
       "en": [
         "Use the inequality signs and the dotted-outline sums together to cut down candidates, along with the line and box rules.",
-        "Row 5, column 2 is 1.",
-        "Row 5, column 4 is 2."
+        "Row 1, column 3 is 1.",
+        "Row 5, column 1 is 1."
       ],
       "ja": [
         "不等号と点線の合計を組み合わせて候補を絞りましょう。行・列・ブロックのルールも忘れずに。",
-        "5行2列は1です。",
-        "5行4列は2です。"
+        "1行3列は1です。",
+        "5行1列は1です。"
       ],
       "zh": [
         "把不等号和虚线框的和结合起来缩小候选数，同时别忘了行、列、方块的规则。",
-        "第5行第2列是1。",
-        "第5行第4列是2。"
+        "第1行第3列是1。",
+        "第5行第1列是1。"
       ],
       "es": [
         "Combina los signos de desigualdad y las sumas de los contornos punteados para reducir opciones, sin olvidar las reglas de línea y recuadro.",
-        "La fila 5, columna 2 es 1.",
-        "La fila 5, columna 4 es 2."
+        "La fila 1, columna 3 es 1.",
+        "La fila 5, columna 1 es 1."
       ],
       "fr": [
         "Combinez les signes d'inégalité et les sommes des contours pointillés pour réduire les possibilités, sans oublier les règles de ligne et de bloc.",
-        "Ligne 5, colonne 2 : 1.",
-        "Ligne 5, colonne 4 : 2."
+        "Ligne 1, colonne 3 : 1.",
+        "Ligne 5, colonne 1 : 1."
       ],
       "de": [
         "Kombiniere die Ungleichheitszeichen und die Summen der gestrichelten Umrandungen, um Kandidaten einzugrenzen. Zeilen- und Blockregeln gelten weiterhin.",
-        "Zeile 5, Spalte 2 ist 1.",
-        "Zeile 5, Spalte 4 ist 2."
+        "Zeile 1, Spalte 3 ist 1.",
+        "Zeile 5, Spalte 1 ist 1."
       ]
     },
     "explanation": {
-      "ko": "563142 241365 156423 432651 615234 324516",
-      "en": "563142 241365 156423 432651 615234 324516",
-      "ja": "563142 241365 156423 432651 615234 324516",
-      "zh": "563142 241365 156423 432651 615234 324516",
-      "es": "563142 241365 156423 432651 615234 324516",
-      "fr": "563142 241365 156423 432651 615234 324516",
-      "de": "563142 241365 156423 432651 615234 324516"
+      "ko": "461532 235164 612453 543621 126345 354216",
+      "en": "461532 235164 612453 543621 126345 354216",
+      "ja": "461532 235164 612453 543621 126345 354216",
+      "zh": "461532 235164 612453 543621 126345 354216",
+      "es": "461532 235164 612453 543621 126345 354216",
+      "fr": "461532 235164 612453 543621 126345 354216",
+      "de": "461532 235164 612453 543621 126345 354216"
+    }
+  },
+  {
+    "id": "fx14_s03",
+    "type": "fill",
+    "track": "fill",
+    "chapter": 14,
+    "order": 3,
+    "board": [
+      [
+        4,
+        3,
+        0,
+        5,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        5,
+        2,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ]
+    ],
+    "rules": [
+      "row",
+      "col",
+      "box"
+    ],
+    "lt": [
+      [
+        2,
+        1,
+        2,
+        0
+      ],
+      [
+        2,
+        1,
+        2,
+        2
+      ],
+      [
+        2,
+        3,
+        2,
+        2
+      ]
+    ],
+    "cages": [
+      [
+        10,
+        2,
+        2,
+        3,
+        2,
+        3,
+        3
+      ],
+      [
+        7,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        7,
+        0,
+        2,
+        1,
+        2
+      ]
+    ],
+    "answer": "2166432645154136654121365",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "부등호와 점선 묶음의 합을 함께 써서 후보를 줄여 봐요. 줄·상자 규칙도 잊지 마요.",
+        "1행 3열은 2이에요.",
+        "2행 2열은 6이에요."
+      ],
+      "en": [
+        "Use the inequality signs and the dotted-outline sums together to cut down candidates, along with the line and box rules.",
+        "Row 1, column 3 is 2.",
+        "Row 2, column 2 is 6."
+      ],
+      "ja": [
+        "不等号と点線の合計を組み合わせて候補を絞りましょう。行・列・ブロックのルールも忘れずに。",
+        "1行3列は2です。",
+        "2行2列は6です。"
+      ],
+      "zh": [
+        "把不等号和虚线框的和结合起来缩小候选数，同时别忘了行、列、方块的规则。",
+        "第1行第3列是2。",
+        "第2行第2列是6。"
+      ],
+      "es": [
+        "Combina los signos de desigualdad y las sumas de los contornos punteados para reducir opciones, sin olvidar las reglas de línea y recuadro.",
+        "La fila 1, columna 3 es 2.",
+        "La fila 2, columna 2 es 6."
+      ],
+      "fr": [
+        "Combinez les signes d'inégalité et les sommes des contours pointillés pour réduire les possibilités, sans oublier les règles de ligne et de bloc.",
+        "Ligne 1, colonne 3 : 2.",
+        "Ligne 2, colonne 2 : 6."
+      ],
+      "de": [
+        "Kombiniere die Ungleichheitszeichen und die Summen der gestrichelten Umrandungen, um Kandidaten einzugrenzen. Zeilen- und Blockregeln gelten weiterhin.",
+        "Zeile 1, Spalte 3 ist 2.",
+        "Zeile 2, Spalte 2 ist 6."
+      ]
+    },
+    "explanation": {
+      "ko": "432516 165234 326451 541362 654123 213645",
+      "en": "432516 165234 326451 541362 654123 213645",
+      "ja": "432516 165234 326451 541362 654123 213645",
+      "zh": "432516 165234 326451 541362 654123 213645",
+      "es": "432516 165234 326451 541362 654123 213645",
+      "fr": "432516 165234 326451 541362 654123 213645",
+      "de": "432516 165234 326451 541362 654123 213645"
+    }
+  },
+  {
+    "id": "fx14_s04",
+    "type": "fill",
+    "track": "fill",
+    "chapter": 14,
+    "order": 4,
+    "board": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        1,
+        3,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        0,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        2,
+        6,
+        0
+      ],
+      [
+        0,
+        2,
+        5,
+        3,
+        0,
+        0
+      ]
+    ],
+    "rules": [
+      "row",
+      "col",
+      "box"
+    ],
+    "lt": [
+      [
+        2,
+        1,
+        1,
+        1
+      ],
+      [
+        5,
+        3,
+        5,
+        4
+      ],
+      [
+        2,
+        4,
+        1,
+        4
+      ]
+    ],
+    "cages": [
+      [
+        5,
+        5,
+        4,
+        5,
+        5
+      ],
+      [
+        11,
+        4,
+        4,
+        4,
+        5
+      ],
+      [
+        7,
+        3,
+        4,
+        3,
+        5
+      ]
+    ],
+    "answer": "4316525641652253416315641",
+    "inputType": "choices",
+    "choices": null,
+    "hints": {
+      "ko": [
+        "부등호와 점선 묶음의 합을 함께 써서 후보를 줄여 봐요. 줄·상자 규칙도 잊지 마요.",
+        "5행 6열은 5이에요.",
+        "6행 5열은 4이에요."
+      ],
+      "en": [
+        "Use the inequality signs and the dotted-outline sums together to cut down candidates, along with the line and box rules.",
+        "Row 5, column 6 is 5.",
+        "Row 6, column 5 is 4."
+      ],
+      "ja": [
+        "不等号と点線の合計を組み合わせて候補を絞りましょう。行・列・ブロックのルールも忘れずに。",
+        "5行6列は5です。",
+        "6行5列は4です。"
+      ],
+      "zh": [
+        "把不等号和虚线框的和结合起来缩小候选数，同时别忘了行、列、方块的规则。",
+        "第5行第6列是5。",
+        "第6行第5列是4。"
+      ],
+      "es": [
+        "Combina los signos de desigualdad y las sumas de los contornos punteados para reducir opciones, sin olvidar las reglas de línea y recuadro.",
+        "La fila 5, columna 6 es 5.",
+        "La fila 6, columna 5 es 4."
+      ],
+      "fr": [
+        "Combinez les signes d'inégalité et les sommes des contours pointillés pour réduire les possibilités, sans oublier les règles de ligne et de bloc.",
+        "Ligne 5, colonne 6 : 5.",
+        "Ligne 6, colonne 5 : 4."
+      ],
+      "de": [
+        "Kombiniere die Ungleichheitszeichen und die Summen der gestrichelten Umrandungen, um Kandidaten einzugrenzen. Zeilen- und Blockregeln gelten weiterhin.",
+        "Zeile 5, Spalte 6 ist 5.",
+        "Zeile 6, Spalte 5 ist 4."
+      ]
+    },
+    "explanation": {
+      "ko": "431652 562134 146523 253416 314265 625341",
+      "en": "431652 562134 146523 253416 314265 625341",
+      "ja": "431652 562134 146523 253416 314265 625341",
+      "zh": "431652 562134 146523 253416 314265 625341",
+      "es": "431652 562134 146523 253416 314265 625341",
+      "fr": "431652 562134 146523 253416 314265 625341",
+      "de": "431652 562134 146523 253416 314265 625341"
     }
   },
   {
@@ -73201,17 +73116,17 @@
     "order": 5,
     "board": [
       [
-        2,
-        5,
         0,
-        1,
-        6,
+        4,
+        0,
+        0,
+        2,
         0
       ],
       [
         0,
         0,
-        1,
+        0,
         0,
         4,
         0
@@ -73221,32 +73136,32 @@
         0,
         0,
         0,
-        3,
+        6,
         0
       ],
       [
         0,
-        0,
-        0,
-        0,
         2,
-        1
+        0,
+        0,
+        0,
+        0
       ],
       [
         0,
+        6,
         0,
-        5,
-        0,
-        0,
+        4,
+        1,
         2
       ],
       [
         0,
         0,
+        2,
         0,
         0,
-        5,
-        0
+        5
       ]
     ],
     "rules": [
@@ -73256,84 +73171,84 @@
     ],
     "lt": [
       [
-        1,
-        2,
-        1,
-        3
+        3,
+        5,
+        3,
+        4
       ],
       [
         1,
         3,
-        2,
+        0,
         3
       ]
     ],
     "cages": [
       [
-        5,
-        5,
-        0,
-        5,
-        1
+        6,
+        1,
+        3,
+        2,
+        2,
+        2,
+        3
       ],
       [
-        9,
-        0,
-        0,
+        3,
+        5,
         1,
-        0,
-        2,
-        0
+        5,
+        2
       ]
     ],
-    "answer": "436325126545436364141236",
+    "answer": "1356256315312464153354163",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "부등호와 점선 묶음의 합을 함께 써서 후보를 줄여 봐요. 줄·상자 규칙도 잊지 마요.",
-        "1행 6열은 3이에요.",
-        "5행 5열은 1이에요."
+        "6행 2열은 1이에요.",
+        "6행 5열은 3이에요."
       ],
       "en": [
         "Use the inequality signs and the dotted-outline sums together to cut down candidates, along with the line and box rules.",
-        "Row 1, column 6 is 3.",
-        "Row 5, column 5 is 1."
+        "Row 6, column 2 is 1.",
+        "Row 6, column 5 is 3."
       ],
       "ja": [
         "不等号と点線の合計を組み合わせて候補を絞りましょう。行・列・ブロックのルールも忘れずに。",
-        "1行6列は3です。",
-        "5行5列は1です。"
+        "6行2列は1です。",
+        "6行5列は3です。"
       ],
       "zh": [
         "把不等号和虚线框的和结合起来缩小候选数，同时别忘了行、列、方块的规则。",
-        "第1行第6列是3。",
-        "第5行第5列是1。"
+        "第6行第2列是1。",
+        "第6行第5列是3。"
       ],
       "es": [
         "Combina los signos de desigualdad y las sumas de los contornos punteados para reducir opciones, sin olvidar las reglas de línea y recuadro.",
-        "La fila 1, columna 6 es 3.",
-        "La fila 5, columna 5 es 1."
+        "La fila 6, columna 2 es 1.",
+        "La fila 6, columna 5 es 3."
       ],
       "fr": [
         "Combinez les signes d'inégalité et les sommes des contours pointillés pour réduire les possibilités, sans oublier les règles de ligne et de bloc.",
-        "Ligne 1, colonne 6 : 3.",
-        "Ligne 5, colonne 5 : 1."
+        "Ligne 6, colonne 2 : 1.",
+        "Ligne 6, colonne 5 : 3."
       ],
       "de": [
         "Kombiniere die Ungleichheitszeichen und die Summen der gestrichelten Umrandungen, um Kandidaten einzugrenzen. Zeilen- und Blockregeln gelten weiterhin.",
-        "Zeile 1, Spalte 6 ist 3.",
-        "Zeile 5, Spalte 5 ist 1."
+        "Zeile 6, Spalte 2 ist 1.",
+        "Zeile 6, Spalte 5 ist 3."
       ]
     },
     "explanation": {
-      "ko": "254163 631245 126534 543621 365412 412356",
-      "en": "254163 631245 126534 543621 365412 412356",
-      "ja": "254163 631245 126534 543621 365412 412356",
-      "zh": "254163 631245 126534 543621 365412 412356",
-      "es": "254163 631245 126534 543621 365412 412356",
-      "fr": "254163 631245 126534 543621 365412 412356",
-      "de": "254163 631245 126534 543621 365412 412356"
+      "ko": "143526 256341 531264 624153 365412 412635",
+      "en": "143526 256341 531264 624153 365412 412635",
+      "ja": "143526 256341 531264 624153 365412 412635",
+      "zh": "143526 256341 531264 624153 365412 412635",
+      "es": "143526 256341 531264 624153 365412 412635",
+      "fr": "143526 256341 531264 624153 365412 412635",
+      "de": "143526 256341 531264 624153 365412 412635"
     }
   },
   {
@@ -73344,47 +73259,47 @@
     "order": 6,
     "board": [
       [
-        0,
-        4,
-        0,
-        0,
-        0,
-        2
-      ],
-      [
+        1,
         0,
         2,
-        6,
-        4,
+        3,
         0,
         0
       ],
       [
-        6,
+        3,
         5,
         0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        5,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        5,
         0,
         3,
         0
       ],
       [
-        0,
-        0,
-        2,
-        0,
-        0,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        1,
-        0,
-        3
-      ],
-      [
-        0,
+        6,
         0,
         0,
         0,
@@ -73399,84 +73314,84 @@
     ],
     "lt": [
       [
+        3,
         5,
-        4,
-        5,
-        3
+        3,
+        4
       ],
       [
         2,
-        3,
-        3,
-        3
+        1,
+        2,
+        2
       ]
     ],
     "cages": [
       [
         6,
-        3,
-        4,
-        4,
-        4
+        1,
+        5,
+        2,
+        5
       ],
       [
-        8,
-        3,
+        9,
+        1,
+        4,
         2,
         3,
-        3,
-        4,
-        3
+        2,
+        4
       ]
     ],
-    "answer": "5136315421135464652213654",
+    "answer": "4656245346122643412623451",
     "inputType": "choices",
     "choices": null,
     "hints": {
       "ko": [
         "부등호와 점선 묶음의 합을 함께 써서 후보를 줄여 봐요. 줄·상자 규칙도 잊지 마요.",
-        "3행 4열은 2이에요.",
-        "4행 4열은 5이에요."
+        "3행 5열은 1이에요.",
+        "3행 1열은 5이에요."
       ],
       "en": [
         "Use the inequality signs and the dotted-outline sums together to cut down candidates, along with the line and box rules.",
-        "Row 3, column 4 is 2.",
-        "Row 4, column 4 is 5."
+        "Row 3, column 5 is 1.",
+        "Row 3, column 1 is 5."
       ],
       "ja": [
         "不等号と点線の合計を組み合わせて候補を絞りましょう。行・列・ブロックのルールも忘れずに。",
-        "3行4列は2です。",
-        "4行4列は5です。"
+        "3行5列は1です。",
+        "3行1列は5です。"
       ],
       "zh": [
         "把不等号和虚线框的和结合起来缩小候选数，同时别忘了行、列、方块的规则。",
-        "第3行第4列是2。",
-        "第4行第4列是5。"
+        "第3行第5列是1。",
+        "第3行第1列是5。"
       ],
       "es": [
         "Combina los signos de desigualdad y las sumas de los contornos punteados para reducir opciones, sin olvidar las reglas de línea y recuadro.",
-        "La fila 3, columna 4 es 2.",
-        "La fila 4, columna 4 es 5."
+        "La fila 3, columna 5 es 1.",
+        "La fila 3, columna 1 es 5."
       ],
       "fr": [
         "Combinez les signes d'inégalité et les sommes des contours pointillés pour réduire les possibilités, sans oublier les règles de ligne et de bloc.",
-        "Ligne 3, colonne 4 : 2.",
-        "Ligne 4, colonne 4 : 5."
+        "Ligne 3, colonne 5 : 1.",
+        "Ligne 3, colonne 1 : 5."
       ],
       "de": [
         "Kombiniere die Ungleichheitszeichen und die Summen der gestrichelten Umrandungen, um Kandidaten einzugrenzen. Zeilen- und Blockregeln gelten weiterhin.",
-        "Zeile 3, Spalte 4 ist 2.",
-        "Zeile 4, Spalte 4 ist 5."
+        "Zeile 3, Spalte 5 ist 1.",
+        "Zeile 3, Spalte 1 ist 5."
       ]
     },
     "explanation": {
-      "ko": "541362 326415 654231 132546 465123 213654",
-      "en": "541362 326415 654231 132546 465123 213654",
-      "ja": "541362 326415 654231 132546 465123 213654",
-      "zh": "541362 326415 654231 132546 465123 213654",
-      "es": "541362 326415 654231 132546 465123 213654",
-      "fr": "541362 326415 654231 132546 465123 213654",
-      "de": "541362 326415 654231 132546 465123 213654"
+      "ko": "142365 356124 534612 261543 415236 623451",
+      "en": "142365 356124 534612 261543 415236 623451",
+      "ja": "142365 356124 534612 261543 415236 623451",
+      "zh": "142365 356124 534612 261543 415236 623451",
+      "es": "142365 356124 534612 261543 415236 623451",
+      "fr": "142365 356124 534612 261543 415236 623451",
+      "de": "142365 356124 534612 261543 415236 623451"
     }
   },
   {

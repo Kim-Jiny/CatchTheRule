@@ -11,8 +11,11 @@
 무작위 순서로 칸을 비우되 "백트래킹 솔버로 해가 정확히 1개"일 때만 비운다. 챕터×order 별 목표 빈칸 수(범위의 아래->위)에
 도달하면 멈추고(= 고정 칸 최소화에 가깝게), 더 비울 수 없으면(극소) 거기서 멈춘다.
 케이지는 합만 제약으로 취급해 유일성을 검사한다(케이지 내 중복 금지는 생성 시 해에서 보장).
-난이도 지표: naked/hidden single(+lt 경계, 케이지 합 가지치기)만으로 풀리는지. ch1~6 은 single 만으로 풀려야 하고,
-ch7 이후 order 4~6 은 single 만으로 안 풀리는 문제를 우선 채택한다.
+난이도 등급(grade): S = naked/hidden single(+lt 경계, 케이지 합 가지치기)만으로 풀림,
+P = S 에 더해 naked/hidden pair·triple, locked candidates(상자-줄 교차 소거) 로 풀림,
+T = 그래도 안 풀려 가정 후 모순 탐색(trial, depth>=1) 이 필요.
+MIN_GRADE 표가 (챕터, order)별 최소 등급을 정한다. 최소 등급이 S 가 아닌 칸은 빈칸을 범위 위쪽(최대)까지 밀고
+제약(lt/cages) 개수를 범위 아래쪽으로 줄여 가며 조건을 만족하는 문제를 찾는다(못 찾으면 한 단계 낮춰 채택하고 보고).
 """
 import argparse, json, os, random
 
@@ -38,6 +41,28 @@ LADDER = {
     13: (6, ["row", "col", "box"], None, (5, 7), (19, 23)),
     14: (6, ["row", "col", "box"], (2, 4), (2, 4), (21, 25)),
 }
+
+
+# (chapter, order) -> 목표 등급 (0=S, 1=P, 2=T). 표에 없으면 제한 없음(S 허용). 검증기가 같은 값을 최소 등급으로 강제한다.
+# 목표와 정확히 같은 등급을 우선 찾고, 오래 못 찾으면 그보다 어려운 등급도 채택한다.
+# ch10(4x4 대각선)은 빈칸 10~13 의 모든 유일해 문제가 S 라서(전수 확인) 등급을 올릴 수 없다 -> 표에서 제외.
+def _mg():
+    t = {}
+    def put(ch, os_, g):
+        for o in os_:
+            t[(ch, o)] = g
+    put(7, (4, 5), 1); put(7, (6,), 2)
+    put(8, (3, 4), 1); put(8, (5, 6), 2)
+    put(9, (2, 3, 4), 1); put(9, (5, 6), 2)
+    put(11, (2, 3), 1); put(11, (4, 5, 6), 2)
+    put(12, (1, 2, 3), 1); put(12, (4, 5, 6), 2)
+    put(13, (1, 2, 3), 1); put(13, (4, 5, 6), 2)
+    put(14, (1, 2, 3), 1); put(14, (4, 5, 6), 2)
+    return t
+
+
+MIN_GRADE = _mg()
+GRADE_NAME = "SPT"
 
 
 def box_dims(n):
@@ -260,6 +285,178 @@ def singles_solve(n, rules, board, lt, cages):
     return all(assigned), order, cand
 
 
+
+# ---------------------------------------------------------------- 등급 판정 엔진 (비트마스크)
+def _peers_and_links(n, rules):
+    units = units_of(n, rules)
+    N2 = n * n
+    peers = [set() for _ in range(N2)]
+    for u in units:
+        for c in u:
+            peers[c].update(x for x in u if x != c)
+    # locked candidates: 교집합이 2칸 이상인 유닛 쌍
+    sets = [set(u) for u in units]
+    links = []
+    for i, a in enumerate(sets):
+        for j, b in enumerate(sets):
+            if i != j and len(a & b) >= 2:
+                links.append((i, j))
+    return units, [sorted(p) for p in peers], sets, links
+
+
+def _pc(x):
+    return bin(x).count("1")
+
+
+def _propagate(n, ctx, cand, level):
+    """cand(비트마스크 리스트)를 고정점까지 줄인다. 모순이면 False. level 0=single, 1=+pair/triple/locked."""
+    units, peers, sets, links, ltl, cgs = ctx
+    N2 = n * n
+    from itertools import combinations
+    while True:
+        before = list(cand)
+        for c in range(N2):
+            m = cand[c]
+            if m == 0:
+                return False
+            if m & (m - 1) == 0:
+                for o in peers[c]:
+                    if cand[o] & m:
+                        cand[o] &= ~m
+                        if cand[o] == 0:
+                            return False
+        for u in units:
+            for v in range(n):
+                bit = 1 << v
+                spots = [c for c in u if cand[c] & bit]
+                if not spots:
+                    return False
+                if len(spots) == 1:
+                    cand[spots[0]] = bit
+        for a, b in ltl:
+            hi_b = cand[b].bit_length()
+            lo_a = (cand[a] & -cand[a]).bit_length()
+            cand[a] &= (1 << (hi_b - 1)) - 1
+            cand[b] &= ~((1 << lo_a) - 1)
+            if cand[a] == 0 or cand[b] == 0:
+                return False
+        for t, cells in cgs:
+            for ci, cell in enumerate(cells):
+                sums = {0}
+                for j, x in enumerate(cells):
+                    if j != ci:
+                        vs = [v + 1 for v in range(n) if cand[x] >> v & 1]
+                        sums = {s + v for s in sums for v in vs}
+                nm = cand[cell]
+                for v in range(1, n + 1):
+                    if nm >> (v - 1) & 1 and (t - v) not in sums:
+                        nm &= ~(1 << (v - 1))
+                if nm != cand[cell]:
+                    cand[cell] = nm
+                    if nm == 0:
+                        return False
+        if level >= 1 and cand == before:
+            for u in units:
+                free = [c for c in u if cand[c] & (cand[c] - 1)]
+                for k in (2, 3):
+                    # naked subset
+                    small = [c for c in free if _pc(cand[c]) <= k]
+                    for combo in combinations(small, k):
+                        un = 0
+                        for c in combo:
+                            un |= cand[c]
+                        if _pc(un) == k:
+                            for c in u:
+                                if c not in combo and cand[c] & un:
+                                    cand[c] &= ~un
+                                    if cand[c] == 0:
+                                        return False
+                    # hidden subset (u 안에서 아직 확정 안 된 값만)
+                    vals = []
+                    for v in range(n):
+                        spots = [c for c in u if cand[c] >> v & 1]
+                        if 2 <= len(spots) <= k:
+                            vals.append((v, spots))
+                    for combo in combinations(vals, k):
+                        sp = set()
+                        for _, s_ in combo:
+                            sp.update(s_)
+                        if len(sp) == k:
+                            keep = 0
+                            for v, _ in combo:
+                                keep |= 1 << v
+                            for c in sp:
+                                if cand[c] & ~keep:
+                                    cand[c] &= keep
+            for i, j in links:
+                for v in range(n):
+                    bit = 1 << v
+                    spots = [c for c in units[i] if cand[c] & bit]
+                    if len(spots) >= 2 and all(c in sets[j] for c in spots):
+                        for c in units[j]:
+                            if c not in sets[i] and cand[c] & bit:
+                                cand[c] &= ~bit
+                                if cand[c] == 0:
+                                    return False
+        if cand == before:
+            return True
+
+
+def _ctx(n, rules, lt, cages):
+    units, peers, sets, links = _peers_and_links(n, rules)
+    ltl = [(r1 * n + c1, r2 * n + c2) for r1, c1, r2, c2 in lt]
+    cgs = [(t, [r * n + c for r, c in zip(rest[0::2], rest[1::2])]) for t, *rest in cages]
+    return units, peers, sets, links, ltl, cgs
+
+
+def _start_cand(n, board):
+    full = (1 << n) - 1
+    return [(1 << (board[i // n][i % n] - 1)) if board[i // n][i % n] else full for i in range(n * n)]
+
+
+def level_solves(n, rules, board, lt, cages, level):
+    cand = _start_cand(n, board)
+    ok = _propagate(n, _ctx(n, rules, lt, cages), cand, level)
+    return ok and all(m & (m - 1) == 0 for m in cand)
+
+
+def trial1_solves(n, rules, board, lt, cages):
+    """depth-1 가정 후 모순 탐색(P 수준 전파 + 후보 하나를 가정해 모순이면 제거) 만으로 풀리는지(보고용)."""
+    ctx = _ctx(n, rules, lt, cages)
+    cand = _start_cand(n, board)
+    if not _propagate(n, ctx, cand, 1):
+        return False
+    while True:
+        if all(m & (m - 1) == 0 for m in cand):
+            return True
+        progress = False
+        for c in range(n * n):
+            if cand[c] & (cand[c] - 1) == 0:
+                continue
+            for v in range(n):
+                if not cand[c] >> v & 1:
+                    continue
+                t = list(cand)
+                t[c] = 1 << v
+                if not _propagate(n, ctx, t, 1):
+                    cand[c] &= ~(1 << v)
+                    progress = True
+                    if not _propagate(n, ctx, cand, 1):
+                        return False
+        if not progress:
+            return False
+
+
+def grade_of(n, rules, board, lt, cages):
+    """(등급 0=S 1=P 2=T, singles 확정 순서, singles 후 후보). S 판정은 singles_solve 와 같다."""
+    solved, order, cand = singles_solve(n, rules, board, lt, cages)
+    if solved:
+        return 0, order, cand
+    if level_solves(n, rules, board, lt, cages, 1):
+        return 1, order, cand
+    return 2, order, cand
+
+
 # ---------------------------------------------------------------- 완성 격자·제약 생성
 def random_solution(rng, n, rules):
     units = units_of(n, rules)
@@ -347,15 +544,109 @@ def pick_cages(rng, n, sol, k):
     return out if len(out) == k else None
 
 
+def remove_greedy(rng, n, rules, board, lt, cages, hi):
+    """무작위 순서로 고정 칸을 지워 가며(해 1개 유지) 빈칸이 hi 개가 되거나 더 못 지울 때까지. 현재 빈칸 수를 반환."""
+    blanks = sum(1 for r in range(n) for c in range(n) if board[r][c] == 0)
+    cells = [(r, c) for r in range(n) for c in range(n) if board[r][c]]
+    rng.shuffle(cells)
+    for r, c in cells:
+        if blanks >= hi:
+            break
+        v = board[r][c]
+        board[r][c] = 0
+        if count_solutions(n, rules, board, lt, cages, 2) == 1:
+            blanks += 1
+        else:
+            board[r][c] = v
+    return blanks
+
+
+def hardness(n, rules, board, lt, cages, rank):
+    """목표 등급 rank(1=P,2=T) 에서 '한 단계 아래 기법으로는 못 정하는 칸 수'. 0 이면 아직 목표보다 쉽다."""
+    if rank == 1:
+        solved, order, cand = singles_solve(n, rules, board, lt, cages)
+        return sum(1 for m in cand if m & (m - 1))
+    cand = _start_cand(n, board)
+    _propagate(n, _ctx(n, rules, lt, cages), cand, 1)
+    return sum(1 for m in cand if m & (m - 1))
+
+
+def climb(rng, n, rules, sol, board, lt, cages, rank, iters):
+    """고정 칸 하나를 빈칸으로, 빈칸 하나를 해의 값으로 고정하는 이동(빈칸 수 불변)을 반복해 hardness 를 올린다."""
+    cur = hardness(n, rules, board, lt, cages, rank)
+    for _ in range(iters):
+        if cur > 0 and rank == 1 and cur >= 2:
+            return
+        if cur > 0 and rank == 2 and cur >= 2:
+            return
+        gv = [(r, c) for r in range(n) for c in range(n) if board[r][c]]
+        bl = [(r, c) for r in range(n) for c in range(n) if not board[r][c]]
+        if not gv or not bl:
+            return
+        a, b = rng.choice(gv), rng.choice(bl)
+        board[a[0]][a[1]] = 0
+        board[b[0]][b[1]] = sol[b[0]][b[1]]
+        if count_solutions(n, rules, board, lt, cages, 2) == 1:
+            h = hardness(n, rules, board, lt, cages, rank)
+            if h >= cur:
+                cur = h
+                continue
+        board[b[0]][b[1]] = 0
+        board[a[0]][a[1]] = sol[a[0]][a[1]]
+
+
 # ---------------------------------------------------------------- 챕터 생성
-def make_one(rng, ch, o, seen):
+def make_one(rng, ch, o, seen, prev):
+    """반환 (sol, board, lt, cages, order, cand, grade, 달성여부). prev=(직전 빈칸, 직전 lt 수, 직전 cages 수)."""
     n, rules, ltr, cgr, br = LADDER[ch]
-    target = sched(br, o)
-    nlt = sched_down(ltr, o) if ltr else 0
-    ncg = sched_down(cgr, o) if cgr else 0
-    need_hard = ch >= 7 and o >= 4
+    minrank = MIN_GRADE.get((ch, o), 0)
+    if minrank == 0:
+        target = sched(br, o)
+        nlt = sched_down(ltr, o) if ltr else 0
+        ncg = sched_down(cgr, o) if cgr else 0
+        for attempt in range(400):
+            sol = random_solution(rng, n, rules)
+            lt = pick_lt(rng, n, sol, nlt) if nlt else []
+            cages = []
+            if ncg:
+                cages = pick_cages(rng, n, sol, ncg)
+                if cages is None:
+                    continue
+            board = [row[:] for row in sol]
+            cells = [(r, c) for r in range(n) for c in range(n)]
+            rng.shuffle(cells)
+            blanks = 0
+            for r, c in cells:
+                if blanks >= target:
+                    break
+                v = board[r][c]
+                board[r][c] = 0
+                if count_solutions(n, rules, board, lt, cages, 2) == 1:
+                    blanks += 1
+                else:
+                    board[r][c] = v
+            if blanks != target:
+                continue
+            key = json.dumps([board, lt, cages])
+            if key in seen:
+                continue
+            g, order, cand = grade_of(n, rules, board, lt, cages)
+            if ch <= 6 and g != 0:
+                continue
+            seen.add(key)
+            return sol, board, lt, cages, order, cand, g, True
+        return None
+    # 최소 등급이 있는 칸: 빈칸을 범위 최대까지 밀고, 제약 개수를 아래쪽으로 줄여 가며 탐색
+    floor = max(sched(br, o), prev[0] if prev else 0)
+    hi = br[1]
+    cap_lt = min(sched_down(ltr, o), prev[1]) if ltr and prev else (sched_down(ltr, o) if ltr else 0)
+    cap_cg = min(sched_down(cgr, o), prev[2]) if cgr and prev else (sched_down(cgr, o) if cgr else 0)
     best = None
-    for attempt in range(400):
+    MAXATT = 600
+    for attempt in range(MAXATT):
+        drop = attempt // 25
+        nlt = max(ltr[0], cap_lt - drop) if ltr else 0
+        ncg = max(cgr[0], cap_cg - drop) if cgr else 0
         sol = random_solution(rng, n, rules)
         lt = pick_lt(rng, n, sol, nlt) if nlt else []
         cages = []
@@ -364,35 +655,28 @@ def make_one(rng, ch, o, seen):
             if cages is None:
                 continue
         board = [row[:] for row in sol]
-        cells = [(r, c) for r in range(n) for c in range(n)]
-        rng.shuffle(cells)
-        blanks = 0
-        for r, c in cells:
-            if blanks >= target:
-                break
-            v = board[r][c]
-            board[r][c] = 0
-            if count_solutions(n, rules, board, lt, cages, 2) == 1:
-                blanks += 1
-            else:
-                board[r][c] = v
-        if blanks != target:
+        blanks = remove_greedy(rng, n, rules, board, lt, cages, hi)
+        if blanks < floor:
             continue
+        # 빈칸 수를 유지한 채 고정 칸을 옮겨 가며(유일성 유지) 등급을 올린다
+        if blanks >= floor and hardness(n, rules, board, lt, cages, minrank) == 0:
+            climb(rng, n, rules, sol, board, lt, cages, minrank, 120)
+            blanks = remove_greedy(rng, n, rules, board, lt, cages, hi)
         key = json.dumps([board, lt, cages])
         if key in seen:
             continue
-        solved, order, cand = singles_solve(n, rules, board, lt, cages)
-        if ch <= 6 and not solved:
-            continue
-        if need_hard and solved:
-            best = best or (sol, board, lt, cages, order, cand, solved)  # 대안으로 보관
-            continue
-        seen.add(key)
-        return sol, board, lt, cages, order, cand, solved
-    if best:  # 어려운 변형을 못 찾은 경우의 대안(보고용으로 표시됨)
-        sol, board, lt, cages, order, cand, solved = best
-        seen.add(json.dumps([board, lt, cages]))
-        return best
+        g, order, cand = grade_of(n, rules, board, lt, cages)
+        item = (sol, board, lt, cages, order, cand, g)
+        if g == minrank or (attempt >= 150 and g > minrank):
+            seen.add(key)
+            return item + (True,)
+        # 보관 우선순위: 목표 이상 중 가장 가까운 것 > 목표 미만 중 가장 높은 것
+        if best is None or (g >= minrank > best[6]) or (g >= minrank and best[6] >= minrank and g < best[6]) \
+                or (g < minrank and best[6] < minrank and g > best[6]):
+            best = item
+    if best:
+        seen.add(json.dumps([best[1], best[2], best[3]]))
+        return best + (best[6] >= minrank,)
     return None
 
 
@@ -505,12 +789,14 @@ def make_texts(ch, n, board, sol, order, cand):
 def gen_chapter(ch, seen_ch, report):
     n, rules, ltr, cgr, br = LADDER[ch]
     out = []
+    prev = None
     for o in range(1, 7):
         rng = random.Random(f"fill-{ch}-{o}")
-        res = make_one(rng, ch, o, seen_ch)
+        res = make_one(rng, ch, o, seen_ch, prev)
         assert res, f"fx{ch}_s{o} 생성 실패"
-        sol, board, lt, cages, order, cand, solved = res
+        sol, board, lt, cages, order, cand, g, met = res
         ans = "".join(str(sol[r][c]) for r in range(n) for c in range(n) if board[r][c] == 0)
+        prev = (len(ans), len(lt), len(cages))
         hints, expl = make_texts(ch, n, board, sol, order, cand)
         p = {"id": f"fx{ch}_s{o:02d}", "type": "fill", "track": "fill", "chapter": ch, "order": o,
              "board": board, "rules": list(rules)}
@@ -520,7 +806,9 @@ def gen_chapter(ch, seen_ch, report):
             p["cages"] = cages
         p.update({"answer": ans, "inputType": "choices", "choices": None, "hints": hints, "explanation": expl})
         out.append(p)
-        report.append((p["id"], n, ",".join(rules), len(lt), len(cages), len(ans), "single" if solved else "NEEDS-MORE"))
+        want = GRADE_NAME[MIN_GRADE.get((ch, o), 0)]
+        report.append((p["id"], n, ",".join(rules), len(lt), len(cages), len(ans), GRADE_NAME[g],
+                       "" if met else f"MISS(want {want})"))
     return out
 
 
@@ -563,7 +851,7 @@ def main():
     puzzles, report = [], []
     for ch in range(1, 15):
         puzzles.extend(gen_chapter(ch, set(), report))
-    print("id | N | rules | lt | cages | blanks | single-solvable")
+    print("id | N | rules | lt | cages | blanks | grade")
     for r in report:
         print(" | ".join(str(x) for x in r))
     if a.dry:

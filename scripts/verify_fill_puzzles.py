@@ -6,6 +6,8 @@
 - 고정 칸이 해와 일치, 규칙 일관성(rules 가 챕터 사다리와 같음, lt 인접·해와 일치, cages 인접 연결·합 일치·중복 없음·서로소)
 - 고정 칸 최소화: 빈칸 수가 챕터 범위 안이고, (목표 빈칸 수와 같거나, 더 이상 비울 칸이 없는 극소) 인지 확인
 - 챕터별 사다리(N, rules, 제약 개수 범위, 빈칸 범위, order 에 따른 빈칸 비감소/제약 비증가), ch1~6 은 single 만으로 풀림
+- 난이도 등급(독립 구현): S = single(+lt 경계, 케이지 합)만으로 풀림 / P = + naked·hidden pair/triple, locked candidates 로 풀림 /
+  T = 그 이상(가정 후 모순 탐색 필요). 챕터·order 별 최소 등급(MIN_GRADE)을 만족해야 함
 - id/order/중복 board, 7개 언어 hints(3개)·explanation, 힌트 속 "R행 C열은 V" 가 실제 해와 일치, explanation == 해 격자
 
 실행: python3 scripts/verify_fill_puzzles.py [--puzzles PATH] [--vectors PATH]   (실패 시 종료 코드 1)
@@ -33,6 +35,15 @@ LADDER = {
     13: (6, ["row", "col", "box"], None, (5, 7), (19, 23)),
     14: (6, ["row", "col", "box"], (2, 4), (2, 4), (21, 25)),
 }
+# (chapter, order) -> 최소 등급 0=S 1=P 2=T (없으면 제한 없음)
+MIN_GRADE = {}
+for _ch, _os, _g in ((7, (4, 5), 1), (7, (6,), 2), (8, (3, 4), 1), (8, (5, 6), 2), (9, (2, 3, 4), 1), (9, (5, 6), 2),
+                     (11, (2, 3), 1), (11, (4, 5, 6), 2), (12, (1, 2, 3), 1), (12, (4, 5, 6), 2),
+                     (13, (1, 2, 3), 1), (13, (4, 5, 6), 2), (14, (1, 2, 3), 1), (14, (4, 5, 6), 2)):
+    for _o in _os:
+        MIN_GRADE[(_ch, _o)] = _g
+# ch10(4x4 대각선)은 유일해 문제가 전부 S 라 등급 상향 불가(전수 확인) -> 제외
+GRADE_NAME = "SPT"
 errors = []
 notes = []
 
@@ -165,6 +176,102 @@ def singles_only(n, rules, board, lt, cages):
     return all(len(s) == 1 for s in cand.values())
 
 
+def level1_solves(n, rules, board, lt, cages):
+    """single + pair/triple(naked·hidden) + locked candidates 까지 써서 풀리는가 (독립 구현, 집합 기반).
+    모순이 나오면 False."""
+    from itertools import combinations
+    grp = groups(n, rules)
+    cells = [(r, c) for r in range(n) for c in range(n)]
+    cand = {x: ({board[x[0]][x[1]]} if board[x[0]][x[1]] else set(range(1, n + 1))) for x in cells}
+    cg = [(t, [(a, b) for a, b in zip(rest[0::2], rest[1::2])]) for t, *rest in cages]
+    gsets = [set(g_) for g_ in grp]
+    links = [(i, j) for i, a in enumerate(gsets) for j, b in enumerate(gsets) if i != j and len(a & b) >= 2]
+
+    def narrow(cell, new):
+        if new != cand[cell]:
+            cand[cell] = new
+            return True
+        return False
+
+    for _ in range(500):
+        ch_ = False
+        for gp in grp:
+            for cell in gp:
+                if len(cand[cell]) == 1:
+                    (v,) = cand[cell]
+                    for o in gp:
+                        if o != cell and v in cand[o]:
+                            cand[o] = cand[o] - {v}
+                            ch_ = True
+        if any(not s_ for s_ in cand.values()):
+            return False
+        for gp in grp:
+            for v in range(1, n + 1):
+                sp = [x for x in gp if v in cand[x]]
+                if not sp:
+                    return False
+                if len(sp) == 1 and len(cand[sp[0]]) > 1:
+                    cand[sp[0]] = {v}
+                    ch_ = True
+        for r1, c1, r2, c2 in lt:
+            a, b = (r1, c1), (r2, c2)
+            ch_ |= narrow(a, {v for v in cand[a] if cand[b] and v < max(cand[b])})
+            ch_ |= narrow(b, {v for v in cand[b] if cand[a] and v > min(cand[a])})
+        for t, cs in cg:
+            for cell in cs:
+                sums = {0}
+                for x in cs:
+                    if x != cell:
+                        sums = {a + b for a in sums for b in cand[x]}
+                ch_ |= narrow(cell, {v for v in cand[cell] if (t - v) in sums})
+        if any(not s_ for s_ in cand.values()):
+            return False
+        if not ch_:
+            for gp in grp:
+                for k in (2, 3):
+                    small = [x for x in gp if 2 <= len(cand[x]) <= k]
+                    for combo in combinations(small, k):
+                        un = set().union(*(cand[x] for x in combo))
+                        if len(un) == k:
+                            for x in gp:
+                                if x not in combo and cand[x] & un:
+                                    cand[x] = cand[x] - un
+                                    ch_ = True
+                    pos = {}
+                    for v in range(1, n + 1):
+                        sp = [x for x in gp if v in cand[x]]
+                        if 2 <= len(sp) <= k:
+                            pos[v] = sp
+                    for vs in combinations(sorted(pos), k):
+                        sp = set()
+                        for v in vs:
+                            sp.update(pos[v])
+                        if len(sp) == k:
+                            for x in sp:
+                                if cand[x] - set(vs):
+                                    cand[x] = cand[x] & set(vs)
+                                    ch_ = True
+            for i, j in links:
+                for v in range(1, n + 1):
+                    sp = [x for x in grp[i] if v in cand[x]]
+                    if len(sp) >= 2 and all(x in gsets[j] for x in sp):
+                        for x in grp[j]:
+                            if x not in gsets[i] and v in cand[x]:
+                                cand[x] = cand[x] - {v}
+                                ch_ = True
+        if any(not s_ for s_ in cand.values()):
+            return False
+        if not ch_:
+            break
+    return all(len(s_) == 1 for s_ in cand.values())
+
+
+def grade_of(n, rules, board, lt, cages):
+    if singles_only(n, rules, board, lt, cages):
+        return 0
+    return 1 if level1_solves(n, rules, board, lt, cages) else 2
+
+
 def adjacent(a, b):
     return abs(a[0] - b[0]) + abs(a[1] - b[1]) == 1
 
@@ -285,13 +392,17 @@ def check_puzzle(p, dedupe):
                     b2[r][c] = 0
                     if len(solutions(n, p["rules"], b2, lt, cages, 2)) == 1:
                         removable += 1
-        if removable:
+        if removable and nb < br[1]:
             err(f"{pid}: 빈칸 {nb} != 목표 {target} 인데 비울 수 있는 고정 칸 {removable}개 남음(고정 칸 최소화 실패)")
         else:
             notes.append(f"{pid}: 극소(빈칸 {nb}, 목표 {target})")
-    solved = singles_only(n, p["rules"], board, lt, cages)
+    grade = grade_of(n, p["rules"], board, lt, cages)
+    solved = grade == 0
     if ch <= 6 and not solved:
         err(f"{pid}: ch1~6 은 single 만으로 풀려야 함")
+    need = MIN_GRADE.get((ch, o), 0)
+    if grade < need:
+        err(f"{pid}: 등급 {GRADE_NAME[grade]} < 최소 등급 {GRADE_NAME[need]}")
     # 중복
     key = json.dumps([board, lt, cages])
     if key in dedupe.setdefault(ch, set()):
@@ -301,7 +412,7 @@ def check_puzzle(p, dedupe):
     for field in ("hints", "explanation"):
         if set(p[field]) != set(LANGS):
             err(f"{pid}: {field} 언어 키 불일치")
-            return sol, nb, solved
+            return sol, nb, grade
     grid_txt = " ".join("".join(str(v) for v in row) for row in sol)
     cell_re = {
         "ko": r"(\d+)행 (\d+)열은 (\d+)", "en": r"Row (\d+), column (\d+) is (\d+)",
@@ -332,7 +443,7 @@ def check_puzzle(p, dedupe):
             err(f"{pid}: explanation[{lang}] 이 완성 격자 행 나열과 다름")
     if len(firsts) > 1:
         err(f"{pid}: 언어별 힌트 칸이 서로 다름")
-    return sol, nb, solved
+    return sol, nb, grade
 
 
 def check_vectors(path, byid):
@@ -397,14 +508,18 @@ def main():
         check_vectors(a.vectors, byid)
     else:
         err(f"테스트 벡터 없음: {a.vectors}")
-    print("ch | N | rules | blanks | lt | cages | single-solvable(order1..6)")
+    print("ch | N | rules | blanks | lt | cages | grade(order1..6)")
+    tot = [0, 0, 0]
     for ch in range(1, 15):
         ps = sorted((p for p in fills if p["chapter"] == ch), key=lambda p: p["order"])
         if not ps:
             continue
         print(f"{ch:2d} | {len(ps[0]['board'])} | {','.join(ps[0]['rules'])} | {[len(p['answer']) for p in ps]} | "
               f"{[len(p.get('lt') or []) for p in ps]} | {[len(p.get('cages') or []) for p in ps]} | "
-              f"{''.join('S' if info.get(p['id'], (0, 0, False))[2] else 'H' for p in ps)}")
+              f"{''.join(GRADE_NAME[info.get(p['id'], (0, 0, 0))[2]] for p in ps)}")
+        for p in ps:
+            tot[info.get(p['id'], (0, 0, 0))[2]] += 1
+    print(f"등급 합계: S {tot[0]} / P {tot[1]} / T {tot[2]}")
     for n_ in notes:
         print("note:", n_)
     if errors:
