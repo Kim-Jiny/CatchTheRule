@@ -73,11 +73,11 @@ android {
 }
 
 dependencies {
-    val composeBom = platform("androidx.compose:compose-bom:2024.10.01")
+    val composeBom = platform("androidx.compose:compose-bom:2025.12.01")
     implementation(composeBom)
 
     implementation("androidx.core:core-ktx:1.13.1")
-    implementation("androidx.activity:activity-compose:1.9.3")
+    implementation("androidx.activity:activity-compose:1.13.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
     // Compose 라이프사이클 연동: LocalLifecycleOwner / repeatOnLifecycle
     // (배너 광고 pause·resume·destroy, 타임어택 타이머 백그라운드 일시정지)
