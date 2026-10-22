@@ -5,9 +5,13 @@ struct HomeView: View {
     @Environment(ProgressStore.self) private var progress
     @State private var showUnlock = false
     @State private var path = NavigationPath()
-    @State private var playing = false
-    @State private var playTrack = PuzzleStore.defaultTrack
-    @State private var startIndex = 0
+    /// 트랙·시작 위치를 cover 에 함께 실어 보낸다(별도 @State 는 갱신 전 값으로 열릴 수 있음).
+    private struct PlaySession: Identifiable {
+        let id = UUID()
+        let track: String
+        let startIndex: Int
+    }
+    @State private var session: PlaySession?
 
     var body: some View {
         NavigationStack(path: $path) {
@@ -41,8 +45,8 @@ struct HomeView: View {
             UnlockSheet { showUnlock = false }
                 .preferredColorScheme(.dark)
         }
-        .fullScreenCover(isPresented: $playing) {
-            CampaignSessionView(startIndex: startIndex, track: playTrack)
+        .fullScreenCover(item: $session) { s in
+            CampaignSessionView(startIndex: s.startIndex, track: s.track)
         }
         .task { maybeShowUnlock() }
         .onChange(of: progress.isShapesUnlocked) { _, _ in maybeShowUnlock() }
@@ -73,10 +77,8 @@ struct HomeView: View {
             HeroCard(track: hero, caption: String.loc("home_last_played"),
                      onOpen: { path.append(hero) },
                      onContinue: {
-                         playTrack = hero
-                         startIndex = progress.currentIndex(track: hero)
                          progress.lastPlayedTrack = hero
-                         playing = true
+                         session = PlaySession(track: hero, startIndex: progress.currentIndex(track: hero))
                      })
                 .staggerOnAppear(order: 1)
             VStack(alignment: .leading, spacing: 14) {
