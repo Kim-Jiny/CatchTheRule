@@ -32,6 +32,14 @@ struct Puzzle: Codable, Identifiable, Equatable {
     let pairs: [[[String]]]? // 암호 해독: pairs[i] = [입력 토큰들, 출력 토큰들]
     let scales: [[[String]]]? // 저울 추리: scales[i] = [왼쪽 접시, 오른쪽 접시] (균형)
     let query: [String]?     // 암호/저울: 풀어야 할 토큰들
+    let board: [[Int]]?      // 격자 채우기: 0 = 빈칸, 나머지는 고정 칸
+    let rules: [String]?     // 격자 채우기 규칙: row/col/box/diag
+    let lt: [[Int]]?         // 격자 채우기 부등호: [r1,c1,r2,c2] = (r1,c1) < (r2,c2)
+    let cages: [[Int]]?      // 격자 채우기 합 묶음: [합, r1,c1, r2,c2, …]
+    let size: Int?           // 경로 추적: 격자 한 변
+    let start: [Int]?        // 경로 추적: 출발 [행,열]
+    let trail: [[Int]]?      // 경로 추적: 보여 주는 자취(trail[0]=출발)
+    let total: Int?          // 경로 추적: 총 이동 횟수
     let answer: String
     let inputType: InputType
     let choices: [String]?
@@ -70,6 +78,12 @@ struct Puzzle: Codable, Identifiable, Equatable {
 
     /// 저울 추리(균형 저울 목록) 퍼즐 여부.
     var isScale: Bool { (scales?.isEmpty == false) }
+
+    /// 격자 채우기(숫자 격자+규칙) 퍼즐 여부.
+    var isFill: Bool { (board?.isEmpty == false) }
+
+    /// 경로 추적(이동 자취) 퍼즐 여부.
+    var isPath: Bool { (trail?.isEmpty == false) }
 
     /// 현재 언어의 문장 목록(없으면 영어 → 임의 폴백).
     var localizedStatements: [String] {

@@ -33,6 +33,14 @@ data class Puzzle(
     val pairs: List<List<List<String>>>? = null,   // 암호 해독: pairs[i] = [입력 토큰들, 출력 토큰들]
     val scales: List<List<List<String>>>? = null,  // 저울 추리: scales[i] = [왼쪽 접시 토큰들, 오른쪽 접시 토큰들]
     val query: List<String>? = null,               // 암호/저울 질문 토큰들
+    val board: List<List<Int>>? = null,            // 격자 채우기: 0 = 빈칸, 나머지는 고정 칸
+    val rules: List<String>? = null,               // 격자 채우기 규칙 집합("row","col","box","diag")
+    val lt: List<List<Int>>? = null,               // 격자 채우기 부등호 [r1,c1,r2,c2] = 앞 칸 < 뒤 칸
+    val cages: List<List<Int>>? = null,            // 격자 채우기 합 제약 [합, r1,c1, r2,c2, …]
+    val size: Int? = null,                         // 경로 추적: 격자 한 변 칸 수
+    val start: List<Int>? = null,                  // 경로 추적: 출발 [행,열]
+    val trail: List<List<Int>>? = null,            // 경로 추적: 보이는 자취 점들 (trail[0] = 출발)
+    val total: Int? = null,                        // 경로 추적: 총 이동 횟수
     val answer: String,
     val inputType: String,      // "keypad" | "choices"
     val choices: List<String>? = null,
@@ -67,6 +75,12 @@ data class Puzzle(
 
     /** 저울 추리 퍼즐 여부. */
     val isScale: Boolean get() = scales?.isNotEmpty() == true
+
+    /** 격자 채우기 퍼즐 여부. */
+    val isFill: Boolean get() = board?.isNotEmpty() == true
+
+    /** 경로 추적 퍼즐 여부. */
+    val isPath: Boolean get() = trail?.isNotEmpty() == true
 
     /** 조각 숫자 퍼즐 여부. */
     val isFragment: Boolean get() = frames?.isNotEmpty() == true

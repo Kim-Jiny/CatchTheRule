@@ -242,6 +242,7 @@ private struct FlowLayout: Layout {
         pairs: nil,
         scales: [[["🍎", "🍎"], ["🍌", "6"]], [["🍌"], ["🍇", "🍇", "12"]], [["🍎", "🍎", "🍎", "🍇", "🍌"], ["20", "20", "7"]]],
         query: ["🍎", "🍇", "🍌", "🍎", "🍎"],
+        board: nil, rules: nil, lt: nil, cages: nil, size: nil, start: nil, trail: nil, total: nil,
         answer: "9", inputType: .keypad, choices: nil, hints: [:], explanation: [:])
     return ZStack {
         Color.black.ignoresSafeArea()

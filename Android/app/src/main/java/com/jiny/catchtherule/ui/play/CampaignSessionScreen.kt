@@ -85,6 +85,8 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
     // 숫자 만들기 상태 — 퍼즐이 바뀌면 반드시 초기화(key = puzzle.id).
     val targetUi = remember(puzzle?.id) { puzzle?.takeIf { it.isTarget }?.let { TargetUi(it) } }
     val matchUi = remember(puzzle?.id) { puzzle?.takeIf { it.isMatch }?.let { MatchUi(it) } }
+    val fillUi = remember(puzzle?.id) { puzzle?.takeIf { it.isFill }?.let { FillUi(it) } }
+    val pathUi = remember(puzzle?.id) { puzzle?.takeIf { it.isPath }?.let { PathUi(it) } }
     val haptic = androidx.compose.ui.platform.LocalHapticFeedback.current
 
     // 정답 후 자동 진행
@@ -169,6 +171,10 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
                         Text(stringResource(R.string.cipher_prompt), color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
                     } else if (puzzle.isScale) {
                         Text(stringResource(R.string.scale_prompt), color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
+                    } else if (puzzle.isFill) {
+                        Text(stringResource(R.string.fill_prompt), color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
+                    } else if (puzzle.isPath) {
+                        Text(stringResource(R.string.path_prompt), color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
                     } else if (puzzle.isMatch) {
                         Text(stringResource(R.string.match_prompt), color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
                     } else if (puzzle.isTarget) {
@@ -178,7 +184,11 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
                     } else if (!puzzle.isPrompt) {
                         Text(stringResource(R.string.play_prompt), color = AppColors.TextSecondary, fontSize = 15.sp)
                     }
-                    if (puzzle.isMatch && matchUi != null) {
+                    if (puzzle.isFill && fillUi != null) {
+                        FillPlayArea(fillUi, solved, feedback)
+                    } else if (puzzle.isPath && pathUi != null) {
+                        PathPlayArea(pathUi, solved, feedback)
+                    } else if (puzzle.isMatch && matchUi != null) {
                         MatchPlayArea(matchUi, solved, feedback,
                             onReject = { if (progress.hapticsOn) haptic.performHapticFeedback(androidx.compose.ui.hapticfeedback.HapticFeedbackType.LongPress) })
                     } else if (puzzle.isTarget && targetUi != null) {
@@ -214,7 +224,31 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
 
             // 입력 영역 (모순찾기는 문장 카드를 직접 탭하므로 하단 입력 없음)
             Box(Modifier.padding(horizontal = 20.dp, vertical = 12.dp)) {
-                if (puzzle.isMatch && matchUi != null) {
+                if (puzzle.isFill && fillUi != null) {
+                    FillControls(fillUi, solved) {
+                        if (solved || feedback != null || !fillUi.isComplete) {
+                            // 피드백 진행 중에는 무시
+                        } else if (fillUi.conflicts().isNotEmpty()) {
+                            // 규칙 위반 — 제출하지 않고 안내만(오답 카운트 없음)
+                            fillUi.flashInvalid()
+                            if (progress.hapticsOn) haptic.performHapticFeedback(androidx.compose.ui.hapticfeedback.HapticFeedbackType.LongPress)
+                        } else {
+                            submitCampaign(puzzle, index, fillUi.submitValue(puzzle), progress, hintsShown,
+                                onCorrect = { feedback = AnswerFeedback.Correct; reveal = true; solved = true },
+                                onWrong = { feedback = AnswerFeedback.Wrong })
+                        }
+                    }
+                } else if (puzzle.isPath && pathUi != null) {
+                    PathControls(pathUi, solved) {
+                        if (solved || feedback != null || pathUi.selected < 0) {
+                            // 피드백 진행 중에는 무시
+                        } else {
+                            submitCampaign(puzzle, index, pathUi.submitValue(), progress, hintsShown,
+                                onCorrect = { feedback = AnswerFeedback.Correct; reveal = true; solved = true },
+                                onWrong = { feedback = AnswerFeedback.Wrong })
+                        }
+                    }
+                } else if (puzzle.isMatch && matchUi != null) {
                     MatchControls(matchUi, solved) {
                         if (solved || feedback != null || !matchUi.game.canCheck) {
                             // 피드백 진행 중에는 무시
@@ -281,7 +315,7 @@ fun CampaignSessionScreen(startIndex: Int, track: String = PuzzleStore.DEFAULT_T
 
             AnimatedVisibility(
                 visible = feedback == AnswerFeedback.Correct,
-                modifier = Modifier.align(Alignment.Center).offset(y = (if (puzzle.isTarget || puzzle.isMatch) -250 else -150).dp),
+                modifier = Modifier.align(Alignment.Center).offset(y = (if (puzzle.isTarget || puzzle.isMatch || puzzle.isFill || puzzle.isPath) -250 else -150).dp),
                 enter = scaleIn(initialScale = 0.5f) + fadeIn(),
                 exit = scaleOut(targetScale = 0.5f) + fadeOut(),
             ) { CorrectBadge() }

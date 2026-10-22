@@ -111,6 +111,8 @@ fun modeColor(track: String): Color = when (track) {
     "fragment" -> Color(0xFFA3E635)
     "cipher" -> Color(0xFF2DD4BF)
     "scale" -> Color(0xFFE879F9)
+    "fill" -> Color(0xFFEDE63C)   // 명세 #A3E635 는 fragment 와 같아 인접 노랑-라임으로 조정
+    "path" -> Color(0xFF5B8CFF)   // 명세 #38BDF8 은 shapes(#18C8FF)와 근접해 파랑 쪽으로 조정
     else -> Color(0xFF7C5CFF)
 }
 

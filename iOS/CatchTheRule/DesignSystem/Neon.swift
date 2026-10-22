@@ -13,6 +13,8 @@ extension Theme {
         case "fragment":      return 0xA3E635   // 라임
         case "cipher":        return 0x2DD4BF   // 틸
         case "scale":         return 0xE879F9   // 퓨샤
+        case "fill":          return 0xEDE63C   // 옐로라임(명세 #A3E635 는 fragment 와 중복)
+        case "path":          return 0x5B8CFF   // 블루(명세 #38BDF8 은 shapes 시안과 근접)
         default:              return 0x7C5CFF   // 바이올렛(numbers)
         }
     }
@@ -248,6 +250,8 @@ struct ModeIconTile: View {
         case "fragment": return 1.7
         case "cipher": return 2.6
         case "scale": return 0.9
+        case "fill": return 3.0
+        case "path": return 1.1
         default: return 0
         }
     }
@@ -288,6 +292,14 @@ struct ModeIconTile: View {
         case "scale":
             // 저울이 평형을 찾듯 좌우로 기울었다 돌아옴
             rotation = sin(t * 2 * .pi / 2.8) * 9
+        case "fill":
+            // 칸이 하나씩 채워지듯 맥동
+            scale = 1 + 0.07 * sin(t * 2 * .pi / 1.5)
+            glow = max(0, sin(t * 2 * .pi / 1.5)) * 0.7
+        case "path":
+            // 점이 경로를 따라 도는 듯 살짝 회전하며 흔들림
+            rotation = sin(t * 2 * .pi / 2.2) * 10
+            offsetY = CGFloat(sin(t * 2 * .pi / 1.1)) * size * 0.04
         default:
             offsetY = CGFloat(sin(t * 2 * .pi / 2.6)) * size * 0.07
         }

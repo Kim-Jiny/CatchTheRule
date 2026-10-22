@@ -64,6 +64,12 @@ import com.jiny.catchtherule.ui.SecondaryButton
 import com.jiny.catchtherule.ui.play.AnswerFeedback
 import com.jiny.catchtherule.ui.play.ChoicesGrid
 import com.jiny.catchtherule.ui.play.FigureChoicesGrid
+import com.jiny.catchtherule.ui.play.FillControls
+import com.jiny.catchtherule.ui.play.FillPlayArea
+import com.jiny.catchtherule.ui.play.FillUi
+import com.jiny.catchtherule.ui.play.PathControls
+import com.jiny.catchtherule.ui.play.PathPlayArea
+import com.jiny.catchtherule.ui.play.PathUi
 import com.jiny.catchtherule.ui.play.Keypad
 import com.jiny.catchtherule.ui.play.MatchControls
 import com.jiny.catchtherule.ui.play.MatchMessage
@@ -180,6 +186,8 @@ fun TimeAttackScreen(onClose: () -> Unit) {
     // 숫자 만들기/성냥개비 보드 상태 — 문제가 바뀌면 반드시 초기화(key = puzzle.id).
     val targetUi = remember(current?.id) { current?.takeIf { it.isTarget }?.let { TargetUi(it) } }
     val matchUi = remember(current?.id) { current?.takeIf { it.isMatch }?.let { MatchUi(it) } }
+    val fillUi = remember(current?.id) { current?.takeIf { it.isFill }?.let { FillUi(it) } }
+    val pathUi = remember(current?.id) { current?.takeIf { it.isPath }?.let { PathUi(it) } }
 
     FullScreenBackground {
         if (finished) {
@@ -228,6 +236,8 @@ fun TimeAttackScreen(onClose: () -> Unit) {
                                 current.isContradiction -> R.string.contradiction_prompt
                                 current.isCipher -> R.string.cipher_prompt
                                 current.isScale -> R.string.scale_prompt
+                                current.isFill -> R.string.fill_prompt
+                                current.isPath -> R.string.path_prompt
                                 !current.isPrompt -> R.string.play_prompt
                                 else -> null
                             }
@@ -236,7 +246,11 @@ fun TimeAttackScreen(onClose: () -> Unit) {
                             } else if (promptRes != null) {
                                 Text(stringResource(promptRes), color = AppColors.TextSecondary, fontSize = 15.sp, fontWeight = FontWeight.SemiBold, textAlign = TextAlign.Center)
                             }
-                            if (current.isMatch && matchUi != null) {
+                            if (current.isFill && fillUi != null) {
+                                FillPlayArea(fillUi, advancing, feedback)
+                            } else if (current.isPath && pathUi != null) {
+                                PathPlayArea(pathUi, advancing, feedback)
+                            } else if (current.isMatch && matchUi != null) {
                                 MatchPlayArea(matchUi, advancing, feedback, onReject = { buzz() })
                             } else if (current.isTarget && targetUi != null) {
                                 TargetPlayArea(current, targetUi, advancing, feedback) { id ->
@@ -267,7 +281,22 @@ fun TimeAttackScreen(onClose: () -> Unit) {
 
                 if (current != null) {
                     Box(Modifier.padding(horizontal = 20.dp, vertical = 12.dp)) {
-                        if (current.isMatch && matchUi != null) {
+                        if (current.isFill && fillUi != null) {
+                            FillControls(fillUi, advancing) {
+                                if (advancing || feedback != null || !fillUi.isComplete) {
+                                    // 피드백/전환 중에는 무시
+                                } else if (fillUi.conflicts().isNotEmpty()) {
+                                    fillUi.flashInvalid()
+                                    buzz()
+                                } else submit(fillUi.submitValue(current))
+                            }
+                        } else if (current.isPath && pathUi != null) {
+                            PathControls(pathUi, advancing) {
+                                if (advancing || feedback != null || pathUi.selected < 0) {
+                                    // 피드백/전환 중에는 무시
+                                } else submit(pathUi.submitValue())
+                            }
+                        } else if (current.isMatch && matchUi != null) {
                             MatchControls(matchUi, advancing) {
                                 if (advancing || feedback != null || !matchUi.game.canCheck) {
                                     // 피드백/전환 중에는 무시

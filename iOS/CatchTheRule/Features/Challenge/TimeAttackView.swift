@@ -20,6 +20,8 @@ struct TimeAttackView: View {
     @State private var incompleteShown = false
     @State private var match: MatchBoard?        // 성냥개비(문제 전환 시 재생성)
     @State private var matchMessage: String?
+    @State private var fill: FillState?          // 격자 채우기(문제 전환 시 재생성)
+    @State private var path: PathState?          // 경로 추적(문제 전환 시 재생성)
 
     private let ticker = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
@@ -129,7 +131,11 @@ struct TimeAttackView: View {
     @ViewBuilder
     private func problemArea(for puzzle: Puzzle) -> some View {
         VStack(spacing: 28) {
-            if puzzle.isCipher {
+            if puzzle.isFill {
+                promptText("fill_prompt", bold: true)
+            } else if puzzle.isPath {
+                promptText("path_prompt", bold: true)
+            } else if puzzle.isCipher {
                 promptText("cipher_prompt", bold: true)
             } else if puzzle.isScale {
                 promptText("scale_prompt", bold: true)
@@ -153,7 +159,16 @@ struct TimeAttackView: View {
                 promptText("play_prompt", bold: false)
             }
 
-            if puzzle.isMatch, match != nil {
+            if puzzle.isFill, fill != nil {
+                fillSection
+            } else if puzzle.isPath, path != nil {
+                PathBoardView(
+                    state: Binding(get: { path ?? PathState(puzzle: puzzle)! }, set: { path = $0 }),
+                    disabled: advancing,
+                    onTap: { if progress.hapticsOn { Haptics.soft() } }
+                )
+                .modifier(Shake(animatableData: shake))
+            } else if puzzle.isMatch, match != nil {
                 matchSection
             } else if puzzle.isTarget, let expr {
                 TargetBoardView(expr: expr, incompleteShown: incompleteShown) { i in
@@ -182,7 +197,16 @@ struct TimeAttackView: View {
 
     @ViewBuilder
     private func inputArea(for puzzle: Puzzle) -> some View {
-        if puzzle.isMatch, let m = match {
+        if puzzle.isFill, let f = fill {
+            FillControlsView(
+                state: f, disabled: advancing,
+                onDigit: { d in fill?.enter(d); if progress.hapticsOn { Haptics.soft() } },
+                onClear: { fill?.clearSelected(); if progress.hapticsOn { Haptics.tap() } },
+                onCheck: { checkFill(puzzle: puzzle) }
+            )
+        } else if puzzle.isPath, let p = path {
+            PathControlsView(state: p, disabled: advancing) { checkPath(puzzle: puzzle) }
+        } else if puzzle.isMatch, let m = match {
             matchControls(m, puzzle: puzzle)
         } else if puzzle.isTarget, let e = expr {
             TargetControlsView(
@@ -242,6 +266,38 @@ struct TimeAttackView: View {
             return
         }
         submit(puzzle: puzzle, value: e.isCorrect ? String(e.target) : "x" + v.text)
+    }
+
+    // MARK: - 격자 채우기 · 경로 추적
+
+    private var fillSection: some View {
+        VStack(spacing: 14) {
+            FillBoardView(
+                state: Binding(get: { fill ?? FillState(puzzle: puzzle!)! }, set: { fill = $0 }),
+                disabled: advancing,
+                onTap: { if progress.hapticsOn { Haptics.soft() } }
+            )
+            .modifier(Shake(animatableData: shake))
+            Text(matchMessage ?? " ")
+                .font(.system(size: 13, weight: .semibold))
+                .foregroundStyle(Theme.danger)
+                .multilineTextAlignment(.center)
+                .frame(minHeight: 18)
+        }
+    }
+
+    private func checkFill(puzzle: Puzzle) {
+        guard !advancing, let f = fill, f.isComplete else { return }
+        if f.hasConflict {
+            matchWarn("fill_invalid")
+            return
+        }
+        submit(puzzle: puzzle, value: f.answerString == puzzle.answer ? puzzle.answer : "x" + f.answerString)
+    }
+
+    private func checkPath(puzzle: Puzzle) {
+        guard !advancing, let p = path, p.canCheck else { return }
+        submit(puzzle: puzzle, value: p.selected.map(String.init) == puzzle.answer ? puzzle.answer : "x" + p.answerString)
     }
 
     // MARK: - 성냥개비
@@ -353,7 +409,11 @@ struct TimeAttackView: View {
         matchMessage = nil
         expr = nil
         match = nil
+        fill = nil
+        path = nil
         if let p = next {
+            fill = FillState(puzzle: p)
+            path = PathState(puzzle: p)
             if p.isTarget, let nums = p.numbers, let t = p.target {
                 expr = TargetExpression(numbers: nums, target: t)
             }
